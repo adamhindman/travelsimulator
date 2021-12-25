@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "parcel src/index.html"
+  },  
   "devDependencies": {
     "@parcel/transformer-stylus": "^2.0.1",
     "parcel": "^2.0.1"

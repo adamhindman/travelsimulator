@@ -1733,6 +1733,7 @@ export const globe = [
       "Pacific Ocean",
       "Atlantic Ocean",
     ],
+    objects: ["The Brooklyn Bridge"],
   },
   {
     area: "Uruguay",
@@ -1804,4 +1805,4 @@ export const globe = [
     type: "country",
     neighbors: ["Botswana", "Mozambique", "South Africa", "Zambia"],
   },
-]
+];

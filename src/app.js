@@ -53,6 +53,8 @@ const handleSubmit = (val, msg = "") => {
   render(val, msg);
 };
 
+// todo add inventory
+
 const getDisplay = (val, msg, area) => {
   let display = `
     ${val != null ? `<p><span class="caret"></span>${val}</p>` : ``}
