@@ -1764,7 +1764,7 @@ export const globe = [
         description: "A large bell containing the sound of freedom",
       },
       {
-        name: "An idaho potato",
+        name: "An Idaho potato",
         description: "A small tuber, covered in dirt.",
       },
     ],
