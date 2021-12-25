@@ -1,8 +1,7 @@
 import { globe } from "./globe.js";
+import { capitalize, arrayToLowerCase } from "./utilities.js";
 
 console.clear();
-
-const arrayToLowercase = (arr) => arr.map((i) => i.toLowerCase());
 
 let location = "United States";
 
@@ -51,7 +50,7 @@ const handleSubmit = (val, msg = "") => {
   let noun = val.substring(3);
   if (
     verb === "go" &&
-    arrayToLowercase(getAttributeOfArea("neighbors")).includes(noun)
+    arrayToLowerCase(getAttributeOfArea("neighbors")).includes(noun)
   ) {
     location = noun;
   } else if (verb === "go") {
@@ -72,7 +71,7 @@ const getDisplay = (val, msg, area) => {
   let display = `
     ${val != null ? `<p><span class="caret"></span>${val}</p>` : ``}
     ${msg != null ? `<p>${msg}</p>` : ``}
-    <p>You are in <span>${location}</span>. ${getObjectsText()}</p>
+    <p>You are in <span>${capitalize(location)}</span>. ${getObjectsText()}</p>
     <p>Exits are: ${getNeighborsText()}
   `;
   return display;

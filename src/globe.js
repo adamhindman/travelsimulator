@@ -629,7 +629,17 @@ export const globe = [
     area: "Easter Island",
     type: "special",
     neighbors: ["Pacific Ocean"],
-    objects: ["A moai statue", "The immunosuppressant drug sirolimus"],
+    objects: [
+      {
+        name: "A moai statue",
+        description: "A massive stone monolith in the shape of a person.",
+      },
+      {
+        name: "A vial of sirolimus",
+        description:
+          "This immunosuppressant drug is used to prevent organ transplant rejection. As every body already knows, sirolimus was discovered on Easter Island, in a soil sample containing streptomyces hygroscopicus.",
+      },
+    ],
   },
   {
     area: "East Timor",
@@ -1743,7 +1753,21 @@ export const globe = [
       "Mexico",
       "Pacific Ocean",
     ],
-    objects: ["The Grand Canyon", "The Liberty Bell", "An idaho potato"],
+    objects: [
+      {
+        name: "The Grand Canyon",
+        description:
+          "A canyon, roughly 277 miles long, 18 miles wide, and 1 mile deep.",
+      },
+      {
+        name: "The Liberty Bell",
+        description: "A large bell containing the sound of freedom",
+      },
+      {
+        name: "An idaho potato",
+        description: "A small tuber, covered in dirt.",
+      },
+    ],
   },
   {
     area: "Uruguay",
@@ -1785,7 +1809,13 @@ export const globe = [
     area: "Wallis Island",
     type: "country",
     neighbors: ["Pacific Ocean"],
-    objects: ["Talietumu"],
+    objects: [
+      {
+        name: "Talietumu",
+        description:
+          "An elevated platform made of rocks, built in the days of Tu'i Tonga empire",
+      },
+    ],
   },
   {
     area: "Wales",
