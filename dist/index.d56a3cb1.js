@@ -464,24 +464,30 @@ console.clear();
 const arrayToLowercase = (arr)=>arr.map((i)=>i.toLowerCase()
     )
 ;
-let currentLocation = "United States";
-let getCurrentNeighbors = ()=>{
-    const current = _globeJs.globe.filter((i)=>{
-        return i.area.toLowerCase() == currentLocation.toLowerCase();
-    });
-    return current[0].neighbors;
+let location = "United States";
+const getAttributeOfArea = (attrib, area = location)=>{
+    items = _globeJs.globe.filter((i)=>i.area.toLowerCase() === area.toLowerCase()
+    )[0][attrib];
+    return items;
 };
-const getCurrentNeighborsList = ()=>{
-    let list = "";
-    list = getCurrentNeighbors().reduce((result, cur, i)=>{
+const getNeighborsText = ()=>{
+    let list = getAttributeOfArea("neighbors").reduce((result, cur, i)=>{
         return result + `<button data-destination="${cur}">${cur}</button>`;
     }, "");
     return `<p>${list}</p>`;
 };
-const render = (val = null, msg = null, area = currentLocation)=>{
-    const t = setTimeout(()=>{
-        displayElement = document.getElementById("display");
-        displayElement.innerHTML += getDisplay(val, msg);
+const getObjectsText = ()=>{
+    let objects = getAttributeOfArea("objects");
+    let listOfObjects = "";
+    if (typeof objects !== "undefined") listOfObjects = objects.reduce((result, cur, i)=>{
+        return result + `${cur} is here. `;
+    }, "");
+    else listOfObjects = `Nothing of importance is here.`;
+    return `<p>${listOfObjects}</p>`;
+};
+const render = (val = null, msg = null, area = location)=>{
+    setTimeout(()=>{
+        document.getElementById("display").innerHTML += getDisplay(val, msg);
         document.querySelector("#console").scrollIntoView(true);
         document.querySelectorAll("button").forEach((i)=>{
             i.addEventListener("click", (e)=>{
@@ -492,11 +498,11 @@ const render = (val = null, msg = null, area = currentLocation)=>{
     }, 500);
 };
 const handleSubmit = (val, msg = "")=>{
-    verb = val.split(" ")[0];
-    noun = val.substring(3);
-    if (verb == "go" && arrayToLowercase(getCurrentNeighbors()).includes(noun)) currentLocation = noun;
-    else if (verb == "go") msg = `<p>You can't get to ${noun} from here!</p>`;
-    else if (verb == "help") msg = `
+    let verb = val.split(" ")[0];
+    let noun = val.substring(3);
+    if (verb === "go" && arrayToLowercase(getAttributeOfArea("neighbors")).includes(noun)) location = noun;
+    else if (verb === "go") msg = `<p>You can't get to ${noun} from here!</p>`;
+    else if (verb === "help") msg = `
       <h3>HELP</h3>
       <p>Type "go" and then the name of a nearby country to travel there.</p>
       <p>Or click on a country's name in the list to make me type it for you.</p>
@@ -505,12 +511,11 @@ const handleSubmit = (val, msg = "")=>{
     render(val, msg);
 };
 const getDisplay = (val, msg, area)=>{
-    let display;
-    display = `
+    let display = `
     ${val != null ? `<p><span class="caret"></span>${val}</p>` : ``}
     ${msg != null ? `<p>${msg}</p>` : ``}
-    <p>You are in <span>${currentLocation}</span></p>
-    <p>Exits are: ${getCurrentNeighborsList()}
+    <p>You are in <span>${location}</span>. ${getObjectsText()}</p>
+    <p>Exits are: ${getNeighborsText()}
   `;
     return display;
 };
@@ -555,6 +560,8 @@ const globe = [
             "China",
             "Colombia",
             "Costa Rica",
+            "East Timor",
+            "Easter Island",
             "Ecuador",
             "El Salvador",
             "Federated States of Micronesia",
@@ -584,12 +591,12 @@ const globe = [
             "South Korea",
             "Taiwan",
             "Thailand",
-            "East Timor",
             "Tonga",
             "Tuvalu",
             "United States",
             "Vanuatu",
-            "Vietnam", 
+            "Vietnam",
+            "Wallis Island", 
         ]
     },
     {
@@ -597,108 +604,108 @@ const globe = [
         type: "ocean",
         neighbors: [
             "Albania",
-            "Belgium",
-            "Bermuda",
-            "Bosnia and Herzegovina",
-            "Bulgaria",
-            "Croatia",
-            "Cyprus",
-            "Denmark",
-            "Estonia",
-            "Finland",
-            "France",
-            "Georgia",
-            "Germany",
-            "Greece",
-            "Iceland",
-            "Ireland",
-            "Italy",
-            "Latvia",
-            "Lithuania",
-            "Malta",
-            "Monaco",
-            "Montenegro",
-            "Netherlands",
-            "Norway",
-            "Poland",
-            "Portugal",
-            "Romania",
-            "Russia",
-            "Slovenia",
-            "Spain",
-            "Sweden",
-            "Turkey",
-            "Ukraine",
             "Algeria",
             "Angola",
+            "Antigua and Barbuda",
+            "Argentina",
+            "Bahamas",
+            "Barbados",
+            "Belgium",
+            "Belize",
             "Benin",
+            "Bermuda",
+            "Bermuda",
+            "Bosnia and Herzegovina",
+            "Brazil",
+            "Bulgaria",
             "Cameroon",
+            "Canada",
             "Cape Verde",
+            "Chile",
+            "Colombia",
+            "Costa Rica",
+            "Croatia",
+            "Cuba",
+            "Cyprus",
+            "Cyprus",
             "Democratic Republic of the Congo",
+            "Denmark",
+            "Dominica",
+            "Dominican Republic",
             "Egypt",
             "England",
             "Equatorial Guinea",
+            "Estonia",
+            "Finland",
+            "France",
             "Gabon",
             "Gambia",
+            "Georgia",
+            "Georgia",
+            "Germany",
             "Ghana",
-            "Guinea",
+            "Greece",
+            "Grenada",
+            "Guatemala",
             "Guinea-Bissau",
+            "Guinea",
+            "Guyana",
+            "Haiti",
+            "Honduras",
+            "Iceland",
+            "Ireland",
+            "Ireland",
+            "Israel",
+            "Italy",
             "Ivory Coast",
+            "Jamaica",
+            "Latvia",
+            "Lebanon",
             "Liberia",
             "Libya",
+            "Lithuania",
+            "Malta",
             "Mauritania",
+            "Mexico",
+            "Monaco",
+            "Montenegro",
             "Morocco",
             "Namibia",
+            "Netherlands",
+            "Nicaragua",
             "Nigeria",
+            "Norway",
+            "Palestine",
+            "Panama",
+            "Poland",
+            "Portugal",
             "Republic of the Congo",
+            "Romania",
+            "Russia",
+            "Russia",
+            "Saint Kitts and Nevis",
+            "Saint Lucia",
+            "Saint Vincent and the Grenadines",
             "São Tomé and Príncipe",
             "Scotland",
             "Senegal",
             "Sierra Leone",
+            "Slovenia",
             "South Africa",
-            "Togo",
-            "Tunisia",
-            "Cyprus",
-            "Georgia",
-            "Israel",
-            "Lebanon",
-            "Russia",
-            "Palestine",
-            "Syria",
-            "Turkey",
-            "Argentina",
-            "Brazil",
-            "Chile",
-            "Colombia",
+            "Spain",
             "Suriname",
-            "Uruguay",
-            "Venezuela",
-            "Bahamas",
-            "Belize",
-            "Bermuda",
-            "Canada",
-            "Costa Rica",
-            "Guatemala",
-            "Honduras",
-            "Mexico",
-            "Nicaragua",
-            "Panama",
-            "United States",
-            "Antigua and Barbuda",
-            "Guyana",
-            "Barbados",
-            "Cuba",
-            "Dominica",
-            "Dominican Republic",
-            "Grenada",
-            "Haiti",
-            "Jamaica",
-            "Saint Kitts and Nevis",
-            "Saint Lucia",
-            "Saint Vincent and the Grenadines",
             "Svalbard",
+            "Sweden",
+            "Syria",
+            "Togo",
             "Trinidad and Tobago",
-            "Ireland", 
+            "Tunisia",
+            "Turkey",
+            "Turkey",
+            "Ukraine",
+            "United States",
+            "Uruguay",
+            "Venezuela", 
         ]
     },
     {
@@ -710,6 +717,7 @@ const globe = [
             "Bangladesh",
             "Comoros",
             "Djibouti",
+            "East Timor",
             "Egypt",
             "Eritrea",
             "India",
@@ -738,7 +746,6 @@ const globe = [
             "Sudan",
             "Tanzania",
             "Thailand",
-            "East Timor",
             "United Arab Emirates",
             "Yemen", 
         ]
@@ -913,31 +920,31 @@ const globe = [
         area: "Belgium",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "France",
             "Germany",
             "Luxembourg",
-            "Netherlands",
-            "Atlantic Ocean", 
+            "Netherlands", 
         ]
     },
     {
         area: "Belize",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Guatemala",
-            "Mexico",
-            "Atlantic Ocean"
+            "Mexico"
         ]
     },
     {
         area: "Benin",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Burkina Faso",
             "Niger",
             "Nigeria",
-            "Togo",
-            "Atlantic Ocean"
+            "Togo"
         ]
     },
     {
@@ -970,10 +977,10 @@ const globe = [
         area: "Bosnia and Herzegovina",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Croatia",
             "Montenegro",
-            "Serbia",
-            "Atlantic Ocean"
+            "Serbia"
         ]
     },
     {
@@ -991,6 +998,7 @@ const globe = [
         type: "country",
         neighbors: [
             "Argentina",
+            "Atlantic Ocean",
             "Bolivia",
             "Colombia",
             "French Guiana",
@@ -999,8 +1007,7 @@ const globe = [
             "Peru",
             "Suriname",
             "Uruguay",
-            "Venezuela",
-            "Atlantic Ocean", 
+            "Venezuela", 
         ]
     },
     {
@@ -1014,12 +1021,12 @@ const globe = [
         area: "Bulgaria",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Greece",
             "North Macedonia",
             "Romania",
             "Serbia",
-            "Turkey",
-            "Atlantic Ocean", 
+            "Turkey", 
         ]
     },
     {
@@ -1048,30 +1055,32 @@ const globe = [
         type: "country",
         neighbors: [
             "Laos",
+            "Pacific Ocean",
             "Thailand",
-            "Vietnam",
-            "Pacific Ocean"
+            "Vietnam"
         ]
     },
     {
         area: "Cameroon",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Central African Republic",
             "Chad",
-            "Republic of the Congo",
-            "Equatorial Guinea Gabon Nigeria",
-            "Atlantic Ocean", 
+            "Equatorial Guinea",
+            "Gabon",
+            "Nigeria",
+            "Republic of the Congo", 
         ]
     },
     {
         area: "Canada",
         type: "country",
         neighbors: [
-            "United States",
-            "Pacific Ocean",
+            "Arctic Ocean",
             "Atlantic Ocean",
-            "Arctic Ocean", 
+            "Pacific Ocean",
+            "United States", 
         ]
     },
     {
@@ -1110,10 +1119,10 @@ const globe = [
         type: "country",
         neighbors: [
             "Argentina",
+            "Atlantic Ocean",
             "Bolivia",
-            "Peru",
             "Pacific Ocean",
-            "Atlantic Ocean", 
+            "Peru", 
         ]
     },
     {
@@ -1122,34 +1131,34 @@ const globe = [
         neighbors: [
             "Afghanistan",
             "Bhutan",
-            "India",
             "Hong Kong",
+            "India",
             "Kazakhstan",
-            "North Korea",
             "Kyrgyzstan",
             "Laos",
             "Macau",
             "Mongolia",
             "Myanmar",
             "Nepal",
+            "North Korea",
+            "Pacific Ocean",
             "Pakistan",
             "Russia",
             "Tajikistan",
-            "Vietnam",
-            "Pacific Ocean", 
+            "Vietnam", 
         ]
     },
     {
         area: "Colombia",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Brazil",
             "Ecuador",
+            "Pacific Ocean",
             "Panama",
             "Peru",
-            "Venezuela",
-            "Pacific Ocean",
-            "Atlantic Ocean", 
+            "Venezuela", 
         ]
     },
     {
@@ -1164,6 +1173,7 @@ const globe = [
         type: "country",
         neighbors: [
             "Angola",
+            "Atlantic Ocean",
             "Burundi",
             "Central African Republic",
             "Republic of the Congo",
@@ -1171,8 +1181,7 @@ const globe = [
             "South Sudan",
             "Tanzania",
             "Uganda",
-            "Zambia",
-            "Atlantic Ocean", 
+            "Zambia", 
         ]
     },
     {
@@ -1183,41 +1192,41 @@ const globe = [
             "Cameroon",
             "Central African Republic",
             "Democratic Republic of the Congo",
-            " Gabon", 
+            "Gabon", 
         ]
     },
     {
         area: "Costa Rica",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Nicaragua",
-            "Panama",
             "Pacific Ocean",
-            "Atlantic Ocean"
+            "Panama"
         ]
     },
     {
         area: "Côte d'Ivoire",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Burkina Faso",
             "Ghana",
-            " Guinea",
-            " Liberia",
-            "Mali",
-            "Atlantic Ocean", 
+            "Guinea",
+            "Liberia",
+            "Mali", 
         ]
     },
     {
         area: "Croatia",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Bosnia and Herzegovina",
             "Hungary",
             "Montenegro",
             "Serbia",
-            "Slovenia",
-            "Atlantic Ocean", 
+            "Slovenia", 
         ]
     },
     {
@@ -1240,7 +1249,7 @@ const globe = [
         neighbors: [
             "Austria",
             " Germany",
-            " Poland",
+            "Poland",
             " Slovakia"
         ]
     },
@@ -1257,9 +1266,9 @@ const globe = [
         type: "country",
         neighbors: [
             "Eritrea",
-            " Ethiopia",
-            "Somaliland",
-            "Indian Ocean"
+            "Ethiopia",
+            "Indian Ocean",
+            "Somaliland"
         ]
     },
     {
@@ -1273,8 +1282,19 @@ const globe = [
         area: "Dominican Republic",
         type: "country",
         neighbors: [
-            "Haiti",
-            "Atlantic Ocean"
+            "Atlantic Ocean",
+            "Haiti"
+        ]
+    },
+    {
+        area: "Easter Island",
+        type: "special",
+        neighbors: [
+            "Pacific Ocean"
+        ],
+        objects: [
+            "A moai statue",
+            "The immunosuppressant drug sirolimus"
         ]
     },
     {
@@ -1282,8 +1302,8 @@ const globe = [
         type: "country",
         neighbors: [
             "Indonesia",
-            "Pacific Ocean",
-            "Indian Ocean"
+            "Indian Ocean",
+            "Pacific Ocean"
         ]
     },
     {
@@ -1291,20 +1311,20 @@ const globe = [
         type: "country",
         neighbors: [
             "Colombia",
-            "Peru",
-            "Pacific Ocean"
+            "Pacific Ocean",
+            "Peru"
         ]
     },
     {
         area: "Egypt",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Gaza Strip",
+            "Indian Ocean",
             "Israel",
             "Libya",
-            "Sudan",
-            "Atlantic Ocean",
-            "Indian Ocean", 
+            "Sudan", 
         ]
     },
     {
@@ -1320,18 +1340,18 @@ const globe = [
         area: "England",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Scotland",
-            "Wales",
-            "Atlantic Ocean"
+            "Wales"
         ]
     },
     {
         area: "Equatorial Guinea",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Cameroon",
-            "Gabon",
-            "Atlantic Ocean"
+            "Gabon"
         ]
     },
     {
@@ -1339,18 +1359,18 @@ const globe = [
         type: "country",
         neighbors: [
             "Djibouti",
-            " Ethiopia",
-            " Sudan",
-            "Indian Ocean"
+            "Ethiopia",
+            "Indian Ocean",
+            "Sudan"
         ]
     },
     {
         area: "Estonia",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Latvia",
-            "Russia",
-            "Atlantic Ocean"
+            "Russia"
         ]
     },
     {
@@ -1370,7 +1390,7 @@ const globe = [
             "Kenya",
             "Somalia",
             "South Sudan",
-            " Sudan", 
+            "Sudan", 
         ]
     },
     {
@@ -1384,10 +1404,10 @@ const globe = [
         area: "Finland",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Norway",
             "Sweden",
-            " Russia",
-            "Atlantic Ocean"
+            "Russia"
         ]
     },
     {
@@ -1395,51 +1415,52 @@ const globe = [
         type: "country",
         neighbors: [
             "Andorra",
+            "Atlantic Ocean",
             "Belgium",
             "Germany",
             "Italy",
             "Luxembourg",
             "Monaco",
             "Spain",
-            "Switzerland",
-            "Atlantic Ocean", 
+            "Switzerland", 
         ]
     },
     {
         area: "Gabon",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Cameroon",
-            "Republic of the Congo",
             "Equatorial Guinea",
-            "Atlantic Ocean", 
+            "Republic of the Congo", 
         ]
     },
     {
         area: "Gambia",
         type: "country",
         neighbors: [
-            "Senegal",
-            "Atlantic Ocean"
+            "Atlantic Ocean",
+            "Senegal"
         ]
     },
     {
         area: "Georgia",
         type: "country",
         neighbors: [
+            "Abkhazia",
             "Armenia",
+            "Atlantic Ocean",
             "Azerbaijan",
             "Russia",
-            "Turkey",
-            "Abkhazia",
             "South Ossetia",
-            "Atlantic Ocean", 
+            "Turkey", 
         ]
     },
     {
         area: "Germany",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Austria",
             "Belgium",
             "Czech Republic",
@@ -1448,18 +1469,17 @@ const globe = [
             "Luxembourg",
             "Netherlands",
             "Poland",
-            "Switzerland",
-            "Atlantic Ocean", 
+            "Switzerland", 
         ]
     },
     {
         area: "Ghana",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Burkina Faso",
             "Côte d'Ivoire",
-            "Togo",
-            "Atlantic Ocean"
+            "Togo"
         ]
     },
     {
@@ -1467,10 +1487,10 @@ const globe = [
         type: "country",
         neighbors: [
             "Albania",
+            "Atlantic Ocean",
             "Bulgaria",
-            "Turkey",
             "North Macedonia",
-            "Atlantic Ocean", 
+            "Turkey", 
         ]
     },
     {
@@ -1492,63 +1512,63 @@ const globe = [
         area: "Guatemala",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Belize",
             "El Salvador",
             "Honduras",
             "Mexico",
-            "Pacific Ocean",
-            "Atlantic Ocean", 
+            "Pacific Ocean", 
         ]
     },
     {
         area: "Guinea",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Côte d'Ivoire",
             "Guinea-Bissau",
             "Liberia",
             "Mali",
             "Senegal",
-            "Sierra Leone",
-            "Atlantic Ocean", 
+            "Sierra Leone", 
         ]
     },
     {
         area: "Guinea-Bissau",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Guinea",
-            "Senegal",
-            "Atlantic Ocean"
+            "Senegal"
         ]
     },
     {
         area: "Guyana",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Brazil",
             "Suriname",
-            "Venezuela",
-            "Atlantic Ocean"
+            "Venezuela"
         ]
     },
     {
         area: "Haiti",
         type: "country",
         neighbors: [
-            "Dominican Republic",
-            "Atlantic Ocean"
+            "Atlantic Ocean",
+            "Dominican Republic"
         ]
     },
     {
         area: "Honduras",
         type: "country",
         neighbors: [
-            "Guatemala",
+            "Atlantic Ocean",
             "El Salvador",
+            "Guatemala",
             "Nicaragua",
-            "Pacific Ocean",
-            "Atlantic Ocean", 
+            "Pacific Ocean", 
         ]
     },
     {
@@ -1585,13 +1605,13 @@ const globe = [
         type: "country",
         neighbors: [
             "Bangladesh",
-            " Bhutan",
-            " China",
-            " Myanmar",
-            " Nepal",
-            " Pakistan",
-            "Sri Lanka",
-            "Indian Ocean", 
+            "Bhutan",
+            "China",
+            "Indian Ocean",
+            "Myanmar",
+            "Nepal",
+            "Pakistan",
+            "Sri Lanka", 
         ]
     },
     {
@@ -1599,10 +1619,10 @@ const globe = [
         type: "country",
         neighbors: [
             "East Timor",
+            "Indian Ocean",
             "Malaysia",
-            "Papua New Guinea",
             "Pacific Ocean",
-            "Indian Ocean", 
+            "Papua New Guinea", 
         ]
     },
     {
@@ -1611,25 +1631,25 @@ const globe = [
         neighbors: [
             "Afghanistan",
             "Armenia",
-            " Azerbaijan",
+            "Azerbaijan",
+            "Indian Ocean",
             "Iraq",
             "Pakistan",
             "Turkey",
-            "Turkmenistan",
-            "Indian Ocean", 
+            "Turkmenistan", 
         ]
     },
     {
         area: "Iraq",
         type: "country",
         neighbors: [
+            "Indian Ocean",
             "Iran",
             "Jordan",
             "Kuwait",
             "Saudi Arabia",
             "Syria",
-            "Turkey",
-            "Indian Ocean", 
+            "Turkey", 
         ]
     },
     {
@@ -1643,25 +1663,25 @@ const globe = [
         area: "Israel",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Egypt",
+            "Indian Ocean",
             "Jordan",
             "Lebanon",
-            "Syria",
-            "Atlantic Ocean",
-            "Indian Ocean", 
+            "Syria", 
         ]
     },
     {
         area: "Italy",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Austria",
             "France",
             "San Marino",
             "Slovenia",
             "Switzerland",
-            "Vatican City",
-            "Atlantic Ocean", 
+            "Vatican City", 
         ]
     },
     {
@@ -1682,11 +1702,11 @@ const globe = [
         area: "Jordan",
         type: "country",
         neighbors: [
+            "Indian Ocean",
             "Iraq",
             "Israel",
             "Saudi Arabia",
-            "Syria",
-            "Indian Ocean"
+            "Syria"
         ]
     },
     {
@@ -1694,7 +1714,7 @@ const globe = [
         type: "country",
         neighbors: [
             "China",
-            " Kyrgyzstan",
+            "Kyrgyzstan",
             "Russia",
             "Turkmenistan",
             "Uzbekistan"
@@ -1705,11 +1725,11 @@ const globe = [
         type: "country",
         neighbors: [
             "Ethiopia",
+            "Indian Ocean",
             "Somalia",
             "South Sudan",
             "Tanzania",
-            "Uganda",
-            "Indian Ocean", 
+            "Uganda", 
         ]
     },
     {
@@ -1724,9 +1744,9 @@ const globe = [
         type: "country",
         neighbors: [
             "China",
+            "Pacific Ocean",
             "South Korea",
-            "Russia",
-            "Pacific Ocean"
+            "Russia"
         ]
     },
     {
@@ -1751,9 +1771,9 @@ const globe = [
         area: "Kuwait",
         type: "country",
         neighbors: [
+            "Indian Ocean",
             "Iraq",
-            "Saudi Arabia",
-            "Indian Ocean"
+            "Saudi Arabia"
         ]
     },
     {
@@ -1781,20 +1801,20 @@ const globe = [
         area: "Latvia",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Belarus",
             "Estonia",
             "Lithuania",
-            "Russia",
-            "Atlantic Ocean"
+            "Russia"
         ]
     },
     {
         area: "Lebanon",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Israel",
-            "Syria",
-            "Atlantic Ocean"
+            "Syria"
         ]
     },
     {
@@ -1808,10 +1828,10 @@ const globe = [
         area: "Liberia",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Guinea",
             "Côte d'Ivoire",
-            "Sierra Leone",
-            "Atlantic Ocean"
+            "Sierra Leone"
         ]
     },
     {
@@ -1819,12 +1839,12 @@ const globe = [
         type: "country",
         neighbors: [
             "Algeria",
+            "Atlantic Ocean",
             "Chad",
             "Egypt",
             "Niger",
             "Sudan",
-            "Tunisia",
-            "Atlantic Ocean", 
+            "Tunisia", 
         ]
     },
     {
@@ -1839,11 +1859,11 @@ const globe = [
         area: "Lithuania",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Belarus",
             "Latvia",
             "Poland",
-            "Russia",
-            "Atlantic Ocean"
+            "Russia"
         ]
     },
     {
@@ -1891,10 +1911,10 @@ const globe = [
         type: "country",
         neighbors: [
             "Brunei",
+            "Indian Ocean",
             "Indonesia",
-            "Thailand",
             "Pacific Ocean",
-            "Indian Ocean", 
+            "Thailand", 
         ]
     },
     {
@@ -1936,10 +1956,10 @@ const globe = [
         type: "country",
         neighbors: [
             "Algeria",
+            "Atlantic Ocean",
             "Mali",
             "Senegal",
-            "Western Sahara",
-            "Atlantic Ocean", 
+            "Western Sahara", 
         ]
     },
     {
@@ -1953,11 +1973,11 @@ const globe = [
         area: "Mexico",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Belize",
             "Guatemala",
-            "United States",
             "Pacific Ocean",
-            "Atlantic Ocean", 
+            "United States", 
         ]
     },
     {
@@ -1979,8 +1999,8 @@ const globe = [
         area: "Monaco",
         type: "country",
         neighbors: [
-            "France",
-            "Atlantic Ocean"
+            "Atlantic Ocean",
+            "France"
         ]
     },
     {
@@ -1996,11 +2016,11 @@ const globe = [
         type: "country",
         neighbors: [
             "Albania",
+            "Atlantic Ocean",
             "Bosnia and Herzegovina",
             "Croatia",
             "Kosovo",
-            "Serbia",
-            "Atlantic Ocean", 
+            "Serbia", 
         ]
     },
     {
@@ -2008,9 +2028,9 @@ const globe = [
         type: "country",
         neighbors: [
             "Algeria",
+            "Atlantic Ocean",
             "Western Sahara",
-            "Spain",
-            "Atlantic Ocean"
+            "Spain"
         ]
     },
     {
@@ -2018,12 +2038,12 @@ const globe = [
         type: "country",
         neighbors: [
             "Eswatini",
+            "Indian Ocean",
             "Malawi",
             "South Africa",
             "Tanzania",
             "Zambia",
-            "Zimbabwe",
-            "Indian Ocean", 
+            "Zimbabwe", 
         ]
     },
     {
@@ -2033,9 +2053,9 @@ const globe = [
             "Bangladesh",
             "China",
             "India",
+            "Indian Ocean",
             "Laos",
-            "Thailand",
-            "Indian Ocean", 
+            "Thailand", 
         ]
     },
     {
@@ -2043,10 +2063,10 @@ const globe = [
         type: "country",
         neighbors: [
             "Angola",
+            "Atlantic Ocean",
             "Botswana",
             "South Africa",
-            "Zambia",
-            "Atlantic Ocean", 
+            "Zambia", 
         ]
     },
     {
@@ -2068,11 +2088,11 @@ const globe = [
         area: "Netherlands",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Belgium",
             "Germany",
             "Saint Martin",
-            "France",
-            "Atlantic Ocean", 
+            "France", 
         ]
     },
     {
@@ -2086,10 +2106,10 @@ const globe = [
         area: "Nicaragua",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Costa Rica",
             "Honduras",
-            "Pacific Ocean",
-            "Atlantic Ocean"
+            "Pacific Ocean"
         ]
     },
     {
@@ -2109,11 +2129,11 @@ const globe = [
         area: "Nigeria",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Benin",
             "Cameroon",
             "Chad",
-            "Niger",
-            "Atlantic Ocean"
+            "Niger"
         ]
     },
     {
@@ -2131,21 +2151,21 @@ const globe = [
         area: "Norway",
         type: "country",
         neighbors: [
+            "Arctic Ocean",
+            "Atlantic Ocean",
             "Finland",
             "Sweden",
-            "Russia",
-            "Arctic Ocean",
-            "Atlantic Ocean", 
+            "Russia", 
         ]
     },
     {
         area: "Oman",
         type: "country",
         neighbors: [
+            "Indian Ocean",
             "Saudi Arabia",
             "United Arab Emirates",
-            "Yemen",
-            "Indian Ocean", 
+            "Yemen", 
         ]
     },
     {
@@ -2154,9 +2174,9 @@ const globe = [
         neighbors: [
             "Afghanistan",
             "India",
+            "Indian Ocean",
             "Iran",
-            "China",
-            "Indian Ocean"
+            "China"
         ]
     },
     {
@@ -2170,20 +2190,20 @@ const globe = [
         area: "Palestine",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Egypt",
             "Israel",
-            "Jordan",
-            "Atlantic Ocean"
+            "Jordan"
         ]
     },
     {
         area: "Panama",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Colombia",
             "Costa Rica",
-            "Pacific Ocean",
-            "Atlantic Ocean"
+            "Pacific Ocean"
         ]
     },
     {
@@ -2226,48 +2246,51 @@ const globe = [
         area: "Poland",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Belarus",
             "Czech Republic",
             "Germany",
             "Lithuania",
             "Russia",
             "Slovakia",
-            "Ukraine",
-            "Atlantic Ocean", 
+            "Ukraine", 
         ]
     },
     {
         area: "Portugal",
         type: "country",
         neighbors: [
-            "Spain",
-            "Atlantic Ocean"
+            "Atlantic Ocean",
+            "Spain"
         ]
     },
     {
         area: "Qatar",
         type: "country",
         neighbors: [
-            "Saudi Arabia",
-            "Indian Ocean"
+            "Indian Ocean",
+            "Saudi Arabia"
         ]
     },
     {
         area: "Romania",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Bulgaria",
             "Hungary",
             "Moldova",
             "Serbia",
-            "Ukraine",
-            "Atlantic Ocean", 
+            "Ukraine", 
         ]
     },
     {
         area: "Russia",
         type: "country",
         neighbors: [
+            "Abkhazia",
+            "Arctic Ocean",
+            "Atlantic Ocean",
             "Azerbaijan",
             "Belarus",
             "China",
@@ -2275,18 +2298,15 @@ const globe = [
             "Finland",
             "Georgia",
             "Kazakhstan",
-            "North Korea",
             "Latvia",
             "Lithuania",
             "Mongolia",
+            "North Korea",
             "Norway",
-            "Poland",
-            "Ukraine",
-            "South Ossetia",
-            "Abkhazia",
-            "Arctic Ocean",
             "Pacific Ocean",
-            "Atlantic Ocean", 
+            "Poland",
+            "South Ossetia",
+            "Ukraine", 
         ]
     },
     {
@@ -2345,34 +2365,34 @@ const globe = [
         area: "Saudi Arabia",
         type: "country",
         neighbors: [
+            "Indian Ocean",
             "Iraq",
             "Jordan",
             "Kuwait",
             "Oman",
             "Qatar",
             "United Arab Emirates",
-            "Yemen",
-            "Indian Ocean", 
+            "Yemen", 
         ]
     },
     {
         area: "Scotland",
         type: "country",
         neighbors: [
-            "England",
-            "Atlantic Ocean"
+            "Atlantic Ocean",
+            "England"
         ]
     },
     {
         area: "Senegal",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Gambia",
-            "Guinea",
             "Guinea-Bissau",
+            "Guinea",
             "Mali",
-            "Mauritania",
-            "Atlantic Ocean", 
+            "Mauritania", 
         ]
     },
     {
@@ -2400,17 +2420,17 @@ const globe = [
         area: "Sierra Leone",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Guinea",
-            "Liberia",
-            "Atlantic Ocean"
+            "Liberia"
         ]
     },
     {
         area: "Singapore",
         type: "country",
         neighbors: [
-            "Pacific Ocean",
-            "Indian Ocean"
+            "Indian Ocean",
+            "Pacific Ocean"
         ]
     },
     {
@@ -2428,11 +2448,11 @@ const globe = [
         area: "Slovenia",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Austria",
             "Croatia",
             "Italy",
-            "Hungary",
-            "Atlantic Ocean"
+            "Hungary"
         ]
     },
     {
@@ -2448,22 +2468,22 @@ const globe = [
         neighbors: [
             "Djibouti",
             "Ethiopia",
-            "Kenya",
-            "Indian Ocean"
+            "Indian Ocean",
+            "Kenya"
         ]
     },
     {
         area: "South Africa",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Botswana",
             "Eswatini",
+            "Indian Ocean",
             "Lesotho",
             "Mozambique",
             "Namibia",
-            "Zimbabwe",
-            "Atlantic Ocean",
-            "Indian Ocean", 
+            "Zimbabwe", 
         ]
     },
     {
@@ -2490,12 +2510,12 @@ const globe = [
         area: "Spain",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Andorra",
             "France",
             "Portugal",
             "Gibraltar",
-            "Morocco",
-            "Atlantic Ocean", 
+            "Morocco", 
         ]
     },
     {
@@ -2515,38 +2535,38 @@ const globe = [
             "Egypt",
             "Eritrea",
             "Ethiopia",
+            "Indian Ocean",
             "Libya",
-            "South Sudan",
-            "Indian Ocean", 
+            "South Sudan", 
         ]
     },
     {
         area: "Suriname",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Brazil",
             "French Guiana",
-            "Guyana",
-            "Atlantic Ocean"
+            "Guyana"
         ]
     },
     {
         area: "Svalbard",
         type: "special",
         neighbors: [
+            "Atlantic Ocean",
             "Brazil",
             "French Guiana",
-            "Guyana",
-            "Atlantic Ocean"
+            "Guyana"
         ]
     },
     {
         area: "Sweden",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Finland",
-            "Norway",
-            "Atlantic Ocean"
+            "Norway"
         ]
     },
     {
@@ -2555,21 +2575,21 @@ const globe = [
         neighbors: [
             "Austria",
             "France",
+            "Germany",
             "Italy",
-            "Liechtenstein",
-            "Germany"
+            "Liechtenstein"
         ]
     },
     {
         area: "Syria",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Iraq",
             "Israel",
             "Jordan",
             "Lebanon",
-            "Turkey",
-            "Atlantic Ocean", 
+            "Turkey", 
         ]
     },
     {
@@ -2595,13 +2615,13 @@ const globe = [
         neighbors: [
             "Burundi",
             "Democratic Republic of the Congo",
+            "Indian Ocean",
             "Kenya",
             "Malawi",
             "Mozambique",
             "Rwanda",
             "Uganda",
-            "Zambia",
-            "Indian Ocean", 
+            "Zambia", 
         ]
     },
     {
@@ -2616,11 +2636,11 @@ const globe = [
         type: "country",
         neighbors: [
             "Cambodia",
+            "Indian Ocean",
             "Laos",
             "Malaysia",
             "Myanmar",
-            "Pacific Ocean",
-            "Indian Ocean", 
+            "Pacific Ocean", 
         ]
     },
     {
@@ -2659,14 +2679,14 @@ const globe = [
         type: "country",
         neighbors: [
             "Armenia",
+            "Atlantic Ocean",
             "Azerbaijan",
             "Bulgaria",
             "Georgia",
             "Greece",
             "Iran",
             "Iraq",
-            "Syria",
-            "Atlantic Ocean", 
+            "Syria", 
         ]
     },
     {
@@ -2714,20 +2734,25 @@ const globe = [
         area: "United Arab Emirates",
         type: "country",
         neighbors: [
+            "Indian Ocean",
             "Oman",
-            "Saudi Arabia",
-            "Indian Ocean"
+            "Saudi Arabia"
         ]
     },
     {
         area: "United States",
         type: "country",
         neighbors: [
+            "Arctic Ocean",
+            "Atlantic Ocean",
             "Canada",
             "Mexico",
-            "Arctic Ocean",
-            "Pacific Ocean",
-            "Atlantic Ocean", 
+            "Pacific Ocean", 
+        ],
+        objects: [
+            "The Grand Canyon",
+            "The Liberty Bell",
+            "An idaho potato"
         ]
     },
     {
@@ -2735,8 +2760,8 @@ const globe = [
         type: "country",
         neighbors: [
             "Argentina",
-            "Brazil",
-            "Atlantic Ocean"
+            "Atlantic Ocean",
+            "Brazil"
         ]
     },
     {
@@ -2768,10 +2793,10 @@ const globe = [
         area: "Venezuela",
         type: "country",
         neighbors: [
+            "Atlantic Ocean",
             "Brazil",
             "Colombia",
-            "Guyana",
-            "Atlantic Ocean"
+            "Guyana"
         ]
     },
     {
@@ -2785,11 +2810,21 @@ const globe = [
         ]
     },
     {
+        area: "Wallis Island",
+        type: "country",
+        neighbors: [
+            "Pacific Ocean"
+        ],
+        objects: [
+            "Talietumu"
+        ]
+    },
+    {
         area: "Wales",
         type: "country",
         neighbors: [
-            "England",
-            "Atlantic Ocean"
+            "Atlantic Ocean",
+            "England"
         ]
     },
     {
@@ -2805,9 +2840,9 @@ const globe = [
         area: "Yemen",
         type: "country",
         neighbors: [
+            "Indian Ocean",
             "Oman",
-            "Saudi Arabia",
-            "Indian Ocean"
+            "Saudi Arabia"
         ]
     },
     {

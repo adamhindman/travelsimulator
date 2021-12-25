@@ -4,24 +4,36 @@ console.clear();
 
 const arrayToLowercase = (arr) => arr.map((i) => i.toLowerCase());
 
-let currentLocation = "United States";
+let location = "United States";
 
-let getCurrentNeighbors = () => {
-  const current = globe.filter((i) => {
-    return i.area.toLowerCase() === currentLocation.toLowerCase();
-  });
-  return current[0].neighbors;
+const getAttributeOfArea = (attrib, area = location) => {
+  items = globe.filter((i) => i.area.toLowerCase() === area.toLowerCase())[0][
+    attrib
+  ];
+  return items;
 };
 
-const getCurrentNeighborsList = () => {
-  let list = "";
-  list = getCurrentNeighbors().reduce((result, cur, i) => {
+const getNeighborsText = () => {
+  let list = getAttributeOfArea("neighbors").reduce((result, cur, i) => {
     return result + `<button data-destination="${cur}">${cur}</button>`;
   }, "");
   return `<p>${list}</p>`;
 };
 
-const render = (val = null, msg = null, area = currentLocation) => {
+const getObjectsText = () => {
+  let objects = getAttributeOfArea("objects");
+  let listOfObjects = "";
+  if (typeof objects !== "undefined") {
+    listOfObjects = objects.reduce((result, cur, i) => {
+      return result + `${cur} is here. `;
+    }, "");
+  } else {
+    listOfObjects = `Nothing of importance is here.`;
+  }
+  return `<p>${listOfObjects}</p>`;
+};
+
+const render = (val = null, msg = null, area = location) => {
   setTimeout(() => {
     document.getElementById("display").innerHTML += getDisplay(val, msg);
     document.querySelector("#console").scrollIntoView(true);
@@ -37,8 +49,11 @@ const render = (val = null, msg = null, area = currentLocation) => {
 const handleSubmit = (val, msg = "") => {
   let verb = val.split(" ")[0];
   let noun = val.substring(3);
-  if (verb === "go" && arrayToLowercase(getCurrentNeighbors()).includes(noun)) {
-    currentLocation = noun;
+  if (
+    verb === "go" &&
+    arrayToLowercase(getAttributeOfArea("neighbors")).includes(noun)
+  ) {
+    location = noun;
   } else if (verb === "go") {
     msg = `<p>You can't get to ${noun} from here!</p>`;
   } else if (verb === "help") {
@@ -53,14 +68,12 @@ const handleSubmit = (val, msg = "") => {
   render(val, msg);
 };
 
-// todo add inventory
-
 const getDisplay = (val, msg, area) => {
   let display = `
     ${val != null ? `<p><span class="caret"></span>${val}</p>` : ``}
     ${msg != null ? `<p>${msg}</p>` : ``}
-    <p>You are in <span>${currentLocation}</span></p>
-    <p>Exits are: ${getCurrentNeighborsList()}
+    <p>You are in <span>${location}</span>. ${getObjectsText()}</p>
+    <p>Exits are: ${getNeighborsText()}
   `;
   return display;
 };
