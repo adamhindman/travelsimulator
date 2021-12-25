@@ -7,9 +7,9 @@ const arrayToLowercase = (arr) => arr.map((i) => i.toLowerCase());
 let location = "United States";
 
 const getAttributeOfArea = (attrib, area = location) => {
-  items = globe.filter((i) => i.area.toLowerCase() === area.toLowerCase())[0][
-    attrib
-  ];
+  let items = globe.filter(
+    (i) => i.area.toLowerCase() === area.toLowerCase()
+  )[0][attrib];
   return items;
 };
 
