@@ -1,6 +1,6 @@
-console.clear();
-
 import { globe } from "./globe.js";
+
+console.clear();
 
 const arrayToLowercase = (arr) => arr.map((i) => i.toLowerCase());
 
@@ -8,7 +8,7 @@ let currentLocation = "United States";
 
 let getCurrentNeighbors = () => {
   const current = globe.filter((i) => {
-    return i.area.toLowerCase() == currentLocation.toLowerCase();
+    return i.area.toLowerCase() === currentLocation.toLowerCase();
   });
   return current[0].neighbors;
 };
@@ -22,9 +22,8 @@ const getCurrentNeighborsList = () => {
 };
 
 const render = (val = null, msg = null, area = currentLocation) => {
-  const t = setTimeout(() => {
-    displayElement = document.getElementById("display");
-    displayElement.innerHTML += getDisplay(val, msg);
+  setTimeout(() => {
+    document.getElementById("display").innerHTML += getDisplay(val, msg);
     document.querySelector("#console").scrollIntoView(true);
     document.querySelectorAll("button").forEach((i) => {
       i.addEventListener("click", (e) => {
@@ -36,13 +35,13 @@ const render = (val = null, msg = null, area = currentLocation) => {
 };
 
 const handleSubmit = (val, msg = "") => {
-  verb = val.split(" ")[0];
-  noun = val.substring(3);
-  if (verb == "go" && arrayToLowercase(getCurrentNeighbors()).includes(noun)) {
+  let verb = val.split(" ")[0];
+  let noun = val.substring(3);
+  if (verb === "go" && arrayToLowercase(getCurrentNeighbors()).includes(noun)) {
     currentLocation = noun;
-  } else if (verb == "go") {
+  } else if (verb === "go") {
     msg = `<p>You can't get to ${noun} from here!</p>`;
-  } else if (verb == "help") {
+  } else if (verb === "help") {
     msg = `
       <h3>HELP</h3>
       <p>Type "go" and then the name of a nearby country to travel there.</p>
@@ -55,8 +54,7 @@ const handleSubmit = (val, msg = "") => {
 };
 
 const getDisplay = (val, msg, area) => {
-  let display;
-  display = `
+  let display = `
     ${val != null ? `<p><span class="caret"></span>${val}</p>` : ``}
     ${msg != null ? `<p>${msg}</p>` : ``}
     <p>You are in <span>${currentLocation}</span></p>
