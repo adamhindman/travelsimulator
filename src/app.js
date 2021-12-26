@@ -33,11 +33,17 @@ const getObjectsText = () => {
   return `<p>${listOfObjects}</p>`;
 };
 
-const render = (val = null, msg = null, area = curLocation) => {
+const render = (val = null, msg = null, area, showLoc) => {
   setTimeout(() => {
-    document.getElementById("display").innerHTML += getDisplay(val, msg);
+    document.getElementById("display").innerHTML += getDisplay(
+      val,
+      msg,
+      area,
+      showLoc
+    );
     document.querySelector("#console").scrollIntoView(true);
     document.querySelectorAll("button").forEach((i) => {
+      // todo figure out how to prevent adding too many listeners
       i.addEventListener("click", (e) => {
         const dest = e.target.dataset.destination.toLowerCase();
         document.querySelector("#prompt").value = `go ${dest}`;
@@ -51,6 +57,8 @@ const handleSubmit = (val, msg = "") => {
   const verb = words[0];
   const noun = words.slice(-(words.length - 1)).join(" ");
   const neighbors = arrayToLowerCase(getAttributeOfArea("neighbors"));
+  let area = curLocation;
+  let showLoc = false;
   switch (verb) {
     case "go":
       if (neighbors.includes(noun)) {
@@ -73,6 +81,7 @@ const handleSubmit = (val, msg = "") => {
         msg = `<p>${objectDescriptions[objectIndex]}</p>`;
       } else if (words.length === 1) {
         msg = `<p>You take a gander...</p>`;
+        showLoc = true;
       } else {
         msg = `<p>I don't see that here!</p>`;
       }
@@ -84,21 +93,19 @@ const handleSubmit = (val, msg = "") => {
       msg = `<p>I don't recognize the verb "${verb}".</p>`;
       break;
   }
-  render(val, msg);
+  render(val, msg, area, showLoc);
 };
 
-const getDisplay = (val, msg, area) => {
+const getDisplay = (val, msg, area, showLoc) => {
+  let p = `<p class="prompt"><span class="caret"></span>${val}</p>`;
+  let m = `<p>${msg}</p>`;
+  let l = `
+  <p>You are in <span>${capitalize(curLocation)}</span>. ${getObjectsText()}</p>
+  <p>Exits are: ${getNeighborsText()}`;
   let display = `
-    ${
-      val != null
-        ? `<p class="prompt"><span class="caret"></span>${val}</p>`
-        : ``
-    }
-    ${msg != null ? `<p>${msg}</p>` : ``}
-    <p>You are in <span>${capitalize(
-      curLocation
-    )}</span>. ${getObjectsText()}</p>
-    <p>Exits are: ${getNeighborsText()}
+    ${val ? p : ``}
+    ${msg ? m : l}
+    ${showLoc ? l : ``}
   `;
   return display;
 };
