@@ -1,11 +1,12 @@
 import { globe } from "./globe.js";
 import { capitalize, arrayToLowerCase } from "./utilities.js";
+import { helpText } from "./helpText.js";
 
 console.clear();
 
-let location = "United States";
+let curLocation = "United States";
 
-const getAttributeOfArea = (attrib, area = location) => {
+export const getAttributeOfArea = (attrib, area = curLocation) => {
   let items = globe.filter(
     (i) => i.area.toLowerCase() === area.toLowerCase()
   )[0][attrib];
@@ -24,7 +25,7 @@ const getObjectsText = () => {
   let listOfObjects = "";
   if (typeof objects !== "undefined") {
     listOfObjects = objects.reduce((result, cur, i) => {
-      return result + `${cur} is here. `;
+      return result + `${cur.name} is here. `;
     }, "");
   } else {
     listOfObjects = `Nothing of importance is here.`;
@@ -32,7 +33,7 @@ const getObjectsText = () => {
   return `<p>${listOfObjects}</p>`;
 };
 
-const render = (val = null, msg = null, area = location) => {
+const render = (val = null, msg = null, area = curLocation) => {
   setTimeout(() => {
     document.getElementById("display").innerHTML += getDisplay(val, msg);
     document.querySelector("#console").scrollIntoView(true);
@@ -46,32 +47,57 @@ const render = (val = null, msg = null, area = location) => {
 };
 
 const handleSubmit = (val, msg = "") => {
-  let verb = val.split(" ")[0];
-  let noun = val.substring(3);
-  if (
-    verb === "go" &&
-    arrayToLowerCase(getAttributeOfArea("neighbors")).includes(noun)
-  ) {
-    location = noun;
-  } else if (verb === "go") {
-    msg = `<p>You can't get to ${noun} from here!</p>`;
-  } else if (verb === "help") {
-    msg = `
-      <h3>HELP</h3>
-      <p>Type "go" and then the name of a nearby country to travel there.</p>
-      <p>Or click on a country's name in the list to make me type it for you.</p>
-    `;
-  } else {
-    msg = `<p>I don't recognize the verb "${verb}".</p>`;
+  const words = val.split(" ");
+  const verb = words[0];
+  const noun = words.slice(-(words.length - 1)).join(" ");
+  const neighbors = arrayToLowerCase(getAttributeOfArea("neighbors"));
+  switch (verb) {
+    case "go":
+      if (neighbors.includes(noun)) {
+        curLocation = noun;
+      } else {
+        msg = `<p>You can't get to ${noun} from here!</p>`;
+      }
+      break;
+    case "teleport":
+      break;
+    case "look":
+      const objects = arrayToLowerCase(
+        getAttributeOfArea("objects").map((object) => object.name)
+      );
+      const objectDescriptions = getAttributeOfArea("objects").map(
+        (object) => object.description
+      );
+      const objectIndex = objects.findIndex((item) => item == noun);
+      if (objectIndex !== -1) {
+        msg = `<p>${objectDescriptions[objectIndex]}</p>`;
+      } else if (words.length === 1) {
+        msg = `<p>You take a gander...</p>`;
+      } else {
+        msg = `<p>I don't see that here!</p>`;
+      }
+      break;
+    case "help":
+      msg = helpText;
+      break;
+    default:
+      msg = `<p>I don't recognize the verb "${verb}".</p>`;
+      break;
   }
   render(val, msg);
 };
 
 const getDisplay = (val, msg, area) => {
   let display = `
-    ${val != null ? `<p><span class="caret"></span>${val}</p>` : ``}
+    ${
+      val != null
+        ? `<p class="prompt"><span class="caret"></span>${val}</p>`
+        : ``
+    }
     ${msg != null ? `<p>${msg}</p>` : ``}
-    <p>You are in <span>${capitalize(location)}</span>. ${getObjectsText()}</p>
+    <p>You are in <span>${capitalize(
+      curLocation
+    )}</span>. ${getObjectsText()}</p>
     <p>Exits are: ${getNeighborsText()}
   `;
   return display;

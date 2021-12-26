@@ -4,8 +4,7 @@ import { getAttributeOfArea } from "./app.js";
 export const go = (noun) => {
   let message;
   if (arrayToLowerCase(getAttributeOfArea("neighbors")).includes(noun)) {
-    location = noun;
-    message = "";
+    curLocation = noun;
   } else {
     message = `<p>You can't get to ${noun} from here!</p>`;
   }

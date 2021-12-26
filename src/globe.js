@@ -1755,16 +1755,19 @@ export const globe = [
     ],
     objects: [
       {
-        name: "The Grand Canyon",
+        name: "Grand Canyon",
+        article: "The",
         description:
           "A canyon, roughly 277 miles long, 18 miles wide, and 1 mile deep.",
       },
       {
-        name: "The Liberty Bell",
+        name: "Liberty Bell",
+        article: "The",
         description: "A large bell containing the sound of freedom",
       },
       {
-        name: "An Idaho potato",
+        name: "Idaho potato",
+        article: "An",
         description: "A small tuber, covered in dirt.",
       },
     ],
