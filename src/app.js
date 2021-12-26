@@ -70,18 +70,24 @@ const handleSubmit = (val, msg = "") => {
     case "teleport":
       break;
     case "look":
-      const objects = arrayToLowerCase(
-        getAttributeOfArea("objects").map((object) => object.name)
-      );
-      const objectDescriptions = getAttributeOfArea("objects").map(
-        (object) => object.description
-      );
-      const objectIndex = objects.findIndex((item) => item == noun);
-      if (objectIndex !== -1) {
-        msg = `<p>${objectDescriptions[objectIndex]}</p>`;
-      } else if (words.length === 1) {
+      const objArr = getAttributeOfArea("objects");
+      const isObjects = !(objArr === undefined || objArr.length == 0);
+      if (words.length === 1) {
         msg = `<p>You take a gander...</p>`;
         showLoc = true;
+      } else if (isObjects) {
+        const objects = arrayToLowerCase(
+          getAttributeOfArea("objects").map((object) => object.name)
+        );
+        const objectDescriptions = getAttributeOfArea("objects").map(
+          (object) => object.description
+        );
+        const objectIndex = objects.findIndex((item) => item == noun);
+        if (objectIndex !== -1) {
+          msg = `<p>${objectDescriptions[objectIndex]}</p>`;
+        } else {
+          msg = `<p>I don't see that here!</p>`;
+        }
       } else {
         msg = `<p>I don't see that here!</p>`;
       }
