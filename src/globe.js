@@ -631,13 +631,15 @@ export const globe = [
     neighbors: ["Pacific Ocean"],
     objects: [
       {
-        name: "A moai statue",
+        name: "Moai statue",
+        article: "A",
         description: "A massive stone monolith in the shape of a person.",
       },
       {
-        name: "A vial of sirolimus",
+        name: "Vial of sirolimus",
+        article: "A",
         description:
-          "This immunosuppressant drug is used to prevent organ transplant rejection. As every body already knows, sirolimus was discovered on Easter Island, in a soil sample containing streptomyces hygroscopicus.",
+          "This immunosuppressant drug is used to prevent organ transplant rejection. As everybody already knows, sirolimus was discovered on Easter Island, in a soil sample containing streptomyces hygroscopicus.",
       },
     ],
   },
