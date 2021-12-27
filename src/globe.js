@@ -446,7 +446,7 @@ export let globe = [
         name: "ZINC",
         article: "Some",
         description:
-          "A lump of silver metal. Also known as philosopher's wool, it is used for weather-proofing everything from fences and noses. When alloyed with copper, it can be used to make trumpets.",
+          "A lump of silver metal. Also known as philosopher's wool, it is useful for weather-proofing everything from fences to noses. When alloyed with copper, it can be used to make trumpets.",
       },
     ],
     neighbors: ["Arctic Ocean", "Atlantic Ocean", "Pacific Ocean", "United States"],
