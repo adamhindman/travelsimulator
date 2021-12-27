@@ -26,6 +26,15 @@ export let globe = [
   {
     area: "Pacific Ocean",
     type: "ocean",
+    description:
+      "The Pacific Ocean was first discovered by single-celled organisms billions of years ago, but it wasn't explored until much later, by fish.",
+    objects: [
+      {
+        name: "WATER",
+        description: "A pile of water, currently in liquid form",
+        article: "A lot of",
+      },
+    ],
     neighbors: [
       "Australia",
       "Brunei",
@@ -278,7 +287,7 @@ export let globe = [
   {
     area: "Argentina",
     type: "country",
-    neighbors: ["Bolivia", "Brazil", "Chile", "Paraguay", "Uruguay"],
+    neighbors: ["Bolivia", "Brazil", "Chile", "Library of Babel", "Paraguay", "Uruguay"],
   },
   {
     area: "Armenia",
@@ -622,7 +631,7 @@ export let globe = [
       },
       {
         name: "SIROLIMUS",
-        article: "A Vial of",
+        article: "A vial of",
         description:
           "This immunosuppressant drug is used to prevent organ transplant rejection. As everybody already knows, sirolimus was discovered on Easter Island, in a soil sample containing streptomyces hygroscopicus.",
       },
@@ -975,6 +984,20 @@ export let globe = [
     area: "Kiribati",
     type: "country",
     neighbors: ["Pacific Ocean"],
+  },
+  {
+    area: "Library of Babel",
+    description:
+      "You are in a hexagonal gallery, surrounding an air shaft. On four sides of the hexagon there are book shelves filled with many similar-looking volumes. The other two sides lead into narrow hallways, beyond which are more galleries exactly like this one.",
+    objects: [
+      {
+        name: "BOOK",
+        article: "A",
+        description: "It <em>seems</em> to be gibberish.",
+      },
+    ],
+    type: "special",
+    neighbors: ["Argentina", "Library of Babel"],
   },
   {
     area: "North Korea",
@@ -1751,8 +1774,14 @@ export let globe = [
     objects: [
       {
         name: "TALIETUMU",
+        article: "A pile of rocks known as",
         description:
-          "An elevated platform made of rocks, built in the days of Tu'i Tonga empire",
+          "An elevated platform made of rocks, built in the days of Tu'i Tonga empire.",
+      },
+      {
+        name: "ROBERT",
+        article: "Someone named",
+        description: "This man is programming on a computer.",
       },
     ],
   },
