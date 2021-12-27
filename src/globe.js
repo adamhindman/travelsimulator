@@ -621,8 +621,8 @@ export let globe = [
         description: "A massive stone monolith in the shape of a person.",
       },
       {
-        name: "VIAL OF SIROLIMUS",
-        article: "A",
+        name: "SIROLIMUS",
+        article: "A Vial of",
         description:
           "This immunosuppressant drug is used to prevent organ transplant rejection. As everybody already knows, sirolimus was discovered on Easter Island, in a soil sample containing streptomyces hygroscopicus.",
       },
