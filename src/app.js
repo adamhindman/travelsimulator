@@ -1,15 +1,12 @@
 import { globe } from "./globe.js";
-import { capitalize, arrayToLowerCase } from "./utilities.js";
+import { capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { helpText } from "./helpText.js";
 
 console.clear();
-
 let curLocation = "United States";
 
 export const getAttributeOfArea = (attrib, area = curLocation) => {
-  let items = globe.filter(
-    (i) => i.area.toLowerCase() === area.toLowerCase()
-  )[0][attrib];
+  let items = globe.filter(i => i.area.toLowerCase() === area.toLowerCase())[0][attrib];
   return items;
 };
 
@@ -17,34 +14,34 @@ const getNeighborsText = () => {
   let list = getAttributeOfArea("neighbors").reduce((result, cur, i) => {
     return result + `<button data-destination="${cur}">${cur}</button>`;
   }, "");
-  return `<p>${list}</p>`;
+  return list;
 };
 
 const getObjectsText = () => {
   let objects = getAttributeOfArea("objects");
   let listOfObjects = "";
-  if (typeof objects !== "undefined") {
+  if (isArray(objects)) {
     listOfObjects = objects.reduce((result, cur, i) => {
       return result + `${cur.name} is here. `;
     }, "");
   } else {
     listOfObjects = `Nothing of importance is here.`;
   }
-  return `<p>${listOfObjects}</p>`;
+  return listOfObjects;
+};
+
+const getAreaDescription = (area = curLocation) => {
+  let desc = getAttributeOfArea("description");
+  return desc ? desc : "";
 };
 
 const render = (val = null, msg = null, area, showLoc) => {
   setTimeout(() => {
-    document.getElementById("display").innerHTML += getDisplay(
-      val,
-      msg,
-      area,
-      showLoc
-    );
+    document.getElementById("display").innerHTML += getDisplay(val, msg, area, showLoc);
     document.querySelector("#console").scrollIntoView(true);
-    document.querySelectorAll("button").forEach((i) => {
+    document.querySelectorAll("button").forEach(i => {
       // todo figure out how to prevent adding too many listeners
-      i.addEventListener("click", (e) => {
+      i.addEventListener("click", e => {
         const dest = e.target.dataset.destination.toLowerCase();
         document.querySelector("#prompt").value = `go ${dest}`;
       });
@@ -70,19 +67,16 @@ const handleSubmit = (val, msg = "") => {
     case "teleport":
       break;
     case "look":
-      const objArr = getAttributeOfArea("objects");
-      const isObjects = !(objArr === undefined || objArr.length == 0);
       if (words.length === 1) {
-        msg = `<p>You take a gander...</p>`;
         showLoc = true;
-      } else if (isObjects) {
+      } else if (isArray(getAttributeOfArea("objects"))) {
         const objects = arrayToLowerCase(
-          getAttributeOfArea("objects").map((object) => object.name)
+          getAttributeOfArea("objects").map(object => object.name)
         );
         const objectDescriptions = getAttributeOfArea("objects").map(
-          (object) => object.description
+          object => object.description
         );
-        const objectIndex = objects.findIndex((item) => item == noun);
+        const objectIndex = objects.findIndex(item => item == noun);
         if (objectIndex !== -1) {
           msg = `<p>${objectDescriptions[objectIndex]}</p>`;
         } else {
@@ -91,6 +85,11 @@ const handleSubmit = (val, msg = "") => {
       } else {
         msg = `<p>I don't see that here!</p>`;
       }
+      break;
+    case "tel":
+      msg = `<p>You have a series of adventures and end up in ${capitalize(noun)}.</p>`;
+      // showLoc = true;
+      curLocation = noun;
       break;
     case "help":
       msg = helpText;
@@ -106,8 +105,8 @@ const getDisplay = (val, msg, area, showLoc) => {
   let p = `<p class="prompt"><span class="caret"></span>${val}</p>`;
   let m = `<p>${msg}</p>`;
   let l = `
-  <p>You are in <span>${capitalize(curLocation)}</span>. ${getObjectsText()}</p>
-  <p>Exits are: ${getNeighborsText()}`;
+  <h4>${curLocation.toUpperCase()}</h4>${getAreaDescription()}</p>${getObjectsText()}
+  <div class="exits"><h5>Exits are:</h5>${getNeighborsText()}</div>`;
   let display = `
     ${val ? p : ``}
     ${msg ? m : l}
@@ -116,14 +115,14 @@ const getDisplay = (val, msg, area, showLoc) => {
   return display;
 };
 
-document.getElementById("prompt").addEventListener("keydown", (e) => {
+document.getElementById("prompt").addEventListener("keydown", e => {
   if (e.key === "Enter") {
     handleSubmit(e.target.value.toLowerCase());
     e.target.value = "";
   }
 });
 
-document.querySelector("html").addEventListener("click", (e) => {
+document.querySelector("html").addEventListener("click", e => {
   document.getElementById("prompt").focus();
 });
 

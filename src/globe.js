@@ -1,15 +1,27 @@
-export const globe = [
+export let globe = [
   {
     area: "Arctic Ocean",
     type: "ocean",
-    neighbors: [
-      "Canada",
-      "Greenland",
-      "Iceland",
-      "Norway",
-      "Russia",
-      "United States",
+    objects: [
+      {
+        name: "NORTH POLE FLAG",
+        article: "The",
+        description:
+          "A Russian flag on the sea floor is the only permanent marker of the planet's geographic north pole.",
+      },
+      {
+        name: "LOST PENGUIN",
+        article: "A",
+        description:
+          "A funny-looking flightless bird. This one explains that he normally lives at the south pole, but nothing is stopping him from traveling.",
+      },
+      {
+        name: "PETROLEUM",
+        article: "Some",
+        description: "A viscous, yellowish-black liquid used to power chainsaws.",
+      },
     ],
+    neighbors: ["Canada", "Greenland", "Iceland", "Norway", "Russia", "United States"],
   },
   {
     area: "Pacific Ocean",
@@ -221,25 +233,12 @@ export const globe = [
   {
     area: "Afghanistan",
     type: "country",
-    neighbors: [
-      "China",
-      "Iran",
-      "Pakistan",
-      "Tajikistan",
-      "Turkmenistan",
-      "Uzbekistan",
-    ],
+    neighbors: ["China", "Iran", "Pakistan", "Tajikistan", "Turkmenistan", "Uzbekistan"],
   },
   {
     area: "Albania",
     type: "country",
-    neighbors: [
-      "Greece",
-      "Kosovo",
-      "North Macedonia",
-      "Montenegro",
-      "Atlantic Ocean",
-    ],
+    neighbors: ["Greece", "Kosovo", "North Macedonia", "Montenegro", "Atlantic Ocean"],
   },
   {
     area: "Algeria",
@@ -338,13 +337,7 @@ export const globe = [
   {
     area: "Belgium",
     type: "country",
-    neighbors: [
-      "Atlantic Ocean",
-      "France",
-      "Germany",
-      "Luxembourg",
-      "Netherlands",
-    ],
+    neighbors: ["Atlantic Ocean", "France", "Germany", "Luxembourg", "Netherlands"],
   },
   {
     area: "Belize",
@@ -445,13 +438,18 @@ export const globe = [
   },
   {
     area: "Canada",
+    description:
+      "A massive country, covered in endless marches of snow. At first, it seems sparsely populated, but as you scan the coastlines, you notice sizable clusters of gentle, industrious citizens (known as 'canadians' or 'canucks') living at the eastern and western edges of the continent.",
     type: "country",
-    neighbors: [
-      "Arctic Ocean",
-      "Atlantic Ocean",
-      "Pacific Ocean",
-      "United States",
+    objects: [
+      {
+        name: "ZINC",
+        article: "Some",
+        description:
+          "A silver metal, also known as philosopher's wool, it is used for weather-proofing everything from fences and noses. When alloyed with copper, it can be used to make trumpets.",
+      },
     ],
+    neighbors: ["Arctic Ocean", "Atlantic Ocean", "Pacific Ocean", "United States"],
   },
   {
     area: "Cape Verde",
@@ -485,13 +483,7 @@ export const globe = [
   {
     area: "Chile",
     type: "country",
-    neighbors: [
-      "Argentina",
-      "Atlantic Ocean",
-      "Bolivia",
-      "Pacific Ocean",
-      "Peru",
-    ],
+    neighbors: ["Argentina", "Atlantic Ocean", "Bolivia", "Pacific Ocean", "Peru"],
   },
   {
     area: "China",
@@ -569,14 +561,7 @@ export const globe = [
   {
     area: "Côte d'Ivoire",
     type: "country",
-    neighbors: [
-      "Atlantic Ocean",
-      "Burkina Faso",
-      "Ghana",
-      "Guinea",
-      "Liberia",
-      "Mali",
-    ],
+    neighbors: ["Atlantic Ocean", "Burkina Faso", "Ghana", "Guinea", "Liberia", "Mali"],
   },
   {
     area: "Croatia",
@@ -631,12 +616,12 @@ export const globe = [
     neighbors: ["Pacific Ocean"],
     objects: [
       {
-        name: "Moai statue",
+        name: "MOAI STATUE",
         article: "A",
         description: "A massive stone monolith in the shape of a person.",
       },
       {
-        name: "Vial of sirolimus",
+        name: "VIAL OF SIROLIMUS",
         article: "A",
         description:
           "This immunosuppressant drug is used to prevent organ transplant rejection. As everybody already knows, sirolimus was discovered on Easter Island, in a soil sample containing streptomyces hygroscopicus.",
@@ -698,14 +683,7 @@ export const globe = [
   {
     area: "Ethiopia",
     type: "country",
-    neighbors: [
-      "Djibouti",
-      "Eritrea",
-      "Kenya",
-      "Somalia",
-      "South Sudan",
-      "Sudan",
-    ],
+    neighbors: ["Djibouti", "Eritrea", "Kenya", "Somalia", "South Sudan", "Sudan"],
   },
   {
     area: "Fiji",
@@ -784,13 +762,7 @@ export const globe = [
   {
     area: "Greece",
     type: "country",
-    neighbors: [
-      "Albania",
-      "Atlantic Ocean",
-      "Bulgaria",
-      "North Macedonia",
-      "Turkey",
-    ],
+    neighbors: ["Albania", "Atlantic Ocean", "Bulgaria", "North Macedonia", "Turkey"],
   },
   {
     area: "Greenland",
@@ -936,14 +908,7 @@ export const globe = [
   {
     area: "Israel",
     type: "country",
-    neighbors: [
-      "Atlantic Ocean",
-      "Egypt",
-      "Indian Ocean",
-      "Jordan",
-      "Lebanon",
-      "Syria",
-    ],
+    neighbors: ["Atlantic Ocean", "Egypt", "Indian Ocean", "Jordan", "Lebanon", "Syria"],
   },
   {
     area: "Italy",
@@ -1096,13 +1061,7 @@ export const globe = [
   {
     area: "Malaysia",
     type: "country",
-    neighbors: [
-      "Brunei",
-      "Indian Ocean",
-      "Indonesia",
-      "Pacific Ocean",
-      "Thailand",
-    ],
+    neighbors: ["Brunei", "Indian Ocean", "Indonesia", "Pacific Ocean", "Thailand"],
   },
   {
     area: "Maldives",
@@ -1135,13 +1094,7 @@ export const globe = [
   {
     area: "Mauritania",
     type: "country",
-    neighbors: [
-      "Algeria",
-      "Atlantic Ocean",
-      "Mali",
-      "Senegal",
-      "Western Sahara",
-    ],
+    neighbors: ["Algeria", "Atlantic Ocean", "Mali", "Senegal", "Western Sahara"],
   },
   {
     area: "Mauritius",
@@ -1212,25 +1165,12 @@ export const globe = [
   {
     area: "Myanmar",
     type: "country",
-    neighbors: [
-      "Bangladesh",
-      "China",
-      "India",
-      "Indian Ocean",
-      "Laos",
-      "Thailand",
-    ],
+    neighbors: ["Bangladesh", "China", "India", "Indian Ocean", "Laos", "Thailand"],
   },
   {
     area: "Namibia",
     type: "country",
-    neighbors: [
-      "Angola",
-      "Atlantic Ocean",
-      "Botswana",
-      "South Africa",
-      "Zambia",
-    ],
+    neighbors: ["Angola", "Atlantic Ocean", "Botswana", "South Africa", "Zambia"],
   },
   {
     area: "Nauru",
@@ -1245,13 +1185,7 @@ export const globe = [
   {
     area: "Netherlands",
     type: "country",
-    neighbors: [
-      "Atlantic Ocean",
-      "Belgium",
-      "Germany",
-      "Saint Martin",
-      "France",
-    ],
+    neighbors: ["Atlantic Ocean", "Belgium", "Germany", "Saint Martin", "France"],
   },
   {
     area: "New Zealand",
@@ -1266,15 +1200,7 @@ export const globe = [
   {
     area: "Niger",
     type: "country",
-    neighbors: [
-      "Algeria",
-      "Benin",
-      "Burkina Faso",
-      "Chad",
-      "Libya",
-      "Mali",
-      "Nigeria",
-    ],
+    neighbors: ["Algeria", "Benin", "Burkina Faso", "Chad", "Libya", "Mali", "Nigeria"],
   },
   {
     area: "Nigeria",
@@ -1289,23 +1215,12 @@ export const globe = [
   {
     area: "Norway",
     type: "country",
-    neighbors: [
-      "Arctic Ocean",
-      "Atlantic Ocean",
-      "Finland",
-      "Sweden",
-      "Russia",
-    ],
+    neighbors: ["Arctic Ocean", "Atlantic Ocean", "Finland", "Sweden", "Russia"],
   },
   {
     area: "Oman",
     type: "country",
-    neighbors: [
-      "Indian Ocean",
-      "Saudi Arabia",
-      "United Arab Emirates",
-      "Yemen",
-    ],
+    neighbors: ["Indian Ocean", "Saudi Arabia", "United Arab Emirates", "Yemen"],
   },
   {
     area: "Pakistan",
@@ -1340,14 +1255,7 @@ export const globe = [
   {
     area: "Peru",
     type: "country",
-    neighbors: [
-      "Bolivia",
-      "Brazil",
-      "Chile",
-      "Colombia",
-      "Ecuador",
-      "Pacific Ocean",
-    ],
+    neighbors: ["Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "Pacific Ocean"],
   },
   {
     area: "Philippines",
@@ -1381,14 +1289,7 @@ export const globe = [
   {
     area: "Romania",
     type: "country",
-    neighbors: [
-      "Atlantic Ocean",
-      "Bulgaria",
-      "Hungary",
-      "Moldova",
-      "Serbia",
-      "Ukraine",
-    ],
+    neighbors: ["Atlantic Ocean", "Bulgaria", "Hungary", "Moldova", "Serbia", "Ukraine"],
   },
   {
     area: "Russia",
@@ -1418,12 +1319,7 @@ export const globe = [
   {
     area: "Rwanda",
     type: "country",
-    neighbors: [
-      "Burundi",
-      "Democratic Republic of the Congo",
-      "Tanzania",
-      "Uganda",
-    ],
+    neighbors: ["Burundi", "Democratic Republic of the Congo", "Tanzania", "Uganda"],
   },
   {
     area: "Saint Kitts and Nevis",
@@ -1620,14 +1516,7 @@ export const globe = [
   {
     area: "Syria",
     type: "country",
-    neighbors: [
-      "Atlantic Ocean",
-      "Iraq",
-      "Israel",
-      "Jordan",
-      "Lebanon",
-      "Turkey",
-    ],
+    neighbors: ["Atlantic Ocean", "Iraq", "Israel", "Jordan", "Lebanon", "Turkey"],
   },
   {
     area: "Taiwan",
@@ -1747,28 +1636,29 @@ export const globe = [
   },
   {
     area: "United States",
+    description:
+      'A large and diverse country, it is home to the famous "50 state quarters" phenomenon of the early 2000s. You see a bald eagle fishing the many lakes, rivers, and ponds here.',
     type: "country",
-    neighbors: [
-      "Arctic Ocean",
-      "Atlantic Ocean",
-      "Canada",
-      "Mexico",
-      "Pacific Ocean",
-    ],
+    neighbors: ["Arctic Ocean", "Atlantic Ocean", "Canada", "Mexico", "Pacific Ocean"],
     objects: [
       {
-        name: "Grand Canyon",
+        name: "GRAND CANYON",
         article: "The",
-        description:
-          "A canyon, roughly 277 miles long, 18 miles wide, and 1 mile deep.",
+        description: "A canyon, roughly 277 miles long, 18 miles wide, and 1 mile deep.",
       },
       {
-        name: "Liberty Bell",
+        name: "LIBERTY BELL:",
         article: "The",
         description: "A large bell containing the sound of freedom",
       },
       {
-        name: "Idaho potato",
+        name: "BALD EAGLE",
+        article: "A",
+        description:
+          "This large bird has a white head, dark body, yellow beak, and pink tongue. Most often found in wooded areas, they can sometimes be seen flying in front of waving flags or at fireworks shows. In addition to fish, bald eagles are the primary predator of raccoons.",
+      },
+      {
+        name: "IDAHO POTATO",
         article: "An",
         description: "A small tuber, covered in dirt.",
       },
@@ -1782,13 +1672,7 @@ export const globe = [
   {
     area: "Uzbekistan",
     type: "country",
-    neighbors: [
-      "Afghanistan",
-      "Kazakhstan",
-      "Kyrgyzstan",
-      "Tajikistan",
-      "Turkmenistan",
-    ],
+    neighbors: ["Afghanistan", "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan"],
   },
   {
     area: "Vanuatu",
@@ -1816,7 +1700,7 @@ export const globe = [
     neighbors: ["Pacific Ocean"],
     objects: [
       {
-        name: "Talietumu",
+        name: "TALIETUMU",
         description:
           "An elevated platform made of rocks, built in the days of Tu'i Tonga empire",
       },

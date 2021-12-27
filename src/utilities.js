@@ -9,9 +9,9 @@
  *   capitalize('javaSCrIPT', true);    // -> 'Javascript'
  */
 export const capitalize = (str, lower = false) =>
-  (lower ? str.toLowerCase() : str).replace(/(?:^|\s|["'([{])+\S/g, (match) =>
-    match.toUpperCase()
-  );
+  (lower ? str.toLowerCase() : str).replace(/(?:^|\s|["'([{])+\S/g, match => match.toUpperCase());
+
+export const uppercase = str => str.toUpperCase();
 
 /**
  *  Returns a copy of the given array with all the members in lower case
@@ -19,4 +19,6 @@ export const capitalize = (str, lower = false) =>
  *  @return {array}
  *  @usage arrayToLowerCase(["foo","BAR","Baz"]);   // -> ["foo", "bar", "baz"]
  */
-export const arrayToLowerCase = (arr) => arr.map((i) => i.toLowerCase());
+export const arrayToLowerCase = arr => arr.map(i => i.toLowerCase());
+
+export const isArray = arr => !(arr === undefined || arr.length == 0);
