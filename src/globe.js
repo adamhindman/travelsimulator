@@ -446,7 +446,7 @@ export let globe = [
         name: "ZINC",
         article: "Some",
         description:
-          "A silver metal, also known as philosopher's wool, it is used for weather-proofing everything from fences and noses. When alloyed with copper, it can be used to make trumpets.",
+          "A lump of silver metal. Also known as philosopher's wool, it is used for weather-proofing everything from fences and noses. When alloyed with copper, it can be used to make trumpets.",
       },
     ],
     neighbors: ["Arctic Ocean", "Atlantic Ocean", "Pacific Ocean", "United States"],
@@ -767,6 +767,22 @@ export let globe = [
   {
     area: "Greenland",
     type: "country",
+    description:
+      "Fans of large islands have found what they're looking for: Greenland is the biggest island in the entire world, bar none. It is cold here. In the distance, you see a factory powering the economy by exporting shrimp and halibut, and groups of tourists enjoying themselves in the capitol city of Nuuk.",
+    objects: [
+      {
+        name: "SHRIMP",
+        article: "Some",
+        description:
+          "A crustacean stares up at you with long, gross eyes on disgusting, hateful stalks.",
+      },
+      {
+        name: "RUNESTONE",
+        article: "A",
+        description:
+          "This black chunk of star-metal is covered in ancient runes that throb with eldritch power.",
+      },
+    ],
     neighbors: ["Arctic Ocean", "Atlantic Ocean"],
   },
   {
@@ -1104,6 +1120,40 @@ export let globe = [
   {
     area: "Mexico",
     type: "country",
+    description:
+      "It's hot here. As you pause for a moment to wipe the sweat from your brow, you can't help but see that Mexico is a country with many different people in it. Soon, your curiosity gets the better of you, and you stop in the shade of a SAGUARO CACTUS to watch them do the different kinds of things they are doing. You notice that sometimes they meet with success, but other times they do not. Yet, despite it all, they keep doing those things. What a remarkable country.",
+    objects: [
+      {
+        name: "SAGUARO CACTUS",
+        article: "A",
+        description:
+          'You must hold this cactus very cautiously, since it is covered in prickly, needlelike spines, called "spines" (or "needles") that can prick an incautious holder. This particular specimen is 12 feet tall, and 150 years old, making it both taller and older than any living basketball player.',
+      },
+      {
+        name: "TEOTIHUACAN",
+        article: "The city of",
+        description:
+          "A ruined complex with a stepped pyramid. You see that it was built by an ancient people, due to being old.",
+      },
+      {
+        name: "AXOLOTL",
+        article: "An",
+        description:
+          "A peculiar sort of salamander creature, native only to a few lakes around Mexico City. Unlike most people, it can regenerate its limbs.",
+      },
+      {
+        name: "SPEARTHROWER OWL",
+        article: "The",
+        description:
+          "A stone glyph, carved into the  shape of an owl holding a spear, it is the icon of an ancient Mayan king.",
+      },
+      {
+        name: "TACO",
+        article: "A",
+        description:
+          "It is an open-faced sandwich with meat, vegetables, and so on, traditionally eaten on Tuesdays.",
+      },
+    ],
     neighbors: [
       "Atlantic Ocean",
       "Belize",
@@ -1647,7 +1697,7 @@ export let globe = [
         description: "A canyon, roughly 277 miles long, 18 miles wide, and 1 mile deep.",
       },
       {
-        name: "LIBERTY BELL:",
+        name: "LIBERTY BELL",
         article: "The",
         description: "A large bell containing the sound of freedom",
       },

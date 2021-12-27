@@ -22,7 +22,7 @@ const getObjectsText = () => {
   let listOfObjects = "";
   if (isArray(objects)) {
     listOfObjects = objects.reduce((result, cur, i) => {
-      return result + `${cur.name} is here. `;
+      return result + `${cur.article} ${cur.name} is here. `;
     }, "");
   } else {
     listOfObjects = `Nothing of importance is here.`;
