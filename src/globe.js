@@ -1687,7 +1687,7 @@ export let globe = [
   {
     area: "United States",
     description:
-      'A large and diverse country, it is home to the famous "50 state quarters" phenomenon of the early 2000s. You see a bald eagle fishing the many lakes, rivers, and ponds here.',
+      'A large and diverse country, it is home to the famous "50 state quarters" phenomenon of the early 2000s. You see a BALD EAGLE fishing the many lakes, rivers, and ponds here.',
     type: "country",
     neighbors: ["Arctic Ocean", "Atlantic Ocean", "Canada", "Mexico", "Pacific Ocean"],
     objects: [
