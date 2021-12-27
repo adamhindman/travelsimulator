@@ -12,7 +12,9 @@ export const getAttributeOfArea = (attrib, area = curLocation) => {
 
 const getNeighborsText = () => {
   let list = getAttributeOfArea("neighbors").reduce((result, cur, i) => {
-    return result + `<button data-destination="${cur}">${cur}</button>`;
+    return (
+      result + `<button class="destination" data-destination="${cur}">${cur}</button>`
+    );
   }, "");
   return list;
 };
@@ -22,7 +24,10 @@ const getObjectsText = () => {
   let listOfObjects = "";
   if (isArray(objects)) {
     listOfObjects = objects.reduce((result, cur, i) => {
-      return result + `${cur.article} ${cur.name} is here. `;
+      return (
+        result +
+        `${cur.article} <button class="object" data-object="${cur.name}">${cur.name}</button> is here. `
+      );
     }, "");
   } else {
     listOfObjects = `Nothing of importance is here.`;
@@ -39,12 +44,27 @@ const render = (val = null, msg = null, area, showLoc) => {
   setTimeout(() => {
     document.getElementById("display").innerHTML += getDisplay(val, msg, area, showLoc);
     document.querySelector("#console").scrollIntoView(true);
-    document.querySelectorAll("button").forEach(i => {
-      // todo figure out how to prevent adding too many listeners
-      i.addEventListener("click", e => {
-        const dest = e.target.dataset.destination.toLowerCase();
-        document.querySelector("#prompt").value = `go ${dest}`;
-      });
+    document.querySelectorAll("button.destination").forEach(i => {
+      if (i.dataset.eventSet !== true) {
+        i.dataset.eventSet = true;
+        i.addEventListener("click", e => {
+          const dest = e.target.dataset.destination.toLowerCase();
+          document.querySelector("#prompt").value = `go ${dest}`;
+        });
+      } else {
+        console.log("already set");
+      }
+    });
+    document.querySelectorAll("button.object").forEach(i => {
+      if (i.dataset.eventSet !== true) {
+        i.dataset.eventSet = true;
+        i.addEventListener("click", e => {
+          const obj = e.target.dataset.object.toLowerCase();
+          document.querySelector("#prompt").value = `look ${obj}`;
+        });
+      } else {
+        console.log("already set");
+      }
     });
   }, 500);
 };

@@ -21,7 +21,16 @@ export let globe = [
         description: "A viscous, yellowish-black liquid used to power chainsaws.",
       },
     ],
-    neighbors: ["Canada", "Greenland", "Iceland", "Norway", "Russia", "United States"],
+    neighbors: [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Canada",
+      "Greenland",
+      "Iceland",
+      "Norway",
+      "Russia",
+      "United States",
+    ],
   },
   {
     area: "Pacific Ocean",
@@ -36,6 +45,8 @@ export let globe = [
       },
     ],
     neighbors: [
+      "Atlantic Ocean",
+      "Arctic Ocean",
       "Australia",
       "Brunei",
       "Cambodia",
@@ -91,6 +102,7 @@ export let globe = [
       "Algeria",
       "Angola",
       "Antigua and Barbuda",
+      "Arctic Ocean",
       "Argentina",
       "Bahamas",
       "Barbados",
@@ -159,6 +171,7 @@ export let globe = [
       "Nicaragua",
       "Nigeria",
       "Norway",
+      "Pacific Ocean",
       "Palestine",
       "Panama",
       "Poland",
@@ -650,14 +663,7 @@ export let globe = [
   {
     area: "Egypt",
     type: "country",
-    neighbors: [
-      "Atlantic Ocean",
-      "Gaza Strip",
-      "Indian Ocean",
-      "Israel",
-      "Libya",
-      "Sudan",
-    ],
+    neighbors: ["Atlantic Ocean", "Indian Ocean", "Israel", "Libya", "Sudan"],
   },
   {
     area: "El Salvador",

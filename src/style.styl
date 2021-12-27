@@ -29,19 +29,22 @@ h4
       font-weight normal
       margin 1.8rem 0 .6rem
   button
-    display block
-    width calc(100% + 5.4rem)
-    text-align left
     background transparent
     color #33ff33
     border 0
     font-family monospace
     font-size 1.6rem
-    padding .4rem 3rem
-    margin 0 -3rem
     cursor pointer
-    &:before
-      content: "* "
+    &.object
+      display inline-block
+    &.destination
+      display block
+      padding .4rem 3rem
+      margin 0 -3rem
+      width calc(100% + 5.4rem)
+      text-align left
+      &:before
+        content: "* "
     &:hover
       color #282828
       background-color #33ff33      
