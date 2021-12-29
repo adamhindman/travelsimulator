@@ -96,6 +96,8 @@ export let globe = [
   },
   {
     area: "Atlantic Ocean",
+    description:
+      "Considered by many to be the one of hte best oceans on the planet, you're glad you found time to see it up close.",
     type: "ocean",
     neighbors: [
       "Albania",
@@ -265,6 +267,15 @@ export let globe = [
   {
     area: "Algeria",
     type: "country",
+    description:
+      "Looking over the country, you note that about 4/5ths of it is covered by a yellow area called the Sahara Desert, wherein you can spot a FENNEC chasing a beetle along the ridge of a sand dune.",
+    objects: [
+      {
+        name: "FENNEC",
+        article: "A",
+        description: "A furry little fox with big pointy ears.",
+      },
+    ],
     neighbors: [
       "Libya",
       "Mali",
@@ -314,6 +325,33 @@ export let globe = [
   },
   {
     area: "Austria",
+    description:
+      "A mountainous nation. Looking around for an ocean to swim in, you notice this country is completely landlocked. You put away your swimsuit and snorkel for another day.",
+    objects: [
+      {
+        name: "UPPER BELVEDERE PALACE",
+        article: "The",
+        description:
+          "A Baroque palace built in the 18th century by Prince Eugene (a lot of the construction work was done by other people though). A massive edifice of white stone, set amidst immaculate lawsns and gardens. Nearby is the Lower Belvedere palace, constructed a few decades previous: it's shit. Not worth mentioning to be honest.",
+      },
+      {
+        name: "MOZART'S PIANO",
+        article: "",
+        description: "A pretty nice piano. You plink one of the keys: still works!",
+      },
+      {
+        name: "ARNOLD SCHWARZENEGGER",
+        article: "",
+        description:
+          "An elderly man. At the moment, he is pumping iron. You ask him how much he can bench press: '400 kilograms', he says. That sounds like a lot. Is he telling the truth?",
+      },
+      {
+        name: "KURT GÖDEL'S PROOF OF A WEAKNESS IN THE U.S. CONSTITUTION",
+        article: "",
+        description:
+          "Scarcely half a page of hastily-scrawled notes, outlining a method by which the U.S.A. could legally become a dictatorship. Gödel came up with it while studying the constitution prior to taking his citizenship test. You take a moment to read it, and see that it would be very easy to implement, yet impossible to prevent. However, moments later, you've forgotten what it says.",
+      },
+    ],
     type: "country",
     neighbors: [
       "Czech Republic",
@@ -399,6 +437,28 @@ export let globe = [
   {
     area: "Brazil",
     type: "country",
+    description:
+      "You see a country with mountains, and a large swath of equatorial rainforest jungle, containing many animals and plants. You notice a complex system of rivers, with eight separate drainage basins (wow!). The capitol is Brasilia.",
+    objects: [
+      {
+        name: "COFFEA",
+        article: "Some",
+        description:
+          "While surveying the country of Brazil, you spot a shrub with white flowers, bearing clusters of bright, red berries. Looking closer, you notice tens of thousands of people picking, processing, drying, roasting, grinding, brewing, and drinking these berries. When you stop one of them to ask what's going on, he kindly tells you that the COFFEA plant produces coffee, one of the most popular beverages in the world, and that no country produces more coffee than Brazil itself!",
+      },
+      {
+        name: "AMAZON RIVER",
+        article: "The",
+        description:
+          "A long, winding river, teeming with fish. Dipping your toe into it, you are immediately attacked by small, carnivorous fish known as pirahnas. Ouch!",
+      },
+      {
+        name: "CHRIST THE REDEEMER STATUE",
+        article: "The",
+        description:
+          "This huge statue sits atop a mountain overlooking the city of Rio de Janeiro. You would estimate that it is 98 feet tall, and weighs 635 metric tons. If you had to guess, you would say it was built between 1922 and 1931. The statue stands in a T-pose: straight, looking forward, with its arms outstretched, indicating that no animation has been attached to it, or that the existing animations cannot be loaded.",
+      },
+    ],
     neighbors: [
       "Argentina",
       "Atlantic Ocean",
@@ -447,7 +507,22 @@ export let globe = [
   },
   {
     area: "Cameroon",
+    description:
+      "A country with beaches, deserts, mountains, rainforests, and savannas! From mighty Mount Cameroon in the south, to Lake Chad in the west, and the fascinating volcanic formations in the north, to the massive corruption and human rights abuses in cities like Yaoundé and Douala, Cameroon has something for everybody.",
     type: "country",
+    objects: [
+      {
+        name: "NUTSHELLS",
+        article: "A pile of",
+        description: "Used in a local gambling game called Abbia.",
+      },
+      {
+        name: "AFO-A-KOM",
+        article: "",
+        description:
+          "A wooden statue of a king on a throne supported by buffalo heads. An sacred object of veneration to the Kom people, it was stolen from its sacred grove in 1966. Fortunately it is magic, and the thieves hands withered and fell off, and the statue was returned to Laikom palace in northern Cameroon, where it remains today, throbbing with terrifying power.",
+      },
+    ],
     neighbors: [
       "Atlantic Ocean",
       "Central African Republic",
@@ -469,6 +544,12 @@ export let globe = [
         article: "Some",
         description:
           "A lump of silver metal. Also known as philosopher's wool, it is useful for weather-proofing everything from fences to noses. When alloyed with copper, it can be used to make trumpets.",
+      },
+      {
+        name: "MAPLE SYRUP",
+        article: "Some",
+        description:
+          "Thick, sweet, and golden in color, MAPLE SYRUP is the national drink of Canada. Canadians consume more of it than any other country in the world — over 160 pounds per person annually, on average. It's a delicious companion on pancakes, flapjacks, and bannock, but it also has medical uses, and is an ingredient in the popular cocktail known as the Mackenzie.",
       },
     ],
     neighbors: ["Arctic Ocean", "Atlantic Ocean", "Pacific Ocean", "United States"],
@@ -1392,6 +1473,7 @@ export let globe = [
       "Pacific Ocean",
       "Poland",
       "South Ossetia",
+      "Tuva",
       "Ukraine",
     ],
   },
@@ -1680,9 +1762,34 @@ export let globe = [
     neighbors: ["Afghanistan", "Iran", "Kazakhstan", "Uzbekistan"],
   },
   {
+    area: "Tuva",
+    description:
+      "A small republic, known for its stamps and throat singing. Its flag is a Y on its side, in blue and yellow.",
+    type: "special",
+    neighbors: ["Mongolia", "Russia"],
+    objects: [
+      {
+        name: "RICHARD FEYNMAN",
+        article: "The ghost of",
+        description:
+          "You see a translucent man of medium build with dark hair and a mischievous smile. He seems to be playing a pair of bongos. When you catch his eye, he fades into the sunlight and is gone.",
+      },
+    ],
+  },
+  {
     area: "Tuvalu",
     type: "country",
+    description:
+      "A series of small volcanic islands, with a nice coral reef. At its high point, it's only about 15 feet above the water.",
     neighbors: ["Pacific Ocean"],
+    objects: [
+      {
+        name: "COCONUT",
+        article: "A",
+        description:
+          "<p>What's smaller than a bowling ball, and covered with hair? Plenty of things: Kittens, moles, wigs. One thing that's not covered with hair, though, is a coconut: the short, bristly husk is not actually \"hair\" at all, it's a plant!</p><p>And despite urban legends to the contrary, falling coconuts do not kill hundreds of people a year, or cause temporary amnesia.</p>",
+      },
+    ],
   },
   {
     area: "Uganda",

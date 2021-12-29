@@ -1,9 +1,11 @@
 import { globe } from "./globe.js";
 import { capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { helpText } from "./helpText.js";
+import { getCookie, setCookie } from "./cookies.js";
 
 console.clear();
-let curLocation = "United States";
+
+let curLocation = getCookie("lastLocation") ? getCookie("lastLocation") : "United States";
 
 export const getAttributeOfArea = (attrib, area = curLocation) => {
   let items = globe.filter(i => i.area.toLowerCase() === area.toLowerCase())[0][attrib];
@@ -13,7 +15,8 @@ export const getAttributeOfArea = (attrib, area = curLocation) => {
 const getNeighborsText = () => {
   let list = getAttributeOfArea("neighbors").reduce((result, cur, i) => {
     return (
-      result + `<button class="destination" data-destination="${cur}">${cur}</button>`
+      result +
+      `<button class="button destination" data-destination="${cur}">${cur}</button>`
     );
   }, "");
   return list;
@@ -26,7 +29,7 @@ const getObjectsText = () => {
     listOfObjects = objects.reduce((result, cur, i) => {
       return (
         result +
-        `${cur.article} <button class="object" data-object="${cur.name}">${cur.name}</button> is here. `
+        `${cur.article} <span class="button object" data-object="${cur.name}">${cur.name}</span> is here. `
       );
     }, "");
   } else {
@@ -44,32 +47,29 @@ const render = (val = null, msg = null, area, showLoc) => {
   setTimeout(() => {
     document.getElementById("display").innerHTML += getDisplay(val, msg, area, showLoc);
     document.querySelector("#console").scrollIntoView(true);
-    document.querySelectorAll("button.destination").forEach(i => {
+    document.querySelectorAll(".button.destination").forEach(i => {
       if (i.dataset.eventSet !== true) {
         i.dataset.eventSet = true;
         i.addEventListener("click", e => {
           const dest = e.target.dataset.destination.toLowerCase();
           document.querySelector("#prompt").value = `go ${dest}`;
         });
-      } else {
-        console.log("already set");
       }
     });
-    document.querySelectorAll("button.object").forEach(i => {
+    document.querySelectorAll(".button.object").forEach(i => {
       if (i.dataset.eventSet !== true) {
         i.dataset.eventSet = true;
         i.addEventListener("click", e => {
           const obj = e.target.dataset.object.toLowerCase();
           document.querySelector("#prompt").value = `look ${obj}`;
         });
-      } else {
-        console.log("already set");
       }
     });
   }, 500);
 };
 
 const handleSubmit = (val, msg = "") => {
+  val = val.replace(/\s+/g, " ").trim();
   const words = val.split(" ");
   const verb = words[0];
   const noun = words.slice(-(words.length - 1)).join(" ");
@@ -80,6 +80,7 @@ const handleSubmit = (val, msg = "") => {
     case "go":
       if (neighbors.includes(noun)) {
         curLocation = noun;
+        setCookie("lastLocation", curLocation);
       } else {
         msg = `<p>You can't get to ${noun} from here!</p>`;
       }
@@ -108,11 +109,18 @@ const handleSubmit = (val, msg = "") => {
       break;
     case "tel":
       msg = `<p>You have a series of adventures and end up in ${capitalize(noun)}.</p>`;
-      // showLoc = true;
       curLocation = noun;
+      setCookie("lastLocation", curLocation);
       break;
     case "help":
       msg = helpText;
+      break;
+    case "forget":
+      setCookie("lastLocation", curLocation, 0);
+      msg = `You enter a fugue state and wander back home.`;
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
       break;
     default:
       msg = `<p>I don't recognize the verb "${verb}".</p>`;
