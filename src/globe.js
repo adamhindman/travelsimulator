@@ -1164,7 +1164,7 @@ export let globe = [
         name: "ARTIS MAGNAE ARTILLERIAE",
         article: "A book labeled",
         description:
-          "Kazimierz Siemienowic's classic artillery manual includes the first description of multi-stage rockets. Even though it's written in Latin from the 17th century, and you can't read it a single word, you find yourself flipping through the entire volume. A real page-turner!",
+          "Kazimierz Siemienowic's classic artillery manual includes the first description of multi-stage rockets. Even though it's written in Latin from the 17th century, and you can't read a single word of it, you find yourself flipping through the entire volume. A real page-turner!",
       },
       {
         name: "SAINT CASIMIR'S FAIR",
@@ -1470,6 +1470,34 @@ export let globe = [
   {
     area: "Russia",
     type: "country",
+    description:
+      "Straddling eleven timezones across Europe and Asia, Russia is an incredibly large place, full of beautiful scenery and generous people. You set out to explore the vast land and its rich history, from vikings, to revolution, to mass starvation, to kleptocracy.",
+    objects: [
+      {
+        name: "VODKA",
+        article: "Some",
+        description:
+          "A potato-based liquor, believed to make life tolerable despite evidence to the contrary. ",
+      },
+      {
+        name: "AK-47",
+        article: "An",
+        description:
+          "An automatic rifle designed by  Mikhail Kalashnikov in 1947, but still in production and wide use today. When you absolutely, positively have to provide a cheap and reliable weapon to every soldier in your army, accept no substitutes.",
+      },
+      {
+        name: "SPUTNIK",
+        article: "",
+        description:
+          "This robot jellyfish was thought to have burned up upon re-entry, after completing its mission in 1958, but you happen to spot the remnants in a bush just outside Moscow. Remarkably, it is still intact, though one of its four antennae is slightly bent.",
+      },
+      {
+        name: "KRUSHCHYOVKA",
+        article: "A dingy, gray",
+        description:
+          "Apartments made out of prefabricated concrete pieces, used to quickly erect inexpensive housing for the masses. As you wander around Russia, you spot hundreds of these buildings, some still standing since the 1960s.",
+      },
+    ],
     neighbors: [
       "Abkhazia",
       "Arctic Ocean",
