@@ -9,7 +9,7 @@ export const helpText = `
   <p>If that happens, contact me on MySpace for a full refund!</p>
   <hr/>
   <h4>COMMANDS</h4>
-  <ul>
+  <ul class="asterisk">
     <li><strong>GO [place]</strong>: Travel to a nearby place.</li>
     <li><strong>LOOK [thing]</strong>: Look at something, or just look around.</li>
     <li><strong>TEL [place]</strong>: Teleport to a place.</li>
