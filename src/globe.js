@@ -1156,7 +1156,23 @@ export let globe = [
   },
   {
     area: "Lithuania",
+    description:
+      "A temperate, thickly-forested, occasionally swampy land without significant mountain ranges to disrupt the flowering meadows and rolling fields of wheat and millet.",
     type: "country",
+    objects: [
+      {
+        name: "ARTIS MAGNAE ARTILLERIAE",
+        article: "A book labeled",
+        description:
+          "Kazimierz Siemienowic's classic artillery manual includes the first description of multi-stage rockets. Even though it's written in Latin from the 17th century, and you can't read it a single word, you find yourself flipping through the entire volume. A real page-turner!",
+      },
+      {
+        name: "SAINT CASIMIR'S FAIR",
+        article: "",
+        description:
+          'You see roughly ten thousand people bustling through the streets of Vilnius, buying and selling arts and crafts, singing, and eating gingerbread. You stop to ask a Vilnian woman about the occasion, and she tells you it is a yearly celebration of the Feast of St. Casimir, held here for over three centuries, probably.<p>"Is it fun?" you ask.</p><p>"Yes," she shrugs.</p><p>You give her a big thumbs up and continue checking out the fair.</p>',
+      },
+    ],
     neighbors: ["Atlantic Ocean", "Belarus", "Latvia", "Poland", "Russia"],
   },
   {

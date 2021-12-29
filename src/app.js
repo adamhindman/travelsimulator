@@ -7,6 +7,13 @@ console.clear();
 
 let curLocation = getCookie("lastLocation") ? getCookie("lastLocation") : "United States";
 
+export const areaExists = areaName => {
+  let exists = globe.filter(c => {
+    return c.area.toLowerCase().trim() === areaName.toLowerCase().trim();
+  });
+  return isArray(exists);
+};
+
 export const getAttributeOfArea = (attrib, area = curLocation) => {
   let items = globe.filter(i => i.area.toLowerCase() === area.toLowerCase())[0][attrib];
   return items;
@@ -43,7 +50,7 @@ const getAreaDescription = (area = curLocation) => {
   return desc ? desc : "";
 };
 
-const render = (val = null, msg = null, area, showLoc) => {
+const render = (val = null, msg = null, area = curLocation, showLoc = false) => {
   setTimeout(() => {
     document.getElementById("display").innerHTML += getDisplay(val, msg, area, showLoc);
     document.querySelector("#console").scrollIntoView(true);
@@ -85,8 +92,6 @@ const handleSubmit = (val, msg = "") => {
         msg = `<p>You can't get to ${noun} from here!</p>`;
       }
       break;
-    case "teleport":
-      break;
     case "look":
       if (words.length === 1) {
         showLoc = true;
@@ -108,9 +113,13 @@ const handleSubmit = (val, msg = "") => {
       }
       break;
     case "tel":
-      msg = `<p>You have a series of adventures and end up in ${capitalize(noun)}.</p>`;
-      curLocation = noun;
-      setCookie("lastLocation", curLocation);
+      if (areaExists(noun)) {
+        curLocation = noun;
+        setCookie("lastLocation", curLocation);
+        msg = `<p>You have a series of adventures and end up in ${capitalize(noun)}.</p>`;
+      } else {
+        msg = `<p>You can't teleport there; it doesn't exist!</p>`;
+      }
       break;
     case "help":
       msg = helpText;
