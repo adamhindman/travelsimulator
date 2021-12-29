@@ -9,5 +9,6 @@ export const helpText = `
     <li><strong>GO [place]</strong>: Travel to a nearby place.</li>
     <li><strong>LOOK [thing]</strong>: Look at something, or just look around.</li>
     <li><strong>TEL [place]</strong>: Teleport to a place.</li>
+    <li><strong>FORGET</strong>: Forget your current location, in case the save system gets messed up.
   </ul>
 `;
