@@ -76,7 +76,7 @@ const render = (val = null, msg = null, area = curLocation, showLoc = false) => 
 };
 
 const handleSubmit = (val, msg = "") => {
-  val = val.replace(/\s+/g, " ").trim();
+  val = val.toLowerCase().replace(/\s+/g, " ").trim();
   const words = val.split(" ");
   const verb = words[0];
   const noun = words.slice(-(words.length - 1)).join(" ");
@@ -130,6 +130,8 @@ const handleSubmit = (val, msg = "") => {
       setTimeout(() => {
         window.location.reload();
       }, 2000);
+      break;
+    case "":
       break;
     default:
       msg = `<p>I don't recognize the verb "${verb}".</p>`;

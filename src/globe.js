@@ -1548,7 +1548,35 @@ export let globe = [
   },
   {
     area: "San Marino",
+    description:
+      "On a mountain overlooking this tiny city state, you see three medieval towers rising picturesquely into the blue skies.",
     type: "country",
+    objects: [
+      {
+        name: "GUAITA",
+        article: "The",
+        description:
+          "The oldest of the three towers of San Marino, this one was built as a prison in the 11th century.",
+      },
+      {
+        name: "CESTA",
+        article: "The",
+        description:
+          "The tallest of the three towers of San Marino, this one looks like it's wearing a  hat.",
+      },
+      {
+        name: "MONTALE",
+        article: "The",
+        description:
+          '<p>The most mysterious of the three towers of San Marino, this one cannot be entered by the public, and the only entrance is a single door located 20 feet off the ground.</p><p>"What do you think is inside the Montale?" you ask a passer-by.<br/>"I heard it\'s where the Pope keeps his pterodactyls", she says, lowering her voice to nearly a whisper and glancing furtively around the train station.',
+      },
+      {
+        name: "TORTA TRE MONTI",
+        article: "A",
+        description:
+          "A type of cake, made to celebrate those three beautiful towers in San Marino. As you munch on a slice, you have to admit that this combination of waffle substrate and chocolate cement truly captures the essence of the city's most famous symbols.",
+      },
+    ],
     neighbors: ["Italy"],
   },
   {
