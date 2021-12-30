@@ -4,8 +4,12 @@ import { helpText } from "./helpText.js";
 import { getCookie, setCookie } from "./cookies.js";
 
 console.clear();
+// setCookie("lastLocation", "united states");
 
 let curLocation = getCookie("lastLocation") ? getCookie("lastLocation") : "United States";
+
+const submitBtn = document.getElementById("submit");
+const promptField = document.getElementById("prompt");
 
 export const areaExists = areaName => {
   let exists = globe.filter(c => {
@@ -60,6 +64,7 @@ const render = (val = null, msg = null, area = curLocation, showLoc = false) => 
         i.addEventListener("click", e => {
           const dest = e.target.dataset.destination.toLowerCase();
           document.querySelector("#prompt").value = `go ${dest}`;
+          submitBtn.classList.add("shown");
         });
       }
     });
@@ -69,6 +74,7 @@ const render = (val = null, msg = null, area = curLocation, showLoc = false) => 
         i.addEventListener("click", e => {
           const obj = e.target.dataset.object.toLowerCase();
           document.querySelector("#prompt").value = `look ${obj}`;
+          submitBtn.classList.add("shown");
         });
       }
     });
@@ -154,11 +160,18 @@ const getDisplay = (val, msg, area, showLoc) => {
   return display;
 };
 
-document.getElementById("prompt").addEventListener("keydown", e => {
+promptField.addEventListener("keydown", e => {
   if (e.key === "Enter") {
-    handleSubmit(e.target.value.toLowerCase());
-    e.target.value = "";
+    handleSubmit(e.target.value.toLowerCase().trim());
+    promptField.value = "";
+    submitBtn.classList.remove("shown");
   }
+});
+
+submitBtn.addEventListener("click", e => {
+  handleSubmit(promptField.value.toLowerCase().trim());
+  promptField.value = "";
+  submitBtn.classList.remove("shown");
 });
 
 document.querySelector("html").addEventListener("click", e => {

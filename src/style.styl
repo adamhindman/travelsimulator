@@ -55,6 +55,19 @@ h4
   align-items center
   width 100%
   font-family monospace
+  button#submit
+    display none
+    color: #aaffaa66;
+    text-transform uppercase
+    background-color transparent;
+    border 0
+    border-radius .2rem
+    padding: .3rem .6rem
+    &:hover
+      color: #282828
+      background: #33ff33
+    &.shown
+      display inline-block
 #prompt, .prompt
   font-family monospace
   flex 1

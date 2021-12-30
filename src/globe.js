@@ -837,6 +837,46 @@ export let globe = [
   {
     area: "Germany",
     type: "country",
+    description:
+      "<p>A large, industrious country with bountiful resources, stunning natural beauty, and world-renowned pretzels. To the north, you spot a breathtaking mountain range called the Alps, and to the south, the freezing, wind-tossed North Sea crashes into the rocky... shore...</p><p>Wait, hold up, that can't be right. The North Sea is in the south? Hmm.</p><p>You take a moment to consult your compass.</p><p>Well, that's odd.</p>Fifteen minutes later, with the aid of a friendly German man who sees you're confused and comes over to help, you figure out that the damned compass is busted somehow. According to Jürgen, the Alps are \"definitely\" in the South. Well, guess it's time to get a new compass. Thanks, Jürgen!</p>",
+    objects: [
+      {
+        name: "CHECKPOINT CHARLIE",
+        article: "",
+        description:
+          "A crossing point between East and West Berlin, from the days when the city was  divided by a big wall.",
+      },
+      {
+        name: "BLACK FOREST",
+        article: "The",
+        description:
+          "A fairytale forest stuffed with soaring pine trees and quaint old towns. This place seems friendly, but you get the sense they don't like outsiders asking too many questions about how they make their famous ham.",
+      },
+      {
+        name: "LIMES GERMANICUS",
+        article: "The",
+        description:
+          "A 600-km long line of ancient Roman fortifications. Currently, only about half the forts remain in active use by Roman legionnary forces.",
+      },
+      {
+        name: "BEER",
+        article: "",
+        description:
+          "As wine is to the French, and tea to the British, so is beer to the Germans. If you ask for wine or tea at a bar in Germany, they'll pretend not to have heard you, and serve you a big old stein of beer instead. After that, if you repeat your original order, you are considered a nuisance.",
+      },
+      {
+        name: "CHARLEMAGNE'S THRONE",
+        article: "",
+        description:
+          "Located in Aachen Cathedral, this throne has been the favorite chair of 31 different kings of Germany. Charlemagne himself is buried nearby, and some say this throne is so nice that his ghost still rises of a dark midnight, just to spend some time sitting on it again.",
+      },
+      {
+        name: "JÜRGEN",
+        article: "",
+        description:
+          "A German man, roughly 36 years old, wearing an orange shirt, and holding a free compass he just got.",
+      },
+    ],
     neighbors: [
       "Atlantic Ocean",
       "Austria",
@@ -1562,7 +1602,7 @@ export let globe = [
         name: "CESTA",
         article: "The",
         description:
-          "The tallest of the three towers of San Marino, this one looks like it's wearing a  hat.",
+          "The tallest of the three towers of San Marino, this one looks like it's wearing a hat.",
       },
       {
         name: "MONTALE",
