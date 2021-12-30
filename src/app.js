@@ -13,7 +13,7 @@ const promptField = document.getElementById("prompt");
 
 export const areaExists = areaName => {
   let exists = globe.filter(c => {
-    return c.area.toLowerCase().trim() === areaName.toLowerCase().trim();
+    return c.area === areaName;
   });
   return isArray(exists);
 };
@@ -162,14 +162,14 @@ const getDisplay = (val, msg, area, showLoc) => {
 
 promptField.addEventListener("keydown", e => {
   if (e.key === "Enter") {
-    handleSubmit(e.target.value.toLowerCase().trim());
+    handleSubmit(e.target.value);
     promptField.value = "";
     submitBtn.classList.remove("shown");
   }
 });
 
 submitBtn.addEventListener("click", e => {
-  handleSubmit(promptField.value.toLowerCase().trim());
+  handleSubmit(promptField.value);
   promptField.value = "";
   submitBtn.classList.remove("shown");
 });

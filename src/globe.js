@@ -112,7 +112,6 @@ export let globe = [
       "Belize",
       "Benin",
       "Bermuda",
-      "Bermuda",
       "Bosnia and Herzegovina",
       "Brazil",
       "Bulgaria",
