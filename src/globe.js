@@ -208,6 +208,14 @@ export let globe = [
   },
   {
     area: "Indian Ocean",
+    description: "This ocean hosts the largest phytoplankton blooms, bar none.",
+    objects: [
+      {
+        name: "PHYTOPLANKTON BLOOM",
+        article: "A",
+        description: "Just look at it! Beautiful.",
+      },
+    ],
     type: "ocean",
     neighbors: [
       "Australia",
@@ -390,6 +398,22 @@ export let globe = [
   },
   {
     area: "Belarus",
+    description:
+      "This jewel of the former Soviet Union has 11,000 lakes (suck it, Minnesota!) and their main export is tractors. Unfortunately positioned in the path of larger powers, the armies of Europe have stomped through Belarus for thousands of years, and a change in the weather patterns in April, 1986 meant that most of the radioactive fallout from Chernobyl landed here, instead of in Ukraine. Yet, despite it all, the people remain ever unvanquished, and nature has somewhat made up for their troubled history by gifting this beautiful country with an abundance of peat, granite, sand, and gravel.",
+    objects: [
+      {
+        name: "IRRADIATED FARMLAND",
+        article: "Hundreds of miles of",
+        description:
+          "One-fifth of the land in Belarus is irradiated: mostly forests and farmland. Walking through this area, you see abandoned villages, scattered homesteads, and packs of wild dogs.",
+      },
+      {
+        name: "DRANIKI",
+        article: "A warm plate of",
+        description:
+          "A potato pancake, beloved by the Belarusian people. You take a bite out of one: a little bland. Then, you realize you're supposed to dip it in sour cream. What a difference that makes! Mmm, these draniki are delicious.",
+      },
+    ],
     type: "country",
     neighbors: ["Latvia", "Lithuania", "Poland", "Russia", "Ukraine"],
   },

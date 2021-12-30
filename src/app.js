@@ -13,7 +13,7 @@ const promptField = document.getElementById("prompt");
 
 export const areaExists = areaName => {
   let exists = globe.filter(c => {
-    return c.area === areaName;
+    return c.area.toLowerCase().trim() === areaName.toLowerCase().trim();
   });
   return isArray(exists);
 };
