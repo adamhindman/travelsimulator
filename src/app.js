@@ -135,7 +135,7 @@ const handleSubmit = (val, msg = "") => {
       msg = `You enter a fugue state and wander back home.`;
       setTimeout(() => {
         window.location.reload();
-      }, 2000);
+      }, 1000);
       break;
     case "":
       break;
@@ -164,6 +164,14 @@ promptField.addEventListener("keydown", e => {
   if (e.key === "Enter") {
     handleSubmit(e.target.value);
     promptField.value = "";
+    submitBtn.classList.remove("shown");
+  }
+});
+
+promptField.addEventListener("keyup", e => {
+  if (promptField.value.length > 0) {
+    submitBtn.classList.add("shown");
+  } else {
     submitBtn.classList.remove("shown");
   }
 });

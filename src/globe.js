@@ -399,7 +399,7 @@ export let globe = [
   {
     area: "Belarus",
     description:
-      "This jewel of the former Soviet Union has 11,000 lakes (suck it, Minnesota!) and their main export is tractors. Unfortunately positioned in the path of larger powers, the armies of Europe have stomped through Belarus for thousands of years, and a change in the weather patterns in April, 1986 meant that most of the radioactive fallout from Chernobyl landed here, instead of in Ukraine. Yet, despite it all, the people remain ever unvanquished, and nature has somewhat made up for their troubled history by gifting this beautiful country with an abundance of peat, granite, sand, and gravel.",
+      "This jewel of the former Soviet Union has 11,000 lakes (suck it, Minnesota!) and their main export is tractors. Unfortunately, because it is positioned in the path of larger powers, the armies of Europe have steamrolled through Belarus for thousands of years, on their way to other places. Then, in April 1986, the wind carried most of the radioactive fallout from Chernobyl here, instead of to Ukraine. Yet, despite it all, the people here remain stoic, and nature has somewhat made up for their troubled history by gifting this beautiful country with an abundance of peat, granite, sand, and gravel.",
     objects: [
       {
         name: "IRRADIATED FARMLAND",
@@ -1322,7 +1322,7 @@ export let globe = [
         name: "TEOTIHUACAN",
         article: "The city of",
         description:
-          "A ruined complex with a stepped pyramid. You see that it was built by an ancient people, due to being old.",
+          "A ruined complex with a stepped pyramid. You conclude that it was built by an ancient people, due to being very old.",
       },
       {
         name: "AXOLOTL",
@@ -2051,6 +2051,22 @@ export let globe = [
   {
     area: "Zambia",
     type: "country",
+    description:
+      "<p>A tropical country on the Central African plateau.</p><p>Wading into the Zambezi river, you observe a group of hungry, hungry hippopotamuses compete to eat small, white pellets. You smile to see the funny, fat creatures rush and snap their broad mouths together frantically. Who will win?</p>",
+    objects: [
+      {
+        name: "MOSI-O-TUNYA",
+        article: "The",
+        description:
+          'Mosi-o-tunya is the Lozi title for the same mile-wide waterfall on the Zambezi river that David Livingstone (I presume) named Victoria Falls. The name translates to "the smoke that thunders".',
+      },
+      {
+        name: "KALAMBO FALLS",
+        article: "",
+        description:
+          "The Kalambo river plunges 770-feet in a single, uninterrupted drop here. Standing at the top and looking down at this marvel, it's difficult not to imagine yourself drinking all that water.",
+      },
+    ],
     neighbors: [
       "Angola",
       "Botswana",
