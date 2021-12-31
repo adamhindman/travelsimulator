@@ -302,6 +302,28 @@ export let globe = [
   {
     area: "Angola",
     type: "country",
+    description:
+      "Angola is a large country in Southern Africa, bordering Namibia to the south, the Democratic Republic of Congo to the north, and Zambia to the east. It has an extremely large coastline on the Indian Ocean, and the parts of it that are not stiflingly hot are those coastal areas, where most of the people have flocked.<p>While walking down the breezy streets of Luanda and Benguela, you admire the old, colonial Portuguese architecture, and stop to drink a tall glass of kissangua, a traditional drink made of corn flour, while chowing down on some funge, a slop which is also made of corn flour.</p>",
+    objects: [
+      {
+        name: "National Museum of Slavery",
+        article: "The",
+        description:
+          "A great way to learn about the tragic legacy of the slave trade in Angola while on vacation.",
+      },
+      {
+        name: "Luanda Cathedral",
+        article: "The",
+        description:
+          "A 400-year old Roman Catholic cathedral in Luanda. Still looking great!",
+      },
+      {
+        name: "Tundavala Gap",
+        article: "",
+        description:
+          'While hiking around near Lubango, you notice this amazing, 1200 meter high plateau that looks out over the surrounding countryside. "Wow, I can see most of Huíla province from here," you think to yourself.',
+      },
+    ],
     neighbors: [
       "Democratic Republic of the Congo",
       "Republic of the Congo",
@@ -689,7 +711,8 @@ export let globe = [
       {
         name: "BONOBOS",
         article: "A group of sexually active",
-        description: "Distant cousins of humans, these primates are fucking right now.",
+        description:
+          "These primates are distant cousins of humans. They are fucking right now.",
       },
       {
         name: "TRAFFIC ROBOT",
