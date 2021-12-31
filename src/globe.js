@@ -613,6 +613,34 @@ export let globe = [
   },
   {
     area: "China",
+    description:
+      "One of the largest countries you've seen on this trip. China is full of deserts, mountains, forests, and steppes, as well as dozens of massive cities and coal power plants. Wandering through the more remote areas, you see lots of old temples. You also notice a large wall running along the northern border here, probably to keep the dogs and cats inside. You've heard there is excellent Chinese food to be found here.",
+    objects: [
+      {
+        name: "SWORD OF GOUJIAN",
+        article: "The legendary",
+        description:
+          "This bronze sword, once belonging to the King of Yue, was found untarnished after being underwater for 2000 years. It is on a list of objects forbidden to be taken out of the country. Probably magical, it throbs with unearthly power.",
+      },
+      {
+        name: "GIANT PANDA",
+        article: "A",
+        description:
+          "While strolling through the jungles of Sichuan, you spotted this large, celibate raccoon eating some grass.",
+      },
+      {
+        name: "SOUTH-POINTING CHARIOT",
+        article: "A",
+        description:
+          "A wheeled, mechanical compass. There is a carved figure of a man on top, his arm outstretched as though to say 'south is thattaway'. As the cart moves, a clever arrangement of gears rotates the figure so that he is always pointing south. To test just how effective this device is, you turn your head away, then turn it back really fast: the man is still pointing south. Incredible.",
+      },
+      {
+        name: "THREE GORGES DAM",
+        article: "The",
+        description:
+          "You stop to admire the structural engineering behind the largest hydroelectric dam in the world.",
+      },
+    ],
     type: "country",
     neighbors: [
       "Afghanistan",
