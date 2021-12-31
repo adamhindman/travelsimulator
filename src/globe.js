@@ -683,6 +683,21 @@ export let globe = [
   {
     area: "Democratic Republic of the Congo",
     type: "country",
+    description:
+      "Named after the Congo river that winds its way through the country, the Democratic Republic of Congo is a resource-rich, equatorial, Sub-Saharan nation on the move. In the 19th century, King Leopold II of Belgium came for the rubber and ivory, and built railroads and ports to ship it out faster. Today, mining copper and cobalt from the exposed guts of the Albertine Rift is the name of the game.<p>Across the river from Kinshasa, you can see Brazzaville, capitol of the neighboring Republic of Congo.</p>",
+    objects: [
+      {
+        name: "BONOBOS",
+        article: "A group of sexually active",
+        description: "Distant cousins of humans, these primates are fucking right now.",
+      },
+      {
+        name: "TRAFFIC ROBOT",
+        article: "A",
+        description:
+          "Super-scientist Thérèse Izay Kirongozi invented these five robots to control traffic in the megacity of Kinshasa. Some have theorized that they have hidden programming that will allow them to join into a single, larger robot to save Kinshasa from danger.",
+      },
+    ],
     neighbors: [
       "Angola",
       "Atlantic Ocean",
