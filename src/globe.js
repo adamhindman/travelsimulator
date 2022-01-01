@@ -260,16 +260,44 @@ export let globe = [
     area: "Abkhazia",
     type: "country",
     neighbors: ["Russia", "Georgia"],
+    description:
+      "A tiny, mountainous country on the coast of the Black Sea. It declared its independence from Georgia in 1992. Abkhazia is a country with a southern European climate. Like Georgia, it is part of the Caucasus Mountains. The capitol, and gateway to the country, is the gorgeous city of Sukhumi. It has a populatin of about 100,000 (wouldn't it be weird if it was exactly 100,000?).",
+    objects: [
+      {
+        name: "LAND OF DARKNESS",
+        article: "The",
+        description:
+          'While wandering along a path through a forest in Abkhazia, you encounter a region shrouded in impenetrable, perpetual darkness. While you can\'t see through the veil, you can hear numerous voices coming from within. How weird is that!?<p>After about six hours, you see an old man coming down the same path you took. This man, who introduces himself as Andreas, and says he is an immortal servant of Alexander the Great, explains how this cursed land was created by God to punish some Persian soldiers who were persecuting Christians.<p>"That explains it," you say, nodding vigorously, "I thought it would be something like that."',
+      },
+    ],
   },
   {
     area: "Afghanistan",
     type: "country",
+    description:
+      "The graveyard of empires is a central Asian country. The capital is A, and the capitol city is Kabul. The name Afghanistan means 'Land of the Afghan', and the population is about 23 million Pashtun and Uzbeks. The country is mountainous, landlocked, and littered with old Soviet and U.S. tanks.",
     neighbors: ["China", "Iran", "Pakistan", "Tajikistan", "Turkmenistan", "Uzbekistan"],
   },
   {
     area: "Albania",
     type: "country",
     neighbors: ["Greece", "Kosovo", "North Macedonia", "Montenegro", "Atlantic Ocean"],
+    description:
+      "A small Balkan country. It was the first in Europe to convert to Christianity, and the first to declare independence from the Ottoman empire. The capitol is Tirana. Albania has a population of about 3 million.",
+    objects: [
+      {
+        name: "SHKODËR",
+        article: "The city of",
+        description:
+          "Shkodra is the birth place of George Kastrioti Skanderbeg, The Lord of Albania. He was a fifteenth century Albanian nobleman who led a rebellion against the Ottoman empire, and helped create a separate Albanian identity.",
+      },
+      {
+        name: "CODEX BERATINUS",
+        article: "The",
+        description:
+          "A 6th-century gospel text written on purple vellum. It escaped the hands of crusaders on Patmos, then somewhat later it survived an attempt by Hitler to steal it from Albania.",
+      },
+    ],
   },
   {
     area: "Algeria",
@@ -296,6 +324,16 @@ export let globe = [
   },
   {
     area: "Andorra",
+    description:
+      "Charlemagne created this tiny country at the stroke of a pen. Probably not by himself, since he may have been illiterate, and certainly did not write his own proclamations (very busy man). He almost certainly had people to make pen strokes for him, and, as sovereign emperor, he owned their pens as well. If all functionaries are merely extensions of the state, and the state the embodiment of the sovereign, then Charlemagne did not <em>need</em> to be able to write, for all writing done on his behalf was in a sense done <em>by</em> him. <p>Notwithstanding the nature of governance, it was by Charlemagne's decree that this microstate was carved out of 181 rugged square miles of the Pyrenees and the Principality of Andorra was born. Today, it is mostly a tourist attraction, drawing Europeans like flies to its quaint old buildings set against high-rising, highly skiable mountains. A nation of 77,000 people, it gets 10 million visitors a year. Call it 10 million and one.</p>",
+    objects: [
+      {
+        name: "OUR LADY OF MERITXELL",
+        article: "",
+        description:
+          "A 12th-century statue of the Virgin Mary, said to have appeared by magic beneath a wild rose blooming in the winter snow. You manage to talk your way into the secret vault where the original statue is still kept, having survived the fire that the newspapers said destroyed it in the 1970s. It throbs with unearthly power.",
+      },
+    ],
     type: "country",
     neighbors: ["France", "Spain"],
   },
@@ -303,7 +341,7 @@ export let globe = [
     area: "Angola",
     type: "country",
     description:
-      "Angola is a large country in Southern Africa, bordering Namibia to the south, the Democratic Republic of Congo to the north, and Zambia to the east. It has an extremely large coastline on the Indian Ocean, and the parts of it that are not stiflingly hot are those coastal areas, where most of the people have flocked.<p>While walking down the breezy streets of Luanda and Benguela, you admire the old, colonial Portuguese architecture, and stop to drink a tall glass of kissangua, a traditional drink made of corn flour, while chowing down on some funge, a slop which is also made of corn flour.</p>",
+      "Angola is a large country in Southern Africa, bordering Namibia to the south, the Democratic Republic of Congo to the north, and Zambia to the east. It has an extremely large coastline on the Indian Ocean, and the parts of it that are not stiflingly hot and dry are those coastal areas, where most of the people have flocked.<p>While walking down the breezy streets of Luanda and Benguela, you admire the old, colonial Portuguese architecture, and stop to drink a tall glass of kissangua, a traditional drink made of corn flour, while chowing down on some funge, a slop which is also made of corn flour.</p>",
     objects: [
       {
         name: "National Museum of Slavery",
@@ -336,11 +374,21 @@ export let globe = [
     area: "Antigua and Barbuda",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      'A Caribbean island nation, consisting of two small islands, Antigua and Barbuda. Antigua is the larger of the two islands, so you begin to explore there first.<p>You enjoy the white sand beaches, the blue green crystal water, how friendly and photogenic the exotic birds are. They eat carrots and cheese crackers right out of your hand!<p>Soon, your time on Antigua is done, but one island isn\'t enough. You go to Barbuda.</p>You are shocked at how remote it is: you\'re truly in the middle of nowhere. You sit on the beach and enjoy the silence, beholding the dark green mountains surrounding the island.</p><p>In a moment of silent meditation, you consider starting your own train company. "No, no," you finally say, as the waves breach the perimeter of your sand castle. "Traveling is the life for me."</p>',
   },
   {
     area: "Argentina",
     type: "country",
+    description:
+      'As you walk across the country, you encounter a friendly local. After exchanging pleasantries, you ask them to tell you about the country.</p><p>They smile, and, after thinking for a moment, say: "The people here love soccer and barbecue. The culture is a mix of European and indigenous cultures. The language itself has many dialects, the most famous language of which is Rioplatense, which I am speaking now.</p><p>"Thank you, that was very helpful" you say, quickly picking up on the dialect. After exchanging phone numbers, you wave goodbye to your new friend, and continue walking across the pampas.',
     neighbors: ["Bolivia", "Brazil", "Chile", "Library of Babel", "Paraguay", "Uruguay"],
+    objects: [
+      { name: "TIERRA DEL FUEGO", article: "", description: "WIP" },
+      { name: "OMBÚ", article: "An", description: "WIP" },
+      { name: "SILVER", article: "A big bar of", description: "WIP" },
+      { name: "VILLA OCAMPO", article: "The", description: "WIP" },
+    ],
   },
   {
     area: "Armenia",
@@ -483,7 +531,7 @@ export let globe = [
     area: "Brazil",
     type: "country",
     description:
-      "You see a country with mountains, and a large swath of equatorial rainforest jungle, containing many animals and plants. You notice a complex system of rivers, with eight separate drainage basins (wow!). The capitol is Brasilia.",
+      "You see a country with mountains, and a large swath of equatorial rainforest jungle, containing many animals and plants. You notice a complex system of rivers, with eight separate drainage basins (wow!). You travel up and down them in a boat, and eventually visit the capitol city of Brasilia.",
     objects: [
       {
         name: "COFFEA",
@@ -843,6 +891,52 @@ export let globe = [
   {
     area: "England",
     type: "country",
+    description:
+      "An island country. Historically important, culturally rich. As you stroll down the high street under a light drizzle, you stop for a cup of tea, then head down the pub and have a pint, while listening to the locals shout about the footie match. Ahh, it's good to be in Ol' Blighty.",
+    objects: [
+      {
+        name: "APPLES AND PEARS",
+        article: "The",
+        description:
+          'When you held the elevator door open for the cockney gentleman in the lobby, he waved you off.<p>"I think I\'ll just take the apples and pears instead."<p/><p>"Apples and Pears? What does that mean?"</p><p>He chuckled, and pointed to the nearby staircase.</p><p>"We call that apples and pears in this neighborhood."</p><p>"Oh, they have those in other places too," you replied.</p><p>He grabbed an apple and pear from the box of mixed fruit sitting on the first step. With a wink, he doffed his hat, took a big bite out of the apple, and disappeared up a chimney. You never saw him again.<p>',
+      },
+      {
+        name: "CROWN JEWELS",
+        article: "The",
+        description:
+          "A set of shiny jewels attached to a coronation hat. These are kept in the Tower of London, and there is usually at least one person on hand to make sure nobody steals them.<p>On this rainy afternoon, however, the place is empty, and you are able to pick up the crown and get a good look at it. You count over 23,000 individual stones, including a big red one called The Black Prince's Ruby. What a unique hat! This thing must weigh five pounds. I guess it's true what they say: 'Heavy is the head that wears the crown'.",
+      },
+      {
+        name: "FULL ENGLISH BREAKFAST",
+        article: "A",
+        description:
+          "A delicious combination of potatoes, beans, tomatoes, eggs, and blood. A great way to start the day.",
+      },
+      {
+        name: "OLD ENGLISH SHEEPDOG",
+        article: "An",
+        description:
+          "Even though they are 'long in the tooth', these dogs are are not called old because they have celebrated a lot of birthdays. Actually, they are called Old English because they speak an older form of the language, dating back to the 7th century.<p>This one runs up to you, its shaggy fur flopping across a big, friendly face.<p>'Barke! Barke!' it says.",
+      },
+      {
+        name: "ANGEL OF THE NORTH",
+        article: "The",
+        description:
+          "A massive steel sculpture that looks like a totem poll crossed with a plane.",
+      },
+      {
+        name: "STONEHENGE",
+        article: "",
+        description:
+          'A circle of sandstone blocks, each about 13" tall, and 7" wide, built by druids 5000 years ago, give or take. It throbs with unearthly power, and seems to call out to metal fans everywhere.',
+      },
+      {
+        name: "MAGNA CARTA",
+        article: "The",
+        description:
+          "King John grudgingly agreed to these rules in 1215. Among other effects, this document finally defined a reasonable rate for scutage.",
+      },
+    ],
     neighbors: ["Atlantic Ocean", "Scotland", "Wales"],
   },
   {
@@ -913,6 +1007,40 @@ export let globe = [
   {
     area: "Georgia",
     type: "country",
+    description:
+      "An autonomous republic located in the Caucasus mountains of Eurasia, Georgia is an Eastern European country with a southern European climate. In 1991, the country declared independence from the collapsing Soviet Union, which, in hindsight, was probably a good idea.",
+    objects: [
+      {
+        name: "GEORGIAN MILITARY ROAD",
+        article: "The",
+        description:
+          "This road follows the route typically used by to invade Georgia, so walking all 212 kilometers, as you are doing now, is like taking a trip to the past and future at the same time.",
+      },
+      {
+        name: "SHKARA",
+        article: "",
+        description:
+          "The highest point in Georgia is the tippy top of this 16,257 foot peak. After completing the notoriously dangerous Bezingi Wall traverse, you ascend the summit, to glimpse a beautiful view of the Caucausus. It is similar to others you've seen before, maybe a little higher up. You smile, snap a photo on your phone, then head back down.",
+      },
+      {
+        name: "BASTARD STURGEON",
+        article: "A",
+        description:
+          "An extremely endangered fish. One of the few remaining breeding exists in the Rioni River in Georgia. Wading into the river, you are able to pet several of them.",
+      },
+      {
+        name: "KHAKHULI TRIPTYCH",
+        article: "The",
+        description:
+          "An elegant example of Byzantine cloisonné enameling techniques. Most of the gold and jewels were removed when the artifact was stolen from the Gelati monastery in 1859. The case remains unsolved.",
+      },
+      {
+        name: "GEORGIAN WINE",
+        article: "A bottle of",
+        description:
+          "Wine has been grown in this region for 8000 years. Since wine gets better with age, you can only imagine how great this must taste.",
+      },
+    ],
     neighbors: [
       "Abkhazia",
       "Armenia",
@@ -1654,25 +1782,49 @@ export let globe = [
     area: "Rwanda",
     type: "country",
     neighbors: ["Burundi", "Democratic Republic of the Congo", "Tanzania", "Uganda"],
+    description:
+      "A small central African country. The capitol is Kigali. Rwanda has a population of about 7,000,000. The population is an amalgamation of different African tribes. The tribal groups are the Hutus and the Tutsis. Rwanda has had not one, but two genocides recently.",
+    objects: [
+      {
+        name: "LAKE KIVU",
+        article: "",
+        description:
+          "Kivu is on the border of Rwanda and the Democratic Republic of the Congo. It has many beautiful waterfalls, and natural forest and mountain scenery.",
+      },
+      {
+        name: "VIRUNGA MOUNTAINS",
+        article: "",
+        description:
+          "A string of dormant volcanoes that separate Rwanda from Uganda, and the Democratic Republic of the Congo.",
+      },
+    ],
   },
   {
     area: "Saint Kitts and Nevis",
+    description:
+      "The two-island country of Saint Kitts and Nevis. The capitol is Basseterre. Nevis is the only Caribbean island that is a dormant volcano but NOT the secret lair of a villain. Saint Kitts and Nevis has a population of about 50,000. It used to be a part of Great Britain, but in In 1983, they gained their independence. Congratulations!",
     type: "country",
     neighbors: ["Atlantic Ocean"],
   },
   {
     area: "Saint Lucia",
     type: "country",
+    description:
+      "The island country of Saint Lucia, about 175 miles east of Puerto Rico. The capitol is Castries. Saint Lucia has a population of about 175,000. The official language is English. The currency is the East Caribbean dollar. The climate is tropical. For fun, people like to dance, go to the beach, and listen to music.",
     neighbors: ["Atlantic Ocean"],
   },
   {
     area: "Saint Vincent and the Grenadines",
+    description:
+      "A nation in the Windward Islands of the West Indies. The capitol is Kingstown. Saint Vincent and the Grenadines has a population of about 51,000. The national flower is the saman (pronounced sa-man). Saman is the national bird.",
     type: "country",
     neighbors: ["Atlantic Ocean"],
   },
   {
     area: "Samoa",
     type: "country",
+    description:
+      "The southernmost country of Polynesia. The capitol is Apia. Samoa is an island nation in the South Pacific. There are nine islands. Samoa has a population of about 180,000, most of whom enjoy the tropical climate. A small country with big people.",
     neighbors: ["Pacific Ocean"],
   },
   {
@@ -1711,11 +1863,15 @@ export let globe = [
   {
     area: "São Tomé and Príncipe",
     type: "country",
+    description:
+      "Two small islands in the equatorial Atlantic. They are about 1,000 miles west of Africa. São Tomé and Príncipe are both volcanic islands. The capitol is São Tomé. Both islands have tropical rain forests. The population is a mixture of Portuguese, Africans, and Indians.",
     neighbors: ["Atlantic Ocean"],
   },
   {
     area: "Saudi Arabia",
     type: "country",
+    description:
+      "The largest country in the Arabian Peninsula. The capitol is Riyadh. Saudi Arabia is ruled by a monarchy. The language is Arabic. Saudi Arabia is an Islamic country. Saudi Arabia's national religion is Islam.",
     neighbors: [
       "Indian Ocean",
       "Iraq",
@@ -1730,7 +1886,17 @@ export let globe = [
   {
     area: "Scotland",
     type: "country",
+    description:
+      "Scotland is the northern part of the island of Great Britain. The capitol is Edinburgh. Scotland's national animal is the red deer.",
     neighbors: ["Atlantic Ocean", "England"],
+    objects: [
+      {
+        name: "LOCH NESS MONSTER",
+        article: "The",
+        description:
+          'A friendly plesiosaur, and one of the last of her kind, Nessie lives in the cold, deep waters of Loch Ness. You decide to find Nessie and ask her the question that\'s been on your mind for a while.<p>"Nessie, how could a population of dinosaurs survive for 200 million years in a lake in Scotland?"<br/>"One day at a time," she says, and sinks, with only the faintest ripple, beneath the surface of the water.',
+      },
+    ],
   },
   {
     area: "Senegal",
@@ -1945,6 +2111,17 @@ export let globe = [
   {
     area: "Turkey",
     type: "country",
+    description:
+      "Turkey is an ancient country with in strategically important location: it commands a shipping bottleneck, and spans two continents.",
+    objects: [
+      {
+        name: "GÖBEKLI TEPE",
+        article: "",
+        description:
+          "A neolithic template that predates the invention of ceramics. Göbekli Tepe contains many objects of religious or totemic significance, which throb with unearthly power.",
+      },
+      { name: "ALINAZIK", article: "", description: "A delicious kebab dish." },
+    ],
     neighbors: [
       "Armenia",
       "Atlantic Ocean",
