@@ -414,6 +414,40 @@ export let globe = [
     area: "Australia",
     type: "country",
     neighbors: ["Pacific Ocean", "Indian Ocean"],
+    description:
+      "Australia is a large country in the southern hemisphere. It is the world's largest island and the smallest continent. It is known for its natural fauna, such as kangaroos and emus, and for its diverse topography. The climate ranges from tropical climates to desert. The country is home to around 20 million people, more than half of whom live in the capital, Sydney. Other large cities include Melbourne, Canberra, and Brisbane.",
+    objects: [
+      {
+        name: "GREAT BARRIER REEF",
+        article: "The",
+        description:
+          "You can easily see why locals call this barrier reef \"great\": it's great! Looking down through the floor of the glass-bottomed boat, you see thousands of colorful fishes and coral formation. Eventually, you just can't resist taking a dip, and you jump right off the boat and start swimming around. A turtle lets you grab onto its shell and ride it around, and a shark gives you a high five.",
+      },
+      {
+        name: "DAMPER",
+        article: "A loaf of",
+        description:
+          "A soda bread, made by mixing flour, salt, and water together, then cooking it in coals. Popular among early settlers and stockmen, who had no other options.",
+      },
+      {
+        name: "MADJEDBEBE",
+        article: "",
+        description:
+          "An archaeological site, showing the presence of human habitation around 65,000 years ago.",
+      },
+      {
+        name: "THE STORY OF THE KELLY GANG",
+        article: "",
+        description:
+          "As the first feature-length narrative film ever produced, all subsequent films derive their power from it. Perhaps that's why this box of old film cannisters throbs with unearthly magical energy.",
+      },
+      {
+        name: "KOOKABURRA",
+        article: "A",
+        description:
+          "A carnivorous bird that loves stealing food from bbqs and outdoor grills. Famous for its annoying call, which sounds like a jerk laughing.",
+      },
+    ],
   },
   {
     area: "Austria",
@@ -487,6 +521,28 @@ export let globe = [
     area: "Bahamas",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "The Bahamas is one of the Caribbean's top vacation destinations because of its fantastic resorts, spectacular beaches, and magnificent weather. The Bahamas island chain extends for 700 miles, and you invite some of the other tourists to paddle its entire length with you. They decline, but you go by yourself, and enjoy the sites: mmiles of pink and white sand beaches and shallow blue waters.",
+    objects: [
+      {
+        name: "QUEEN'S STAIRCASE",
+        article: "The",
+        description:
+          "A staircase in Nassau carved out of a limestone cliff. Now that's a cool staircase!",
+      },
+      {
+        name: "PIRATE HIDEOUT",
+        article: "A",
+        description:
+          "Paddling by some anonymous island, you spot a hidden waterway and decide to explore it. It turns out to lead to a shelterded harbor, at which you find the secret hideout of the Carribbean's most infamous pirate gang, The Flying Gang! Unfortunately, this large and elaborate cave system appears to be abandoned and forgotten for centuries, so of the gang Gang are around to chat with. You do notice Blackbeard's treasure chest sitting on a table, containing a full-sized emerald skull that throbs with unearthly power. You snap a pic and get back to sightseeing.<p>\"Where, uhh... where did you say this island was?\"</p><p>Later, the paragliding instructor seems interested in hearing about your trip, especially after you show him the pictures. You gesture toward the ocean and shrug, then ask him questions about paragliding.</p>",
+      },
+      {
+        name: "ATLANTIS PARADISE ISLAND",
+        article: "",
+        description:
+          "A massive resort, employing 6000 residents of the Bahamas. It attracts tourists (like you!) from around the world, and probably from other planets too. You spend a few pleasant afternoons at the casino, and floating down the 1.6 km lazy river on an inner-tube.",
+      },
+    ],
   },
   {
     area: "Bahrain",
