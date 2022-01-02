@@ -394,6 +394,21 @@ export let globe = [
     area: "Armenia",
     type: "country",
     neighbors: ["Azerbaijan", "Georgia", "Iran", "Turkey"],
+    description:
+      "A landlocked country in the southern Caucasus region. Located at the crossroads of Western Asia and Eastern Europe, the country is bordered by Turkey to the west, Georgia to the north, Azerbaijan to the east, and Iran and Azerbaijan's exclave of Nakhchivan to the south. The capital and largest city of Armenia is Yerevan, which has about a million residents.",
+    objects: [
+      {
+        name: "EREBUNI FORTRESS",
+        article: "The",
+        description: "A Urartian fortified city, built in the 8th century BC.",
+      },
+      {
+        name: "ARMENIAN RUG",
+        articke: "An",
+        description:
+          "A large, beautiful woven rug. Its design is complex and full of symbolism you have trouble decoding.",
+      },
+    ],
   },
   {
     area: "Australia",
@@ -445,6 +460,28 @@ export let globe = [
     area: "Azerbaijan",
     type: "country",
     neighbors: ["Armenia", "Georgia", "Iran", "Russia", "Turkey"],
+    description:
+      "Azerbaijan is an independent country in southwest Asia, located north of the Lesser Caucasus mountain range. It's a relatively poor country, but rich in oil. Export a ton of crude oil, as well as many other goods such as cotton, fruits, vegetables, wines, and mineral water.",
+    objects: [
+      {
+        name: "BOOK OF DEDE KORKUT",
+        article: "The",
+        description:
+          "This book contains 12 short stories about the nomadic, pre-Islamic Turks. The copy you're reading is from the 14th century, and you want to be respectful of the age of the manuscript, however it's hard to put down, because it's so good.",
+      },
+      {
+        name: "MAIDEN TOWER",
+        article: "The",
+        description:
+          "A mysterious stone tower in Baku; nobody really knows what it was built for, or where it got its name, but it is printed on the money.",
+      },
+      {
+        name: "LÖKBATAN MUD VOLCANO",
+        article: "The",
+        description:
+          "A small volcano that normally bubbles with mud, but occasionally shoots flames fifty feet into the air.",
+      },
+    ],
   },
   {
     area: "Bahamas",
@@ -496,36 +533,106 @@ export let globe = [
     area: "Belize",
     type: "country",
     neighbors: ["Atlantic Ocean", "Guatemala", "Mexico"],
+    description:
+      "This country is located on the eastern coast of Central America. It is bordered by Mexico to the north and Guatemala to the west. With a population of 387,000, it is one of the smallest countries of Central America. The culture of the country is heavily influenced by the ancient Maya, whose city states occupied the territory that is now Belize between about 2000 BC and AD 800.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Benin",
     type: "country",
     neighbors: ["Atlantic Ocean", "Burkina Faso", "Niger", "Nigeria", "Togo"],
+    description:
+      "Benin is a country in West Africa. It is bordered by Togo to the west, Nigeria to the east, and Burkina Faso and Niger to the south. Benin is divided into 12 departments. Its capital is Porto-Novo.",
+    objects: [
+      {
+        name: "VODUN",
+        article: "",
+        description:
+          "Benin is the birthplace of Vodun, a religion that became enriched and transformed when slaves from other parts of the continent, and their descendants, mixing with those from Benin itself, came to live in the newly created settlements. Their religion served as a link with the homeland they had lost, attracting to their shrines practitioners of diverse Yoruban religions from many places.",
+      },
+    ],
   },
   {
     area: "Bermuda",
     type: "special",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Bermuda is a small group of islands in the Atlantic Ocean, located an hundred and fifty miles east of Cape Hatteras. Bermuda is the oldest and most populous of the British overseas territories, the first colonial settlement founded in 1612. Britain claimed the territory in 1609 as an extension of Virginia. It was not until 1862 that Bermuda was made a crown colony.<p>Today Bermuda is an overseas territory of the United Kingdom. Bermuda is 21 miles long and 7 miles wide. Its largest island is Main Island, so called because it is in the center of Bermuda. A coral reef surrounds the island. Most of the population live in the west end of Main Island, in the parishes of Sandys and Smith's.</p>",
+    objects: [
+      {
+        name: "BERMUDA LONGTAIL",
+        article: "A",
+        description:
+          "Bermuda's birds are unique. Seventeen species of seabirds nest in Bermuda. The best-known is the longtail, so-called because of its long tail (presumably). It is Bermuda's national bird, which makes you think you'd better not to try to eat it unless offered. It nests on steep limestone cliffs in the interior of the island, plotting God knows what mischief.",
+      },
+    ],
   },
   {
     area: "Bhutan",
     type: "country",
     neighbors: ["China", "India"],
+    description:
+      "Bhutan is a landlocked Kingdom located in the Himalayas. It is bordered to the north by China, and to the south, east, and west by India. It consists of two areas: a pleasant region of plains in the south, and the Himalayan mountains in the north. The southern region receives more rain, and supports dense forests, including rhododendrons and conifers.",
+    objects: [
+      {
+        name: "KULA KANGRI",
+        article: "",
+        description:
+          "At over 7500 meters, it is the tallest mountain in Bhutan. Except, depending on who you ask, it may not be in Bhutan at all, and may not even be the tallest mountain in the area.",
+      },
+    ],
   },
   {
     area: "Bolivia",
     type: "country",
     neighbors: ["Argentina", "Brazil", "Chile", "Paraguay", "Peru"],
+    description:
+      "The country of Bolivia is in southwest South America. Constitutionally, Bolivia is divided into nine departments. The capital city is La Paz, a high-altitude metropolis, where the city operates a system of aerial tramways to help people ascend the steep hills.",
+    objects: [
+      {
+        name: "COCAINE",
+        article: "A brick of",
+        description:
+          "Coca is a bumper crop in the Chapare region. After processing, it is turned into a white powder, pressed into bricks, and transported to people who want to stay up late via speed boats. You'd love to ride in a speed boat!",
+      },
+      {
+        name: "LITTLE HAT",
+        article: "A",
+        description:
+          "A small bowler hat, fashionable among Bolivian women. Whether the hat is 'way too small' or not is a matter of personal style; it works for them, and maybe that's enough.",
+      },
+      {
+        name: "GATE OF THE SUN",
+        article: "The",
+        description:
+          "A massive stone monolith carved into the shape of a doorway. One side of the doorway opens onto the site Tiahuanaco, a Tiwanaku site in the Bolivian Andes. The other side opens into another dimension, though this side of the door is currently locked. The monolith throbs with unearthly power.",
+      },
+    ],
   },
   {
     area: "Bosnia and Herzegovina",
     type: "country",
     neighbors: ["Atlantic Ocean", "Croatia", "Montenegro", "Serbia"],
+    description:
+      "Bosnia and Herzegovina is a country in southeastern Europe. Sarajevo is the capitol and largest city. Other major cities include Banja Luka and Tuzla. Bosnia and Herzegovina are mountainous, centrally-located republic. The Dinaric Alps pass through the country from east to west.<p>What does the flag look like, you ask? It is composed of wide medium blue vertical band on the fly side with a yellow right triangle abutting the band and the top of the flag. The remainder of the flag is medium blue with seven full five-pointed white stars and two half stars top and bottom along the hypotenuse of the triangle.</p>",
   },
   {
     area: "Botswana",
     type: "country",
     neighbors: ["Namibia", "South Africa", "Zambia", "Zimbabwe"],
+    description:
+      "Botswana is an African country covering 190,623 square miles in the Kalahari Basin. The population is made up of three ethnic groups: the Tswana, Kalanga, and San. Political power is shared among tribal leaders, known as the kgosi.",
+    objects: [
+      {
+        name: "CAMEL THORN",
+        article: "A",
+        description: "A tree that flourishes in the arid Kalahari desert.",
+      },
+    ],
   },
   {
     area: "Brazil",
@@ -1296,6 +1403,8 @@ export let globe = [
     area: "Jamaica",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "The warm weather, coupled with the bright, vibrant colors of this place is inviting. You take a stroll down the beach, taking in the sights. All around you, you see people enjoying the warm sand between their toes, water skiing, or floating on the water. The gentle breeze of the wind seems to be dancing with the palm trees that line the beach, to the faintly annoying but upbeat rhythms of steel drum music. You vow to take more pictures, so you won't forget your traveling spree. You consider learning watercolor painting instead.",
   },
   {
     area: "Japan",
