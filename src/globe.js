@@ -261,7 +261,7 @@ export let globe = [
     type: "country",
     neighbors: ["Russia", "Georgia"],
     description:
-      "A tiny, mountainous country on the coast of the Black Sea. It declared its independence from Georgia in 1992. Abkhazia is a country with a southern European climate. Like Georgia, it is part of the Caucasus Mountains. The capitol, and gateway to the country, is the gorgeous city of Sukhumi. It has a populatin of about 100,000 (wouldn't it be weird if it was exactly 100,000?).",
+      "A tiny, mountainous country on the coast of the Black Sea. It declared its independence from Georgia in 1992. Abkhazia is a country with a southern European climate. Like Georgia, it is part of the Caucasus Mountains. The capital, and gateway to the country, is the gorgeous city of Sukhumi. It has a populatin of about 100,000 (wouldn't it be weird if it was exactly 100,000?).",
     objects: [
       {
         name: "LAND OF DARKNESS",
@@ -275,7 +275,7 @@ export let globe = [
     area: "Afghanistan",
     type: "country",
     description:
-      "The graveyard of empires is a central Asian country. The capital is A, and the capitol city is Kabul. The name Afghanistan means 'Land of the Afghan', and the population is about 23 million Pashtun and Uzbeks. The country is mountainous, landlocked, and littered with old Soviet and U.S. tanks.",
+      "The graveyard of empires is a central Asian country. The capital is A, and the capital is Kabul. The name Afghanistan means 'Land of the Afghan', and the population is about 23 million Pashtun and Uzbeks. The country is mountainous, landlocked, and littered with old Soviet and U.S. tanks.",
     neighbors: ["China", "Iran", "Pakistan", "Tajikistan", "Turkmenistan", "Uzbekistan"],
   },
   {
@@ -283,7 +283,7 @@ export let globe = [
     type: "country",
     neighbors: ["Greece", "Kosovo", "North Macedonia", "Montenegro", "Atlantic Ocean"],
     description:
-      "A small Balkan country. It was the first in Europe to convert to Christianity, and the first to declare independence from the Ottoman empire. The capitol is Tirana. Albania has a population of about 3 million.",
+      "A small Balkan country. It was the first in Europe to convert to Christianity, and the first to declare independence from the Ottoman empire. The capital is Tirana. Albania has a population of about 3 million.",
     objects: [
       {
         name: "SHKODËR",
@@ -548,16 +548,35 @@ export let globe = [
     area: "Bahrain",
     type: "country",
     neighbors: ["Indian Ocean"],
+    decription:
+      "Bahrain is a Middle Eastern country near the eastern shores of the Persian Gulf. The capital is Manama, and the official language is Arabic. Bahrain is a rapidly growing country with a population of over 1.1 million.<p>Bahrain has excellent ports, and the country has served as an important trade hub since the 7th century. Because of Bahrain's strategic location, it has often been the center of trade and power in the Persian Gulf. Bahrain has had problems with rogues, pirates, and militant groups. However, it is rapidly becoming an international travel destination because of its mild weather, sandy beaches, and proximity to mainland Asia.",
+    objects: [
+      {
+        name: "TREE OF LIFE",
+        article: "The",
+        description:
+          "A thirty foot tall Acacia growing on a barren hill in the Arabian Desert in Bahrain. It is over 400 years old, but nobody knows how it has survived in a waterless location where no other plants can live. Some say the tree is all that remains of the garden of eden. You know: from the bible?",
+      },
+      {
+        name: "FIRST OIL WELL",
+        article: "The",
+        description: "A monument to the discovery of oil in Bahrain in 1931.",
+      },
+    ],
   },
   {
     area: "Bangladesh",
     type: "country",
     neighbors: ["India", "Myanmar", "Indian Ocean"],
+    description:
+      "Bangladesh is a South Asian nation on the Bay of Bengal. The largest city is Chittagong. The climate of Bangladesh includes six seasons. Rainy weather falls during the monsoons from June to September, and most of Bangladesh is flooded during this monsoon season.",
   },
   {
     area: "Barbados",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Barbados is located to the east of the Caribbean Sea. Its capital is Bridgetown. Barbados was a British colony for more than 350 years, until gaining independence in 1966.<p>Beach-goers do come to Barbados in large numbers, because Barbados has some of the most beautiful beaches in the world. Combined with a year-round tropical climate, the white sandy beaches and tall palms are the perfect setting for the luxury tourism that dominates Barbados today.",
   },
   {
     area: "Belarus",
@@ -674,7 +693,7 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean", "Croatia", "Montenegro", "Serbia"],
     description:
-      "Bosnia and Herzegovina is a country in southeastern Europe. Sarajevo is the capitol and largest city. Other major cities include Banja Luka and Tuzla. Bosnia and Herzegovina are mountainous, centrally-located republic. The Dinaric Alps pass through the country from east to west.<p>What does the flag look like, you ask? It is composed of wide medium blue vertical band on the fly side with a yellow right triangle abutting the band and the top of the flag. The remainder of the flag is medium blue with seven full five-pointed white stars and two half stars top and bottom along the hypotenuse of the triangle.</p>",
+      "Bosnia and Herzegovina is a country in southeastern Europe. Sarajevo is the capital and largest city. Other major cities include Banja Luka and Tuzla. Bosnia and Herzegovina are mountainous, centrally-located republic. The Dinaric Alps pass through the country from east to west.<p>What does the flag look like, you ask? It is composed of wide medium blue vertical band on the fly side with a yellow right triangle abutting the band and the top of the flag. The remainder of the flag is medium blue with seven full five-pointed white stars and two half stars top and bottom along the hypotenuse of the triangle.</p>",
   },
   {
     area: "Botswana",
@@ -694,7 +713,7 @@ export let globe = [
     area: "Brazil",
     type: "country",
     description:
-      "You see a country with mountains, and a large swath of equatorial rainforest jungle, containing many animals and plants. You notice a complex system of rivers, with eight separate drainage basins (wow!). You travel up and down them in a boat, and eventually visit the capitol city of Brasilia.",
+      "You see a country with mountains, and a large swath of equatorial rainforest jungle, containing many animals and plants. You notice a complex system of rivers, with eight separate drainage basins (wow!). You travel up and down them in a boat, and eventually visit the capital city of Brasilia.",
     objects: [
       {
         name: "COFFEA",
@@ -733,6 +752,22 @@ export let globe = [
     area: "Brunei",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "Brunei Darussalam is a small monarchy located on the northern coast of the island of Borneo. Oil and gas reserves have made this country wealthy: everyone is wearing a top hat and monocle, and being chauffered around in a golden car.",
+    objects: [
+      {
+        name: "KAMPONG AYER",
+        article: "",
+        description:
+          "The venice of the east! This settlement near the capital comprises 10 squares miles of buildings, all built on stilts above the Brunei river!",
+      },
+      {
+        name: "ISTANA NURUL IMAN",
+        article: "",
+        description:
+          "The palace and residence of the Sultan of Brunei. This is the world's largest palace, at over 2 million square feet. It's got 1788 rooms, 257 bathrooms, 5 swimming pools, an indoor falconry course, a puppet theater, a functioning volcano, 19 separate gyms or weight rooms, and the Sultan's own fully staffed 7-11, which dispenses Slurpees at the Sultan's request.",
+      },
+    ],
   },
   {
     area: "Bulgaria",
@@ -745,21 +780,48 @@ export let globe = [
       "Serbia",
       "Turkey",
     ],
+    description:
+      "Bulgaria is a country in the central part of the Balkans. Its borders roughly correspond to those of the historical region of Macedonia. The country lacks any natural boundaries, which poses strategic problems.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Burkina Faso",
     type: "country",
     neighbors: ["Benin", "Côte d'Ivoire", "Ghana", "Mali", "Niger", "Togo"],
+    description:
+      "Burkina Faso is a landlocked country in West Africa. It's got a tropical climate, plenty of gold deposits, and lots of neighbors. The population is a mixture of Christians and Muslims, and the official language is English.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Burundi",
     type: "country",
     neighbors: ["Democratic Republic of the Congo", "Rwanda", "Tanzania"],
+    description:
+      "Burundi is located in central Africa. It's bordered by Rwanda, Tanzania, and the Democratic Republic of the Congo.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Cambodia",
     type: "country",
     neighbors: ["Laos", "Pacific Ocean", "Thailand", "Vietnam"],
+    description:
+      "This was the predominant empire in Southeast Asia before the emergence of the Thai and Vietnamese. Cambodia is located in the middle of the Indochina peninsula. The country is a hot spot for birdwatchers. Cambodia also has a rich architectural history. It's modern capital city of Phnom Penh, contains many beautiful ruins.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Cameroon",
@@ -814,6 +876,13 @@ export let globe = [
     area: "Cape Verde",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Cape Verde is a mosaic of 10 islands, about 310 miles off the west coast of Africa.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Central African Republic",
@@ -826,6 +895,13 @@ export let globe = [
       "South Sudan",
       "Sudan",
     ],
+    description:
+      "The Central African Republic (CAR) is a landlocked country in Central Africa. The CAR covers a land area of about 240,000 square miles, and has an estimated population of about four million. Historically, it's been pretty prone to coups, corruption, and political violence.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Chad",
@@ -838,6 +914,8 @@ export let globe = [
       "Nigeria",
       "Sudan",
     ],
+    description:
+      "Chad is the third-largest country in Africa. It is bordered by Libya to the north, Sudan to the east, the Central African Republic to the south, Cameroon and Nigeria to the southwest, and Niger to the west. The capital is N'Djaména.",
   },
   {
     area: "Chile",
@@ -914,49 +992,6 @@ export let globe = [
     neighbors: ["Indian Ocean"],
   },
   {
-    area: "Democratic Republic of the Congo",
-    type: "country",
-    description:
-      "Named after the Congo river that winds its way through the country, the Democratic Republic of Congo is a resource-rich, equatorial, Sub-Saharan nation on the move. In the 19th century, King Leopold II of Belgium came for the rubber and ivory, and built railroads and ports to ship it out faster. Today, mining copper and cobalt from the exposed guts of the Albertine Rift is the name of the game.<p>Across the river from Kinshasa, you can see Brazzaville, capitol of the neighboring Republic of Congo.</p>",
-    objects: [
-      {
-        name: "BONOBOS",
-        article: "A group of sexually active",
-        description:
-          "These primates are distant cousins of humans. They are fucking right now.",
-      },
-      {
-        name: "TRAFFIC ROBOT",
-        article: "A",
-        description:
-          "Super-scientist Thérèse Izay Kirongozi invented these five robots to control traffic in the megacity of Kinshasa. Some have theorized that they have hidden programming that will allow them to join into a single, larger robot to save Kinshasa from danger.",
-      },
-    ],
-    neighbors: [
-      "Angola",
-      "Atlantic Ocean",
-      "Burundi",
-      "Central African Republic",
-      "Republic of the Congo",
-      "Rwanda",
-      "South Sudan",
-      "Tanzania",
-      "Uganda",
-      "Zambia",
-    ],
-  },
-  {
-    area: "Republic of the Congo",
-    type: "country",
-    neighbors: [
-      "Angola",
-      "Cameroon",
-      "Central African Republic",
-      "Democratic Republic of the Congo",
-      "Gabon",
-    ],
-  },
-  {
     area: "Costa Rica",
     type: "country",
     neighbors: ["Atlantic Ocean", "Nicaragua", "Pacific Ocean", "Panama"],
@@ -993,6 +1028,39 @@ export let globe = [
     type: "country",
     neighbors: ["Austria", " Germany", "Poland", " Slovakia"],
   },
+  {
+    area: "Democratic Republic of the Congo",
+    type: "country",
+    description:
+      "Named after the Congo river that winds its way through the country, the Democratic Republic of Congo is a resource-rich, equatorial, Sub-Saharan nation on the move. In the 19th century, King Leopold II of Belgium came for the rubber and ivory, and built railroads and ports to ship it out faster. Today, mining copper and cobalt from the exposed guts of the Albertine Rift is the name of the game.<p>Across the river from Kinshasa, you can see Brazzaville, capital of the neighboring Republic of Congo.</p>",
+    objects: [
+      {
+        name: "BONOBOS",
+        article: "A group of sexually active",
+        description:
+          "These primates are distant cousins of humans. They are fucking right now.",
+      },
+      {
+        name: "TRAFFIC ROBOT",
+        article: "A",
+        description:
+          "Super-scientist Thérèse Izay Kirongozi invented these five robots to control traffic in the megacity of Kinshasa. Some have theorized that they have hidden programming that will allow them to join into a single, larger robot to save Kinshasa from danger.",
+      },
+    ],
+    neighbors: [
+      "Angola",
+      "Atlantic Ocean",
+      "Burundi",
+      "Central African Republic",
+      "Republic of the Congo",
+      "Rwanda",
+      "South Sudan",
+      "Tanzania",
+      "Uganda",
+      "Zambia",
+    ],
+  },
+
   {
     area: "Denmark",
     type: "country",
@@ -1284,7 +1352,7 @@ export let globe = [
     area: "Greenland",
     type: "country",
     description:
-      "Fans of large islands have found what they're looking for: Greenland is the biggest island in the entire world, bar none. It is cold here. In the distance, you see a factory powering the economy by exporting shrimp and halibut, and groups of tourists enjoying themselves in the capitol city of Nuuk.",
+      "Fans of large islands have found what they're looking for: Greenland is the biggest island in the entire world, bar none. It is cold here. In the distance, you see a factory powering the economy by exporting shrimp and halibut, and groups of tourists enjoying themselves in the capital city of Nuuk.",
     objects: [
       {
         name: "SHRIMP",
@@ -1885,6 +1953,17 @@ export let globe = [
     neighbors: ["Indian Ocean", "Saudi Arabia"],
   },
   {
+    area: "Republic of the Congo",
+    type: "country",
+    neighbors: [
+      "Angola",
+      "Cameroon",
+      "Central African Republic",
+      "Democratic Republic of the Congo",
+      "Gabon",
+    ],
+  },
+  {
     area: "Romania",
     type: "country",
     neighbors: ["Atlantic Ocean", "Bulgaria", "Hungary", "Moldova", "Serbia", "Ukraine"],
@@ -1948,7 +2027,7 @@ export let globe = [
     type: "country",
     neighbors: ["Burundi", "Democratic Republic of the Congo", "Tanzania", "Uganda"],
     description:
-      "A small central African country. The capitol is Kigali. Rwanda has a population of about 7,000,000. The population is an amalgamation of different African tribes. The tribal groups are the Hutus and the Tutsis. Rwanda has had not one, but two genocides recently.",
+      "A small central African country. The capital is Kigali. Rwanda has a population of about 7,000,000. The population is an amalgamation of different African tribes. The tribal groups are the Hutus and the Tutsis. Rwanda has had not one, but two genocides recently.",
     objects: [
       {
         name: "LAKE KIVU",
@@ -1967,7 +2046,7 @@ export let globe = [
   {
     area: "Saint Kitts and Nevis",
     description:
-      "The two-island country of Saint Kitts and Nevis. The capitol is Basseterre. Nevis is the only Caribbean island that is a dormant volcano but NOT the secret lair of a villain. Saint Kitts and Nevis has a population of about 50,000. It used to be a part of Great Britain, but in In 1983, they gained their independence. Congratulations!",
+      "The two-island country of Saint Kitts and Nevis. The capital is Basseterre. Nevis is the only Caribbean island that is a dormant volcano but NOT the secret lair of a villain. Saint Kitts and Nevis has a population of about 50,000. It used to be a part of Great Britain, but in In 1983, they gained their independence. Congratulations!",
     type: "country",
     neighbors: ["Atlantic Ocean"],
   },
@@ -1975,13 +2054,13 @@ export let globe = [
     area: "Saint Lucia",
     type: "country",
     description:
-      "The island country of Saint Lucia, about 175 miles east of Puerto Rico. The capitol is Castries. Saint Lucia has a population of about 175,000. The official language is English. The currency is the East Caribbean dollar. The climate is tropical. For fun, people like to dance, go to the beach, and listen to music.",
+      "The island country of Saint Lucia, about 175 miles east of Puerto Rico. The capital is Castries. Saint Lucia has a population of about 175,000. The official language is English. The currency is the East Caribbean dollar. The climate is tropical. For fun, people like to dance, go to the beach, and listen to music.",
     neighbors: ["Atlantic Ocean"],
   },
   {
     area: "Saint Vincent and the Grenadines",
     description:
-      "A nation in the Windward Islands of the West Indies. The capitol is Kingstown. Saint Vincent and the Grenadines has a population of about 51,000. The national flower is the saman (pronounced sa-man). Saman is the national bird.",
+      "A nation in the Windward Islands of the West Indies. The capital is Kingstown. Saint Vincent and the Grenadines has a population of about 51,000. The national flower is the saman (pronounced sa-man). Saman is the national bird.",
     type: "country",
     neighbors: ["Atlantic Ocean"],
   },
@@ -1989,7 +2068,7 @@ export let globe = [
     area: "Samoa",
     type: "country",
     description:
-      "The southernmost country of Polynesia. The capitol is Apia. Samoa is an island nation in the South Pacific. There are nine islands. Samoa has a population of about 180,000, most of whom enjoy the tropical climate. A small country with big people.",
+      "The southernmost country of Polynesia. The capital is Apia. Samoa is an island nation in the South Pacific. There are nine islands. Samoa has a population of about 180,000, most of whom enjoy the tropical climate. A small country with big people.",
     neighbors: ["Pacific Ocean"],
   },
   {
@@ -2029,14 +2108,14 @@ export let globe = [
     area: "São Tomé and Príncipe",
     type: "country",
     description:
-      "Two small islands in the equatorial Atlantic. They are about 1,000 miles west of Africa. São Tomé and Príncipe are both volcanic islands. The capitol is São Tomé. Both islands have tropical rain forests. The population is a mixture of Portuguese, Africans, and Indians.",
+      "Two small islands in the equatorial Atlantic. They are about 1,000 miles west of Africa. São Tomé and Príncipe are both volcanic islands. The capital is São Tomé. Both islands have tropical rain forests. The population is a mixture of Portuguese, Africans, and Indians.",
     neighbors: ["Atlantic Ocean"],
   },
   {
     area: "Saudi Arabia",
     type: "country",
     description:
-      "The largest country in the Arabian Peninsula. The capitol is Riyadh. Saudi Arabia is ruled by a monarchy. The language is Arabic. Saudi Arabia is an Islamic country. Saudi Arabia's national religion is Islam.",
+      "The largest country in the Arabian Peninsula. The capital is Riyadh. Saudi Arabia is ruled by a monarchy. The language is Arabic. Saudi Arabia is an Islamic country. Saudi Arabia's national religion is Islam.",
     neighbors: [
       "Indian Ocean",
       "Iraq",
@@ -2052,7 +2131,7 @@ export let globe = [
     area: "Scotland",
     type: "country",
     description:
-      "Scotland is the northern part of the island of Great Britain. The capitol is Edinburgh. Scotland's national animal is the red deer.",
+      "Scotland is the northern part of the island of Great Britain. The capital is Edinburgh. Scotland's national animal is the red deer.",
     neighbors: ["Atlantic Ocean", "England"],
     objects: [
       {
@@ -2234,6 +2313,18 @@ export let globe = [
       "Rwanda",
       "Uganda",
       "Zambia",
+    ],
+    description:
+      "<p>Tanzania is a small country on the east coast of Africa. The capital is Dodoma, but Dar es Salaam is the largest city. Tanzania is home to more than 105 different tribes, and 80 percent of Tanzanians are native Swahili speakers. Tanzania is also home to some of the rarest animals in the world: among them are the nyala, the leopard, the African elephant, and the Black Rhino.</p><p> Safari hunting is a popular activity, and in your quest to experience all that tourism has to offer, you sign up for an illegal Rhino safari, but it is busted at the last second by game wardens. You spend some time in jail, but are released when representatives from your embassy intervene on your behalf.</p>",
+    objects: [
+      {
+        name: "LAKE TANGANYIKA",
+        article: "",
+        description:
+          "Always a bridesmaid, never a bride: Lake Tanganyika is the second oldest, second deepest, and second largest lake in the world.",
+      },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
     ],
   },
   {
