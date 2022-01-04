@@ -921,6 +921,8 @@ export let globe = [
     area: "Chile",
     type: "country",
     neighbors: ["Argentina", "Atlantic Ocean", "Bolivia", "Pacific Ocean", "Peru"],
+    description:
+      "Wow, this country is long! In fact, Chile is the longest country in the world. It occupies a narrow strip of land down the west coast of South America. It is 2,670 miles long, but only 180 miles across at its widest point.<p>Chile's climate is mild and pleasant. The northern area has a desert climate. The central region is cool and rainy, and the southern region has a Mediterranean climate.</p>",
   },
   {
     area: "China",
@@ -985,21 +987,29 @@ export let globe = [
       "Peru",
       "Venezuela",
     ],
+    description:
+      "Colombia is the fourth largest country in South America. It is bordered by Panama, Venezuela, Brazil, and Ecuador. The Andes Mountains lie in the west of the country, and lowlands and jungles are found in the east. Colombia exports coffee, flowers, tobacco, bananas, oil, and coal.",
   },
   {
     area: "Comoros",
     type: "country",
     neighbors: ["Indian Ocean"],
+    description:
+      "Comoros is an archipelago of 3 islands off the coast of Madagascar. Those islands are Grande Comore, Mohéli, and Anjouan. The Comoros Republic's capital is Moroni. The islands were ruled by various African kingdoms until Anjouan and Moheli came under the control of the Portuguese in the sixteenth century, then along came the French. In 1975, the Comoros gained independence, and it's been on a rocket ship to success ever since.",
   },
   {
     area: "Costa Rica",
     type: "country",
     neighbors: ["Atlantic Ocean", "Nicaragua", "Pacific Ocean", "Panama"],
+    description:
+      "Costa Rica is located in Central America between 8 and 10 degrees north and 85 and 88 degrees west. It is a confederation of 7 provinces. Its capital is San Jose. Costa Rica got its independence from Spain in 1821. In 1848, Nicaragua tried unsuccessfully to attack Costa Rica, but decided to part in peace a few years later.",
   },
   {
     area: "Côte d'Ivoire",
     type: "country",
     neighbors: ["Atlantic Ocean", "Burkina Faso", "Ghana", "Guinea", "Liberia", "Mali"],
+    description:
+      "Côte d'Ivoire is in West Africa. The population is around 22 million. Côte d'Ivoire is the world's largest producer and exporter of cocoa beans. The coastal areas are rice fields and pineapple, peanut, cotton, and coffee plantations. The geography is varied, with savannas in the east, low mountains in the centre, and the western region is mostly covered in forests.",
   },
   {
     area: "Croatia",
@@ -1012,11 +1022,21 @@ export let globe = [
       "Serbia",
       "Slovenia",
     ],
+    description:
+      "Croatia is a country which lies along the eastern coast of the Adriatic Sea. A very fertile, though hilly country that cultivates citrus fruits, cotton, vegetables, and fish. Its most famous scion is the inventor Nikola Tesla!",
   },
   {
     area: "Cuba",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Cuba is an island in the Caribbean. The capital and largest city is Havana, which lies on a narrow strip of land between the Atlantic Ocean and the Western Mountains. The tropical climate, pristine beaches, fascinating cities, and colourful history make Cuba a popular destination for tourists.",
+    objects: [
+      { name: "OLD CAR", article: "An", description: "WIP WIP" },
+      { name: "CIGAR", article: "A", description: "WIP WIP" },
+      { name: "STATE COMMUNISM", article: "", description: "WIP WIP" },
+      { name: "VIÑALES", article: "", description: "WIP WIP" },
+    ],
   },
   {
     area: "Cyprus",
