@@ -24,7 +24,7 @@ export const getAttributeOfArea = (attrib, area = curLocation) => {
 };
 
 const getNeighborsText = () => {
-  let list = getAttributeOfArea("neighbors").reduce((result, cur, i) => {
+  let list = getAttributeOfArea("neighbors").reduce((result, cur, i, a) => {
     return (
       result +
       `<button class="button destination" data-destination="${cur}">${cur}</button>`

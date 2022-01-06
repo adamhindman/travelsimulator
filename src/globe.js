@@ -869,6 +869,21 @@ export let globe = [
         description:
           "Thick, sweet, and golden in color, MAPLE SYRUP is the national drink of Canada. Canadians consume more of it than any other country in the world — over 160 pounds per person annually, on average. It's a delicious companion on pancakes, flapjacks, and bannock, but it also has medical uses, and is an ingredient in the popular cocktail known as the Mackenzie.",
       },
+      {
+        name: "HOCKEY STICK",
+        article: "A",
+        description: "WIP",
+      },
+      {
+        name: "TIMBITS",
+        article: "A box of",
+        description: "WIP",
+      },
+      {
+        name: "BEAVER",
+        article: "A",
+        description: "WIP",
+      },
     ],
     neighbors: ["Arctic Ocean", "Atlantic Ocean", "Pacific Ocean", "United States"],
   },
@@ -1042,11 +1057,45 @@ export let globe = [
     area: "Cyprus",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Cyprus is a republic in the Eastern Mediterranean. The climate is subtropical, but there there is currently a shortage of water, presumably caused by too many people making the traditional Cypriot stew called malmonia!",
+    objects: [
+      {
+        name: "CAULIFLOWER",
+        article: "A head of",
+        description:
+          "A white, cabbage-like vegetable that was first grown in Cyprus, but is now in pretty much everything. Cauliflower pizza crust, cauliflower pasta, cauliflower rice, cauliflower ice cream, cauliflower raisins, cauliflower pepsi, cauliflower sausage, etc.",
+      },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Czech Republic",
     type: "country",
     neighbors: ["Austria", " Germany", "Poland", " Slovakia"],
+    description:
+      "The Czech Republic is an Eastern European country with a mostly temperate continental climate. The capital city of Prague has beautiful Baroque churches, palaces and gardens. Near Prague is the Bohemian Forest, an area of protected wilderness where you walk around, looking at all the animals.",
+    objects: [
+      {
+        name: "PUPPET",
+        article: "A",
+        description:
+          "The Czech Republic has a long history of puppet theater, dating back to the early 1700s. You didn't realize before today that Spejbl and Hurvínek, two of your favorite slavic marionette puppet duos, come from the Czech Republic!",
+      },
+      {
+        name: "KAFKA'S FIREPLACE",
+        article: "",
+        description:
+          "You stare into the stone mouth of the fireplace that was to swallow so much of Kafka's unpublished work upon his death.",
+      },
+      {
+        name: "ROBOT",
+        article: "A",
+        description:
+          "The word 'robot' was coined by Czech writer Karel Čapek in his 1920 play R.U.R.",
+      },
+    ],
   },
   {
     area: "Democratic Republic of the Congo",
@@ -1080,26 +1129,53 @@ export let globe = [
       "Zambia",
     ],
   },
-
   {
     area: "Denmark",
     type: "country",
     neighbors: ["Germany", "Atlantic Ocean"],
+    description:
+      "Denmark is a Scandinavian country in Northern Europe. The nation consists of a large peninsula, Jutland, and numerous islands, notably Zealand and Funen. Denmark is a constitutional monarchy with a parliamentary democracy.The king is head of state; the prime minister is head of government.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Djibouti",
     type: "country",
     neighbors: ["Eritrea", "Ethiopia", "Indian Ocean", "Somaliland"],
+    description:
+      "Djibouti is a country on the eastern coast of northern Africa. It is officially known as the Republic of Djibouti. Djibouti is a country with mostly desert terrain. The capital, Djibouti City (formerly the French colonial capital, Djibouti Ville), has a population of 450,000.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Dominica",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Dominica is an Eastern Caribbean country between Martinique and Guadeloupe. Between the Caribbean Sea and the North Atlantic Ocean, the island lies south of Puerto Rico.The capital and largest city, Roseau, is on the south-west coast. It is mostly mountainous, with lush tropical vegetation. Cricket is the national sport.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Dominican Republic",
     type: "country",
     neighbors: ["Atlantic Ocean", "Haiti"],
+    description:
+      "The Dominican Republic occupies the eastern two-thirds of the island of Hispaniola, in the Greater Antilles. The Dominican Republic has the second largest economy in Latin America, and is the largest economy in the Caribbean and Central American region.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Easter Island",
@@ -1123,21 +1199,49 @@ export let globe = [
     area: "East Timor",
     type: "country",
     neighbors: ["Indonesia", "Indian Ocean", "Pacific Ocean"],
+    description:
+      "East Timor is an island country in Southeast Asia, occupying the eastern half of the island of Timor, between Australia and Indonesia. Its administrative centre is the city of Dili, on the northern coast. Timor was occupied by Portugal in the sixteenth century and was known as Portuguese Timor until 1975. Over 51 percent of East Timor's land area is covered by forest.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Ecuador",
     type: "country",
     neighbors: ["Colombia", "Pacific Ocean", "Peru"],
+    description:
+      'Ecuador, officially the Republic of Ecuador, is a representative democratic republic in northwestern South America, bordered by Colombia on the north, Peru on the east and south, and by the Pacific Ocean to the west. Ecuador features a rich ecology that includes Andean forests, Amazonian rainforest, cloud forests, dry plains, highland valleys and the Galápagos Islands with their rich array of endemic wildlife. The name "Ecuador" means equator in Spanish.',
+    objects: [
+      { name: "TERMINUS EST", article: "", description: "WIP" },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Egypt",
     type: "country",
     neighbors: ["Atlantic Ocean", "Indian Ocean", "Israel", "Libya", "Sudan"],
+    description:
+      "Egypt, officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia, via a land bridge formed by the Sinai Peninsula. The modern Republic of Egypt was established in 1953 as a union between Egypt and The Sudan.",
+    objects: [
+      { name: "PYRAMID", article: "A", description: "" },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "El Salvador",
     type: "country",
     neighbors: ["Guatemala", "Honduras", "Pacific Ocean"],
+    description:
+      "El Salvador (officially the Republic of El Salvador) is the smallest and the most densely populated country in Central America. El Salvador was for centuries inhabited by several Mesoamerican nations, especially the Cuzcatlecs, as well as the Lencas, an indigenous Mesoamerican people who arrived in the region about the 3rd century AD. Its capital is San Salvador.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "England",
@@ -1194,11 +1298,25 @@ export let globe = [
     area: "Equatorial Guinea",
     type: "country",
     neighbors: ["Atlantic Ocean", "Cameroon", "Gabon"],
+    description:
+      "Equatorial Guinea is a country located in the Gulf of Guinea, on Central Africa's Gulf of Guinea coast. Equatorial Guinea is the only sovereign African state that is edged along its entire coast by the ocean. Equatorial Guinea has two climate zones: the tropical lowland, and the equatorial forest.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Eritrea",
     type: "country",
     neighbors: ["Djibouti", "Ethiopia", "Indian Ocean", "Sudan"],
+    description:
+      "Eritrea is a relatively small African country in the Horn region. It is bordered by Sudan in the west, Ethiopia in the south, and Djibouti in the north. The northeast and the east are no-man lands on the border with Ethiopia and Djibouti respectively.<p>Eritrea has a long history; people have lived here for at least 40,000 years!",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Estonia",
