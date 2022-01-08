@@ -147,15 +147,16 @@ const handleSubmit = (val, msg = "") => {
 };
 
 const getDisplay = (val, msg, area, showLoc) => {
-  let p = `<p class="prompt"><span class="caret"></span>${val}</p>`;
-  let m = `<p>${msg}</p>`;
-  let l = `
-  <h4>${curLocation.toUpperCase()}</h4>${getAreaDescription()}</p>${getObjectsText()}
+  const p = `<p class="prompt"><span class="caret"></span>${val}</p>`;
+  const m = `<p>${msg}</p>`;
+  const clSlug = curLocation.toLowerCase().split(" ").join("-");
+  const loc = `
+  <div class="pic ${clSlug}"></div><h4>${curLocation.toUpperCase()}</h4>${getAreaDescription()}</p>${getObjectsText()}
   <div class="exits"><h5>Exits are:</h5>${getNeighborsText()}</div>`;
   let display = `
     ${val ? p : ``}
-    ${msg ? m : l}
-    ${showLoc ? l : ``}
+    ${msg ? m : loc}
+    ${showLoc ? loc : ``}
   `;
   return display;
 };

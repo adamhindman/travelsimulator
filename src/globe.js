@@ -1525,11 +1525,25 @@ export let globe = [
     area: "Ghana",
     type: "country",
     neighbors: ["Atlantic Ocean", "Burkina Faso", "Côte d'Ivoire", "Togo"],
+    description:
+      'Ghana, known as the "Gold Coast" due to its many natural riches, is a multicultural nation, with about 50 ethnic groups co-existing peacefully. Ghana has a diverse geography, from coastal savannahs to tropical jungles.',
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Greece",
     type: "country",
     neighbors: ["Albania", "Atlantic Ocean", "Bulgaria", "North Macedonia", "Turkey"],
+    description:
+      "Emerging from the Late Bronze Age collapse, the first settlements in what we would eventually call Greece were founded in the 8th century BC. The goddess of wisdom, Athena, became the patron goddess of the city of Athens, which grew to become the leading Greek city-state, and a new civilization flourished in there. Nowadays, it's known for its tangy yogurt.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Greenland",
@@ -1556,6 +1570,13 @@ export let globe = [
     area: "Grenada",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Grenada is an island country consisting of the southeastern-most part of the Grenadines in the southeastern Caribbean Sea. Grenada is located northwest of Trinidad and Tobago and northeast of Venezuela. The capital and largest city is Saint George's. Grenada consists of the island of Grenada itself plus six smaller islands (called the Grenadine) which lie to the north of the main island. Grenada has a relatively dry climate, with an annual precipitation of about 59 inches in St John's, the only large town on the island.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Guatemala",
@@ -1568,6 +1589,13 @@ export let globe = [
       "Mexico",
       "Pacific Ocean",
     ],
+    description:
+      'Guatemala is a country in Central America bordered by Mexico to the north and west, the Pacific Ocean to the southwest, Belize to the northeast, the Caribbean to the east, Honduras in the southeast, El Salvador in the south. The country\'s area is 42,042 square miles with an estimated population of around 13.4 million. The name Guatemala derives from Nahuatl, meaning "land of the trees". The Spanish Empire conquered the territory in the 16th century. Guatemala is one of the oldest nations in the Americas, and the territory was home to numerous indigenous cultures, such as the Olmec, Toltec, Teotihuacan, Maya, and Mexica.',
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Guinea",
@@ -1581,16 +1609,37 @@ export let globe = [
       "Senegal",
       "Sierra Leone",
     ],
+    description:
+      "Guinea is a West African nation on the west coast bordering the North Atlantic Ocean, between Guinea-Bissau and Sierra Leone. Guinea has a population of 10.2 million people. Guinea's capital city is Conakry. One major town is called Kissidougou: can't wait to visit that one!<p>Guinea's territory encompasses numerous mountains of over 6,600 ft, and rivers such as the Niger, Senegal, and Gambia.</p><p>Guinea's major exports are bauxite, alumina, and other commodities, as well as base metals, gold, and diamonds.",
+    objects: [
+      { name: "BAUXITE", article: "", description: "WIP" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Guinea-Bissau",
     type: "country",
     neighbors: ["Atlantic Ocean", "Guinea", "Senegal"],
+    description:
+      "Guinea-Bissau is a country in West Africa. It is bordered by Guinea to the north and northeast, Senegal to the north, and Guinea-Bissau's short Atlantic Ocean coastline to the south and east. The Bijagos Archipelago lies to the west, and consists of 52 islands of which 12 are inhabited. Guinea-Bissau has a population of 1.5 million. Its capital and largest city is Bissau. The sovereign state of Guinea-Bissau was once part of the kingdom of Gabu, as well as part of the Mali Empire.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Guyana",
     type: "country",
     neighbors: ["Atlantic Ocean", "Brazil", "Suriname", "Venezuela"],
+    description:
+      "Guyana is a country on the northern coast of South America. Guyana's political capital is Georgetown; its economic and cultural centre is Lethem. Guyana has a total land area of 32,000 sq mi. The Atlantic Ocean is to the north and northeast, with the Caribbean to the east and south, Suriname to the southeast, and Venezuela and Brazil to the south. To the west lies the Atlantic Ocean. Guyana achieved independence from the United Kingdom in 1966, and became a Republic in 1970.",
+    objects: [
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Haiti",
