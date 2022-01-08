@@ -122,7 +122,6 @@ const handleSubmit = (val, msg = "") => {
       if (areaExists(noun)) {
         curLocation = noun;
         setCookie("lastLocation", curLocation);
-        msg = `<p>You have a series of adventures and end up in ${capitalize(noun)}.</p>`;
       } else {
         msg = `<p>You can't teleport there; it doesn't exist!</p>`;
       }

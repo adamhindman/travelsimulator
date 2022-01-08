@@ -854,7 +854,7 @@ export let globe = [
   {
     area: "Canada",
     description:
-      "A massive country, covered in endless marches of snow. At first, it seems sparsely populated, but as you scan the coastlines, you notice sizable clusters of gentle, industrious citizens (known as 'canadians' or 'canucks') living at the eastern and western edges of the continent.",
+      "A massive country, covered in endless \"kilometers\" of snow. At first, it seems sparsely populated, but as you scan the coastlines, you notice sizable clusters of gentle, industrious citizens (known as 'canadians' or 'canucks') living at the eastern and western edges of the continent.",
     type: "country",
     objects: [
       {
