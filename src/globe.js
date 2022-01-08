@@ -1322,26 +1322,56 @@ export let globe = [
     area: "Estonia",
     type: "country",
     neighbors: ["Atlantic Ocean", "Latvia", "Russia"],
+    description:
+      "Estonia is a country in northeastern Europe that juts out into the Baltic Sea. A coastal country, most of the land is covered by forest and marshes, but there are large areas of lowlands, consisting mostly of marshy meadows and forests and home to a significant portion of the population. The climate is humid and temperate.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Eswatini",
     type: "country",
     neighbors: ["Mozambique", "South Africa"],
+    description:
+      "Eswatini, the land which some still called Swaziland, is a landlocked country and an independent monarchy in southern Africa. Eswatini is, however, almost completely surrounded by South Africa, as though it walked into an ambush. Eswatini is the only absolute monarchy remaining in Africa. Nearly half of the population is employed by agriculture, with the main crops being maize, sugarcane and tobacco.",
   },
   {
     area: "Ethiopia",
     type: "country",
     neighbors: ["Djibouti", "Eritrea", "Kenya", "Somalia", "South Sudan", "Sudan"],
+    description:
+      'Ethiopia is the oldest independent country in Africa. Located in the Horn of Africa, Ethiopia is bordered by Eritrea to the north, Djibouti to the northeast, Somalia to the east, Kenya to the south, and Sudan and South Sudan to the west. Ethiopia is a country of about 94 million people, with over 90% of them living in rural areas. Its capital and largest city is Addis Ababa, or "New Flower". Ethiopia is also the source of the Blue Nile which crosses through Sudan before eventually draining into the Nile on the Egyptian side. There are many natural resources in Ethiopia, including gold, diamonds, and fertile soils.',
+    objects: [
+      { name: "COFFEE", article: "", description: "WIP" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Fiji",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "Fiji is an island country in Melanesia in the South Pacific Ocean about 1,100 nautical miles northeast of New Zealand. The two major islands, Viti Levu and Vanua Levu, account for about three-quarters of the total population of almost 800,000. Suva is the capital and largest city. A multilingual and multicultural society, Fiji has over 333 islands, of which 110 are permanently inhabited, and despite its small size and population, it ranks high in regional politics. Tourism, sugar, and manufactured items drive the economy.",
+    objects: [
+      { name: "FIJI WATER", article: "", description: "WIP" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Finland",
     type: "country",
     neighbors: ["Atlantic Ocean", "Norway", "Sweden", "Russia"],
+    description:
+      "Finland is a Nordic country situated between Norway, Sweden and Russia. When you think of Finland, you probably think of a snowy hellscape. But, the majority of Finland is in the southern temperate zone, and only the northern third of the country has a subarctic climate. Finland is the northernmost country in the European Union. Finland's largest imports are machinery and equipment, wood products, and chemicals. Its capital and largest city is Helsinki.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "France",
@@ -1357,6 +1387,13 @@ export let globe = [
       "Spain",
       "Switzerland",
     ],
+    description:
+      'France is a country located in Western Europe. It is bordered by the Atlantic Ocean and the Mediterranean Sea, as well as Luxembourg, Belgium, Germany, Switzerland, Italy and Monaco. Due to its shape, the country is often referred to as "The Hexagon". You hear so many people call it that.<p>France also borders Andorra, and Spain is nearby across the Pyrenees mountains.</p><p>France is the world\'s most popular tourist destination, receiving approximately 79 million foreign tourists annually. 79 million and one, now. Paris is one of the most sought after tourist destinations in the entire world, and is known for its fashion, commerce, gastronomy, and numerous monuments, including the Eiffel Tower, the Arc de Triomphe, the Louvre Museum, and Notre Dame Cathedral.</p><p>By physical geography, France mostly consists of mountainous terrain, and a majority of the country is located west of the coastal mountains. The upper elevations in the mountains are snow-covered for four to five months a year. More than 40% of France is covered by forests, and floral diversity is generally greater therein than in the rest of the country.</p>',
+    objects: [
+      { name: "EIFFEL TOWER", article: "The", description: "WIP" },
+      { name: "CHEESE", article: "A wheel of", description: "" },
+      { name: "GAULOISES", article: "A pack of", description: "" },
+    ],
   },
   {
     area: "Gabon",
@@ -1367,11 +1404,19 @@ export let globe = [
       "Equatorial Guinea",
       "Republic of the Congo",
     ],
+    description:
+      "Gabon, which is on the west coast of Central Africa, has an area of nearly 140,000 square miles. The capital city is Libreville and the country has a population of about two million. Gabon is especially well-known for its forest regions that are home to a variety of wildlife, and for its magnificent national parks (especially the Ogooué-Lolo special reserve).",
+    objects: [
+      { name: "OGOOUÉ-LOLO SPECIAL RESERVE", article: "The", description: "WIP" },
+    ],
   },
   {
     area: "Gambia",
     type: "country",
     neighbors: ["Atlantic Ocean", "Senegal"],
+    description:
+      "Gambia is the smallest country in mainland Africa. Gambia is the smallest independent country on the African continent, though it was a colony of the United Kingdom until 1965. Gambia is now a parliamentary democracy. It is among the 20 poorest countries in the world, with very low economic development, especially in regard to poverty, life expectancy, infant mortality and education levels. All that being said, it is a major exporter of peanuts.",
+    objects: [{ name: "PEANUT", article: "A", description: "WIP" }],
   },
   {
     area: "Georgia",
