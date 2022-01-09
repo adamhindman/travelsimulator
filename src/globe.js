@@ -649,7 +649,7 @@ export let globe = [
   {
     area: "Bhutan",
     type: "country",
-    neighbors: ["China", "India"],
+    neighbors: ["China", "India", "Tibet"],
     description:
       "Bhutan is a landlocked Kingdom located in the Himalayas. It is bordered to the north by China, and to the south, east, and west by India. It consists of two areas: a pleasant region of plains in the south, and the Himalayan mountains in the north. The southern region receives more rain, and supports dense forests, including rhododendrons and conifers.",
     objects: [
@@ -987,6 +987,7 @@ export let globe = [
       "Pakistan",
       "Russia",
       "Tajikistan",
+      "Tibet",
       "Vietnam",
     ],
   },
@@ -2137,7 +2138,7 @@ export let globe = [
   {
     area: "Nepal",
     type: "country",
-    neighbors: ["China", "India"],
+    neighbors: ["China", "India", "Tibet"],
   },
   {
     area: "Netherlands",
@@ -2614,7 +2615,11 @@ export let globe = [
         description:
           "Always a bridesmaid, never a bride: Lake Tanganyika is the second oldest, second deepest, and second largest lake in the world.",
       },
-      // {name:"", article:"", description:""},
+      {
+        name: "FROZEN LEOPARD",
+        article: "A",
+        description: "It's on the slopes of Mt. Kilimanjaro.",
+      },
       // {name:"", article:"", description:""}
     ],
   },
@@ -2633,6 +2638,33 @@ export let globe = [
       "Malaysia",
       "Myanmar",
       "Pacific Ocean",
+    ],
+  },
+  {
+    area: "Tibet",
+    type: "special",
+    neighbors: ["Bhutan", "China", "Nepal"],
+    description:
+      "Tibet is isolated from the rest of the world geographically, yet is the spiritual home of Asia. It is a place where Buddhists seek out enlightenment, and an experience like no other. Due to the rain shadow of the Himalayas, Tibet is dry about nine months out of the year, and pretty dry the other three. Looking around, you notice that Lhasa is the main city. You also spot a lot of Chinese stuff lying around. Stopping a Tibetan to ask what's up, you discover that Tibet was annexed by China in 1950. The main exports include barley and little flags.",
+    objects: [
+      {
+        name: "MOUNT EVEREST",
+        article: "",
+        description:
+          'One of top 20 tallest mountains on the planet, Mount Everest was not successfully summited until 1953. These days, every tech entrepreneur is required to scale the "Holy Mother" in order to graduate from Stanford. As you ascend via the famous North Ridge route, you find yourself breathing heavily, and understand why Everest is classified as a difficult climb, not recommended for beginners.',
+      },
+      {
+        name: "JOKHANG",
+        article: "",
+        description:
+          "An important Buddhist temple in Lhasa, built in the 8th century. The location was chosen via geomancy. The Jokhang temple houses hundreds of rare and valuable artifacts of religious significance.",
+      },
+      {
+        name: "BUTTER TEA",
+        article: "A warm mug of",
+        description:
+          "Take some tea, pour it into a jar of yak butter, and shake it up. That's butter tea! After every sip you take, you find that your host keeps refilling the mug. After several hours, you begin to feel full. Would it be considered rude to tell them to stop? Trying to be polite, you continue drinking until your host dies of an unrelated ailment, and then sneak away.",
+      },
     ],
   },
   {
