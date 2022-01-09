@@ -1645,6 +1645,13 @@ export let globe = [
     area: "Haiti",
     type: "country",
     neighbors: ["Atlantic Ocean", "Dominican Republic"],
+    description:
+      "Haiti is a republic, adjacent to the Caribbean Sea. It occupies the western, smaller portion of Hispaniola, the island in the Greater Antilles archipelago where both Haiti and the Dominican Republic are located.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Honduras",
@@ -1656,11 +1663,25 @@ export let globe = [
       "Nicaragua",
       "Pacific Ocean",
     ],
+    description:
+      "Honduras (or in Spanish, República de Honduras) is in Central America. The country is bordered to the north by the Caribbean Sea, and to the east by Nicaragua.<p>Its size is just over 43,000 square miles, with an estimated population of 8.5 million.</p><p>With lowlands and temperate forests on the Caribbean coast and mountain ranges in the interior, Honduras is quite geologically diverse. Forested regions in the interior are separated from larger areas with a Mediterranean climate, and fertile valleys, by wide swathes of desert.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Hong Kong",
     type: "special",
     neighbors: ["China", "Pacific Ocean"],
+    description:
+      "Hong Kong, officially the Hong Kong Special Administrative Region of the People's Republic of China, is an autonomous territory on the Pearl River Delta of East Asia. Although Hong Kong was a British colony, its society is strongly influenced by Asian culture, particularly the Cantonese culture.",
+    objects: [
+      { name: "DIM SUM", article: "Sum", description: "WIP" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Hungary",
@@ -1674,11 +1695,25 @@ export let globe = [
       "Slovenia",
       "Ukraine",
     ],
+    description:
+      "This is Hungary. To the south is Austria. The people who live here are called Hungarians. They speak Hungarian and they ride horses. They're horsemen! You spend a few weeks riding around on horses, learning ancient horseback riding and mounted combat techniques.<p>You find that the people have a relaxed, easygoing, informal culture, with good foods. Lots of paprika and cabbage, but in a good way.</p>",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Iceland",
     type: "country",
     neighbors: ["Arctic Ocean", "Atlantic Ocean"],
+    description:
+      "Iceland is a frozen near Greenland, accessible via longship, boat, or plane. The people here are large and muscular, even the babies, and they spend at least part of every day submerged in the mineral waters of the many thermal springs, which keeps them both healthy and thawed out.<p>The food here is rotten: rotten shark, rotten whale, rotten seal. They brew their own beer, or steal it from Lindisfarne. They can't grow anything: the weather is too cold. The main industries are fishing, strongman competitions, and EVE Online.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "India",
@@ -1693,6 +1728,13 @@ export let globe = [
       "Pakistan",
       "Sri Lanka",
     ],
+    description:
+      "India is a country of extremes. You find great poverty and great wealth side-by-side. You find natural beauty and artistic beauty alongside heaps of trash.</p><p>They have four of the greatest rivers in the world, and most of the area around that river is well developed. There are the great deserts as well, which you spend a few weeks wandering around in, concluding that the river areas are much more pleasant.</p><p>You eat a lot of delicious food, mostly vegetarian, but you sneak in a little chicken every once in a while.</p><p>It is a wonderful country, and there's much for you to learn.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Indonesia",
@@ -1704,6 +1746,13 @@ export let globe = [
       "Pacific Ocean",
       "Papua New Guinea",
     ],
+    description:
+      "Indonesia's land is surrounded by the reef of the java sea. The majority of people there live on the island of Java, which is known for pepper and sandalwood. Citizens of Indonesia, are known for being very peaceful, and tolerant of other cultures and religions. Indonesia is located in the tropics, which means that they also enjoy a very humid summer and a very stormy winter. There are the volcanoes of Java and Burma, the lakes, the monsoons, the beautiful beaches along the coast, and the western jungle.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Iran",
@@ -1717,6 +1766,16 @@ export let globe = [
       "Pakistan",
       "Turkey",
       "Turkmenistan",
+    ],
+    description:
+      "Iran is a fascinating country that is famous for many things. They are reknowned for beautiful rugs, magnificent art, and for their fierce success as a empire. It is located in Southwest Asia, bordering the Gulf of Oman, the Persian Gulf, and the Caspian Sea. It has a coastline 2400 miles long, along the Persian Gulf and Gulf of Oman.<p>Wandering around, you finally end up in the old section of the city of Yazd, where all the buildings are made out of adobe. They have special ventilation windows to capture the wind and keep people from dying in the cruel, relentless desert heat.",
+    objects: [
+      {
+        name: "TOWER OF SILENCE",
+        article: "A",
+        description:
+          "On the outskirts of Yazd, there is a Zoroastrian temple with a fire that has been burning continuously for 1600 years! What an incredible streak, and tribute to their faith. You warn the priests that it would be a bad idea to allow Mr. Bean to enter the temple, and they agree not to.",
+      },
     ],
   },
   {
