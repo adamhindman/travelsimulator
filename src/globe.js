@@ -1046,6 +1046,7 @@ export let globe = [
   },
   {
     area: "Cuba",
+    image: "cuba.png",
     type: "country",
     neighbors: ["Atlantic Ocean"],
     description:
@@ -2037,9 +2038,10 @@ export let globe = [
   },
   {
     area: "Mexico",
+    image: "mexico.png",
     type: "country",
     description:
-      "It's hot here. As you pause for a moment to wipe the sweat from your brow, you can't help but see that Mexico is a country with many different people in it. Soon, your curiosity gets the better of you, and you stop in the shade of a SAGUARO CACTUS to watch them do the different kinds of things they are doing. You notice that sometimes they meet with success, but other times they do not. Yet, despite it all, they keep doing those things. What a remarkable country.",
+      "It's hot here. As you pause for a moment to wipe the sweat from your brow, you can't help but see that Mexico is a country with many different people in it. Soon, your curiosity gets the better of you, and you stop in the shade of a saguaro cactus to watch them do the different kinds of things they are doing. You notice that sometimes they meet with success, but other times they do not. Yet, despite it all, they keep doing those things. What a remarkable country.",
     objects: [
       {
         name: "SAGUARO CACTUS",
@@ -2796,7 +2798,7 @@ export let globe = [
     area: "United States",
     image: "united-states.png",
     description:
-      'A large and diverse country, it is home to the famous "50 state quarters" phenomenon of the early 2000s. You see a BALD EAGLE fishing the many lakes, rivers, and ponds here.',
+      'A large and diverse country, it is home to the famous "50 state quarters" phenomenon of the early 2000s. You see a bald eagle fishing the many lakes, rivers, and ponds here.',
     type: "country",
     neighbors: ["Arctic Ocean", "Atlantic Ocean", "Canada", "Mexico", "Pacific Ocean"],
     objects: [
