@@ -853,6 +853,7 @@ export let globe = [
   },
   {
     area: "Canada",
+    image: "canada.png",
     description:
       "A massive country, covered in endless \"kilometers\" of snow. At first, it seems sparsely populated, but as you scan the coastlines, you notice sizable clusters of gentle, industrious citizens (known as 'canadians' or 'canucks') living at the eastern and western edges of the continent.",
     type: "country",
@@ -941,6 +942,7 @@ export let globe = [
   },
   {
     area: "China",
+    image: "china.png",
     description:
       "One of the largest countries you've seen on this trip. China is full of deserts, mountains, forests, and steppes, as well as dozens of massive cities and coal power plants. Wandering through the more remote areas, you see lots of old temples. You also notice a large wall running along the northern border here, probably to keep the dogs and cats inside. You've heard there is excellent Chinese food to be found here.",
     objects: [
@@ -1029,6 +1031,7 @@ export let globe = [
   },
   {
     area: "Croatia",
+    image: "croatia.png",
     type: "country",
     neighbors: [
       "Atlantic Ocean",
@@ -1073,6 +1076,7 @@ export let globe = [
   },
   {
     area: "Czech Republic",
+    image: "czech-republic.png",
     type: "country",
     neighbors: ["Austria", " Germany", "Poland", " Slovakia"],
     description:
@@ -1536,6 +1540,7 @@ export let globe = [
   },
   {
     area: "Greece",
+    image: "greece.png",
     type: "country",
     neighbors: ["Albania", "Atlantic Ocean", "Bulgaria", "North Macedonia", "Turkey"],
     description:
@@ -1644,6 +1649,7 @@ export let globe = [
   },
   {
     area: "Haiti",
+    image: "haiti.png",
     type: "country",
     neighbors: ["Atlantic Ocean", "Dominican Republic"],
     description:
@@ -1718,6 +1724,7 @@ export let globe = [
   },
   {
     area: "India",
+    image: "india.png",
     type: "country",
     neighbors: [
       "Bangladesh",
@@ -1739,6 +1746,7 @@ export let globe = [
   },
   {
     area: "Indonesia",
+    image: "indonesia.png",
     type: "country",
     neighbors: [
       "East Timor",
@@ -1824,6 +1832,7 @@ export let globe = [
   },
   {
     area: "Japan",
+    image: "japan.png",
     type: "country",
     neighbors: ["Pacific Ocean"],
   },
@@ -1834,6 +1843,7 @@ export let globe = [
   },
   {
     area: "Kazakhstan",
+    image: "kazakhstan.png",
     type: "country",
     neighbors: ["China", "Kyrgyzstan", "Russia", "Turkmenistan", "Uzbekistan"],
   },
@@ -2217,6 +2227,7 @@ export let globe = [
   },
   {
     area: "Philippines",
+    image: "philippines.png",
     type: "country",
     neighbors: ["Pacific Ocean"],
   },
@@ -2262,6 +2273,7 @@ export let globe = [
   },
   {
     area: "Russia",
+    image: "russia.png",
     type: "country",
     description:
       "Straddling eleven timezones across Europe and Asia, Russia is an incredibly large place, full of beautiful scenery and generous people. You set out to explore the vast land and its rich history, from vikings, to revolution, to mass starvation, to kleptocracy.",
@@ -2365,6 +2377,7 @@ export let globe = [
   },
   {
     area: "San Marino",
+    image: "san-marino.png",
     description:
       "On a mountain overlooking this tiny city state, you see three medieval towers rising picturesquely into the blue skies.",
     type: "country",
@@ -2421,6 +2434,7 @@ export let globe = [
   },
   {
     area: "Scotland",
+    image: "scotland.png",
     type: "country",
     description:
       "Scotland is the northern part of the island of Great Britain. The capital is Edinburgh. Scotland's national animal is the red deer.",
@@ -2594,6 +2608,7 @@ export let globe = [
   },
   {
     area: "Tanzania",
+    image: "tanzania.png",
     type: "country",
     neighbors: [
       "Burundi",
@@ -2642,7 +2657,7 @@ export let globe = [
   },
   {
     area: "Tibet",
-    type: "special",
+    type: "country",
     neighbors: ["Bhutan", "China", "Nepal"],
     description:
       "Tibet is isolated from the rest of the world geographically, yet is the spiritual home of Asia. It is a place where Buddhists seek out enlightenment, and an experience like no other. Due to the rain shadow of the Himalayas, Tibet is dry about nine months out of the year, and pretty dry the other three. Looking around, you notice that Lhasa is the main city. You also spot a lot of Chinese stuff lying around. Stopping a Tibetan to ask what's up, you discover that Tibet was annexed by China in 1950. The main exports include barley and little flags.",
@@ -2779,6 +2794,7 @@ export let globe = [
   },
   {
     area: "United States",
+    image: "united-states.png",
     description:
       'A large and diverse country, it is home to the famous "50 state quarters" phenomenon of the early 2000s. You see a BALD EAGLE fishing the many lakes, rivers, and ponds here.',
     type: "country",
