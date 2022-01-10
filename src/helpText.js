@@ -5,8 +5,7 @@ export const helpText = `
   <p>Or click on a country's name in the list to make me type it for you.</p>
   <hr />
   <h4>SAVING PROGRESS</h4>
-  <p>The game will try to save your progress as you go, however I am not a very good programmer, so it might get messed up, resulting in some errors. If they happens, you're fucked, and you should type "FORGET" to remove your saved game and start over.</p>
-  <p>If that happens, contact me on MySpace for a full refund!</p>
+  <p>The game will try to save your progress as you go, however I am not a very good programmer, so it might get messed up, resulting in some errors. If that happens, you're fucked, and you should type "FORGET" to remove your saved game and start over.</p>
   <hr/>
   <h4>COMMANDS</h4>
   <ul class="asterisk">

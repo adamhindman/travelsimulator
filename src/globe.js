@@ -1805,11 +1805,25 @@ export let globe = [
     area: "Ireland",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "The island of Ireland lies in Western Europe, off the coast of Great Britain. It is separated from Great Britain by the Irish Sea. The Republic of Ireland comprises most of that country, but Northern Ireland, which is part of the United Kingdom, makes up the northern third of the island. It's capital is Dublin, which is a deeply rich history.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Israel",
     type: "country",
     neighbors: ["Atlantic Ocean", "Egypt", "Indian Ocean", "Jordan", "Lebanon", "Syria"],
+    description:
+      "Israel is located on the shores of the Mediterranean, in Northern and Eastern Africa, the Middle East, and Southwest Asia, bordering Lebanon, Syria, Jordan, and Egypt. It covers an area of 8,019 sq mi.<p>Israel is a country steeped in history, art, and the ancient origins of mankind. Today it is a leader in technology, bio-medicine, and the arts.</p>",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Italy",
@@ -1823,6 +1837,13 @@ export let globe = [
       "Switzerland",
       "Vatican City",
     ],
+    description:
+      "Italy is a peninsula, nestled into the Eastern Mediterranean Sea, and bordered by France, Switzerland, Austria, and Slovenia. It is a country rich in history and culture. From beautiful architecture, to unparalleled craftsmanship, this is one boot that fits everybody.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Jamaica",
