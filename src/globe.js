@@ -1807,11 +1807,16 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       "The island of Ireland lies in Western Europe, off the coast of Great Britain. It is separated from Great Britain by the Irish Sea. The Republic of Ireland comprises most of that country, but Northern Ireland, which is part of the United Kingdom, makes up the northern third of the island. It's capital is Dublin, which is a deeply rich history.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "DOLOMITES",
+        article: "The",
+        description:
+          "This picturesque mountain range rises sharply into the sky. But, it also contains paths into the earth: you enter an abandoned mine, closed since the 1960s, and wander around in the dark for several days. Note to self: buy a flashlight!",
+      },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Israel",
@@ -1857,17 +1862,39 @@ export let globe = [
     image: "japan.png",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "Japan is an island nation located in Eastern Asia. It lies off the eastern coast of the Asian mainland, and stretches from the Sea of Okhotsk in the north, the East China Sea and the Pacific Ocean to the east and south, and the Sea of Japan to the west. The four main islands are Hokkaido, Honshu, Kyushu and Shikoku. Almost 90% of Japan is mountainous, and much of it is volcanic and densely wooded.",
+    objects: [
+      { name: "ANIME", article: "Some", description: "WIP" },
+      { name: "HIKIKOMORI", article: "A", description: "WIP" },
+      { name: "MOUNT FUJI", article: "", description: "WIP" },
+      { name: "RAMEN", article: "A bowl of", description: "WIP" },
+    ],
   },
   {
     area: "Jordan",
     type: "country",
     neighbors: ["Indian Ocean", "Iraq", "Israel", "Saudi Arabia", "Syria"],
+    description:
+      "Jordan is a homeland full of color and traditions. It is a small country in the Middle East, bordering on Saudi Arabia in the south, Iraq in the east, Syria in the north and Israel and West Bank in the west. It's capital is Amman, and it has kept its traditions alive over time.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Kazakhstan",
     image: "kazakhstan.png",
     type: "country",
     neighbors: ["China", "Kyrgyzstan", "Russia", "Turkmenistan", "Uzbekistan"],
+    description:
+      "Kazakhstan is a country in northern Central Asia, and is mainly steppe and desert. On the Caspian Sea, Kazakhstan shares borders with Russia, China, and the Central Asian countries of Turkmenistan, Uzbekistan, and Kyrgyzstan. It is the ninth-largest country in the world by area, and largest landlocked country.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Kenya",
@@ -1880,11 +1907,121 @@ export let globe = [
       "Tanzania",
       "Uganda",
     ],
+    description:
+      "Africa's most popular safari destination, Kenya is home to the only park where visitors can view the animals in their natural habitat, as well as some of the largest wild animal herds in the world. You book a tour in Nairobi, the capital, and ride around in a land rover, spotting lions, hyenas, antelopes, dragons, rhinoceroses, and elephants.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Kiribati",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "The Republic of Kiribati is an island nation located in the central tropical Pacific Ocean, just above the equator. Its population of 96,000 is predominantly Micronesian, with substantial Polynesian and Indo-Fijian minorities. The Gilbert Islands, part of the Republic of Kiribati, are scattered over 1.9 million square miles of ocean, roughly halfway between Hawaii and Australia.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
+  },
+  {
+    area: "Kosovo",
+    type: "country",
+    neighbors: ["Albania", "Montenegro", "North Macedonia", "Serbia"],
+    description:
+      "The Republic of Kosovo is a partially recognized state that is located at the southern part of Serbia. Many travelers who feel adventurous, make the beautiful trip to this place, which offers a perfect combination of chic urban nightlife and bohemian European charm.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
+  },
+  {
+    area: "Kuwait",
+    type: "country",
+    neighbors: ["Indian Ocean", "Iraq", "Saudi Arabia"],
+    description:
+      "Kuwait is a constitutional monarchy located on the northern edge of Eastern Arabia at the tip of the Persian Gulf. With 6 million people living on 6,000 square kilometers of land, Kuwait is a relatively small country with a population that is over 60% immigrant. Kuwait is the economic powerhouse of the Middle East, with extraordinary contemporary architecture, modern mega-malls, traditional souks, and one of the largest opera houses in the Middle East.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
+  },
+  {
+    area: "Kyrgyzstan",
+    type: "country",
+    neighbors: ["China", "Kazakhstan", "Tajikistan", "Uzbekistan"],
+    description:
+      "Kyrgyzstan is a landlocked country in Central Asia and former Soviet Republic. It is bordered by Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the southwest and China to the southeast.</p><p>Kukhr-Ata, Kyrgyzstan's capital city, is located in the Chui Valley in the Talas Region at an elevation of 700 meters. Although it is the capital, it is much smaller in size than Bishkek, with a population of about 670,000</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
+  },
+  {
+    area: "Laos",
+    type: "country",
+    neighbors: ["Cambodia", "China", "Myanmar", "Thailand", "Vietnam"],
+    description:
+      "Laos is a landlocked country in Southeast Asia. Laos is bordered by Myanmar and China to the northwest, Vietnam to the east, Cambodia to the south and Thailand to the west. The country covers an area of approximately 236,800 square kilometers, slightly less than twice the size of Italy. Laos is the only landlocked country in Southeast Asia. In addition to being the first communist state to be established in Asia, it also has the most heavily bombed nation in the world per capita.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
+  },
+  {
+    area: "Latvia",
+    type: "country",
+    neighbors: ["Atlantic Ocean", "Belarus", "Estonia", "Lithuania", "Russia"],
+    description:
+      "Latvia, officially the Republic of Latvia, is a country in the Baltic region of Northern Europe, one of the three Baltic states. It is bordered by Estonia to the north, Lithuania to the south, Russia to the east, and Belarus to the southeast.</p><p>Latvia is a country of diverse landscapes and natural features, ranging from the beaches and lowlands of the south to the glaciated regions of the north.</p><p>Latvia has 1,997,600 inhabitants and a territory of 64,589 square kilometers (about 24,938 square miles). The capital of Latvia is Riga, which is the largest city in the Baltic states and home to 63% of the country's population.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
+  },
+  {
+    area: "Lebanon",
+    type: "country",
+    neighbors: ["Atlantic Ocean", "Israel", "Syria"],
+    description:
+      "The Republic of Lebanon, with an area of about 4,036 square miles, has a coastline along the Mediterranean Sea that extends for about 143 miles. The capital city of Lebanon is Beirut which is situated near the mouth of an estuary associated both with the Mediterranean Sea and with the River Lebanon. There is situated the country's largest seaport, Tripoli.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
+  },
+  {
+    area: "Lesotho",
+    type: "country",
+    neighbors: ["South Africa"],
+    description:
+      'Lesotho, officially the Kingdom of Lesotho, is a small country in the Great Rift Valley in southern Africa. Lesotho has a high-altitude topography, with many of the mountains reaching over 3,000 meters in elevation. Lesotho is one of the very few countries in the world that lies entirely above 1,000 meters elevation.The lowest point in Lesotho is the great Senqu (Orange) River, which reaches 350 meters. Lesotho is the fifth largest country in southern Africa by land area, between 25,000 and 30,000 inhabitants. Approximately 40% of the population lives in the capital city Maseru. The name Lesotho translates roughly into "the land of the people who speak Sesotho".',
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
+  },
+  {
+    area: "Liberia",
+    type: "country",
+    neighbors: ["Atlantic Ocean", "Guinea", "Côte d'Ivoire", "Sierra Leone"],
+    description:
+      "Liberia was the first African republic to declare independence. It is located along the Gulf Coast of West Africa. It has borders with Sierra Leone, Guinea, and Côte d'Ivoire. The country of Liberia was formed in 1847 as a homeland for freed and freed slaves in the United States, and its capital, Monrovia, was named after U.S. President James Monroe.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Library of Babel",
@@ -1901,56 +2038,6 @@ export let globe = [
     neighbors: ["Argentina", "Library of Babel"],
   },
   {
-    area: "North Korea",
-    type: "country",
-    neighbors: ["China", "Pacific Ocean", "South Korea", "Russia"],
-  },
-  {
-    area: "South Korea",
-    type: "country",
-    neighbors: ["North Korea", "Pacific Ocean"],
-  },
-  {
-    area: "Kosovo",
-    type: "country",
-    neighbors: ["Albania", "Montenegro", "North Macedonia", "Serbia"],
-  },
-  {
-    area: "Kuwait",
-    type: "country",
-    neighbors: ["Indian Ocean", "Iraq", "Saudi Arabia"],
-  },
-  {
-    area: "Kyrgyzstan",
-    type: "country",
-    neighbors: ["China", "Kazakhstan", "Tajikistan", "Uzbekistan"],
-  },
-  {
-    area: "Laos",
-    type: "country",
-    neighbors: ["Cambodia", "China", "Myanmar", "Thailand", "Vietnam"],
-  },
-  {
-    area: "Latvia",
-    type: "country",
-    neighbors: ["Atlantic Ocean", "Belarus", "Estonia", "Lithuania", "Russia"],
-  },
-  {
-    area: "Lebanon",
-    type: "country",
-    neighbors: ["Atlantic Ocean", "Israel", "Syria"],
-  },
-  {
-    area: "Lesotho",
-    type: "country",
-    neighbors: ["South Africa"],
-  },
-  {
-    area: "Liberia",
-    type: "country",
-    neighbors: ["Atlantic Ocean", "Guinea", "Côte d'Ivoire", "Sierra Leone"],
-  },
-  {
     area: "Libya",
     type: "country",
     neighbors: [
@@ -1962,11 +2049,25 @@ export let globe = [
       "Sudan",
       "Tunisia",
     ],
+    description:
+      "The country of Libya is located in northern Africa along the coast of the Mediterranean Sea. The desert climate makes the country of Libya one of the most dry, and there is little rainfall in the country. The majority of the country's citizens are involved in importing and exporting the oil that is either found beneath the desert, or imported from overseas.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Liechtenstein",
     type: "country",
     neighbors: ["Austria", "Switzerland"],
+    description:
+      "Liechtenstein is a country in Central Europe. It is very small, and is located in the middle of Switzerland, Austria, and Liechtenstein. It's capital is Vaduz, and it's borders are the Rhine to the east, and the Alps to the south. The Rhine leaves Liechtenstein at the town of Balzers.</p><p>Liechtenstein has a population of around 33,000 people, but per capita the country is actually the richest in the world. Everyone seems to be wearing top hats, or fancy dresses. You can see wads of Swiss francs sticking out of their pockets, one or two bills occasionally spilling out and floating to the ground.</p>",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Lithuania",
@@ -1993,6 +2094,13 @@ export let globe = [
     area: "Luxembourg",
     type: "country",
     neighbors: ["Belgium", "France", "Germany"],
+    description:
+      "Lithuania is a part of Eastern Europe. It draws much of its agricultural efforts from enjoying a temperate climate, but the majority of land lies below sea level and the rivers have many tributaries. Nature and geography play a large role in the culture of Lithuania. The country is very rural, and is full of beautiful natural resources. Most of the population lives in urban centers, and about 40% of the nation lives in Lithuania's capital city of Vilnius.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Macau",
@@ -2197,6 +2305,11 @@ export let globe = [
     area: "Nigeria",
     type: "country",
     neighbors: ["Atlantic Ocean", "Benin", "Cameroon", "Chad", "Niger"],
+  },
+  {
+    area: "North Korea",
+    type: "country",
+    neighbors: ["China", "Pacific Ocean", "South Korea", "Russia"],
   },
   {
     area: "North Macedonia",
@@ -2545,6 +2658,11 @@ export let globe = [
       "Namibia",
       "Zimbabwe",
     ],
+  },
+  {
+    area: "South Korea",
+    type: "country",
+    neighbors: ["North Korea", "Pacific Ocean"],
   },
   {
     area: "South Ossetia",

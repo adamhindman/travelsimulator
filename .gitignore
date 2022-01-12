@@ -3,3 +3,4 @@ yarn.lock
 node_modules/
 .parcel-cache
 dist/
+src/.DS_Store
