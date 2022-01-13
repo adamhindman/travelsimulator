@@ -2321,11 +2321,25 @@ export let globe = [
     area: "Monaco",
     type: "country",
     neighbors: ["Atlantic Ocean", "France"],
+    description:
+      "Monaco is a tiny sovereign state consisting of various pressed surrounded on three sides by sea, the eastern side of country is bordered by France. The country has a population of around 36 thousand people, and is 195 square miles in size. Monaco is considered one of the world's major tax havens for the rich and famous.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Mongolia",
     type: "country",
     neighbors: ["China", "Russia"],
+    description:
+      "Mongolia is a landlocked East-Central Asian nation, bordered by Russia in the north and China to the south, east and west, while it borders Kazakhstan, and the countries of Kyrgyzstan and Uzbekistan to the east. With a land area of 1,566,000 square kilometers - the second largest in Asia - and a population of just under three million people, Mongolia is the least densely populated sovereign country in the world. Ulaan Taiga, the Capital of Mongolia, has a population of around 235,000 people.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Montenegro",
@@ -2338,11 +2352,25 @@ export let globe = [
       "Kosovo",
       "Serbia",
     ],
+    description:
+      "Montenegro is an independent sovereign state in Southeastern Europe, adjacent to the Adriatic Sea, between the Balkan Mountains and the northern edges of the vast Pannonian Plain. The capital, Podgorica, lies at the crossing of interstate routes that part of big transportation and distribution systems from the coasts of Croatia, Albania and Greece, the Adriatic Sea and Central Europe to Turkey and the Middle East.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Morocco",
     type: "country",
     neighbors: ["Algeria", "Atlantic Ocean", "Western Sahara", "Spain"],
+    description:
+      "Morocco is located on the northwest coast of Africa and encompasses both the coastal region and a portion of the Atlas Mountains. The main features of Morocco are the Atlas Mountains and the Sahara Desert. Morocco's original inhabitants included the Berbers, a group which remains a strong element today, and their influence can be seen in everything from Moroccan architecture to food. The capital city of Morocco is Rabat, and with a population of around 760 thousand. The currency of Morocco is the Moroccan dirham.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Mozambique",
@@ -2356,11 +2384,23 @@ export let globe = [
       "Zambia",
       "Zimbabwe",
     ],
+    description: "The Republic of Mozambique is an African country south of the Indian Ocean, bordered by Tanzania to the north, Malawi and Zambia to the northwest, Zimbabwe to the west and Swaziland and South Africa to the southwest, while Swaziland and Mozambique share a border upon the tri-point with the central-west Africa to southeast."",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Myanmar",
     type: "country",
     neighbors: ["Bangladesh", "China", "India", "Indian Ocean", "Laos", "Thailand"],
+    description:"Myanmar is a large country in Southeast Asia. With approximately 48 million people, it is the world's 24th most populous country. In addition, it is the second largest country by area in Southeast Asia.",
+    objects:[
+    {name:"J. PETERMAN", article:"", description:"\"You most likely know it as Myanmar, but it will always be Burma to me.\""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Namibia",
