@@ -2106,31 +2106,78 @@ export let globe = [
     area: "Macau",
     type: "country",
     neighbors: ["China", "Pacific Ocean"],
+    description:
+      "Macau is located on the southern coast of China, and is in fact a Special Administrative Region, with its entire economy, apart from law, security, and foreign affairs, being managed by the Macau Special Administrative Region Government.</p><p>Macau has become one of the world's leading gaming centers, so you look around for a Smash Brothers tournament to join, but are unable to find one.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Madagascar",
     type: "country",
     neighbors: ["Indian Ocean"],
+    description:
+      "Madagascar is about 900 miles south of the equator. Madagascar is one of the largest islands in the world, but about 95% of the population lives along the 2,400 kilometers of narrow coastline.</p><p>It's also one of the world's most biodiverse islands, with 7,720 plant species and over 90% of all animal groups living here. Madagascar is almost completely covered by open forest, and it includes 7 of the 10 largest baobab trees in the world. You go to each baobab tree and marvel at its enormous size, before checking it off your bucket list of baobab trees to see before you die.",
+    objects: [
+      {
+        name: "LEMUR",
+        article: "A",
+        description:
+          "Where else in the world can you be kidnapped by lemurs? Because you can in Madagascar.</p><p>When you wake up, you're in a basement, with a hood tied over your head, tiny hands rifling through your pockets for chopped up bits of fruit. After stealing all your chopped up bits of fruit, the lemurs leave you tied up by the side of the road, unharmed but without chopped up bits of fruit.</p>",
+      },
+      { name: "CINNAMON", article: "Some", description: "WIP" },
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Madeira",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Madeira is an autonomous region of Portugal, and consists of three islands. Pico is to the south, while Sao Jorge and Graciosa are to the north. The island group lies just 600 kilometers off the coast of Morocco. Madeira is sometimes referred to as the most beautiful island in the world, and some of the most beautiful gardens are located here. The island features a mild, subtropical climate.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Malawi",
     type: "country",
     neighbors: ["Mozambique", "Tanzania", "Zambia"],
+    description:
+      "Malawi is located in Southeast Africa, and shares it borders with Mozambique to the south and east, Zambia to the north, and Tanzania to the north and west. It is the only southern African nation that speaks English and it enjoys a tropical climate, averaging around 24 degrees Celsius.</p><p>The economy of Malawi is based on agriculture, mainly tea, coffee, and sugar. Tourism and financial outsourcing have become other important sectors since the 2000's.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Malaysia",
     type: "country",
     neighbors: ["Brunei", "Indian Ocean", "Indonesia", "Pacific Ocean", "Thailand"],
+    description:
+      "Malaysia is strategically located on the Pacific Rim, and is bordered by Thailand to the north, Indonesia to the north-west, and Vietnam to the south-west. Malaysia is also one of four countries that overlooks the Malacca Strait, along with Indonesia, Singapore, and the Philippines.</p><p>It's a country made up of 13 states, with Kuala Lumpur being the nation's capital. It's known for its contrasts between modern buildings, and old rainforest wilderness. Malaysia's tropical climate normally features high temperatures throughout the year, while there's a rainy season from January to April.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Maldives",
     type: "country",
     neighbors: ["Indian Ocean"],
+    description:
+      "Maldives is an island nation, and is located southwest of Sri Lanka. It's a country known for low flat coral islands, with the highest point being six meters above sea level. The country is spread out over roughly 90,000 square kilometers, consisting of 26 ring-shaped atolls, of which 200 are inhabited. Only 190 of the islands are large enough to be officially recognized by the government.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Mali",
@@ -2144,26 +2191,61 @@ export let globe = [
       "Niger",
       "Senegal",
     ],
+    description:
+      "Mali is a landlocked country in West Africa. It's the third largest country in the region, behind Algeria and Nigeria. Mali borders Algeria, Niger, Burkina Faso, Guinea-Bissau, Senegal, and Ivory Coast. It's home to the famed city of Timbuktu, which is well known for its mosques, libraries, and schools.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Malta",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Malta is a southern European country, and is unofficially known as the 'smallest global village'. It's made up of an archipelago of seven islands, situated in the Mediterranean sea, south of the island of Sicily. The country gained it's independence from the United Kingdom on September 21, 1964. Malta gained it's title of \"European Capital of Culture\" in 2018, and it's one of the most densely populated countries in the world. What an honor to visit!",
+    objects: [
+      { name: "TREASURE OF THE KNIGHTS OF MALTA", article: "The", description: "WIP" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Marshall Islands",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "The Republic of the Marshall Islands was named in honor of the British captain John Marshall, who visited the islands in 1788. It's famed for having stunning coral reefs, and is a popular tourist destination. Most Marshallese are of Micronesian descent, and the language of Marshallese is based on a combination of Micronesian, Gilbertese and English.</p><p>The Marshall Islands consists of 29 atolls and five isolated islands, with a combined area of only 750 square kilometers. The capital is the atoll of Majuro, which has a population of around 28,500. The largest atoll is Kwajalein, which is 96 kilometers long, and 13 kilometers wide, making it one of the largest in the world.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Mauritania",
     type: "country",
     neighbors: ["Algeria", "Atlantic Ocean", "Mali", "Senegal", "Western Sahara"],
+    description:
+      "Most of Mauritania's landscape is desert, although the south of the country is dominated by the Senegal River. The country is bordered by Morocco, Western Sahara, Algeria, Mali, and Senegal. The Capital of Mauritania is Nouakchott, which has a population of around 1.725 million people.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Mauritius",
     type: "country",
     neighbors: ["Indian Ocean"],
+    description:
+      "Mauritius is an island nation off the southeast coast of the African continent, and is in the Indian Ocean, northeast of Madagascar. The country consists of two islands, as well as several smaller islands, and has a total land area of 2040 square kilometers. Victoria is the island nation's capital, and has a population of around two hundred thousand people.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Mexico",
@@ -2215,11 +2297,25 @@ export let globe = [
     area: "Federated States of Micronesia",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "This small island-country consists of around one thousand islands, in the North Pacific Ocean situated northeast of New Guinea. The islands of the Federated States of Micronesia lie north of the equator, east of the Philippine Islands, and west of Wetar. The country extends 2450 kilometers in a north-south direction, and is one of the most popular tourist destinations in Micronesia. The largest islands are Pohnpei and Chuuk, and there are many seamounts along the country's western border, some of which are still unexplored.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Moldova",
     type: "country",
     neighbors: ["Romania", "Ukraine"],
+    description:
+      "Moldova is in southeastern Europe, on the northeastern edge of the Balkan Peninsula. The country is bordered by Ukraine and Romania to the north, by Romania and Hungary to the west, and by Bulgaria to the south, while the seventh nation that shares its borders with Moldova is the Black Sea to the southeast. The capital of the country, Chisinau, has a population of around half a million people.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Monaco",
