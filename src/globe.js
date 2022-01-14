@@ -2384,7 +2384,8 @@ export let globe = [
       "Zambia",
       "Zimbabwe",
     ],
-    description: "The Republic of Mozambique is an African country south of the Indian Ocean, bordered by Tanzania to the north, Malawi and Zambia to the northwest, Zimbabwe to the west and Swaziland and South Africa to the southwest, while Swaziland and Mozambique share a border upon the tri-point with the central-west Africa to southeast."",
+    description:
+      "The Republic of Mozambique is an African country south of the Indian Ocean, bordered by Tanzania to the north, Malawi and Zambia to the northwest, Zimbabwe to the west and Swaziland and South Africa to the southwest, while Swaziland and Mozambique share a border upon the tri-point with the central-west Africa to southeast.",
     // objects:[
     // {name:"", article:"", description:""},
     // {name:"", article:"", description:""},
@@ -2395,47 +2396,105 @@ export let globe = [
     area: "Myanmar",
     type: "country",
     neighbors: ["Bangladesh", "China", "India", "Indian Ocean", "Laos", "Thailand"],
-    description:"Myanmar is a large country in Southeast Asia. With approximately 48 million people, it is the world's 24th most populous country. In addition, it is the second largest country by area in Southeast Asia.",
-    objects:[
-    {name:"J. PETERMAN", article:"", description:"\"You most likely know it as Myanmar, but it will always be Burma to me.\""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
+    description:
+      "Myanmar is a large country in Southeast Asia. With approximately 48 million people, it is the world's 24th most populous country. In addition, it is the second largest country by area in Southeast Asia.",
+    objects: [
+      {
+        name: "J. PETERMAN",
+        article: "",
+        description:
+          '"You most likely know it as Myanmar, but it will always be Burma to me."',
+      },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
     ],
   },
   {
     area: "Namibia",
     type: "country",
     neighbors: ["Angola", "Atlantic Ocean", "Botswana", "South Africa", "Zambia"],
+    description:
+      "The Republic of Namibia is on the southwest coast of Africa. Namibia is one of the best places on Earth to go on an open-air safari. It is described as tropical to the north and semiarid to the south. Various mountains are found in the north. Angola lies to the east, and South Africa is to the north.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Nauru",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "An island country south of the equator between Hawaii and Australia. The country has lost much of its original forested cover due to overpopulation and introduced plants. Nauru has traditionally served as a transshipment outpost.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Nepal",
     type: "country",
     neighbors: ["China", "India", "Tibet"],
+    description:
+      "Nepal is a landlocked country in the eastern part of the world, lying between the two most populous countries in the world, China and India. The mountains here rise tall into the sky. Not a lot of trees, though.",
+    objects: [
+      {
+        name: "MOUNT EVEREST",
+        article: "",
+        description: "Part of the mountain is here: another part is in Tibet.",
+      },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Netherlands",
     type: "country",
     neighbors: ["Atlantic Ocean", "Belgium", "Germany", "Saint Martin", "France"],
+    description:
+      "The Netherlands is a flat country surrounded by water and chock full of windmills, constantly twirling. The people here are dutch, which means honest. They work hard, ranging from a simple laborer to a ship's captain. The best job you can get here is being a ship's captain. The people are friendly, enjoy building, and even enjoy being dominated by powerful dictators.",
+    objects: [
+      { name: "GOUDA", article: "A hunk of", description: "WIP" },
+      { name: "WOODEN SHOES", article: "A pair of", description: "WIP" },
+    ],
   },
   {
     area: "New Zealand",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "New Zealand consists of a mountainous landscape rolling plains on the south coast. On the north, rich with mining resources that cripple the landscape. The people are proud to their island home and resistant to most invaders.</p><p>New Zealand has a fabled fairytale quality. It is full of dragons, fairies, and sea monsters. Stories from these people tell of 'Tarkus Crowfield', a famed knight who was able to make a dragon appear whenever he wanted. Stories are no mere tale though. People were once taken by a real dragon as they tried to cross Saralanchi.</p>",
+    objects: [
+      { name: "SHEEP", article: "A", description: "" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Nicaragua",
     type: "country",
     neighbors: ["Atlantic Ocean", "Costa Rica", "Honduras", "Pacific Ocean"],
+    description:
+      "Nicaragua is a place that holds beauty in many aspects. Ridiculous volcanoes rise from a thin fan of land on the side of Central America. A thick influx of jungle plants provide food, medicine, and a purpose to villages that live primitive lives unreached by changing times.</p><p>You have heard stories about the Nivàcun (for so they are called), which was a race in old Nicaragua, from before the strange earthquake destroyed nearly everything. They are very fair skinned and live in the sea. They have hair the color of sunburnt sand, and eyes which measure shipping containers. As are the sizes of boxes for packing fish to the fish within, so their eyes are in proportion to their ears and to the rest of their bodies.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Niger",
     type: "country",
     neighbors: ["Algeria", "Benin", "Burkina Faso", "Chad", "Libya", "Mali", "Nigeria"],
+    description:
+      "Niger is a land surrounded by sand and then a less noticeable rise of the Sahara desert. The inhabitants are some of the hardest people in Africa and survive here due to the harsh conditions and their services as pilgrims, warriors, and traders.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Nigeria",
