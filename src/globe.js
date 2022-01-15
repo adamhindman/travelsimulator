@@ -2500,46 +2500,138 @@ export let globe = [
     area: "Nigeria",
     type: "country",
     neighbors: ["Atlantic Ocean", "Benin", "Cameroon", "Chad", "Niger"],
+    description:
+      "Nigeria! The official name of Nigeria is The Federal Republic of Nigeria. Lagos is the capital of Nigeria. The country is surrounded by Niger, Chad, and Cameroon in the west, south and north. It has a coastline on the Atlantic Ocean in the east. The climate of Nigeria is basically tropical, but with predominantly high temperatures, heavy rainfall, and humidity. The main export of Nigeria is petroleum and this makes up about 90% of Nigeria's government revenue.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "North Korea",
     type: "country",
     neighbors: ["China", "Pacific Ocean", "South Korea", "Russia"],
+    description:
+      "It's relatively easy to be allowed admission into North Koera by getting an official pass, which entails being accompanied by a nervous handler along a route made up of carefully staged charades meant to persist the lie that this country isn't a gray nightmare. Since you want to see the \"real\" North Korea, you sneak across the border instead.<p>The real North Korea has surprisingly little remaining firewood, because the winters here are cold and electricity is a luxury item.</p>",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "North Macedonia",
     type: "country",
     neighbors: ["Albania", "Bulgaria", "Greece", "Kosovo", "Serbia"],
+    description:
+      "North Macedonia, officially the Republic of North Macedonia, is a country in Southeast Europe. It gained independence in 1991 as one of the successor states of Yugoslavia. North Macedonia is a landlocked country bordering with Kosovo to the northwest, Serbia to the north, Bulgaria to the east, Greece to the south, and Albania to the west.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Norway",
     type: "country",
     neighbors: ["Arctic Ocean", "Atlantic Ocean", "Finland", "Sweden", "Russia"],
+    description:
+      "Norway is situated in the Scandinavian Peninsula. It is the western and easternmost of the three Scandinavian countries, it's known for its fjords.</p><p>You walk through a typical town, and see repeated motifs: small boutiques, shops selling wool sweaters, hand painted merchandise, wrought iron, and statues of the three wise monkeys, handmade jewelry made from semi-precious stones, battleaxes.</p>",
+    objects: [
+      {
+        name: "BRYGGEN WHARF",
+        article: "",
+        description:
+          "The Bryggen wharf is a long row of brightly painted houses facing the harbor; they were originally built in the 12th century as a warehouse for fish and textiles brought in from foreign countries. Today there are a variety of restaurants and shops in the old buildings. They even have street artists and musicians performing in the narrow walkways.",
+      },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Oman",
     type: "country",
     neighbors: ["Indian Ocean", "Saudi Arabia", "United Arab Emirates", "Yemen"],
+    description:
+      "Oman, officially the Sultanate of Oman, is an Arab country on the southeastern coast of the Arabian Peninsula in Western Asia. Oman is bordered by the United Arab Emirates (UAE) to the northwest, Saudi Arabia to the west, and Yemen to the southwest. Oman is an absolute monarchy ruled by Sultan Qaboos bin Said al Said. It has a population of about 2 million people, and an area of just over 300,000 square kilometers. The Omanis have a close friendship with and respect for snakes.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Pakistan",
     type: "country",
     neighbors: ["Afghanistan", "India", "Indian Ocean", "Iran", "China"],
+    description:
+      "The Islamic Republic of Pakistan is the fifth most populous country in the world. Located at the crossroads of South Asia it is a sovereign democratic state, with a moderate and tolerant outlook on life and a strong commitment of its people towards democracy and its institutions. Pakistan is the sixth largest country in the world in terms of population, and the second largest in terms of area, surpassed only by Russia. You see people on the streets eating Börek and drinking strong tea.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Palau",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "Palau is an island country located in the western Pacific Ocean. The Palau archipelago contains a total of two hundred and thirty four islands, forming the western chain of the Caroline Islands in Micronesia, with Indonesia and the Philippines to the east and north. Its most populous island is Koror, where most of the tourists congregate.",
+    objects: [
+      {
+        name: "KOROR JAIL",
+        article: "The",
+        description:
+          "The nation's only correctional facility has become a tourist destination, due to the arts and crafts for sale by its innamtes.",
+      },
+      {
+        name: "NGERKEBESANG CAUSEWAY",
+        article: "The",
+        description:
+          "Built by occupying Japanese forces in WWII, this causeway connects Ngerkebesang and Koror.",
+      },
+      {
+        name: "BEACH HOUSE",
+        article: "A",
+        description:
+          "Koror's beach front is not lined with palm trees — it's scrub, bush and dry grasses. The low brick building matches the surroundings: sparse, undecorated. Someone has emptied buckets of seashells, polished seabones and driftwood onto the sand in front of it, just out of reach of the clear, blue Pacific water.",
+      },
+    ],
   },
   {
     area: "Palestine",
     type: "country",
     neighbors: ["Atlantic Ocean", "Egypt", "Israel", "Jordan"],
+    description:
+      "The eastern border of Palestine is the Mediterranean Sea, while the western border is Jordan. The country is less than nine miles in total area from the northernmost point at Rosh Hanikra to the south end at the port city of Gaza on the Mediterranean coast of the Sinai Peninsula, and less than ten miles from the south Sea of Galilee at the northernmost point.",
+    objects: [
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Panama",
     type: "country",
     neighbors: ["Atlantic Ocean", "Colombia", "Costa Rica", "Pacific Ocean"],
+    description:
+      "Panamá is a country situated in the southernmost parts of America. It is grouped together with the Central American nations of Costa Rica and Colombia to make up an isthmus. Panamá has a tropical climate with warm weather throughout the year, and distinctly warmer along both coasts than in the rest of the country. Panama possesses a population of 3.5 million people.",
+    objects: [
+      {
+        name: "PANAMA HAT",
+        article: "A",
+        description: "Good for wearing on a wide veranda, along with a necktie.",
+      },
+      {
+        name: "PANAMA CANAL",
+        article: "",
+        description:
+          "The Panama Canal is a ship canal that serves as the only sea route between the North Atlantic Ocean and the Pacific Ocean via the Caribbean Sea",
+      },
+      { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Papua New Guinea",
