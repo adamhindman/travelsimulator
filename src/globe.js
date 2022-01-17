@@ -1138,7 +1138,7 @@ export let globe = [
   {
     area: "Denmark",
     type: "country",
-    neighbors: ["Germany", "Atlantic Ocean"],
+    neighbors: ["Germany", "Atlantic Ocean", "Sweden"],
     description:
       "Denmark is a Scandinavian country in Northern Europe. The nation consists of a large peninsula, Jutland, and numerous islands, notably Zealand and Funen. Denmark is a constitutional monarchy with a parliamentary democracy.The king is head of state; the prime minister is head of government.",
     // objects:[
@@ -1642,11 +1642,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Brazil", "Suriname", "Venezuela"],
     description:
       "Guyana is a country on the northern coast of South America. Guyana's political capital is Georgetown; its economic and cultural centre is Lethem. Guyana has a total land area of 32,000 sq mi. The Atlantic Ocean is to the north and northeast, with the Caribbean to the east and south, Suriname to the southeast, and Venezuela and Brazil to the south. To the west lies the Atlantic Ocean. Guyana achieved independence from the United Kingdom in 1966, and became a Republic in 1970.",
-    objects: [
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
-    ],
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Haiti",
@@ -2534,6 +2534,7 @@ export let globe = [
   },
   {
     area: "Norway",
+    image: "norway.png",
     type: "country",
     neighbors: ["Arctic Ocean", "Atlantic Ocean", "Finland", "Sweden", "Russia"],
     description:
@@ -2606,11 +2607,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Egypt", "Israel", "Jordan"],
     description:
       "The eastern border of Palestine is the Mediterranean Sea, while the western border is Jordan. The country is less than nine miles in total area from the northernmost point at Rosh Hanikra to the south end at the port city of Gaza on the Mediterranean coast of the Sinai Peninsula, and less than ten miles from the south Sea of Galilee at the northernmost point.",
-    objects: [
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
-    ],
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Panama",
@@ -2630,29 +2631,67 @@ export let globe = [
         description:
           "The Panama Canal is a ship canal that serves as the only sea route between the North Atlantic Ocean and the Pacific Ocean via the Caribbean Sea",
       },
-      { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
     ],
   },
   {
     area: "Papua New Guinea",
     type: "country",
     neighbors: ["Indonesia", "Pacific Ocean"],
+    description:
+      "The independent state Papua New Guinea, is an archipelago located in the southwestern Pacific Ocean. Papua New Guinea is sandwiched on the northern end between offshore islands north of the Solomon Islands, and on the south between Australia and the island of New Britain, which is known for its active volcanoes.</p><p>You decide to go for a hike.</p><p>Wild and rugged, the hinterland's thick vegetation is disturbed only by the wall of distant, rough mountains and the sheer escarpment of the Ramu Valley. Crossing the brutal razorbacks of the Owen Stanley range via the Bulldog track, you are bitten by a coral snake, which hurts.</p>",
+    objects: [
+      {
+        name: "TENKILE",
+        article: "A",
+        description:
+          "This cute little fellow looks like a pokemon. He is one of the last of the tree kangaroos of Papua New Guinea. He explains that 80% of his species was lost in just ten years, due to deforestation.",
+      },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Paraguay",
     type: "country",
     neighbors: ["Argentina", "Bolivia", "Brazil"],
+    description:
+      "Paraguay is located in the southern cone of South America, landlocked between Brazil, Argentina and Bolivia. It is largely rural, although there are significant urban eras too. In the west of the country lies the lush and drowsy land of poetry and legends, the Gran Chaco.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Peru",
+    image: "peru.png",
     type: "country",
     neighbors: ["Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "Pacific Ocean"],
+    description:
+      "The capital of Perú is Lima, a rich city founded in 1535. The historic center of Lima contains much Baroque architecture, exemplified in the Royal Palace, built in 1528, and now the official residence of the Peruvian president.</p><p>There's no shortage of outdoor activity in Perú, much of it centered on fishing, from surf casting along the cliffs and beaches of the south, to deep-sea fishing off the Pacific coast or fly fishing along the rivers. There are many ancient Aztec ruins scattered throughout the Andes, the two main sites are Machu Picchu and the lesser known but equally impressive fortress of Sacsayhuamán.</p>",
+    objects: [
+      { name: "MACHU PICCHU", article: "", description: "WIP" },
+      {
+        name: "SACSAYHUAMÁN",
+        article: "",
+        description: "Not as many tourists here, but still pretty nice.",
+      },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Philippines",
     image: "philippines.png",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "The Philippines is a densely populated island nation located in the western rims of the Pacific Ocean at Asia's easternmost point. During the summer months, Filipinos enjoy a clear sky, and placid oceans lapping gently on the beaches. However, from December to January a tropical low-pressure and wind system is triggered that brings short but fierce rains.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Poland",
@@ -2667,16 +2706,37 @@ export let globe = [
       "Slovakia",
       "Ukraine",
     ],
+    description:
+      "Poland is joined by Belarus, the Czech Republic, Germany, Lithuania, the Slovakian and Ukraine by one long border. The terrain ranges from broad plains crossed by rivers, to uplands with age-hardened mountains, to large swamps and glaciated mountains in the east. Poland is the sixth most populous of the 27 EU states, with a total population of over 38 million people inhabiting an area of over 312 thousand square kilometers.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Portugal",
     type: "country",
     neighbors: ["Atlantic Ocean", "Spain"],
+    description:
+      "Portugal is the third-oldest country in Europe, after Greece and Italy). Located in the west of Europe along the Atlantic Ocean, the country is bordered on the south and east by Spain. Portugal's culture and politics is shaped by its Iberian, Roman, and North African cultural heritage. In the coastal cities, there are sandy surf beaches, and the food is defined by abundant, seafood in the form of stews, fresh fish, and enormous grilled prawns served at what you consider quite reasonable prices.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Qatar",
     type: "country",
     neighbors: ["Indian Ocean", "Saudi Arabia"],
+    description:
+      "Qatar is an Arab country which is located on the west coast of the Arabian Peninsula, bordering Saudi Arabia. It was established after an agreement in which the British agreed to relinquish their Persian Gulf territories claimed by them in the 19th century in exchange for military and economic considerations. Qatar is mostly flat, and very hot.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Republic of the Congo",
@@ -2882,6 +2942,13 @@ export let globe = [
       "Mali",
       "Mauritania",
     ],
+    description:
+      "Senegal is a country located in West Africa along the Cape Verde Peninsula. Senegal is bordered by Mauritania to the north, Mali to the east, Guinea to the southeast, and Guinea-Bissau to the southwest. The country is on the west coast of Africa and includes Gambia and Cape Verde.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Serbia",
@@ -2896,41 +2963,97 @@ export let globe = [
       "North Macedonia",
       "Romania",
     ],
+    description:
+      "Serbia is landlocked in the central Balkans, and comprises portions of Southeastern Europe. It borders Hungary to the north, Romania and Bulgaria to the south, Macedonia and Montenegro to the southwest, and Croatia on its southeastern frontier. The country's capital, Belgrade, lies at the confluence of the Južna Morava and Sava rivers, where the Pannonian Plain meets the Balkans. The city has an area of 130 square kilometers, with architecture styles combining central European and Mediterranean elements.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Seychelles",
     type: "country",
     neighbors: ["Indian Ocean"],
+    description:
+      'The Seychelles is made up of 115 granite islands which vary in size, and are rarely more than 2 kilometers apart. The northern islands are low-lying and sandy, while the majority of the southern islands rise sharply from the sea. You are drawn to this island group for its spectacular beaches,  bathed with dazzling white sand bordering vivid blue, warm, and crystal-clear water.</p><p>There are over 800 varieties of birds in the Seychelles: after weeks of counting, you spot 700 of them. "Where are the other 100 birds?" you ask a Seychelloise. She walks away quickly.</p>',
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Sierra Leone",
     type: "country",
     neighbors: ["Atlantic Ocean", "Guinea", "Liberia"],
+    description:
+      "Sierra Leone is an English-speaking country in West Africa. By 1897, the confederacy had become a protectorate of the United Kingdom. In 1961, Sierra Leone gained independence and formed a new constitutional type of Government. The Republic of Sierra Leone Armed Forces were formed in 1964 when the mandate from the British military forces was lifted.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Singapore",
     type: "country",
     neighbors: ["Indian Ocean", "Pacific Ocean"],
+    description:
+      "Sometimes referred to as the Lion City or the Little Red Dot, Singapore is a sovereign city-state located on the southern side of the Malay Peninsula, south of the Malaysian state of Johor and north of the Indonesian Riau Islands. The history of Singapore dates back over a thousand years. Once a sleepy fishing village, Singapore rapidly became one of the busiest ports of Southeast Asia upon the completion of a 19 kilometres sea-wall (digging of which began in 1612).",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Slovakia",
     type: "country",
     neighbors: ["Austria", "Czech Republic", "Hungary", "Poland", "Ukraine"],
+    description:
+      "Slovakia is a mountainous landlocked country in the Carpathian basin, bordered by the Czech Republic and Poland to the north, Ukraine to the east, Hungary to the south, and Austria to the west. The Slovak climate is temperate and monsoonal. Fog is a common phenomenon in the coldest and warmest months of the year. Hail occurs often, and simply can't be helped.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Slovenia",
     type: "country",
     neighbors: ["Atlantic Ocean", "Austria", "Croatia", "Italy", "Hungary"],
+    description:
+      "Slovenia is a country in central Europe bordering the Adriatic Sea and Istria. It has a population of approximately two million. It is a parliamentary democracy whose capital (and major city) is Ljubljana.</p><p>Slovenia was inhabited as early as the Stone Age. Two sticks painted red and white were discovered in the village of Cerkno at an elevation where mammoths lived during the last Ice Age. As the sticks were made of materials not found in present-day Slovenia, it is believed that they were left there by travellers just passin' through approximately 24,000 years ago.</p>",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Solomon Islands",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "The Solomon Islands are considered part of Oceania. The territory of the Solomon Islands includes many small archipelagos and over six thousand individual islands. It has a total land area of approximately 28,400 square kilometers. The country's population of six hundred thousand is mainly Melanesian, with some Polynesian minority. The official language is English, which is the right choice.</p><p>The Solomon Islands boast some of the world's healthiest coral reefs, and sea life ranging from the dugong (sea cow) to fearsome sharks that love eating my swimtrunks. It is also a rare place where people still live right alongside active volcanoes, and impressive hiking opportunities for brave hikers abound in the mountains. On these hikes, you can reach up and pick fresh bananas right off the trees.</p>",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Somalia",
     type: "country",
     neighbors: ["Djibouti", "Ethiopia", "Indian Ocean", "Kenya"],
+    description:
+      "Somalia is a country located in the Horn of Africa. At around 800,000 square kilometers, most of the country lies on the Horn of Africa, bordering the Gulf of Aden in the north, the Indian Ocean in the east, and Ethiopia and Djibouti in the southeast. On the north-west lies Somaliland, a self-declared state that Somalia disputes. Somalia has an equatorial climate.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "South Africa",
@@ -2945,16 +3068,37 @@ export let globe = [
       "Namibia",
       "Zimbabwe",
     ],
+    description:
+      "South Africa is a country located at the southern tip of Africa. It is divided into nine provinces and two territories, and has three different capitals. You visit them one by one: Cape Town, Pretoria, and Bloemfontein. Established in 1961 and based in Johannesburg, South Africa is bountiful in natural rsources, rich in culture, and possesses a unique democratic society. With over 50 official languages, and an amalgamation of cultures, South Africa allows for numerous opportunities for the curious traveler.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "South Korea",
     type: "country",
     neighbors: ["North Korea", "Pacific Ocean"],
+    description:
+      "South Korea sits at the tip of the Korean peninsula, staring across the border at its evil twin. It is an incredible country that has rapidly modernized, leaving its past behind to become one of the wealthiest and most prosperous countries in the world. Renowned for the popularity of its culture, music, cuisine, and television dramas, it is a spopular destination for tourists around the world.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "South Ossetia",
     type: "country",
     neighbors: ["Russia", "Georgia"],
+    description:
+      "South Ossetia is a historical region in the Caucasus, at the border between Georgia proper and the Russian republic of Adygea. It contains the autonomous district of Tskhinvali, historically known as a Sapa settlement. According to south Ossetians, South Ossetia is a Democratic Republic in its own right, although it is recognized as an integral part of Georgia by the United Nations and most world governments. However, since 1997, the Georgian government has had an effective administration over most of South Ossetian territory, controling its main transportation links.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "South Sudan",
@@ -2967,6 +3111,13 @@ export let globe = [
       "Sudan",
       "Uganda",
     ],
+    description:
+      "South Sudan is the youngest of the 52 states of independent Africa. Having gained its independence from Sudan in 2011, it is the youngest country in the world. South Sudan mostly has swampland and some semi-arid plains. There is very little arable land or water sources with population growth far outstripping its resources. Climatically, it is tropical all year round with frequent rains and high temperatures in the lowlands and swampy northeast; sparing the capital, Juba, in the north. South sudan is struggling to develop a viable economy and has little in the way of resources to support its people.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Spain",
@@ -2979,11 +3130,26 @@ export let globe = [
       "Gibraltar",
       "Morocco",
     ],
+    description:
+      "The Kingdom of Spain is a country in Europe, with a long, rich history. It is a peninsular country, situated near south-west Europe of the Atlantic Ocean. After the Spanish Civil War of the 1930s, Spain was ruled by organisations akin to the military until democracy was ushered in during the 70s. Modern Spain is an economic hub of the Europe and a popular destination for many tourists looking for the food and drinks. Since the 1990s, the economy has undergone remarkable changes with a large tourism niche market allowing the country to continue to prosper.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Sri Lanka",
+    image: "sri-lanka.png",
     type: "country",
     neighbors: ["India", "Indian Ocean"],
+    description:
+      "Sri Lanka is an island, separated from the mainland of India by the Palk Strait. Sri Lanka contains tropical forests, beautiful lakes, wildlife parks, and lots of desserts and mountains. This beautiful island is home to pristine and usually uncrowded beaches, longtitudinal diversity, welcoming locals and flavorful food.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Sudan",
@@ -2998,31 +3164,89 @@ export let globe = [
       "Libya",
       "South Sudan",
     ],
+    description:
+      "The Sudan, officially the Republic of the Sudan, is the eastern part of the continent of Africa and is in the southernmost part of that continent, between Egypt to the north, the Red Sea, and Eritrea and the Red Sea in the west; below Ethiopia and Uganda to the south; and above Zambia and Zaire in the east. The Sudan was initially a province of Egypt.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Suriname",
     type: "country",
     neighbors: ["Atlantic Ocean", "Brazil", "French Guiana", "Guyana"],
+    description:
+      "Suriname is a tropical country bordered by French Guiana, Guyana, and Brazil. Flanked by rivers to the east and west, and the Atlantic Ocean to the north, it's got a humid, tropical climate with little temperature fluctuation.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Svalbard",
     type: "special",
     neighbors: ["Atlantic Ocean", "Brazil", "French Guiana", "Guyana"],
+    description:
+      "Halfway between Norway and the North Pole lies Svalbard, also known as Spitsbergen. This remote island was formerly used for whaling, but is now used for coal mining, and is part of the Kingdom of Norway. No roads connect the distant settlements in this place, but you are lucky enough to have brought a pair of snow shoes, which you use to travel across the roughly 23,000 square mile island, 60% of which is covered in beautiful glaciers.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Sweden",
     type: "country",
-    neighbors: ["Atlantic Ocean", "Finland", "Norway"],
+    neighbors: ["Atlantic Ocean", "Finland", "Norway", "Denmark"],
+    description:
+      'Sweden is a Scandinavian country in the far north of Europe, bordering Norway and Finland, and via an 8km long tunnel to Denmark . Sweden has existed continuously for almost a thousand years. People here eat a lot of fish and potatoes, but also make excellent confections.</p><p>Everywhere you look, you see the same drawing of a monster with beady eyes and a gaping maw that looks ready to swallow you. You assume this is a warning that Sweden is full of monsters.</p><p>With terror mounting, you ask a nearby Swede what you should do in the case of monster attack, and after a few minutes of confusion, she explains to you that that drawing is actually the letter Ö, which is just part of the alphabet.</p><p>"So, no monsters?" you ask timidly.</p><p>She chuckles and shakes her head: no monsters.</p>',
+    objects: [
+      {
+        name: "TROLL",
+        article: "A",
+        description:
+          "Huge, and hairy, with beady eyes and a gaping maw that looks ready to swallow you.",
+      },
+      {
+        name: "HRUNTING",
+        article: "",
+        description:
+          "While walking around, you spot a burial mound and decide to investigate. Inside, you see a lot of treasure, including a sword that looks like it has seen many battles. It throbs with unearthly power.",
+      },
+      {
+        name: "IKEA",
+        article: "",
+        description:
+          "You wander around inside a large blue building containing a labyrinth filled with furniture and home goods, all covered in a runic script. Exhausted, you stop for lunch, and eat some meatballs and jelly rats, washing it all down with lingonberry juice. The jelly rats throb with unearthly power.",
+      },
+    ],
   },
   {
     area: "Switzerland",
     type: "country",
     neighbors: ["Austria", "France", "Germany", "Italy", "Liechtenstein"],
+    description:
+      "Switzerland is a mountainous, landlocked, chocolate-filled country lying at the confluence of Western, Central and Southern Europe. Tourists flock here from all over the world for the excellent skiing, shopping, and corrupt banking. As you stand on the tip of a glacier, you feel the warm breezee of a föhn blowing across your face.",
+    objects: [
+      { name: "GUN", article: "A", description: "" },
+      { name: "CUCKOO CLOCK", article: "A", description: "" },
+      {
+        name: "MATTERHORN",
+        article: "The",
+        description:
+          "A huge mountain in Switzerland, first summitted in 1865. Inspired by the tragic story of Edward Whymper, you start to climb the picturesque east face yourself, but realize about halfway up that you are still wearing slippers from the chalet where you're staying. By the time you get to the top, your poor slippers are nearly ruined, and your feet are so cold you have to climb back down right away, pausing only for a moment to enjoy the amazing view from the top.",
+      },
+      { name: "SWISS BANK ACCOUNT", article: "A", description: "" },
+    ],
   },
   {
     area: "Syria",
     type: "country",
     neighbors: ["Atlantic Ocean", "Iraq", "Israel", "Jordan", "Lebanon", "Turkey"],
+    description:
+      "Syria is an area in the Middle East bordering on the Mediterranean Sea. Syria is located near the nations of Greece, Iraq, Turkey, and Lebanon. For a long time, it was known as Ottoman Syria, but before that it was home to the Phoenicians, Assyrians, Akkadians, Sumerians, and probably some even older civilizations with magic or like, advanced technology we've forgotten how to make.",
   },
   {
     area: "Taiwan",
