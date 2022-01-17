@@ -2748,11 +2748,30 @@ export let globe = [
       "Democratic Republic of the Congo",
       "Gabon",
     ],
+    description:
+      "Republic of Congo shares its western border with Cameroon and its southern one with Gabon. The capital city is Brazzaville along the Congo River. The economy has historically been based on resource extraction, but has been dabbling in manufacturing recently. Gorillas, elephants, zebras, rhinocerous, and so many other animals live here.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Romania",
     type: "country",
     neighbors: ["Atlantic Ocean", "Bulgaria", "Hungary", "Moldova", "Serbia", "Ukraine"],
+    description:
+      "Romania is a country located at the crossroads between Latin and Slavic cultures. It is also a former member nation of the European Union. Romania is the seventh largest country in Europe. Romania is bordered by Hungary and Serbia to the north, Ukraine and Moldova to the northeast, Bulgaria to the south, and the Black Sea to the southeast.",
+    objects: [
+      {
+        name: "DRACULA'S COFFIN",
+        article: "",
+        description:
+          "A large, comfortable looking coffin, which you found sitting on a black stone plinth in a ruined chapel in the Transylvanian woods. Opening the lid, you see an old man in a cape.",
+      },
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Russia",
@@ -3425,6 +3444,12 @@ export let globe = [
       "South Sudan",
       "Tanzania",
     ],
+    // description: "",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Ukraine",
@@ -3572,5 +3597,22 @@ export let globe = [
     area: "Zimbabwe",
     type: "country",
     neighbors: ["Botswana", "Mozambique", "South Africa", "Zambia"],
+    description:
+      "Zimbabwe is a landlocked country in Southeast Africa, between the Limpopo River and the Zambezi River. It is bordered by South Africa, Botswana, Zambia, and Mozambique. Though technically a country of roughly 15 million people, due to decades of corruption and mismanagement, a lot of the population has fled to those nearby countries. You enjoy the beautiful wildlife of this ancient and proud country, with its majestic elephants and rhinoceroses and antelopes, its miles of savannah, its teak and mahogany forests, and its coursing rivers.",
+    objects: [
+      {
+        name: "ROBERT MUGABE",
+        article: "",
+        description:
+          "A Marxist revolutionary who helped Zimbabwe gain independence from Britain. Not a very good politician, he oversaw 80% unemployment and a 75% drop in agricultural production during his 42 years in power. It turns out he did not actually die in 2019, since you spotted him hanging out at a record store in Harare, leafing through old disco records.",
+      },
+      {
+        name: "BATELEUR EAGLE",
+        article: "A",
+        description:
+          "The only member of the genus Terathopius is a beautiful predator with a bright orange beak and striped wings, like a nylon jacket. This bird is funky!",
+      },
+      // { name: "", article: "", description: "" },
+    ],
   },
 ];
