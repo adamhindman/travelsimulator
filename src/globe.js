@@ -2933,6 +2933,16 @@ export let globe = [
       "United Arab Emirates",
       "Yemen",
     ],
+    objects: [
+      {
+        name: "EMPTY QUARTER",
+        article: "The",
+        description:
+          "Miles and miles of sand dunes, desert plains, and dry lake beds. Other than the occasional oasis, there aren't many plants to see here, which is too bad because there's plenty of space for them.",
+      },
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Scotland",
@@ -3557,11 +3567,30 @@ export let globe = [
     area: "Western Sahara",
     type: "country",
     neighbors: ["Algeria", "Mauritania", "Morocco"],
+    description:
+      "Western Sahara is an industralized, developing nation in the Maghreb peninsula with a population of slightly more than 500,000. The people of Western Sahara want a referendum as soon as possible to determine the region's future. Western Sahari is bordered by Morocco, Mauritania, and Algeria.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Yemen",
     type: "country",
     neighbors: ["Indian Ocean", "Oman", "Saudi Arabia"],
+    description:
+      "Yemen is perhaps the oldest inhabited region in the world, since pottery sherds dating from 125,000 B.C have been found in the foothills southwest of Sana'a in the southern region of Yemen.",
+    objects: [
+      {
+        name: "MOCHA",
+        article: "",
+        description:
+          "A port city in Yemen, famous for shipping coffee beans around the world.",
+      },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Zambia",
