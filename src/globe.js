@@ -3281,11 +3281,25 @@ export let globe = [
     area: "Taiwan",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "Taiwan is a country in East Asia, not far from other, different countries like China, Japan, and the Philippines. The main island of Taiwan, formerly known as Formosa, has an area of 13,000 square miles, mostly a mixture of mountains and plains, with its highly urbanised population concentrated in the western plains region. The capital is Taipei. With 23 million inhabitants, Taiwan is among the most densely populated sovereign, independent countries in the world that aren't part of China.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Tajikistan",
     type: "country",
     neighbors: ["Afghanistan", "China", "Kyrgyzstan", "Uzbekistan"],
+    description:
+      "Tajikistan is a former Soviet republic in central Asia. With a population slightly over 7 million inhabitants, its tetonic mountains are home to people that boast to be a combination of Turkish, Tajik, Uzbek and Russian. Tourism professionals advertise wild subterranean mosques and walnut forests for exotic escapes, and they do not disappoint.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Tanzania",
@@ -3323,6 +3337,13 @@ export let globe = [
     area: "Tasmania",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "Tasmania is an island off Australia, located about 150 miles to the south of the mainland, beyond the Bass Strait. Tasmania is the 26th largest island in the world. The state capital and largest city is Hobart, with around 40 percent of the country's 500,000 residents. Tasmania includes not only the main island of Tasmania, but the 1000 smaller islands which surround it.</p><p>Centuries of natural isolation, more than anything else, have kept the island's native heritage virtually intact. Tasmania has everything from rainforests to plains, to large forests of beech and pine.</p>",
+    objects: [
+      { name: "TASMANIAN TIGER", article: "A", description: "WIP" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Thailand",
@@ -3335,6 +3356,13 @@ export let globe = [
       "Myanmar",
       "Pacific Ocean",
     ],
+    description:
+      "Thailand is the northwesternmost country on the Indochina Peninsula in Southeast Asia. It is bordered by Myanmar and Laos in the morth, Cambodia in the east, Malaysia in the south. Its well developed infrastructure supports the tourism industry and makes it a popular locale for international meetings.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Tibet",
@@ -3367,21 +3395,49 @@ export let globe = [
     area: "Togo",
     type: "country",
     neighbors: ["Benin", "Burkina Faso", "Ghana"],
+    description:
+      "Togo is in West Africa. With a population of approximately 8 million, it is one of the smallest countries in Africa, as well as one of the narrowest countries in the world with a width of less than 71 miles. Small and narrow, that's Togo for you.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Tonga",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "Tonga is a tiny Polynesian country and archipelago consisting of 169 islands, of which 36 are inhabited. It's a tropical rainforest climate: humid, and hot. Every year it is beset by tropical cyclones that make kite-flying nearly untenable for months at a time.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Trinidad and Tobago",
     type: "country",
     neighbors: ["Atlantic Ocean"],
+    description:
+      "Trinidad and Tobago is the southernmost island country in the Caribbean. It is known for its fossil-fuel wealth Trinidad and Tobago is generally considered to be part of the West Indies, though according ccording to some geographic definitions, Trinidad and Tobago are also part of the Windward Islands and Lesser Antilles. These kinds of things are what cartographers debate, and it gets pretty heated. ",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Tunisia",
     type: "country",
     neighbors: ["Algeria", "Libya"],
+    description:
+      "You may find it interesting to know that Tunisia, part of the Maghreb region, is the northernmost country in Africa. It is bordered by Algeria to the west, Libya to the southeast, and the Mediterranean Sea to the north. It contains the eastern end of the Atlas Mountains and the northern reaches of the Sahara desert, with much of its remaining territory arable land. Tunisia is home to Africa's northernmost point, Cape Angela. Its capital and largest city is Tunis, located on its northeastern coast, which lends the country its name.",
+    objects: [
+      { name: "MEDINA OF TUNIS", article: "The", description: "WIP" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Turkey",
@@ -3413,6 +3469,13 @@ export let globe = [
     area: "Turkmenistan",
     type: "country",
     neighbors: ["Afghanistan", "Iran", "Kazakhstan", "Uzbekistan"],
+    description:
+      "Turkmenistan is a largely flat country with extensive grassy steppe and desert. It formerly extended southwards across the Kopet Dag mountains into Iran, but it don't no more. Turkmenistan sits on the Caspian Sea, and is covered by the Karakum desert. The city of Atrak was a major intermediate station on the ancient Silk Road.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Tuva",
@@ -3454,7 +3517,8 @@ export let globe = [
       "South Sudan",
       "Tanzania",
     ],
-    // description: "",
+    description:
+      "Uganda is a landlocked country in East Africa. It shares borders with Kenya, South Sudan, the Democratic Republic of the Congo, Rwanda, and Tanzania. It includes a substantial portion of Lake Victoria, shared with Kenya and Tanzania. Uganda is in the African Great Lakes region. Uganda has a varied but generally an equatorial climate. It has a population of over 42 million, of which 8.5 million live in the capital and largest city of Kampala.",
     // objects: [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
@@ -3473,11 +3537,25 @@ export let globe = [
       "Russia",
       "Slovakia",
     ],
+    description:
+      "Ukraine is the second-largest country by area in Europe after Russia, which it borders. Ukraine also shares borders with Belarus, Poland, Slovakia, and Hungary, Romania, and Moldova. To top it off, it has a coastline along the Sea of Azov and the Black Sea. It spans an area of 230,000 square miles with a population of 41 million, making it the eighth-most populous country in Europe. The nation's capital and largest city is Kyiv. There are a strong steel and farming sectors. The beaches, forests, deserts, valleys and mud lakes all offer a variety of tourist destinations.",
+    // objects:[
+    // {name:"", article:" ", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "United Arab Emirates",
     type: "country",
     neighbors: ["Indian Ocean", "Oman", "Saudi Arabia"],
+    description:
+      "The United Arab Emirates is a federation of seven emirates: The Emirate of Abu Dhabi, The Emirate of Dubai, The Emirate of Sharjah, The Emirate of Ajman, The Emirate of Umm al Qawain, and The Emirate of Ras-al-Khaimah. Access to the eighth and ninth emirates is only available to ultra-high-net-worth individuals.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "United States",
@@ -3514,31 +3592,73 @@ export let globe = [
     area: "Uruguay",
     type: "country",
     neighbors: ["Argentina", "Atlantic Ocean", "Brazil"],
+    description:
+      "So close to Argentina and Brazil geographically, the ambitions of this unique of immigrants in Uruguay have led them to not only field a strong football team, but create a unique, tasty wine and produce a range of world famous writers, artists, filmmakers and political leaders. This scrappy underdog is bolstered in its efforts by a well-developed agricultural sector that effectively encourages cereal production for export.",
+    objects: [
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Uzbekistan",
     type: "country",
     neighbors: ["Afghanistan", "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan"],
+    description:
+      "Uzbekistan is located at the center of a series of former empires. Due to its strategic position on an important trade route, Uzbekistan received significant attention from early Muslim and European travellers who left behind written descriptions of spectacular mountains, awesome canyons and fantastically cultivated oases.",
+    objects: [
+      { name: "SAMARKAND", article: "", description: "WIP" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Vanuatu",
     type: "country",
     neighbors: ["Pacific Ocean"],
+    description:
+      "Vanuatu is an island in the South Pacific surrounded by Australia, the Solomon Islands, Fiji, and many other small islands. It has an active volcano, also the tallest mountain in the country. Other places of interest include a forest and some caves.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Vatican City",
     type: "country",
     neighbors: ["Italy"],
+    description:
+      "While wandering around Rome, you spot a .6 mile square area with particularly stunning architecture. A man wearing a brightly colored Renaissance costume stands outside the gate, and after a brief conversation you learn that this Vatican City. After some more explanation, you learn that this is where the Pope lives. After even more questioning, you learn that the Pope is the head of the Catholic Church.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Venezuela",
     type: "country",
     neighbors: ["Atlantic Ocean", "Brazil", "Colombia", "Guyana"],
+    description:
+      "Located in the northern coast of South America, it boasts warm, breathtaking beaches and a bustling metropolitan area in Caracas that is hot, unpredictable, and dangerous.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Vietnam",
     type: "country",
     neighbors: ["Cambodia", "China", "Laos", "Pacific Ocean"],
+    description:
+      "Vietnam is in Southeast Asia. It is in the center-east of the Indochinese Peninsula, covering an area of 331,525 square miles. Vietnam is divided into 54 provinces and 3 municipalities, and Hanoi is its capital.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Wallis Island",
@@ -3562,6 +3682,13 @@ export let globe = [
     area: "Wales",
     type: "country",
     neighbors: ["Atlantic Ocean", "England"],
+    description:
+      "A country of stunning natural beauty, where sweeping seas, high mountains, brooding forests, and swaths of farmland abound. Cities as diverse as Swansea and Cardiff retain historic architecture from the Middle Ages, while renovated towns such as Conwy and Llansteffan recall the nineteenth century.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Western Sahara",
