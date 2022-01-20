@@ -2204,11 +2204,21 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean"],
     description:
-      "Malta is a southern European country, and is unofficially known as the 'smallest global village'. It's made up of an archipelago of seven islands, situated in the Mediterranean sea, south of the island of Sicily. The country gained it's independence from the United Kingdom on September 21, 1964. Malta gained it's title of \"European Capital of Culture\" in 2018, and it's one of the most densely populated countries in the world. What an honor to visit!",
+      "Malta is a southern European country. It's made up of an archipelago of seven islands, situated in the Mediterranean sea, south of the island of Sicily. Malta has been inhabited more or less continually for 7000 years, and due to its strategic location in the middle of the Mediterranean, it's been fought over for almost as long.",
     objects: [
-      { name: "TREASURE OF THE KNIGHTS OF MALTA", article: "The", description: "WIP" },
-      // {name:"", article:"", description:""},
-      // {name:"", article:"", description:""}
+      {
+        name: "TREASURE OF THE KNIGHTS OF MALTA",
+        article: "The",
+        description:
+          "Thousands of pounds of gold, jewels, priceless art, and illuminated manuscripts, which you discovered in a secret basement of Fort Saint Angelo.",
+      },
+      {
+        name: "THE BEHEADING OF ST. JOHN THE BAPTIST",
+        article: "",
+        description:
+          "A massive oil painting by Caravaggio, commissioned by the Knights of Malta.",
+      },
+      { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3470,12 +3480,16 @@ export let globe = [
     type: "country",
     neighbors: ["Afghanistan", "Iran", "Kazakhstan", "Uzbekistan"],
     description:
-      "Turkmenistan is a largely flat country with extensive grassy steppe and desert. It formerly extended southwards across the Kopet Dag mountains into Iran, but it don't no more. Turkmenistan sits on the Caspian Sea, and is covered by the Karakum desert. The city of Atrak was a major intermediate station on the ancient Silk Road.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+      "Turkmenistan is a largely flat country with extensive grassy steppe and desert. It formerly extended southwards across the Kopet Dag mountains into Iran, but it don't no more. The main export of Turkmenistan is petroleum products, especially natural gas. Turkmenistan sits on the Caspian Sea, and is covered by the Karakum desert. The city of Mary was a major station on the ancient Silk Road.",
+    objects: [
+      {
+        name: "GATES OF HELL",
+        article: "The",
+        description:
+          "Also known as the Darvaza Gas Crater, this is a 230-foot diameter opening in the earth, from which pours an unending sheet of smoke, flames, and pyroclastic mud. No one knows how the fire started, but it has been burning continuously for about fifty years, and was probably set by Russian geologists. The question is: why?",
+      },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Tuva",
