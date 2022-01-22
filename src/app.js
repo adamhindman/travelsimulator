@@ -190,21 +190,21 @@ const handleTab = e => {
   switch (verb) {
     case "go":
       dest = getMatchedCountry(noun, neighbors);
-      e.target.value = `go ${dest}`;
+      e.target.value = `go ${dest.toLowerCase()}`;
       break;
     case "tel":
       dest = getMatchedCountry(noun, allAreas);
-      e.target.value = `tel ${dest}`;
+      e.target.value = `tel ${dest.toLowerCase()}`;
       break;
     case "look":
       const objects = getAttributeOfArea("objects").map(obj => obj.name));
-      obj = getMatchedObject(noun, objects).toLowerCase();
+      let obj = getMatchedObject(noun, objects).toLowerCase();
       e.target.value = `look ${obj}`;
       break;
     default:
       break;
   }
-};
+}
 
 const getMatchedCountry = (noun, areas) => {
   const matches = areas.filter(area => {
