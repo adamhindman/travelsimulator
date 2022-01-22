@@ -384,10 +384,30 @@ export let globe = [
       'As you walk across the country, you encounter a friendly local. After exchanging pleasantries, you ask them to tell you about the country.</p><p>They smile, and, after thinking for a moment, say: "The people here love soccer and barbecue. The culture is a mix of European and indigenous cultures. The language itself has many dialects, the most famous language of which is Rioplatense, which I am speaking now.</p><p>"Thank you, that was very helpful" you say, quickly picking up on the dialect. After exchanging phone numbers, you wave goodbye to your new friend, and continue walking across the pampas.',
     neighbors: ["Bolivia", "Brazil", "Chile", "Library of Babel", "Paraguay", "Uruguay"],
     objects: [
-      { name: "TIERRA DEL FUEGO", article: "", description: "WIP" },
-      { name: "OMBÚ", article: "An", description: "WIP" },
-      { name: "SILVER", article: "A big bar of", description: "WIP" },
-      { name: "VILLA OCAMPO", article: "The", description: "WIP" },
+      {
+        name: "TIERRA DEL FUEGO",
+        article: "",
+        description:
+          'A land of rocks and sea lions, sheep farming and ecotourism. It was named the "land of fire" after European explorers noticed how popular the use of fire was among indigenous populations here. The use of fire for cooking and arson spread to Europe through the Columbian Exchange, and remains a large part of global culture today — but it all started right here.',
+      },
+      {
+        name: "OMBÚ",
+        article: "An",
+        description:
+          "A tree. Coming upon one growing in the pampas, you can't resist climbing it. At the top of its gracefully swaying branches, you can see even more grass in the distance. Since the sap of this tree is poisonous, you do your best to resist eating very much of it.",
+      },
+      {
+        name: "SIERRA DE LA PLATA",
+        article: "The",
+        description:
+          'Wandering around in the interior of Argentina, you spot a solid, mountain-shaped mass of pure silver just sitting there. This must be the fabled Sierra de la Plata, that both the country of Argentina, and the beautiful Río de la Plata were named after!</p><p>Many people lost their lives trying to find this "mountain", but you wonder why: a lot of the silver would need a good polishing to really gleam. Plus, at only about 250 meters tall, it\'s really more of a hill than a mountain. There are bigger mountains in the area, and you climb some of them instead.</p>',
+      },
+      {
+        name: "VILLA OCAMPO",
+        article: "The",
+        description:
+          "A mansion house in San Isidro, surrounded by 3 acres of gardens. Wow, 3 acres of gardens!",
+      },
     ],
   },
   {
