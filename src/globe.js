@@ -3510,6 +3510,7 @@ export let globe = [
   },
   {
     area: "Turkey",
+    image: "turkey.png",
     type: "country",
     description:
       "Turkey is an ancient country with in strategically important location: it commands a shipping bottleneck, and spans two continents.",
@@ -3518,7 +3519,7 @@ export let globe = [
         name: "GÖBEKLI TEPE",
         article: "",
         description:
-          "A neolithic template that predates the invention of ceramics. Göbekli Tepe contains many objects of religious or totemic significance, which throb with unearthly power.",
+          "A neolithic temple that predates the invention of ceramics. Göbekli Tepe contains many objects of religious or totemic significance, which throb with unearthly power.",
       },
       { name: "ALINAZIK", article: "", description: "A delicious kebab dish." },
     ],
