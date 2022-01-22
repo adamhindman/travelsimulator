@@ -3667,11 +3667,11 @@ export let globe = [
     neighbors: ["Argentina", "Atlantic Ocean", "Brazil"],
     description:
       "So close to Argentina and Brazil geographically, the ambitions of this unique of immigrants in Uruguay have led them to not only field a strong football team, but create a unique, tasty wine and produce a range of world famous writers, artists, filmmakers and political leaders. This scrappy underdog is bolstered in its efforts by a well-developed agricultural sector that effectively encourages cereal production for export.",
-    objects: [
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
-    ],
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Uzbekistan",

@@ -189,16 +189,16 @@ const handleTab = e => {
   const neighbors = getAttributeOfArea("neighbors");
   switch (verb) {
     case "go":
-      dest = getMatchedCountry(noun, neighbors);
+      dest = getFirstMatchedOption(noun, neighbors);
       e.target.value = `go ${dest.toLowerCase()}`;
       break;
     case "tel":
-      dest = getMatchedCountry(noun, allAreas);
+      dest = getFirstMatchedOption(noun, allAreas);
       e.target.value = `tel ${dest.toLowerCase()}`;
       break;
     case "look":
       const objects = getAttributeOfArea("objects").map(obj => obj.name));
-      let obj = getMatchedObject(noun, objects).toLowerCase();
+      let obj = getFirstMatchedOption(noun, objects).toLowerCase();
       e.target.value = `look ${obj}`;
       break;
     default:
@@ -206,20 +206,20 @@ const handleTab = e => {
   }
 }
 
-const getMatchedCountry = (noun, areas) => {
-  const matches = areas.filter(area => {
-    return area.toLowerCase().indexOf(noun) !== -1;
-  });
-  return matches[0];
-};
-
-const getMatchedObject = (noun, objects) => {
-  const matches = objects.filter(obj => {
-    return obj.toLowerCase().indexOf(noun) !== -1;
-  });
-  const match = matches[0] !== undefined ? matches[0] : 'around'
-  return match;
-};
+const getFirstMatchedOption = (noun, options) => {
+  let firstMatch
+  let placeholder = ''
+  if (noun.toLowerCase() === 'look'){
+    placeholder = "around"
+  }
+  const matches = options.filter(option => option.toLowerCase().indexOf(noun) !== -1);
+  if (isArray(matches)) {
+    firstMatch = matches.reduce((result, cur) => {
+      return cur.toLowerCase().indexOf(noun) < result.toLowerCase().indexOf(noun) ? cur : result
+    });
+  }
+  return firstMatch || placeholder
+}
 
 const focusOnPrompt = () => {
   document.getElementById("prompt").focus();
