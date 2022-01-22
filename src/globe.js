@@ -1153,11 +1153,15 @@ export let globe = [
     neighbors: ["Eritrea", "Ethiopia", "Indian Ocean", "Somaliland"],
     description:
       "Djibouti is a country on the eastern coast of northern Africa. It is officially known as the Republic of Djibouti. Djibouti is a country with mostly desert terrain. The capital, Djibouti City (formerly the French colonial capital, Djibouti Ville), has a population of 450,000.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      {
+        name: "SIGN",
+        article: "A",
+        description: 'It says "Please no puns about our country\'s name."',
+      },
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Dominica",
@@ -1584,6 +1588,26 @@ export let globe = [
     // {name:"", article:"", description:""},
     // {name:"", article:"", description:""}
     // ],
+  },
+  {
+    area: "Guam",
+    type: "special",
+    neighbors: ["Pacific Ocean"],
+    description:
+      "Guam is an island in the Pacific with about 170 thousand people on it. The main exports are electric batteries and gas turbines.",
+    objects: [
+      {
+        name: "BROWN TREE SNAKE",
+        article: "A",
+        description:
+          "You see a snake in a tree eating a bird. Turns out, this is an invasive species that has devastated the local bird population! You strangle the snake with your bare hands.",
+      },
+      {
+        name: "STEVEN",
+        article: "A man named",
+        description: "He is currying some functions.",
+      },
+    ],
   },
   {
     area: "Guatemala",
@@ -2218,7 +2242,7 @@ export let globe = [
         description:
           "A massive oil painting by Caravaggio, commissioned by the Knights of Malta.",
       },
-      { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3226,7 +3250,7 @@ export let globe = [
   {
     area: "Svalbard",
     type: "special",
-    neighbors: ["Atlantic Ocean", "Brazil", "French Guiana", "Guyana"],
+    neighbors: ["Atlantic Ocean"],
     description:
       "Halfway between Norway and the North Pole lies Svalbard, also known as Spitsbergen. This remote island was formerly used for whaling, but is now used for coal mining, and is part of the Kingdom of Norway. No roads connect the distant settlements in this place, but you are lucky enough to have brought a pair of snow shoes, which you use to travel across the roughly 23,000 square mile island, 60% of which is covered in beautiful glaciers.",
     // objects: [
@@ -3350,7 +3374,12 @@ export let globe = [
     description:
       "Tasmania is an island off Australia, located about 150 miles to the south of the mainland, beyond the Bass Strait. Tasmania is the 26th largest island in the world. The state capital and largest city is Hobart, with around 40 percent of the country's 500,000 residents. Tasmania includes not only the main island of Tasmania, but the 1000 smaller islands which surround it.</p><p>Centuries of natural isolation, more than anything else, have kept the island's native heritage virtually intact. Tasmania has everything from rainforests to plains, to large forests of beech and pine.</p>",
     objects: [
-      { name: "TASMANIAN TIGER", article: "A", description: "WIP" },
+      {
+        name: "THYLACINE",
+        article: "A",
+        description:
+          "Also known as a Tasmanian Tiger, these striped, wolf-like marsupials were thought extinct. You encountered this one while wandering through the forests of Tasmania.",
+      },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
@@ -3444,8 +3473,18 @@ export let globe = [
     description:
       "You may find it interesting to know that Tunisia, part of the Maghreb region, is the northernmost country in Africa. It is bordered by Algeria to the west, Libya to the southeast, and the Mediterranean Sea to the north. It contains the eastern end of the Atlas Mountains and the northern reaches of the Sahara desert, with much of its remaining territory arable land. Tunisia is home to Africa's northernmost point, Cape Angela. Its capital and largest city is Tunis, located on its northeastern coast, which lends the country its name.",
     objects: [
-      { name: "MEDINA OF TUNIS", article: "The", description: "WIP" },
-      // {name:"", article:"", description:""},
+      {
+        name: "MEDINA OF TUNIS",
+        article: "The",
+        description:
+          "The old city of Tunis is a maze of narrow, twisty streets and ancient buildings, covering 670 acres. It's the kind of place where you could get your pocket picked, or buy an enchanted medallion that throbs with unearthly power, or see an evil monkey get poisoned by a date.",
+      },
+      {
+        name: "MAHDIA SHIPWRECK",
+        article: "The",
+        description:
+          "Swimming off the coast of Tunisia, you are able to explore this ancient shipwreck from the first century, AD. Though archaeologists have taken most of the good stuff, this wreck once contained Greek art pieces on their way to Roman collectors.",
+      },
       // {name:"", article:"", description:""}
     ],
   },
