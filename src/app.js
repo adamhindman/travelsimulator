@@ -4,12 +4,13 @@ import { helpText } from "./helpText.js";
 import { getCookie, setCookie } from "./cookies.js";
 
 console.clear();
+
 // setCookie("lastLocation", "united states");
 
 let curLocation = getCookie("lastLocation") ? getCookie("lastLocation") : "United States";
-
 const submitBtn = document.getElementById("submit");
 const promptField = document.getElementById("prompt");
+const allAreas = globe.map(area => area.area);
 
 export const areaExists = areaName => {
   let exists = globe.filter(c => {
@@ -91,50 +92,19 @@ const handleSubmit = (val, msg = "") => {
   let showLoc = false;
   switch (verb) {
     case "go":
-      if (neighbors.includes(noun)) {
-        curLocation = noun;
-        setCookie("lastLocation", curLocation);
-      } else {
-        msg = `<p>You can't get to ${noun} from here!</p>`;
-      }
+      handleGo(noun, neighbors);
       break;
     case "look":
-      if (words.length === 1) {
-        showLoc = true;
-      } else if (isArray(getAttributeOfArea("objects"))) {
-        const objects = arrayToLowerCase(
-          getAttributeOfArea("objects").map(object => object.name)
-        );
-        const objectDescriptions = getAttributeOfArea("objects").map(
-          object => object.description
-        );
-        const objectIndex = objects.findIndex(item => item == noun);
-        if (objectIndex !== -1) {
-          msg = `<p>${objectDescriptions[objectIndex]}</p>`;
-        } else {
-          msg = `<p>I don't see that here!</p>`;
-        }
-      } else {
-        msg = `<p>I don't see that here!</p>`;
-      }
+      msg = handleLook(noun, words, showLoc);
       break;
     case "tel":
-      if (areaExists(noun)) {
-        curLocation = noun;
-        setCookie("lastLocation", curLocation);
-      } else {
-        msg = `<p>You can't teleport there; it doesn't exist!</p>`;
-      }
+      handleTel(noun);
       break;
     case "help":
       msg = helpText;
       break;
     case "forget":
-      setCookie("lastLocation", curLocation, 0);
-      msg = `You enter a fugue state and wander back home.`;
-      setTimeout(() => {
-        window.location.reload();
-      }, 1000);
+      handleForget();
       break;
     case "":
       break;
@@ -161,11 +131,109 @@ const getDisplay = (val, msg, area, showLoc) => {
   return display;
 };
 
+const handleGo = (noun, neighbors) => {
+  if (neighbors.includes(noun)) {
+    curLocation = noun;
+    setCookie("lastLocation", curLocation);
+  } else {
+    msg = `<p>You can't get to ${noun} from here!</p>`;
+  }
+};
+
+const handleLook = (noun, words, showLoc) => {
+  let msg = ''
+  if (words.length === 1 || noun.toLowerCase() === "around") {
+    showLoc = true;
+  } else if (isArray(getAttributeOfArea("objects"))) {
+    const objects = arrayToLowerCase(
+      getAttributeOfArea("objects").map(object => object.name)
+    );
+    const objectDescriptions = getAttributeOfArea("objects").map(
+      object => object.description
+    );
+    const objectIndex = objects.findIndex(item => item == noun);
+    if (objectIndex !== -1) {
+      msg = `<p>${objectDescriptions[objectIndex]}</p>`;
+    } else {
+      msg = `<p>I don't see that here!</p>`;
+    }
+  } else {
+    msg = `<p>I don't see that here!</p>`;
+  }
+  return msg
+};
+
+const handleTel = noun => {
+  if (areaExists(noun)) {
+    curLocation = noun;
+    setCookie("lastLocation", curLocation);
+  } else {
+    msg = `<p>You can't teleport there; it doesn't exist!</p>`;
+  }
+};
+
+const handleForget = () => {
+  setCookie("lastLocation", curLocation, 0);
+  msg = `You enter a fugue state and wander back home.`;
+  setTimeout(() => {
+    window.location.reload();
+  }, 1000);
+};
+
+const handleTab = e => {
+  let val = e.target.value.toLowerCase().replace(/\s+/g, " ").trim();
+  const words = val.split(" ");
+  const verb = words[0];
+  const noun = words.slice(-(words.length - 1)).join(" ");
+  let dest = curLocation;
+  const neighbors = getAttributeOfArea("neighbors");
+  switch (verb) {
+    case "go":
+      dest = getMatchedCountry(noun, neighbors);
+      e.target.value = `go ${dest}`;
+      break;
+    case "tel":
+      dest = getMatchedCountry(noun, allAreas);
+      e.target.value = `tel ${dest}`;
+      break;
+    case "look":
+      const objects = getAttributeOfArea("objects").map(obj => obj.name));
+      obj = getMatchedObject(noun, objects).toLowerCase();
+      e.target.value = `look ${obj}`;
+      break;
+    default:
+      break;
+  }
+};
+
+const getMatchedCountry = (noun, areas) => {
+  const matches = areas.filter(area => {
+    return area.toLowerCase().indexOf(noun) !== -1;
+  });
+  return matches[0];
+};
+
+const getMatchedObject = (noun, objects) => {
+  const matches = objects.filter(obj => {
+    return obj.toLowerCase().indexOf(noun) !== -1;
+  });
+  const match = matches[0] !== undefined ? matches[0] : 'around'
+  return match;
+};
+
+const focusOnPrompt = () => {
+  document.getElementById("prompt").focus();
+}
+
 promptField.addEventListener("keydown", e => {
   if (e.key === "Enter") {
     handleSubmit(e.target.value);
     promptField.value = "";
     submitBtn.classList.remove("shown");
+  } else if (e.key === "Tab") {
+    e.preventDefault()
+    handleTab(e);
+    focusOnPrompt();    
   }
 });
 
@@ -184,7 +252,9 @@ submitBtn.addEventListener("click", e => {
 });
 
 document.querySelector("html").addEventListener("click", e => {
-  document.getElementById("prompt").focus();
+  focusOnPrompt();
 });
+
+promptField.value = "";
 
 render();

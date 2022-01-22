@@ -14,4 +14,5 @@ export const helpText = `
     <li><strong>TEL [place]</strong>: Teleport to a place.</li>
     <li><strong>FORGET</strong>: Forget your current location, in case the save system gets messed up.
   </ul>
+  <p>After typing a command, you can press [TAB] to autocomplete it!</p>
 `;
