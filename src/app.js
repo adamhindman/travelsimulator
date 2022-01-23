@@ -1,13 +1,10 @@
 import { globe } from "./globe.js";
 import { capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { helpText } from "./helpText.js";
-import { getCookie, setCookie } from "./cookies.js";
 
 console.clear();
 
-// setCookie("lastLocation", "united states");
-
-let curLocation = getCookie("lastLocation") ? getCookie("lastLocation") : "United States";
+let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "United States";
 const submitBtn = document.getElementById("submit");
 const promptField = document.getElementById("prompt");
 const allAreas = globe.map(area => area.area);
@@ -53,33 +50,6 @@ const getObjectsText = () => {
 const getAreaDescription = (area = curLocation) => {
   let desc = getAttributeOfArea("description");
   return desc ? desc : "";
-};
-
-const render = (val = null, msg = null, area = curLocation, showLoc = false) => {
-  setTimeout(() => {
-    document.getElementById("display").innerHTML += getDisplay(val, msg, area, showLoc);
-    document.querySelector("#console").scrollIntoView(true);
-    document.querySelectorAll(".button.destination").forEach(i => {
-      if (i.dataset.eventSet !== true) {
-        i.dataset.eventSet = true;
-        i.addEventListener("click", e => {
-          const dest = e.target.dataset.destination.toLowerCase();
-          document.querySelector("#prompt").value = `go ${dest}`;
-          submitBtn.classList.add("shown");
-        });
-      }
-    });
-    document.querySelectorAll(".button.object").forEach(i => {
-      if (i.dataset.eventSet !== true) {
-        i.dataset.eventSet = true;
-        i.addEventListener("click", e => {
-          const obj = e.target.dataset.object.toLowerCase();
-          document.querySelector("#prompt").value = `look ${obj}`;
-          submitBtn.classList.add("shown");
-        });
-      }
-    });
-  }, 500);
 };
 
 const handleSubmit = (val, msg = "") => {
@@ -133,12 +103,16 @@ const getDisplay = (val, msg, area, showLoc) => {
 
 const handleGo = (noun, neighbors) => {
   if (neighbors.includes(noun)) {
-    curLocation = noun;
-    setCookie("lastLocation", curLocation);
+    updateLocation(noun)
   } else {
     msg = `<p>You can't get to ${noun} from here!</p>`;
   }
 };
+
+const updateLocation = destination => {
+  curLocation = destination;
+  localStorage.setItem("lastLocation", destination);
+}
 
 const handleLook = (noun, words, showLoc) => {
   let msg = ''
@@ -165,15 +139,14 @@ const handleLook = (noun, words, showLoc) => {
 
 const handleTel = noun => {
   if (areaExists(noun)) {
-    curLocation = noun;
-    setCookie("lastLocation", curLocation);
+    updateLocation(noun)
   } else {
     msg = `<p>You can't teleport there; it doesn't exist!</p>`;
   }
 };
 
 const handleForget = () => {
-  setCookie("lastLocation", curLocation, 0);
+  localStorage.removeItem("lastLocation")
   msg = `You enter a fugue state and wander back home.`;
   setTimeout(() => {
     window.location.reload();
@@ -224,6 +197,34 @@ const getFirstMatchedOption = (noun, options) => {
 const focusOnPrompt = () => {
   document.getElementById("prompt").focus();
 }
+
+const render = (val = null, msg = null, area = curLocation, showLoc = false) => {
+  setTimeout(() => {
+    document.getElementById("display").innerHTML += getDisplay(val, msg, area, showLoc);
+    document.querySelector("#console").scrollIntoView(true);
+    document.querySelectorAll(".button.destination").forEach(i => {
+      if (i.dataset.eventSet !== true) {
+        i.dataset.eventSet = true;
+        i.addEventListener("click", e => {
+          const dest = e.target.dataset.destination.toLowerCase();
+          document.querySelector("#prompt").value = `go ${dest}`;
+          submitBtn.classList.add("shown");
+        });
+      }
+    });
+    document.querySelectorAll(".button.object").forEach(i => {
+      if (i.dataset.eventSet !== true) {
+        i.dataset.eventSet = true;
+        i.addEventListener("click", e => {
+          const obj = e.target.dataset.object.toLowerCase();
+          document.querySelector("#prompt").value = `look ${obj}`;
+          submitBtn.classList.add("shown");
+        });
+      }
+    });
+  }, 500);
+};
+
 
 promptField.addEventListener("keydown", e => {
   if (e.key === "Enter") {
