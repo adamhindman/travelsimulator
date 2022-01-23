@@ -45,7 +45,7 @@ const getObjectsText = () => {
       );
     }, "");
   } else {
-    listOfObjects = `Nothing of importance is here.`;
+    listOfObjects = ``;
   }
   return listOfObjects;
 };
