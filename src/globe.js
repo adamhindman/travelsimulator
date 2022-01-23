@@ -1075,10 +1075,28 @@ export let globe = [
     description:
       "Cuba is an island in the Caribbean. The capital and largest city is Havana, which lies on a narrow strip of land between the Atlantic Ocean and the Western Mountains. The tropical climate, pristine beaches, fascinating cities, and colourful history make Cuba a popular destination for tourists.",
     objects: [
-      { name: "OLD CAR", article: "An", description: "WIP WIP" },
-      { name: "CIGAR", article: "A", description: "WIP WIP" },
-      { name: "STATE COMMUNISM", article: "", description: "WIP WIP" },
-      { name: "VIÑALES", article: "", description: "WIP WIP" },
+      {
+        name: "OLD CAR",
+        article: "An",
+        description: "This ancient vehicle could probably be suped up with enough NOS.",
+      },
+      {
+        name: "CIGAR",
+        article: "A",
+        description:
+          "A hand-rolled cigar exactly like the ones Fidel preferred to smoke.",
+      },
+      {
+        name: "STATE COMMUNISM",
+        article: "",
+        description:
+          "As much a failure here as everywhere else. Still hanging on, though.",
+      },
+      {
+        name: "VIÑALES",
+        article: "",
+        description: "A rustic, agricultural area known for growing coffee and tobacco.",
+      },
     ],
   },
   {
@@ -1247,7 +1265,12 @@ export let globe = [
     description:
       'Ecuador, officially the Republic of Ecuador, is a representative democratic republic in northwestern South America, bordered by Colombia on the north, Peru on the east and south, and by the Pacific Ocean to the west. Ecuador features a rich ecology that includes Andean forests, Amazonian rainforest, cloud forests, dry plains, highland valleys and the Galápagos Islands with their rich array of endemic wildlife. The name "Ecuador" means equator in Spanish.',
     objects: [
-      { name: "TERMINUS EST", article: "", description: "WIP" },
+      {
+        name: "TERMINUS EST",
+        article: "",
+        description:
+          "You find this sword in the jungle. It is about four feet long, with a wide crossbar. Almost looks like a cross, weird! You notice that it is easier to raise than to lower.",
+      },
       // { name: "", article: "", description: "" },
       // { name: "", article: "", description: "" },
     ],
@@ -1259,7 +1282,12 @@ export let globe = [
     description:
       "Egypt, officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia, via a land bridge formed by the Sinai Peninsula. The modern Republic of Egypt was established in 1953 as a union between Egypt and The Sudan.",
     objects: [
-      { name: "PYRAMID", article: "A", description: "" },
+      {
+        name: "PYRAMID",
+        article: "A",
+        description:
+          "You sit at the edge of the desert in Giza, staring at the Great Pyramid of Khufu rising almost 500 feet into the sky. You wonder how human beings could construct such an impressive structure using 4000 year old technology. Some people believe that advanced aliens helped the Pharoahs using their tractor beams. Sounds crazy, but is it true?</p><p>At last you determine to settle the question once and for all. You will rebuild the Great Pyramid, stone by stone, using nothing that the ancient Egyptians would not have had on hand: wooden cranes, rollers, ropes made of braided reeds.</p><p>You decide that the easiest way to do this is to disassemble the pyramid and rebuild it in place. Starting in the evening, after the last tourist has left, you painstakingly remove each limestone block and number it, so you'll know how to put it back exactly as it was.</p><p>It's not easy: each block that makes up the exterior surface weighs over two tons! Soon you find you're sweating, and have to pause to catch your breath.</p><p>At around 1:30 in the morning, you reach the halfway mark: the pyramid has been taken apart and neatly piled into stacks. It's a surreal and unbelievable sight not witnessed since 2600 BC.</p><p>You work throughout the night. As the full desert moon drops, and the rising sun begins to glow in the east, you fit each numbered block back into place. You're nervous about being discovered, but finally manage to straighten the granite slabs in the Pharoah's tomb just as the first bus load of visitors pulls into view. They begin snapping pictures and taking selfies, oblivious to your night's work. It's done, and nobody even noticed the difference!</p><p>In the end, you're satisfied that the ancient Egyptians could have built this mighty monument, but there's one thing you can't stop thinking about: in the basement of the pyramid, under a flimsy tarp, you found an alien spacecraft, covered with dust and sand.",
+      },
       // { name: "", article: "", description: "" },
       // { name: "", article: "", description: "" },
     ],
@@ -1377,7 +1405,12 @@ export let globe = [
     description:
       'Ethiopia is the oldest independent country in Africa. Located in the Horn of Africa, Ethiopia is bordered by Eritrea to the north, Djibouti to the northeast, Somalia to the east, Kenya to the south, and Sudan and South Sudan to the west. Ethiopia is a country of about 94 million people, with over 90% of them living in rural areas. Its capital and largest city is Addis Ababa, or "New Flower". Ethiopia is also the source of the Blue Nile which crosses through Sudan before eventually draining into the Nile on the Egyptian side. There are many natural resources in Ethiopia, including gold, diamonds, and fertile soils.',
     objects: [
-      { name: "COFFEE", article: "", description: "WIP" },
+      {
+        name: "COFFEE",
+        article: "",
+        description:
+          "The dried, roasted, and ground seeds of the coffee plant are used to make a deliciously bitter drink enjoyed around the world. Ethiopia is where the arabica variety of coffee was born, and coffee from area around Harrar is considered the best coffee in the world that does not come from a cat's butt or the slopes of a volcano.",
+      },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
@@ -1389,7 +1422,12 @@ export let globe = [
     description:
       "Fiji is an island country in Melanesia in the South Pacific Ocean about 1,100 nautical miles northeast of New Zealand. The two major islands, Viti Levu and Vanua Levu, account for about three-quarters of the total population of almost 800,000. Suva is the capital and largest city. A multilingual and multicultural society, Fiji has over 333 islands, of which 110 are permanently inhabited, and despite its small size and population, it ranks high in regional politics. Tourism, sugar, and manufactured items drive the economy.",
     objects: [
-      { name: "FIJI WATER", article: "", description: "WIP" },
+      {
+        name: "FIJI WATER",
+        article: "",
+        description:
+          "This brand of water is bottled at the edge of an artesian aquifer on Viti Levu. Each bottle is dipped into a perfectly clear natural basin overlooking the sea by a virgin wearing white gloves and a plastic sneeze guard. After the cap is applied, the bottle is sealed and the used gloves are removed and consumed in a ritual pyre that has been burning on the island since the founding of the Fiji Water Company in 1996.",
+      },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
@@ -1423,9 +1461,24 @@ export let globe = [
     description:
       'France is a country located in Western Europe. It is bordered by the Atlantic Ocean and the Mediterranean Sea, as well as Luxembourg, Belgium, Germany, Switzerland, Italy and Monaco. Due to its shape, the country is often referred to as "The Hexagon". You hear so many people call it that.<p>France also borders Andorra, and Spain is nearby across the Pyrenees mountains.</p><p>France is the world\'s most popular tourist destination, receiving approximately 79 million foreign tourists annually. 79 million and one, now. Paris is one of the most sought after tourist destinations in the entire world, and is known for its fashion, commerce, gastronomy, and numerous monuments, including the Eiffel Tower, the Arc de Triomphe, the Louvre Museum, and Notre Dame Cathedral.</p><p>By physical geography, France mostly consists of mountainous terrain, and a majority of the country is located west of the coastal mountains. The upper elevations in the mountains are snow-covered for four to five months a year. More than 40% of France is covered by forests, and floral diversity is generally greater therein than in the rest of the country.</p>',
     objects: [
-      { name: "EIFFEL TOWER", article: "The", description: "WIP" },
-      { name: "CHEESE", article: "A wheel of", description: "" },
-      { name: "GAULOISES", article: "A pack of", description: "" },
+      {
+        name: "EIFFEL TOWER",
+        article: "The",
+        description:
+          "A large structure, visible from many parts of Paris. Later, you climb up the skeletal, wrought-iron frame and discover graffiti from 1889!",
+      },
+      {
+        name: "CHEESE",
+        article: "A wheel of",
+        description:
+          "How is it made? Nobody knows, but the country of France has over 200 distinct varieties of the stuff: from soft, creamy brie, earthy Gruyere, to stinky Roquefort, to loud, flashing Klaxòn.",
+      },
+      {
+        name: "GAULOISES",
+        article: "A pack of",
+        description:
+          "The brand of cigarettes you'd buy if you wanted to seem effortlessly cool and unconcerned while planning a crime, or ignoring a woman who loved you. You take a long draw, rev the engine of your scooter, and feel years of warnings about lung cancer and emphysema disappear in a cloud of acrid smoke.",
+      },
     ],
   },
   {
@@ -1440,7 +1493,18 @@ export let globe = [
     description:
       "Gabon, which is on the west coast of Central Africa, has an area of nearly 140,000 square miles. The capital city is Libreville and the country has a population of about two million. Gabon is especially well-known for its forest regions that are home to a variety of wildlife, and for its magnificent national parks (especially the Ogooué-Lolo special reserve).",
     objects: [
-      { name: "OGOOUÉ-LOLO SPECIAL RESERVE", article: "The", description: "WIP" },
+      {
+        name: "ATANGA",
+        article: "Some",
+        description:
+          'A soft, plum-like fruit known as "bush butter", which is often spread on bread. As you crunch down on a toasted baguette slathered in bush butter, you muse on how much the cuisine of Gabon is a mixture of local traditions, and the influence of its French colonizers.',
+      },
+      {
+        name: "BLACK BART",
+        article: "",
+        description:
+          'You find a skeleton on the ocean floor, dressed in a crimson waistcoat, with a brace of pistols hanging from his shoulders. This must be what remains of the notorious pirate "Black" Bartholomew Roberts, terror of the Caribbean trading fleet in the early 1700s. He died in a ship battle off the coast of Cape Lopez, near Gabon, and his body was thrown overboard rather than become a trophy for his enemies. Around his neck, you find an ancient medallion throbbing with unearthly power.',
+      },
     ],
   },
   {
@@ -1449,7 +1513,14 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Senegal"],
     description:
       "Gambia is the smallest country in mainland Africa. Gambia is the smallest independent country on the African continent, though it was a colony of the United Kingdom until 1965. Gambia is now a parliamentary democracy. It is among the 20 poorest countries in the world, with very low economic development, especially in regard to poverty, life expectancy, infant mortality and education levels. All that being said, it is a major exporter of peanuts.",
-    objects: [{ name: "PEANUT", article: "A", description: "WIP" }],
+    objects: [
+      {
+        name: "PEANUT",
+        article: "A",
+        description:
+          "This useful little nut is the main export of Gambia, and a key ingredient in its traditional cuisine.",
+      },
+    ],
   },
   {
     area: "Georgia",
@@ -1666,7 +1737,12 @@ export let globe = [
     description:
       "Guinea is a West African nation on the west coast bordering the North Atlantic Ocean, between Guinea-Bissau and Sierra Leone. Guinea has a population of 10.2 million people. Guinea's capital city is Conakry. One major town is called Kissidougou: can't wait to visit that one!<p>Guinea's territory encompasses numerous mountains of over 6,600 ft, and rivers such as the Niger, Senegal, and Gambia.</p><p>Guinea's major exports are bauxite, alumina, and other commodities, as well as base metals, gold, and diamonds.",
     objects: [
-      { name: "BAUXITE", article: "", description: "WIP" },
+      {
+        name: "BAUXITE",
+        article: "",
+        description:
+          "This rock, from a mine in Guinea, will be processed to extract the aluminum and gallium it contains.",
+      },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
@@ -1733,7 +1809,12 @@ export let globe = [
     description:
       "Hong Kong, officially the Hong Kong Special Administrative Region of the People's Republic of China, is an autonomous territory on the Pearl River Delta of East Asia. Although Hong Kong was a British colony, its society is strongly influenced by Asian culture, particularly the Cantonese culture.",
     objects: [
-      { name: "DIM SUM", article: "Sum", description: "WIP" },
+      {
+        name: "DIM SUM",
+        article: "Sum",
+        description:
+          "Any of a variety of small dishes, served for brunch in many places. There are over 1000 recognized dim sum dishes, and, against your doctor's advice, you decide to try them all in one day. You begin with a simple rice porridge (congee), then move on to some deep fried squid. By 9am, you've eaten over a hundred small plates of food like siu mei (roasted meat), beef tripe, fried dumplings (guotie), and spring rolls. By 3 in the afternoon, you're feeling a bit full, but still can't resist going in for seconds on the delicious zhaliang (rice noodle rolls) and turnip cakes, washing it all down with pot after pot of green tea. By the time the restaurant closes at 9pm, you're being rushed to a hospital.",
+      },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
@@ -1912,10 +1993,30 @@ export let globe = [
     description:
       "Japan is an island nation located in Eastern Asia. It lies off the eastern coast of the Asian mainland, and stretches from the Sea of Okhotsk in the north, the East China Sea and the Pacific Ocean to the east and south, and the Sea of Japan to the west. The four main islands are Hokkaido, Honshu, Kyushu and Shikoku. Almost 90% of Japan is mountainous, and much of it is volcanic and densely wooded.",
     objects: [
-      { name: "ANIME", article: "Some", description: "WIP" },
-      { name: "HIKIKOMORI", article: "A", description: "WIP" },
-      { name: "MOUNT FUJI", article: "", description: "WIP" },
-      { name: "RAMEN", article: "A bowl of", description: "WIP" },
+      {
+        name: "ANIME",
+        article: "Some",
+        description:
+          "<p>Anime is cartoons.</p><p>One thing you notice about Japan is that there is a different anime for anything you can think of: not just high schoolers with giant robot suits, or anthropomorphic animals having sex, but bowling, classical music, even bird watching all have animes devoted to them!</p><p>You decide to test this by finding anime about the most obscure, niche subjects you can think of: training King Charles Spaniels, the history of the Olympics, a girl and her grandfather building a kayak to distribute the ashes of her mother on an island inhabited by magical creatures. These, you find almost immediately. Too easy.</p><p>Undaunted, you look for anime about even more obscure subjects: Wastewater treatment in the ancient near east, the Birkhoff–Kakutani theorem in topology. YZ Ceti, a red dwarf star 12.1 light years from our solar system. A randomly selected sequence of 24 characters. Yourself.</p><p>Just when you think you've won, you stumble upon a collector's shop in Kabukichō that has DVD copies of anime about all these subjects.</p><p>Curious, you ask the owner if there truly is an anime for everything.</p><p>He hesitates, then opens a door in the back of the store. Steps lead down to an underground room lit by flickering flourescent lights, where shelf after shelf of DVD boxes stretch beyond the limit of your vision.</p>",
+      },
+      {
+        name: "HIKIKOMORI",
+        article: "A",
+        description:
+          'This man, 43, lives with his parents, and operates a website about a discontinued line of action figures with detachable, interchangeable body parts. The heads, arms, and legs of these toys could be removed and snapped onto other torsos using magnets concealed within. The line was discontinued due to being a severe choking hazard.</p><p>"Please get out of my bedroom," the hikikomori says.</p><p>"Is this the Kongōbu-ji temple?".</p>A moment later, you think: no, of course it isn\'t the Kongōbu-ji temple, that\'s on a mountain. This is an apartment building in Kyoto.</p>"I\'m so sorry!" you say, apologizing. "What\'s that website you\'re working on? Hey, are those Magnetaurs?".</p><p>That\'s when you find out this is the man who runs your favorite Magnetaurs website. What a small world.</p>',
+      },
+      {
+        name: "MOUNT FUJI",
+        article: "",
+        description:
+          'Fuji is an active volcano in Japan, and an iconic symbol of the country and its history.</p>To truly understand "Fuji-san", you undertake to retrace the steps of the Japanese ukiyo-e artist Hokusai, who made a famous series of paintings of the mountain from all around Japan.</p><p> Your journey ends when your fishing boat is capsized by a great wave off Kanagawa. The captain would have drowned, but you pulled his unconscious body from the wreck, and you sat shivering together on the beach, surrounded by bulbous strands of kelp and gnarled driftwood, waiting for an hour in the shadow of that enigmatic mountain for an Uber to come pick you up.</p>',
+      },
+      {
+        name: "RAMEN",
+        article: "A bowl of",
+        description:
+          "A steaming vessel of hot noodles, with broth and fixins included. A soft-boiled egg is floating here too.",
+      },
     ],
   },
   {
@@ -3290,10 +3391,10 @@ export let globe = [
       'Sweden is a Scandinavian country in the far north of Europe, bordering Norway and Finland, and via an 8km long tunnel to Denmark . Sweden has existed continuously for almost a thousand years. People here eat a lot of fish and potatoes, but also make excellent confections.</p><p>Everywhere you look, you see the same drawing of a monster with beady eyes and a gaping maw that looks ready to swallow you. You assume this is a warning that Sweden is full of monsters.</p><p>With terror mounting, you ask a nearby Swede what you should do in the case of monster attack, and after a few minutes of confusion, she explains to you that that drawing is actually the letter Ö, which is just part of the alphabet.</p><p>"So, no monsters?" you ask timidly.</p><p>She chuckles and shakes her head: no monsters.</p>',
     objects: [
       {
-        name: "TROLL",
+        name: "MONSTER",
         article: "A",
         description:
-          "Huge, and hairy, with beady eyes and a gaping maw that looks ready to swallow you.",
+          "Huge, and hairy, with beady eyes and a gaping maw that looks ready to swallow you. This must be a troll, the mythical Scandinavian monster that inspired the letter Ö.",
       },
       {
         name: "HRUNTING",
