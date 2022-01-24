@@ -110,23 +110,6 @@ const handleGo = (noun, neighbors) => {
   }
 };
 
-const updateLocation = destination => {
-  curLocation = destination;
-  localStorage.setItem("lastLocation", destination);
-  updatePassport(destination)
-}
-
-const updatePassport = (destination = curLocation) => {
-let passport = [curLocation]
-if(localStorage.getItem("visited")){
-  passport = JSON.parse(localStorage.getItem("visited"));
-  if (!passport.includes(destination)) {
-    passport.push(destination.toLowerCase())
-  }  
-}
-  localStorage.setItem("visited", JSON.stringify(passport));    
-}
-
 const handleLook = (noun, words, showLoc) => {
   let msg = ''
   if (words.length === 1 || noun.toLowerCase() === "around") {
@@ -183,8 +166,11 @@ export const handleTab = e => {
       e.target.value = `tel ${dest.toLowerCase()}`;
       break;
     case "look":
-      const objects = getAttributeOfArea("objects").map(obj => obj.name));
-      let obj = getFirstMatchedOption(noun, objects).toLowerCase();
+      let obj = "";
+      if (isArray(getAttributeOfArea("objects"))) {
+        const objects = getAttributeOfArea("objects").map(obj => obj.name));
+        obj = getFirstMatchedOption(noun, objects).toLowerCase();
+      }
       e.target.value = `look ${obj}`;
       break;
     default:
@@ -196,7 +182,7 @@ const getFirstMatchedOption = (noun, options) => {
   let firstMatch
   let placeholder = ''
   if (noun.toLowerCase() === 'look'){
-    placeholder = "around"
+    placeholder = ""
   }
   const matches = options.filter(option => option.toLowerCase().indexOf(noun) !== -1);
   if (isArray(matches)) {
@@ -269,6 +255,24 @@ export const initListeners = () => {
     focusOnPrompt();
   });
 };
+
+const updateLocation = destination => {
+  curLocation = destination;
+  localStorage.setItem("lastLocation", destination);
+  updatePassport(destination)
+}
+
+const updatePassport = (destination = curLocation) => {
+let passport = [curLocation]
+if(localStorage.getItem("visited")){
+  passport = JSON.parse(localStorage.getItem("visited"));
+  if (!passport.includes(destination)) {
+    passport.push(destination.toLowerCase())
+  }  
+}
+  localStorage.setItem("visited", JSON.stringify(passport));    
+}
+
 
 promptField.value = "";
 localStorage.setItem("lastLocation", curLocation)
