@@ -1482,6 +1482,18 @@ export let globe = [
     ],
   },
   {
+    area: "French Guiana",
+    type: "Country",
+    neighbors: ["Atlantic Ocean", "Brazil", "Suriname"],
+    description:
+      "French Guiana is on the northern shore of South America, has a tropical climate, is rich in natural resources and is the foremost producer of iron.",
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
+    // ],
+  },
+  {
     area: "Gabon",
     type: "country",
     neighbors: [
