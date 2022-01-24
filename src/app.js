@@ -77,6 +77,8 @@ export const handleSubmit = (val, msg = "") => {
     case "forget":
       handleForget();
       break;
+    case "passport":
+      msg = handleCheckPassport();
     case "":
       break;
     default:
@@ -101,6 +103,21 @@ const getDisplay = (val, msg, area, showLoc) => {
   `;
   return display;
 };
+
+const handleCheckPassport = () => {
+  let msg = '<div class="passport">Your passport has stamps for:<p>';
+  if(isArray(localStorage.getItem("visited"))){
+    const visited = JSON.parse(localStorage.getItem("visited"))
+    msg += visited.reduce( (result, current, i) => {
+      if (i < visited.length -1){
+        return result + `${capitalize(current)}, `
+      } else {
+        return result + `& ${capitalize(current)}.`
+      }
+    },"")
+  }
+  return `${msg}</p></div>`
+}
 
 const handleGo = (noun, neighbors) => {
   if (neighbors.includes(noun)) {
