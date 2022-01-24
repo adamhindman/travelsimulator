@@ -76,7 +76,7 @@ export const handleSubmit = (val, msg = "") => {
       msg = helpText;
       break;
     case "forget":
-      handleForget();
+      msg = handleForget();
       break;
     case "passport":
       msg = handleCheckPassport();
@@ -160,11 +160,12 @@ const handleTel = noun => {
 };
 
 const handleForget = () => {
-  msg = `You enter a fugue state and wander back home.`;
+  let msg = `You enter a fugue state and wander back home.`;
   setTimeout(() => {
     localStorage.clear();
     window.location.reload();
-  }, 1000);
+  }, 1800);
+  return msg
 };
 
 export const handleTab = e => {
