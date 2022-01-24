@@ -4,6 +4,7 @@ import { helpText } from "./helpText.js";
 
 console.clear();
 
+// everything breaks if localstorage is turned off
 let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "united States";
 
 export const submitBtn = document.getElementById("submit");
