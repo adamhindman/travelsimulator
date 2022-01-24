@@ -110,7 +110,9 @@ const handleCheckPassport = () => {
   if(isArray(localStorage.getItem("visited"))){
     const visited = JSON.parse(localStorage.getItem("visited"))
     msg += visited.reduce( (result, current, i) => {
-      if (i < visited.length -1){
+      if (visited.length === 1) {
+        return result + `${capitalize(current)}.`
+      } else if (i < visited.length -1){
         return result + `${capitalize(current)}, `
       } else {
         return result + `& ${capitalize(current)}.`
