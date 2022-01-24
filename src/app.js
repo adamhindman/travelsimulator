@@ -4,10 +4,11 @@ import { helpText } from "./helpText.js";
 
 console.clear();
 
-let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "United States";
-const submitBtn = document.getElementById("submit");
-const promptField = document.getElementById("prompt");
-const allAreas = globe.map(area => area.area);
+let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "united States";
+
+export const submitBtn = document.getElementById("submit");
+export const promptField = document.getElementById("prompt");
+export const allAreas = globe.map(area => area.area);
 
 export const areaExists = areaName => {
   let exists = globe.filter(c => {
@@ -52,7 +53,7 @@ const getAreaDescription = (area = curLocation) => {
   return desc ? desc : "";
 };
 
-const handleSubmit = (val, msg = "") => {
+export const handleSubmit = (val, msg = "") => {
   val = val.toLowerCase().replace(/\s+/g, " ").trim();
   const words = val.split(" ");
   const verb = words[0];
@@ -103,7 +104,7 @@ const getDisplay = (val, msg, area, showLoc) => {
 
 const handleGo = (noun, neighbors) => {
   if (neighbors.includes(noun)) {
-    updateLocation(noun)
+    updateLocation(noun);
   } else {
     msg = `<p>You can't get to ${noun} from here!</p>`;
   }
@@ -112,6 +113,18 @@ const handleGo = (noun, neighbors) => {
 const updateLocation = destination => {
   curLocation = destination;
   localStorage.setItem("lastLocation", destination);
+  updatePassport(destination)
+}
+
+const updatePassport = (destination = curLocation) => {
+let passport = [curLocation]
+if(localStorage.getItem("visited")){
+  passport = JSON.parse(localStorage.getItem("visited"));
+  if (!passport.includes(destination)) {
+    passport.push(destination.toLowerCase())
+  }  
+}
+  localStorage.setItem("visited", JSON.stringify(passport));    
 }
 
 const handleLook = (noun, words, showLoc) => {
@@ -146,14 +159,14 @@ const handleTel = noun => {
 };
 
 const handleForget = () => {
-  localStorage.removeItem("lastLocation")
   msg = `You enter a fugue state and wander back home.`;
   setTimeout(() => {
+    localStorage.clear();
     window.location.reload();
   }, 1000);
 };
 
-const handleTab = e => {
+export const handleTab = e => {
   let val = e.target.value.toLowerCase().replace(/\s+/g, " ").trim();
   const words = val.split(" ");
   const verb = words[0];
@@ -194,7 +207,7 @@ const getFirstMatchedOption = (noun, options) => {
   return firstMatch || placeholder
 }
 
-const focusOnPrompt = () => {
+export const focusOnPrompt = () => {
   document.getElementById("prompt").focus();
 }
 
@@ -225,37 +238,41 @@ const render = (val = null, msg = null, area = curLocation, showLoc = false) => 
   }, 500);
 };
 
+export const initListeners = () => {
+  promptField.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      handleSubmit(e.target.value);
+      promptField.value = "";
+      submitBtn.classList.remove("shown");
+    } else if (e.key === "Tab") {
+      e.preventDefault();
+      handleTab(e);
+      focusOnPrompt();
+    }
+  });
 
-promptField.addEventListener("keydown", e => {
-  if (e.key === "Enter") {
-    handleSubmit(e.target.value);
+  promptField.addEventListener("keyup", e => {
+    if (promptField.value.length > 0) {
+      submitBtn.classList.add("shown");
+    } else {
+      submitBtn.classList.remove("shown");
+    }
+  });
+
+  submitBtn.addEventListener("click", e => {
+    handleSubmit(promptField.value);
     promptField.value = "";
     submitBtn.classList.remove("shown");
-  } else if (e.key === "Tab") {
-    e.preventDefault()
-    handleTab(e);
-    focusOnPrompt();    
-  }
-});
+  });
 
-promptField.addEventListener("keyup", e => {
-  if (promptField.value.length > 0) {
-    submitBtn.classList.add("shown");
-  } else {
-    submitBtn.classList.remove("shown");
-  }
-});
-
-submitBtn.addEventListener("click", e => {
-  handleSubmit(promptField.value);
-  promptField.value = "";
-  submitBtn.classList.remove("shown");
-});
-
-document.querySelector("html").addEventListener("click", e => {
-  focusOnPrompt();
-});
+  document.querySelector("html").addEventListener("click", e => {
+    focusOnPrompt();
+  });
+};
 
 promptField.value = "";
+localStorage.setItem("lastLocation", curLocation)
 
+initListeners();
+updatePassport();
 render();
