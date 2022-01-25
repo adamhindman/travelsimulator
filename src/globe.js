@@ -993,6 +993,12 @@ export let globe = [
         description:
           "You stop to admire the structural engineering behind the largest hydroelectric dam in the world.",
       },
+      {
+        name: "MOUNT EVEREST",
+        article: "",
+        description:
+          "Staring at the world's largest mountain from within China makes you realize just how small you are, in the grand scheme.",
+      },
     ],
     type: "country",
     neighbors: [
@@ -1066,6 +1072,16 @@ export let globe = [
     ],
     description:
       "Croatia is a country which lies along the eastern coast of the Adriatic Sea. A very fertile, though hilly country that cultivates citrus fruits, cotton, vegetables, and fish. Its most famous scion is the inventor Nikola Tesla!",
+    objects: [
+      {
+        name: "SMILJAN",
+        article: "The village of",
+        description:
+          "The birthplace of Serbian inventor Nikola Tesla. You wonder whether the brilliant engineer left anything behind him. Sure enough, you soon discover a massive complex of interconnected laboratories and vaults inside a nearby mountain. It contains thousands of unknown inventions, and you spend the rest of the afternoon playing a helmet that lets you talk to insects, and a piece of licorice that, when you chew it, you can walk through solid matter for a while.",
+      },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Cuba",
@@ -1486,12 +1502,15 @@ export let globe = [
     type: "Country",
     neighbors: ["Atlantic Ocean", "Brazil", "Suriname"],
     description:
-      "French Guiana is on the northern shore of South America, has a tropical climate, is rich in natural resources and is the foremost producer of iron.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+      "French Guiana is on the northern shore of South America, and is mostly covered with primeval tropical forests. A sparsely populated country, it has only 3.5 people per square kilometer. The spaceport here is a major source of jobs and income for the country. Walking through the capital, Cayenne, you see a lot of neoclassical architecture.",
+    objects: [
+      {
+        name: "SPACEPORT",
+        article: "A",
+        description:
+          "The Guiana Space Centre is ideally located on the equator, with open water to the east.",
+      },
+    ],
   },
   {
     area: "Gabon",
@@ -2287,7 +2306,12 @@ export let globe = [
         description:
           "Where else in the world can you be kidnapped by lemurs? Because you can in Madagascar.</p><p>When you wake up, you're in a basement, with a hood tied over your head, tiny hands rifling through your pockets for chopped up bits of fruit. After stealing all your chopped up bits of fruit, the lemurs leave you tied up by the side of the road, unharmed but without chopped up bits of fruit.</p>",
       },
-      { name: "CINNAMON", article: "Some", description: "WIP" },
+      {
+        name: "CINNAMON",
+        article: "Some",
+        description:
+          "A key ingredient in cinnamon rolls, cinnamon is the spicy bark of several species of trees. Until the middle ages, Europeans had no idea where cinnamon came from: they thought it might grow in the waters of the Nile. All they knew is that they loved it, wanted more of it, and were willing to find new routes to Asia to secure it.",
+      },
       // {name:"", article:"", description:""}
     ],
   },
@@ -2613,7 +2637,8 @@ export let globe = [
       {
         name: "MOUNT EVEREST",
         article: "",
-        description: "Part of the mountain is here: another part is in Tibet.",
+        description:
+          "Everest touches China, Nepal, and Tibet. It might be fun to see this thing from multiple sides!",
       },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
@@ -2626,8 +2651,18 @@ export let globe = [
     description:
       "The Netherlands is a flat country surrounded by water and chock full of windmills, constantly twirling. The people here are dutch, which means honest. They work hard, ranging from a simple laborer to a ship's captain. The best job you can get here is being a ship's captain. The people are friendly, enjoy building, and even enjoy being dominated by powerful dictators.",
     objects: [
-      { name: "GOUDA", article: "A hunk of", description: "WIP" },
-      { name: "WOODEN SHOES", article: "A pair of", description: "WIP" },
+      {
+        name: "GOUDA",
+        article: "A hunk of",
+        description:
+          'One of the oldest cheeses still produced, Gouda is a Dutch cheese described as having a taste that is either chocolatey, fruity, or butterscotchy, proving that food tasters have no idea what they\'re talking about. Taking a huge chomp out of a wheel of aged Gouda, you pronounce it as having a flavor "reminiscent of nice cheese". You wave your arms around, and affect the fancy voice of a gourmand, which causes the shopkeeper to laugh as she charges you for the wheel of cheese you just ruined.',
+      },
+      {
+        name: "WOODEN SHOES",
+        article: "A pair of",
+        description:
+          "These wooden shoes are, hilariously, called Klompen in Dutch. They are usually made of willow or poplar. You buy on a pair and go clompin' around the streets of town.",
+      },
     ],
   },
   {
@@ -2841,11 +2876,17 @@ export let globe = [
     description:
       "The capital of Perú is Lima, a rich city founded in 1535. The historic center of Lima contains much Baroque architecture, exemplified in the Royal Palace, built in 1528, and now the official residence of the Peruvian president.</p><p>There's no shortage of outdoor activity in Perú, much of it centered on fishing, from surf casting along the cliffs and beaches of the south, to deep-sea fishing off the Pacific coast or fly fishing along the rivers. There are many ancient Aztec ruins scattered throughout the Andes, the two main sites are Machu Picchu and the lesser known but equally impressive fortress of Sacsayhuamán.</p>",
     objects: [
-      { name: "MACHU PICCHU", article: "", description: "WIP" },
       {
-        name: "SACSAYHUAMÁN",
+        name: "MACHU PICCHU",
         article: "",
-        description: "Not as many tourists here, but still pretty nice.",
+        description:
+          "A high-altitude Inca citadel in Peru, surrounded by steeply terraced farms. You notice many tourists panting as they climb steps in the low oxygen environment.",
+      },
+      {
+        name: "INTIHUATANA",
+        article: "",
+        description:
+          "This arrangement of stones is called \"the hitching post of the sun\", and is thought to guide the sun along the path of its yearly journey. You can't remember whether it's actually the Earth that travels around the sun every year, or the other way around. You snap a photo of intihuatana as a reminder: the Incas wouldn't have moved all these rocks here unless they knew what they were doing.",
       },
       // { name: "", article: "", description: "" },
     ],
@@ -3164,11 +3205,32 @@ export let globe = [
     ],
     description:
       "Serbia is landlocked in the central Balkans, and comprises portions of Southeastern Europe. It borders Hungary to the north, Romania and Bulgaria to the south, Macedonia and Montenegro to the southwest, and Croatia on its southeastern frontier. The country's capital, Belgrade, lies at the confluence of the Južna Morava and Sava rivers, where the Pannonian Plain meets the Balkans. The city has an area of 130 square kilometers, with architecture styles combining central European and Mediterranean elements.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "SINGIDUNUM",
+        article: "",
+        description:
+          "The name of the Roman city that occupied what is now Belgrade. Remnants of the Roman presence can still be seen, not only in standing ruins and unearthed tombs, but in the layout of Belgrade's streets on top of the old Roman grid lines.",
+      },
+      {
+        name: "TSARIGRAD ROAD",
+        article: "The",
+        description:
+          "In former times, this was a communication line that brought news from Istanbul to Belgrade. Nowadays, it's mostly overgrown with weeds and trees, with patches of cobblestones peeking out every once in a while. You set out to walk the entire route, which should take about 40 hours, but take a wrong turn at Niš and end up lost, finally giving up after spending the night on the floor of a laundromat.",
+      },
+      {
+        name: "SKADARLIJA",
+        article: "The neighborhood of",
+        description:
+          "As Montmartre is to Paris, Skadarlija is to Belgrade: a neighborhood of artists, poets, students, alcoholics, bums, etc.</p><p>You spend a few pleasant evenings in the merry taverns here, mingling with the bohemian crowd, and end up writing a chapbook of experimental free verse poetry in Serbian, which earns you some modest attention and a few prestigious literary awards.</p>",
+      },
+      {
+        name: "BANJA KOVILJAČA",
+        article: "The spa town of",
+        description:
+          "You spend a week relaxing in the healing waters of this 500 year old resort town in Serbia. The sulfuric mineral waters here are known to cure almost in any ailment in horse and man, and sure enough you leave the spa feeling like you could win the Kentucky Derby.",
+      },
+    ],
   },
   {
     area: "Seychelles",
