@@ -3835,12 +3835,14 @@ export let globe = [
       {
         name: "GRAND CANYON",
         article: "The",
-        description: "A canyon, roughly 277 miles long, 18 miles wide, and 1 mile deep.",
+        description:
+          "You descend into the canyon from the northeast, and hike into this majestic national landmark, ready for adventure. Keeping the Colorado River in sight, your journey is pleasant, with only occasional flash floods and solo free climbing. You encounter friendly skunks, coyotes, bighorn sheep, and even a tap-dancing raccoon who rides with you in your backpack. The 277 mile length of the canyon passes too quickly, and as you ascend the 5100 meter peak of Vulcan's Throne, at the western edge of the park, you and your raccoon companion decide, with a silent look, to face east and hike the whole thing again.",
       },
       {
         name: "LIBERTY BELL",
         article: "The",
-        description: "A large bell containing the sound of freedom",
+        description:
+          'This large bell contains the sound of freedom. To avoid the crowds of tourists that gather in Philadelphia\'s to catch a glimpse of it, you sneak into the Liberty Bell Center at midnight to view it in quiet reflection.</p><p>To your surprise, there is another person here before you. He is an old man, in a waistcoast, wearing bifocals.</p><p>"Beautiful, isn\'t she?" he asks.</p><p>You notice he is holding a kite — kind of an old fashioned model of kite — with a key tied to it.</p><p>"It\'s a good, famous bell" you manage to say.</p><p>The moonlight seems to be shining through this slightly translucent person. Could this be a...</p><p>"I remember when she was cast. It was about ten years after I made some improvements to the design of a certain stove, and a few years before I stopped writing Poor Richard\'s Almanack."</p><p>"A-are you--"</p><p>The old man smiles knowingly, and holds up a $100 bill next to his face. You look to the picture on the money, and then over at the man. They are the spitting image of each other. It\'s the same person.</p><p>"Benjamin Franklin!" you say.</p><p>You have so many questions you want to ask him, but by the time you\'ve opened your notebook of questions to the Benjamin Franklin section, the ghost has disappeared. You are standing next to the Liberty Bell, alone. Was he ever really there?</p>',
       },
       {
         name: "BALD EAGLE",
