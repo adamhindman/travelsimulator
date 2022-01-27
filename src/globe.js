@@ -2434,19 +2434,24 @@ export let globe = [
     type: "country",
     neighbors: ["Indian Ocean"],
     description:
-      "Mauritius is an island nation off the southeast coast of the African continent, and is in the Indian Ocean, northeast of Madagascar. The country consists of two islands, as well as several smaller islands, and has a total land area of 2040 square kilometers. Victoria is the island nation's capital, and has a population of around two hundred thousand people.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+      "Mauritius is an island nation off the southeast coast of the African continent, and is in the Indian Ocean, northeast of Madagascar. Mauritius has a highly developed economy, and is the only African country where Hinduism is the most practiced religious. Victoria is the island nation's capital, and has a population of around two hundred thousand people.",
+    objects: [
+      {
+        name: "DODO",
+        article: "A",
+        description:
+          "Mauritius is the only island in the world where the funny, fightless bird known as the Dodo ever lived. The species was thought to have gone extinct in the 17th century, after they were all eaten by sailors. The tragedy of the Dodo flaw was that were unafraid of human beings.</p><p>You find a small population of living Dodo hiding in a lost valley in central Mauritius. These must be the last Dodos on earth! One walks right up to you and lets you pet its fluffy brown feathers. You see its long, bulbous beak and vestigial wings. It looks fat and walks with an awkward, humorous stiffness, like a penguin. It tastes like goose, but gamier, and a little oily. Not actually as delicious as you expected, but probably good enough for a starving sailor!",
+      },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Mexico",
     image: "mexico.png",
     type: "country",
     description:
-      "It's hot here. As you pause for a moment to wipe the sweat from your brow, you can't help but see that Mexico is a country with many different people in it. Soon, your curiosity gets the better of you, and you stop in the shade of a saguaro cactus to watch them do the different kinds of things they are doing. You notice that sometimes they meet with success, but other times they do not. Yet, despite it all, they keep doing those things. What a remarkable country.",
+      "It's hot here. As you pause for a moment to dab the sweat from your brow, you can't help but see that Mexico is a country with many different people in it. Soon, your curiosity gets the better of you, and you stop in the shade of a saguaro cactus to watch them do the different kinds of things they are doing. You notice that sometimes they meet with success, but other times they do not. Yet, despite it all, they keep doing those things. What a remarkable country.",
     objects: [
       {
         name: "SAGUARO CACTUS",
@@ -3406,11 +3411,21 @@ export let globe = [
     neighbors: ["India", "Indian Ocean"],
     description:
       "Sri Lanka is an island, separated from the mainland of India by the Palk Strait. Sri Lanka contains tropical forests, beautiful lakes, wildlife parks, and lots of desserts and mountains. This beautiful island is home to pristine and usually uncrowded beaches, longtitudinal diversity, welcoming locals and flavorful food.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      {
+        name: "ELEPHANTS",
+        article: "A gathering of",
+        description:
+          'While checking out Minneriya National Park in Sri Lanka, you happen upon a group of several hundred elephants eating grass. The day is hot, and a local expert tells you that the elephants gather here to eat during the dry season.</p><p>"Can I ride one?"</p><p>"I wouldn\'t advise it," he says.</p><p>Just then, a bull elephant moves in your direction. It looks at you, lowers itself to its knees, and waves you over with its trunk. As the expert looks on in awe, you climb aboard, and the elephant takes you on a tour of the park, occasionally spraying water out of its trunk like a showerhead, as you laugh and toss it peanuts.',
+      },
+      {
+        name: "SIGIRIYA",
+        article: "",
+        description:
+          "An elaborate fortress built on a 600 foot tall column of rock, with an enormous lion carved into it.",
+      },
+      { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Sudan",
