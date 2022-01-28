@@ -3466,11 +3466,26 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       "Halfway between Norway and the North Pole lies Svalbard, also known as Spitsbergen. This remote island was formerly used for whaling, but is now used for coal mining, and is part of the Kingdom of Norway. No roads connect the distant settlements in this place, but you are lucky enough to have brought a pair of snow shoes, which you use to travel across the roughly 23,000 square mile island, 60% of which is covered in beautiful glaciers.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      {
+        name: "POLAR BEAR",
+        article: "A",
+        description:
+          "Citizens of Svalbard are required to carry a rifle when they go outside, because experience has taught them that the danger of encountering a polar bear is worth such extraordinary precautions.</p><p>Polar Bears, also called maritime bears, can grow to 11 feet in length, making them the second largest land-based predator, after the megasnake.</p><p>You crouch behind a chunk of ice and watch a group of Polar bears from about 100 meters, across the mouth of a river. It looks like a mother and two cubs, fishing. They look so gentle and sweet, it's almost hard to believe they're actually ruthless killing machines.</p><p>Suddenly, from behind you, you hear snow crunching, and turn to see another polar bear sneaking up on you. This one is only about ten feet away, and he looks hungry. His black eyes stare at you with no trace of mercy in them. He licks his lips, and a disgusting fleck of drool drips from his pink, slavering tongue. And what's that in his paws? Your rifle! Like an idiot, you let him take your weapon.</p><p>He points the gun at you and pulls the trigger, but nothing happens. The safety is on!</p>You have one chance to survive. You leap at the bear, taking him by surprise. The two of you wrestle, and eventually, through sheer luck, you are able to use a move you saw on a Youtube martial arts compilation to choke him out. Panting, you stand up, grab the rifle, and escape before this killer maritime bear wakes up.",
+      },
+      {
+        name: "LONGYEARBYEN",
+        article: "",
+        description:
+          "The largest populated place on Svalbard, Longyearbyen is a former mining company town that is now devoted to tourism and research instead. Though temperatures are below freezing for most of the year, the atmosphere here is cheery: all the houses are painted with bright, saturated colors, as though to mock the drab white, brown, and gray surroundings. Most of the inhabitants here are Norwegian, and there are no cats allowed.",
+      },
+      {
+        name: "PYRAMIDEN",
+        article: "",
+        description:
+          "An abandoned Soviet settlement on remote, frozen Svalbard. Once home to over a thousand people, it now stands empty. All that's moving through the streets, now, is the icy wind off the glacier field outside of town, and you.</p><p>You wander for a few hours through the low, brick buildings, perfectly preserved by the frozen climate.</p><p>You enter the theater, the library, the abandoned hotel. At the post office, you jot a quick post card and drop it into the mail slot, knowing it won't be delivered. At the gymnasium, you find a deflated basketball and slam dunk it — a 360 Tomahawk slam, with plenty of stank — as the imaginary crowds cheer.</p><p>At the town hall, you sit at the mayor's desk and dictate a memorandum to a dusty coat wrack, which you pretend is your secretary: \"I hereby declare that the town of Pyramiden is a special place, a unique place, with historical and cultural value, and should not be forgotten.\"</p>",
+      },
+    ],
   },
   {
     area: "Sweden",
@@ -3541,12 +3556,15 @@ export let globe = [
     type: "country",
     neighbors: ["Afghanistan", "China", "Kyrgyzstan", "Uzbekistan"],
     description:
-      "Tajikistan is a former Soviet republic in central Asia. With a population slightly over 7 million inhabitants, its tetonic mountains are home to people that boast to be a combination of Turkish, Tajik, Uzbek and Russian. Tourism professionals advertise wild subterranean mosques and walnut forests for exotic escapes, and they do not disappoint.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+      "Tajikistan is a former Soviet republic in central Asia, with a population slightly over 9 million. Most of the country is two miles above sea level. Tourism professionals advertise wild subterranean mosques and walnut forests for exotic escapes, and they do not disappoint.",
+    objects: [
+      {
+        name: "SARAZM",
+        article: "",
+        description:
+          'The ruins of a 4,000 year old city, which was once a thriving center of arts and culture. Now, the only inhabitants of this place are a group of archaeologists, who don\'t like amateurs poking around.</p><p>"I found something," you say, holding a hammered bronze ceremonial mask.</p><p>"Give that to me," says the main archaeologist, snatching the mask away from you before you can run off with it.</p><p>Soon all of the archaeologists are gathered around the mask, talking about, patting each other on the backs. The main archaeologist holds it up proudly, like he found it himself.</p>',
+      },
+    ],
   },
   {
     area: "Tanzania",
