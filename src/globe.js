@@ -3661,11 +3661,21 @@ export let globe = [
     neighbors: ["Pacific Ocean"],
     description:
       "Tonga is a tiny Polynesian country and archipelago consisting of 169 islands, of which 36 are inhabited. It's a tropical rainforest climate: humid, and hot. Every year it is beset by tropical cyclones that make kite-flying nearly untenable for months at a time.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "HUNGA TONGA–HUNGA HAʻAPAI",
+        article: "",
+        description:
+          "While swimming about 65 kilometers off the coast of Tonga, you notice a vapor plume coming up from from the water. A brief investigation reveals the source: there is a submarine volcano here, that looks like it's gone off recently.",
+      },
+      {
+        name: "170TH ISLAND",
+        article: "The",
+        description:
+          "Everybody knows that Tonga has 169 islands, of which 36 are inhabited. But, after counting twice just to make sure, you believe you've discovered a new one while paddling your outrigger canoe one day.</p><p>Thrilled at the new discovery, you make your way around the island, mapping it in exact detail using your portable surveying equipment. What should you call it? Coolsylvania?</p><p>The island turns out to be about two miles long, elliptical in shape, and almost perfectly symmetrical. In profile, it's got a single hill, smoothly and gently rising at either end, with no trees or other discernable features.</p><p>The geological composition appears to be mainly tortoise shell.</p><p>Presently, a giant, beaked head lifts out of the water. It seems to be chewing on a bed of seaweed with pleasure. You realize you've committed the classic mistake of thinking a colossal sea turtle is an island, and trying to add it to Google Maps.</p><p>Slowly, the friendly behemoth turns to regard you with one massive eye. It's like being stared at by Epcot Center.</p><p>This creature is ancient, powerful, and wise, but seems not particularly interested in you. After a few minutes it lowers itself into the sea, and disappears.",
+      },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Trinidad and Tobago",
@@ -3842,7 +3852,7 @@ export let globe = [
         name: "LIBERTY BELL",
         article: "The",
         description:
-          'This large bell contains the sound of freedom. To avoid the crowds of tourists that gather in Philadelphia\'s to catch a glimpse of it, you sneak into the Liberty Bell Center at midnight to view it in quiet reflection.</p><p>To your surprise, there is another person here before you. He is an old man, in a waistcoast, wearing bifocals.</p><p>"Beautiful, isn\'t she?" he asks.</p><p>You notice he is holding a kite — kind of an old fashioned model of kite — with a key tied to it.</p><p>"It\'s a good, famous bell" you manage to say.</p><p>The moonlight seems to be shining through this slightly translucent person. Could this be a...</p><p>"I remember when she was cast. It was about ten years after I made some improvements to the design of a certain stove, and a few years before I stopped writing Poor Richard\'s Almanack."</p><p>"A-are you--"</p><p>The old man smiles knowingly, and holds up a $100 bill next to his face. You look to the picture on the money, and then over at the man. They are the spitting image of each other. It\'s the same person.</p><p>"Benjamin Franklin!" you say.</p><p>You have so many questions you want to ask him, but by the time you\'ve opened your notebook of questions to the Benjamin Franklin section, the ghost has disappeared. You are standing next to the Liberty Bell, alone. Was he ever really there?</p>',
+          'This large bell contains the sound of freedom. To avoid the crowds of tourists that gather in Philadelphia to catch a glimpse of it, you sneak into the Liberty Bell Center at midnight to view it in quiet reflection.</p><p>To your surprise, there is another person here before you. He is an old man, in a waistcoast, wearing bifocals.</p><p>"Beautiful, isn\'t she?" he asks.</p><p>You notice he is holding a kite — kind of an old fashioned model of kite — with a key tied to it.</p><p>"It\'s a good, famous bell" you manage to say.</p><p>The moonlight seems to be shining through this slightly translucent person. Could this be a...</p><p>"I remember when she was cast. It was about ten years after I made some improvements to the design of a certain stove, and a few years before I stopped writing Poor Richard\'s Almanack."</p><p>"A-are you--"</p><p>The old man smiles knowingly, and holds up a $100 bill next to his face. You look to the picture on the money, and then over at the man. They are the spitting image of each other. It\'s the same person.</p><p>"Benjamin Franklin!" you say.</p><p>You have so many questions you want to ask him, but by the time you\'ve opened your notebook of questions to the Benjamin Franklin section, the ghost has disappeared. You are standing next to the Liberty Bell, alone. Was he ever really there?</p>',
       },
       {
         name: "BALD EAGLE",
