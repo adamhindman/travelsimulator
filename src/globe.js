@@ -1050,6 +1050,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Nicaragua", "Pacific Ocean", "Panama"],
     description:
       "Costa Rica is located in Central America between 8 and 10 degrees north and 85 and 88 degrees west. It is a confederation of 7 provinces. Its capital is San Jose. Costa Rica got its independence from Spain in 1821. In 1848, Nicaragua tried unsuccessfully to attack Costa Rica, but decided to part in peace a few years later.",
+    objects: [
+      { name: "DIQUÍS SPHERES", article: "The", description: "WIP" },
+      // {name:"", article:"", description:''},
+      // {name:"", article:"", description:''}
+    ],
   },
   {
     area: "Côte d'Ivoire",
@@ -1216,8 +1221,8 @@ export let globe = [
         article: "A",
         description: 'It says "Please no puns about our country\'s name."',
       },
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -1495,6 +1500,12 @@ export let globe = [
         description:
           "The brand of cigarettes you'd buy if you wanted to seem effortlessly cool and unconcerned while planning a crime, or ignoring a woman who loved you. You take a long draw, rev the engine of your scooter, and feel years of warnings about lung cancer and emphysema disappear in a cloud of acrid smoke.",
       },
+      {
+        name: "JOYEUSE",
+        article: "",
+        description:
+          "The sword of Charlemagne has a hilt made of gold and gems, containing the tip of the Spear of Destiny inside it. It is so powerful that touching it to your shoulders makes you King of France.</p><p>It is now housed inside the Louvre, where a team of specially trained guards watches it around the clock, to prevent opportunistic visitors from trying to coronate themselves when nobody is looking.</p>",
+      },
     ],
   },
   {
@@ -1675,11 +1686,14 @@ export let globe = [
     neighbors: ["Albania", "Atlantic Ocean", "Bulgaria", "North Macedonia", "Turkey"],
     description:
       "Emerging from the Late Bronze Age collapse, the first settlements in what we would eventually call Greece were founded in the 8th century BC. The goddess of wisdom, Athena, became the patron goddess of the city of Athens, which grew to become the leading Greek city-state, and a new civilization flourished in there. Nowadays, it's known for its tangy yogurt.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "ANTIKYTHERA MECHANISM",
+        article: "The",
+        description:
+          "An ancient Greek computer, discovered in a sunken ship and painstakingly reconstructed bit by bit. Brilliant in its design, it can be used to predict the motion of the heavens, and to play very, very primitive games like pong. You attempt to play pong using the device, and have limited success: its irregular surface makes it hard to return a serve.",
+      },
+    ],
   },
   {
     area: "Greenland",
@@ -1747,11 +1761,16 @@ export let globe = [
     ],
     description:
       'Guatemala is a country in Central America bordered by Mexico to the north and west, the Pacific Ocean to the southwest, Belize to the northeast, the Caribbean to the east, Honduras in the southeast, El Salvador in the south. The country\'s area is 42,042 square miles with an estimated population of around 13.4 million. The name Guatemala derives from Nahuatl, meaning "land of the trees". The Spanish Empire conquered the territory in the 16th century. Guatemala is one of the oldest nations in the Americas, and the territory was home to numerous indigenous cultures, such as the Olmec, Toltec, Teotihuacan, Maya, and Mexica.',
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      {
+        name: "THUNDERSTONE",
+        article: "A",
+        description:
+          "A pre-historic flint spear tip, dug up by Mayan archaeologists (or possibly farmers), and assumed to represent a god who fell from the sky. This one represents the fire god Tohil, and throbs with an unearthly power.",
+      },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Guinea",
@@ -1959,6 +1978,22 @@ export let globe = [
       "Syria",
       "Turkey",
     ],
+    description:
+      "Iraq , the so-called Cradle of Civilization, is located in the fertile strip of land between the Tigris and Euphrates rivers, near the Persian Gulf. Iraq's economy is based on the production of crude oil, which has its pluses and minuses. The capital city is Baghdad, an ancient city which has been built and rebuilt many times over the millenia, and which, after several protracted wars, is currently in a rebuilding phase.",
+    objects: [
+      {
+        name: "MUTANABBI STREET",
+        article: "",
+        description:
+          "This street in Baghdad is famous for its book-sellers, but there is more for sale here than just books.</p><p>While strolling by a shop of curios, you notice a shiny mace for sale, which calls out to you... literally!</p><p>Turns out, this is Sharur, the talking mace which the Sumerian hero Ninurta used to slay the equally Sumerian demon Asag, in the highly Sumerian mythological poem Lugal-e.</p><p>The mace, which throbs with unearthly power, calls to you by name, and offers to provide you with information that will make you an unbeatable god-king, with the wisdom to rule with peace and justice for 100 years.</p><p>After several attempts, you are unable to bargain down the shopkeeper to what you consider a reasonable price. Eventually, you wander off to continue your shopping in this boisterous and lively marketplace, where interesting books and trinkets wait to be discovered around every corner.</p>",
+      },
+      {
+        name: "GARDEN OF EDEN",
+        article: "The",
+        description:
+          "Armed with a passage from the Book of Genesis, you decide to spend a morning trying to track down the exact location of the famous garden where Adam and Eve used to live. After eating a hardy breakfast of flatbread with butter and date syrup, you wander the area around the where the Tigris and Euphrates enter the Persian Gulf.</p><p>In retrospect, it was probably naive to think you could find the garden of eden in a single morning, since it is famously well hidden.</p><p>It turned out you were looking in the wrong place anyway. Hungry and tired from a full day of walking, you almost walked right by the flaming swords, but just happened to look up at the last second and notice them.</p><p>It's a good thing you did, or all that work would have been for nothing! Satisfied, you sit down next to a cold, clear spring and look around you. You would describe the garden of eden as: very green, with lots of flowers and trees with ripe fruit. You pick some, and bite into it with relish. You wonder why anyone would want to leave such a nice garden, and resolve to read more about it later.</p><p>You talk to a friendly snake for a while, then excuse yourself to head back to your hotel. You go swimming in the hotel pool, then brush your teeth and go to bed. What a day!</p>",
+      },
+    ],
   },
   {
     area: "Ireland",
@@ -2003,11 +2038,16 @@ export let globe = [
     ],
     description:
       "Italy is a peninsula, nestled into the Eastern Mediterranean Sea, and bordered by France, Switzerland, Austria, and Slovenia. It is a country rich in history and culture. From beautiful architecture, to unparalleled craftsmanship, this is one boot that fits everybody.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "WESTERN ROMAN EMPIRE",
+        article: "The",
+        description:
+          'When did the Roman Empire fall? Historians disagree on this point: some say it was in 476 CE, with the sack of Rome by gothic tribes. Some say it occurred later, with the Fall of Constantinople in 1453 CE. Many say there was no single date on which a person could have said "yesterday, I was a Roman, and today there are no Romans at all", but rather that this change, if it happened at all, was slow and incremental. Another group believes that the Roman empire lives on today, having evolved into the Roman Catholic church.</p><p>Still others believe, controversially, that we are all still living in Rome, and that modern inventions like (for example) "cars" are merely chariots pulled by invisible horses, conjured by Celtic druids. The point is, history is a broad domain, and there is room for many different opinions, none more "right" than any others.</p>',
+      },
+      { name: "SHROUD OF TURIN", article: "The", description: "WIP" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Jamaica",
@@ -2015,6 +2055,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       "The warm weather, coupled with the bright, vibrant colors of this place is inviting. You take a stroll down the beach, taking in the sights. All around you, you see people enjoying the warm sand between their toes, water skiing, or floating on the water. The gentle breeze of the wind seems to be dancing with the palm trees that line the beach, to the faintly annoying but upbeat rhythms of steel drum music. You vow to take more pictures, so you won't forget your traveling spree. You consider learning watercolor painting instead.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],
   },
   {
     area: "Japan",
@@ -2172,11 +2217,16 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Israel", "Syria"],
     description:
       "The Republic of Lebanon, with an area of about 4,036 square miles, has a coastline along the Mediterranean Sea that extends for about 143 miles. The capital city of Lebanon is Beirut which is situated near the mouth of an estuary associated both with the Mediterranean Sea and with the River Lebanon. There is situated the country's largest seaport, Tripoli.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "CEDRUS LIBANI",
+        article: "",
+        description:
+          "A species of pine tree, growing in the Eastern Mediterranean.</p><p>The Cedars of Lebanon are a symbol of paradise on earth, appearing over and over in the early literature of ancient civilizations. You can certainly see why.</p><p>Walking amongst the groves, munching on trail mix, you think about the footsteps you may be following: In the Old Testament, Moses used the bark of these trees as medicine. King Solomon used timbers from these cedars to build the Temple in Jerusalem.</p><p>Just as you finish your trail mix, you come upon a strange stone, which seems out of place here. It's the size of a microwave, and shaped like the head of a demon. Upon closer inspection, it's not stone at all, but very old, brittle bone. It's a massive skull!</p><p>You check your guidebook, and learn about the story of Humbaba, the legendary guardian of this very cedar forest in The Epic of Gilgamesh. Could this be Humbaba? If so, the skull has been sitting here since Gilgamesh chopped it off in 2700, BC. You snap a picture and post it on Instagram, and get over 30 likes.</p>",
+      },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Lesotho",
@@ -2677,8 +2727,9 @@ export let globe = [
     description:
       "New Zealand consists of a mountainous landscape rolling plains on the south coast. On the north, rich with mining resources that cripple the landscape. The people are proud to their island home and resistant to most invaders.</p><p>New Zealand has a fabled fairytale quality. It is full of dragons, fairies, and sea monsters. Stories from these people tell of 'Tarkus Crowfield', a famed knight who was able to make a dragon appear whenever he wanted. Stories are no mere tale though. People were once taken by a real dragon as they tried to cross Saralanchi.</p>",
     objects: [
-      { name: "SHEEP", article: "A", description: "" },
-      // {name:"", article:"", description:""},
+      { name: "SHEEP", article: "A", description: "WIP" },
+      { name: "HOBBIT TOWN", article: "", description: "WIP" },
+      { name: "TAMIL BELL", article: "", description: "WIP" },
       // {name:"", article:"", description:""}
     ],
   },
@@ -2766,11 +2817,11 @@ export let globe = [
     neighbors: ["Indian Ocean", "Saudi Arabia", "United Arab Emirates", "Yemen"],
     description:
       "Oman, officially the Sultanate of Oman, is an Arab country on the southeastern coast of the Arabian Peninsula in Western Asia. Oman is bordered by the United Arab Emirates (UAE) to the northwest, Saudi Arabia to the west, and Yemen to the southwest. Oman is an absolute monarchy ruled by Sultan Qaboos bin Said al Said. It has a population of about 2 million people, and an area of just over 300,000 square kilometers. The Omanis have a close friendship with and respect for snakes.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      { name: "IRAM OF THE PILLARS", article: "", description: "WIP" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Pakistan",
@@ -2893,7 +2944,7 @@ export let globe = [
         description:
           "This arrangement of stones is called \"the hitching post of the sun\", and is thought to guide the sun along the path of its yearly journey. You can't remember whether it's actually the Earth that travels around the sun every year, or the other way around. You snap a photo of intihuatana as a reminder: the Incas wouldn't have moved all these rocks here unless they knew what they were doing.",
       },
-      // { name: "", article: "", description: "" },
+      { name: "NAZCA LINES", article: "The", description: "WIP" },
     ],
   },
   {
@@ -2985,8 +3036,8 @@ export let globe = [
         description:
           "A large, comfortable looking coffin, which you found sitting on a black stone plinth in a ruined chapel in the Transylvanian woods. Opening the lid, you see an old man in a cape.",
       },
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3156,8 +3207,8 @@ export let globe = [
         description:
           "Miles and miles of sand dunes, desert plains, and dry lake beds. Other than the occasional oasis, there aren't many plants to see here, which is too bad because there's plenty of space for them.",
       },
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3174,6 +3225,7 @@ export let globe = [
         description:
           'A friendly plesiosaur, and one of the last of her kind, Nessie lives in the cold, deep waters of Loch Ness. You decide to find Nessie and ask her the question that\'s been on your mind for a while.<p>"Nessie, how could a population of dinosaurs survive for 200 million years in a lake in Scotland?"<br/>"One day at a time," she says, and sinks, with only the faintest ripple, beneath the surface of the water.',
       },
+      { name: "KINGOODIE ARTEFACT", article: "The", description: "WIP" },
     ],
   },
   {
@@ -3398,11 +3450,11 @@ export let globe = [
     ],
     description:
       "The Kingdom of Spain is a country in Europe, with a long, rich history. It is a peninsular country, situated near south-west Europe of the Atlantic Ocean. After the Spanish Civil War of the 1930s, Spain was ruled by organisations akin to the military until democracy was ushered in during the 70s. Modern Spain is an economic hub of the Europe and a popular destination for many tourists looking for the food and drinks. Since the 1990s, the economy has undergone remarkable changes with a large tourism niche market allowing the country to continue to prosper.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "ROLAND'S BREACH", article: "", description: "WIP" },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Sri Lanka",
@@ -3424,7 +3476,6 @@ export let globe = [
         description:
           "An elaborate fortress built on a 600 foot tall column of rock, with an enormous lion carved into it.",
       },
-      { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3742,7 +3793,12 @@ export let globe = [
         description:
           "A neolithic temple that predates the invention of ceramics. Göbekli Tepe contains many objects of religious or totemic significance, which throb with unearthly power.",
       },
-      { name: "ALINAZIK", article: "", description: "A delicious kebab dish." },
+      {
+        name: "ALINAZIK",
+        article: "",
+        description: "A delicious kebab dish. Join the club!",
+      },
+      { name: "PIRI REIS MAP", article: "The", description: "WIP" },
     ],
     neighbors: [
       "Armenia",
@@ -3990,12 +4046,12 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean", "England"],
     description:
-      "A country of stunning natural beauty, where sweeping seas, high mountains, brooding forests, and swaths of farmland abound. Cities as diverse as Swansea and Cardiff retain historic architecture from the Middle Ages, while renovated towns such as Conwy and Llansteffan recall the nineteenth century.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+      "A country of stunning natural beauty, where sweeping seas, high mountains, brooding forests, and swaths of farmland abound. Cities as diverse as Swansea and Cardiff retain historic architecture from the Middle Ages, while renovated towns such as Conwy and Llansteffan recall the nineteenth century, an era merely two hundred years in the past.",
+    objects: [
+      { name: "CARDIFF GIANT", article: "A", description: "" },
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Western Sahara",
