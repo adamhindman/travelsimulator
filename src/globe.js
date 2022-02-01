@@ -1991,7 +1991,7 @@ export let globe = [
         name: "GARDEN OF EDEN",
         article: "The",
         description:
-          "Armed with a passage from the Book of Genesis, you decide to spend a morning trying to track down the exact location of the famous garden where Adam and Eve used to live. After eating a hardy breakfast of flatbread with butter and date syrup, you wander the area around the where the Tigris and Euphrates enter the Persian Gulf.</p><p>In retrospect, it was probably naive to think you could find the garden of eden in a single morning, since it is famously well hidden.</p><p>It turned out you were looking in the wrong place anyway. Hungry and tired from a full day of walking, you almost walked right by the flaming swords, but just happened to look up at the last second and notice them.</p><p>It's a good thing you did, or all that work would have been for nothing! Satisfied, you sit down next to a cold, clear spring and look around you. You would describe the garden of eden as: very green, with lots of flowers and trees with ripe fruit. You pick some, and bite into it with relish. You wonder why anyone would want to leave such a nice garden, and resolve to read more about it later.</p><p>You talk to a friendly snake for a while, then excuse yourself to head back to your hotel. You go swimming in the hotel pool, then brush your teeth and go to bed. What a day!</p>",
+          "Armed with a passage from the Book of Genesis, you decide to spend a morning trying to track down the exact location of the famous garden where Adam and Eve used to live. After eating a hardy breakfast of flatbread with butter and date syrup, you wander the area around the where the Tigris and Euphrates enter the Persian Gulf.</p><p>In retrospect, it was probably naive to think you could find the garden of eden in a single morning, since it is famously well hidden.</p><p>It turned out you were looking in the wrong place anyway. Hungry and tired from a full day of walking, you almost walked right by the  flaming swords, but just happened to look up at the last second and notice them.</p><p>It's a good thing you did, or all that work would have been for nothing! Satisfied, you sit down next to a cold, clear spring and look around you. You would describe the garden of eden as: very green, with lots of flowers and trees with ripe fruit. You pick some, and bite into it with relish. You wonder why anyone would want to leave such a nice garden, and resolve to read more about it later.</p><p>You talk to a friendly snake for a while, then excuse yourself to head back to your hotel. You go swimming in the hotel pool, then brush your teeth and go to bed. What a day!</p>",
       },
     ],
   },
@@ -2045,7 +2045,12 @@ export let globe = [
         description:
           'When did the Roman Empire fall? Historians disagree on this point: some say it was in 476 CE, with the sack of Rome by gothic tribes. Some say it occurred later, with the Fall of Constantinople in 1453 CE. Many say there was no single date on which a person could have said "yesterday, I was a Roman, and today there are no Romans at all", but rather that this change, if it happened at all, was slow and incremental. Another group believes that the Roman empire lives on today, having evolved into the Roman Catholic church.</p><p>Still others believe, controversially, that we are all still living in Rome, and that modern inventions like (for example) "cars" are merely chariots pulled by invisible horses, conjured by Celtic druids. The point is, history is a broad domain, and there is room for many different opinions, none more "right" than any others.</p>',
       },
-      { name: "SHROUD OF TURIN", article: "The", description: "WIP" },
+      {
+        name: "SHROUD OF TURIN",
+        article: "The",
+        description:
+          "A burial shroud which is either proof of the divinity of Jesus Christ, or a big fat hoax. Or an honest case of pareidolia. Or, something else completely. As you stare at the shapes imprinted on the cloth, you ask yourself which one you believe. You decide on that, and stick with it. You go get some gelato.",
+      },
       // { name: "", article: "", description: "" },
     ],
   },
@@ -2725,11 +2730,26 @@ export let globe = [
     type: "country",
     neighbors: ["Pacific Ocean"],
     description:
-      "New Zealand consists of a mountainous landscape rolling plains on the south coast. On the north, rich with mining resources that cripple the landscape. The people are proud to their island home and resistant to most invaders.</p><p>New Zealand has a fabled fairytale quality. It is full of dragons, fairies, and sea monsters. Stories from these people tell of 'Tarkus Crowfield', a famed knight who was able to make a dragon appear whenever he wanted. Stories are no mere tale though. People were once taken by a real dragon as they tried to cross Saralanchi.</p>",
+      "New Zealand is an island country in the southern Hemisphere. It is composed of two main islands: a larger southern island, and a smaller northern one. It has no mammalian predators on land, though the seas around it are swimming with great white sharks.",
     objects: [
-      { name: "SHEEP", article: "A", description: "WIP" },
-      { name: "HOBBIT TOWN", article: "", description: "WIP" },
-      { name: "TAMIL BELL", article: "", description: "WIP" },
+      {
+        name: "SHEEP",
+        article: "A",
+        description:
+          "You are watching flocks of sheep milling around the green New Zealand hillside. Someone in Auckland said that there are more sheep than people in New Zealand, and you decide to count them all to find out if that's true.</p><p>\"One sheep. Two sheep. Three sheep. Four sheep...\"</p><p>You wake up five hours later. The flock of sheep has moved somewhere else. It's dark out.</p>",
+      },
+      {
+        name: "HOBBITON",
+        article: "",
+        description:
+          "A recreation of a real Hobbit village, featuring the daylight basement architecture so beloved of the little halflings. You wander through the structures, admiring the woodwork, the dishes, the furniture. The attention to detail is so painstaking, you can almost hear the sound of dwarves and hobbits sharing second breakfast, and smell the faint hint of a wizard's weed smoke wafting on the breeze.</p><p>The whole experience makes you wistful: wouldn't it be something to visit the real Middle Earth, and travel on an epic journey like Sam and Frobo?</p><p>It would be thrilling, you think, but that would require some sort of licensing agreement between the estate of J.R.R. Tolkien and the makers of this text adventure game.</p>",
+      },
+      {
+        name: "TAMIL BELL",
+        article: "",
+        description:
+          "A bell, inscribed in archaic Tamil, that inexplicably made its way from Sri Lanka to a village in New Zealand, where it was used to boil potatoes, and discovered by surprised missionaries in 1836. How the bell, which may be up to 500 years old, got to a village in New Zealand is anybody's guess.",
+      },
       // {name:"", article:"", description:""}
     ],
   },
@@ -2818,7 +2838,6 @@ export let globe = [
     description:
       "Oman, officially the Sultanate of Oman, is an Arab country on the southeastern coast of the Arabian Peninsula in Western Asia. Oman is bordered by the United Arab Emirates (UAE) to the northwest, Saudi Arabia to the west, and Yemen to the southwest. Oman is an absolute monarchy ruled by Sultan Qaboos bin Said al Said. It has a population of about 2 million people, and an area of just over 300,000 square kilometers. The Omanis have a close friendship with and respect for snakes.",
     objects: [
-      { name: "IRAM OF THE PILLARS", article: "", description: "WIP" },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
@@ -2944,7 +2963,12 @@ export let globe = [
         description:
           "This arrangement of stones is called \"the hitching post of the sun\", and is thought to guide the sun along the path of its yearly journey. You can't remember whether it's actually the Earth that travels around the sun every year, or the other way around. You snap a photo of intihuatana as a reminder: the Incas wouldn't have moved all these rocks here unless they knew what they were doing.",
       },
-      { name: "NAZCA LINES", article: "The", description: "WIP" },
+      {
+        name: "NAZCA LINES",
+        article: "The",
+        description:
+          "800 miles of inscriptions on the sides of mountains in southern Peru. They were left by who knows who, approximately 2000 years ago. The best way to see them is in a helicopter, so you borrow one from a local airport and do some low fly-bys, stopping to look at the enormous drawings of spiders, monkeys, pelicans, trees, as well as abstract shapes. The quality of the drawings is not great, but the scale is impressive. ",
+      },
     ],
   },
   {
@@ -3225,7 +3249,6 @@ export let globe = [
         description:
           'A friendly plesiosaur, and one of the last of her kind, Nessie lives in the cold, deep waters of Loch Ness. You decide to find Nessie and ask her the question that\'s been on your mind for a while.<p>"Nessie, how could a population of dinosaurs survive for 200 million years in a lake in Scotland?"<br/>"One day at a time," she says, and sinks, with only the faintest ripple, beneath the surface of the water.',
       },
-      { name: "KINGOODIE ARTEFACT", article: "The", description: "WIP" },
     ],
   },
   {
@@ -3451,7 +3474,12 @@ export let globe = [
     description:
       "The Kingdom of Spain is a country in Europe, with a long, rich history. It is a peninsular country, situated near south-west Europe of the Atlantic Ocean. After the Spanish Civil War of the 1930s, Spain was ruled by organisations akin to the military until democracy was ushered in during the 70s. Modern Spain is an economic hub of the Europe and a popular destination for many tourists looking for the food and drinks. Since the 1990s, the economy has undergone remarkable changes with a large tourism niche market allowing the country to continue to prosper.",
     objects: [
-      { name: "ROLAND'S BREACH", article: "", description: "WIP" },
+      {
+        name: "ROLAND'S BREACH",
+        article: "",
+        description:
+          "A stark, 40-meter wide gap in the Pyrenees mountains, between France and Spain. Legend has it that Roland, Charlemagne's greatest knight, tried to dull the blade of his invulnerable sword Durendel by cutting a hole in a mountain.",
+      },
       // { name: "", article: "", description: "" },
       // { name: "", article: "", description: "" },
     ],
@@ -3798,7 +3826,12 @@ export let globe = [
         article: "",
         description: "A delicious kebab dish. Join the club!",
       },
-      { name: "PIRI REIS MAP", article: "The", description: "WIP" },
+      {
+        name: "PIRI REIS MAP",
+        article: "The",
+        description:
+          'While leafing through a stack of old Garfield comics in a Turkish bazaar, you stumble upon the lost 2/3rds of this legendary map, drawn in 1513 by the Ottoman cartographer Piri Reis.</p><p>This map compiled the best geographic information available at the time into a single source, and demonstrates just how much about the world was known in the early 16th century. The missing fragments show not only the entirety of the Antarctic coastline, but Hyperborea and Atlantis as well.</p><p>The shopkeeper drives a hard bargain, but you know the tricks to haggle him down ("Oh, this scrap? Guess I could ... line my bird cage with it. How about, say, 20 lira?") and finally win the negotiation.</p><p>You fold the map until it fits in your fanny pack, and set off to the next adventure.</p>',
+      },
     ],
     neighbors: [
       "Armenia",
