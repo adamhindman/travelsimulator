@@ -3,7 +3,17 @@
 
 * 
   font-size 1.8rem
- 
+
+asterisk()
+  display flex
+  padding .2rem 3rem
+  margin 0 -3rem
+  width calc(100% + 5.4rem)
+  text-align left
+  &:before
+    content: "* "
+    padding-right 1rem
+    
 html, body
   padding 0
   margin 0
@@ -20,7 +30,7 @@ body
   line-height 1.45
   margin 2.4rem
   box-sizing border-box
-  max-width 54rem
+  max-width 64rem
 h1 
   font-size 2.4rem
 h4
@@ -36,28 +46,29 @@ h4
     h5
       font-weight normal
       margin 1.8rem 0 .6rem
-  .button
-    background transparent
-    text-align left
-    color #33ff33
-    border 0
-    font-family var(--font-family)
-    font-size 1.8rem
-    cursor pointer
-    &.object
-      display inline-block
-      text-transform uppercase
-    &.destination
-      display block
-      padding .4rem 3rem
-      margin 0 -3rem
-      width calc(100% + 5.4rem)
-      text-align left
+  .buttons
+    li:hover
+      background-color #33ff33
       &:before
-        content: "* "
+        content: "*"
+        color: #282828
+      button
+        color #282828
+    button
+      flex 1
+      background transparent
+      text-align left
+      color #33ff33
+      border 0
+      font-family var(--font-family)
+      font-size 1.8rem
+      cursor pointer
+  .object
+    display inline-block
+    text-transform uppercase
     &:hover
-      color #282828
-      background-color #33ff33      
+      background-color #33ff33
+      color #282828  
 #console
   display flex
   align-items center
@@ -110,21 +121,17 @@ h4
     content '>'
 
 ul.asterisk
-  padding 0 0 0 2.4rem
-li
-  position relative
-  list-style none
-li:before
-  content "*"
-  position absolute
-  left -2rem;
+  padding 0
+  li
+    asterisk()
+    position relative
+    list-style none
+    &:before
+      content "*"
+      padding-right 1rem
 
 .passport 
-  display block
-  padding .4rem 3rem
-  margin 0 -3rem
-  width calc(100% + 5.4rem)
-  text-align left
+  fullWidth()
   p
     margin initial
     margin-top 1rem;

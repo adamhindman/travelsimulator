@@ -1,6 +1,7 @@
 import { globe } from "./globe.js";
 import { capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { helpText } from "./helpText.js";
+import { inventory, handleInventory, handleTake } from "./inventory.js"
 
 console.clear();
 
@@ -27,7 +28,7 @@ const getNeighborsText = () => {
   let list = getAttributeOfArea("neighbors").reduce((result, cur, i, a) => {
     return (
       result +
-      `<button class="button destination" data-destination="${cur}">${cur}</button>`
+      `<li><button class="destination" data-destination="${cur}">${cur}</button></li>`
     );
   }, "");
   return list;
@@ -80,6 +81,15 @@ export const handleSubmit = (val, msg = "") => {
       break;
     case "passport":
       msg = handleCheckPassport();
+      break;
+    case "take":
+      handleTake();
+      break;
+    case "i":
+    case "inv":
+    case "inventory":
+      msg = handleInventory();
+      break;
     case "":
       break;
     default:
@@ -96,7 +106,7 @@ const getDisplay = (val, msg, area, showLoc) => {
   const uiBgClass = isArray(getAttributeOfArea("image")) ? `pic ${clSlug}` : ``;
   const loc = `
   <div class="${uiBgClass}"></div><h4>${curLocation.toUpperCase()}</h4>${getAreaDescription()}</p>${getObjectsText()} 
-  <div class="exits"><h5>Exits are:</h5>${getNeighborsText()}</div>`;
+  <div class="exits"><h5>Exits are:</h5><ul class="asterisk buttons">${getNeighborsText()}</ul></div>`;
   let display = `
     ${val ? p : ``}
     ${msg ? m : loc}
@@ -222,7 +232,7 @@ const render = (val = null, msg = null, area = curLocation, showLoc = false) => 
   setTimeout(() => {
     document.getElementById("display").innerHTML += getDisplay(val, msg, area, showLoc);
     document.querySelector("#console").scrollIntoView(true);
-    document.querySelectorAll(".button.destination").forEach(i => {
+    document.querySelectorAll(".destination").forEach(i => {
       if (i.dataset.eventSet !== true) {
         i.dataset.eventSet = true;
         i.addEventListener("click", e => {
@@ -232,7 +242,7 @@ const render = (val = null, msg = null, area = curLocation, showLoc = false) => 
         });
       }
     });
-    document.querySelectorAll(".button.object").forEach(i => {
+    document.querySelectorAll(".object").forEach(i => {
       if (i.dataset.eventSet !== true) {
         i.dataset.eventSet = true;
         i.addEventListener("click", e => {
