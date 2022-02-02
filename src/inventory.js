@@ -5,32 +5,22 @@ export let inventory = [
   { name: "Spare socks", description: "An extra pair of nice warm socks." },
 ];
 
-export const addToInventory = item => {
-  console.log("addToInventory");
-};
+export const addToInventory = item => {};
 
-export const getItemDescription = item => {
-  console.log("getItemDescription");
-};
+export const getItemDescription = item => {};
 
 export const handleInventory = () => {
-  console.log("handleInventory");
   return showInventory();
 };
 
-export const handleTake = item => {
-  console.log("handleTake");
-};
+export const handleTake = item => {};
 
 export const itemIsInInventory = item => {
   let inInventory = false;
-  console.log("itemIsInInventory");
   return inInventory;
 };
 
-export const removeFromInventory = item => {
-  console.log("removeFromInventory");
-};
+export const removeFromInventory = item => {};
 
 export const showInventory = () => {
   let inv = "";
