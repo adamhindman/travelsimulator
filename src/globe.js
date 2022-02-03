@@ -1051,7 +1051,12 @@ export let globe = [
     description:
       "Costa Rica is located in Central America between 8 and 10 degrees north and 85 and 88 degrees west. It is a confederation of 7 provinces. Its capital is San Jose. Costa Rica got its independence from Spain in 1821. In 1848, Nicaragua tried unsuccessfully to attack Costa Rica, but decided to part in peace a few years later.",
     objects: [
-      { name: "DIQUÍS SPHERES", article: "The", description: "WIP" },
+      {
+        name: "DIQUÍS SPHERES",
+        article: "The",
+        description:
+          "The Diquis people of Costa Rica populated the landscape with these enormous smooth spherical stones, some as large as 6 feet in diameter. So far, archaeologists have found over 300 of them in the jungle, mostly clustered in groups. The purpose for which they were crafted and positioned at such great effort remains a mystery.</p><p>On a hill above where a group of these spheres has come to rest, you find a hidden temple in the jungle. Inside the temple is a track, just large enough for one of these stone spheres to roll down. At the back of the temple is a weighted plate, upon which rests a golden statue.</p>",
+      },
       // {name:"", article:"", description:''},
       // {name:"", article:"", description:''}
     ],

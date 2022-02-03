@@ -1,7 +1,7 @@
 import { globe } from "./globe.js";
 import { capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { helpText } from "./helpText.js";
-import { inventory, handleInventory, handleTake } from "./inventory.js"
+import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
 console.clear();
 
@@ -140,23 +140,35 @@ const handleGo = (noun, neighbors) => {
   }
 };
 
-const handleLook = (noun, words, showLoc) => {
-  let msg = ''
-  if (words.length === 1 || noun.toLowerCase() === "around") {
-    showLoc = true;
-  } else if (isArray(getAttributeOfArea("objects"))) {
+const itemIsInArea = noun => {
+  let inArea = false
+  let oIndex = -1
+  if (isArray(getAttributeOfArea("objects"))) {
     const objects = arrayToLowerCase(
       getAttributeOfArea("objects").map(object => object.name)
     );
-    const objectDescriptions = getAttributeOfArea("objects").map(
+    oIndex = objects.findIndex(item => item == noun);
+    inArea = oIndex !== -1 ? true : false
+  }
+  return [inArea, oIndex]
+}
+
+const handleLook = (noun, words, showLoc) => {
+  let msg = ''
+  const itemInArea = itemIsInArea(noun)
+  const inArea = itemInArea[0]
+  const oIndex = itemInArea[1]
+  const itemInInv = itemIsInInventory(noun)
+  const inInv = itemInInv[0]
+  if (words.length === 1 || noun.toLowerCase() === "around") {
+    showLoc = true;
+  } else if (inArea) {
+    const getObjDescs = getAttributeOfArea("objects").map(
       object => object.description
     );
-    const objectIndex = objects.findIndex(item => item == noun);
-    if (objectIndex !== -1) {
-      msg = `<p>${objectDescriptions[objectIndex]}</p>`;
-    } else {
-      msg = `<p>I don't see that here!</p>`;
-    }
+    msg = `<p>${getObjDescs[oIndex]}</p>`;
+  } else if (inInv) {
+    msg = `<p>${itemInInv[1][0].description}</p>`
   } else {
     msg = `<p>I don't see that here!</p>`;
   }

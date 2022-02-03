@@ -3,6 +3,7 @@ import { capitalize } from "./utilities.js";
 export let inventory = [
   { name: "Gum", description: "A stick of cinnamon gum." },
   { name: "Spare socks", description: "An extra pair of nice warm socks." },
+  { name: "Sunscreen", description: "A tube of SPF-30." },
 ];
 
 export const addToInventory = item => {};
@@ -16,8 +17,10 @@ export const handleInventory = () => {
 export const handleTake = item => {};
 
 export const itemIsInInventory = item => {
-  let inInventory = false;
-  return inInventory;
+  const matchingItems = inventory.filter(
+    it => it.name.toLowerCase() === item.toLowerCase()
+  );
+  return [matchingItems.length > 0, matchingItems];
 };
 
 export const removeFromInventory = item => {};
