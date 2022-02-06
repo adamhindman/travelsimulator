@@ -802,11 +802,32 @@ export let globe = [
     ],
     description:
       "Bulgaria is a country in the central part of the Balkans. Its borders roughly correspond to those of the historical region of Macedonia. The country lacks any natural boundaries, which poses strategic problems.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "PERPERIKON",
+        article: "",
+        description:
+          "A 7000 year old city, built to mine and refine gold from the river Perpereshka. The river still carries gold, though all that remains of the city now are towering gray ruins of stone with a commanding view of the scenic valley below. And a new visitor's center.</p>",
+      },
+      {
+        name: "ZMEI",
+        article: "A",
+        description:
+          "A zmei is a dragon: a scaly, serpentine creature with four legs and bat wings. Legend has it, a zmei is what happens when a venemous snake lives and grows for forty years.</p><p>While visiting southern Bulgaria, you agree to help some farmers who are organizing a zmei hunt: seems one of these dragons has been preying on too many local sheep.</p><p>You pile into an old Soviet truck and drive over washboard mountain roads, to a cave somewhere outside a town called Golyamo Belovo. All the men seem nervous, cracking anxious jokes over the walkie-talkies and checking their rifles more than once.</p>You sit next to a 29 year old named Bogdan, and talk about rafting: he's big into rafting.</p><p>Long story short, the key to rafting is communication and team work.</p><p>Later, after the dragon hunt, you sit next to a different man named Genadi on the ride home, because Bogdan was eaten.",
+      },
+      {
+        name: "ZMAJKOVO",
+        article: "",
+        description:
+          'It\'s easy to get lost in the woods, especially in the remote, haunted forests of Bulgaria. The path you were on grows fainter and fainter, until at last you\'re unsure whether it\'s a path at all.</p>After wandering for days, you finally stumble into a lovely village beside a babbling brook. It must be an old village: all the houses are made of alabaster stone, built in a rather old fashioned style.</p><p>Another thing you notice about the town: all the inhabitants are ethereally beautiful blonde women wreathed in flames.</p><p>"This is Zmajkovo, place of the Samodiva" one of them says, looming over you. You find yourself paralyzed, unable to move, like in a nightmare.</p><p>You learn that these "women" are actually fairies, or the Bulgarian equivalent of fairies, and this village is where they live during the winter months, when they aren\'t curdling milk and making crops fail in rural areas.</p><p>Normally, the Samodiva kill any human that wanders into their village, but you show them some photos from your travels around the world, and they are so impressed that they let you go after teaching them some swear words in different languages.</p><p>"новш!" they say, as you\'re leaving.</p><p>"Cusanu fy nhin!" you laugh back.</p><p>They also give you a magic ring, but you accidentally leave it at a restaurant like a day later.</p>',
+      },
+      {
+        name: "CHURCHES OF IVANOVO",
+        article: "The",
+        description:
+          'After living in the caves outside the village of Ivanovo for approximately 500 years, the monks here decided to carve 40 small churches into the rocks. Why did it take them so long to get to work? "They were busy, that\'s why. Mind your own business," someone tells you when you ask.',
+      },
+    ],
   },
   {
     area: "Burkina Faso",
@@ -837,11 +858,13 @@ export let globe = [
     neighbors: ["Laos", "Pacific Ocean", "Thailand", "Vietnam"],
     description:
       "This was the predominant empire in Southeast Asia before the emergence of the Thai and Vietnamese. Cambodia is located in the middle of the Indochina peninsula. The country is a hot spot for birdwatchers. Cambodia also has a rich architectural history. It's modern capital city of Phnom Penh, contains many beautiful ruins.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "LAANG SPEAN", article: "", description: "WIP" },
+      { name: "ANGKOR WAT", article: "", description: "WIP" },
+      { name: "SET OF INITIALS", article: "A", description: "WIP" },
+      { name: "LAKE YEAK LAOM", article: "", description: "WIP" },
+      { name: "TONLÉ SAP", article: "", description: "WIP" },
+    ],
   },
   {
     area: "Cameroon",
@@ -1067,6 +1090,26 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Burkina Faso", "Ghana", "Guinea", "Liberia", "Mali"],
     description:
       "Côte d'Ivoire is in West Africa. The population is around 22 million. Côte d'Ivoire is the world's largest producer and exporter of cocoa beans. The coastal areas are rice fields and pineapple, peanut, cotton, and coffee plantations. The geography is varied, with savannas in the east, low mountains in the centre, and the western region is mostly covered in forests.",
+    objects: [
+      {
+        name: "PYGMY HIPPOPOTAMUS",
+        article: "A",
+        description:
+          "At a quarter the mass of a regular hippopotamus, it's easy to see why these lil' guys are called pygmies. Standing on the banks of the Niger river, you watch a pygmy hippo (pygmo) standing in the water for hours, occasionally munching on plants.",
+      },
+      {
+        name: "BASILICA OF OUR LADY OF PEACE",
+        article: "The",
+        description:
+          "Located in Yamoussoukro, this is the largest church in the world. Wow! The dome is twice the diameter of St. Peter's Basilica in Rome, and taller if you count the cross on top. 18,000 people can attend religious services inside. It contains 2 gymnasiums, a full-service spa, and a food court. Just kidding, it's only a big, big church.",
+      },
+      {
+        name: "COCOA BEANS",
+        article: "A pile of",
+        description:
+          "Côte d'Ivoire is the largest producer of cocoa beans in the world. The largest consumer is chocoholics.",
+      },
+    ],
   },
   {
     area: "Croatia",
@@ -1208,11 +1251,13 @@ export let globe = [
     neighbors: ["Germany", "Atlantic Ocean", "Sweden"],
     description:
       "Denmark is a Scandinavian country in Northern Europe. The nation consists of a large peninsula, Jutland, and numerous islands, notably Zealand and Funen. Denmark is a constitutional monarchy with a parliamentary democracy.The king is head of state; the prime minister is head of government.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      { name: "LEGOS", article: "", description: "WIP" },
+      { name: "KAGEMAND", article: "", description: "WIP" },
+      { name: "VIKING HOARD", article: "A", description: "WIP" },
+      { name: "MADS MIKKELSEN", article: "", description: "WIP" },
+      { name: "SEID", article: "", description: "WIP (samso)" },
+    ],
   },
   {
     area: "Djibouti",
