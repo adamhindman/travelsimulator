@@ -280,6 +280,7 @@ export let globe = [
   },
   {
     area: "Albania",
+    image: "albania.png",
     type: "country",
     neighbors: ["Greece", "Kosovo", "North Macedonia", "Montenegro", "Atlantic Ocean"],
     description:
@@ -819,7 +820,7 @@ export let globe = [
         name: "ZMAJKOVO",
         article: "",
         description:
-          'It\'s easy to get lost in the woods, especially in the remote, haunted forests of Bulgaria. The path you were on grows fainter and fainter, until at last you\'re unsure whether it\'s a path at all.</p>After wandering for days, you finally stumble into a lovely village beside a babbling brook. It must be an old village: all the houses are made of alabaster stone, built in a rather old fashioned style.</p><p>Another thing you notice about the town: all the inhabitants are ethereally beautiful blonde women wreathed in flames.</p><p>"This is Zmajkovo, place of the Samodiva" one of them says, looming over you. You find yourself paralyzed, unable to move, like in a nightmare.</p><p>You learn that these "women" are actually fairies, or the Bulgarian equivalent of fairies, and this village is where they live during the winter months, when they aren\'t curdling milk and making crops fail in rural areas.</p><p>Normally, the Samodiva kill any human that wanders into their village, but you show them some photos from your travels around the world, and they are so impressed that they let you go after teaching them some swear words in different languages.</p><p>"новш!" they say, as you\'re leaving.</p><p>"Cusanu fy nhin!" you laugh back.</p><p>They also give you a magic ring, but you accidentally leave it at a restaurant like a day later.</p>',
+          'It\'s easy to get lost in the woods, especially in the remote, haunted forests of Bulgaria. The path you were on grows fainter and fainter, until at last you\'re unsure whether it\'s a path at all.</p>After wandering for days, you finally stumble into a lovely village beside a babbling brook. It must be an old village: all the houses are made of alabaster stone, built in a rather old fashioned style.</p><p>Another thing you notice about the town: all the inhabitants are ethereally beautiful blonde women wreathed in flames.</p><p>"This is Zmajkovo, place of the Samodiva" one of them says, looming over you. You find yourself paralyzed, unable to move, like in a nightmare.</p><p>You learn that these "women" are actually fairies, or the Bulgarian equivalent of fairies, and this village is where they live during the winter months, when they aren\'t curdling milk and making crops fail.</p><p>Normally, the Samodiva kill any human that wanders into their village, but you show them some photos from your travels around the world, and they are so impressed that they let you go after teaching them some swear words in different languages.</p><p>"новш!" they say, as you\'re leaving.</p><p>"Cusanu fy nhin!" you laugh back.</p><p>They also give you a magic ring, but you accidentally leave it at a restaurant like a day later.</p>',
       },
       {
         name: "CHURCHES OF IVANOVO",
@@ -2857,11 +2858,11 @@ export let globe = [
     neighbors: ["Albania", "Bulgaria", "Greece", "Kosovo", "Serbia"],
     description:
       "North Macedonia, officially the Republic of North Macedonia, is a country in Southeast Europe. It gained independence in 1991 as one of the successor states of Yugoslavia. North Macedonia is a landlocked country bordering with Kosovo to the northwest, Serbia to the north, Bulgaria to the east, Greece to the south, and Albania to the west.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "SKOPJE AQUEDUCT", article: "", description: "WIP" },
+      { name: "STONE TOWN OF KUKLICA", article: "", description: "WIP" },
+      { name: "KAPAN HAN", article: "", description: "WIP" },
+    ],
   },
   {
     area: "Norway",
@@ -2877,7 +2878,8 @@ export let globe = [
         description:
           "The Bryggen wharf is a long row of brightly painted houses facing the harbor; they were originally built in the 12th century as a warehouse for fish and textiles brought in from foreign countries. Today there are a variety of restaurants and shops in the old buildings. They even have street artists and musicians performing in the narrow walkways.",
       },
-      // { name: "", article: "", description: "" },
+      { name: "HOLMENKOLLBAKKEN", article: "", description: "WIP" },
+      { name: "TROLLSTIGEN", article: "", description: "WIP" },
       // { name: "", article: "", description: "" },
     ],
   },
@@ -2888,8 +2890,9 @@ export let globe = [
     description:
       "Oman, officially the Sultanate of Oman, is an Arab country on the southeastern coast of the Arabian Peninsula in Western Asia. Oman is bordered by the United Arab Emirates (UAE) to the northwest, Saudi Arabia to the west, and Yemen to the southwest. Oman is an absolute monarchy ruled by Sultan Qaboos bin Said al Said. It has a population of about 2 million people, and an area of just over 300,000 square kilometers. The Omanis have a close friendship with and respect for snakes.",
     objects: [
-      // {name:"", article:"", description:""},
-      // {name:"", article:"", description:""}
+      { name: "BLIND CAVE FISH", article: "A", description: "WIP" },
+      { name: "LAND OF FRANKINCENSE", article: "The", description: "WIP" },
+      { name: "KITE-SAILING", article: "", description: "" },
     ],
   },
   {
