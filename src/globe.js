@@ -1269,13 +1269,33 @@ export let globe = [
     type: "country",
     neighbors: ["Germany", "Atlantic Ocean", "Sweden"],
     description:
-      "Denmark is a Scandinavian country in Northern Europe. The nation consists of a large peninsula, Jutland, and numerous islands, notably Zealand and Funen. Denmark is a constitutional monarchy with a parliamentary democracy.The king is head of state; the prime minister is head of government.",
+      "Denmark is a Scandinavian country in Northern Europe. The nation consists of a large peninsula, Jutland, and numerous islands, notably Zealand and Funen. Denmark is a constitutional monarchy with a parliamentary democracy. The king is head of state; the prime minister is head of government.",
     objects: [
-      { name: "LEGOS", article: "", description: "WIP" },
-      { name: "KAGEMAND", article: "", description: "WIP" },
-      { name: "VIKING HOARD", article: "A", description: "WIP" },
-      { name: "MADS MIKKELSEN", article: "", description: "WIP" },
-      { name: "SEID", article: "", description: "WIP (samso)" },
+      {
+        name: "LEGOS",
+        article: "",
+        description:
+          '"More than one Lego is called Lego," the Danish man says.</p><p>You\'re touring the Legos headquarters in Billund, Denmark. You\'re surrounded by sculptures made out of the brightly colored, interlocking bricks called Legos, and the walls of the building have pegs sticking out of them, as though the whole place was made of Legos.</p>"That\'s fascinating," you respond. "Who invented Legos in the first place?"</p><p>"The inventor of Lego was Ole Kirk Christiansen. The first set of Lego were actually made out of wood!"</p><p>You nod, grab a handful of blocks out of a bin, and start building something out of them. After a few minutes, you look up to show the tour guide what you\'ve made.</p><p>"It\'s a car without wheels," you begin to explain, but the man is gone.</p><p>You wander around the building looking to rejoin the tour. Eventually you discover that the man was not a tour guide at all, but the Executive Chairman of LEGO, Jørgen Vig Knudstorp!</p><p>"Please thank Mr. Knudstorp for being so generous with his time," you tell his personal assistant, "and give him this car. He\'ll love it: it\'s made out of Legos."</p>',
+      },
+      {
+        name: "KAGEMAND",
+        article: "A",
+        description:
+          "A birthday cake shaped like a boy or girl. Prior to eating the kagemand (or \"cake man\") the child is urged to ritually decapitate it. This practice dates back to viking times: a young Viking boy could not be considered a man until he had defeated a small cake in battle, which is why the Poetic Edda refers to cake as 'honor bread'.",
+      },
+      {
+        name: "VIKING HOARD",
+        article: "A",
+        description:
+          "While walking through a field in Denmark, you trip over what turns out to be the entrance to a Viking burial mound. It's covered in weeds and rocks, and looks like it hasn't been looted yet. You decide to check it out.</p><p>Inside, you find a buried  longship, and the bodies of 12 warriors, arrayed with their most prized jewelry, swords, armor, and decorative trinkets. One of the vikings wears a gold crown, and is seated on kind of a throne, just like in Conan the Barbarian.</p><p>Old ceramic jars line the walls of the chamber, and about half of them are filled with gold and captured religious artifacts from England, Ireland, and as far away as Constantinople.</p><p>\"Those other jars were already empty when I got there,\" you tell the head archaeologist later, when she asks you about them.",
+      },
+      {
+        name: "MADS MIKKELSEN",
+        article: "",
+        description:
+          'A famous actor, known throughout his native Denmark, and even in Hollywood.</p><p>You ask him what he\'s doing. He explains that he is reading the script for a new movie he was offered a part in. He indicates the script he is holding in his hands, and asks you to help him study his part.</p><p>After about an hour and forty-five minutes, you finish the reading and give him some notes on how he might improve his performance.</p><p>"Thank you," he says, "but what did you think, overall?"</p><p>You demure.</p>"Please, humor me; I\'m genuinely curious what you think."</p><p>You tell him that you had trouble connecting with the story in general, and you don\'t think this part is right for him.</p><p>He thanks you, and shakes your hand. About a year later, you notice the movie get released directly to streaming, with almost no marketing push behind it. You check to see if Mads\' name is in the credits: it isn\'t. Looks like he passed on the role after all.</p><p>Later that afternoon, you get a text message from Mads: "Looks like we dodged a bullet!"',
+      },
+      // { name: "SEID", article: "", description: "WIP (samso)" },
     ],
   },
   {
