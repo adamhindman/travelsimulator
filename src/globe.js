@@ -860,11 +860,29 @@ export let globe = [
     description:
       "This was the predominant empire in Southeast Asia before the emergence of the Thai and Vietnamese. Cambodia is located in the middle of the Indochina peninsula. The country is a hot spot for birdwatchers. Cambodia also has a rich architectural history. It's modern capital city of Phnom Penh, contains many beautiful ruins.",
     objects: [
-      { name: "LAANG SPEAN", article: "", description: "WIP" },
-      { name: "ANGKOR WAT", article: "", description: "WIP" },
-      { name: "SET OF INITIALS", article: "A", description: "WIP" },
-      { name: "LAKE YEAK LAOM", article: "", description: "WIP" },
-      { name: "TONLÉ SAP", article: "", description: "WIP" },
+      {
+        name: "LAANG SPEAN",
+        article: "",
+        description:
+          "A cave system, inhabited by humans beginning around 71,000 BC. Technically, it is is still inhabited, because you're here right now, and so is the group of Cambodian and French archaeologists who are still unearthing artifacts here.</p><p>You ask what the most interesting thing they've found in the cave so far is. One of the archarologists shows you some knapped tools and bones. You look at them appreciatively. You nod, and make noises of approval.</p><p>\"This is a neat cave,\" you say after a short pause.",
+      },
+      {
+        name: "ANGKOR WAT",
+        article: "",
+        description:
+          "This massive temple complex in Cambodia is swarming with tourists.</p><p>You wander around, trying to take in the beauty of the 900 year old seat of Buddhist worship. However, every time you stop to quietly contemplate something — a bas-relief, a statue, whatever — a loud, boisterous group appears out of nowhere to take a selfie in front of it, before moving on to the next point of interest.</p><p>A monk at the temple notices you, and suggests that the real way to appreciate Angkor Wat is to meditate on the teachings of the Buddha.</p>So, you and he sit down next to some rocks and start to meditate. At first, you have difficulty ignoring the distractions of the world. After a while, you really start to get it. You attain enlightenment, becoming part of an indistinguishable whole which includes every stone, every drop of water, every blade of grass in the temple.</p>Later, when you open your eyes, a group of tourists is snapping photos of you.</p>",
+      },
+      {
+        name: "SET OF INITIALS",
+        article: "A",
+        description: "The letters LH are carved on a bridge here.",
+      },
+      {
+        name: "LAKE YEAK LAOM",
+        article: "",
+        description:
+          "A lovely, nearly circular crater lake near Banlung, in Cambodia. You spend the day swimming, breaking for lunch to eat spicy red curry and toasted baguette, sold from a kiosk on the lake shore.",
+      },
     ],
   },
   {
