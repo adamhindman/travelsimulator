@@ -1295,7 +1295,6 @@ export let globe = [
         description:
           'A famous actor, known throughout his native Denmark, and even in Hollywood.</p><p>You ask him what he\'s doing. He explains that he is reading the script for a new movie he was offered a part in. He indicates the script he is holding in his hands, and asks you to help him study his part.</p><p>After about an hour and forty-five minutes, you finish the reading and give him some notes on how he might improve his performance.</p><p>"Thank you," he says, "but what did you think, overall?"</p><p>You demure.</p>"Please, humor me; I\'m genuinely curious what you think."</p><p>You tell him that you had trouble connecting with the story in general, and you don\'t think this part is right for him.</p><p>He thanks you, and shakes your hand. About a year later, you notice the movie get released directly to streaming, with almost no marketing push behind it. You check to see if Mads\' name is in the credits: it isn\'t. Looks like he passed on the role after all.</p><p>Later that afternoon, you get a text message from Mads: "Looks like we dodged a bullet!"',
       },
-      // { name: "SEID", article: "", description: "WIP (samso)" },
     ],
   },
   {
@@ -2897,9 +2896,24 @@ export let globe = [
     description:
       "North Macedonia, officially the Republic of North Macedonia, is a country in Southeast Europe. It gained independence in 1991 as one of the successor states of Yugoslavia. North Macedonia is a landlocked country bordering with Kosovo to the northwest, Serbia to the north, Bulgaria to the east, Greece to the south, and Albania to the west.",
     objects: [
-      { name: "SKOPJE AQUEDUCT", article: "", description: "WIP" },
-      { name: "STONE TOWN OF KUKLICA", article: "", description: "WIP" },
-      { name: "KAPAN HAN", article: "", description: "WIP" },
+      {
+        name: "SKOPJE AQUEDUCT",
+        article: "The",
+        description:
+          "An aqueduct which used to transport water from a nearby spring to the city of Skopje. Most of it isn't standing anymore, but what remains is still impressive: about 1200 feet of brick, supported by 55 arches.</p><p>Nobody knows when this aqueduct was built: it might be two thousand years old, or only about five hundred years old.</p>",
+      },
+      {
+        name: "STONE TOWN OF KUKLICA",
+        article: "",
+        description:
+          'If naturally occuring, stone columns were people, the town of Kuklica would have 220 residents. As it is, it has only about one hundred regular people, and the rest would be stone "people", who were "born" tens of thousands of years ago. Their parents are erosion.</p><p>As you wander through the field of stones, you get the strangest sense that they really are people, standing out here alone in the wild. It almost feels like they\'re watching you.</p><p>Did that one just move?</p>',
+      },
+      {
+        name: "KAPAN HAN",
+        article: "",
+        description:
+          "You spend a night at this 15th century caravanserai in Skopje, which still operates today. Moonlight illuminates the willow trees in the courtyard. You drink a Red Bull from the vending machine.</p><p>Looking down from the second floor balcony, you see the ghost of a silk road trader watering his horses at the well. You ask if he knows the wifi password, and he disappears. Despite the passage of time, the very stones of this grand place retain the undimmed magic and romance of the orient.",
+      },
     ],
   },
   {
