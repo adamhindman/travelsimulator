@@ -2930,9 +2930,13 @@ export let globe = [
         description:
           "The Bryggen wharf is a long row of brightly painted houses facing the harbor; they were originally built in the 12th century as a warehouse for fish and textiles brought in from foreign countries. Today there are a variety of restaurants and shops in the old buildings. They even have street artists and musicians performing in the narrow walkways.",
       },
-      { name: "HOLMENKOLLBAKKEN", article: "", description: "WIP" },
+      {
+        name: "HOLMENKOLLBAKKEN",
+        article: "",
+        description:
+          "Holmenkollbakken is a ski jumping hill in Oslo, Norway.</p><p>Staring down the 400-foot long run of this artificial hill, you begin to have second thoughts about trying tobeat the course record. It's one thing to watch legendary athletes like Robert Johansson gracefully fly 144 meters through the air after launching themselves from Holmenkollbakken, but it's another thing to imagine yourself plunging down this steep slope and trying to land without breaking your neck.</p><p>\"What am I doing here?\" you ask yourself. \"I've never even been ski jumping before!\"</p><p>You begin to remove your 'skis', ready to admit that you don't have what it takes. There's plenty more to see and do in Norway.</p><p>Just then, you see a group of school children in the distance, at the bottom of the slope. They're staring up at you, cheering, urging you on. You can't let them down. You won't let them down.</p><p>Then you are flying down the slope. Your legs shake as the skis rattle, picking up speed. The wind is whipping through your hair.</p><p>The conditions aren't perfect — it's summer — but then again neither is your technique. Instead of standard alpine skis, you have two large water skis, like the kind you'd wear on a lake, strapped to your feet. You are wearing street clothes: jeans, and a t-shirt, and a hat that immediately blew off as soon as you started sliding down this precipitous, dangerous ramp.</p><p>There's a moment of panic when you reach the end of the ramp, but as you soar through the air, it turns to exhilaration. You can see so far from up here! There is a feeling of freedom, too. Is this what it's like to be a bird?</p><p>When you hit the ground, which is just grass and dirt, your skies fly off, and you roll head over heels down the mountain, coming to rest on a car. The school children help you to your feet.</p><p>Together, you find the spot where you landed, and measure it: 145 meters, a new record!</p><p>\"But,\" says the childrens' elementary school teacher, while calling for an ambulance, \"I'm afraid it doesn't count unless you land the jump. Because you fell, you see, it's not official.\"</p><p>You laugh it off.</p><p>\"Well, I guess Robert Johannson's record is secure... for now!\"</p>",
+      },
       { name: "TROLLSTIGEN", article: "", description: "WIP" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
