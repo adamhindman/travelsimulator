@@ -1151,8 +1151,6 @@ export let globe = [
         description:
           "The birthplace of Serbian inventor Nikola Tesla. You wonder whether the brilliant engineer left anything behind him. Sure enough, you soon discover a massive complex of interconnected laboratories and vaults inside a nearby mountain. It contains thousands of unknown inventions, and you spend the rest of the afternoon playing a helmet that lets you talk to insects, and a piece of licorice that, when you chew it, you can walk through solid matter for a while.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -1200,8 +1198,6 @@ export let globe = [
         description:
           "A white, cabbage-like vegetable that was first grown in Cyprus, but is now in pretty much everything. Cauliflower pizza crust, cauliflower pasta, cauliflower rice, cauliflower ice cream, cauliflower raisins, cauliflower pepsi, cauliflower sausage, etc.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -1309,8 +1305,6 @@ export let globe = [
         article: "A",
         description: 'It says "Please no puns about our country\'s name."',
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -1380,8 +1374,6 @@ export let globe = [
         description:
           "You find this sword in the jungle. It is about four feet long, with a wide crossbar. Almost looks like a cross, weird! You notice that it is easier to raise than to lower.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -1397,8 +1389,6 @@ export let globe = [
         description:
           "You sit at the edge of the desert in Giza, staring at the Great Pyramid of Khufu rising almost 500 feet into the sky. You wonder how human beings could construct such an impressive structure using 4000 year old technology. Some people believe that advanced aliens helped the Pharoahs using their tractor beams. Sounds crazy, but is it true?</p><p>At last you determine to settle the question once and for all. You will rebuild the Great Pyramid, stone by stone, using nothing that the ancient Egyptians would not have had on hand: wooden cranes, rollers, ropes made of braided reeds.</p><p>You decide that the easiest way to do this is to disassemble the pyramid and rebuild it in place. Starting in the evening, after the last tourist has left, you painstakingly remove each limestone block and number it, so you'll know how to put it back exactly as it was.</p><p>It's not easy: each block that makes up the exterior surface weighs over two tons! Soon you find you're sweating, and have to pause to catch your breath.</p><p>At around 1:30 in the morning, you reach the halfway mark: the pyramid has been taken apart and neatly piled into stacks. It's a surreal and unbelievable sight not witnessed since 2600 BC.</p><p>You work throughout the night. As the full desert moon drops, and the rising sun begins to glow in the east, you fit each numbered block back into place. You're nervous about being discovered, but finally manage to straighten the granite slabs in the Pharoah's tomb just as the first bus load of visitors pulls into view. They begin snapping pictures and taking selfies, oblivious to your night's work. It's done, and nobody even noticed the difference!</p><p>In the end, you're satisfied that the ancient Egyptians could have built this mighty monument, but there's one thing you can't stop thinking about: in the basement of the pyramid, under a flimsy tarp, you found an alien spacecraft, covered with dust and sand.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -1856,8 +1846,6 @@ export let globe = [
         description:
           "A pre-historic flint spear tip, dug up by Mayan archaeologists (or possibly farmers), and assumed to represent a god who fell from the sky. This one represents the fire god Tohil, and throbs with an unearthly power.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -2139,7 +2127,6 @@ export let globe = [
         description:
           "A burial shroud which is either proof of the divinity of Jesus Christ, or a big fat hoax. Or an honest case of pareidolia. Or, something else completely. As you stare at the shapes imprinted on the cloth, you ask yourself which one you believe. You decide on that, and stick with it. You go get some gelato.",
       },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -2317,8 +2304,6 @@ export let globe = [
         description:
           "A species of pine tree, growing in the Eastern Mediterranean.</p><p>The Cedars of Lebanon are a symbol of paradise on earth, appearing over and over in the early literature of ancient civilizations. You can certainly see why.</p><p>Walking amongst the groves, munching on trail mix, you think about the footsteps you may be following: In the Old Testament, Moses used the bark of these trees as medicine. King Solomon used timbers from these cedars to build the Temple in Jerusalem.</p><p>Just as you finish your trail mix, you come upon a strange stone, which seems out of place here. It's the size of a microwave, and shaped like the head of a demon. Upon closer inspection, it's not stone at all, but very old, brittle bone. It's a massive skull!</p><p>You check your guidebook, and learn about the story of Humbaba, the legendary guardian of this very cedar forest in The Epic of Gilgamesh. Could this be Humbaba? If so, the skull has been sitting here since Gilgamesh chopped it off in 2700, BC. You snap a picture and post it on Instagram, and get over 30 likes.</p>",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -2455,7 +2440,7 @@ export let globe = [
         description:
           "A key ingredient in cinnamon rolls, cinnamon is the spicy bark of several species of trees. Until the middle ages, Europeans had no idea where cinnamon came from: they thought it might grow in the waters of the Nile. All they knew is that they loved it, wanted more of it, and were willing to find new routes to Asia to secure it.",
       },
-      // {name:"", article:"", description:""}
+      { name: "BAOBAB TREE", article: "A", description: "WIP" },
     ],
   },
   {
@@ -2545,7 +2530,6 @@ export let globe = [
         description:
           "A massive oil painting by Caravaggio, commissioned by the Knights of Malta.",
       },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -2585,8 +2569,6 @@ export let globe = [
         description:
           "Mauritius is the only island in the world where the funny, fightless bird known as the Dodo ever lived. The species was thought to have gone extinct in the 17th century, after they were all eaten by sailors. The tragedy of the Dodo flaw was that were unafraid of human beings.</p><p>You find a small population of living Dodo hiding in a lost valley in central Mauritius. These must be the last Dodos on earth! One walks right up to you and lets you pet its fluffy brown feathers. You see its long, bulbous beak and vestigial wings. It looks fat and walks with an awkward, humorous stiffness, like a penguin. It tastes like goose, but gamier, and a little oily. Not actually as delicious as you expected, but probably good enough for a starving sailor!",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -2859,11 +2841,12 @@ export let globe = [
     neighbors: ["Algeria", "Benin", "Burkina Faso", "Chad", "Libya", "Mali", "Nigeria"],
     description:
       "Niger is a land surrounded by sand and then a less noticeable rise of the Sahara desert. The inhabitants are some of the hardest people in Africa and survive here due to the harsh conditions and their services as pilgrims, warriors, and traders.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      { name: "URANIUM", article: "", description: "WIP" },
+      { name: "TREE OF TÉNÉRÉ", article: "", description: "WIP" },
+      { name: "SCIMITAR ORYX", article: "A", description: "WIP" },
+      { name: "OASIS OF TIMIA", article: "The", description: "WIP" },
+    ],
   },
   {
     area: "Nigeria",
@@ -2936,7 +2919,12 @@ export let globe = [
         description:
           "Holmenkollbakken is a ski jumping hill in Oslo, Norway.</p><p>Staring down the 400-foot long run of this artificial hill, you begin to have second thoughts about trying tobeat the course record. It's one thing to watch legendary athletes like Robert Johansson gracefully fly 144 meters through the air after launching themselves from Holmenkollbakken, but it's another thing to imagine yourself plunging down this steep slope and trying to land without breaking your neck.</p><p>\"What am I doing here?\" you ask yourself. \"I've never even been ski jumping before!\"</p><p>You begin to remove your 'skis', ready to admit that you don't have what it takes. There's plenty more to see and do in Norway.</p><p>Just then, you see a group of school children in the distance, at the bottom of the slope. They're staring up at you, cheering, urging you on. You can't let them down. You won't let them down.</p><p>Then you are flying down the slope. Your legs shake as the skis rattle, picking up speed. The wind is whipping through your hair.</p><p>The conditions aren't perfect — it's summer — but then again neither is your technique. Instead of standard alpine skis, you have two large water skis, like the kind you'd wear on a lake, strapped to your feet. You are wearing street clothes: jeans, and a t-shirt, and a hat that immediately blew off as soon as you started sliding down this precipitous, dangerous ramp.</p><p>There's a moment of panic when you reach the end of the ramp, but as you soar through the air, it turns to exhilaration. You can see so far from up here! There is a feeling of freedom, too. Is this what it's like to be a bird?</p><p>When you hit the ground, which is just grass and dirt, your skies fly off, and you roll head over heels down the mountain, coming to rest on a car. The school children help you to your feet.</p><p>Together, you find the spot where you landed, and measure it: 145 meters, a new record!</p><p>\"But,\" says the childrens' elementary school teacher, while calling for an ambulance, \"I'm afraid it doesn't count unless you land the jump. Because you fell, you see, it's not official.\"</p><p>You laugh it off.</p><p>\"Well, I guess Robert Johannson's record is secure... for now!\"</p>",
       },
-      { name: "TROLLSTIGEN", article: "", description: "WIP" },
+      {
+        name: "TROLLSTIGEN",
+        article: "",
+        description:
+          'A very steep, winding mountain road in Norway. You spend an afternoon driving sports cars up and down it, performing e-brake turns around switchbacks, like in one of those spy movies.</p><p>At the bottom of the hill, drinking a martini at a bar, you are approached by a British man with a public school accent and steely eyes, which he fixes on you with confident menace.</p><p>"Nice driving," he says, "who do you work for?"</p><p>You tell him you don\'t work at all, because you\'re on vacation.</p><p>You spend the evening chatting about your travels. You get the feeling he\'s pretty lonely.</p>',
+      },
     ],
   },
   {
@@ -3020,7 +3008,6 @@ export let globe = [
         description:
           "The Panama Canal is a ship canal that serves as the only sea route between the North Atlantic Ocean and the Pacific Ocean via the Caribbean Sea",
       },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3036,8 +3023,6 @@ export let globe = [
         description:
           "This cute little fellow looks like a pokemon. He is one of the last of the tree kangaroos of Papua New Guinea. He explains that 80% of his species was lost in just ten years, due to deforestation.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3150,11 +3135,11 @@ export let globe = [
     ],
     description:
       "Republic of Congo shares its western border with Cameroon and its southern one with Gabon. The capital city is Brazzaville along the Congo River. The economy has historically been based on resource extraction, but has been dabbling in manufacturing recently. Gorillas, elephants, zebras, rhinocerous, and so many other animals live here.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "MBULU NGULU RELIQUARY FIGURE", article: "A", description: "WIP" },
+      { name: "NABEMBA TOWER", article: "", description: "WIP" },
+      { name: "LIVINGSTONE FALLS", article: "", description: "WIP" },
+    ],
   },
   {
     area: "Romania",
@@ -3169,8 +3154,6 @@ export let globe = [
         description:
           "A large, comfortable looking coffin, which you found sitting on a black stone plinth in a ruined chapel in the Transylvanian woods. Opening the lid, you see an old man in a cape.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3340,8 +3323,6 @@ export let globe = [
         description:
           "Miles and miles of sand dunes, desert plains, and dry lake beds. Other than the occasional oasis, there aren't many plants to see here, which is too bad because there's plenty of space for them.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3373,11 +3354,11 @@ export let globe = [
     ],
     description:
       "Senegal is a country located in West Africa along the Cape Verde Peninsula. Senegal is bordered by Mauritania to the north, Mali to the east, Guinea to the southeast, and Guinea-Bissau to the southwest. The country is on the west coast of Africa and includes Gambia and Cape Verde.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "AFRICAN RENAISSANCE MONUMENT", article: "The", description: "WIP" },
+      { name: "SAHEL", article: "The", description: "WIP" },
+      { name: "GREAT MOSQUE OF TOUBA", article: "The", description: "WIP" },
+    ],
   },
   {
     area: "Serbia",
@@ -3499,11 +3480,11 @@ export let globe = [
     neighbors: ["Djibouti", "Ethiopia", "Indian Ocean", "Kenya"],
     description:
       "Somalia is a country located in the Horn of Africa. At around 800,000 square kilometers, most of the country lies on the Horn of Africa, bordering the Gulf of Aden in the north, the Indian Ocean in the east, and Ethiopia and Djibouti in the southeast. On the north-west lies Somaliland, a self-declared state that Somalia disputes. Somalia has an equatorial climate.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "HORN OF AFRICA", article: "The", description: "WIP" },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "South Africa",
@@ -3563,11 +3544,11 @@ export let globe = [
     ],
     description:
       "South Sudan is the youngest of the 52 states of independent Africa. Having gained its independence from Sudan in 2011, it is the youngest country in the world. South Sudan mostly has swampland and some semi-arid plains. There is very little arable land or water sources with population growth far outstripping its resources. Climatically, it is tropical all year round with frequent rains and high temperatures in the lowlands and swampy northeast; sparing the capital, Juba, in the north. South sudan is struggling to develop a viable economy and has little in the way of resources to support its people.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "SUDD", article: "The", description: "WIP" },
+      { name: "", article: "", description: "" },
+      { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Spain",
@@ -3589,8 +3570,6 @@ export let globe = [
         description:
           "A stark, 40-meter wide gap in the Pyrenees mountains, between France and Spain. Legend has it that Roland, Charlemagne's greatest knight, tried to dull the blade of his invulnerable sword Durendel by cutting a hole in a mountain.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3880,7 +3859,6 @@ export let globe = [
         description:
           "Everybody knows that Tonga has 169 islands, of which 36 are inhabited. But, after counting twice just to make sure, you believe you've discovered a new one while paddling your outrigger canoe one day.</p><p>Thrilled at the new discovery, you make your way around the island, mapping it in exact detail using your portable surveying equipment. What should you call it? Coolsylvania?</p><p>The island turns out to be about two miles long, elliptical in shape, and almost perfectly symmetrical. In profile, it's got a single hill, smoothly and gently rising at either end, with no trees or other discernable features.</p><p>The geological composition appears to be mainly tortoise shell.</p><p>Presently, a giant, beaked head lifts out of the water. It seems to be chewing on a bed of seaweed with pleasure. You realize you've committed the classic mistake of thinking a colossal sea turtle is an island, and trying to add it to Google Maps.</p><p>Slowly, the friendly behemoth turns to regard you with one massive eye. It's like being stared at by Epcot Center.</p><p>This creature is ancient, powerful, and wise, but seems not particularly interested in you. After a few minutes it lowers itself into the sea, and disappears.",
       },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -3898,7 +3876,7 @@ export let globe = [
   {
     area: "Tunisia",
     type: "country",
-    neighbors: ["Algeria", "Libya"],
+    neighbors: ["Algeria", "Libya", "Atlantic Ocean"],
     description:
       "You may find it interesting to know that Tunisia, part of the Maghreb region, is the northernmost country in Africa. It is bordered by Algeria to the west, Libya to the southeast, and the Mediterranean Sea to the north. It contains the eastern end of the Atlas Mountains and the northern reaches of the Sahara desert, with much of its remaining territory arable land. Tunisia is home to Africa's northernmost point, Cape Angela. Its capital and largest city is Tunis, located on its northeastern coast, which lends the country its name.",
     objects: [
@@ -3967,7 +3945,6 @@ export let globe = [
         description:
           "Also known as the Darvaza Gas Crater, this is a 230-foot diameter opening in the earth, from which pours an unending sheet of smoke, flames, and pyroclastic mud. No one knows how the fire started, but it has been burning continuously for about fifty years, and was probably set by Russian geologists. The question is: why?",
       },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -4220,8 +4197,6 @@ export let globe = [
         description:
           "A port city in Yemen, famous for shipping coffee beans around the world.",
       },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
     ],
   },
   {
@@ -4273,7 +4248,6 @@ export let globe = [
         description:
           "The only member of the genus Terathopius is a beautiful predator with a bright orange beak and striped wings, like a nylon jacket. This bird is funky!",
       },
-      // { name: "", article: "", description: "" },
     ],
   },
 ];
