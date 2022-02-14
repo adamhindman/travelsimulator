@@ -2440,7 +2440,12 @@ export let globe = [
         description:
           "A key ingredient in cinnamon rolls, cinnamon is the spicy bark of several species of trees. Until the middle ages, Europeans had no idea where cinnamon came from: they thought it might grow in the waters of the Nile. All they knew is that they loved it, wanted more of it, and were willing to find new routes to Asia to secure it.",
       },
-      { name: "BAOBAB TREE", article: "A", description: "WIP" },
+      {
+        name: "BAOBAB TREE",
+        article: "A",
+        description:
+          "Flipping through your guide to the trees of Madagascar, you discover that the large, bulbous one you've discovered while walking through the wilderness is called a Baobab. The lumpy, distended trunk stores thousands of gallons of water, like a reservoir.</p><p>As you're looking at the tree, a large fruit from the baobab falls onto your head. Ouch!</p><p>You cut it open and eat the pith: it tastes sweet and creamy, like sherbet.</p>",
+      },
     ],
   },
   {
@@ -2842,7 +2847,12 @@ export let globe = [
     description:
       "Niger is a land surrounded by sand and then a less noticeable rise of the Sahara desert. The inhabitants are some of the hardest people in Africa and survive here due to the harsh conditions and their services as pilgrims, warriors, and traders.",
     objects: [
-      { name: "URANIUM", article: "", description: "WIP" },
+      {
+        name: "URANIUM",
+        article: "",
+        description:
+          "A lump of silvery-grey metal, oxidized to a gunmetal color. Doesn't look like much, and it's surprisingly heavy. Niger is full of the stuff, though increasingly less so, as mining it is the country's main source of income.</p><p>You tour a uranium mining plant and refinery, and talk to the head scientist there. He tells you that you're holding a chunk of uranium-238 ore, which contains a little bit of uranium-235. That's the one that has all the energy in it.</p>You ask him whether the ore is safe to hold. He tells you it's safe as long as you stop trying to put it in your mouth. You ask him whether, if you dropped the uranium, it would become a nuclear bomb. He tells you no, but it would probably hurt if it hit your foot. You ask him how many pounds of U-235 they sold to North Korea last year, and he starts to answer, catches himself, and says \"nice try\".</p>",
+      },
       { name: "TREE OF TÉNÉRÉ", article: "", description: "WIP" },
       { name: "SCIMITAR ORYX", article: "A", description: "WIP" },
       { name: "OASIS OF TIMIA", article: "The", description: "WIP" },
@@ -3546,8 +3556,8 @@ export let globe = [
       "South Sudan is the youngest of the 52 states of independent Africa. Having gained its independence from Sudan in 2011, it is the youngest country in the world. South Sudan mostly has swampland and some semi-arid plains. There is very little arable land or water sources with population growth far outstripping its resources. Climatically, it is tropical all year round with frequent rains and high temperatures in the lowlands and swampy northeast; sparing the capital, Juba, in the north. South sudan is struggling to develop a viable economy and has little in the way of resources to support its people.",
     objects: [
       { name: "SUDD", article: "The", description: "WIP" },
-      { name: "", article: "", description: "" },
-      { name: "", article: "", description: "" },
+      { name: "BANDINGILO NATIONAL PARK", article: "", description: "WIP" },
+      { name: "GONDOKORO", article: "", description: "WIP" },
     ],
   },
   {
