@@ -2853,9 +2853,14 @@ export let globe = [
         description:
           "A lump of silvery-grey metal, oxidized to a gunmetal color. Doesn't look like much, and it's surprisingly heavy. Niger is full of the stuff, though increasingly less so, as mining it is the country's main source of income.</p><p>You tour a uranium mining plant and refinery, and talk to the head scientist there. He tells you that you're holding a chunk of uranium-238 ore, which contains a little bit of uranium-235. That's the one that has all the energy in it.</p>You ask him whether the ore is safe to hold. He tells you it's safe as long as you stop trying to put it in your mouth. You ask him whether, if you dropped the uranium, it would become a nuclear bomb. He tells you no, but it would probably hurt if it hit your foot. You ask him how many pounds of U-235 they sold to North Korea last year, and he starts to answer, catches himself, and says \"nice try\".</p>",
       },
-      { name: "TREE OF TÉNÉRÉ", article: "", description: "WIP" },
-      { name: "SCIMITAR ORYX", article: "A", description: "WIP" },
-      { name: "OASIS OF TIMIA", article: "The", description: "WIP" },
+      {
+        name: "TREE OF TÉNÉRÉ",
+        article: "The",
+        description:
+          "For many decades, this single tree standing alone in the middle of the Sahara desert was a landmark to traveling caravans. Unfortunately, in the 1970s, a truck driver ran into it by accident, and killed it. The dead tree was hauled away to Niamey, where you can still view it today, and a commemorative metal sculpture was erected on the original site.</p>Inspired by this story, you decide to make a sort of pilgrimage into the Sahara to view the sculpture, and drive for hours before accidentally running into it and knocking it down.</p><p>Panicking, you attempt to set the sculpture back up, but it teeters over onto your truck. A fire sparks, and spreads to the truck's gas tank, igniting it in a massive fireball.</p>Weeks later, you crawl out of the Sahara, starving and dehydrated, and very pleased to have become a part of the history of the legendary Tree of Ténéré!</p>",
+      },
+      // { name: "SCIMITAR ORYX", article: "A", description: "WIP" },
+      // { name: "OASIS OF TIMIA", article: "The", description: "WIP" },
     ],
   },
   {
@@ -2944,9 +2949,18 @@ export let globe = [
     description:
       "Oman, officially the Sultanate of Oman, is an Arab country on the southeastern coast of the Arabian Peninsula in Western Asia. Oman is bordered by the United Arab Emirates (UAE) to the northwest, Saudi Arabia to the west, and Yemen to the southwest. Oman is an absolute monarchy ruled by Sultan Qaboos bin Said al Said. It has a population of about 2 million people, and an area of just over 300,000 square kilometers. The Omanis have a close friendship with and respect for snakes.",
     objects: [
-      { name: "BLIND CAVE FISH", article: "A", description: "WIP" },
-      { name: "LAND OF FRANKINCENSE", article: "The", description: "WIP" },
-      { name: "KITE-SAILING", article: "", description: "" },
+      {
+        name: "LAND OF FRANKINCENSE",
+        article: "The",
+        description:
+          "You visit this desert area near the mouth of Wādī Darbāt, and take in the sights.</p><p>The frankincense trees are a'blooming, dropping fat nuggets of aromatic resin, which you heat up in a bowl over a candle. Man, it smells good!</p>",
+      },
+      {
+        name: "KITESURFING",
+        article: "",
+        description:
+          "You go kitesurfing off the coast of Muscat. The sea breeze and warm sun makes for perfect conditions.</p><p>As the power kite billows and fills with wind, you are pulled through the lapping waves. You do a flip, and then another flip. You surf on one leg, and do a 360 turn, passing the handle of the rope behind your back.</p><p>On shore, a crowd has begun to gather, watching you do kitesurfing tricks. They thrill with each new trick, and soon they are chanting your name.</p><p>As you do your final trick, a triple backwards flip, you look back to shore and see the Sultan of Oman giving you a thumbs up.</p>",
+      },
     ],
   },
   {
