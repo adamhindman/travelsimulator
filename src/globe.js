@@ -1611,7 +1611,7 @@ export let globe = [
       "Republic of the Congo",
     ],
     description:
-      "Gabon, which is on the west coast of Central Africa, has an area of nearly 140,000 square miles. The capital city is Libreville and the country has a population of about two million. Gabon is especially well-known for its forest regions that are home to a variety of wildlife, and for its magnificent national parks (especially the Ogooué-Lolo special reserve).",
+      "Gabon, which is on the west coast of Central Africa, has an area of nearly 140,000 square miles. The capital city is Libreville and the country has a population of about two million. Gabon is especially well-known for its forest regions that are home to a variety of wildlife, and for its magnificent national parks.",
     objects: [
       {
         name: "ATANGA",
@@ -1624,6 +1624,12 @@ export let globe = [
         article: "",
         description:
           'You find a skeleton on the ocean floor, dressed in a crimson waistcoat, with a brace of pistols hanging from his shoulders. This must be what remains of the notorious pirate "Black" Bartholomew Roberts, terror of the Caribbean trading fleet in the early 1700s. He died in a ship battle off the coast of Cape Lopez, near Gabon, and his body was thrown overboard rather than become a trophy for his enemies. Around his neck, you find an ancient medallion throbbing with unearthly power.',
+      },
+      {
+        name: "MBULU NGULU RELIQUARY FIGURE",
+        article: "A",
+        description:
+          'A highly abstract depiction of a human head and bust, made by Kota artisans as a decoration for reliquary baskets. You find this one in an old trunk while snooping around in someone\'s basement. It is in almost perfect condition, made of strips of copper, brass, and iron, preserved with a light coat of oil, and wrapped in cotton.</p>"It\'s beautiful," you say, admiring it in the beam of your small penlight.</p><p>The door to the basement opens, and a gruff voice comes from the top of the stairs, speaking iKota.</p>"Who\'s there? A rat?"</p><p>You make a squeaking sound, and scrape your fingers around on the floor. After a minute, you hear a grunt, and the door closes again. That was close!</p>',
       },
     ],
   },
@@ -2859,7 +2865,6 @@ export let globe = [
         description:
           "For many decades, this single tree standing alone in the middle of the Sahara desert was a landmark to traveling caravans. Unfortunately, in the 1970s, a truck driver ran into it by accident, and killed it. The dead tree was hauled away to Niamey, where you can still view it today, and a commemorative metal sculpture was erected on the original site.</p>Inspired by this story, you decide to make a sort of pilgrimage into the Sahara to view the sculpture, and drive for hours before accidentally running into it and knocking it down.</p><p>Panicking, you attempt to set the sculpture back up, but it teeters over onto your truck. A fire sparks, and spreads to the truck's gas tank, igniting it in a massive fireball.</p>Weeks later, you crawl out of the Sahara, starving and dehydrated, and very pleased to have become a part of the history of the legendary Tree of Ténéré!</p>",
       },
-      // { name: "SCIMITAR ORYX", article: "A", description: "WIP" },
       // { name: "OASIS OF TIMIA", article: "The", description: "WIP" },
     ],
   },
@@ -3160,7 +3165,6 @@ export let globe = [
     description:
       "Republic of Congo shares its western border with Cameroon and its southern one with Gabon. The capital city is Brazzaville along the Congo River. The economy has historically been based on resource extraction, but has been dabbling in manufacturing recently. Gorillas, elephants, zebras, rhinocerous, and so many other animals live here.",
     objects: [
-      { name: "MBULU NGULU RELIQUARY FIGURE", article: "A", description: "WIP" },
       { name: "NABEMBA TOWER", article: "", description: "WIP" },
       { name: "LIVINGSTONE FALLS", article: "", description: "WIP" },
     ],
