@@ -3165,8 +3165,12 @@ export let globe = [
     description:
       "Republic of Congo shares its western border with Cameroon and its southern one with Gabon. The capital city is Brazzaville along the Congo River. The economy has historically been based on resource extraction, but has been dabbling in manufacturing recently. Gorillas, elephants, zebras, rhinocerous, and so many other animals live here.",
     objects: [
-      { name: "NABEMBA TOWER", article: "", description: "WIP" },
-      { name: "LIVINGSTONE FALLS", article: "", description: "WIP" },
+      {
+        name: "NABEMBA TOWER",
+        article: "",
+        description:
+          "You ride the elevator to the 30th floor of this tower, the tallest in Brazzaville. The view from the top of the building is spectacular: you can see the whole city. Looking east, you can see Kinshasa on the other side of the river, like a mirror image in a country with a very similar name.</p>",
+      },
     ],
   },
   {
