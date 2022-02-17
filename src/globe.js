@@ -3387,8 +3387,18 @@ export let globe = [
     description:
       "Senegal is a country located in West Africa along the Cape Verde Peninsula. Senegal is bordered by Mauritania to the north, Mali to the east, Guinea to the southeast, and Guinea-Bissau to the southwest. The country is on the west coast of Africa and includes Gambia and Cape Verde.",
     objects: [
-      { name: "AFRICAN RENAISSANCE MONUMENT", article: "The", description: "WIP" },
-      { name: "SAHEL", article: "The", description: "WIP" },
+      {
+        name: "AFRICAN RENAISSANCE MONUMENT",
+        article: "The",
+        description:
+          "<p>Outside of Dakar stands the tallest statue in Africa. It depicts a 160-foot tall family: a wife, husband, and child. They are made of bronze, and face west. The child is pointing out to sea, as though to indicate that Godzilla is attacking, and that the super family must be ready to protect Senegal.</p>You don't know the complete lore behind the statue, but presumably the mother can fly, the father has super strength, and the baby can project energy from its eyes, hands, or both. Or, maybe the baby is super intelligent. Imagine that: a genius baby! This is a great statue, and it will be interesting to learn more about it.</p>",
+      },
+      {
+        name: "SAHEL",
+        article: "The",
+        description:
+          "<p>The Sahel is the transitional area between the Saharan desert to the north, and the southern Africa savannahs. It is a strip of land a thousand kilometers wide, and 4000 kilometers long. You can't resist a little side trip to explore it.</p><p>So, with a bindle over your shoulder, you start your journey in Senegal, at the western edge of the Sahel, and travel east, toward the Red Sea.</p><p>Over the next few months, you meet many interesting people, and have countless adventures: you see eagles, and are hunted by wild dogs. You befriend a cheetah mom and her goofy cubs. Your camp is washed away in a flash flood. You foil some poachers, and stage Fiddler on the Roof with a group of nomadic herdsmen (you play Tevye). You stumble into a cave of dinosaurs. You get hopelessly lost in a sandstorm. You find some Air Jordans sitting on a rock. You temporarily go insane, and have to find a magic flower to cure yourself. You break your leg. You meet a famous writer. You help Interpol solve a mystery. You stare down a lion to establish dominance over the pride.</p><p>Finally, looking west at the sun setting over the Atlantic, you realize you got lost in that sandstorm and have wandered back to Senegal by accident.</p><p>Oh well, you think, someday you'll return and try it again. And after all, it's not the destination, it's the journey that really matters.",
+      },
       { name: "GREAT MOSQUE OF TOUBA", article: "The", description: "WIP" },
     ],
   },
