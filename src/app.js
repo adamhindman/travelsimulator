@@ -119,7 +119,7 @@ const getDisplay = (val, msg, area, showLoc) => {
 const handleCheckPassport = () => {
   let msg = '<div class="passport">You\'ve visited ';
   if(isArray(localStorage.getItem("visited"))){
-    const visited = JSON.parse(localStorage.getItem("visited"))
+    const visited = JSON.parse(localStorage.getItem("visited")).sort()
     msg += `${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`
     msg += visited.reduce( (result, current, i) => {
       if (visited.length === 1) {
@@ -131,6 +131,7 @@ const handleCheckPassport = () => {
       }
     },"")
   }
+  // might be nice to alphabetize the passport list.
   return `${msg}</p></div>`
 }
 

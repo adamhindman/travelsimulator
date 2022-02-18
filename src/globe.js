@@ -3587,7 +3587,12 @@ export let globe = [
     description:
       "South Sudan is the youngest of the 52 states of independent Africa. Having gained its independence from Sudan in 2011, it is the youngest country in the world. South Sudan mostly has swampland and some semi-arid plains. There is very little arable land or water sources with population growth far outstripping its resources. Climatically, it is tropical all year round with frequent rains and high temperatures in the lowlands and swampy northeast; sparing the capital, Juba, in the north. South sudan is struggling to develop a viable economy and has little in the way of resources to support its people.",
     objects: [
-      { name: "SUDD", article: "The", description: "WIP" },
+      {
+        name: "SUDD",
+        article: "The",
+        description:
+          "<p>You are standing on a floating island in the middle of this enormous swamp. Surrounding you are twelve thousand square miles of muddy water, filled by the white nile. It is inhabited by cranes, crocodiles, hippopotamuses, and antelopes. </p>Your guidebook is soaked from when you stepped into a deep spot earlier. In your backpack are two energy bars, a liter of water, and a stuffed toy of an anthropomorphic dancing banana wearing sunglasses. There probably isn't another human being around for fifty miles.</p><p>The next day, your food and water are gone, your clothes are in tatters, and the stuffed banana has run out of batteries. You climb the tallest tree you can find, and look out over the swamp for some feature, some sign of civilization. There is nothing in sight but miles and miles of low vegetation and marsh grasses, broken up by patches of open water. There are no lights on the horizon, and no path out of this green hell.</p><p>Three weeks later, some wildlife photographers find you. You are sitting next to a fire, roasting hippo meat over a spit. You invite them into your shelter for some tea in wooden cups. You're glad you carved these extras cups.</p><p>The photographers are writing a story about the Sudd for the National Geographic. They offer to take you back to Juba. They ask about your story, so you tell them how you came to be lost, and how you survived despite overwhelming odds and a nearly overwhelming amount of crocodile attacks. They express astonishment when you show them some of the crocodile skulls.</p><p>Before leading you back to civilization, you ask them for a favor. They give you a set of AA batteries from their supplies, and you all sit by the fire and listen to the dancing banana sing \"slip-slidin' away\".",
+      },
       { name: "BANDINGILO NATIONAL PARK", article: "", description: "WIP" },
       { name: "GONDOKORO", article: "", description: "WIP" },
     ],
