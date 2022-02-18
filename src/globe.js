@@ -3523,9 +3523,9 @@ export let globe = [
     description:
       "Somalia is a country located in the Horn of Africa. At around 800,000 square kilometers, most of the country lies on the Horn of Africa, bordering the Gulf of Aden in the north, the Indian Ocean in the east, and Ethiopia and Djibouti in the southeast. On the north-west lies Somaliland, a self-declared state that Somalia disputes. Somalia has an equatorial climate.",
     objects: [
-      { name: "HORN OF AFRICA", article: "The", description: "WIP" },
-      // { name: "", article: "", description: "" },
-      // { name: "", article: "", description: "" },
+      { name: "SOMALILAND", article: "", description: "WIP" },
+      { name: "CITADEL OF GONDERSHE", article: "The", description: "WIP" },
+      { name: "XAMAR", article: "", description: "WIP" },
     ],
   },
   {

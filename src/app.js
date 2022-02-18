@@ -5,6 +5,7 @@ import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inv
 
 console.clear();
 
+// uh oh
 // everything breaks if localstorage is turned off
 let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "united States";
 
@@ -116,9 +117,10 @@ const getDisplay = (val, msg, area, showLoc) => {
 };
 
 const handleCheckPassport = () => {
-  let msg = '<div class="passport">Your passport has stamps for:<p>';
+  let msg = '<div class="passport">You\'ve visited ';
   if(isArray(localStorage.getItem("visited"))){
     const visited = JSON.parse(localStorage.getItem("visited"))
+    msg += `${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`
     msg += visited.reduce( (result, current, i) => {
       if (visited.length === 1) {
         return result + `${capitalize(current)}.`
@@ -131,6 +133,7 @@ const handleCheckPassport = () => {
   }
   return `${msg}</p></div>`
 }
+
 
 const handleGo = (noun, neighbors) => {
   if (neighbors.includes(noun)) {
