@@ -24,3 +24,13 @@ export const uppercase = str => str.toUpperCase();
 export const arrayToLowerCase = arr => arr.map(i => i.toLowerCase());
 
 export const isArray = arr => !(arr === undefined || arr.length == 0);
+
+export const inArray = (item, arr) => {
+  let isInArray = false;
+  if (isArray(arr)) {
+    if (arr.indexOf(item) !== -1) {
+      isInArray = true;
+    }
+  }
+  return isInArray;
+};

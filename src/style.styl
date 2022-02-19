@@ -135,7 +135,15 @@ ul.asterisk
   p
     margin initial
     margin-top 1rem;
-  
+  .visited
+    opacity 1
+  .not-visited
+    opacity .5
+  span
+    &:after
+      content ", "
+    &:last-of-type:after
+      content ""
 .pic
   background-size cover
   background-repeat no-repeat

@@ -1,5 +1,5 @@
 import { globe } from "./globe.js";
-import { capitalize, arrayToLowerCase, isArray } from "./utilities.js";
+import { capitalize, arrayToLowerCase, isArray, inArray } from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
@@ -7,7 +7,7 @@ console.clear();
 
 // uh oh
 // everything breaks if localstorage is turned off
-let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "united States";
+let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "united states";
 
 export const submitBtn = document.getElementById("submit");
 export const promptField = document.getElementById("prompt");
@@ -116,10 +116,11 @@ const getDisplay = (val, msg, area, showLoc) => {
   return display;
 };
 
+/*
 const handleCheckPassport = () => {
   let msg = '<div class="passport">You\'ve visited ';
   if(isArray(localStorage.getItem("visited"))){
-    const visited = JSON.parse(localStorage.getItem("visited")).sort()
+    const visited = JSON.parse(localStorage.getItem("visited")).sort() //alphabetize
     msg += `${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`
     msg += visited.reduce( (result, current, i) => {
       if (visited.length === 1) {
@@ -131,8 +132,25 @@ const handleCheckPassport = () => {
       }
     },"")
   }
-  // might be nice to alphabetize the passport list.
   return `${msg}</p></div>`
+}
+*/
+
+const handleCheckPassport = () => {
+  let msg = '<div class="passport">You\'ve visited ';
+  let visited = ["Nowhere"]
+  if(isArray(localStorage.getItem("visited"))) {
+    visited = JSON.parse(localStorage.getItem("visited"))
+  }
+  msg += `${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`
+  msg += allAreas.reduce( (result, current, i) => {
+    if (inArray(current.toLowerCase(), visited)){
+      return result + `<span class="visited">${capitalize(current)}</span>`      
+    } else {
+      return result + `<span class="not-visited">${capitalize(current)}</span>`      
+    }
+  }, "")
+  return `${msg}</p></div>`  
 }
 
 
