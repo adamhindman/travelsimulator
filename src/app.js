@@ -116,26 +116,6 @@ const getDisplay = (val, msg, area, showLoc) => {
   return display;
 };
 
-/*
-const handleCheckPassport = () => {
-  let msg = '<div class="passport">You\'ve visited ';
-  if(isArray(localStorage.getItem("visited"))){
-    const visited = JSON.parse(localStorage.getItem("visited")).sort() //alphabetize
-    msg += `${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`
-    msg += visited.reduce( (result, current, i) => {
-      if (visited.length === 1) {
-        return result + `${capitalize(current)}.`
-      } else if (i < visited.length -1){
-        return result + `${capitalize(current)}, `
-      } else {
-        return result + `& ${capitalize(current)}.`
-      }
-    },"")
-  }
-  return `${msg}</p></div>`
-}
-*/
-
 const handleCheckPassport = () => {
   let msg = '<div class="passport">You\'ve visited ';
   let visited = ["Nowhere"]

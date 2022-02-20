@@ -772,7 +772,7 @@ export let globe = [
   {
     area: "Brunei",
     type: "country",
-    neighbors: ["Pacific Ocean"],
+    neighbors: ["Malaysia", "Pacific Ocean"],
     description:
       "Brunei Darussalam is a small monarchy located on the northern coast of the island of Borneo. Oil and gas reserves have made this country wealthy: everyone is wearing a top hat and monocle, and being chauffered around in a golden car.",
     objects: [
@@ -3399,7 +3399,12 @@ export let globe = [
         description:
           "<p>The Sahel is the transitional area between the Saharan desert to the north, and the southern Africa savannahs. It is a strip of land 1000 kilometers wide, and 4000 kilometers long. You can't resist a little side trip to explore it.</p><p>So, with a bindle over your shoulder, you start your journey in Senegal, at the western edge of the Sahel, and travel east, toward the Red Sea.</p><p>Over the next few months, you meet many interesting people, and have countless adventures: you see eagles, and are hunted by wild dogs. You befriend a cheetah mom and her goofy cubs. Your camp is washed away in a flash flood. You foil some poachers, and stage Fiddler on the Roof with a group of nomadic herdsmen (you play Tevye). You stumble into a cave of dinosaurs. You get hopelessly lost in a sandstorm. You find some Air Jordans sitting on a rock. You temporarily go insane, and have to find a magic flower to cure yourself. You break your leg. You meet a famous writer. You help the police solve a mystery. You stare down a lion to establish dominance over the pride.</p><p>Finally, looking west at the sun setting over the Atlantic, you realize you got lost in that sandstorm and have wandered back to Senegal by accident.</p><p>Oh well, you think, someday you'll return and try it again. And after all, it's not the destination, it's the journey that really matters.",
       },
-      { name: "GREAT MOSQUE OF TOUBA", article: "The", description: "WIP" },
+      {
+        name: "TOUBA",
+        article: "",
+        description:
+          'The holy city of Touba is a wonderful example of Muslim architecture: you visit the Great Mosque, with its airy corridors of elegant, arched columns, its shining approach, and its stunning, 285-foot tall minaret.</p><p>After being asked to leave the Mosque, you move to the famous Library of Touba, which is the home of 160,000 volumes dedicated to Islamic teachings.</p><p>You approach a librarian, and ask whether they have a copy of the Quran.</p><p>The librarian blinks three times, without changing expression.</p><p>"We have 30,000 copies of the Quran in our library," the librarian says.</p><p>You ask to see the \'best\' copy they have, and are led into a special collections archive, where the librarian shows you numerous editions, some many hundreds of years old. They are beautiful. You ask how many copies you can check out, and the librarian explains that it is not a lending library.</p><p>"I see," you say. "Do you have a Xerox machine?"</p><p>After leaving the library, you return to your hotel and have a delicious meal, then spend several hours reading the Quran in the bathtub.',
+      },
     ],
   },
   {
@@ -3523,8 +3528,17 @@ export let globe = [
     description:
       "Somalia is a country located in the Horn of Africa. At around 800,000 square kilometers, most of the country lies on the Horn of Africa, bordering the Gulf of Aden in the north, the Indian Ocean in the east, and Ethiopia and Djibouti in the southeast. On the north-west lies Somaliland, a self-declared state that Somalia disputes. Somalia has an equatorial climate.",
     objects: [
-      { name: "SOMALILAND", article: "", description: "WIP" },
-      { name: "CITADEL OF GONDERSHE", article: "The", description: "WIP" },
+      {
+        name: "SOMALILAND",
+        article: "",
+        description:
+          "A breakaway republic with excellent caves and a thriving nomadic culture. You have a great time touring the city of Hargeisa without talking too much about politics.",
+      },
+      {
+        name: "CITADEL OF GONDERSHE",
+        article: "The",
+        description: "A medieval Somali castle overlooking the ocean.",
+      },
       { name: "XAMAR", article: "", description: "WIP" },
     ],
   },
@@ -3593,8 +3607,12 @@ export let globe = [
         description:
           "<p>You are standing on a floating island in the middle of this enormous swamp. Surrounding you are twelve thousand square miles of muddy water, filled by the white nile. It is inhabited by cranes, crocodiles, hippopotamuses, and antelopes. </p>Your guidebook is soaked from when you stepped into a deep spot earlier. In your backpack are two energy bars, a liter of water, and a stuffed toy of an anthropomorphic dancing banana wearing sunglasses. There probably isn't another human being around for fifty miles.</p><p>The next day, your food and water are gone, your clothes are in tatters, and the stuffed banana has run out of batteries. You climb the tallest tree you can find, and look out over the swamp for some feature, some sign of civilization. There is nothing in sight but miles and miles of low vegetation and marsh grasses, broken up by patches of open water. There are no lights on the horizon, and no path out of this green hell.</p><p>Three weeks later, some wildlife photographers find you. You are sitting next to a fire, roasting hippo meat over a spit. You invite them into your shelter for some tea in wooden cups. You're glad you carved these extras cups.</p><p>The photographers are writing a story about the Sudd for the National Geographic. They offer to take you back to Juba. They ask about your story, so you tell them how you came to be lost, and how you survived despite overwhelming odds and a nearly overwhelming amount of crocodile attacks. They express astonishment when you show them some of the crocodile skulls.</p><p>Before leading you back to civilization, you ask them for a favor. They give you a set of AA batteries from their supplies, and you all sit by the fire and listen to the dancing banana sing \"slip-slidin' away\".",
       },
-      { name: "BANDINGILO NATIONAL PARK", article: "", description: "WIP" },
-      { name: "GONDOKORO", article: "", description: "WIP" },
+      {
+        name: "GONDOKORO",
+        article: "",
+        description:
+          'Just above an impassable stretch of the Nile, Gondokoro island was the last stop for traders before the overland leg of their journey south to Uganda. In the 19th century, it was a meeting place not only for traders, but explorers, and visiting presidents like Teddy Roosevelt. While wandering through the forest on the island, you find a pair of old, wire-rimmed spectacles and put them on: could these have belonged to T.R. himself?</p><p>The moment you put on the spectacles, you immediately feel incredibly hale and strong, and are possessed with an unquenchable zeal for manly adventure.</p><p>Straightaway, you carve a canoe out of a tree, and set out along the river to test yourself on the rapids. Still wearing the glasses, you plunge into the frothing, angry whitewater, steering through it with powerful strokes of your hand-carved paddle. At last you emerge into a stretch of deep, calm water.</p><p>"Bully!" you laugh, "Bully indeed!"</p><p>When you return to Gondokoro island, you mention your journey to the hotelier there, showing him the glasses you found. He is astonished.</p><p>"Why, those aren\'t Teddy Roosevelt\'s glasses! I bought them from Lenscrafters last year. I thought they were lost for good!"</p><p>You realize that it wasn\'t the spirit of Teddy Roosevelt that had given you the courage to conquer the Nile. It was just you all along.</p><p>Suddenly, you understand that it\'s safe to do extremely dangerous, even irresponsible acts without any precautions whatsoever, as long as you have self-confidence. A valuable lesson you will carry with you for the rest of your life.</p>',
+      },
     ],
   },
   {
