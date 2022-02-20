@@ -1296,7 +1296,7 @@ export let globe = [
   {
     area: "Djibouti",
     type: "country",
-    neighbors: ["Eritrea", "Ethiopia", "Indian Ocean", "Somaliland"],
+    neighbors: ["Eritrea", "Ethiopia", "Indian Ocean", "Somalia"],
     description:
       "Djibouti is a country on the eastern coast of northern Africa. It is officially known as the Republic of Djibouti. Djibouti is a country with mostly desert terrain. The capital, Djibouti City (formerly the French colonial capital, Djibouti Ville), has a population of 450,000.",
     objects: [
