@@ -5,14 +5,10 @@ import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inv
 
 console.clear();
 
-
-// we need a way to purge bad countries from the passport list
-// e.g. const cleanPassport = () => {}
-
 // uh oh
 // everything breaks if localstorage is turned off
-let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "united states";
-
+// should check to see if localstorage exists and tell people without it to pound sand
+let curLocation = localStorage.getItem("lastLocation")
 
 export const submitBtn = document.getElementById("submit");
 export const promptField = document.getElementById("prompt");
@@ -21,22 +17,28 @@ export const allAreas = globe.map(area => area.area);
 export const areaExists = areaName => {
   let exists = globe.filter(c => {
     return c.area.toLowerCase().trim() === areaName.toLowerCase().trim();
-  });
-  return isArray(exists);
+  }).length > 0;
+  return exists;
 };
 
+const cleanPassport = () => {
+  return visited.filter( item => areaExists(item) );
+}
+
 const getVisitedCountries = () => {
-  let visited = ["Nowhere"]
+  let visited = [""]
   if(isArray(localStorage.getItem("visited"))) {
     visited = JSON.parse(localStorage.getItem("visited"))
   }
   return visited
 }
 
-export const visited = getVisitedCountries();
+let visited = getVisitedCountries();
+visited = cleanPassport();
+localStorage.setItem("visited", JSON.stringify(cleanPassport()));    
+
 
 // this is here to fix a bug where bad area names break the game
-// this still depends on localstorage
 curLocation = areaExists(curLocation) ? curLocation : "united states"
 
 export const getAttributeOfArea = (attrib, area = curLocation) => {
@@ -323,14 +325,14 @@ const updateLocation = destination => {
 }
 
 const updatePassport = (destination = curLocation) => {
-let passport = [curLocation]
-if(localStorage.getItem("visited")){
-  passport = JSON.parse(localStorage.getItem("visited"));
-  if (!passport.includes(destination)) {
-    passport.push(destination.toLowerCase())
-  }  
-}
-  localStorage.setItem("visited", JSON.stringify(passport));    
+  let passport = [curLocation]
+  if(localStorage.getItem("visited")){
+    passport = JSON.parse(localStorage.getItem("visited"));
+    if (!passport.includes(destination)) {
+      passport.push(destination.toLowerCase())
+    }  
+  }
+    localStorage.setItem("visited", JSON.stringify(passport));    
 }
 
 promptField.value = "";
