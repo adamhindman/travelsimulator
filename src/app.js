@@ -9,6 +9,7 @@ console.clear();
 // everything breaks if localstorage is turned off
 let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "united states";
 
+
 export const submitBtn = document.getElementById("submit");
 export const promptField = document.getElementById("prompt");
 export const allAreas = globe.map(area => area.area);
@@ -19,6 +20,10 @@ export const areaExists = areaName => {
   });
   return isArray(exists);
 };
+
+// this is here to fix a bug where bad area names break the game
+// this still depends on localstorage
+curLocation = areaExists(curLocation) ? curLocation : localStorage.getItem("visited").slice(-2) 
 
 export const getAttributeOfArea = (attrib, area = curLocation) => {
   let items = globe.filter(i => i.area.toLowerCase() === area.toLowerCase())[0][attrib];
@@ -317,7 +322,6 @@ if(localStorage.getItem("visited")){
 }
   localStorage.setItem("visited", JSON.stringify(passport));    
 }
-
 
 promptField.value = "";
 localStorage.setItem("lastLocation", curLocation)
