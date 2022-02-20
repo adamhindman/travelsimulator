@@ -5,6 +5,10 @@ import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inv
 
 console.clear();
 
+
+// we need a way to purge bad countries from the passport list
+// e.g. const cleanPassport = () => {}
+
 // uh oh
 // everything breaks if localstorage is turned off
 let curLocation = localStorage.getItem("lastLocation") ? localStorage.getItem("lastLocation") : "united states";
@@ -21,9 +25,19 @@ export const areaExists = areaName => {
   return isArray(exists);
 };
 
+const getVisitedCountries = () => {
+  let visited = ["Nowhere"]
+  if(isArray(localStorage.getItem("visited"))) {
+    visited = JSON.parse(localStorage.getItem("visited"))
+  }
+  return visited
+}
+
+export const visited = getVisitedCountries();
+
 // this is here to fix a bug where bad area names break the game
 // this still depends on localstorage
-curLocation = areaExists(curLocation) ? curLocation : localStorage.getItem("visited").slice(-2) 
+curLocation = areaExists(curLocation) ? curLocation : "united states"
 
 export const getAttributeOfArea = (attrib, area = curLocation) => {
   let items = globe.filter(i => i.area.toLowerCase() === area.toLowerCase())[0][attrib];
@@ -123,10 +137,7 @@ const getDisplay = (val, msg, area, showLoc) => {
 
 const handleCheckPassport = () => {
   let msg = '<div class="passport">You\'ve visited ';
-  let visited = ["Nowhere"]
-  if(isArray(localStorage.getItem("visited"))) {
-    visited = JSON.parse(localStorage.getItem("visited"))
-  }
+  let visited = getVisitedCountries()
   msg += `${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`
   msg += allAreas.reduce( (result, current, i) => {
     if (inArray(current.toLowerCase(), visited)){
@@ -137,7 +148,6 @@ const handleCheckPassport = () => {
   }, "")
   return `${msg}</p></div>`  
 }
-
 
 const handleGo = (noun, neighbors) => {
   if (neighbors.includes(noun)) {
