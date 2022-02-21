@@ -1,5 +1,5 @@
 import { globe } from "./globe.js";
-import { capitalize, arrayToLowerCase, isArray, inArray } from "./utilities.js";
+import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject } from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
@@ -96,7 +96,7 @@ export const handleSubmit = (val, msg = "") => {
       handleTel(noun);
       break;
     case "help":
-      msg = helpText;
+      msg = helpText + `<p>Size: ${Math.round(roughSizeOfObject(globe) / 1000)}k</p>`;
       break;
     case "forget":
       msg = handleForget();
