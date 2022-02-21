@@ -138,7 +138,6 @@ export let globe = [
       "Gabon",
       "Gambia",
       "Georgia",
-      "Georgia",
       "Germany",
       "Ghana",
       "Greece",
@@ -149,8 +148,6 @@ export let globe = [
       "Guyana",
       "Haiti",
       "Honduras",
-      "Iceland",
-      "Ireland",
       "Ireland",
       "Israel",
       "Italy",
@@ -179,7 +176,6 @@ export let globe = [
       "Portugal",
       "Republic of the Congo",
       "Romania",
-      "Russia",
       "Russia",
       "Saint Kitts and Nevis",
       "Saint Lucia",
@@ -555,7 +551,7 @@ export let globe = [
         name: "PIRATE HIDEOUT",
         article: "A",
         description:
-          "Paddling by some anonymous island, you spot a hidden waterway and decide to explore it. It turns out to lead to a shelterded harbor, at which you find the secret hideout of the Carribbean's most infamous pirate gang, The Flying Gang! Unfortunately, this large and elaborate cave system appears to be abandoned and forgotten for centuries, so of the gang Gang are around to chat with. You do notice Blackbeard's treasure chest sitting on a table, containing a full-sized emerald skull that throbs with unearthly power. You snap a pic and get back to sightseeing.<p>\"Where, uhh... where did you say this island was?\"</p><p>Later, the paragliding instructor seems interested in hearing about your trip, especially after you show him the pictures. You gesture toward the ocean and shrug, then ask him questions about paragliding.</p>",
+          "Paddling by some anonymous island, you spot a hidden waterway and decide to explore it. It turns out to lead to a shelterded harbor, at which you find the secret hideout of the Carribbean's most infamous pirate gang, The Flying Gang! Unfortunately, this large and elaborate cave system appears to be abandoned and forgotten for centuries, so none of the Gang are around to chat with. You do notice Blackbeard's treasure chest sitting on a table, containing a full-sized emerald skull that throbs with unearthly power. You snap a pic and get back to sightseeing.<p>\"Where, uhh... where did you say this island was?\"</p><p>Later, the paragliding instructor seems interested in hearing about your trip, especially after you show him the pictures. You gesture toward the ocean and shrug, then ask him questions about paragliding.</p>",
       },
       {
         name: "ATLANTIS PARADISE ISLAND",
@@ -1977,11 +1973,12 @@ export let globe = [
     neighbors: ["Arctic Ocean", "Atlantic Ocean"],
     description:
       "Iceland is a frozen near Greenland, accessible via longship, boat, or plane. The people here are large and muscular, even the babies, and they spend at least part of every day submerged in the mineral waters of the many thermal springs, which keeps them both healthy and thawed out.<p>The food here is rotten: rotten shark, rotten whale, rotten seal. They brew their own beer, or steal it from Lindisfarne. They can't grow anything: the weather is too cold. The main industries are fishing, strongman competitions, and EVE Online.</p>",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      { name: "HULDUFÓLK", article: "The", description: "WIP" },
+      { name: "HOT SPRINGS", article: "A", description: "WIP" },
+      { name: "NORTHERN LIGHTS", article: "The", description: "WIP" },
+      { name: "WESTFJORDS", article: "The", description: "WIP" },
+    ],
   },
   {
     area: "India",
@@ -2267,11 +2264,12 @@ export let globe = [
     neighbors: ["China", "Kazakhstan", "Tajikistan", "Uzbekistan"],
     description:
       "Kyrgyzstan is a landlocked country in Central Asia and former Soviet Republic. It is bordered by Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the southwest and China to the southeast.</p><p>Kukhr-Ata, Kyrgyzstan's capital city, is located in the Chui Valley in the Talas Region at an elevation of 700 meters. Although it is the capital, it is much smaller in size than Bishkek, with a population of about 670,000</p>",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      { name: "JENGISH CHOKUSU", article: "", description: "WIP" },
+      { name: "EPIC OF MANAS", article: "The", description: "WIP" },
+      { name: "ISSYK KUL LAKE", article: "", description: "WIP" },
+      { name: "KYMYS", article: "", description: "WIP" },
+    ],
   },
   {
     area: "Laos",
@@ -2865,7 +2863,6 @@ export let globe = [
         description:
           "For many decades, this single tree standing alone in the middle of the Sahara desert was a landmark to traveling caravans. Unfortunately, in the 1970s, a truck driver ran into it by accident, and killed it. The dead tree was hauled away to Niamey, where you can still view it today, and a commemorative metal sculpture was erected on the original site.</p>Inspired by this story, you decide to make a sort of pilgrimage into the Sahara to view the sculpture, and drive for hours before accidentally running into it and knocking it down.</p><p>Panicking, you attempt to set the sculpture back up, but it teeters over onto your truck. A fire sparks, and spreads to the truck's gas tank, igniting it in a massive fireball.</p>Weeks later, you crawl out of the Sahara, starving and dehydrated, and very pleased to have become a part of the history of the legendary Tree of Ténéré!</p>",
       },
-      // { name: "OASIS OF TIMIA", article: "The", description: "WIP" },
     ],
   },
   {
@@ -3478,12 +3475,14 @@ export let globe = [
     type: "country",
     neighbors: ["Indian Ocean", "Pacific Ocean"],
     description:
-      "Sometimes referred to as the Lion City or the Little Red Dot, Singapore is a sovereign city-state located on the southern side of the Malay Peninsula, south of the Malaysian state of Johor and north of the Indonesian Riau Islands. The history of Singapore dates back over a thousand years. Once a sleepy fishing village, Singapore rapidly became one of the busiest ports of Southeast Asia upon the completion of a 19 kilometres sea-wall (digging of which began in 1612).",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+      "Sometimes referred to as the Lion City or the Little Red Dot, Singapore is a sovereign city-state located on the southern side of the Malay Peninsula, south of the Malaysian state of Johor and north of the Indonesian Riau Islands. The history of Singapore dates back over a thousand years. Once a sleepy fishing village, Singapore rapidly became one of the busiest ports of Southeast Asia upon the completion of a 19 kilometer sea-wall.",
+    objects: [
+      { name: "SPEAKER'S CORNER", article: "", description: "WIP" },
+      { name: "MERLION", article: "", description: "WIP" },
+      { name: "MARINA BAY SANDS", article: "", description: "WIP" },
+      { name: "ORCHARD ROAD", article: "", description: "WIP" },
+      { name: "HAINANESE CHICKEN RICE", article: "", description: "WIP" },
+    ],
   },
   {
     area: "Slovakia",
@@ -3539,7 +3538,12 @@ export let globe = [
         article: "The",
         description: "A medieval Somali castle overlooking the ocean.",
       },
-      { name: "XAMAR", article: "", description: "WIP" },
+      {
+        name: "XAMAR",
+        article: "",
+        description:
+          "Also known as Mogadishu, Xamar is a modern city with its roots in the ancient past. It's the capital of Somalia, located on the coast of the Horn of Africa.</p><p>After a period of civil war and factional violence, Xamar is trying to rebuild itself. You stroll through the streets, and see new buildings popping up, new businesses opening. Families walking around, smiling, without machine guns. In Bakaara market, not a single mortar or artillery shell goes off the entire time you are perusing the shops, and you feel as though you would have noticed if it had. Things are looking up for Xamar, and for Somalia.",
+      },
     ],
   },
   {
@@ -4054,11 +4058,12 @@ export let globe = [
     ],
     description:
       "Uganda is a landlocked country in East Africa. It shares borders with Kenya, South Sudan, the Democratic Republic of the Congo, Rwanda, and Tanzania. It includes a substantial portion of Lake Victoria, shared with Kenya and Tanzania. Uganda is in the African Great Lakes region. Uganda has a varied but generally an equatorial climate. It has a population of over 42 million, of which 8.5 million live in the capital and largest city of Kampala.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "MOUNTAINS OF THE MOON", article: "The", description: "WIP" },
+      { name: "BODA BODA", article: "A", description: "WIP" },
+      { name: "TORORO ROCK", article: "", description: "WIP" },
+      { name: "KAMPALA HILL", article: "", description: "WIP" },
+    ],
   },
   {
     area: "Ukraine",
