@@ -124,7 +124,6 @@ export let globe = [
       "Croatia",
       "Cuba",
       "Cyprus",
-      "Cyprus",
       "Democratic Republic of the Congo",
       "Denmark",
       "Dominica",
@@ -151,7 +150,7 @@ export let globe = [
       "Ireland",
       "Israel",
       "Italy",
-      "Ivory Coast",
+      "Côte d'Ivoire",
       "Jamaica",
       "Latvia",
       "Lebanon",
@@ -195,11 +194,11 @@ export let globe = [
       "Trinidad and Tobago",
       "Tunisia",
       "Turkey",
-      "Turkey",
       "Ukraine",
       "United States",
       "Uruguay",
       "Venezuela",
+      "Wales",
     ],
   },
   {
@@ -2513,7 +2512,7 @@ export let globe = [
       "Senegal",
     ],
     description:
-      "Mali is a landlocked country in West Africa. It's the third largest country in the region, behind Algeria and Nigeria. Mali borders Algeria, Niger, Burkina Faso, Guinea-Bissau, Senegal, and Ivory Coast. It's home to the famed city of Timbuktu, which is well known for its mosques, libraries, and schools.",
+      "Mali is a landlocked country in West Africa. It's the third largest country in the region, behind Algeria and Nigeria. Mali borders Algeria, Niger, Burkina Faso, Guinea-Bissau, Senegal, and Côte d'Ivoire. It's home to the famed city of Timbuktu, which is well known for its mosques, libraries, and schools.",
     // objects:[
     // {name:"", article:"", description:""},
     // {name:"", article:"", description:""},
@@ -3622,14 +3621,7 @@ export let globe = [
   {
     area: "Spain",
     type: "country",
-    neighbors: [
-      "Atlantic Ocean",
-      "Andorra",
-      "France",
-      "Portugal",
-      "Gibraltar",
-      "Morocco",
-    ],
+    neighbors: ["Atlantic Ocean", "Andorra", "France", "Portugal", "Morocco"],
     description:
       "The Kingdom of Spain is a country in Europe, with a long, rich history. It is a peninsular country, situated near south-west Europe of the Atlantic Ocean. After the Spanish Civil War of the 1930s, Spain was ruled by organisations akin to the military until democracy was ushered in during the 70s. Modern Spain is an economic hub of the Europe and a popular destination for many tourists looking for the food and drinks. Since the 1990s, the economy has undergone remarkable changes with a large tourism niche market allowing the country to continue to prosper.",
     objects: [
