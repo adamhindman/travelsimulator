@@ -1666,7 +1666,7 @@ export let globe = [
         name: "BASTARD STURGEON",
         article: "A",
         description:
-          "An extremely endangered fish. One of the few remaining breeding exists in the Rioni River in Georgia. Wading into the river, you are able to pet several of them.",
+          "An extremely endangered fish. One of the few remaining breeding populations exists in the Rioni River in Georgia. Wading into the river, you are able to pet several of them.",
       },
       {
         name: "KHAKHULI TRIPTYCH",
