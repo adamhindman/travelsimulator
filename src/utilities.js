@@ -23,7 +23,10 @@ export const uppercase = str => str.toUpperCase();
  */
 export const arrayToLowerCase = arr => arr.map(i => i.toLowerCase());
 
-export const isArray = arr => !(arr === undefined || arr.length == 0);
+export const isArray = arr => {
+  return Array.isArray(arr);
+  // return !(arr === undefined || arr.length == 0 || arr === null);
+};
 
 export const inArray = (item, arr) => {
   let isInArray = false;

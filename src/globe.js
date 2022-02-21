@@ -149,6 +149,7 @@ export let globe = [
       "Guyana",
       "Haiti",
       "Honduras",
+      "Iceland",
       "Ireland",
       "Israel",
       "Italy",

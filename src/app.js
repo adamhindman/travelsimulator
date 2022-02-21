@@ -5,10 +5,6 @@ import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inv
 
 console.clear();
 
-// uh oh
-// everything breaks if localstorage is turned off
-// should check to see if localstorage exists and tell people without it to pound sand
-let curLocation = localStorage.getItem("lastLocation")
 
 export const submitBtn = document.getElementById("submit");
 export const promptField = document.getElementById("prompt");
@@ -21,25 +17,25 @@ export const areaExists = areaName => {
   return exists;
 };
 
+// uh oh
+// everything breaks if localstorage is turned off
+// should check to see if localstorage exists and tell people without it to pound sand
+let curLocation = localStorage.getItem("lastLocation") || "united states";
+
 const cleanPassport = () => {
   return visited.filter( item => areaExists(item) );
 }
 
 const getVisitedCountries = () => {
-  let visited = [""]
-  if(isArray(localStorage.getItem("visited"))) {
-    visited = JSON.parse(localStorage.getItem("visited"))
-  }
+  let visited = ["united states"]
+  let lsVisited = JSON.parse(localStorage.getItem("visited"));
+  visited = (isArray(lsVisited) && lsVisited.length > 0) ? lsVisited : visited
   return visited
 }
 
 let visited = getVisitedCountries();
 visited = cleanPassport();
 localStorage.setItem("visited", JSON.stringify(cleanPassport()));    
-
-
-// this is here to fix a bug where bad area names break the game
-curLocation = areaExists(curLocation) ? curLocation : "united states"
 
 export const getAttributeOfArea = (attrib, area = curLocation) => {
   let items = globe.filter(i => i.area.toLowerCase() === area.toLowerCase())[0][attrib];
@@ -247,7 +243,7 @@ const getFirstMatchedOption = (noun, options) => {
     placeholder = ""
   }
   const matches = options.filter(option => option.toLowerCase().indexOf(noun) !== -1);
-  if (isArray(matches)) {
+  if (isArray(matches) && matches.length > 0) {
     firstMatch = matches.reduce((result, cur) => {
       return cur.toLowerCase().indexOf(noun) < result.toLowerCase().indexOf(noun) ? cur : result
     });
