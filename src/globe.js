@@ -2273,6 +2273,7 @@ export let globe = [
   },
   {
     area: "Kyrgyzstan",
+    image: "kyrgyzstan.png",
     type: "country",
     neighbors: ["China", "Kazakhstan", "Tajikistan", "Uzbekistan"],
     description:
@@ -3485,6 +3486,7 @@ export let globe = [
   },
   {
     area: "Singapore",
+    image: "singapore.png",
     type: "country",
     neighbors: ["Indian Ocean", "Pacific Ocean"],
     description:
@@ -4172,6 +4174,7 @@ export let globe = [
   },
   {
     area: "Vanuatu",
+    image: "vanuatu.png",
     type: "country",
     neighbors: ["Pacific Ocean"],
     description:
@@ -4262,6 +4265,7 @@ export let globe = [
   },
   {
     area: "Yemen",
+    image: "yemen.png",
     type: "country",
     neighbors: ["Indian Ocean", "Oman", "Saudi Arabia"],
     description:
@@ -4273,6 +4277,7 @@ export let globe = [
         description:
           "A port city in Yemen, famous for shipping coffee beans around the world.",
       },
+      { name: "DRAGON BLOOD TREE", article: "A", description: "WIP" },
     ],
   },
   {

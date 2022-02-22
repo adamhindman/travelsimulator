@@ -121,7 +121,7 @@ const getDisplay = (val, msg, area, showLoc) => {
   const p = `<p class="prompt"><span class="caret"></span>${val}</p>`;
   const m = `<p>${msg}</p>`;
   const clSlug = curLocation.toLowerCase().split(" ").join("-");
-  const uiBgClass = isArray(getAttributeOfArea("image")) ? `pic ${clSlug}` : ``;
+  const uiBgClass = getAttributeOfArea("image") ? `pic ${clSlug}` : ``;
   const loc = `
   <div class="${uiBgClass}"></div><h4>${curLocation.toUpperCase()}</h4>${getAreaDescription()}</p>${getObjectsText()} 
   <div class="exits"><h5>Exits are:</h5><ul class="asterisk buttons">${getNeighborsText()}</ul></div>`;
