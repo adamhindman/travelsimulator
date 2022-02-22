@@ -2420,12 +2420,13 @@ export let globe = [
     type: "country",
     neighbors: ["Belgium", "France", "Germany"],
     description:
-      "Lithuania is a part of Eastern Europe. It draws much of its agricultural efforts from enjoying a temperate climate, but the majority of land lies below sea level and the rivers have many tributaries. Nature and geography play a large role in the culture of Lithuania. The country is very rural, and is full of beautiful natural resources. Most of the population lives in urban centers, and about 40% of the nation lives in Lithuania's capital city of Vilnius.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+      "The Grand Duchy of Luxembourg is a strange country; one of the 200 or somost fascinating on Earth. Most of the people here are from somewhere else: about half the people who work here commute to it from nearby countries, and a very large percentage of residents are foreign nationals, or expats. All in all, only about 30% of the people you meet in Luxembourg were born here, making it a true nation of immigrants and expats.</p><p>There are many beautiful alpine forests, though a lot of them are privately owned, by the many wealthy Luxembourgians who keep vast estates here. Banking and finance make up a huge part of the economy, and the entire place is a big tax haven. In short, an odd, beautiful, safe, rich country.</p>",
+    objects: [
+      { name: "MULLERTHAL", article: "", description: "WIP" },
+      { name: "CASEMATES", article: "", description: "WIP" },
+      // https://en.wikipedia.org/wiki/Fortress_of_Luxembourg
+      { name: "ARDENNES", article: "The", description: "WIP" },
+    ],
   },
   {
     area: "Macau",
@@ -2507,12 +2508,12 @@ export let globe = [
     type: "country",
     neighbors: ["Indian Ocean"],
     description:
-      "Maldives is an island nation, and is located southwest of Sri Lanka. It's a country known for low flat coral islands, with the highest point being six meters above sea level. The country is spread out over roughly 90,000 square kilometers, consisting of 26 ring-shaped atolls, of which 200 are inhabited. Only 190 of the islands are large enough to be officially recognized by the government.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+      "Maldives is an island nation, and is located southwest of Sri Lanka. It's a country known for low flat coral islands, with the highest point being six meters above sea level. The country is spread out over roughly 90,000 square kilometers, consisting of 26 ring-shaped atolls, of which 200 are inhabited. Only 190 of the islands are large enough to be officially recognized by the government. By 2030, Maldives is expected to be entirely underwater, making it a fantastic scuba and snorkeling destination.",
+    objects: [
+      { name: "COCONUT", article: "A", description: "WIP" },
+      { name: "HULHUMALÉ", article: "", description: "WIP" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Mali",
@@ -3492,11 +3493,16 @@ export let globe = [
     description:
       "Sometimes referred to as the Lion City or the Little Red Dot, Singapore is a sovereign city-state located on the southern side of the Malay Peninsula, south of the Malaysian state of Johor and north of the Indonesian Riau Islands. The history of Singapore dates back over a thousand years. Once a sleepy fishing village, Singapore rapidly became one of the busiest ports of Southeast Asia upon the completion of a 19 kilometer sea-wall.",
     objects: [
-      { name: "SPEAKER'S CORNER", article: "", description: "WIP" },
-      { name: "MERLION", article: "", description: "WIP" },
-      { name: "MARINA BAY SANDS", article: "", description: "WIP" },
-      { name: "ORCHARD ROAD", article: "", description: "WIP" },
-      { name: "HAINANESE CHICKEN RICE", article: "", description: "WIP" },
+      // { name: "SPEAKER'S CORNER", article: "", description: "WIP" },
+      // { name: "MERLION", article: "", description: "WIP" },
+      // { name: "MARINA BAY SANDS", article: "", description: "WIP" },
+      // { name: "ORCHARD ROAD", article: "", description: "WIP" },
+      {
+        name: "HAINANESE CHICKEN RICE",
+        article: "",
+        description:
+          "You enjoy a plate of chicken, rice, vegetables, and chili sauce. Someone tells you that this is the national dish of Singapore, so you salute the empty plate.",
+      },
     ],
   },
   {
@@ -4067,10 +4073,15 @@ export let globe = [
     description:
       "Uganda is a landlocked country in East Africa. It shares borders with Kenya, South Sudan, the Democratic Republic of the Congo, Rwanda, and Tanzania. It includes a substantial portion of Lake Victoria, shared with Kenya and Tanzania. Uganda is in the African Great Lakes region. Uganda has a varied but generally an equatorial climate. It has a population of over 42 million, of which 8.5 million live in the capital and largest city of Kampala.",
     objects: [
-      { name: "MOUNTAINS OF THE MOON", article: "The", description: "WIP" },
-      { name: "BODA BODA", article: "A", description: "WIP" },
-      { name: "TORORO ROCK", article: "", description: "WIP" },
-      { name: "KAMPALA HILL", article: "", description: "WIP" },
+      // { name: "MOUNTAINS OF THE MOON", article: "The", description: "WIP" },
+      {
+        name: "BODA BODA",
+        article: "A",
+        description:
+          "You are riding down Waliggo Road in Kampala, on the back of a motorcycle taxi called a \"boda boda\". The driver's name is Charles, and he's talking about things to do in Kampala. You asked him to explain in great detail what he would do if he was a tourist here, but as soon as he started up the engine of the boda boda, you realized you wouldn't be able to hear a word he said.</p><p>The doughty little 2-stroke engine rattles and whines as Charles rounds a corner onto Bahai road, twisting the throttle to get back up to speed. He is gesturing toward some buildings, saying something that sounds interesting, but is totally inaudible.</p><p>You pass, and are passed by, many other boda bodas — by some estimates there are as many as 300,000 of them in Kampala, though only about half of those are registered. You see the registration certificate affixed to this vehicle: good for you, Charles.</p><p>Some time later, you stop at the edge of Port Bay. You're on the outskirts of the city now, where the urban sprawl of Kampala has given way to suburban villas and beach resorts. The boda boda is parked on a gravel driveway. It has broken down. Charles is repairing it with a small set of tools stored under the seat. With the engine off, and the center of the city in the distance, you can hear more of the sounds of nature, and the lapping of nearby Port Bay on the shore.</p> ",
+      },
+      // { name: "TORORO ROCK", article: "", description: "WIP" },
+      // { name: "KAMPALA HILL", article: "", description: "WIP" },
     ],
   },
   {
@@ -4246,7 +4257,14 @@ export let globe = [
     description:
       "A country of stunning natural beauty, where sweeping seas, high mountains, brooding forests, and swaths of farmland abound. Cities as diverse as Swansea and Cardiff retain historic architecture from the Middle Ages, while renovated towns such as Conwy and Llansteffan recall the nineteenth century, an era merely two hundred years in the past.",
     objects: [
-      { name: "CARDIFF GIANT", article: "A", description: "" },
+      {
+        name: "CARDIFF GIANT",
+        article: "A",
+        description:
+          'This is not Cardiff Giant from the famous hoax, the supposed corpse of a 10-foot tall man discovered while digging a well. No, this is an actual giant, a 15 feet tall Welshman, whom you meet on the outskirts of Cardiff. His name is Eli.</p><p>You ask him whether he will pick you up and carry you around in his shirt pocket: he says he\'s not big enough for that.</p><p>You look at his shirt: it\'s definitely big, but you agree that the pocket is only about the size of a backpack, and not large enough to comfortably sit in.</p><p>You ask whether he knows any giants who are big enough to carry you in their shirt pocket.</p><p>"None that I can think of," he says, obviously a little annoyed by the question.</p><p>After a few minutes of chit-chat, you find to your horror that you keep putting your foot in your mouth, and seem to be making one gaff after another. Having no intention to offend Eli, you decide to say goodbye. He wishes you well — a little coldly perhaps? — and continues down the road. You watch him over the treetops for a while, before he finally disappears behind a three-story building.</p><p>A few days later, you get a text message from an unknown number. The message is just random clusters of letters, as though somebody pounded their fists on a keyboard. Curious, you call the number back.</p><p>"Sorry about that message, it\'s not easy for me to type on phones." It\'s Eli!</p><p>He apologizes for being in such a "snippy" mood the other day, and you apologize for asking him "giant questions" he is probably tired of answering. You two have a wonderful conversation about music, woodworking, and travel, that lasts almost two hours.</p>',
+      },
+      // { name: "SHEEP", article: "A", description: "WIP" },
+      // { name: "COAL MINING", article: "", description: "WIP" },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
