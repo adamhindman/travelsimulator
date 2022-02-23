@@ -1965,7 +1965,12 @@ export let globe = [
     description:
       "This is Hungary. To the south is Austria. The people who live here are called Hungarians. They speak Hungarian and they ride horses. They're horsemen! You spend a few weeks riding around on horses, learning ancient horseback riding and mounted combat techniques.<p>You find that the people have a relaxed, easygoing, informal culture, with good foods. Lots of paprika and cabbage, but in a good way.</p>",
     objects: [
-      // { name: "HOUSE OF TERROR", article: "The", description: "WIP" },
+      {
+        name: "HOUSE OF TERROR",
+        article: "The",
+        description:
+          'This fun, high-concept amusement park is obviously meant to evoke the same feeling that horror movies do: that behind every human smile, there exists a monster with the capacity to enact brutal violence with more cruelty than any wild animal.</p><p>You wander around the building, reading stories about torture, both psychological and visceral, and about mass murder and violence against innocent people.</p><p>"This art is amazing," you tell one of the staff. "It looks so lifelike!"</p><p>The staff member explains that these photographs and artifacts are all real, and that the House of Terror is actually a museum dedicated to communicating the historical atrocities committed in Hungary by Nazis, Communists, and other groups.</p><p>"Oh," you say.</p><p>"Did you not know about World War II or the Soviet system?" she asks.</p><p>You shake your head.</p><p>"Well, that\'s why we need museums like this."</p><p>You give her a big thumbs up.</p>',
+      },
       // { name: "VALLEY OF THE BEAUTIFUL WOMAN", article: "", description: "WIP" },
       // { name: "VÁROS A VÁROS ALATT ", article: "", description: "WIP" },
       // { name: "LAKE BALATON", article: "", description: "WIP" },
@@ -2281,7 +2286,12 @@ export let globe = [
       "Kyrgyzstan is a landlocked country in Central Asia and former Soviet Republic. It is bordered by Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the southwest and China to the southeast.</p><p>Kukhr-Ata, Kyrgyzstan's capital city, is located in the Chui Valley in the Talas Region at an elevation of 700 meters. Although it is the capital, it is much smaller in size than Bishkek, with a population of about 670,000</p>",
     objects: [
       // { name: "JENGISH CHOKUSU", article: "", description: "WIP" },
-      // { name: "EPIC OF MANAS", article: "The", description: "WIP" },
+      {
+        name: "EPIC OF MANAS",
+        article: "The",
+        description:
+          "You've heard of this poem before.</p><p>It's an epic story about the history of Kyrzgyzstan, and its many military victories over its neighbors. The poem is very long: versions of it run to 500,000 lines, or about 30 times the length of The Iliad.</p><p>People who can recite some of the Epic are called Manasçı. Those can recite all three parts are called Great Manasçı, and they are very rare. In fact, there aren't any Great Manasçı still alive in the 21st century. The flame has faded.</p><p>Or so they say.</p>While visiting Bishkek, a friend clues you in to an underground performance of the entire Epic of Manas, tracing the lineage of Jakyp all the way to his great-grandson Seitek.</p><p>\"I have to be there for this,\" you say.</p><p>You call in all your markers, do favors for a few people, and finally manage score an invitation to the performance.</p><p>It takes place in a basement just off Ala-Too square, where the long shadows from the monumental buildings create an appropriately powerful atmosphere. You arrive an hour early to secure a seat.</p><p>The Manasçı is younger than you expected, in fact she looks like she's only in her twenties. With a soft but confident voice, she begins. A chill runs down your spine.</p><p>Six days later, you and a dozen or so remaining audience members stagger out into the street, dazed from the performance, and dazzled by the morning sunlight. You've never experienced art this powerful before. You know you'll never be the same.</p><p>\"How was it?\" asks your friend.</p><p>\"Lots of horse stuff,\" you reply.</p>",
+      },
       // { name: "ISSYK KUL LAKE", article: "", description: "WIP" },
       // { name: "KYMYS", article: "", description: "WIP" },
     ],
