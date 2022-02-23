@@ -1964,11 +1964,12 @@ export let globe = [
     ],
     description:
       "This is Hungary. To the south is Austria. The people who live here are called Hungarians. They speak Hungarian and they ride horses. They're horsemen! You spend a few weeks riding around on horses, learning ancient horseback riding and mounted combat techniques.<p>You find that the people have a relaxed, easygoing, informal culture, with good foods. Lots of paprika and cabbage, but in a good way.</p>",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      // { name: "HOUSE OF TERROR", article: "The", description: "WIP" },
+      // { name: "VALLEY OF THE BEAUTIFUL WOMAN", article: "", description: "WIP" },
+      // { name: "VÁROS A VÁROS ALATT ", article: "", description: "WIP" },
+      // { name: "LAKE BALATON", article: "", description: "WIP" },
+    ],
   },
   {
     area: "Iceland",
@@ -1983,14 +1984,14 @@ export let globe = [
         description:
           'The "Hidden Folk" in Iceland are a race of creatures, also called elves, who can turn invisible and do various forms of magic in order to cause mischief. You caught this one loosening the top of a bottle of mustard so that it would spill all over the next person who uses it.</p><p>You grab him by the wrist and, despite his attempts to wriggle free, manage to keep hold of this surprisingly light and insubstantial creature.</p><p>"Let me go!" he howls, "and I\'ll grant you a wish!"</p><p>The elf is tall, thin, long-limbed, and dressed in old fashioned clothing. His face has exaggerated features: a long nose, eyes just a little larger than they should be. His eyes change color every time you look at them, from icey blue, to green, to gray, to black. Surely this must be one of the hidden folk.</p><p>When you release him, the elf does not try to run away. He stands there tapping his foot impatiently.</p><p>"So you\'ll really grant my wish? And you won\'t try to twist it around so that it becomes a curse?"</p><p>He makes a show of looking offended. "Now, why would I do something like that? We made a bargain, you held up your side, now give me a chance to prove I\'m as good as my word."</p>"In that case, I wish for a billion dollars," you say.</p><p>He claps his hands and smiles.</p><p>"Marvelous! I shall grant your wish. May you spend it wisely!"</p><p>The elf disappears in a puff of sparkles, cackling with delight.</p><p>What a day, you think. You never know what will happen.</p><p>You sit down to eat your hotdog, and, opening the bottle of mustard, spill it all over your shirt, your pants, and even your shoes. From somewhere, the laughter of an invisible voice fills the air.</p><p>After cleaning up, and finishing your hotdog, you check your bank account: it reads $1,000,000,183.44.</p>"Waiter," you say with a smile, "I think I\'ll have another hotdog."',
       },
-      { name: "HOT SPRINGS", article: "A", description: "WIP" },
+      // { name: "HOT SPRINGS", article: "A", description: "WIP" },
       {
         name: "NORTHERN LIGHTS",
         article: "The",
         description:
           '"Ahh, the aurora borealis" says your friend Magnus, a local Icelander.</p><p>"Auroro boro-whatsit?" you ask, confused.</p><p>Magnus indicates, with a sweeping gesture, the night skies above the remote lake where you both are camping. For the first time, you notice this strange sight: a greenish light dancing in the heavens, constantly shifting, both in size, shape and color.</p><p>"Is it a... a dragon? Some sort of spell?" you ask, reaching for the hatchet.</p><p>"No, my friend. It is a perfectly natural phenomenon, caused by electrons hitting particles in the atmosphere."</p><p>"Ahh," you say. "So, the green and red colors are oxygen particles being ionized. And the blue and purple light must be when it hits nitrogen a little closer to the Earth\'s surface. I suppose that shape is due to fluctuations in the magnetosphere?"</p><p>Magnus nods, "The Aurora Borealis is also called the Northern Lights. You see, there is a perfectly scientific explanation. Not a dragon at all!"</p><p>You nod slowly, and put the hatchet down next to the fire. You look up in awe at the incredible beauty of the heavens.</p>',
       },
-      { name: "WESTFJORDS", article: "The", description: "WIP" },
+      // { name: "WESTFJORDS", article: "The", description: "WIP" },
     ],
   },
   {
@@ -2279,10 +2280,10 @@ export let globe = [
     description:
       "Kyrgyzstan is a landlocked country in Central Asia and former Soviet Republic. It is bordered by Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the southwest and China to the southeast.</p><p>Kukhr-Ata, Kyrgyzstan's capital city, is located in the Chui Valley in the Talas Region at an elevation of 700 meters. Although it is the capital, it is much smaller in size than Bishkek, with a population of about 670,000</p>",
     objects: [
-      { name: "JENGISH CHOKUSU", article: "", description: "WIP" },
-      { name: "EPIC OF MANAS", article: "The", description: "WIP" },
-      { name: "ISSYK KUL LAKE", article: "", description: "WIP" },
-      { name: "KYMYS", article: "", description: "WIP" },
+      // { name: "JENGISH CHOKUSU", article: "", description: "WIP" },
+      // { name: "EPIC OF MANAS", article: "The", description: "WIP" },
+      // { name: "ISSYK KUL LAKE", article: "", description: "WIP" },
+      // { name: "KYMYS", article: "", description: "WIP" },
     ],
   },
   {
@@ -2422,10 +2423,10 @@ export let globe = [
     description:
       "The Grand Duchy of Luxembourg is a strange country; one of the 200 or somost fascinating on Earth. Most of the people here are from somewhere else: about half the people who work here commute to it from nearby countries, and a very large percentage of residents are foreign nationals, or expats. All in all, only about 30% of the people you meet in Luxembourg were born here, making it a true nation of immigrants and expats.</p><p>There are many beautiful alpine forests, though a lot of them are privately owned, by the many wealthy Luxembourgians who keep vast estates here. Banking and finance make up a huge part of the economy, and the entire place is a big tax haven. In short, an odd, beautiful, safe, rich country.</p>",
     objects: [
-      { name: "MULLERTHAL", article: "", description: "WIP" },
-      { name: "CASEMATES", article: "", description: "WIP" },
-      // https://en.wikipedia.org/wiki/Fortress_of_Luxembourg
-      { name: "ARDENNES", article: "The", description: "WIP" },
+      // { name: "MULLERTHAL", article: "", description: "WIP" },
+      // { name: "CASEMATES", article: "", description: "WIP" },
+      // // https://en.wikipedia.org/wiki/Fortress_of_Luxembourg
+      // { name: "ARDENNES", article: "The", description: "WIP" },
     ],
   },
   {
@@ -2510,8 +2511,8 @@ export let globe = [
     description:
       "Maldives is an island nation, and is located southwest of Sri Lanka. It's a country known for low flat coral islands, with the highest point being six meters above sea level. The country is spread out over roughly 90,000 square kilometers, consisting of 26 ring-shaped atolls, of which 200 are inhabited. Only 190 of the islands are large enough to be officially recognized by the government. By 2030, Maldives is expected to be entirely underwater, making it a fantastic scuba and snorkeling destination.",
     objects: [
-      { name: "COCONUT", article: "A", description: "WIP" },
-      { name: "HULHUMALÉ", article: "", description: "WIP" },
+      // { name: "COCONUT", article: "A", description: "WIP" },
+      // { name: "HULHUMALÉ", article: "", description: "WIP" },
       // { name: "", article: "", description: "" },
     ],
   },
@@ -4293,9 +4294,9 @@ export let globe = [
         name: "MOCHA",
         article: "",
         description:
-          "A port city in Yemen, famous for shipping coffee beans around the world.",
+          'A port city in Yemen, famous for shipping coffee beans around the world. Also a delicious, chocolatey coffee drink.</p><p>"Mocha, please!"</p><p>You say the name once to the barista at the airport, and then again to the taxi driver outside. Before too long you\'re approaching the city while sipping on that sweet, hot, foamy, chocolate coffee milk you love so much.',
       },
-      { name: "DRAGON BLOOD TREE", article: "A", description: "WIP" },
+      // { name: "DRAGON BLOOD TREE", article: "A", description: "WIP" },
     ],
   },
   {
