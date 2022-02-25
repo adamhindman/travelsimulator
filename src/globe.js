@@ -1989,14 +1989,24 @@ export let globe = [
         description:
           'The "Hidden Folk" in Iceland are a race of creatures, also called elves, who can turn invisible and do various forms of magic in order to cause mischief. You caught this one loosening the top of a bottle of mustard so that it would spill all over the next person who uses it.</p><p>You grab him by the wrist and, despite his attempts to wriggle free, manage to keep hold of this surprisingly light and insubstantial creature.</p><p>"Let me go!" he howls, "and I\'ll grant you a wish!"</p><p>The elf is tall, thin, long-limbed, and dressed in old fashioned clothing. His face has exaggerated features: a long nose, eyes just a little larger than they should be. His eyes change color every time you look at them, from icey blue, to green, to gray, to black. Surely this must be one of the hidden folk.</p><p>When you release him, the elf does not try to run away. He stands there tapping his foot impatiently.</p><p>"So you\'ll really grant my wish? And you won\'t try to twist it around so that it becomes a curse?"</p><p>He makes a show of looking offended. "Now, why would I do something like that? We made a bargain, you held up your side, now give me a chance to prove I\'m as good as my word."</p>"In that case, I wish for a billion dollars," you say.</p><p>He claps his hands and smiles.</p><p>"Marvelous! I shall grant your wish. May you spend it wisely!"</p><p>The elf disappears in a puff of sparkles, cackling with delight.</p><p>What a day, you think. You never know what will happen.</p><p>You sit down to eat your hotdog, and, opening the bottle of mustard, spill it all over your shirt, your pants, and even your shoes. From somewhere, the laughter of an invisible voice fills the air.</p><p>After cleaning up, and finishing your hotdog, you check your bank account: it reads $1,000,000,183.44.</p>"Waiter," you say with a smile, "I think I\'ll have another hotdog."',
       },
-      // { name: "HOT SPRINGS", article: "A", description: "WIP" },
+      {
+        name: "HOT SPRINGS",
+        article: "A",
+        description:
+          "Icelanders and tourists both flock to the country's many geothermal hotsprings, even in winter.",
+      },
       {
         name: "NORTHERN LIGHTS",
         article: "The",
         description:
           '"Ahh, the aurora borealis" says your friend Magnus, a local Icelander.</p><p>"Auroro boro-whatsit?" you ask, confused.</p><p>Magnus indicates, with a sweeping gesture, the night skies above the remote lake where you both are camping. For the first time, you notice this strange sight: a greenish light dancing in the heavens, constantly shifting, both in size, shape and color.</p><p>"Is it a... a dragon? Some sort of spell?" you ask, reaching for the hatchet.</p><p>"No, my friend. It is a perfectly natural phenomenon, caused by electrons hitting particles in the atmosphere."</p><p>"Ahh," you say. "So, the green and red colors are oxygen particles being ionized. And the blue and purple light must be when it hits nitrogen a little closer to the Earth\'s surface. I suppose that shape is due to fluctuations in the magnetosphere?"</p><p>Magnus nods, "The Aurora Borealis is also called the Northern Lights. You see, there is a perfectly scientific explanation. Not a dragon at all!"</p><p>You nod slowly, and put the hatchet down next to the fire. You look up in awe at the incredible beauty of the heavens.</p>',
       },
-      // { name: "WESTFJORDS", article: "The", description: "WIP" },
+      {
+        name: "WESTFJORDS",
+        article: "The",
+        description:
+          "The Westfjords is a huge, largely uninhabitable area of Iceland, covered with mountains, ice, and rocks.</p><p>Largely uninhabitable? Sounds like a challenge.</p><p>You decide to find out what it would be like for a completely unprepared amateur to survive alone in one of the most forsaken, desolate places on earth.</p><p>So, packing up some books and a sleeping bag, you hike to the far western edge of the peninsula, and build a small stone and earth shelter there. You throw the sleeping bag on the dirt floor, cry briefly, and settle in for the long haul.</p><p>What it's like living here is:</p><p>Night and day, you are tormented by the keening screams of a thousand gulls who nest, and shit, and die on the cliffs, as well as the howling, remorseless western winds off the Norwegian Sea. Since the climb down to the beach is treacherous, fishing is almost impossible, and eventually you are left to subsist on a diet of rock-lichen and greasy, disgusting gull meat. Rainwater fills an array of old rusted cans you've collected from the beach, and driftwood keeps you alive on the long, freezing nights that take up so much of the year.</p><p>There are happy times: Once, you chatted with some of the researchers who come to check on their weather instruments, and who thank you for your present of a gull-feather necklace. Once or twice, you hike to the distant lighthouse to share a tipple with the lighthouse keeper, who begs you to let him call an airlift to rescue you.</p><p>But mostly, you read, write in your journal, masturbate, and stare at the foggy horizon beyond which Greenland presumably lies. There is little else to do.</p><p>On your last night here, you pen the following entry in your journal:</p><p>\"Am satisfied that life on Westfjords is possible, though not recommended.\"</p><p>The next morning, against a driving wind that blows the icy rain against your face, you pack up your remaining gull jerky and make your way across the mountains, back toward Reykhólar.</p>",
+      },
     ],
   },
   {
@@ -2431,12 +2441,16 @@ export let globe = [
     type: "country",
     neighbors: ["Belgium", "France", "Germany"],
     description:
-      "The Grand Duchy of Luxembourg is a strange country; one of the 200 or somost fascinating on Earth. Most of the people here are from somewhere else: about half the people who work here commute to it from nearby countries, and a very large percentage of residents are foreign nationals, or expats. All in all, only about 30% of the people you meet in Luxembourg were born here, making it a true nation of immigrants and expats.</p><p>There are many beautiful alpine forests, though a lot of them are privately owned, by the many wealthy Luxembourgians who keep vast estates here. Banking and finance make up a huge part of the economy, and the entire place is a big tax haven. In short, an odd, beautiful, safe, rich country.</p>",
+      "The Grand Duchy of Luxembourg is a strange country; one of the 200 or somost fascinating on Earth. Most of the people here are from somewhere else: about half the people who work here commute to it from nearby countries, and a very large percentage of residents are foreign nationals, or expats. All in all, only about 30% of the people you meet in Luxembourg were born here, making it a true nation of immigrants and expats.</p><p>There are many beautiful alpine forests, though a lot of them are privately owned, by the many wealthy Luxembourgians who keep estates here. Banking and finance make up a huge part of the economy, and the entire place is a big tax haven. In short, an odd, beautiful, safe, rich country.</p>",
     objects: [
-      // { name: "MULLERTHAL", article: "", description: "WIP" },
-      // { name: "CASEMATES", article: "", description: "WIP" },
+      // { name: "FORTRESS OF LUXEMBOURG", article: "", description: "WIP" },
       // // https://en.wikipedia.org/wiki/Fortress_of_Luxembourg
-      // { name: "ARDENNES", article: "The", description: "WIP" },
+      {
+        name: "ARDENNES",
+        article: "The",
+        description:
+          "A heavily forested region shared mostly by Luxembourg and Belgium. In both WWI and WWII, awful battles took place here. Hard to believe now, with the sunlight streaming through the trees, and everything looking so peaceful.</p><p>A bird alights on your shoulder and starts chirping happily.</p>",
+      },
     ],
   },
   {
@@ -2522,7 +2536,12 @@ export let globe = [
       "Maldives is an island nation, and is located southwest of Sri Lanka. It's a country known for low flat coral islands, with the highest point being six meters above sea level. The country is spread out over roughly 90,000 square kilometers, consisting of 26 ring-shaped atolls, of which 200 are inhabited. Only 190 of the islands are large enough to be officially recognized by the government. By 2030, Maldives is expected to be entirely underwater, making it a fantastic scuba and snorkeling destination.",
     objects: [
       // { name: "COCONUT", article: "A", description: "WIP" },
-      // { name: "HULHUMALÉ", article: "", description: "WIP" },
+      {
+        name: "HULHUMALÉ",
+        article: "",
+        description:
+          "<p>At the edge of the island, you stand in a large, open field where backhoes and dozers push mountains of dirt into the sea.</p><p>This is the newest island in the Maldives. It is called Hulhumalé. It is completely manmade. There is a hospital, a school, a mosque, an apartment building, and plenty of commercial space.</p><p>Fifty thousand people already live here, and as sea levels rise, artificial islands like Hulhumalé will expand to make up larger and larger shares of the country, before finally becoming the only remaining homes for half a million Maldivians. Maldives will become a country built by construction equipment, just like the hospitals and apartment buildings.</p><p>As infrastructure projects go, this one is something of a Hail Mary, born out of desperation. But what's the alternative?</p>",
+      },
       // { name: "", article: "", description: "" },
     ],
   },
@@ -4272,7 +4291,7 @@ export let globe = [
         name: "CARDIFF GIANT",
         article: "A",
         description:
-          'This is not Cardiff Giant from the famous hoax, the supposed corpse of a 10-foot tall man discovered while digging a well. No, this is an actual giant, a 15 feet tall Welshman, whom you meet on the outskirts of Cardiff. His name is Eli.</p><p>You ask him whether he will pick you up and carry you around in his shirt pocket: he says he\'s not big enough for that.</p><p>You look at his shirt: it\'s definitely big, but you agree that the pocket is only about the size of a backpack, and not large enough to comfortably sit in.</p><p>You ask whether he knows any giants who are big enough to carry you in their shirt pocket.</p><p>"None that I can think of," he says, obviously a little annoyed by the question.</p><p>After a few minutes of chit-chat, you find to your horror that you keep putting your foot in your mouth, and seem to be making one gaff after another. Having no intention to offend Eli, you decide to say goodbye. He wishes you well — a little coldly perhaps? — and continues down the road. You watch him over the treetops for a while, before he finally disappears behind a three-story building.</p><p>A few days later, you get a text message from an unknown number. The message is just random clusters of letters, as though somebody pounded their fists on a keyboard. Curious, you call the number back.</p><p>"Sorry about that message, it\'s not easy for me to type on phones." It\'s Eli!</p><p>He apologizes for being in such a "snippy" mood the other day, and you apologize for asking him "giant questions" he is probably tired of answering. You two have a wonderful conversation about music, woodworking, and travel, that lasts almost two hours.</p>',
+          'This is not Cardiff Giant from the famous hoax, the supposed corpse of a 10-foot tall man discovered while digging a well. No, this is an actual giant, a 20 feet tall Welshman, whom you meet on the outskirts of Cardiff. His name is Ted.</p><p>You ask him whether he will pick you up and carry you around in his shirt pocket: he says he\'s not big enough for that.</p><p>You look at his shirt: it\'s definitely big, but you agree that the pocket is only about the size of a backpack, and not large enough to comfortably sit in.</p><p>You ask whether he knows any giants who are big enough to carry you in their shirt pocket.</p><p>"None that I can think of," he says, obviously a little annoyed by the question.</p><p>After a few minutes of chit-chat, you find to your horror that you keep putting your foot in your mouth, and seem to be making one gaff after another. Having no intention to offend Ted, you decide to say goodbye. He wishes you well — a little coldly perhaps? — and continues down the road. You watch him over the treetops for a while, before he finally disappears behind a three-story building.</p><p>A few days later, you get a text message from an unknown number. The message is just random clusters of letters, as though somebody pounded their fists on a keyboard. Curious, you call the number back.</p><p>"Sorry about that message, it\'s not easy for me to type on phones." It\'s Ted!</p><p>He apologizes for being in such a "snippy" mood the other day, and you apologize for asking him "giant questions" he is probably tired of answering. You two have a wonderful conversation about music, gardening, and travel, that lasts almost an hour.</p>',
       },
       // { name: "SHEEP", article: "A", description: "WIP" },
       // { name: "COAL MINING", article: "", description: "WIP" },
