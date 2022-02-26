@@ -2448,7 +2448,7 @@ export let globe = [
         article: "The",
         description:
           "This fortress was so impregnable and strategically located that it made everybody nervous, so in 1867 it was mostly torn down. Only a few ruined towers remain, as well as 14 miles of underground tunnels, called casemates, which once allowed soldiers to run around and fire cannons at invaders without being bombed themselves.</p><p>As you wander through these casemates at night, you think how incredible it would be to visit this fortress before it was torn down. To see its 24 separate forts humming with life, and smell the smells of the small city enclosed in its 450 acres.</p><p>While thinking about all this, you trip over an antique cannonball, and fall to the ground in a heap. Your flailing arms topple a bust of Charles VI, which lands on your head, knocking you unconscious.</p><p>When you wake up, it is daylight, and your head is throbbing. You stumble through the tunnels, which seem different, somehow. Not as old as you remember them, and in better condition. Occasionally, you pass men dressed in old-fashioned military garb. Probably actors doing a recreation for tourists. They rush up and down the vaulted tunnels, as though in a real rush.</p><p>When you return to the surface, you see even more soldiers: hundreds of them! There are also horses, and people dressed as peasants. They carry firewood, haul laundry, bake bread, and slaughter pigs, just like real 18th century peasants.</p><p>The one thing you don't see is: other tourists!</p><p>Very strange, you think. Why would they be putting on such an authentic recreation just for me?</p><p>" +
-          "Then it hits you: you've actually traveled back in time to the history of the Fortress of Luxembourg!</p><p>You discover that it is 1714, and the Dutch are in control of the fortress. You become friends with the Dutch commander, and, after demonstrating that you are a time traveler, patiently tell him everything you can remember about science and history, right up until the 2020s.</p><p>The commander records everything you say, and transmits it back to his government.</p><p>Using your advanced knowledge, the Dutch invent the atomic bomb in the 18th century, connect the world on the Dutch Internet in 1320, and set up the colony of New Rotterdam in 1888... on planet Mars!</p><p>Or, at least that's what you explained to the paramedics who rush you to the hospital back in Luxembourg, after they carried you out on a stretcher. They said you had suffered a concussion, and that you weren't allowed to go to sleep. You let them know that Dutch scientists have already invented a pill to replace sleep.</p>",
+          "Then it hits you: you've actually traveled back in time to the history of the Fortress of Luxembourg!</p><p>You discover that it is 1714, and the Dutch are in control of the fortress. You become friends with the Dutch commander, and, after demonstrating that you are a time traveler, patiently tell him everything you can remember about science and history, right up until the 2020s.</p><p>The commander records everything you say, and transmits it back to his government.</p><p>Using your advanced knowledge, the Dutch invent the atomic bomb in the 18th century, connect the world on the Dutch Internet in 1820, and set up the colony of New Rotterdam in 1888... on planet Mars!</p><p>Or, at least that's what you explained to the paramedics who rush you to the hospital back in Luxembourg, after they carried you out on a stretcher. They said you had suffered a concussion, and that you weren't allowed to go to sleep. You let them know that Dutch scientists have already invented a pill to replace sleep.</p>",
       },
       {
         name: "ARDENNES",
@@ -2540,7 +2540,11 @@ export let globe = [
     description:
       "Maldives is an island nation, and is located southwest of Sri Lanka. It's a country known for low flat coral islands, with the highest point being six meters above sea level. The country is spread out over roughly 90,000 square kilometers, consisting of 26 ring-shaped atolls, of which 200 are inhabited. Only 190 of the islands are large enough to be officially recognized by the government. By 2030, Maldives is expected to be entirely underwater, making it a fantastic scuba and snorkeling destination.",
     objects: [
-      // { name: "COCONUT", article: "A", description: "WIP" },
+      {
+        name: "COCONUT",
+        article: "A",
+        description: "A hairy bowling ball filled with water.",
+      },
       {
         name: "HULHUMALÉ",
         article: "",
@@ -3528,9 +3532,23 @@ export let globe = [
     description:
       "Sometimes referred to as the Lion City or the Little Red Dot, Singapore is a sovereign city-state located on the southern side of the Malay Peninsula, south of the Malaysian state of Johor and north of the Indonesian Riau Islands. The history of Singapore dates back over a thousand years. Once a sleepy fishing village, Singapore rapidly became one of the busiest ports of Southeast Asia upon the completion of a 19 kilometer sea-wall.",
     objects: [
-      // { name: "SPEAKER'S CORNER", article: "", description: "WIP" },
-      // { name: "MERLION", article: "", description: "WIP" },
-      // { name: "MARINA BAY SANDS", article: "", description: "WIP" },
+      {
+        name: "SPEAKER'S CORNER",
+        article: "",
+        description: "A place in Singapore where free speech is allowed, within reason.",
+      },
+      {
+        name: "MERLION",
+        article: "",
+        description:
+          "A wild Merlion appears!</p><p>This statue represents a chimera of a lion and a fish, and is the official mascot of the Singapore. You'll find copies of it all around the city, but the original, 28-foot tall statue stands on a promontory in its own park. It arcs a stream of water from its maw into the river below, as though to keep it topped up.</p><p>Is the Merlion a mythological creature drawn from the history of Chinese or Malaysian culture? No, it was designed by a marketing team in 1964.</p>",
+      },
+      {
+        name: "MARINA BAY SANDS",
+        article: "",
+        description:
+          "More impressive in size, scale, and cost than the Great Pyramid or the Louvre, this hotel and casino resort on the edge of a small bay is also conveniently located near a McDonalds.</p><p>Its three assymetrical towers each rise fifty-five stories, twisting along their lengths.</p><p>While the Great Pyramid only has accomodations for a single guest, the Marina Bay Sands has 2500 luxury hotel rooms, along with a 1.3 million square foot convention center.</p><p>It also has a world class mall, a museum (no Louvre, but nice enough), and a casino with 500 tables, and an Apple Store, and a floating island, and an F-1 circuit, and a lot more besides.</p><p>At night, the the Marina Bay Sands shoots beams of light into the sky. If you want a pyramid that shoots lights into the sky, skip the Great Pyramid, and go right to the Luxor Casino in Las Vegas.</p><p>At the top of the three towers is perched a structure exactly like a low-slung cruise ship that has (somehow) fallen from the sky and landed miraculously in place, rather than rolling off and crushing the tourists in the plaza below. Called the SkyPark, it is over a thousand feet long, with an infinity pool half that length. The whole structure rolls on a system of 500 independent joints, to defy the natural movement of the earth, and keep the infinity pool level for the pleasure of the tens of thousands of visitors.</p><p>Meanwhile, pathetically, the Louvre has a mere 700,000 square feet of space, 400 or so rooms, and despite the likeness of that airy, glass pyramid in front of it, it has no Apple Store on premises. In its favor, there is a McDonalds just down the street.</p>",
+      },
       // { name: "ORCHARD ROAD", article: "", description: "WIP" },
       {
         name: "HAINANESE CHICKEN RICE",
