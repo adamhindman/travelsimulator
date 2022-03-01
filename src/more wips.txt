@@ -1,0 +1,14 @@
+Hungary:
+{ name: "VALLEY OF THE BEAUTIFUL WOMAN", article: "", description: "WIP" },
+{ name: "VÁROS A VÁROS ALATT ", article: "", description: "WIP" },
+{ name: "LAKE BALATON", article: "", description: "WIP" },
+
+
+Kyrzgyzstan:
+{ name: "ISSYK KUL LAKE", article: "", description: "WIP" },
+{ name: "KYMYS", article: "", description: "WIP" },
+
+Uganda: 
+{ name: "TORORO ROCK", article: "", description: "WIP" },
+{ name: "KAMPALA HILL", article: "", description: "WIP" },
+{ name: "MOUNTAINS OF THE MOON", article: "The", description: "WIP" },

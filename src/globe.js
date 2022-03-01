@@ -1971,9 +1971,6 @@ export let globe = [
         description:
           'This fun, high-concept amusement park is obviously meant to evoke the same feeling that horror movies do: that behind every human smile, there exists a monster with the capacity to enact brutal violence with more cruelty than any wild animal.</p><p>You wander around the building, reading stories about torture, both psychological and visceral, and about mass murder and violence against innocent people.</p><p>"This art is amazing," you tell one of the staff. "It looks so lifelike!"</p><p>The staff member explains that these photographs and artifacts are all real, and that the House of Terror is actually a museum dedicated to communicating the historical atrocities committed in Hungary by Nazis, Communists, and other groups.</p><p>"Oh," you say.</p><p>"Did you not know about World War II or the Soviet system?" she asks.</p><p>You shake your head.</p><p>"Well, that\'s why we need museums like this."</p><p>You give her a big thumbs up.</p>',
       },
-      // { name: "VALLEY OF THE BEAUTIFUL WOMAN", article: "", description: "WIP" },
-      // { name: "VÁROS A VÁROS ALATT ", article: "", description: "WIP" },
-      // { name: "LAKE BALATON", article: "", description: "WIP" },
     ],
   },
   {
@@ -2295,15 +2292,12 @@ export let globe = [
     description:
       "Kyrgyzstan is a landlocked country in Central Asia and former Soviet Republic. It is bordered by Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the southwest and China to the southeast.</p><p>Kukhr-Ata, Kyrgyzstan's capital city, is located in the Chui Valley in the Talas Region at an elevation of 700 meters. Although it is the capital, it is much smaller in size than Bishkek, with a population of about 670,000</p>",
     objects: [
-      // { name: "JENGISH CHOKUSU", article: "", description: "WIP" },
       {
         name: "EPIC OF MANAS",
         article: "The",
         description:
           "You've heard of this poem before.</p><p>It's an epic story about the history of Kyrzgyzstan, and its many military victories over its neighbors. The poem is very long: versions of it run to 500,000 lines, or about 30 times the length of The Iliad.</p><p>People who can recite some of the Epic are called Manasçı. Those can recite all three parts are called Great Manasçı, and they are very rare. In fact, there aren't any Great Manasçı still alive in the 21st century. The flame has faded.</p><p>Or so they say.</p>While visiting Bishkek, a friend clues you in to an underground performance of the entire Epic of Manas, tracing the lineage of Jakyp all the way to his great-grandson Seitek.</p><p>\"I have to be there for this,\" you say.</p><p>You call in all your markers, do favors for a few people, and finally manage score an invitation to the performance.</p><p>It takes place in a basement just off Ala-Too square, where the long shadows from the monumental buildings create an appropriately powerful atmosphere. You arrive an hour early to secure a seat.</p><p>The Manasçı is younger than you expected, in fact she looks like she's only in her twenties. With a soft but confident voice, she begins. A chill runs down your spine.</p><p>Six days later, you and a dozen or so remaining audience members stagger out into the street, dazed from the performance, and dazzled by the morning sunlight. You've never experienced art this powerful before. You know you'll never be the same.</p><p>\"How was it?\" asks your friend.</p><p>\"Lots of horse stuff,\" you reply.</p>",
       },
-      // { name: "ISSYK KUL LAKE", article: "", description: "WIP" },
-      // { name: "KYMYS", article: "", description: "WIP" },
     ],
   },
   {
@@ -3549,7 +3543,6 @@ export let globe = [
         description:
           "More impressive in size, scale, and cost than the Great Pyramid or the Louvre, this hotel and casino resort on the edge of a small bay is also conveniently located near a McDonalds.</p><p>Its three assymetrical towers each rise fifty-five stories, twisting along their lengths.</p><p>While the Great Pyramid only has accomodations for a single guest, the Marina Bay Sands has 2500 luxury hotel rooms, along with a 1.3 million square foot convention center.</p><p>It also has a world class mall, a museum (no Louvre, but nice enough), and a casino with 500 tables, and an Apple Store, and a floating island, and an F-1 circuit, and a lot more besides.</p><p>At night, the the Marina Bay Sands shoots beams of light into the sky. If you want a pyramid that shoots lights into the sky, skip the Great Pyramid, and go right to the Luxor Casino in Las Vegas.</p><p>At the top of the three towers is perched a structure exactly like a low-slung cruise ship that has (somehow) fallen from the sky and landed miraculously in place, rather than rolling off and crushing the tourists in the plaza below. Called the SkyPark, it is over a thousand feet long, with an infinity pool half that length. The whole structure rolls on a system of 500 independent joints, to defy the natural movement of the earth, and keep the infinity pool level for the pleasure of the tens of thousands of visitors.</p><p>Meanwhile, pathetically, the Louvre has a mere 700,000 square feet of space, 400 or so rooms, and despite the likeness of that airy, glass pyramid in front of it, it has no Apple Store on premises. In its favor, there is a McDonalds just down the street.</p>",
       },
-      // { name: "ORCHARD ROAD", article: "", description: "WIP" },
       {
         name: "HAINANESE CHICKEN RICE",
         article: "",
@@ -3757,11 +3750,16 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Brazil", "French Guiana", "Guyana"],
     description:
       "Suriname is a tropical country bordered by French Guiana, Guyana, and Brazil. Flanked by rivers to the east and west, and the Atlantic Ocean to the north, it's got a humid, tropical climate with little temperature fluctuation.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      {
+        name: "WATERKANT",
+        article: "The",
+        description:
+          "This street in Paramaribo has a lot of important old buildings, including some some neat old houses. You wander up and down street, checking out each house. Wow!",
+      },
+      // { name: "", article: "", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Svalbard",
@@ -3824,15 +3822,12 @@ export let globe = [
     description:
       "Switzerland is a mountainous, landlocked, chocolate-filled country lying at the confluence of Western, Central and Southern Europe. Tourists flock here from all over the world for the excellent skiing, shopping, and corrupt banking. As you stand on the tip of a glacier, you feel the warm breezee of a föhn blowing across your face.",
     objects: [
-      { name: "GUN", article: "A", description: "" },
-      { name: "CUCKOO CLOCK", article: "A", description: "" },
       {
         name: "MATTERHORN",
         article: "The",
         description:
           "A huge mountain in Switzerland, first summitted in 1865. Inspired by the tragic story of Edward Whymper, you start to climb the picturesque east face yourself, but realize about halfway up that you are still wearing slippers from the chalet where you're staying. By the time you get to the top, your poor slippers are nearly ruined, and your feet are so cold you have to climb back down right away, pausing only for a moment to enjoy the amazing view from the top.",
       },
-      { name: "SWISS BANK ACCOUNT", article: "A", description: "" },
     ],
   },
   {
@@ -3848,11 +3843,26 @@ export let globe = [
     neighbors: ["Pacific Ocean"],
     description:
       "Taiwan is a country in East Asia, not far from other, different countries like China, Japan, and the Philippines. The main island of Taiwan, formerly known as Formosa, has an area of 13,000 square miles, mostly a mixture of mountains and plains, with its highly urbanised population concentrated in the western plains region. The capital is Taipei. With 23 million inhabitants, Taiwan is among the most densely populated sovereign, independent countries in the world that aren't part of China.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "RAINBOW VILLAGE",
+        article: "",
+        description:
+          "Every square inch of this collection of houses in Taichung is covered with brightly colored illustrations. Abstract shapes, stars, hearts, animals, people. Inspirational messages.</p><p>Not just the walls, either, but the pavement around it, the fence, the sewer grates. It's as though ... No, it can't be!</p><p>You look down to see your shoes, and part of your socks, are becoming illustrated. There is a smiling cartoon rabbit and a purple ladybug riding a bicycle.</p><p>As you watch, horrified, the illustrations begin to travel up your pantleg, scurrying and giggling, leaving trails of color behind them.</p><p>You begin to run.</p>",
+      },
+      {
+        name: "NATIONAL PALACE MUSEUM",
+        article: "",
+        description:
+          "Fleeing, first from destruction by the Japanese army, then from the Communist Party, some of the most important pieces of Ming and Qing Chinese artifacts ended up in Taiwan, which isn't even in China. ",
+      },
+      {
+        name: "BUBBLE TEA",
+        article: "",
+        description:
+          "Tapioca pearls, NOT fish roe, make up the gelatinous spheres waiting for you at the bottom of Taiwan's signature drink, Bubble Tea.</p><p>Roe are the ripe internal egg masses of fish, and while they look exactly like the pearls in bubble tea, they are actually two entirely different things, and biting into a boba will not pop the thin egg membrane and flood your mouth with a fish's reproductive matter.</p><p>You should feel completey free to chew on these delicious boba, knowing that even if they were (somehow) fish roe and not tapioca, the sweetened milk tea drink they're floating in would disguise the taste, and you'd never even know it.</p>",
+      },
+    ],
   },
   {
     area: "Tajikistan",
@@ -4126,15 +4136,12 @@ export let globe = [
     description:
       "Uganda is a landlocked country in East Africa. It shares borders with Kenya, South Sudan, the Democratic Republic of the Congo, Rwanda, and Tanzania. It includes a substantial portion of Lake Victoria, shared with Kenya and Tanzania. Uganda is in the African Great Lakes region. Uganda has a varied but generally an equatorial climate. It has a population of over 42 million, of which 8.5 million live in the capital and largest city of Kampala.",
     objects: [
-      // { name: "MOUNTAINS OF THE MOON", article: "The", description: "WIP" },
       {
         name: "BODA BODA",
         article: "A",
         description:
           "You are riding down Waliggo Road in Kampala, on the back of a motorcycle taxi called a \"boda boda\". The driver's name is Charles, and he's talking about things to do in Kampala. You asked him to explain in great detail what he would do if he was a tourist here, but as soon as he started up the engine of the boda boda, you realized you wouldn't be able to hear a word he said.</p><p>The doughty little 2-stroke engine rattles and whines as Charles rounds a corner onto Bahai road, twisting the throttle to get back up to speed. He is gesturing toward some buildings, saying something that sounds interesting, but is totally inaudible.</p><p>You pass, and are passed by, many other boda bodas — by some estimates there are as many as 300,000 of them in Kampala, though only about half of those are registered. You see the registration certificate affixed to this vehicle: good for you, Charles.</p><p>Some time later, you stop at the edge of Port Bay. You're on the outskirts of the city now, where the urban sprawl of Kampala has given way to suburban villas and beach resorts. The boda boda is parked on a gravel driveway. It has broken down. Charles is repairing it with a small set of tools stored under the seat. With the engine off, and the center of the city in the distance, you can hear more of the sounds of nature, and the lapping of nearby Port Bay on the shore.</p> ",
       },
-      // { name: "TORORO ROCK", article: "", description: "WIP" },
-      // { name: "KAMPALA HILL", article: "", description: "WIP" },
     ],
   },
   {
@@ -4149,8 +4156,8 @@ export let globe = [
       "Russia",
       "Slovakia",
     ],
-    description:
-      "Ukraine is the second-largest country by area in Europe after Russia, which it borders. Ukraine also shares borders with Belarus, Poland, Slovakia, and Hungary, Romania, and Moldova. To top it off, it has a coastline along the Sea of Azov and the Black Sea. It spans an area of 230,000 square miles with a population of 41 million, making it the eighth-most populous country in Europe. The nation's capital and largest city is Kyiv. There are a strong steel and farming sectors. The beaches, forests, deserts, valleys and mud lakes all offer a variety of tourist destinations.",
+    description: "Watch this space for changes.",
+    // "Ukraine is the second-largest country by area in Europe after Russia, which it borders. Ukraine also shares borders with Belarus, Poland, Slovakia, and Hungary, Romania, and Moldova. To top it off, it has a coastline along the Sea of Azov and the Black Sea. It spans an area of 230,000 square miles with a population of 41 million, making it the eighth-most populous country in Europe. The nation's capital and largest city is Kyiv. There are a strong steel and farming sectors. The beaches, forests, deserts, valleys and mud lakes all offer a variety of tourist destinations.",
     // objects:[
     // {name:"", article:" ", description:""},
     // {name:"", article:"", description:""},
@@ -4194,11 +4201,6 @@ export let globe = [
         article: "A",
         description:
           "This large bird has a white head, dark body, yellow beak, and pink tongue. Most often found in wooded areas, they can sometimes be seen flying in front of waving flags or at fireworks shows. In addition to fish, bald eagles are the primary predator of raccoons.",
-      },
-      {
-        name: "IDAHO POTATO",
-        article: "An",
-        description: "A small tuber, covered in dirt.",
       },
     ],
   },
@@ -4316,8 +4318,18 @@ export let globe = [
         description:
           'This is not Cardiff Giant from the famous hoax, the supposed corpse of a 10-foot tall man discovered while digging a well. No, this is an actual giant, a 20 feet tall Welshman, whom you meet on the outskirts of Cardiff. His name is Ted.</p><p>You ask him whether he will pick you up and carry you around in his shirt pocket: he says he\'s not big enough for that.</p><p>You look at his shirt: it\'s definitely big, but you agree that the pocket is only about the size of a backpack, and not large enough to comfortably sit in.</p><p>You ask whether he knows any giants who are big enough to carry you in their shirt pocket.</p><p>"None that I can think of," he says, obviously a little annoyed by the question.</p><p>After a few minutes of chit-chat, you find to your horror that you keep putting your foot in your mouth, and seem to be making one gaff after another. Having no intention to offend Ted, you decide to say goodbye. He wishes you well — a little coldly perhaps? — and continues down the road. You watch him over the treetops for a while, before he finally disappears behind a three-story building.</p><p>A few days later, you get a text message from an unknown number. The message is just random clusters of letters, as though somebody pounded their fists on a keyboard. Curious, you call the number back.</p><p>"Sorry about that message, it\'s not easy for me to type on phones." It\'s Ted!</p><p>He apologizes for being in such a "snippy" mood the other day, and you apologize for asking him "giant questions" he is probably tired of answering. You two have a wonderful conversation about music, gardening, and travel, that lasts almost an hour.</p>',
       },
-      // { name: "SHEEP", article: "A", description: "WIP" },
-      // { name: "COAL MINING", article: "", description: "WIP" },
+      {
+        name: "SHEEP",
+        article: "A",
+        description:
+          'In the past, raising sheep was a much more important part of the Welsh economy than it is today.</p><p>Nowadays, most of the people raising sheep are doing it as a hobby, rather than a primary source of in come. Most contemporary shepherds in Wales today are hipsters, who do it ironically, with waxed mustaches and artisanal jeans. You visit a boutique sheep farm, which you learn is funded entirely via Instagram sponsorships. The shepherd and his common-law wife invite you to participate in a shearing, which is live-streamed to 2500 viewers. The viewers spam the chat with images of a cartoon frog which you learn are called "memes".',
+      },
+      {
+        name: "COAL MINING",
+        article: "",
+        description:
+          "\"Your image of Welsh coal miners is outdated,\" says your new friend Rhys. \"Why don't you spend a day with me, and I'll show you what modern coal mining is all about?\"</p>Naturally, you accept: can't pass up an opportunity like this.</p><p>You show up in filthy overalls, with a pick, shovel, and rusty lunchbox. Around your head, you've tied a rope with a candle attached to it, which you know will make a handy light source.</p><p>But Rhys is right, the technology behind a modern coal extraction facility is so much more advanced than you realized.</p><p>Your education begins when you travel into the mineshaft on an elevator, powered by electricity, not horses. Then, you notice the mine is lit by LED lamps. It's downright pleasant!</p><p>\"Guess I won't be needing this,\" you say, removing your candle hat.</p>",
+      },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
@@ -4348,7 +4360,12 @@ export let globe = [
         description:
           'A port city in Yemen, famous for shipping coffee beans around the world. Also a delicious, chocolatey coffee drink.</p><p>"Mocha, please!"</p><p>You say the name once to the barista at the airport, and then again to the taxi driver outside. Before too long you\'re approaching the city while sipping on that sweet, hot, foamy, chocolate coffee milk you love so much.',
       },
-      // { name: "DRAGON BLOOD TREE", article: "A", description: "WIP" },
+      {
+        name: "DRAGON BLOOD TREE",
+        article: "A",
+        description:
+          "This species of tree grows only on the Socotra peninsula in Yemen, and when you stab it with the point of your knife, it drips a dark red sap that looks just like blood. Whether it is specifically the color of dragon's blood is open for debate, but 19th century violin makers used to love it the color so much, they used it to varnish their fanciest violins.",
+      },
     ],
   },
   {
