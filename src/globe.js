@@ -3842,13 +3842,13 @@ export let globe = [
     type: "country",
     neighbors: ["Pacific Ocean"],
     description:
-      "Taiwan is a country in East Asia, not far from other, different countries like China, Japan, and the Philippines. The main island of Taiwan, formerly known as Formosa, has an area of 13,000 square miles, mostly a mixture of mountains and plains, with its highly urbanised population concentrated in the western plains region. The capital is Taipei. With 23 million inhabitants, Taiwan is among the most densely populated sovereign, independent countries in the world that aren't part of China.",
+      "Taiwan is a country in East Asia, not far from other, different countries like China, Japan, and the Philippines. The main island of Taiwan, formerly known as Formosa, has an area of 13,000 square miles, mostly a mixture of mountains and plains, with its highly urbanised population concentrated in the western plains region. The capital is Taipei. With 23 million inhabitants, Taiwan is among the most densely populated sovereign, independent countries in the world.",
     objects: [
       {
         name: "RAINBOW VILLAGE",
         article: "",
         description:
-          "Every square inch of this collection of houses in Taichung is covered with brightly colored illustrations. Abstract shapes, stars, hearts, animals, people. Inspirational messages.</p><p>Not just the walls, either, but the pavement around it, the fence, the sewer grates. It's as though ... No, it can't be!</p><p>You look down to see your shoes, and part of your socks, are becoming illustrated. There is a smiling cartoon rabbit and a purple ladybug riding a bicycle.</p><p>As you watch, horrified, the illustrations begin to travel up your pantleg, scurrying and giggling, leaving trails of color behind them.</p><p>You begin to run.</p>",
+          "Every square inch of this collection of houses in Taichung is covered with brightly colored illustrations. Abstract shapes, stars, hearts, animals, people. Inspirational messages.</p><p>Not just the walls, either, but the pavement around it, the fence, the sewer grates. It's as though ... No, it can't be!</p><p>You look down to see your shoes, and part of your socks, are becoming illustrated. There is a smiling cartoon rabbit and a purple ladybug riding a bicycle.</p><p>As you watch, horrified, the illustrations travel up your pantleg, scurrying and giggling, leaving trails of color behind them.</p><p>You start to run.</p>",
       },
       {
         name: "NATIONAL PALACE MUSEUM",
@@ -3941,11 +3941,21 @@ export let globe = [
     ],
     description:
       "Thailand is the northwesternmost country on the Indochina Peninsula in Southeast Asia. It is bordered by Myanmar and Laos in the morth, Cambodia in the east, Malaysia in the south. Its well developed infrastructure supports the tourism industry and makes it a popular locale for international meetings.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "DURIAN",
+        article: "",
+        description:
+          "This fruit smells like a portable toilet, but you can't get enough of the flavor! Mild, sweet, and pleasant, like a delicate custard. It makes your mouth water just to think about eating it. You put a clothespin over your noise and dive in, eating an entire crate of Durian in a week.",
+      },
+      // { name: "WAT ARUN", article: "", description: "WIP" },
+      {
+        name: "TALING CHAN FLOATING MARKET",
+        article: "",
+        description:
+          'The stalls in this market in the Taling Chan district of Bangkok are all boats, floating on the Chao Phraya river.</p><p>You wander around, looking at the fresh produce, meat, and textiles. This market has everything!</p><p>There is even a man selling smaller boats out of his boat. Each one is about large enough for one person to sit in. You ask him what they are for.</p><p>"Franchises," he says, smiling.</p>',
+      },
+    ],
   },
   {
     area: "Tibet",
@@ -4170,11 +4180,16 @@ export let globe = [
     neighbors: ["Indian Ocean", "Oman", "Saudi Arabia"],
     description:
       "The United Arab Emirates is a federation of seven emirates: The Emirate of Abu Dhabi, The Emirate of Dubai, The Emirate of Sharjah, The Emirate of Ajman, The Emirate of Umm al Qawain, and The Emirate of Ras-al-Khaimah. Access to the eighth and ninth emirates is only available to ultra-high-net-worth individuals.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "BURJ KHALIFA",
+        article: "The",
+        description:
+          "The world's tallest building rises 2700 feet above the city of Dubai in the United Arab Emirates. It is the Burj Khalifa, and it is a monument to large scale mixed-use residential and commercial architecture.</p><p>You ride the elevator up to the 148th floor, and snag a beautiful view of the city from the 'At The Top' Observatory. You can see Iran from here!</p><p>As you turn to leave, you realize that, despite the name, you're not actually 'at the top' yet: the observation deck is 15 whole floors below the top of the building!</p><p>\"Can I go up there?\" you ask a tour guide.</p><p>\"You wouldn't want to,\" they say, \"it's just mechanical space.\"</p><p>Undaunted, you befriend one of the building's maintenance staff, and manage to score an access card to that lets you ride the elevator all the way to the 163rd floor!</p><p>As the door opens, you can see the \"guts\" of the building: access thruways, ducting plates, electrical conduit gantries, HVAC baffles, regrade mitigation bushings, and other fascinating mechanical equipment.</p><p>Wandering around the dimly-lit floor, you notice there are piles and piles of ballasted joint floats, mountains of belt linkages, a veritable armada of UGB plane sledges, a secret viewing room for the world's richest people, and what is quite possibly the single largest counterweight sluice assembly you've ever seen outside of a magazine.</p><p>The Burj Khalifa is truly a one of a kind building, very tall, and pretty wide too.</p>",
+      },
+      // { name: "AL MADAM", article: "", description: "WIP" },
+      // { name: "MOREEB DUNE", article: "", description: "WIP" },
+    ],
   },
   {
     area: "United States",
