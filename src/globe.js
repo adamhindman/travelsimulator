@@ -376,6 +376,20 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       'A Caribbean island nation, consisting of two small islands, Antigua and Barbuda. Antigua is the larger of the two islands, so you begin to explore there first.<p>You enjoy the white sand beaches, the blue green crystal water, how friendly and photogenic the exotic birds are. They eat carrots and cheese crackers right out of your hand!<p>Soon, your time on Antigua is done, but one island isn\'t enough. You go to Barbuda.</p>You are shocked at how remote it is: you\'re truly in the middle of nowhere. You sit on the beach and enjoy the silence, beholding the dark green mountains surrounding the island.</p><p>In a moment of silent meditation, you consider starting your own train company. "No, no," you finally say, as the waves breach the perimeter of your sand castle. "Traveling is the life for me."</p>',
+    objects: [
+      {
+        name: "NELSON'S DOCKYARD",
+        article: "",
+        description:
+          "Long before he hunted Napoleon, the great Admiral Horatio Nelson was stationed in Antigua and Barbuda. He evidently stayed in this Dockyard at one point.</p><p>To be fair, he neither built it, nor expanded the dockyard significantly, but today it is named after him nonetheless.</p><p>In fact (as you learn during the tour), he spent a lot of this part of his career sailing around the Caribbean, trying not to get imprisoned as a result of a lawsuit that didn't go his way.</p><p>Maybe that's why he didn't hang out very often in the dockyard that would later share his name. You're sure he would have, if he had half a chance.</p><p>On the plus side, he did meet his wife while stationed in Antigua and Barbuda.</p><p>Maybe they strolled together, hand in hand here, looking at the green hills behind them, or the other green hills in front of them. Maybe they stared into the warm, clear Caribbean sea, thinking of their future lives together. Maybe they looked at the boats: she would ask him questions about being a Naval officer, he would try his best to answer.</p><p>Obviously, they never talked about the boats you see here now. Those are long gone. But, other ones.</p>",
+      },
+      {
+        name: "MOUNT OBAMA",
+        article: "",
+        description:
+          "This 1300 foot tall peak in the Shekerly Mountains in Antigua was renamed to celebrate former U.S. President Barack H. Obama. At the end of his administration, it was renamed again. Now it's called Boggy Peak, which was what it was called before that.</p><p>You climb to the top of Boggy Peak and cast your mind back to 2016, when Obama was still in office, and this beautiful mountain shared his last name.</p>",
+      },
+    ],
   },
   {
     area: "Argentina",
@@ -2106,16 +2120,10 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       "The island of Ireland lies in Western Europe, off the coast of Great Britain. It is separated from Great Britain by the Irish Sea. The Republic of Ireland comprises most of that country, but Northern Ireland, which is part of the United Kingdom, makes up the northern third of the island. It's capital is Dublin, which is a deeply rich history.",
-    objects: [
-      {
-        name: "DOLOMITES",
-        article: "The",
-        description:
-          "This picturesque mountain range rises sharply into the sky. But, it also contains paths into the earth: you enter an abandoned mine, closed since the 1960s, and wander around in the dark for several days. Note to self: buy a flashlight!",
-      },
-      // {name:"", article:"", description:""},
-      // {name:"", article:"", description:""}
-    ],
+    // objects: [
+    //   // {name:"", article:"", description:""},
+    //   // {name:"", article:"", description:""}
+    // ],
   },
   {
     area: "Israel",
@@ -2155,6 +2163,12 @@ export let globe = [
         article: "The",
         description:
           "A burial shroud which is either proof of the divinity of Jesus Christ, or a big fat hoax. Or an honest case of pareidolia. Or, something else completely. As you stare at the shapes imprinted on the cloth, you ask yourself which one you believe. You decide on that, and stick with it. You go get some gelato.",
+      },
+      {
+        name: "DOLOMITES",
+        article: "The",
+        description:
+          "This picturesque mountain range rises sharply into the sky. But, it also contains paths into the earth: you enter an abandoned mine, closed since the 1960s, and wander around in the dark for several days. Note to self: buy a flashlight!",
       },
     ],
   },
@@ -4185,7 +4199,7 @@ export let globe = [
         name: "BURJ KHALIFA",
         article: "The",
         description:
-          "The world's tallest building rises 2700 feet above the city of Dubai in the United Arab Emirates. It is the Burj Khalifa, and it is a monument to large scale mixed-use residential and commercial architecture.</p><p>You ride the elevator up to the 148th floor, and snag a beautiful view of the city from the 'At The Top' Observatory. You can see Iran from here!</p><p>As you turn to leave, you realize that, despite the name, you're not actually 'at the top' yet: the observation deck is 15 whole floors below the top of the building!</p><p>\"Can I go up there?\" you ask a tour guide.</p><p>\"You wouldn't want to,\" they say, \"it's just mechanical space.\"</p><p>Undaunted, you befriend one of the building's maintenance staff, and manage to score an access card to that lets you ride the elevator all the way to the 163rd floor!</p><p>As the door opens, you can see the \"guts\" of the building: access thruways, ducting plates, electrical conduit gantries, HVAC baffles, regrade mitigation bushings, and other fascinating mechanical equipment.</p><p>Wandering around the dimly-lit floor, you notice there are piles and piles of ballasted joint floats, mountains of belt linkages, a veritable armada of UGB plane sledges, a secret viewing room for the world's richest people, and what is quite possibly the single largest counterweight sluice assembly you've ever seen outside of a magazine.</p><p>The Burj Khalifa is truly a one of a kind building, very tall, and pretty wide too.</p>",
+          "The world's tallest building rises 2700 feet above the city of Dubai in the United Arab Emirates. It is the Burj Khalifa, and it is a monument to large scale mixed-use residential and commercial architecture.</p><p>You ride the elevator up to the 148th floor, and snag a beautiful view of the city from the 'At The Top' Observatory. You can see Iran from here!</p><p>As you turn to leave, you realize that, despite the name, you're not actually 'at the top' yet: the observation deck is 15 whole floors below the top of the building!</p><p>\"Can I go up there?\" you ask a tour guide.</p><p>\"You wouldn't want to,\" they say, \"it's just mechanical space.\"</p><p>Undaunted, you befriend one of the building's maintenance staff, and manage to score an access card to that lets you ride the elevator all the way to the 163rd floor!</p><p>As the door opens, you can see the \"guts\" of the building: access thruways, ducting plates, electrical conduit gantries, HVAC baffles, regrade mitigation bushings, and other fascinating mechanical equipment.</p><p>Wandering around the dimly-lit floor, you notice there are piles and piles of ballasted joint floats, mountains of belt linkages, a veritable armada of UGB plane sledges, a secret viewing room for the world's richest people, and what is quite possibly the single largest counterweight sluice assembly you've ever seen outside of a magazine.</p><p>The Burj Khalifa is truly a one of a kind building: very tall, and pretty wide too.</p>",
       },
       // { name: "AL MADAM", article: "", description: "WIP" },
       // { name: "MOREEB DUNE", article: "", description: "WIP" },
