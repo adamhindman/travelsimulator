@@ -144,12 +144,29 @@ ul.asterisk
       content ", "
     &:last-of-type:after
       content ""
+.attribution
+  position absolute
+  bottom 0
+  right 0
+  background-color rgba(40,40,40,.8)
+  color #33ff33cc
+  font-size xx-small
+  padding .2rem 1rem
+  border-radius .3rem 0 0 0
+  a
+    font-size xx-small
+    color #33ff33cc
 .pic
+  position relative
   background-size cover
   background-repeat no-repeat
   width 100%
   aspect-ratio 2
   margin 2.4rem auto 3.6rem
+  .attribution
+    display none
+  &:hover .attribution
+      display block
   &.albania
     background-image url("assets/albania.png")
   &.canada
@@ -204,3 +221,4 @@ ul.asterisk
     background-image url("assets/vanuatu.png")
   &.yemen
     background-image url("assets/yemen.png")
+  

@@ -122,8 +122,9 @@ const getDisplay = (val, msg, area, showLoc) => {
   const m = `<p>${msg}</p>`;
   const clSlug = curLocation.toLowerCase().split(" ").join("-");
   const uiBgClass = getAttributeOfArea("image") ? `pic ${clSlug}` : ``;
+  const uiAttrib = getAttributeOfArea("attribution") ? getAttributeOfArea("attribution") : ``;  
   const loc = `
-  <div class="${uiBgClass}"></div><h4>${curLocation.toUpperCase()}</h4>${getAreaDescription()}</p>${getObjectsText()} 
+  <div class="${uiBgClass}"><div class="attribution">${uiAttrib}</div></div><h4>${curLocation.toUpperCase()}</h4>${getAreaDescription()}</p>${getObjectsText()} 
   <div class="exits"><h5>Exits are:</h5><ul class="asterisk buttons">${getNeighborsText()}</ul></div>`;
   let display = `
     ${val ? p : ``}

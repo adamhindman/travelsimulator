@@ -280,6 +280,7 @@ export let globe = [
   {
     area: "Albania",
     image: "albania.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@johnnyafrica?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Johnny Africa</a> on <a target="_blank" href="https://unsplash.com/s/photos/albania?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Greece", "Kosovo", "North Macedonia", "Montenegro", "Atlantic Ocean"],
     description:
@@ -637,6 +638,13 @@ export let globe = [
     area: "Belgium",
     type: "country",
     neighbors: ["Atlantic Ocean", "France", "Germany", "Luxembourg", "Netherlands"],
+    description:
+      "Belgium is a low-lying country in Europe, bordered by the Netherlands, Germany, Luxembourg, and France. The North Sea is out there somewhere, gray and lonely. Dutch-speaking Flemish make up about half the country, or a little more, with French speakers making up most of the rest. There are about 12 million people here, though they are distributed throughout the country, not all standing in the same place. The largest concentrations of Belgians are in cities like Antwerp, and Ghent. The country has a very low crime rate, presumably because of the presence of the great detective, Hercule Poirot.",
+    // objects: [
+    //   { name: "DIAMOND QUARTER", article: "", description: "" },
+    //   { name: "FRITES", article: "", description: "" },
+    //   { name: "GILLES", article: "", description: "" },
+    // ],
   },
   {
     area: "Belize",
@@ -929,6 +937,8 @@ export let globe = [
   {
     area: "Canada",
     image: "canada.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@ztpphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zachery Perry</a> on <a target="_blank" href="https://unsplash.com/s/photos/moose?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  `,
     description:
       "A massive country, covered in endless \"kilometers\" of snow. At first, it seems sparsely populated, but as you scan the coastlines, you notice sizable clusters of gentle, industrious citizens (known as 'canadians' or 'canucks') living at the eastern and western edges of the continent.",
     type: "country",
@@ -1021,6 +1031,8 @@ export let globe = [
   {
     area: "China",
     image: "china.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@maxvdo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Max van den Oetelaar</a> on <a target="_blank" href="https://unsplash.com/s/photos/great-wall-of-china?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  `,
     description:
       "One of the largest countries you've seen on this trip. China is full of deserts, mountains, forests, and steppes, as well as dozens of massive cities and coal power plants. Wandering through the more remote areas, you see lots of old temples. You also notice a large wall running along the northern border here, probably to keep the dogs and cats inside. You've heard there is excellent Chinese food to be found here.",
     objects: [
@@ -1146,6 +1158,7 @@ export let globe = [
   {
     area: "Croatia",
     image: "croatia.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@matthiasmullie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matthias Mullie</a> on <a target="_blank" href="https://unsplash.com/s/photos/croatia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: [
       "Atlantic Ocean",
@@ -1169,6 +1182,7 @@ export let globe = [
   {
     area: "Cuba",
     image: "cuba.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@alexanderkunze?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Kunze</a> on <a target="_blank" href="https://unsplash.com/s/photos/cuba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Atlantic Ocean"],
     description:
@@ -1216,6 +1230,7 @@ export let globe = [
   {
     area: "Czech Republic",
     image: "czech-republic.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@rodrigoardilha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rodrigo Ardilha</a> on <a target="_blank" href="https://unsplash.com/s/photos/czech-republic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Austria", " Germany", "Poland", " Slovakia"],
     description:
@@ -1779,6 +1794,7 @@ export let globe = [
   {
     area: "Greece",
     image: "greece.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@macpukpro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick</a> on <a target="_blank" href="https://unsplash.com/s/photos/greece?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Albania", "Atlantic Ocean", "Bulgaria", "North Macedonia", "Turkey"],
     description:
@@ -1919,6 +1935,7 @@ export let globe = [
   {
     area: "Haiti",
     image: "haiti.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@hsuggitt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Heather Suggitt</a> on <a target="_blank" href="https://unsplash.com/s/photos/haiti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Atlantic Ocean", "Dominican Republic"],
     description:
@@ -2023,6 +2040,7 @@ export let globe = [
   {
     area: "India",
     image: "india.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@nimri?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fares Nimri</a> on <a target="_blank" href="https://unsplash.com/s/photos/india?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: [
       "Bangladesh",
@@ -2045,6 +2063,7 @@ export let globe = [
   {
     area: "Indonesia",
     image: "indonesia.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@fikrirasyid?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fikri Rasyid</a> on <a target="_blank" href="https://unsplash.com/s/photos/indonesia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: [
       "East Timor",
@@ -2187,6 +2206,7 @@ export let globe = [
   {
     area: "Japan",
     image: "japan.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@brucetml?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bruce Tang</a> on <a target="_blank" href="https://unsplash.com/s/photos/anime?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Pacific Ocean"],
     description:
@@ -2233,6 +2253,7 @@ export let globe = [
   {
     area: "Kazakhstan",
     image: "kazakhstan.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@bektejan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">J B</a> on <a target="_blank" href="https://unsplash.com/s/photos/kazakhstan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["China", "Kyrgyzstan", "Russia", "Turkmenistan", "Uzbekistan"],
     description:
@@ -2301,6 +2322,7 @@ export let globe = [
   {
     area: "Kyrgyzstan",
     image: "kyrgyzstan.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@redfrost80?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bobby Rahe</a> on <a target="_blank" href="https://unsplash.com/s/photos/kyrgyzstan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["China", "Kazakhstan", "Tajikistan", "Uzbekistan"],
     description:
@@ -2645,6 +2667,7 @@ export let globe = [
   {
     area: "Mexico",
     image: "mexico.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Fewings</a> on <a target="_blank" href="https://unsplash.com/s/photos/mexico-skull-sombrero?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     description:
       "It's hot here. As you pause for a moment to dab the sweat from your brow, you can't help but see that Mexico is a country with many different people in it. Soon, your curiosity gets the better of you, and you stop in the shade of a saguaro cactus to watch them do the different kinds of things they are doing. You notice that sometimes they meet with success, but other times they do not. Yet, despite it all, they keep doing those things. What a remarkable country.",
@@ -2981,6 +3004,7 @@ export let globe = [
   {
     area: "Norway",
     image: "norway.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@johnonolan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John O'Nolan</a> on <a target="_blank" href="https://unsplash.com/s/photos/norway?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Arctic Ocean", "Atlantic Ocean", "Finland", "Sweden", "Russia"],
     description:
@@ -3128,6 +3152,7 @@ export let globe = [
   {
     area: "Peru",
     image: "peru.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@mybibimbaplife?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jessica Knowlden</a> on <a target="_blank" href="https://unsplash.com/s/photos/peru?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "Pacific Ocean"],
     description:
@@ -3156,6 +3181,7 @@ export let globe = [
   {
     area: "Philippines",
     image: "philippines.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@cjtagupa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cris Tagupa</a> on <a target="_blank" href="https://unsplash.com/s/photos/philippines?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Pacific Ocean"],
     description:
@@ -3250,6 +3276,7 @@ export let globe = [
   {
     area: "Russia",
     image: "russia.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@trommelkopf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Steve Harvey</a> on <a target="_blank" href="https://unsplash.com/s/photos/soviet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     description:
       "Straddling eleven timezones across Europe and Asia, Russia is an incredibly large place, full of beautiful scenery and generous people. You set out to explore the vast land and its rich history, from vikings, to revolution, to mass starvation, to kleptocracy.",
@@ -3354,6 +3381,7 @@ export let globe = [
   {
     area: "San Marino",
     image: "san-marino.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@panteo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matteo Panara</a> on <a target="_blank" href="https://unsplash.com/s/photos/san-marino?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     description:
       "On a mountain overlooking this tiny city state, you see three medieval towers rising picturesquely into the blue skies.",
     type: "country",
@@ -3419,6 +3447,7 @@ export let globe = [
   {
     area: "Scotland",
     image: "scotland.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@eviefjord?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Evie Fjord</a> on <a target="_blank" href="https://unsplash.com/s/photos/bagpipes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     description:
       "Scotland is the northern part of the island of Great Britain. The capital is Edinburgh. Scotland's national animal is the red deer.",
@@ -3535,6 +3564,7 @@ export let globe = [
   {
     area: "Singapore",
     image: "singapore.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@meric?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Meriç Dağlı</a> on <a target="_blank" href="https://unsplash.com/s/photos/singapore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Indian Ocean", "Pacific Ocean"],
     description:
@@ -3718,6 +3748,7 @@ export let globe = [
   {
     area: "Sri Lanka",
     image: "sri-lanka.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@asanthapdn003?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Asantha Abeysooriya</a> on <a target="_blank" href="https://unsplash.com/s/photos/sri-lanka?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["India", "Indian Ocean"],
     description:
@@ -3896,6 +3927,7 @@ export let globe = [
   {
     area: "Tanzania",
     image: "tanzania.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@hootie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CJ B.</a> on <a target="_blank" href="https://unsplash.com/s/photos/victoria-falls?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: [
       "Burundi",
@@ -4068,6 +4100,7 @@ export let globe = [
   {
     area: "Turkey",
     image: "turkey.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@adliwahid?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adli Wahid</a> on <a target="_blank" href="https://unsplash.com/s/photos/turkey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     description:
       "Turkey is an ancient country with in strategically important location: it commands a shipping bottleneck, and spans two continents.",
@@ -4208,6 +4241,7 @@ export let globe = [
   {
     area: "United States",
     image: "united-states.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@asiako?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joanna Kozik</a> on <a target="_blank" href="https://unsplash.com/s/photos/monument-valley-united-states?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     description:
       'A large and diverse country, it is home to the famous "50 state quarters" phenomenon of the early 2000s. You see a bald eagle fishing the many lakes, rivers, and ponds here.',
     type: "country",
@@ -4270,6 +4304,7 @@ export let globe = [
   {
     area: "Vanuatu",
     image: "vanuatu.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@monaleesa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Monika MG</a> on <a target="_blank" href="https://unsplash.com/s/photos/vanuatu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Pacific Ocean"],
     description:
@@ -4378,6 +4413,7 @@ export let globe = [
   {
     area: "Yemen",
     image: "yemen.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@andrew_svk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Svk</a> on <a target="_blank" href="https://unsplash.com/s/photos/yemen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Indian Ocean", "Oman", "Saudi Arabia"],
     description:
