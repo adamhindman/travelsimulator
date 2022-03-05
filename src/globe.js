@@ -605,6 +605,11 @@ export let globe = [
     neighbors: ["India", "Myanmar", "Indian Ocean"],
     description:
       "Bangladesh is a South Asian nation on the Bay of Bengal. The largest city is Chittagong. The climate of Bangladesh includes six seasons. Rainy weather falls during the monsoons from June to September, and most of Bangladesh is flooded during this monsoon season.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
   },
   {
     area: "Barbados",
@@ -612,6 +617,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       "Barbados is located to the east of the Caribbean Sea. Its capital is Bridgetown. Barbados was a British colony for more than 350 years, until gaining independence in 1966.<p>Beach-goers do come to Barbados in large numbers, because Barbados has some of the most beautiful beaches in the world. Combined with a year-round tropical climate, the white sandy beaches and tall palms are the perfect setting for the luxury tourism that dominates Barbados today.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
   },
   {
     area: "Belarus",
@@ -640,11 +650,10 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "France", "Germany", "Luxembourg", "Netherlands"],
     description:
       "Belgium is a low-lying country in Europe, bordered by the Netherlands, Germany, Luxembourg, and France. The North Sea is out there somewhere, gray and lonely. Dutch-speaking Flemish make up about half the country, or a little more, with French speakers making up most of the rest. There are about 12 million people here, though they are distributed throughout the country, not all standing in the same place. The largest concentrations of Belgians are in cities like Antwerp, and Ghent. The country has a very low crime rate, presumably because of the presence of the great detective, Hercule Poirot.",
-    // objects: [
-    //   { name: "DIAMOND QUARTER", article: "", description: "" },
-    //   { name: "FRITES", article: "", description: "" },
-    //   { name: "GILLES", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "DIAMOND QUARTER", article: "", description: "Antwerp's diamond district remains the funnel through which the vast majority of the world's rough diamonds must pass. From here, they will be purchased, thousands of carats at a time, before being cut, and polished, and placed into rings, necklaces, and the like.</p><p>$50 billion Euros worth of diamonds pass through here every year. That's $54 billion dollars.</p><p>After weeks of careful planning, you put a crew together and go through a series of preparation montages, establishing the personalities and relationships of each team member. There is tension, at times tempers are frayed. Your leadership is even questioned. But you manage to assert your leadership and hold the team together at the last minute.</p><p>The job is a success, but doesn't go exactly as planned.</p><p>You manage to escape from the police, but you've got their attention now, and the tenacious chief inspector is not giving up the chase.</p><p>After an exciting action sequence, in which all of your team are killed (one sacrifices himself to save you), you and the inspector confront each other on a bridge. He tells you that it's all over — the airplane full of diamonds was confiscated on the runway — and you should give yourself up.</p><p>You tell him that it's never over, and fall backwards off the bridge, disappearing into the black water of the Scheldt. He watches for several minutes, scanning the surface with his flashlight.</p><p>\"Bring in the divers,\" he mutters into the radio, and walks back toward his crashed car.</p><p>Hours later, he receives a phone call that confuses him. The Cessna they confiscated was full of imitation diamonds. Costume diamonds. Glass.</p><p>What really happened to the billion dollars in stolen diamonds, he wonders. And why didn't they ever find your body?</p>" },
+      { name: "FRITES", article: "", description: "Belgians believe they invented the French fry, which they call a frite. They also put mayonnaise on them, or eat them with mussels. You don't have the heart to correct them on any of these points, but merely smile and nod." },
+    ],
   },
   {
     area: "Belize",
@@ -736,6 +745,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Croatia", "Montenegro", "Serbia"],
     description:
       "Bosnia and Herzegovina is a country in southeastern Europe. Sarajevo is the capital and largest city. Other major cities include Banja Luka and Tuzla. Bosnia and Herzegovina are mountainous, centrally-located republic. The Dinaric Alps pass through the country from east to west.<p>What does the flag look like, you ask? It is composed of wide medium blue vertical band on the fly side with a yellow right triangle abutting the band and the top of the flag. The remainder of the flag is medium blue with seven full five-pointed white stars and two half stars top and bottom along the hypotenuse of the triangle.</p>",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
   },
   {
     area: "Botswana",
@@ -1031,8 +1045,7 @@ export let globe = [
   {
     area: "China",
     image: "china.png",
-    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@maxvdo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Max van den Oetelaar</a> on <a target="_blank" href="https://unsplash.com/s/photos/great-wall-of-china?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  `,
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@maxvdo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Max van den Oetelaar</a> on <a target="_blank" href="https://unsplash.com/s/photos/great-wall-of-china?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     description:
       "One of the largest countries you've seen on this trip. China is full of deserts, mountains, forests, and steppes, as well as dozens of massive cities and coal power plants. Wandering through the more remote areas, you see lots of old temples. You also notice a large wall running along the northern border here, probably to keep the dogs and cats inside. You've heard there is excellent Chinese food to be found here.",
     objects: [
@@ -1524,6 +1537,11 @@ export let globe = [
     neighbors: ["Mozambique", "South Africa"],
     description:
       "Eswatini, the land which some still called Swaziland, is a landlocked country and an independent monarchy in southern Africa. Eswatini is, however, almost completely surrounded by South Africa, as though it walked into an ambush. Eswatini is the only absolute monarchy remaining in Africa. Nearly half of the population is employed by agriculture, with the main crops being maize, sugarcane and tobacco.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
   },
   {
     area: "Ethiopia",
@@ -3354,6 +3372,11 @@ export let globe = [
     area: "Saint Kitts and Nevis",
     description:
       "The two-island country of Saint Kitts and Nevis. The capital is Basseterre. Nevis is the only Caribbean island that is a dormant volcano but NOT the secret lair of a villain. Saint Kitts and Nevis has a population of about 50,000. It used to be a part of Great Britain, but in In 1983, they gained their independence. Congratulations!",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
     type: "country",
     neighbors: ["Atlantic Ocean"],
   },
@@ -3362,12 +3385,22 @@ export let globe = [
     type: "country",
     description:
       "The island country of Saint Lucia, about 175 miles east of Puerto Rico. The capital is Castries. Saint Lucia has a population of about 175,000. The official language is English. The currency is the East Caribbean dollar. The climate is tropical. For fun, people like to dance, go to the beach, and listen to music.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
     neighbors: ["Atlantic Ocean"],
   },
   {
     area: "Saint Vincent and the Grenadines",
     description:
       "A nation in the Windward Islands of the West Indies. The capital is Kingstown. Saint Vincent and the Grenadines has a population of about 51,000. The national flower is the saman (pronounced sa-man). Saman is the national bird.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
     type: "country",
     neighbors: ["Atlantic Ocean"],
   },
@@ -3376,6 +3409,11 @@ export let globe = [
     type: "country",
     description:
       "The southernmost country of Polynesia. The capital is Apia. Samoa is an island nation in the South Pacific. There are nine islands. Samoa has a population of about 180,000, most of whom enjoy the tropical climate. A small country with big people.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
     neighbors: ["Pacific Ocean"],
   },
   {
@@ -3418,6 +3456,11 @@ export let globe = [
     type: "country",
     description:
       "Two small islands in the equatorial Atlantic. They are about 1,000 miles west of Africa. São Tomé and Príncipe are both volcanic islands. The capital is São Tomé. Both islands have tropical rain forests. The population is a mixture of Portuguese, Africans, and Indians.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
     neighbors: ["Atlantic Ocean"],
   },
   {
@@ -3425,6 +3468,11 @@ export let globe = [
     type: "country",
     description:
       "The largest country in the Arabian Peninsula. The capital is Riyadh. Saudi Arabia is ruled by a monarchy. The language is Arabic. Saudi Arabia is an Islamic country. Saudi Arabia's national religion is Islam.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
     neighbors: [
       "Indian Ocean",
       "Iraq",
@@ -3881,6 +3929,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Iraq", "Israel", "Jordan", "Lebanon", "Turkey"],
     description:
       "Syria is an area in the Middle East bordering on the Mediterranean Sea. Syria is located near the nations of Greece, Iraq, Turkey, and Lebanon. For a long time, it was known as Ottoman Syria, but before that it was home to the Phoenicians, Assyrians, Akkadians, Sumerians, and probably some even older civilizations with magic or like, advanced technology we've forgotten how to make.",
+    // objects: [
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    //   { name: "", article: "", description: "" },
+    // ],      
   },
   {
     area: "Taiwan",
