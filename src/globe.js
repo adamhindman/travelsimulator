@@ -605,23 +605,22 @@ export let globe = [
     neighbors: ["India", "Myanmar", "Indian Ocean"],
     description:
       "Bangladesh is a South Asian nation on the Bay of Bengal. The largest city is Chittagong. The climate of Bangladesh includes six seasons. Rainy weather falls during the monsoons from June to September, and most of Bangladesh is flooded during this monsoon season.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],      
+    objects: [
+      { name: "BENGAL TIGER", article: "A", description: "You are in a blind, with your guide Abdul, waiting to see a Bengal Tiger stalk its prey. You are in the Sundarbans, Bangladesh's huge mangrove forest, where most of the country's population of around 300 tigers are found.</p>You ask Abdul whether the tiger is orange with black stripes, or black with orange stripes.</p><p>\"Orange with black stripes,\" he says.</p><p>How do you know, you ask.</p><p>\"Because they're mostly orange,\" he says.</p><p>You tell him that doesn't prove anything, really.</p><p>He thinks for a minute.</p><p>\"Well, there are tigers who have white fur, and they still have black stripes. The mutation that causes their fur to be white doesn't affect their stripes.\"</p><p>You chuckle. \"Or maybe the mutation only affects their stripes; it all depends on your perspective.\"</p><p>You politely advise Abdul to try thinking about things from a different perspective sometimes.</p><p>Abdul says nothing, but silently watches the narrow channel between islands.</p><p>After another hour, he touches you on the shoulder, and gestures with a slow movement of his eyes.</p><p>A tiger is approaching the shore of the small island beneath you, where a pair of spotted deer are drinking from the river. From your elevated blind, you see it make slow, muscular movements, eyes locked on its prey as it slinks silently toward them.</p><p>The deer bolt at the same moment the tiger leaps, but it is too late for one of them. The tiger closes the deer in a horrific trap of teeth and claws. With a startled scream the deer dies, thrashing on the muddy shoreline. Its partner bounds away in an instant, never looking back.</p>" },
+      { name: "JUTE", article: "A bundle of", description: "While wandering the streets of Chittagong, you see a burlap sack full of beans. It makes you wonder: how does a burlap sack get made?</p><p>It turns out, burlap is made of jute, the fibrous inner bark of the Jute Mallow plant, which grows right here in Bangladesh!</p><p>This discovery leads you down a fascinating, 4-day tour through the production of jute. You visit a farm where Jute Mallow is grown and harvested, to a riverbank where it the skin is separated from the core by a bacterial process called retting, to a textile mill where the fibers are spun into threads, and finally sewn into burlap and loaded into trucks, where it will be delivered to customers like the dried bean wholeseller you met at the beginning of this incredible journey.</p><p>The plant manager even gives you a free burlap sack, signed by everyone at the plant. The tears on your face, are tears of joy at learning so much about jute.</p>" },
+      // { name: "COX'S BAZAR", article: "", description: "Quicksand" },
+    ],      
   },
   {
     area: "Barbados",
     type: "country",
     neighbors: ["Atlantic Ocean"],
     description:
-      "Barbados is located to the east of the Caribbean Sea. Its capital is Bridgetown. Barbados was a British colony for more than 350 years, until gaining independence in 1966.<p>Beach-goers do come to Barbados in large numbers, because Barbados has some of the most beautiful beaches in the world. Combined with a year-round tropical climate, the white sandy beaches and tall palms are the perfect setting for the luxury tourism that dominates Barbados today.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],      
+      "Barbados is located to the east of the Caribbean Sea, where the prevailing trade winds often make it the first landfall for ships sailing from Europe to the Caribbean. Its capital is Bridgetown. Barbados was a British colony for more than 350 years, until gaining independence in 1966.<p>Beach-goers do come to Barbados in large numbers, because Barbados has some of the most beautiful beaches in the world. Combined with a year-round tropical climate, the white sandy beaches and tall palms are the perfect setting for the luxury tourism that dominates Barbados today.",
+    objects: [
+      { name: "SPACE GUN", article: "A", description: "Now rusting in a field on a military base, this 130-foot long artillery cannon was once part of the defunct Project HARP.</p><p>What was Project HARP, and why did it involve pointing a gun at the sky? Some say it was an experiment to control the weather by threatening the sun. Hard to believe, but it's another perfect day here in Barbados.</p><p>When you hear the crunch of gravel, you hide in some nearby bushes until the MPs pass by in their jeep, then hop over the fence and walk back to town." },
+      { name: "MOUNT GAY", article: "", description: "A rum distillery dating back to 1703. You enjoy an entire bottle of Mount Gay rum while walking the streets of Bridgetown." },
+    ],      
   },
   {
     area: "Belarus",
