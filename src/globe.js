@@ -618,7 +618,7 @@ export let globe = [
     description:
       "Barbados is located to the east of the Caribbean Sea, where the prevailing trade winds often make it the first landfall for ships sailing from Europe to the Caribbean. Its capital is Bridgetown. Barbados was a British colony for more than 350 years, until gaining independence in 1966.<p>Beach-goers do come to Barbados in large numbers, because Barbados has some of the most beautiful beaches in the world. Combined with a year-round tropical climate, the white sandy beaches and tall palms are the perfect setting for the luxury tourism that dominates Barbados today.",
     objects: [
-      { name: "SPACE GUN", article: "A", description: "Now rusting in a field on a military base, this 130-foot long artillery cannon was once part of the defunct Project HARP.</p><p>What was Project HARP, and why did it involve pointing a gun at the sky? Some say it was an experiment to control the weather by threatening the sun. Hard to believe, but it's another perfect day here in Barbados.</p><p>When you hear the crunch of gravel, you hide in some nearby bushes until the MPs pass by in their jeep, then hop over the fence and walk back to town." },
+      { name: "SPACE GUN", article: "A", description: "Now rusting in a field on a military base, this 130-foot long artillery cannon was once part of the defunct Project HARP.</p><p>What was Project HARP, and why did it involve pointing a gun at the sky? Some say it was an experiment to control the weather by threatening the sun. Hard to believe, but it's another perfect day here in Barbados.</p><p>When you hear the crunch of gravel, you hide in some nearby bushes until the MPs pass by in their jeep, then you hop over the fence and walk back to town." },
       { name: "MOUNT GAY", article: "", description: "A rum distillery dating back to 1703. You enjoy an entire bottle of Mount Gay rum while walking the streets of Bridgetown." },
     ],      
   },
@@ -661,9 +661,9 @@ export let globe = [
     description:
       "This country is located on the eastern coast of Central America. It is bordered by Mexico to the north and Guatemala to the west. With a population of 387,000, it is one of the smallest countries of Central America. The culture of the country is heavily influenced by the ancient Maya, whose city states occupied the territory that is now Belize between about 2000 BC and AD 800.",
     // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
+    //   { name: "GIBNUT", article: "A wild", description: "" },
+    //   { name: "GREAT BLUE HOLE", article: "", description: "" },
+    //   { name: "SISIMITO", article: "", description: "" },
     // ],
   },
   {
