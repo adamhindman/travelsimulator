@@ -879,11 +879,12 @@ export let globe = [
     type: "country",
     neighbors: ["Democratic Republic of the Congo", "Rwanda", "Tanzania"],
     description:
-      "Burundi is located in central Africa. It's bordered by Rwanda, Tanzania, and the Democratic Republic of the Congo.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+      "Burundi is located in central Africa. It's bordered by Rwanda, Tanzania, and the Democratic Republic of the Congo. You show up in Bujumbura to tour the capital building, but discover it was recently moved to Gitega. A Burundian helpfully gives you directions.",
+    objects: [
+      { name: "GUSTAVE THE CROCODILE", article: "", description: "Nineteen feet long, 60 years old, with a full set of a teeth and a body count in the hundreds, Gustave the Crocodile is a man-eater whose very name fills Burundians with terror.</p><p>Despite many efforts to catch or kill him, Gustave has proven a canny adversary who is always one step ahead of the  hunters.</p><p>There is a team of scientists and filmmakers who are trying to capture Gustave and study what makes him so dangerous. You volunteer to join them, showing up to their meeting and running your nails over a chalkboard to get their attention.</p><p>\"Y'all know me. Know how I earn a living.\"</p><p>\"Actually, no, who are you? Aren't you a tourist? Are you lost?\"</p><p>\"I'll catch this croc for you, but it ain't gonna be easy.\"</p><p>\"This is the Quint introduction scene from the movie Jaws,\" one of the filmmakers observes.</p><p>After a negotiation and a modest exchange of money, they agree to take you on in the role of Junior Crocodile Research Assistant, and you set out to stalk the wiley killer on the banks of the Ruzizi river.</p><p>Three days later, you return to Bujumbura, having been kicked out of the research team for making too many references to the movie Jaws (\"we're going to need a bigger tent\", etc).</p>" },
+      { name: "LAKE TANGANYIKA", article: "", description: "You eat a delicious fish lunch at a restaurant on the shores of the world's second largest, deepest, and oldest lake. In the distance, you can see a herd of hippos sunning themselves on the shore." },
+      { name: "KASUMO", article: "", description: "A nondescript settlement, notable only for being the source of the Nile. You dip your toes in the water and wave to it as it begins its long journey to the sea." },
+    ],
   },
   {
     area: "Cambodia",
