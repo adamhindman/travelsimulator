@@ -660,11 +660,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Guatemala", "Mexico"],
     description:
       "This country is located on the eastern coast of Central America. It is bordered by Mexico to the north and Guatemala to the west. With a population of 387,000, it is one of the smallest countries of Central America. The culture of the country is heavily influenced by the ancient Maya, whose city states occupied the territory that is now Belize between about 2000 BC and AD 800.",
-    // objects: [
-    //   { name: "GIBNUT", article: "A wild", description: "" },
-    //   { name: "GREAT BLUE HOLE", article: "", description: "" },
-    //   { name: "SISIMITO", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "GIBNUT", article: "A kidnapped", description: "One of \"Nature's Pokemon\", the gibnut is a rodent about the size of a small dog: brown, with lines of white spots on its back. They have tiny ears on top of their heads, and a tiny tail on their butts. They eat fruit, and love to swim... just like you!</p><p>Unlike you, gibnuts are eaten as a delicacy in Belize, and abroad.</p><p>With the help of some local kid detectives, you uncover a smuggling ring that kidnaps gibnuts and packs them into crates, to be flown out of the country and served at fancy restaurants.</p><p>\"They taste like ham,\" one of the kids says.</p><p>You look at the gibnut in its cage. Its bright eyes stare back at you.</p><p>\"It's still not right.\"</p><p>You begin to pry open the lock with a crowbar.</p><p>When all the gibnuts are freed, and have run off into the night to be with their families, you and the kid detectives find the shipping manifest. The destination is listed as: Buckingham Palace, London, England!</p><p>\"Queen Elizabeth II visited Belize in 1985,\" notes one of the kids, \"she ate a gibnut. Said she liked it. Ever since then, they've been called \'The Royal Rat\' as a joke.\"</p><p>\"Not a joke anymore,\" you say. \"Looks like the Queen Mum developed a taste for illegal rat meat.\"</p><p>The kid detectives look at each other, silently acknowledging that you've just discovered a conspiracy that reaches to the highest levels of government.</p>The littlest kid detective is the first to speak up:</p><p>\"Wooks wike dis case jus' got intewesting.\"</p>" },
+      // { name: "GREAT BLUE HOLE", article: "", description: "" },
+      // { name: "SISIMITO", article: "", description: "" },
+    ],
   },
   {
     area: "Benin",
@@ -744,11 +744,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Croatia", "Montenegro", "Serbia"],
     description:
       "Bosnia and Herzegovina is a country in southeastern Europe. Sarajevo is the capital and largest city. Other major cities include Banja Luka and Tuzla. Bosnia and Herzegovina are mountainous, centrally-located republic. The Dinaric Alps pass through the country from east to west.<p>What does the flag look like, you ask? It is composed of wide medium blue vertical band on the fly side with a yellow right triangle abutting the band and the top of the flag. The remainder of the flag is medium blue with seven full five-pointed white stars and two half stars top and bottom along the hypotenuse of the triangle.</p>",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],      
+    objects: [
+      { name: "HAJDUČKA REPUBLIKA MIJATA TOMIĆA", article: "The", description: "The Hajduk Republic of Mijata Tomica is a micronation in the middle of Bosnia and Herzegovina, which is constituted of a motel and the surrounding motel grounds. Thus, the country has a total area of about 17 square acres.</p><p>You've rented a room in the Republic, and sitting on the bed there, you begin wonder how what makes something a nation. Is it having a constitution? Is it having a King?</p><p>After some thought, you come to the conclusion that a nation is defined by its ability to defend territory against others who would take it.</p><p>At that same moment, you decide to have your own nation. You will carve out a separate republic within grounds of the Hajduk Republic. If this motel is a micronation, you will create a nanonation inside it, and if a nanonation is one one-thousandth the size of a micronation, yours will take up about 740 square feet.</p><p>That's the size of your motel room, the room next door, and the nearby area of the hallway which includes the vending and snack machines.</p><p>Armed with some improvised weapons, and well-stocked with food and ice from your kingdom, you plant your flag, knock a hole in the drywall to connect the eastern and western edges of your kingdom, and proclaim sovereignty.</p><p>It is not long before the powers that be take notice, and you are besieged by the forces of the Republic.</p><p>Fighting is intense, but you manage to turn back a number of attacks by the management and custodial staff. All night long they make sallies to breach the defensive walls, but the chain attached to the door holds. By morning, the battlefield has grown eerily silent. You wait for the next attack.</p><p>That's when the telephone rings.</p><p>It's Marija, daughter of the nation's founder, and the current head of state. \"We would like to negotiate terms; we're sending an emissary.\"</p><p>In the end, you give up the ice machine, and the second room: fine, you couldn't have held them yourself anyway. The vending machine is a sticking point, but you eventually agree to receive a certain number of candy bars as a yearly tribute in exchange for yielding control.</p><p>You keep your motel room, the seat of your power, and your flag waves above it to this day.</p>" },
+      // { name: "CABLE CAR", article: "A", description: "" },
+      // { name: "", article: "", description: "" },
+    ],
   },
   {
     area: "Botswana",
@@ -870,11 +870,9 @@ export let globe = [
     neighbors: ["Benin", "Côte d'Ivoire", "Ghana", "Mali", "Niger", "Togo"],
     description:
       "Burkina Faso is a landlocked country in West Africa. It's got a tropical climate, plenty of gold deposits, and lots of neighbors. The population is a mixture of Christians and Muslims, and the official language is English.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+    {name:"BANFORA WATERFALLS", article:"The", description:"A pleasant series of cascading waterfalls, dropping into a large pool perfect for swimming. You lie on your back and watch the dragonflies cutting through the evening air.</p>"},
+    ],
   },
   {
     area: "Burundi",
