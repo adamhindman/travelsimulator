@@ -994,11 +994,9 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       "Cape Verde is a mosaic of 10 islands, about 310 miles off the west coast of Africa.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+      {name:"CHÃ DAS CALDEIRAS", article:"", description:"A town located in the crater of an active volcano, where there is no electricity or running water. In 1995, an eruption destroyed many of the buildings here, and most of the people left. But, the soil left by that volcano is so fertile that the remaining farmers can grow wine to make grapes, as well as coffee, apples, tomatoes, and pomegranates. They eat some, export the rest."},
+    ],
   },
   {
     area: "Central African Republic",

@@ -209,6 +209,7 @@ const handleForget = () => {
 };
 
 export const handleTab = e => {
+  const commands = ["go", "look", "tel", "forget", "inv", "help"]
   let val = e.target.value.toLowerCase().replace(/\s+/g, " ").trim();
   const words = val.split(" ");
   const verb = words[0];
@@ -233,20 +234,21 @@ export const handleTab = e => {
       e.target.value = `look ${obj}`;
       break;
     default:
+      e.target.value = getFirstMatchedOption(verb, commands)
       break;
   }
 }
 
-const getFirstMatchedOption = (noun, options) => {
+const getFirstMatchedOption = (word, options) => {
   let firstMatch
   let placeholder = ''
-  if (noun.toLowerCase() === 'look'){
+  if (word.toLowerCase() === 'look'){
     placeholder = ""
   }
-  const matches = options.filter(option => option.toLowerCase().indexOf(noun) !== -1);
+  const matches = options.filter(option => option.toLowerCase().indexOf(word) !== -1);
   if (isArray(matches) && matches.length > 0) {
     firstMatch = matches.reduce((result, cur) => {
-      return cur.toLowerCase().indexOf(noun) < result.toLowerCase().indexOf(noun) ? cur : result
+      return cur.toLowerCase().indexOf(word) < result.toLowerCase().indexOf(word) ? cur : result
     });
   }
   return firstMatch || placeholder
