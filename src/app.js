@@ -1,5 +1,5 @@
 import { globe } from "./globe.js";
-import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects } from "./utilities.js";
+import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects} from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
@@ -95,7 +95,7 @@ export const handleSubmit = (val, msg = "") => {
       msg = helpText;
       break;
     case "stats": 
-      msg = `<p>Global object size: ${Math.round(roughSizeOfObject(globe) / 1000)}k<br/>Object descriptions: ${catAllObjects(globe).split(" ").length} words</p>`;
+      msg = `<p>Size of the globe: ${Math.round(roughSizeOfObject(globe) / 1000)}k<br/>Object descriptions: ${catAllObjects(globe).split(" ").length} words<br/>Area descriptions: ${catAllDescriptions(globe).split(" ").length} words<br/>Countries without objects: ${getCountriesWithoutObjects(globe).length} out of ${globe.length}<br/>Next country to write: ${getCountriesWithoutObjects(globe)[0].area}</p>`;
       break;
     case "forget":
       msg = handleForget();

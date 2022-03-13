@@ -45,6 +45,18 @@ export function catAllObjects(arr){
   }, "")
 }
 
+export function catAllDescriptions(arr){
+  return arr.reduce((result, current) => {
+    return result + current.description
+  }, "")
+}
+
+export function getCountriesWithoutObjects(arr){
+  return arr.filter((item) => {
+    return !isArray(item.objects)
+  })
+}
+
 export function roughSizeOfObject(object) {
   var objectList = [];
   var stack = [object];
