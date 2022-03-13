@@ -95,7 +95,7 @@ export const handleSubmit = (val, msg = "") => {
       msg = helpText;
       break;
     case "stats": 
-      msg = `<p>Size of the globe: ${Math.round(roughSizeOfObject(globe) / 1000)}k<br/>Object descriptions: ${catAllObjects(globe).split(" ").length} words<br/>Area descriptions: ${catAllDescriptions(globe).split(" ").length} words<br/>Countries without objects: ${getCountriesWithoutObjects(globe).length} out of ${globe.length}<br/>Next country to write: ${getCountriesWithoutObjects(globe)[0].area}</p>`;
+      msg = `<p>Size of the globe: ${Math.round(roughSizeOfObject(globe) / 1000)}k<br/>Object descriptions: ${catAllObjects(globe).split(" ").length} words<br/>Area descriptions: ${catAllDescriptions(globe).split(" ").length} words<br/>Countries without objects: ${getCountriesWithoutObjects(globe).length} out of ${globe.length}<br/>First country without objects: ${getCountriesWithoutObjects(globe)[0].area}</p>`;
       break;
     case "forget":
       msg = handleForget();
