@@ -212,7 +212,7 @@ const handleForget = () => {
 };
 
 export const handleTab = e => {
-  const commands = ["go", "look", "tel", "forget", "inv", "help", "stats"]
+  const commands = ["go", "look", "tel", "forget", "inv", "help", "stats", "passport"]
   let val = e.target.value.toLowerCase().replace(/\s+/g, " ").trim();
   const words = val.split(" ");
   const verb = words[0];
