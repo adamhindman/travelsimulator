@@ -7,6 +7,7 @@ export const helpText = `
     <li><strong>PASSPORT</strong>: Check what countries you've visited.</li>
     <li><strong>FORGET</strong>: Forget everything.</li>
     <li><strong>INV</strong>: Check your inventory.</li>
+    <li><strong>STATS</strong>: Get some stats about how much work I've done.</li>
   </ul>
   <p>After typing a command, you can press [TAB] to autocomplete it!</p>
 `;

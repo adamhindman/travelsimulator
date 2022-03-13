@@ -1,5 +1,5 @@
 import { globe } from "./globe.js";
-import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject } from "./utilities.js";
+import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects } from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
@@ -92,7 +92,10 @@ export const handleSubmit = (val, msg = "") => {
       handleTel(noun);
       break;
     case "help":
-      msg = helpText + `<p>Size: ${Math.round(roughSizeOfObject(globe) / 1000)}k</p>`;
+      msg = helpText;
+      break;
+    case "stats": 
+      msg = `<p>Global object size: ${Math.round(roughSizeOfObject(globe) / 1000)}k<br/>Object descriptions: ${catAllObjects(globe).split(" ").length} words</p>`;
       break;
     case "forget":
       msg = handleForget();
@@ -209,7 +212,7 @@ const handleForget = () => {
 };
 
 export const handleTab = e => {
-  const commands = ["go", "look", "tel", "forget", "inv", "help"]
+  const commands = ["go", "look", "tel", "forget", "inv", "help", "stats"]
   let val = e.target.value.toLowerCase().replace(/\s+/g, " ").trim();
   const words = val.split(" ");
   const verb = words[0];

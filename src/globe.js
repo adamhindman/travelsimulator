@@ -1011,11 +1011,11 @@ export let globe = [
     ],
     description:
       "The Central African Republic (CAR) is a landlocked country in Central Africa. The CAR covers a land area of about 240,000 square miles, and has an estimated population of about four million. Historically, it's been pretty prone to coups, corruption, and political violence.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+      {name:"NIGHT SKY", article:"The", description:"You trek out to the Lobaye region to spend some time living with the Pygmies there. You hunt, fish, and chillax with this unique group, quickly picking up enough of their fascinating language to get by.</p><p>At night, you look up at the stars, which seem so much more numerous and brilliant this far away from the electric lights of any modern city."},
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Chad",
@@ -1030,6 +1030,11 @@ export let globe = [
     ],
     description:
       "Chad is the third-largest country in Africa. It is bordered by Libya to the north, Sudan to the east, the Central African Republic to the south, Cameroon and Nigeria to the southwest, and Niger to the west. The capital is N'Djaména.",
+    objects:[
+      {name:"IVORY POACHING", article:"", description:"The bulky shape of an African elephant — a bull, by the looks of it — stands perfectly still in the sparse shade of a wispy tree. Its head is lowered, as though it's staring at something on the ground. The bright white gleam of its long, upturned ivory tusks stands out against its own dark gray hide.</p><p>They are impressive tusks, and they\'d command a high price in the black market for any poacher ruthless enough to come take them.</p><p>Zakouma National Park in Chad is home to around 400 elephants, though only a couple of decades ago there were ten times as many. With 3000 square kilometers to patrol, it hasn\'t been easy to stop the invasion of poachers from devastating the population. That doesn\'t mean the rangers have stopped trying, though.</p>Fifty meters from the elephant, the grass rustles, subtly. The barrel of a high-powered rifle can be seen, along with the steely eyes of the hunter behind it, as he squeezes the trigger.</p><p>A shot echoes across the bush, followed by the unmistakable sound of steel striking steel. The elephant is hit, but does not go down.</p><p>Confused, the poacher fires again, and again hears a \'plink\' as the elephant appears to be unphased.</p><p>Then the elephant turns around. It begins to charge the poacher, its v12 engine rumbling as it picks up speed.</p><p>The poacher shrieks, drops his rifle, and begins running in stark terror.</p><p>This wasn\'t an elephant after all, but ALFIL-1, a new project from the Zakouma park rangers.</p><p>It is an armored personnel carrier disguised to look like an elephant. Its suspension is designed for intense offroad chases, and it\'s brimming with advanced weaponry and sensors that can detect a poacher from a kilometer away. It\'s also got a built-in prison cell with plenty of room for this evil-doer.</p><p>\"Thanks for letting me tag along,\" you say, after the poacher has been captured and brought to justice, \"I'll never forget it.\"</p><p>\"Never forget? Maybe you're part elephant,\" jokes one of rangers."},
+      // {name:"", article:"", description:''},
+      // {name:"", article:"", description:''}
+    ],
   },
   {
     area: "Chile",
@@ -1037,6 +1042,11 @@ export let globe = [
     neighbors: ["Argentina", "Atlantic Ocean", "Bolivia", "Pacific Ocean", "Peru"],
     description:
       "Wow, this country is long! In fact, Chile is the longest country in the world. It occupies a narrow strip of land down the west coast of South America. It is 2,670 miles long, but only 180 miles across at its widest point.<p>Chile's climate is mild and pleasant. The northern area has a desert climate. The central region is cool and rainy, and the southern region has a Mediterranean climate.</p>",
+    objects:[
+      {name:"CITY OF STAIRCASES", article:"The", description:"You are huffing and puffing your way to the heights of the ghost city of Sewell, Chile. This former copper mining boom town once had 15,000 people living in it; now, it\'s completely abandoned.</p><p>This city was built on such a steep mountainside that instead of a main street, it is organized around a single, long staircase. It is this staircase, called the Escalara Central, that you're currently climbing.</p><p>Around you, you see many of the town's original shops and houses, fully restored. There's the post office, and the assay office, and the mining administration, and one of the general stores. Wow!</p><p>By the time you get to the top of the staircase, you barely have enough energy to raise your arms in the air and jump up and down like Rocky. But you pull it off.</p>"},
+      {name:"CHINCHORRO MUMMIES", article:"The", description:"These Chilean mummies are at least a couple thousand years older than the ones in Egypt. They may not be the world's oldest mummies, but they are the oldest we know about.</p><p>Somewhere out there, there may very well be an even older mummy, just waiting for us to find him.</p>"},
+      {name:"WINE", article:"", description:"Chile produces some of the world's highest quality wines, and is especially noted for its cabernets.</p><p>You learn all about wine-tasting, and come to appreciate the elegance of the grapes grown here in the foothills of the Andes: their sublime oak and tannin integration, notes of mint, prevailing fruit-forwardness, and charming, herbaceous density.</p><p>You drink several bottles and pass out in the sun, waking up panicked and sunburnt, with no idea where you are."}
+      ],
   },
   {
     area: "China",
