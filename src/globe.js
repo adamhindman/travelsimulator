@@ -280,6 +280,11 @@ export let globe = [
     type: "country",
     description:
       "The graveyard of empires is a central Asian country. The capital is A, and the capital is Kabul. The name Afghanistan means 'Land of the Afghan', and the population is about 23 million Pashtun and Uzbeks. The country is mountainous, landlocked, and littered with old Soviet and U.S. tanks.",
+    objects:[
+      {name:"LARGE PILE OF GRAVEL", article:"A", description:"\"It's... it's very nice. Really.\"</p><p>You have travelled to the city of Bamyan to view the piles of gravel where, in former times, the world's largest statues of the Buddha were carved into the cliff face here. One of them was 53 meters tall!</p><p>In 2001, the Taliban blew up the statues with dynamite: too much Buddha for their tastes.</p><p>This action has affected tourism in the area. The resulting gravel piles are impressive, but not as impressive as the statues were. Frankly, you've even seen nicer gravel piles, but you don't tell this to anyone in the area.</p>"},
+      {name:"CHICKEN STREET", article:"", description:"A famous street full of shops in Kabul. It mostly full of handmade arts and crafts, and imported knock-off brand name goods. One thing you cannot buy here is chickens."},
+      // {name:"", article:"", description:""}
+    ],
     neighbors: ["China", "Iran", "Pakistan", "Tajikistan", "Turkmenistan", "Uzbekistan"],
   },
   {
