@@ -100,8 +100,13 @@ export let globe = [
     area: "Atlantic Ocean",
     description:
       "Considered by many to be the one of hte best oceans on the planet, you're glad you found time to see it up close.",
-    objects:[
-      {name:"TRANSATLANTIC TELEGRAPH CABLE", article:"", description: "The first cable was laid across the Atlantic in 1858. It only lasted a couple of weeks before breaking down, but that was enough to plant the idea of instantaneous global communication. Today, there are about a dozen transatlantic cables, relaying hundreds of terabits of information every second.</p><p>Whereas the first telegraph cable carried only a stilted, formal exchange between Queen Victoria of England, and President James Buchanan of the United States, modern cables carry everything from pornography, to unboxing videos, to vape trick videos, and even NFTs. Every piece of DLC downloaded in Fortnite, every unwanted piece of email spam, every ill-informed tirade on Twitter: those ideas all started right here, with this cable.</p><p>Well, strictly speaking, there is no cable here anymore. The original cable was removed after it broke in the 1850s.</p><p>But, the route remains, and it is as important to the history of our noble species as the ancient migration out of Africa, or the path Apollo 11 took from the Earth to the moon.<p>That is why you are in a rowboat, about 1500 kilometers east of Heart's Content, Newfoundland, and about the same distance from Valentia Island, in Ireland. These are the terminal points for the original transatlantic telegraph. You have decided it would be fun and meaningful to re-enact the journey a bit of information would have taken, but in an open-topped row boat.</p><p>A storm on the second day overturned the boat, and you lost most of your supplies, but were able to right the ship and even retrieve one of the oars. By paddling for a few minutes on one side of the boat, then swapping the oar to the other side and paddling the same number of strokes, you manage to maintain a relatively straight line, on a compass bearing which puts you about two miles above the seafloor where the cable used to be, over 170 years ago.</p><p>It's hard work, rowing this boat. Fortunately, there is plenty of salty water, fish, and seaweed to prepare, and the sharks mostly leave you alone. As you row, you think about all the data that would be zipping around right underneath you, if the transatlantic telegraph cable was still operational. What telegraph would you send right now, if you could? Maybe \"Help\", or even just \"SOS\".</p><p>What an amazing voyage, and it's only halfway done!</p>"},
+    objects: [
+      {
+        name: "TRANSATLANTIC TELEGRAPH CABLE",
+        article: "",
+        description:
+          'The first cable was laid across the Atlantic in 1858. It only lasted a couple of weeks before breaking down, but that was enough to plant the idea of instantaneous global communication. Today, there are about a dozen transatlantic cables, relaying hundreds of terabits of information every second.</p><p>Whereas the first telegraph cable carried only a stilted, formal exchange between Queen Victoria of England, and President James Buchanan of the United States, modern cables carry everything from pornography, to unboxing videos, to vape trick videos, and even NFTs. Every piece of DLC downloaded in Fortnite, every unwanted piece of email spam, every ill-informed tirade on Twitter: those ideas all started right here, with this cable.</p><p>Well, strictly speaking, there is no cable here anymore. The original cable was removed after it broke in the 1850s.</p><p>But, the route remains, and it is as important to the history of our noble species as the ancient migration out of Africa, or the path Apollo 11 took from the Earth to the moon.<p>That is why you are in a rowboat, about 1500 kilometers east of Heart\'s Content, Newfoundland, and about the same distance from Valentia Island, in Ireland. These are the terminal points for the original transatlantic telegraph. You have decided it would be fun and meaningful to re-enact the journey a bit of information would have taken, but in an open-topped row boat.</p><p>A storm on the second day overturned the boat, and you lost most of your supplies, but were able to right the ship and even retrieve one of the oars. By paddling for a few minutes on one side of the boat, then swapping the oar to the other side and paddling the same number of strokes, you manage to maintain a relatively straight line, on a compass bearing which puts you about two miles above the seafloor where the cable used to be, over 170 years ago.</p><p>It\'s hard work, rowing this boat. Fortunately, there is plenty of salty water, fish, and seaweed to prepare, and the sharks mostly leave you alone. As you row, you think about all the data that would be zipping around right underneath you, if the transatlantic telegraph cable was still operational. What telegraph would you send right now, if you could? Maybe "Help", or even just "SOS".</p><p>What an amazing voyage, and it\'s only halfway done!</p>',
+      },
       // {name:"", article:"", description:''},
       // {name:"", article:"", description:''}
     ],
@@ -280,9 +285,19 @@ export let globe = [
     type: "country",
     description:
       "The graveyard of empires is a central Asian country. The capital is A, and the capital is Kabul. The name Afghanistan means 'Land of the Afghan', and the population is about 23 million Pashtun and Uzbeks. The country is mountainous, landlocked, and littered with old Soviet and U.S. tanks.",
-    objects:[
-      {name:"LARGE PILE OF GRAVEL", article:"A", description:"\"It's... it's very nice. Really.\"</p><p>You have travelled to the city of Bamyan to view the piles of gravel where, in former times, the world's largest statues of the Buddha were carved into the cliff face here. One of them was 53 meters tall!</p><p>In 2001, the Taliban blew up the statues with dynamite: too much Buddha for their tastes.</p><p>This action has affected tourism in the area. The resulting gravel piles are impressive, but not as impressive as the statues were. Frankly, you've even seen nicer gravel piles, but you don't tell this to anyone in the area.</p>"},
-      {name:"CHICKEN STREET", article:"", description:"A famous street full of shops in Kabul. It mostly full of handmade arts and crafts, and imported knock-off brand name goods. One thing you cannot buy here is chickens."},
+    objects: [
+      {
+        name: "LARGE PILE OF GRAVEL",
+        article: "A",
+        description:
+          "\"It's... it's very nice. Really.\"</p><p>You have travelled to the city of Bamyan to view the piles of gravel where, in former times, the world's largest statues of the Buddha were carved into the cliff face here. One of them was 53 meters tall!</p><p>In 2001, the Taliban blew up the statues with dynamite: too much Buddha for their tastes.</p><p>This action has affected tourism in the area. The resulting gravel piles are impressive, but not as impressive as the statues were. Frankly, you've even seen nicer gravel piles, but you don't tell this to anyone in the area.</p>",
+      },
+      {
+        name: "CHICKEN STREET",
+        article: "",
+        description:
+          "A famous street full of shops in Kabul. It mostly full of handmade arts and crafts, and imported knock-off brand name goods. One thing you cannot buy here is chickens.",
+      },
       // {name:"", article:"", description:""}
     ],
     neighbors: ["China", "Iran", "Pakistan", "Tajikistan", "Turkmenistan", "Uzbekistan"],
@@ -616,10 +631,20 @@ export let globe = [
     description:
       "Bangladesh is a South Asian nation on the Bay of Bengal. The largest city is Chittagong. The climate of Bangladesh includes six seasons. Rainy weather falls during the monsoons from June to September, and most of Bangladesh is flooded during this monsoon season.",
     objects: [
-      { name: "BENGAL TIGER", article: "A", description: "You are in a blind, with your guide Abdul, waiting to see a Bengal Tiger stalk its prey. You are in the Sundarbans, Bangladesh's huge mangrove forest, where most of the country's population of around 300 tigers are found.</p>You ask Abdul whether the tiger is orange with black stripes, or black with orange stripes.</p><p>\"Orange with black stripes,\" he says.</p><p>How do you know, you ask.</p><p>\"Because they're mostly orange,\" he says.</p><p>You tell him that doesn't prove anything, really.</p><p>He thinks for a minute.</p><p>\"Well, there are tigers who have white fur, and they still have black stripes. The mutation that causes their fur to be white doesn't affect their stripes.\"</p><p>You chuckle. \"Or maybe the mutation only affects their stripes; it all depends on your perspective.\"</p><p>You politely advise Abdul to try thinking about things from a different perspective sometimes.</p><p>Abdul says nothing, but silently watches the narrow channel between islands.</p><p>After another hour, he touches you on the shoulder, and gestures with a slow movement of his eyes.</p><p>A tiger is approaching the shore of the small island beneath you, where a pair of spotted deer are drinking from the river. From your elevated blind, you see it make slow, muscular movements, eyes locked on its prey as it slinks silently toward them.</p><p>The deer bolt at the same moment the tiger leaps, but it is too late for one of them. The tiger closes the deer in a horrific trap of teeth and claws. With a startled scream the deer dies, thrashing on the muddy shoreline. Its partner bounds away in an instant, never looking back.</p>" },
-      { name: "JUTE", article: "A bundle of", description: "While wandering the streets of Chittagong, you see a burlap sack full of beans. It makes you wonder: how does a burlap sack get made?</p><p>It turns out, burlap is made of jute, the fibrous inner bark of the Jute Mallow plant, which grows right here in Bangladesh!</p><p>This discovery leads you down a fascinating, 4-day tour through the production of jute. You visit a farm where Jute Mallow is grown and harvested, to a riverbank where it the skin is separated from the core by a bacterial process called retting, to a textile mill where the fibers are spun into threads, and finally sewn into burlap and loaded into trucks, where it will be delivered to customers like the dried bean wholeseller you met at the beginning of this incredible journey.</p><p>The plant manager even gives you a free burlap sack, signed by everyone at the plant. The tears on your face, are tears of joy at learning so much about jute.</p>" },
+      {
+        name: "BENGAL TIGER",
+        article: "A",
+        description:
+          'You are in a blind, with your guide Abdul, waiting to see a Bengal Tiger stalk its prey. You are in the Sundarbans, Bangladesh\'s huge mangrove forest, where most of the country\'s population of around 300 tigers are found.</p>You ask Abdul whether the tiger is orange with black stripes, or black with orange stripes.</p><p>"Orange with black stripes," he says.</p><p>How do you know, you ask.</p><p>"Because they\'re mostly orange," he says.</p><p>You tell him that doesn\'t prove anything, really.</p><p>He thinks for a minute.</p><p>"Well, there are tigers who have white fur, and they still have black stripes. The mutation that causes their fur to be white doesn\'t affect their stripes."</p><p>You chuckle. "Or maybe the mutation only affects their stripes; it all depends on your perspective."</p><p>You politely advise Abdul to try thinking about things from a different perspective sometimes.</p><p>Abdul says nothing, but silently watches the narrow channel between islands.</p><p>After another hour, he touches you on the shoulder, and gestures with a slow movement of his eyes.</p><p>A tiger is approaching the shore of the small island beneath you, where a pair of spotted deer are drinking from the river. From your elevated blind, you see it make slow, muscular movements, eyes locked on its prey as it slinks silently toward them.</p><p>The deer bolt at the same moment the tiger leaps, but it is too late for one of them. The tiger closes the deer in a horrific trap of teeth and claws. With a startled scream the deer dies, thrashing on the muddy shoreline. Its partner bounds away in an instant, never looking back.</p>',
+      },
+      {
+        name: "JUTE",
+        article: "A bundle of",
+        description:
+          "While wandering the streets of Chittagong, you see a burlap sack full of beans. It makes you wonder: how does a burlap sack get made?</p><p>It turns out, burlap is made of jute, the fibrous inner bark of the Jute Mallow plant, which grows right here in Bangladesh!</p><p>This discovery leads you down a fascinating, 4-day tour through the production of jute. You visit a farm where Jute Mallow is grown and harvested, to a riverbank where it the skin is separated from the core by a bacterial process called retting, to a textile mill where the fibers are spun into threads, and finally sewn into burlap and loaded into trucks, where it will be delivered to customers like the dried bean wholeseller you met at the beginning of this incredible journey.</p><p>The plant manager even gives you a free burlap sack, signed by everyone at the plant. The tears on your face, are tears of joy at learning so much about jute.</p>",
+      },
       // { name: "COX'S BAZAR", article: "", description: "Quicksand" },
-    ],      
+    ],
   },
   {
     area: "Barbados",
@@ -628,9 +653,19 @@ export let globe = [
     description:
       "Barbados is located to the east of the Caribbean Sea, where the prevailing trade winds often make it the first landfall for ships sailing from Europe to the Caribbean. Its capital is Bridgetown. Barbados was a British colony for more than 350 years, until gaining independence in 1966.<p>Beach-goers do come to Barbados in large numbers, because Barbados has some of the most beautiful beaches in the world. Combined with a year-round tropical climate, the white sandy beaches and tall palms are the perfect setting for the luxury tourism that dominates Barbados today.",
     objects: [
-      { name: "SPACE GUN", article: "A", description: "Now rusting in a field on a military base, this 130-foot long artillery cannon was once part of the defunct Project HARP.</p><p>What was Project HARP, and why did it involve pointing a gun at the sky? Some say it was an experiment to control the weather by threatening the sun. Hard to believe, but it's another perfect day here in Barbados.</p><p>When you hear the crunch of gravel, you hide in some nearby bushes until the MPs pass by in their jeep, then you hop over the fence and walk back to town." },
-      { name: "MOUNT GAY", article: "", description: "A rum distillery dating back to 1703. You enjoy an entire bottle of Mount Gay rum while walking the streets of Bridgetown." },
-    ],      
+      {
+        name: "SPACE GUN",
+        article: "A",
+        description:
+          "Now rusting in a field on a military base, this 130-foot long artillery cannon was once part of the defunct Project HARP.</p><p>What was Project HARP, and why did it involve pointing a gun at the sky? Some say it was an experiment to control the weather by threatening the sun. Hard to believe, but it's another perfect day here in Barbados.</p><p>When you hear the crunch of gravel, you hide in some nearby bushes until the MPs pass by in their jeep, then you hop over the fence and walk back to town.",
+      },
+      {
+        name: "MOUNT GAY",
+        article: "",
+        description:
+          "A rum distillery dating back to 1703. You enjoy an entire bottle of Mount Gay rum while walking the streets of Bridgetown.",
+      },
+    ],
   },
   {
     area: "Belarus",
@@ -660,8 +695,18 @@ export let globe = [
     description:
       "Belgium is a low-lying country in Europe, bordered by the Netherlands, Germany, Luxembourg, and France. The North Sea is out there somewhere, gray and lonely. Dutch-speaking Flemish make up about half the country, or a little more, with French speakers making up most of the rest. There are about 12 million people here, though they are distributed throughout the country, not all standing in the same place. The largest concentrations of Belgians are in cities like Antwerp, and Ghent. The country has a very low crime rate, presumably because of the presence of the great detective, Hercule Poirot.",
     objects: [
-      { name: "DIAMOND QUARTER", article: "", description: "Antwerp's diamond district remains the funnel through which the vast majority of the world's rough diamonds must pass. From here, they will be purchased, thousands of carats at a time, before being cut, and polished, and placed into rings, necklaces, and the like.</p><p>$50 billion Euros worth of diamonds pass through here every year. That's $54 billion dollars.</p><p>After weeks of careful planning, you put a crew together and go through a series of preparation montages, establishing the personalities and relationships of each team member. There is tension, at times tempers are frayed. Your leadership is even questioned. But you manage to assert your leadership and hold the team together at the last minute.</p><p>The job is a success, but doesn't go exactly as planned.</p><p>You manage to escape from the police, but you've got their attention now, and the tenacious chief inspector is not giving up the chase.</p><p>After an exciting action sequence, in which all of your team are killed (one sacrifices himself to save you), you and the inspector confront each other on a bridge. He tells you that it's all over — the airplane full of diamonds was confiscated on the runway — and you should give yourself up.</p><p>You tell him that it's never over, and fall backwards off the bridge, disappearing into the black water of the Scheldt. He watches for several minutes, scanning the surface with his flashlight.</p><p>\"Bring in the divers,\" he mutters into the radio, and walks back toward his crashed car.</p><p>Hours later, he receives a phone call that confuses him. The Cessna they confiscated was full of imitation diamonds. Costume diamonds. Glass.</p><p>What really happened to the billion dollars in stolen diamonds, he wonders. And why didn't they ever find your body?</p>" },
-      { name: "FRITES", article: "", description: "Belgians believe they invented the French fry, which they call a frite. They also put mayonnaise on them, or eat them with mussels. You don't have the heart to correct them on any of these points, but merely smile and nod." },
+      {
+        name: "DIAMOND QUARTER",
+        article: "",
+        description:
+          "Antwerp's diamond district remains the funnel through which the vast majority of the world's rough diamonds must pass. From here, they will be purchased, thousands of carats at a time, before being cut, and polished, and placed into rings, necklaces, and the like.</p><p>$50 billion Euros worth of diamonds pass through here every year. That's $54 billion dollars.</p><p>After weeks of careful planning, you put a crew together and go through a series of preparation montages, establishing the personalities and relationships of each team member. There is tension, at times tempers are frayed. Your leadership is even questioned. But you manage to assert your leadership and hold the team together at the last minute.</p><p>The job is a success, but doesn't go exactly as planned.</p><p>You manage to escape from the police, but you've got their attention now, and the tenacious chief inspector is not giving up the chase.</p><p>After an exciting action sequence, in which all of your team are killed (one sacrifices himself to save you), you and the inspector confront each other on a bridge. He tells you that it's all over — the airplane full of diamonds was confiscated on the runway — and you should give yourself up.</p><p>You tell him that it's never over, and fall backwards off the bridge, disappearing into the black water of the Scheldt. He watches for several minutes, scanning the surface with his flashlight.</p><p>\"Bring in the divers,\" he mutters into the radio, and walks back toward his crashed car.</p><p>Hours later, he receives a phone call that confuses him. The Cessna they confiscated was full of imitation diamonds. Costume diamonds. Glass.</p><p>What really happened to the billion dollars in stolen diamonds, he wonders. And why didn't they ever find your body?</p>",
+      },
+      {
+        name: "FRITES",
+        article: "",
+        description:
+          "Belgians believe they invented the French fry, which they call a frite. They also put mayonnaise on them, or eat them with mussels. You don't have the heart to correct them on any of these points, but merely smile and nod.",
+      },
     ],
   },
   {
@@ -671,7 +716,12 @@ export let globe = [
     description:
       "This country is located on the eastern coast of Central America. It is bordered by Mexico to the north and Guatemala to the west. With a population of 387,000, it is one of the smallest countries of Central America. The culture of the country is heavily influenced by the ancient Maya, whose city states occupied the territory that is now Belize between about 2000 BC and AD 800.",
     objects: [
-      { name: "GIBNUT", article: "A kidnapped", description: "One of \"Nature's Pokemon\", the gibnut is a rodent about the size of a small dog: brown, with lines of white spots on its back. They have tiny ears on top of their heads, and a tiny tail on their butts. They eat fruit, and love to swim... just like you!</p><p>Unlike you, gibnuts are eaten as a delicacy in Belize, and abroad.</p><p>With the help of some local kid detectives, you uncover a smuggling ring that kidnaps gibnuts and packs them into crates, to be flown out of the country and served at fancy restaurants.</p><p>\"They taste like ham,\" one of the kids says.</p><p>You look at the gibnut in its cage. Its bright eyes stare back at you.</p><p>\"It's still not right.\"</p><p>You begin to pry open the lock with a crowbar.</p><p>When all the gibnuts are freed, and have run off into the night to be with their families, you and the kid detectives find the shipping manifest. The destination is listed as: Buckingham Palace, London, England!</p><p>\"Queen Elizabeth II visited Belize in 1985,\" notes one of the kids, \"she ate a gibnut. Said she liked it. Ever since then, they've been called \'The Royal Rat\' as a joke.\"</p><p>\"Not a joke anymore,\" you say. \"Looks like the Queen Mum developed a taste for illegal rat meat.\"</p><p>The kid detectives look at each other, silently acknowledging that you've just discovered a conspiracy that reaches to the highest levels of government.</p>The littlest kid detective is the first to speak up:</p><p>\"Wooks wike dis case jus' got intewesting.\"</p>" },
+      {
+        name: "GIBNUT",
+        article: "A kidnapped",
+        description:
+          'One of "Nature\'s Pokemon", the gibnut is a rodent about the size of a small dog: brown, with lines of white spots on its back. They have tiny ears on top of their heads, and a tiny tail on their butts. They eat fruit, and love to swim... just like you!</p><p>Unlike you, gibnuts are eaten as a delicacy in Belize, and abroad.</p><p>With the help of some local kid detectives, you uncover a smuggling ring that kidnaps gibnuts and packs them into crates, to be flown out of the country and served at fancy restaurants.</p><p>"They taste like ham," one of the kids says.</p><p>You look at the gibnut in its cage. Its bright eyes stare back at you.</p><p>"It\'s still not right."</p><p>You begin to pry open the lock with a crowbar.</p><p>When all the gibnuts are freed, and have run off into the night to be with their families, you and the kid detectives find the shipping manifest. The destination is listed as: Buckingham Palace, London, England!</p><p>"Queen Elizabeth II visited Belize in 1985," notes one of the kids, "she ate a gibnut. Said she liked it. Ever since then, they\'ve been called \'The Royal Rat\' as a joke."</p><p>"Not a joke anymore," you say. "Looks like the Queen Mum developed a taste for illegal rat meat."</p><p>The kid detectives look at each other, silently acknowledging that you\'ve just discovered a conspiracy that reaches to the highest levels of government.</p>The littlest kid detective is the first to speak up:</p><p>"Wooks wike dis case jus\' got intewesting."</p>',
+      },
       // { name: "GREAT BLUE HOLE", article: "", description: "" },
       // { name: "SISIMITO", article: "", description: "" },
     ],
@@ -755,7 +805,12 @@ export let globe = [
     description:
       "Bosnia and Herzegovina is a country in southeastern Europe. Sarajevo is the capital and largest city. Other major cities include Banja Luka and Tuzla. Bosnia and Herzegovina are mountainous, centrally-located republic. The Dinaric Alps pass through the country from east to west.<p>What does the flag look like, you ask? It is composed of wide medium blue vertical band on the fly side with a yellow right triangle abutting the band and the top of the flag. The remainder of the flag is medium blue with seven full five-pointed white stars and two half stars top and bottom along the hypotenuse of the triangle.</p>",
     objects: [
-      { name: "HAJDUČKA REPUBLIKA MIJATA TOMIĆA", article: "The", description: "The Hajduk Republic of Mijata Tomica is a micronation in the middle of Bosnia and Herzegovina, which is constituted of a motel and the surrounding motel grounds. Thus, the country has a total area of about 17 square acres.</p><p>You've rented a room in the Republic, and sitting on the bed there, you begin wonder how what makes something a nation. Is it having a constitution? Is it having a King?</p><p>After some thought, you come to the conclusion that a nation is defined by its ability to defend territory against others who would take it.</p><p>At that same moment, you decide to have your own nation. You will carve out a separate republic within grounds of the Hajduk Republic. If this motel is a micronation, you will create a nanonation inside it, and if a nanonation is one one-thousandth the size of a micronation, yours will take up about 740 square feet.</p><p>That's the size of your motel room, the room next door, and the nearby area of the hallway which includes the vending and snack machines.</p><p>Armed with some improvised weapons, and well-stocked with food and ice from your kingdom, you plant your flag, knock a hole in the drywall to connect the eastern and western edges of your kingdom, and proclaim sovereignty.</p><p>It is not long before the powers that be take notice, and you are besieged by the forces of the Republic.</p><p>Fighting is intense, but you manage to turn back a number of attacks by the management and custodial staff. All night long they make sallies to breach the defensive walls, but the chain attached to the door holds. By morning, the battlefield has grown eerily silent. You wait for the next attack.</p><p>That's when the telephone rings.</p><p>It's Marija, daughter of the nation's founder, and the current head of state. \"We would like to negotiate terms; we're sending an emissary.\"</p><p>In the end, you give up the ice machine, and the second room: fine, you couldn't have held them yourself anyway. The vending machine is a sticking point, but you eventually agree to receive a certain number of candy bars as a yearly tribute in exchange for yielding control.</p><p>You keep your motel room, the seat of your power, and your flag waves above it to this day.</p>" },
+      {
+        name: "HAJDUČKA REPUBLIKA MIJATA TOMIĆA",
+        article: "The",
+        description:
+          "The Hajduk Republic of Mijata Tomica is a micronation in the middle of Bosnia and Herzegovina, which is constituted of a motel and the surrounding motel grounds. Thus, the country has a total area of about 17 square acres.</p><p>You've rented a room in the Republic, and sitting on the bed there, you begin wonder how what makes something a nation. Is it having a constitution? Is it having a King?</p><p>After some thought, you come to the conclusion that a nation is defined by its ability to defend territory against others who would take it.</p><p>At that same moment, you decide to have your own nation. You will carve out a separate republic within grounds of the Hajduk Republic. If this motel is a micronation, you will create a nanonation inside it, and if a nanonation is one one-thousandth the size of a micronation, yours will take up about 740 square feet.</p><p>That's the size of your motel room, the room next door, and the nearby area of the hallway which includes the vending and snack machines.</p><p>Armed with some improvised weapons, and well-stocked with food and ice from your kingdom, you plant your flag, knock a hole in the drywall to connect the eastern and western edges of your kingdom, and proclaim sovereignty.</p><p>It is not long before the powers that be take notice, and you are besieged by the forces of the Republic.</p><p>Fighting is intense, but you manage to turn back a number of attacks by the management and custodial staff. All night long they make sallies to breach the defensive walls, but the chain attached to the door holds. By morning, the battlefield has grown eerily silent. You wait for the next attack.</p><p>That's when the telephone rings.</p><p>It's Marija, daughter of the nation's founder, and the current head of state. \"We would like to negotiate terms; we're sending an emissary.\"</p><p>In the end, you give up the ice machine, and the second room: fine, you couldn't have held them yourself anyway. The vending machine is a sticking point, but you eventually agree to receive a certain number of candy bars as a yearly tribute in exchange for yielding control.</p><p>You keep your motel room, the seat of your power, and your flag waves above it to this day.</p>",
+      },
       // { name: "CABLE CAR", article: "A", description: "" },
       // { name: "", article: "", description: "" },
     ],
@@ -880,8 +935,13 @@ export let globe = [
     neighbors: ["Benin", "Côte d'Ivoire", "Ghana", "Mali", "Niger", "Togo"],
     description:
       "Burkina Faso is a landlocked country in West Africa. It's got a tropical climate, plenty of gold deposits, and lots of neighbors. The population is a mixture of Christians and Muslims, and the official language is English.",
-    objects:[
-    {name:"BANFORA WATERFALLS", article:"The", description:"A pleasant series of cascading waterfalls, dropping into a large pool perfect for swimming. You lie on your back and watch the dragonflies cutting through the evening air.</p>"},
+    objects: [
+      {
+        name: "BANFORA WATERFALLS",
+        article: "The",
+        description:
+          "A pleasant series of cascading waterfalls, dropping into a large pool perfect for swimming. You lie on your back and watch the dragonflies cutting through the evening air.</p>",
+      },
     ],
   },
   {
@@ -891,9 +951,24 @@ export let globe = [
     description:
       "Burundi is located in central Africa. It's bordered by Rwanda, Tanzania, and the Democratic Republic of the Congo. You show up in Bujumbura to tour the capital building, but discover it was recently moved to Gitega. A Burundian helpfully gives you directions.",
     objects: [
-      { name: "GUSTAVE THE CROCODILE", article: "", description: "Nineteen feet long, 60 years old, with a full set of a teeth and a body count in the hundreds, Gustave the Crocodile is a man-eater whose very name fills Burundians with terror.</p><p>Despite many efforts to catch or kill him, Gustave has proven a canny adversary who is always one step ahead of the  hunters.</p><p>There is a team of scientists and filmmakers who are trying to capture Gustave and study what makes him so dangerous. You volunteer to join them, showing up to their meeting and running your nails over a chalkboard to get their attention.</p><p>\"Y'all know me. Know how I earn a living.\"</p><p>\"Actually, no, who are you? Aren't you a tourist? Are you lost?\"</p><p>\"I'll catch this croc for you, but it ain't gonna be easy.\"</p><p>\"This is the Quint introduction scene from the movie Jaws,\" one of the filmmakers observes.</p><p>After a negotiation and a modest exchange of money, they agree to take you on in the role of Junior Crocodile Research Assistant, and you set out to stalk the wiley killer on the banks of the Ruzizi river.</p><p>Three days later, you return to Bujumbura, having been kicked out of the research team for making too many references to the movie Jaws (\"we're going to need a bigger tent\", etc).</p>" },
-      { name: "LAKE TANGANYIKA", article: "", description: "You eat a delicious fish lunch at a restaurant on the shores of the world's second largest, deepest, and oldest lake. In the distance, you can see a herd of hippos sunning themselves on the shore." },
-      { name: "KASUMO", article: "", description: "A nondescript settlement, notable only for being the source of the Nile. You dip your toes in the water and wave to it as it begins its long journey to the sea." },
+      {
+        name: "GUSTAVE THE CROCODILE",
+        article: "",
+        description:
+          'Nineteen feet long, 60 years old, with a full set of a teeth and a body count in the hundreds, Gustave the Crocodile is a man-eater whose very name fills Burundians with terror.</p><p>Despite many efforts to catch or kill him, Gustave has proven a canny adversary who is always one step ahead of the  hunters.</p><p>There is a team of scientists and filmmakers who are trying to capture Gustave and study what makes him so dangerous. You volunteer to join them, showing up to their meeting and running your nails over a chalkboard to get their attention.</p><p>"Y\'all know me. Know how I earn a living."</p><p>"Actually, no, who are you? Aren\'t you a tourist? Are you lost?"</p><p>"I\'ll catch this croc for you, but it ain\'t gonna be easy."</p><p>"This is the Quint introduction scene from the movie Jaws," one of the filmmakers observes.</p><p>After a negotiation and a modest exchange of money, they agree to take you on in the role of Junior Crocodile Research Assistant, and you set out to stalk the wiley killer on the banks of the Ruzizi river.</p><p>Three days later, you return to Bujumbura, having been kicked out of the research team for making too many references to the movie Jaws ("we\'re going to need a bigger tent", etc).</p>',
+      },
+      {
+        name: "LAKE TANGANYIKA",
+        article: "",
+        description:
+          "You eat a delicious fish lunch at a restaurant on the shores of the world's second largest, deepest, and oldest lake. In the distance, you can see a herd of hippos sunning themselves on the shore.",
+      },
+      {
+        name: "KASUMO",
+        article: "",
+        description:
+          "A nondescript settlement, notable only for being the source of the Nile. You dip your toes in the water and wave to it as it begins its long journey to the sea.",
+      },
     ],
   },
   {
@@ -1004,8 +1079,13 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       "Cape Verde is a mosaic of 10 islands, about 310 miles off the west coast of Africa.",
-    objects:[
-      {name:"CHÃ DAS CALDEIRAS", article:"", description:"A town located in the crater of an active volcano, where there is no electricity or running water. In 1995, an eruption destroyed many of the buildings here, and most of the people left. But, the soil left by that volcano is so fertile that the remaining farmers can grow wine to make grapes, as well as coffee, apples, tomatoes, and pomegranates. They eat some, export the rest."},
+    objects: [
+      {
+        name: "CHÃ DAS CALDEIRAS",
+        article: "",
+        description:
+          "A town located in the crater of an active volcano, where there is no electricity or running water. In 1995, an eruption destroyed many of the buildings here, and most of the people left. But, the soil left by that volcano is so fertile that the remaining farmers can grow wine to make grapes, as well as coffee, apples, tomatoes, and pomegranates. They eat some, export the rest.",
+      },
     ],
   },
   {
@@ -1021,8 +1101,13 @@ export let globe = [
     ],
     description:
       "The Central African Republic (CAR) is a landlocked country in Central Africa. The CAR covers a land area of about 240,000 square miles, and has an estimated population of about four million. Historically, it's been pretty prone to coups, corruption, and political violence.",
-    objects:[
-      {name:"NIGHT SKY", article:"The", description:"You trek out to the Lobaye region to spend some time living with the Pygmies there. You hunt, fish, and chillax with this unique group, quickly picking up enough of their fascinating language to get by.</p><p>At night, you look up at the stars, which seem so much more numerous and brilliant this far away from the electric lights of any modern city."},
+    objects: [
+      {
+        name: "NIGHT SKY",
+        article: "The",
+        description:
+          "You trek out to the Lobaye region to spend some time living with the Pygmies there. You hunt, fish, and chillax with this unique group, quickly picking up enough of their fascinating language to get by.</p><p>At night, you look up at the stars, which seem so much more numerous and brilliant this far away from the electric lights of any modern city.",
+      },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
@@ -1040,8 +1125,13 @@ export let globe = [
     ],
     description:
       "Chad is the third-largest country in Africa. It is bordered by Libya to the north, Sudan to the east, the Central African Republic to the south, Cameroon and Nigeria to the southwest, and Niger to the west. The capital is N'Djaména.",
-    objects:[
-      {name:"IVORY POACHING", article:"", description:"The bulky shape of an African elephant — a bull, by the looks of it — stands perfectly still in the sparse shade of a wispy tree. Its head is lowered, as though it's staring at something on the ground. The bright white gleam of its long, upturned ivory tusks stands out against its own dark gray hide.</p><p>They are impressive tusks, and they\'d command a high price in the black market for any poacher ruthless enough to come take them.</p><p>Zakouma National Park in Chad is home to around 400 elephants, though only a couple of decades ago there were ten times as many. With 3000 square kilometers to patrol, it hasn\'t been easy to stop the invasion of poachers from devastating the population. That doesn\'t mean the rangers have stopped trying, though.</p>Fifty meters from the elephant, the grass rustles, subtly. The barrel of a high-powered rifle can be seen, along with the steely eyes of the hunter behind it, as he squeezes the trigger.</p><p>A shot echoes across the bush, followed by the unmistakable sound of steel striking steel. The elephant is hit, but does not go down.</p><p>Confused, the poacher fires again, and again hears a \'plink\' as the elephant appears to be unphased.</p><p>Then the elephant turns around. It begins to charge the poacher, its v12 engine rumbling as it picks up speed.</p><p>The poacher shrieks, drops his rifle, and begins running in stark terror.</p><p>This wasn\'t an elephant after all, but ALFIL-1, a new project from the Zakouma park rangers.</p><p>It is an armored personnel carrier disguised to look like an elephant. Its suspension is designed for intense offroad chases, and it\'s brimming with advanced weaponry and sensors that can detect a poacher from a kilometer away. It\'s also got a built-in prison cell with plenty of room for this evil-doer.</p><p>\"Thanks for letting me tag along,\" you say, after the poacher has been captured and brought to justice, \"I'll never forget it.\"</p><p>\"Never forget? Maybe you're part elephant,\" jokes one of rangers."},
+    objects: [
+      {
+        name: "IVORY POACHING",
+        article: "",
+        description:
+          "The bulky shape of an African elephant — a bull, by the looks of it — stands perfectly still in the sparse shade of a wispy tree. Its head is lowered, as though it's staring at something on the ground. The bright white gleam of its long, upturned ivory tusks stands out against its own dark gray hide.</p><p>They are impressive tusks, and they'd command a high price in the black market for any poacher ruthless enough to come take them.</p><p>Zakouma National Park in Chad is home to around 400 elephants, though only a couple of decades ago there were ten times as many. With 3000 square kilometers to patrol, it hasn't been easy to stop the invasion of poachers from devastating the population. That doesn't mean the rangers have stopped trying, though.</p>Fifty meters from the elephant, the grass rustles, subtly. The barrel of a high-powered rifle can be seen, along with the steely eyes of the hunter behind it, as he squeezes the trigger.</p><p>A shot echoes across the bush, followed by the unmistakable sound of steel striking steel. The elephant is hit, but does not go down.</p><p>Confused, the poacher fires again, and again hears a 'plink' as the elephant appears to be unphased.</p><p>Then the elephant turns around. It begins to charge the poacher, its v12 engine rumbling as it picks up speed.</p><p>The poacher shrieks, drops his rifle, and begins running in stark terror.</p><p>This wasn't an elephant after all, but ALFIL-1, a new project from the Zakouma park rangers.</p><p>It is an armored personnel carrier disguised to look like an elephant. Its suspension is designed for intense offroad chases, and it's brimming with advanced weaponry and sensors that can detect a poacher from a kilometer away. It's also got a built-in prison cell with plenty of room for this evil-doer.</p><p>\"Thanks for letting me tag along,\" you say, after the poacher has been captured and brought to justice, \"I'll never forget it.\"</p><p>\"Never forget? Maybe you're part elephant,\" jokes one of rangers.",
+      },
       // {name:"", article:"", description:''},
       // {name:"", article:"", description:''}
     ],
@@ -1052,11 +1142,26 @@ export let globe = [
     neighbors: ["Argentina", "Atlantic Ocean", "Bolivia", "Pacific Ocean", "Peru"],
     description:
       "Wow, this country is long! In fact, Chile is the longest country in the world. It occupies a narrow strip of land down the west coast of South America. It is 2,670 miles long, but only 180 miles across at its widest point.<p>Chile's climate is mild and pleasant. The northern area has a desert climate. The central region is cool and rainy, and the southern region has a Mediterranean climate.</p>",
-    objects:[
-      {name:"CITY OF STAIRCASES", article:"The", description:"You are huffing and puffing your way to the heights of the ghost city of Sewell, Chile. This former copper mining boom town once had 15,000 people living in it; now, it\'s completely abandoned.</p><p>This city was built on such a steep mountainside that instead of a main street, it is organized around a single, long staircase. It is this staircase, called the Escalara Central, that you're currently climbing.</p><p>Around you, you see many of the town's original shops and houses, fully restored. There's the post office, and the assay office, and the mining administration, and one of the general stores. Wow!</p><p>By the time you get to the top of the staircase, you barely have enough energy to raise your arms in the air and jump up and down like Rocky. But you pull it off.</p>"},
-      {name:"CHINCHORRO MUMMIES", article:"The", description:"These Chilean mummies are at least a couple thousand years older than the ones in Egypt. They may not be the world's oldest mummies, but they are the oldest we know about.</p><p>Somewhere out there, there may very well be an even older mummy, just waiting for us to find him.</p>"},
-      {name:"WINE", article:"", description:"Chile produces some of the world's highest quality wines, and is especially noted for its cabernets.</p><p>You learn all about wine-tasting, and come to appreciate the elegance of the grapes grown here in the foothills of the Andes: their sublime oak and tannin integration, notes of mint, prevailing fruit-forwardness, and charming, herbaceous density.</p><p>You drink several bottles and pass out in the sun, waking up panicked and sunburnt, with no idea where you are."}
-      ],
+    objects: [
+      {
+        name: "CITY OF STAIRCASES",
+        article: "The",
+        description:
+          "You are huffing and puffing your way to the heights of the ghost city of Sewell, Chile. This former copper mining boom town once had 15,000 people living in it; now, it's completely abandoned.</p><p>This city was built on such a steep mountainside that instead of a main street, it is organized around a single, long staircase. It is this staircase, called the Escalara Central, that you're currently climbing.</p><p>Around you, you see many of the town's original shops and houses, fully restored. There's the post office, and the assay office, and the mining administration, and one of the general stores. Wow!</p><p>By the time you get to the top of the staircase, you barely have enough energy to raise your arms in the air and jump up and down like Rocky. But you pull it off.</p>",
+      },
+      {
+        name: "CHINCHORRO MUMMIES",
+        article: "The",
+        description:
+          "These Chilean mummies are at least a couple thousand years older than the ones in Egypt. They may not be the world's oldest mummies, but they are the oldest we know about.</p><p>Somewhere out there, there may very well be an even older mummy, just waiting for us to find him.</p>",
+      },
+      {
+        name: "WINE",
+        article: "",
+        description:
+          "Chile produces some of the world's highest quality wines, and is especially noted for its cabernets.</p><p>You learn all about wine-tasting, and come to appreciate the elegance of the grapes grown here in the foothills of the Andes: their sublime oak and tannin integration, notes of mint, prevailing fruit-forwardness, and charming, herbaceous density.</p><p>You drink several bottles and pass out in the sun, waking up panicked and sunburnt, with no idea where you are.",
+      },
+    ],
   },
   {
     area: "China",
@@ -1132,11 +1237,21 @@ export let globe = [
     ],
     description:
       "Colombia is the fourth largest country in South America. It is bordered by Panama, Venezuela, Brazil, and Ecuador. The Andes Mountains lie in the west of the country, and lowlands and jungles are found in the east. Colombia exports coffee, flowers, tobacco, bananas, oil, and coal.",
-    objects:[
+    objects: [
       // {name:"LAKE GUATAVITA", article:"", description:""},
-      {name:"LAS LAJAS", article:"", description:"Las Lajas is a shrine to the Virgin Mary, erected in the mountains of Colombia. Many legends surround this shrine: that it cures the sick, raises the dead, and that an image of the Virgin appeared in the rock of the mountainside one day. They say it is not only on the surface, but extends several feet into the rock itself.</p><p>You set out to find out whether this last legend is true.</p><p>Armed with a chisel and a hammer, you trek through the rugged terrain from Ipiales and arrive at the shrine in the middle of the night.</p><p>Las Lajas is an impressive structure, built at the end of a bridge over the river, next to a waterfall. At the back of the shrine is the image of the Virgin, which appears to the untrained eye to be painted onto the rock.</p><p>As you approach the image, you notice that it throbs with unearthly power.</p><p>\"Please don't deface my shrine,\" says a voice that seems to come from within the rock itself.</p><p>\"I'm not going to deface it, I just want to check something.\"</p><p>You explain that you want to know whether the picture here actually does go back into the rock, or whether it's on the surface.</p><p>\"It goes back into the rock.\"</p><p>\"How far?\"</p><p>\"20 centimeters,\" says the voice.</p><p>\"What's that in inches?\"</p><p>There is a brief pause, as though someone is doing a conversion.</p><p>\"Call it eight inches.\"</p><p>You ask the Virgin many more questions, such as how bad things can happen to good people, and which religions 'get it right' in her opinion. She patiently answers all of them, but you get the sense that she's getting a little impatient.</p><p>You decide to press your luck. You ask her if she'd be willing to provide some thoughts on each chapter of the New Testament.</p><p>\"Kind of like a 'director's commentary' track for a DVD,\" you explain.</p><p>As the first golden ray of dawn streams through the east windows of Las Lajas, you look up to see that the image on the rock is gone. You sneak out of the shrine before any tourists arrive.</p>"},
-      {name:"DARIÉN GAP", article:"", description:"Were it not for this 66-mile patch of jungle right in the middle of the Pan-American Highway, you'd be able to drive all the way from the Arctic Circle to the southernmost tip of Tierra del Fuego. The Gap is an unpaved, lawless, impossibly rugged obstacle in your path.</p><p>Undaunted, you decide to get out of the car and hack your way through dense undergrowth, pushing the car as you go. You fight breathlessly through clouds of insects, strangle dozens of poisonous snakes, and hide from the gangs of armed smugglers who use this dangerous passage to transport cocaine.</p><p>Encountering a large swamp caused by the Atrato river, you seal up the car with tree sap, so that it's watertight, and float the car through it, using a long pole to navigate.</p><p>On the way, you speak with immigrants traveling north, many of them malnourished and dressed in ragged clothes and shoes.</p><p>When, at last, you push the car back onto the road, you are sweating profusely, and covered in mud and snake blood. You are very glad to be able to use the air conditioning again.</p>"}
-      ],      
+      {
+        name: "LAS LAJAS",
+        article: "",
+        description:
+          'Las Lajas is a shrine to the Virgin Mary, erected in the mountains of Colombia. Many legends surround this shrine: that it cures the sick, raises the dead, and that an image of the Virgin appeared in the rock of the mountainside one day. They say it is not only on the surface, but extends several feet into the rock itself.</p><p>You set out to find out whether this last legend is true.</p><p>Armed with a chisel and a hammer, you trek through the rugged terrain from Ipiales and arrive at the shrine in the middle of the night.</p><p>Las Lajas is an impressive structure, built at the end of a bridge over the river, next to a waterfall. At the back of the shrine is the image of the Virgin, which appears to the untrained eye to be painted onto the rock.</p><p>As you approach the image, you notice that it throbs with unearthly power.</p><p>"Please don\'t deface my shrine," says a voice that seems to come from within the rock itself.</p><p>"I\'m not going to deface it, I just want to check something."</p><p>You explain that you want to know whether the picture here actually does go back into the rock, or whether it\'s on the surface.</p><p>"It goes back into the rock."</p><p>"How far?"</p><p>"20 centimeters," says the voice.</p><p>"What\'s that in inches?"</p><p>There is a brief pause, as though someone is doing a conversion.</p><p>"Call it eight inches."</p><p>You ask the Virgin many more questions, such as how bad things can happen to good people, and which religions \'get it right\' in her opinion. She patiently answers all of them, but you get the sense that she\'s getting a little impatient.</p><p>You decide to press your luck. You ask her if she\'d be willing to provide some thoughts on each chapter of the New Testament.</p><p>"Kind of like a \'director\'s commentary\' track for a DVD," you explain.</p><p>As the first golden ray of dawn streams through the east windows of Las Lajas, you look up to see that the image on the rock is gone. You sneak out of the shrine before any tourists arrive.</p>',
+      },
+      {
+        name: "DARIÉN GAP",
+        article: "",
+        description:
+          "Were it not for this 66-mile patch of jungle right in the middle of the Pan-American Highway, you'd be able to drive all the way from the Arctic Circle to the southernmost tip of Tierra del Fuego. The Gap is an unpaved, lawless, impossibly rugged obstacle in your path.</p><p>Undaunted, you decide to get out of the car and hack your way through dense undergrowth, pushing the car as you go. You fight breathlessly through clouds of insects, strangle dozens of poisonous snakes, and hide from the gangs of armed smugglers who use this dangerous passage to transport cocaine.</p><p>Encountering a large swamp caused by the Atrato river, you seal up the car with tree sap, so that it's watertight, and float the car through it, using a long pole to navigate.</p><p>On the way, you speak with immigrants traveling north, many of them malnourished and dressed in ragged clothes and shoes.</p><p>When, at last, you push the car back onto the road, you are sweating profusely, and covered in mud and snake blood. You are very glad to be able to use the air conditioning again.</p>",
+      },
+    ],
   },
   {
     area: "Comoros",
@@ -1144,9 +1259,14 @@ export let globe = [
     neighbors: ["Indian Ocean", "Madagascar", "Tanzania", "Mozambique"],
     description:
       "Comoros is an archipelago of 3 islands off the coast of Madagascar. Those islands are Grande Comore, Mohéli, and Anjouan. The Comoros Republic's capital is Moroni. The islands were ruled by various African kingdoms until Anjouan and Moheli came under the control of the Portuguese in the sixteenth century, then along came the French. In 1975, the Comoros gained independence, and it's been on a rocket ship to success ever since.",
-      objects:[
-      {name:"YLANG-YLANG", article:"", description:"The flowers of <em>cananga odorata</em>, or the Ylang Ylang tree, produce a rich, floral scent that enticed sailors to call Comoros the Perfume Islands once they caught a whiff.</p><p>When extracted, it has a powerful and pleasant aroma that forms a foundation for many perfumes, including the famous Chanel No. 5.</p>"},
-      ],
+    objects: [
+      {
+        name: "YLANG-YLANG",
+        article: "",
+        description:
+          "The flowers of <em>cananga odorata</em>, or the Ylang Ylang tree, produce a rich, floral scent that enticed sailors to call Comoros the Perfume Islands once they caught a whiff.</p><p>When extracted, it has a powerful and pleasant aroma that forms a foundation for many perfumes, including the famous Chanel No. 5.</p>",
+      },
+    ],
   },
   {
     area: "Costa Rica",
@@ -1565,7 +1685,7 @@ export let globe = [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
-    // ],      
+    // ],
   },
   {
     area: "Ethiopia",
@@ -3401,7 +3521,7 @@ export let globe = [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
-    // ],      
+    // ],
     type: "country",
     neighbors: ["Atlantic Ocean"],
   },
@@ -3414,7 +3534,7 @@ export let globe = [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
-    // ],      
+    // ],
     neighbors: ["Atlantic Ocean"],
   },
   {
@@ -3425,7 +3545,7 @@ export let globe = [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
-    // ],      
+    // ],
     type: "country",
     neighbors: ["Atlantic Ocean"],
   },
@@ -3438,7 +3558,7 @@ export let globe = [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
-    // ],      
+    // ],
     neighbors: ["Pacific Ocean"],
   },
   {
@@ -3485,7 +3605,7 @@ export let globe = [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
-    // ],      
+    // ],
     neighbors: ["Atlantic Ocean"],
   },
   {
@@ -3497,7 +3617,7 @@ export let globe = [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
-    // ],      
+    // ],
     neighbors: [
       "Indian Ocean",
       "Iraq",
@@ -3958,7 +4078,7 @@ export let globe = [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
-    // ],      
+    // ],
   },
   {
     area: "Taiwan",
