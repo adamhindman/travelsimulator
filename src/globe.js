@@ -1134,21 +1134,19 @@ export let globe = [
       "Colombia is the fourth largest country in South America. It is bordered by Panama, Venezuela, Brazil, and Ecuador. The Andes Mountains lie in the west of the country, and lowlands and jungles are found in the east. Colombia exports coffee, flowers, tobacco, bananas, oil, and coal.",
     objects:[
       // {name:"LAKE GUATAVITA", article:"", description:""},
-      {name:"LAS LAJAS", article:"", description:"Las Lajas is a shrine to the Virgin Mary, erected in the mountains of Colombia. Many legends surround this shrine: that it cures the sick, raises the dead, and that an image of the Virgin appeared in the rock of the mountainside one day. They say it is not only on the surface, but extends several feet into the rock itself.</p><p>You set out to find out whether this last legend is true.</p><p>Armed with a chisel and a hammer, you trek through the rugged terrain from Ipiales and arrive at the shrine in the middle of the night.</p><p>Las Lajas is an impressive structure, built at the end of a bridge over the river, next to a waterfall. At the back of the shrine is the image of the Virgin, which appears to the untrained eye to be painted onto the rock.</p><p>As you approach the image, you notice that it throbs with unearthly power.</p><p>\"Please don't deface my shrine,\" says a voice that seems to come from within the rock itself.</p><p>\"I'm not going to deface it, I just want to check something.\"</p><p>You explain that you want to know whether the picture here actually does go back into the rock, or whether it's on the surface.</p><p>\"It goes back into the rock.\"</p><p>\"How far?\"</p><p>\"20 centimeters,\" says the voice.</p><p>\"What's that in inches?\"</p><p>There is a brief pause, as though someone is doing a conversion.</p><p>\"Call it eight inches.\"</p><p>You ask the Virgin many more questions, such as how bad things can happen to good people, and which religions 'get it right' in her opinion. She patiently answers all of them, you get the sense that she's getting a little impatient.</p><p>You decide to press your luck. You ask her if she'd be willing to provide some thoughts on each chapter of the New Testament.</p><p>\"Kind of like a 'director's commentary' track for a DVD,\" you explain.</p><p>As the first golden ray of dawn streams through the east windows of Las Lajas, you look up to see that the image on the rock is gone. You sneak out of the shrine before any tourists arrive.</p>"},
+      {name:"LAS LAJAS", article:"", description:"Las Lajas is a shrine to the Virgin Mary, erected in the mountains of Colombia. Many legends surround this shrine: that it cures the sick, raises the dead, and that an image of the Virgin appeared in the rock of the mountainside one day. They say it is not only on the surface, but extends several feet into the rock itself.</p><p>You set out to find out whether this last legend is true.</p><p>Armed with a chisel and a hammer, you trek through the rugged terrain from Ipiales and arrive at the shrine in the middle of the night.</p><p>Las Lajas is an impressive structure, built at the end of a bridge over the river, next to a waterfall. At the back of the shrine is the image of the Virgin, which appears to the untrained eye to be painted onto the rock.</p><p>As you approach the image, you notice that it throbs with unearthly power.</p><p>\"Please don't deface my shrine,\" says a voice that seems to come from within the rock itself.</p><p>\"I'm not going to deface it, I just want to check something.\"</p><p>You explain that you want to know whether the picture here actually does go back into the rock, or whether it's on the surface.</p><p>\"It goes back into the rock.\"</p><p>\"How far?\"</p><p>\"20 centimeters,\" says the voice.</p><p>\"What's that in inches?\"</p><p>There is a brief pause, as though someone is doing a conversion.</p><p>\"Call it eight inches.\"</p><p>You ask the Virgin many more questions, such as how bad things can happen to good people, and which religions 'get it right' in her opinion. She patiently answers all of them, but you get the sense that she's getting a little impatient.</p><p>You decide to press your luck. You ask her if she'd be willing to provide some thoughts on each chapter of the New Testament.</p><p>\"Kind of like a 'director's commentary' track for a DVD,\" you explain.</p><p>As the first golden ray of dawn streams through the east windows of Las Lajas, you look up to see that the image on the rock is gone. You sneak out of the shrine before any tourists arrive.</p>"},
       {name:"DARIÉN GAP", article:"", description:"Were it not for this 66-mile patch of jungle right in the middle of the Pan-American Highway, you'd be able to drive all the way from the Arctic Circle to the southernmost tip of Tierra del Fuego. The Gap is an unpaved, lawless, impossibly rugged obstacle in your path.</p><p>Undaunted, you decide to get out of the car and hack your way through dense undergrowth, pushing the car as you go. You fight breathlessly through clouds of insects, strangle dozens of poisonous snakes, and hide from the gangs of armed smugglers who use this dangerous passage to transport cocaine.</p><p>Encountering a large swamp caused by the Atrato river, you seal up the car with tree sap, so that it's watertight, and float the car through it, using a long pole to navigate.</p><p>On the way, you speak with immigrants traveling north, many of them malnourished and dressed in ragged clothes and shoes.</p><p>When, at last, you push the car back onto the road, you are sweating profusely, and covered in mud and snake blood. You are very glad to be able to use the air conditioning again.</p>"}
       ],      
   },
   {
     area: "Comoros",
     type: "country",
-    neighbors: ["Indian Ocean"],
+    neighbors: ["Indian Ocean", "Madagascar", "Tanzania", "Mozambique"],
     description:
       "Comoros is an archipelago of 3 islands off the coast of Madagascar. Those islands are Grande Comore, Mohéli, and Anjouan. The Comoros Republic's capital is Moroni. The islands were ruled by various African kingdoms until Anjouan and Moheli came under the control of the Portuguese in the sixteenth century, then along came the French. In 1975, the Comoros gained independence, and it's been on a rocket ship to success ever since.",
-      // objects:[
-      // {name:"", article:"", description:""},
-      // {name:"", article:"", description:""},
-      // {name:"", article:"", description:""}
-      // ],
+      objects:[
+      {name:"YLANG-YLANG", article:"", description:"The flowers of <em>cananga odorata</em>, or the Ylang Ylang tree, produce a rich, floral scent that enticed sailors to call Comoros the Perfume Islands once they caught a whiff.</p><p>When extracted, it has a powerful and pleasant aroma that forms a foundation for many perfumes, including the famous Chanel No. 5.</p>"},
+      ],
   },
   {
     area: "Costa Rica",
@@ -2547,7 +2545,7 @@ export let globe = [
   {
     area: "Madagascar",
     type: "country",
-    neighbors: ["Indian Ocean"],
+    neighbors: ["Indian Ocean", "Comoros"],
     description:
       "Madagascar is about 900 miles south of the equator. Madagascar is one of the largest islands in the world, but about 95% of the population lives along the 2,400 kilometers of narrow coastline.</p><p>It's also one of the world's most biodiverse islands, with 7,720 plant species and over 90% of all animal groups living here. Madagascar is almost completely covered by open forest, and it includes 7 of the 10 largest baobab trees in the world. You go to each baobab tree and marvel at its enormous size, before checking it off your bucket list of baobab trees to see before you die.",
     objects: [
@@ -2838,6 +2836,7 @@ export let globe = [
     area: "Mozambique",
     type: "country",
     neighbors: [
+      "Comoros",
       "Eswatini",
       "Indian Ocean",
       "Malawi",
@@ -4010,6 +4009,7 @@ export let globe = [
     type: "country",
     neighbors: [
       "Burundi",
+      "Comoros",
       "Democratic Republic of the Congo",
       "Indian Ocean",
       "Kenya",
