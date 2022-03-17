@@ -1499,7 +1499,12 @@ export let globe = [
     description:
       "Dominica is an Eastern Caribbean country between Martinique and Guadeloupe. Between the Caribbean Sea and the North Atlantic Ocean, the island lies south of Puerto Rico.The capital and largest city, Roseau, is on the south-west coast. It is mostly mountainous, with lush tropical vegetation. Cricket is the national sport.",
     objects: [
-      { name: "BOILING LAKE", article: "", description: "A three-hour hike through the Valley of Desolation brings you to this natural cauldron of boiling water. Steam, not mist, floats up from the surface of the gray water here, which roils and churns, and releases an acrid, sulphurous smell into the air. The place feels like an entrance into the underworld.</p><p>The Boiling Lake is a 250-foot wide volcanic fumarole, where water is driven to the surface by the heat of the magma beneath it. The true depth and heat of the lake at its center is unknown.</p><p>Around the rim, you see prints, as of a hoofed creature who has come to investigate the lake. Interestingly, you only see a set of hoofprints moving away from the water, over to where another tourist is patiently standing, looking at you.</p><p>Turns out, this other tourist speaks perfect English, though with an unplaceable accent. He is wearing an immaculately tailored jacket and waistcoat. He has jet black hair, and a Van Dyke style beard.</p><p>He offers to give you your fondest desire in exchange for your soul, but you decline.</p><p>\"I just like traveling,\" you explain, \"and I'm already traveling.\"</p><p>When you look again, the figure is gone. Did he just disappear? You notice he has moved to another group of hikers, and is making the same offer to the instead.</p>" },
+      {
+        name: "BOILING LAKE",
+        article: "",
+        description:
+          'A three-hour hike through the Valley of Desolation brings you to this natural cauldron of boiling water. Steam, not mist, floats up from the surface of the gray lake here, which roils and churns, and releases an acrid, sulphurous smell into the air. The place almost feels like an entrance into the underworld!</p><p>The Boiling Lake is a 250-foot wide volcanic fumarole, where water is driven to the surface by the heat of the magma beneath it. The true depth and heat of the lake at its center is unknown.</p><p>Around the rim, you see prints, as of a hoofed creature who has come to investigate the lake. Interestingly, you only see a set of hoofprints moving away from the water, over to where another tourist is patiently standing, looking at you.</p><p>Turns out, this other tourist speaks perfect English, though with an unplaceable accent. He is wearing an immaculately tailored jacket and waistcoat. He has jet black hair, and a Van Dyke style beard.</p><p>He offers to give you your fondest desire in exchange for your soul, but you decline.</p><p>"I just like traveling," you explain, "and I\'m already traveling."</p><p>When you look again, the figure is gone! Did he just disappear?!</p><p>No, he has walked over to another group of hikers, and is making the same offer to them instead.</p>',
+      },
     ],
   },
   {
@@ -1508,11 +1513,11 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Haiti"],
     description:
       "The Dominican Republic occupies the eastern two-thirds of the island of Hispaniola, in the Greater Antilles. The Dominican Republic has the second largest economy in Latin America, and is the largest economy in the Caribbean and Central American region.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "MERENGUE", article: "", description: "A style of music, originating in the Dominican Republic, and an accompanying style of dance. Accordion music has never been so sexy!</p><p>You spend a night learning how to dance the merengue, and by morning you have earned the nickname \"hips\" due to your incredibly fluent and expressive movements.</p><p>\"Nice work, hips!\" says your partner.</p>" },
+      { name: "LARIMAR", article: "", description: "<p>A rare type of light blue gemstone found only in the Dominican Republic. You buy a ring set with Larimar from a child in the streets of Santo Domingo.</p><p>The child claimed the gem has healing properties, and will give you peace, clarity, and wisdom.</p><p>You put it on, but don't feel any different. You check to see whether the ring throbs with unearthly power, but it does not appear to.</p><p>It's pretty obvious now that the child has scammed you, but you're at peace with it, because the ring itself is beautiful in its own right, and you have learned a valuable lesson for the future.</p>" },
+      // { name: "27 CHARCOS", article: "The", description: "" },
+    ],
   },
   {
     area: "Easter Island",
