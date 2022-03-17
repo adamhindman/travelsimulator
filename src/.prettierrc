@@ -1,5 +1,6 @@
 {
   "printWidth": 90,
   "bracketSameLine": true,
-  "arrowParens": "avoid"
+  "arrowParens": "avoid",
+  "editor.formatOnSave": false
 }

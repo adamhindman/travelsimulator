@@ -1515,7 +1515,7 @@ export let globe = [
       "The Dominican Republic occupies the eastern two-thirds of the island of Hispaniola, in the Greater Antilles. The Dominican Republic has the second largest economy in Latin America, and is the largest economy in the Caribbean and Central American region.",
     objects: [
       { name: "MERENGUE", article: "", description: "A style of music, originating in the Dominican Republic, and an accompanying style of dance. Accordion music has never been so sexy!</p><p>You spend a night learning how to dance the merengue, and by morning you have earned the nickname \"hips\" due to your incredibly fluent and expressive movements.</p><p>\"Nice work, hips!\" says your partner.</p>" },
-      { name: "LARIMAR", article: "", description: "<p>A rare type of light blue gemstone found only in the Dominican Republic. You buy a ring set with Larimar from a child in the streets of Santo Domingo.</p><p>The child claimed the gem has healing properties, and will give you peace, clarity, and wisdom.</p><p>You put it on, but don't feel any different. You check to see whether the ring throbs with unearthly power, but it does not appear to.</p><p>It's pretty obvious now that the child has scammed you, but you're at peace with it, because the ring itself is beautiful in its own right, and you have learned a valuable lesson for the future.</p>" },
+      { name: "LARIMAR", article: "", description: "<p>A rare type of light blue gemstone found only in the Dominican Republic. You buy a ring set with Larimar from a child in the streets of Santo Domingo.</p><p>The child claimed the gem has healing properties, and will give you peace, clarity, and wisdom.</p><p>You put it on, but don't feel any different. You check to see whether the ring throbs with unearthly power, but it does not appear to.</p><p>It's pretty clear now that the child has scammed you, but you're at peace with it, because the ring itself is beautiful in its own right, and you have gained valuable wisdom you can use in the future.</p>" },
       // { name: "27 CHARCOS", article: "The", description: "" },
     ],
   },
@@ -1543,11 +1543,11 @@ export let globe = [
     neighbors: ["Indonesia", "Indian Ocean", "Pacific Ocean"],
     description:
       "East Timor is an island country in Southeast Asia, occupying the eastern half of the island of Timor, between Australia and Indonesia. Its administrative centre is the city of Dili, on the northern coast. Timor was occupied by Portugal in the sixteenth century and was known as Portuguese Timor until 1975. Over 51 percent of East Timor's land area is covered by forest.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+      {name:"DUGONG", article:"A", description:"You rent an outrigger canoe and paddle around the island of East Timor, looking for the majestic Dugong. These gentle creatures look like a cross between a manatee and a dolphin, but if you squint they also look a tiny, tiny bit like a human being. Perhaps that's why they're believed by so many cultures in this part of the world to actually be human spirits, and why it is considered bad luck to kill them.</p><p>You watch a group of Dugongs cavorting in the shallow water, racing through a forest of sea grass, and coming to the surface only long enough to sing a haunting song about a lonely princess who died of a broken heart.</p>"},
+      // {name:"", article:"", description:""},
+      // {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Ecuador",
