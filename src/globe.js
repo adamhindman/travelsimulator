@@ -1514,8 +1514,18 @@ export let globe = [
     description:
       "The Dominican Republic occupies the eastern two-thirds of the island of Hispaniola, in the Greater Antilles. The Dominican Republic has the second largest economy in Latin America, and is the largest economy in the Caribbean and Central American region.",
     objects: [
-      { name: "MERENGUE", article: "", description: "A style of music, originating in the Dominican Republic, and an accompanying style of dance. Accordion music has never been so sexy!</p><p>You spend a night learning how to dance the merengue, and by morning you have earned the nickname \"hips\" due to your incredibly fluent and expressive movements.</p><p>\"Nice work, hips!\" says your partner.</p>" },
-      { name: "LARIMAR", article: "", description: "<p>A rare type of light blue gemstone found only in the Dominican Republic. You buy a ring set with Larimar from a child in the streets of Santo Domingo.</p><p>The child claimed the gem has healing properties, and will give you peace, clarity, and wisdom.</p><p>You put it on, but don't feel any different. You check to see whether the ring throbs with unearthly power, but it does not appear to.</p><p>It's pretty clear now that the child has scammed you, but you're at peace with it, because the ring itself is beautiful in its own right, and you have gained valuable wisdom you can use in the future.</p>" },
+      {
+        name: "MERENGUE",
+        article: "",
+        description:
+          'A style of music, originating in the Dominican Republic, and an accompanying style of dance. Accordion music has never been so sexy!</p><p>You spend a night learning how to dance the merengue, and by morning you have earned the nickname "hips" due to your incredibly fluent and expressive movements.</p><p>"Nice work, hips!" says your partner.</p>',
+      },
+      {
+        name: "LARIMAR",
+        article: "",
+        description:
+          "<p>A rare type of light blue gemstone found only in the Dominican Republic. You buy a ring set with Larimar from a child in the streets of Santo Domingo.</p><p>The child claimed the gem has healing properties, and will give you peace, clarity, and wisdom.</p><p>You put it on, but don't feel any different. You check to see whether the ring throbs with unearthly power, but it does not appear to.</p><p>It's pretty clear now that the child has scammed you, but you're at peace with it, because the ring itself is beautiful in its own right, and you have gained valuable wisdom you can use in the future.</p>",
+      },
       // { name: "27 CHARCOS", article: "The", description: "" },
     ],
   },
@@ -1543,8 +1553,13 @@ export let globe = [
     neighbors: ["Indonesia", "Indian Ocean", "Pacific Ocean"],
     description:
       "East Timor is an island country in Southeast Asia, occupying the eastern half of the island of Timor, between Australia and Indonesia. Its administrative centre is the city of Dili, on the northern coast. Timor was occupied by Portugal in the sixteenth century and was known as Portuguese Timor until 1975. Over 51 percent of East Timor's land area is covered by forest.",
-    objects:[
-      {name:"DUGONG", article:"A", description:"You rent an outrigger canoe and paddle around the island of East Timor, looking for the majestic Dugong. These gentle creatures look like a cross between a manatee and a dolphin, but if you squint they also look a tiny, tiny bit like a human being. Perhaps that's why they're believed by so many cultures in this part of the world to actually be human spirits, and why it is considered bad luck to kill them.</p><p>You watch a group of Dugongs cavorting in the shallow water, racing through a forest of sea grass, and coming to the surface only long enough to sing a haunting song about a lonely princess who died of a broken heart.</p>"},
+    objects: [
+      {
+        name: "DUGONG",
+        article: "A",
+        description:
+          "You rent an outrigger canoe and paddle around the island of East Timor, looking for the majestic Dugong. These gentle creatures look like a cross between a manatee and a dolphin, but if you squint they also look a tiny, tiny bit like a human being. Perhaps that's why they're believed by so many cultures in this part of the world to actually be human spirits, and why it is considered bad luck to kill them.</p><p>You watch a group of Dugongs cavorting in the shallow water, racing through a forest of sea grass, and coming to the surface only long enough to sing a haunting song about a lonely princess who died of a broken heart.</p>",
+      },
       // {name:"", article:"", description:""},
       // {name:"", article:"", description:""}
     ],
@@ -1586,8 +1601,18 @@ export let globe = [
     description:
       "El Salvador (officially the Republic of El Salvador) is the smallest and the most densely populated country in Central America. El Salvador was for centuries inhabited by several Mesoamerican nations, especially the Cuzcatlecs, as well as the Lencas, an indigenous Mesoamerican people who arrived in the region about the 3rd century AD. Its capital is San Salvador.",
     objects: [
-      { name: "ALVARADO'S TREASURE", article: "", description: "While swimming in Lake Coatepeque, you find a number of sunken treasure chests, like the ones at the bottom of a fish tank, but much larger. Opening one of chests, you see statues and jewelry made of worked gold and encrusted with jewels. How did the these treasure chests come to be here?</p><p>You take a few lighter pieces back to the surface and show them to the head of the archaeology department at the University of El Salvador. He says they are likely part of the lost treasure hoard of the Spanish conquistadore Pedro de Alvarado. He asks where you found them.</p><p>\"I can't remember,\" you say. \"Somewhere in the woods.\"</p>" },
-      { name: "SURFING", article: "", description: "You head out to Punta Roca with your surfboard, to ride what is reportedly one of the best right-hand waves in the entire world.</p><p>On the way out, you stop at a surf shop in the town of La Libertad, and hear reports of a recent shark attack by an Oceanic Whitetip on some surfers in the area.</p><p>An Oceanic Whitetip> According to Jacques Cousteau, the whitetip is the most dangerous shark of them all: any food source in its path, including unlucky humans, will send it into a feeding frenzy. But Whitetips usually prowl the deep water, never coming close enough to the shallow coastal ledges to be a threat to surfers. You decide not to let the shopkeer's story scare you.</p><p>Out at Punta Roca, the conditions are perfect, nothing can stop you from enjoying the day. You make a couple runs, getting a feel for the wave, and soon you've forgotten all about shark attacks.</p><p>Paddling out for you your next attempt, you spot a fin swimming toward you. It's the Oceanic Whitetip, and it's hunting you!</p><p>You could try to turn the board around and get to back to shore, but you know there's no way you'll make it in time. Instead, you paddle toward the approaching shark, and try to meet it just as the wave crests.</p><p>You can see the huge body of the shark through the blue-green sea water, its blood-thirsty jaws opening to chomp down on you. It looks to be about 14 feet long, and at least 400 pounds.</p><p>Just as it is about to strike, you make a daring leap onto the shark's back. You struggle for balance, but manage to stay upright as the wave curls around you. Despite its attempts to shake you off, the shark's sandpapery hide helps you hang ten all the way back to shore, guiding the deadly predator with your feet like a makeshift surfboard.</p><p>Once you are back on shore, you leap off the surprised shark and push it back into the water — but not before giving it a good slap across the face, to scare it away. The shark races back out to the ocean, and you know it will not soon return to attack more innocent surfers on the beautiful beaches of Punta Roca.</p>" },
+      {
+        name: "ALVARADO'S TREASURE",
+        article: "",
+        description:
+          'While swimming in Lake Coatepeque, you find a number of sunken treasure chests, like the ones at the bottom of a fish tank, but much larger. Opening one of chests, you see statues and jewelry made of worked gold and encrusted with jewels. How did the these treasure chests come to be here?</p><p>You take a few lighter pieces back to the surface and show them to the head of the archaeology department at the University of El Salvador. He says they are likely part of the lost treasure hoard of the Spanish conquistadore Pedro de Alvarado. He asks where you found them.</p><p>"I can\'t remember," you say. "Somewhere in the woods."</p>',
+      },
+      {
+        name: "SURFING",
+        article: "",
+        description:
+          "You head out to Punta Roca with your surfboard, to ride what is reportedly one of the best right-hand waves in the entire world.</p><p>On the way out, you stop at a surf shop in the town of La Libertad, and hear reports of a recent shark attack by an Oceanic Whitetip on some surfers in the area.</p><p>An Oceanic Whitetip> According to Jacques Cousteau, the whitetip is the most dangerous shark of them all: any food source in its path, including unlucky humans, will send it into a feeding frenzy. But Whitetips usually prowl the deep water, never coming close enough to the shallow coastal ledges to be a threat to surfers. You decide not to let the shopkeer's story scare you.</p><p>Out at Punta Roca, the conditions are perfect, nothing can stop you from enjoying the day. You make a couple runs, getting a feel for the wave, and soon you've forgotten all about shark attacks.</p><p>Paddling out for you your next attempt, you spot a fin swimming toward you. It's the Oceanic Whitetip, and it's hunting you!</p><p>You could try to turn the board around and get to back to shore, but you know there's no way you'll make it in time. Instead, you paddle toward the approaching shark, and try to meet it just as the wave crests.</p><p>You can see the huge body of the shark through the blue-green sea water, its blood-thirsty jaws opening to chomp down on you. It looks to be about 14 feet long, and at least 400 pounds.</p><p>Just as it is about to strike, you make a daring leap onto the shark's back. You struggle for balance, but manage to stay upright as the wave curls around you. Despite its attempts to shake you off, the shark's sandpapery hide helps you hang ten all the way back to shore, guiding the deadly predator with your feet like a makeshift surfboard.</p><p>Once you are back on shore, you leap off the surprised shark and push it back into the water — but not before giving it a good slap across the face, to scare it away. The shark races back out to the ocean, and you know it will not soon return to attack more innocent surfers on the beautiful beaches of Punta Roca.</p>",
+      },
       // { name: "", article: "", description: "" },
     ],
   },
@@ -1648,11 +1673,20 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Cameroon", "Gabon"],
     description:
       "Equatorial Guinea is a country located in the Gulf of Guinea, on Central Africa's Gulf of Guinea coast. Equatorial Guinea is the only sovereign African state that is edged along its entire coast by the ocean. Equatorial Guinea has two climate zones: the tropical lowland, and the equatorial forest.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects: [
+      {
+        name: "CIUDAD DE LA PAZ",
+        article: "",
+        description:
+          "The capital city of Equatorial Guinea is Malabo, but it's on an island: not too convenient. So, the country is building a whole new capital, from scratch, in the middle of the country. This is Ciudad De La Paz: the city of peace. When it's finished, someday, they'll move everything over.</p><p>\"Will they move the buildings, too?\" you ask your guide, Mr. Nchama.</p><p>\"They're planning all new buildings. They've already built a hotel, a golf course, and a university. The roads, administration, and housing will come very soon.\"</p><p>The two of you tour the forest that will soon be cut down, and cleared, and built on. You stand on a hill and look down to where the 6-lane freeway is being constructed by crews of workers. A whole city rising up out of the wild, imagine that.</p>",
+      },
+      {
+        name: "GOLIATH FROG",
+        article: "",
+        description:
+          "One morning, you hear a knock on your hotel room door. When you open it, in your bathrobe, there's nobody in the hallway. But, there is a basket on the floor.</p><p>You pick it up and look inside. You are surprised to see that it contains a large frog. A very large frog.</p><p>\"I believe it's a Goliath frog,\" the concierge tells you, when you bring the basket to him and ask for help. \"It's the largest species in the world. They're native to Equatorial Guinea.\"<p></p>\"It looks like there is a card in the basket, sir, have you read it yet?\"</p><p>The concierge saw what you, in your surprise, had missed.</p><p>You carefully pick up the small piece of heavy card stock, which one the frog's front legs is pinning to the bottom of the basket. The frog looks unperturbed, blinking its huge, wet eyes impassively.</p><p>In a hand-written script, the card reads: my name is Frederick, please follow me.</p><p>At that, the massive frog, which looks to be at least a foot long, hops out of the basket and across the lobby of the hotel. It waits in front of the door for you to follow. You almost expect it to turn around and tell you to hurry up.</p><p>You follow it through the streets of Bata, the city where you're staying at present. It seems to know where it's going, casually hopping through the streets. Rather than trying to jump across busy intersections, like the frog in the video game, this one stops to wait for traffic to pass before safely proceeding. Many people watch the strange sight, laughing or asking each other if they've ever seen anything like it. They all agree that it's at least a little unusual to see a 3 kilogram frog leading a tourist with such confidence and sense of purpose.</p><p>Twenty minutes or so later, you arrive at a nice, but ordinary looking house near the harbor. Frederick, which you take for granted is the frog's given name, hops into the house through the open door. Hesitating only a moment, you follow it inside.</p><p>A man is waiting for you in the living room, sitting in an armchair, with the frog in his lap. He is middle-aged, with close-cropped, curly hair. He is wearing glasses, and a tan linen shirt and blue jacket, and gives off the air of a teacher, or professor, or a scholar.</p><p>He smiles at you. \"Thank you for humoring me, I understand my invitation was a little unorthodox. I asked Frederick to bring you here because I need your help.\"</p><p>The man, whose name turns out to be Francisco, explains that he has been training Goliath frogs to act as companion animals for the elderly and disabled. But, a shadowy criminal organization got word of his research, and kidnapped most of his, as he calls them, \'students\'. Only Frederick, who was out of the house on an errand at the time, was spared.</p><p>\"They will use them as thieves, spies, even assassins. I cannot allow my work to be used for evil. I have heard you are an adventurer, and so I beg you to bring them back, and put a stop to these men once and for all.\"</p><p>His honest eyes are pleading.</p><p>\"I'll do it,\" you say.</p><p>48 hours later, you have wrapped up the case. You managed to track down the criminal organization, which it turned out was tied to all the recent jewel thefts in Equatorial Guinea. They were holding the trained Goliath frogs in a swamp in the Sanaga basin.</p><p>You sadly inform Francisco that his star pupil, Frederick the frog, had been working with the thieves all along, including in the plot to kidnap brothers and sisters. You and Frederick had had a showdown in a helicopter hangar, and only one of you had walked (not hopped) away.</p><p>Francisco is quiet, but nods his head.</p><p>\"I understand,\" he says. \"Maybe I pushed him too hard. Maybe I pushed them all too hard. Maybe... maybe the world isn't ready for this technology.\"<p></p>You convince him to continue his research, then return, alone, to your hotel room.</p>"
+      },
+    ],
   },
   {
     area: "Eritrea",
