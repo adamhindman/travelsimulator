@@ -1761,12 +1761,12 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean", "Norway", "Sweden", "Russia"],
     description:
-      "Finland is a Nordic country situated between Norway, Sweden and Russia. When you think of Finland, you probably think of a snowy hellscape. But, the majority of Finland is in the southern temperate zone, and only the northern third of the country has a subarctic climate. Finland is the northernmost country in the European Union. Finland's largest imports are machinery and equipment, wood products, and chemicals. Its capital and largest city is Helsinki.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+      "Finland is a Nordic country situated between Norway, Sweden and Russia. When you think of Finland, you probably think of a snowy hellscape. But, the majority of Finland is in the southern temperate zone, and only the northern third of the country is an ice-blasted wasteland where life can gain no purchase. Finland's largest imports are machinery and equipment, wood products, and chemicals. Its capital and largest city is Helsinki.",
+    objects: [
+      { name: "SAUNA", article: "A", description: "Finnish people love their saunas, so when your hosts ask you whether you want to join them, you jump at the chance to learn more about this fascinating and steamy subject.</p><p>The sauna is a wooden room with some heated stones in the middle of it. The stones are heated by coals from a fire, and occasionally water is scooped onto them from a bucket, releasing steam into the air.</p><p>Everyone is naked, chatting amiably with each other, or else just enjoying the 200-degree air temperature, and its attendant health benefits.</p><p>You sit right in the middle of the room, and join in, doing your best to follow the conversation in Finnish.</p><p>Unfortunately, your Finnish isn't great, and after a few minutes you lose concentration, and find yourself staring at people's genitals.</p><p>This is considered bad form at a sauna, and you are politely rebuked.</p><p>\"Olen pahoillani, että sukupuolielimesi hypnotisoivat minut\" you say, apologizing: I'm sorry I was hypnotized by your junk.</p>" },
+      { name: "SNOWCASTLE OF KEMI", article: "The", description: "This castle is made of snow, and every year it is rebuilt after melting in the spring.</p><p>There is a hotel here, and you decide to spend a night, to find out what it's like living in Finland.</p><p>You pull up to the valet, and hand him the keys to your snowmobile. Then, you check in at the front desk, and speak to the concierge, who is a snowman. A penguin takes your luggage up to your room, and you tip him in ice cubes.</p><p>That night at the hotel restaurant, you eat a big plate of spaghetti and snowballs, and wash it down with some ice water. The restroom is an igloo.</p><p>Next you decide to get some exercise, so you head over to the pool to go skating, and then to the hotel gym, where instead of exercise machines you lift blocks of ice frozen around a barbell.</p><p>Afterward, you go back to your room, take a cold shower, and hop into bed. Your room is comfortable, though a little bit cold.</p>" },
+      { name: "REINDEER", article: "A vast herd of reindeer", description: "You watch them move across miles and miles of golden moss, silently, and very fast. How poetic!" },
+    ],
   },
   {
     area: "France",
@@ -1981,7 +1981,7 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean", "Burkina Faso", "Côte d'Ivoire", "Togo"],
     description:
-      'Ghana, known as the "Gold Coast" due to its many natural riches, is a multicultural nation, with about 50 ethnic groups co-existing peacefully. Ghana has a diverse geography, from coastal savannahs to tropical jungles.',
+      'Ghana, known as the "Gold Coast" due to its many natural riches, is a multicultural nation, with about 50 ethnic groups co-existing peacefully, for certain definitions of that word. Ghana has a diverse geography, from coastal savannahs to tropical jungles.',
     // objects: [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
