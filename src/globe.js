@@ -1714,6 +1714,8 @@ export let globe = [
   },
   {
     area: "Eswatini",
+    image: "eswatini.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@smile_art?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">S'mile Vilakati</a> on <a href="https://unsplash.com/s/photos/eswatini?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>`,    
     type: "country",
     neighbors: ["Mozambique", "South Africa"],
     description:
@@ -2031,6 +2033,7 @@ export let globe = [
   {
     area: "Grenada",
     type: "country",
+    image: "grenada.png",
     neighbors: ["Atlantic Ocean"],
     description:
       "Grenada is an island nation located northwest of Trinidad and Tobago and northeast of Venezuela, in the Caribbean Sea. The capital and largest city is Saint George's. Grenada consists of the island of Grenada itself plus six smaller islands (called the Grenadine) which lie to the north of the main island. Grenada has a relatively dry climate, with an annual precipitation of about 59 inches.",
