@@ -2158,11 +2158,9 @@ export let globe = [
     ],
     description:
       "Honduras (or in Spanish, República de Honduras) is in Central America. The country is bordered to the north by the Caribbean Sea, and to the east by Nicaragua.<p>Its size is just over 43,000 square miles, with an estimated population of 8.5 million.</p><p>With lowlands and temperate forests on the Caribbean coast and mountain ranges in the interior, Honduras is quite geologically diverse. Forested regions in the interior are separated from larger areas with a Mediterranean climate, and fertile valleys, by wide swathes of desert.</p>",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+    {name:"GREAT SWAN ISLAND", article:"", description:"You are wandering around Great Swan Island, the 3-square mile slice of paradise where, in the early 1960s, the CIA operated a radio station to broadcast anti-Castro programming into Cuba.</p><p>Of the radio station, nothing remains but some disturbed ground and concrete pads on which the old broadcast building and radio tower once stood. You stop to examine it, looking for artifacts from the past: you find a few tin cans, a container of top secret microfilm, and an old military-style cigarette lighter from the Korean war. Neat!</p><p>The island itself is mostly flat, with thickets of short trees, and enough vegetation to have once supported a herd of cows.</p><p>However, this herd was recently killed by the Honduran army unit now stationed here, presumably because they kept wandering onto the runway of the airport. A single small landing strip, the unmanned Islas del Cisne Airport (MHIC), is also located here.</p><p>In the afternoon, while journeying to the north end of the island, you spot some hoof prints in the dirt, and follow them to an opening in the trees. You find a lone cow and her calf here, lounging in the shade. They must have hidden out, and survived the slaughter of the rest of their herd.</p><p>The mother cow looks at you nervously, seeming almost to be pleading for you not to report them to the soldiers. The calf looks young, still nursing age. It walks over to investigate, fearlessly letting you pet its soft fur, and licking your hand with its wet tongue.</p><p>\"Your secret is safe with me,\" you say, giving her a wink. You back out of the clearing and continue your ramble around the island."},
+    ],
   },
   {
     area: "Hong Kong",

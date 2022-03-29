@@ -5,7 +5,7 @@ export const helpText = `
     <li><strong>LOOK [thing]</strong>: Look at something, or just look around.</li>
     <li><strong>TEL [place]</strong>: Teleport to a place.</li>
     <li><strong>PASSPORT</strong>: Check what countries you've visited.</li>
-    <li><strong>FORGET</strong>: Forget everything.</li>
+    <li><strong>FORGET</strong>: Clear your passport. Cannot be undone.</li>
     <li><strong>INV</strong>: Check your inventory.</li>
     <li><strong>STATS</strong>: Get some stats about the project.</li>
   </ul>
