@@ -2252,11 +2252,15 @@ export let globe = [
     ],
     description:
       "India is a country of extremes. You find great poverty and great wealth side-by-side. You find natural beauty and artistic beauty alongside heaps of trash.</p><p>They have four of the greatest rivers in the world, and most of the area around that river is well developed. There are the great deserts as well, which you spend a few weeks wandering around in, concluding that the river areas are much more pleasant.</p><p>You eat a lot of delicious food, mostly vegetarian, but you sneak in a little chicken every once in a while.</p><p>It is a wonderful country, and there's much for you to learn.</p>",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+      // {name:"KAILASA TEMPLE", article:"", description:"https://www.lonelyplanet.com/india/maharashtra/ellora/attractions/kailasa-temple/a/poi-sig/1292851/356389"},
+      {name:"RUDE COW", article:"", description:"You get into a shouting match with a cow on the streets of Delhi. These animals, sacred to many, enjoy a protected status... and don't they know it.</p><p>This one got all up your face, like \"what are you going to do about it?\" and you just. Went. Off.</p><p>The people passing you on the streets look aghast, obviously judging you to be the aggressor in the confrontation.</p><p>\"It's just an animal,\" someone says, trying to calm you down.</p><p>\"If it's just an animal, why do we have to be so nice to it? You know what, mind your own business!\" you reply.</p><p>The cow just stands there, with a cud-eating grin on its face. When you hear police sirens in the distance, you decide to walk away. They're probably not for you, but there's no reason to stick around and find out.</p><p>As you leave, you hear a loud 'MOO' coming from behind you, but you don't even turn around."},
+      {name:"TAJ MAHAL", article:"The", description:""},
+      {name:"PARATHAS", article:"A restaurant selling", description:""},
+      {name:"AJANTA CAVES", article:"The", description:""},
+      {name:"KARNI MATA TEMPLE", article:"The", description:""},
+      {name:"KALAVANTIN DURG", article:"", description:""}
+    ],
   },
   {
     area: "Indonesia",
