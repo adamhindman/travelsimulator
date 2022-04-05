@@ -2499,7 +2499,7 @@ export let globe = [
     type: "country",
     neighbors: ["Albania", "Montenegro", "North Macedonia", "Serbia"],
     description:
-      "The Republic of Kosovo is a partially recognized state that is located at the southern part of Serbia. Many travelers who feel adventurous, make the beautiful trip to this place, which offers a perfect combination of chic urban nightlife and bohemian European charm.",
+      "The Republic of Kosovo is a partially recognized state that is located at the southern part of Serbia. Many travelers (if they're feeling adventurous) make the trip to this beautiful place, which offers a perfect combination of chic urban nightlife and bohemian European charm.",
     // objects:[
     // {name:"", article:"", description:""},
     // {name:"", article:"", description:""},

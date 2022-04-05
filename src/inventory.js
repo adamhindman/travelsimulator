@@ -1,9 +1,10 @@
 import { capitalize } from "./utilities.js";
 
 export let inventory = [
-  { name: "Gum", description: "A stick of cinnamon gum." },
+  { name: "Gum", description: "A package of cinnamon gum." },
   { name: "Spare socks", description: "An extra pair of nice warm socks." },
   { name: "Sunscreen", description: "A tube of SPF-30." },
+  { name: "Guidebook", description: "The perfect traveler's companion."}
 ];
 
 export const addToInventory = item => {};
