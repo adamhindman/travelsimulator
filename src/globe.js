@@ -2938,11 +2938,10 @@ export let globe = [
     neighbors: ["China", "Pacific Ocean"],
     description:
       "Macau is located on the southern coast of China, and is in fact a Special Administrative Region, with its entire economy, apart from law, security, and foreign affairs, being managed by the Macau Special Administrative Region Government.</p><p>Macau has become one of the world's leading gaming centers, so you look around for a Smash Brothers tournament to join, but are unable to find one.</p>",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+    {name:"CASINO", article:"A", description:"You walk into the roulette room at the fanciest casino in Macau, the one that caters exclusively to exotic rich people with shady backgrounds and quirky characteristics.</p><p>You sit down next to a South Africam billionaire with a golden eye patch and a ring with a tiger claw on it. Across the room, you see an old woman in a wheelchair, being pushed by a hulking strongman wearing a blindfold. Moments later, a beautiful Russian woman with two pet albino ferrets approaches you and asks you to light her cigarette. You do so.</p><p>In thanks, she tells you to put all your money on green, and on the next spin you win $95,000. "},
+    {name:"VIRGIN MARY KILLING A HYDRA", article:"The", description: "This depiction of Jesus' mother stepping on the neck of a hydra is engraved on the ruins of the Church of St. Paul in Macau. A description in Chinese characters reads: \'Holy Mother tramples the heads of the dragon\'.</p><p>Only the elaborately carved facade of this 17th century church remains standing, making it look like the buildings on the set of a Hollywood western."},
+    ],
   },
   {
     area: "Madagascar",
