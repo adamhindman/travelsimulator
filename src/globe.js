@@ -3817,19 +3817,7 @@ export let globe = [
     //   { name: "", article: "", description: "" },
     // ],
     neighbors: ["Atlantic Ocean"],
-  },
-  // {
-  //   area: "Saint Martin",
-  //   type: "country",
-  //   description:
-  //     "The island country of Saint Lucia, about 175 miles east of Puerto Rico. The capital is Castries. Saint Lucia has a population of about 175,000. The official language is English. The currency is the East Caribbean dollar. The climate is tropical. For fun, people like to dance, go to the beach, and listen to music.",
-  //   // objects: [
-  //   //   { name: "", article: "", description: "" },
-  //   //   { name: "", article: "", description: "" },
-  //   //   { name: "", article: "", description: "" },
-  //   // ],
-  //   neighbors: ["Atlantic Ocean"],
-  // },  
+  }, 
   {
     area: "Saint Vincent and the Grenadines",
     description:
