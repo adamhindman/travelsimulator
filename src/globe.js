@@ -3315,7 +3315,7 @@ export let globe = [
   {
     area: "Netherlands",
     type: "country",
-    neighbors: ["Atlantic Ocean", "Belgium", "Germany", "Saint Martin", "France"],
+    neighbors: ["Atlantic Ocean", "Belgium", "Germany", "France"],
     description:
       "The Netherlands is a flat country surrounded by water and chock full of windmills, constantly twirling. The people here are dutch, which means honest. They work hard, ranging from a simple laborer to a ship's captain. The best job you can get here is being a ship's captain. The people are friendly, enjoy building, and even enjoy being dominated by powerful dictators.",
     objects: [
@@ -3818,6 +3818,18 @@ export let globe = [
     // ],
     neighbors: ["Atlantic Ocean"],
   },
+  // {
+  //   area: "Saint Martin",
+  //   type: "country",
+  //   description:
+  //     "The island country of Saint Lucia, about 175 miles east of Puerto Rico. The capital is Castries. Saint Lucia has a population of about 175,000. The official language is English. The currency is the East Caribbean dollar. The climate is tropical. For fun, people like to dance, go to the beach, and listen to music.",
+  //   // objects: [
+  //   //   { name: "", article: "", description: "" },
+  //   //   { name: "", article: "", description: "" },
+  //   //   { name: "", article: "", description: "" },
+  //   // ],
+  //   neighbors: ["Atlantic Ocean"],
+  // },  
   {
     area: "Saint Vincent and the Grenadines",
     description:

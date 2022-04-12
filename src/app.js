@@ -9,6 +9,7 @@ console.clear();
 export const submitBtn = document.getElementById("submit");
 export const promptField = document.getElementById("prompt");
 export const allAreas = globe.map(area => area.area);
+export const defaultArea = "United States"
 
 export const areaExists = areaName => {
   let exists = globe.filter(c => {
@@ -38,6 +39,7 @@ visited = cleanPassport();
 localStorage.setItem("visited", JSON.stringify(cleanPassport()));    
 
 export const getAttributeOfArea = (attrib, area = curLocation) => {
+  area = areaExists(area) ? area : defaultArea  
   let items = globe.filter(i => i.area.toLowerCase() === area.toLowerCase())[0][attrib];
   return items;
 };
