@@ -2976,11 +2976,10 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       "Madeira is an autonomous region of Portugal, and consists of three islands. Pico is to the south, while Sao Jorge and Graciosa are to the north. The island group lies just 600 kilometers off the coast of Morocco. Madeira is sometimes referred to as the most beautiful island in the world, and some of the most beautiful gardens are located here. The island features a mild, subtropical climate.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+      { name:"FORTIFIED WINE", article:"A bottle of", description:"Madeira is famous for its brandy-fortified red wine. The brandy was added to help its shelf-life while shipping by sail-power in the 18th century. Much of the Age of Enlightenment was fortified by fortified wine from right here in Madeira."},
+      // {name:"", article:"", description:""},
+    ],
   },
   {
     area: "Malawi",
@@ -2988,11 +2987,11 @@ export let globe = [
     neighbors: ["Mozambique", "Tanzania", "Zambia"],
     description:
       "Malawi is located in Southeast Africa, and shares it borders with Mozambique to the south and east, Zambia to the north, and Tanzania to the north and west. It is the only southern African nation that speaks English and it enjoys a tropical climate, averaging around 24 degrees Celsius.</p><p>The economy of Malawi is based on agriculture, mainly tea, coffee, and sugar. Tourism and financial outsourcing have become other important sectors since the 2000's.</p>",
-    // objects:[
-    // {name:"", article:"", description:""},
+    objects:[
+    {name:"KUNGA CAKES", article:"", description:"Even though the sky is blue and the weather is warm, dark clouds have formed over Lake Malawi.</p><p>You are leaning against the gunwhales of a small fishing boat, staring into the distance at what looks like a small, grey tornado or funnel cloud. The boat's small engine chugs away, bearing you closer and closer into the heart of the storm. Err, swarm.</p><p>You are going with a group of local friends to catch midges, the tiny-just born flies that hover in the air over this enormous lake. Billions of them pupate, rise to the surface, and swirl around in huge columns of insects that rise hundreds of meters in the air, darkening the sky just like rain clouds.</p><p>The people around here gather them up by the millions, and form them into patties of umami-rich protein called Kunga Cakes. It's a local delicacy that you can't wait to try.</p><p>You look out over Lake Malawi. It is 350 miles long, and 50 miles wide. It spans three countries: Malawi, Tanzania, and Mozambique. It contains more species of fish than any body of fresh water in the world. Nobody knows how many, but it's over 1000! Wow!</p><p>Beaches along this lake seem very inviting, full of soft white sand, fine as an ocean beach. You admit that you wouldn't mind stopping at one of them right now, kicking back and munching on a basket of chambo and chips.</p><p>Chambo is a fish that swims in the waters of this lake. It is delicious fried, or grilled right off the boat. The Malawian take on fish and chips is often served with fries and a cold beer. It's a very popular street dish, because it's so delicious, and so easy to get.</p><p>Some chambo certainly sounds good to you, though you're sure it's not as good as a solid mass of ground up flies.</p><p>You stand silently for a while, saying nothing.</p><p>As you approach the swarm of bugs, someone hands you a frying pan. Oil is smeared on the inside of the pan, and you are told that the midges will stick to it. All you've got to do is swipe the pan around a few times as you pass through the cloud of flies, and then scrape the resulting mass into a bucket. Easy as pie.</p><p>\"We're going right into the bugs?\" you ask.</p><p>They nod. \"Not right in the middle, but close enough. And don't forget to close your mouth when we go through it, otherwise you'll choke.\"</p><p>\"Choke on all the bugs?\"</p><p>They nod again.</p><p>\"Try to close your eyes, too.\"</p><p>You think about all the beautiful places in Malwi you could be visiting right now. As you cross into the outer edge of the swarm, a tiny fly lands on your arm, like the first snowflake of winter."}
     // {name:"", article:"", description:""},
     // {name:"", article:"", description:""}
-    // ],
+    ],
   },
   {
     area: "Malaysia",
