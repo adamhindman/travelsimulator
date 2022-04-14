@@ -1,14 +1,1 @@
-Hungary:
-{ name: "VALLEY OF THE BEAUTIFUL WOMAN", article: "", description: "WIP" },
-{ name: "VÁROS A VÁROS ALATT ", article: "", description: "WIP" },
-{ name: "LAKE BALATON", article: "", description: "WIP" },
-
-
-Kyrzgyzstan:
-{ name: "ISSYK KUL LAKE", article: "", description: "WIP" },
-{ name: "KYMYS", article: "", description: "WIP" },
-
-Uganda: 
-{ name: "TORORO ROCK", article: "", description: "WIP" },
-{ name: "KAMPALA HILL", article: "", description: "WIP" },
-{ name: "MOUNTAINS OF THE MOON", article: "The", description: "WIP" },
+Technically it is called the Persiaran Sultan Salahuddin Abdul Aziz Shah road, but all the locals know what you mean when you ask directions to the "really big roundabout".</p><p></p><p>Big is an understatement! You're used to smaller roundabouts in cities around the world, which allow traffic to flow through intersections without stoplights. Paris has a great one, where you almost got into an accident staring at the impressive Arc de Triomphe in its center. But that one is only a few hundred meters around, while the Putrajaya Roundabout is over 3.5 kilometers!</p><p></p><p>In the middle of this enormous, elliptical ring of asphalt is a government building, a park, and a 5-star hotel!</p><p></p><p>You circle the roundabout a few dozen times, until you discover your scooter is almost out of petrol, and has to peel off to find a station and refill.</p><p></p><p>... But then you come back and go around a few dozen more times!!!
