@@ -1,5 +1,5 @@
 import { globe } from "./globe.js";
-import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects} from "./utilities.js";
+import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt} from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
@@ -91,9 +91,17 @@ export const handleSubmit = (val, msg = "") => {
       msg = handleLook(noun, words, showLoc);
       break;
     case "randomwalk": 
-      msg += "You take a walk around the globe.<br>Press ESCAPE to stop."
+      let loops = 1000
+      if (noun !== verb){ // true if there is no noun
+        if(isInt(loops)){ // false if noun is garbage
+          loops = noun
+        } else {
+          loops = 1000
+        }
+      } else {}
+      msg += `You take a walk around the globe.<p>This process will end automatically after ${loops} steps.</p><p>Press [ESCAPE] to stop sooner than that.</p><p>Phone users should pray to whatever gods they believe will grant them mercy.</p>`
       showLoc
-      handleRandomWalk();
+      handleRandomWalk(loops);
       break;
     case "tel":
       handleTel(noun);
@@ -158,13 +166,26 @@ const handleCheckPassport = () => {
   return `${msg}</p></div>`  
 }
 
-const handleRandomWalk = () => {
-  walk = setInterval(()=>{
-    const neighbors = arrayToLowerCase(getAttributeOfArea("neighbors"));
-    const randomNeighbor = neighbors[Math.floor(Math.random() * neighbors.length)];
-    updateLocation(randomNeighbor)
-    render("", capitalize(randomNeighbor), curLocation, false);    
-  },250)
+const handleRandomWalk = (steps = 1000) => {
+  walk = null
+  let loops = 0
+  let maxLoops = steps
+  if (!walk) {
+    walk = setInterval(()=>{
+      const neighbors = arrayToLowerCase(getAttributeOfArea("neighbors"));
+      const randomNeighbor = neighbors[Math.floor(Math.random() * neighbors.length)];
+      updateLocation(randomNeighbor)
+      render("", ' ', curLocation, false); 
+      loops++
+      promptField.value = `${loops} / ${maxLoops} (${randomNeighbor})`      
+      if (loops >= maxLoops){
+        clearInterval(walk)
+        walk = null
+        promptField.value = ("")
+        render("", `<hr/><p>Random walk ended normally after ${maxLoops} trips`, curLocation, false); 
+      }  
+    },1)
+  }
 }
 
 const handleGo = (noun, neighbors) => {
@@ -328,7 +349,9 @@ export const initListeners = () => {
 
   promptField.addEventListener("keydown", e => {
     if (e.key === "Escape") {
+      promptField.value = ""
       clearInterval(walk)
+      walk = null
     }
   });  
 

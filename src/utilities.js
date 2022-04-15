@@ -38,6 +38,10 @@ export const inArray = (item, arr) => {
   return isInArray;
 };
 
+export function isInt(value) {
+  return !isNaN(value) && (function(x) { return (x | 0) === x; })(parseFloat(value))
+}
+
 export function catAllObjects(arr){
   return arr.reduce((result, current) => {
     let next = isArray(current.objects) ? current.objects.reduce((r2, c2) => r2 + c2.description, "") : "";

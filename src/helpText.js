@@ -8,7 +8,7 @@ export const helpText = `
     <li><strong>FORGET</strong>: Clear your passport. Cannot be undone.</li>
     <li><strong>INV</strong>: Check your inventory.</li>
     <li><strong>STATS</strong>: Get some stats about the project.</li>
-    <li><strong>RANDOMWALK</strong>: Take a walk around the map (ESC to stop).</li>
+    <li><strong>RANDOMWALK [#]</strong>: Walk around the map for # steps (ESC to stop).</li>
   </ul>
   <p>After typing a command, you can press [TAB] to autocomplete it!</p>
 `;

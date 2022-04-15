@@ -1398,7 +1398,7 @@ export let globe = [
     image: "czech-republic.png",
     attribution: `Photo by <a target="_blank" href="https://unsplash.com/@rodrigoardilha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rodrigo Ardilha</a> on <a target="_blank" href="https://unsplash.com/s/photos/czech-republic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
-    neighbors: ["Austria", " Germany", "Poland", " Slovakia"],
+    neighbors: ["Austria", "Germany", "Poland", "Slovakia"],
     description:
       "The Czech Republic is an Eastern European country with a mostly temperate continental climate. The capital city of Prague has beautiful Baroque churches, palaces and gardens. Near Prague is the Bohemian Forest, an area of protected wilderness where you walk around, looking at all the animals.",
     objects: [
