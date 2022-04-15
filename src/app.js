@@ -90,6 +90,11 @@ export const handleSubmit = (val, msg = "") => {
     case "look":
       msg = handleLook(noun, words, showLoc);
       break;
+    case "randomwalk": 
+      msg += "You take a walk around the globe.<br>Press ESCAPE to stop."
+      showLoc
+      handleRandomWalk();
+      break;
     case "tel":
       handleTel(noun);
       break;
@@ -153,6 +158,15 @@ const handleCheckPassport = () => {
   return `${msg}</p></div>`  
 }
 
+const handleRandomWalk = () => {
+  walk = setInterval(()=>{
+    const neighbors = arrayToLowerCase(getAttributeOfArea("neighbors"));
+    const randomNeighbor = neighbors[Math.floor(Math.random() * neighbors.length)];
+    updateLocation(randomNeighbor)
+    render("", capitalize(randomNeighbor), curLocation, false);    
+  },250)
+}
+
 const handleGo = (noun, neighbors) => {
   if (neighbors.includes(noun)) {
     updateLocation(noun);
@@ -214,7 +228,7 @@ const handleForget = () => {
 };
 
 export const handleTab = e => {
-  const commands = ["go", "look", "tel", "forget", "inv", "help", "stats", "passport"]
+  const commands = ["go", "look", "tel", "forget", "inv", "help", "stats", "passport", "randomwalk"]
   let val = e.target.value.toLowerCase().replace(/\s+/g, " ").trim();
   const words = val.split(" ");
   const verb = words[0];
@@ -310,6 +324,13 @@ export const initListeners = () => {
       submitBtn.classList.remove("shown");
     }
   });
+
+
+  promptField.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      clearInterval(walk)
+    }
+  });  
 
   submitBtn.addEventListener("click", e => {
     handleSubmit(promptField.value);
