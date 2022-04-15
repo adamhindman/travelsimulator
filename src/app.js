@@ -5,7 +5,7 @@ import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inv
 
 console.clear();
 
-
+let walk = null
 export const submitBtn = document.getElementById("submit");
 export const promptField = document.getElementById("prompt");
 export const allAreas = globe.map(area => area.area);
@@ -167,7 +167,7 @@ const handleCheckPassport = () => {
 }
 
 const handleRandomWalk = (steps = 1000) => {
-  var walk = null
+  walk = null
   let loops = 0
   let maxLoops = steps
   if (!walk) {
