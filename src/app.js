@@ -167,7 +167,7 @@ const handleCheckPassport = () => {
 }
 
 const handleRandomWalk = (steps = 1000) => {
-  walk = null
+  var walk = null
   let loops = 0
   let maxLoops = steps
   if (!walk) {
