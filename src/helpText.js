@@ -1,14 +1,14 @@
 export const helpText = `
   <h4>COMMANDS</h4>
   <ul class="asterisk">
-    <li><strong>GO [place]</strong>: Travel to a nearby place.</li>
-    <li><strong>LOOK [thing]</strong>: Look at something, or just look around.</li>
-    <li><strong>TEL [place]</strong>: Teleport to a place.</li>
-    <li><strong>PASSPORT</strong>: Check what countries you've visited.</li>
-    <li><strong>FORGET</strong>: Clear your passport. Cannot be undone.</li>
-    <li><strong>INV</strong>: Check your inventory.</li>
-    <li><strong>STATS</strong>: Get some stats about the project.</li>
-    <li><strong>RANDOMWALK [#]</strong>: Walk around the map for # steps (ESC to stop).</li>
+    <li><span><strong>GO [place]</strong>: Travel to a nearby place.</span></span></li>
+    <li><span><strong>LOOK [thing]</strong>: Look at something, or just look around.</span></li>
+    <li><span><strong>TEL [place]</strong>: Teleport to a place.</span></li>
+    <li><span><strong>PASSPORT</strong>: Check what countries you've visited.</span></li>
+    <li><span><strong>FORGET</strong>: Clear your passport. Cannot be undone.</span></li>
+    <li><span><strong>INV</strong>: Check your inventory.</span></li>
+    <li><span><strong>STATS</strong>: Get some stats about the project.</span></li>
+    <li><span><strong>RANDOMWALK [#]</strong>: Walk around the map for # steps (ESC to stop).</span></li>
   </ul>
   <p>After typing a command, you can press [TAB] to autocomplete it!</p>
 `;
