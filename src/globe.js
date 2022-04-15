@@ -3041,11 +3041,11 @@ export let globe = [
     ],
     description:
       "Mali is a landlocked country in West Africa. It's the third largest country in the region, behind Algeria and Nigeria. Mali borders Algeria, Niger, Burkina Faso, Guinea-Bissau, Senegal, and Côte d'Ivoire. It's home to the famed city of Timbuktu, which is well known for its mosques, libraries, and schools.",
-    // objects:[
-    // {name:"", article:"", description:""},
+    objects:[
+    {name:"BOX OF ARABIC MANUSCRIPTS", article:"A", description:"You set out to explore the crawlspaces of some abandoned buildings in Bamako.</p><p>In one building, which is barely standing, you hit the jackpot: a dust covered a metal locker. How mysterious.</p><p>It feels heavy, and looks to be in relatively good shape.</p><p></p><p>It is closed and held fast with a steel padlock, but you are easily able to cut it off using the industrial bolt cutters you carry for this purpose.</p><p></p><p>Opening up the metal box, you find that contains hundreds of manuscripts, which look to be priceless medieval writings, all in old Arabic. Instantly you know what you're looking at, and its significance.</p><p></p><p>In 2012, anticipating the fall of Timbuktu, volunteers in that city smuggled hundreds of thousands of priceless, irreplaceable historical manuscripts to cities in the south, like Bamako, out of reach of the ongoing Mali War that was engulfing the north. They moved 2500 metal boxes like this to safehouses away from the front, and each box contained as many as 300 books. 700,000 books were spared, and many of the books that weren't hidden like this were burned or looted during the conflict.</p><p></p><p>You replace the lock on the metal box, and carefully camouflage it with more debris. You inform the local libraries that you've found a missing stash of manuscripts, and give its location.</p><p></p><p>When the librarian asks you what you were doing when you discovered the lost box, it's hard to explain. </p><p></p><p>\"It sounds like you were looting an abandoned building,\" he says.</p><p></p><p>\"No! I was just exploring, trying to understand the culture from the ground up.\"</p><p></p><p>\"But you were carrying a pair of bolt cutters.\"</p><p></p><p>You nod. The nuances are easy to misunderstand, and you don't blame him for not getting it."},
     // {name:"", article:"", description:""},
     // {name:"", article:"", description:""}
-    // ],
+    ],
   },
   {
     area: "Malta",
