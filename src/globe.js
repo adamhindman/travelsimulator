@@ -3074,23 +3074,19 @@ export let globe = [
     neighbors: ["Pacific Ocean"],
     description:
       "The Republic of the Marshall Islands was named in honor of the British captain John Marshall, who visited the islands in 1788. It's famed for having stunning coral reefs, and is a popular tourist destination. Most Marshallese are of Micronesian descent, and the language of Marshallese is based on a combination of Micronesian, Gilbertese and English.</p><p>The Marshall Islands consists of 29 atolls and five isolated islands, with a combined area of only 750 square kilometers. The capital is the atoll of Majuro, which has a population of around 28,500. The largest atoll is Kwajalein, which is 96 kilometers long, and 13 kilometers wide, making it one of the largest in the world.</p>",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+      {name:"BIKINI ATOLL", article:"", description: "26 separate nuclear tests on Bikini Atoll in the Marshall Islands have rendered it inhospitable for human life. Some of the original, displaced islanders tried to move back in the 1970s, but high levels of Strontium-90 in the water supply made that impossible. Now this place, which was once a paradise, is abandoned except for the ghostly shells of old buildings, the swaying palm trees, and the snapping and clicking of radioactive coconut crabs shuffling across the sand."},
+    ],
   },
   {
     area: "Mauritania",
     type: "country",
     neighbors: ["Algeria", "Atlantic Ocean", "Mali", "Senegal", "Western Sahara"],
     description:
-      "Most of Mauritania's landscape is desert, although the south of the country is dominated by the Senegal River. The country is bordered by Morocco, Western Sahara, Algeria, Mali, and Senegal. The Capital of Mauritania is Nouakchott, which has a population of around 1.725 million people.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+      "Most of Mauritania's landscape is desert, although the south of the country is dominated by the Senegal River. The country is bordered by Morocco, Western Sahara, Algeria, Mali, and Senegal. The Capital of Mauritania is Nouakchott, which has a population of around 1.7 million people.",
+    objects:[
+    {name: "SHIP GRAVEYARD (?)", article:"The", description:"In Nouadhibou Bay, just off the coast of Mauritania, lie the rusted hulks of three hundred ships. Many of them are large cargo vessels, hundreds of feet long, and tall enough to create imposing canyons of steel as you paddle your tiny sea kayak in the shadowy space between them. </p><p></p><p>It's called a ship graveyard. But a graveyard implies peaceful rest, the honored dead buried out of sight, with a tasteful headstone to remember them. This place is not that: enormous, cast-off beasts lie rotting in the sun, their skins flayed and peeled down to the oxidized bones. </p><p></p><p>Even now, teams of scavengers work to strip anything of value from them, before they move on to the next carcass. It's more like a slaughterhouse than a graveyard.</p><p></p><p>Anything not worth taking is left where it falls, in the sea or on the sand: the corroded scabs of discarded hull plating, innumerable bolts and rivets, haywire coils of stripped electrical cable. </p><p></p><p>The guts of these ruined ships drips slowly through their open wounds, leaking diesel fuel, engine oil, and sundry toxic chemicals into the sea. This mixture washes onto the shore in a stinking, shifting, rainbow-chromatic film that covers everything. It coats the driftwood, the trash that bobs on the surface, the shell of your kayak, your paddle, the fish, the sea birds. Anything it touches. </p><p></p><p>You see a group of young men cutting a hole in a ship. You watch them grinding away at the thick metal with power tools that send showers of sparks into the water. </p><p></p><p>You wave at them and pull yourself over to where they're working. You greet them, they hesitantly greet you back. </p><p></p><p>After establishing that you are a tourist, and are curious about their profession, you ask them about the \"graveyard versus slaughterhouse\" question. How do they view their work?</p><p></p><p>At first, they seem confused, or unwilling to engage with the metaphor at the level you had initially hoped. These men are practical, action-oriented, not concerned with semantics. Probably, you admit, they are uneducated. They scrape out a living doing the most dangerous and unwanted work you can imagine, which is still better than any other option available to them.</p><p>They look you blankly, not offering an opinion on your question.</p><p></p><p>Then, after thinking for a minute, one says: \"We just extract resources and sell them to be refined into other substances, and used downstream, for other purposes. We didn't kill these ships: they were already here. Who put them here? It doesn't matter. Who puts iron in ground? That doesn't matter either. This isn't like a slaughterhouse, it's actually more like a mine.\"</p><p></p><p>\"That's a pretty good answer,\" you say. You chat for a few more minutes, then paddle away, letting them get back to work.</p><p>"}
+    ],
   },
   {
     area: "Mauritius",
