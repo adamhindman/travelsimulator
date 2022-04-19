@@ -3210,11 +3210,11 @@ export let globe = [
     ],
     description:
       "Montenegro is an independent sovereign state in Southeastern Europe, adjacent to the Adriatic Sea, between the Balkan Mountains and the northern edges of the vast Pannonian Plain. The capital, Podgorica, lies at the crossing of interstate routes that part of big transportation and distribution systems from the coasts of Croatia, Albania and Greece, the Adriatic Sea and Central Europe to Turkey and the Middle East.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+      {name:"", article:"", description:""},
+      {name:"", article:"", description:""},
+      {name:"", article:"", description:""}
+    ],
   },
   {
     area: "Morocco",
