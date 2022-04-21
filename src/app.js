@@ -99,7 +99,7 @@ export const handleSubmit = (val, msg = "") => {
           loops = 500
         }
       } else {}
-      msg += `You take a walk around the globe.<p>This process will end automatically after ${loops} steps.</p><p>Press [ESCAPE] to stop sooner than that.</p><p>Phone users should pray to whatever gods they believe will grant them mercy.</p>`
+      msg += `You take a walk around the globe.<p>This process will end automatically after ${loops} steps.</p><p>Press [ESCAPE] to stop sooner than that.</p>`
       showLoc
       handleRandomWalk(loops);
       break;
