@@ -3276,11 +3276,9 @@ export let globe = [
     neighbors: ["Pacific Ocean"],
     description:
       "An island country south of the equator between Hawaii and Australia. The country has lost much of its original forested cover due to overpopulation and introduced plants. Nauru has traditionally served as a transshipment outpost.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+    {name:"PHOSPHORITE", article:"", description: "Nauru used to be an abundant source of minerals used in making fertilizers.</p><p>While the phosphorite mines were in full swing, Nauru was the richest country in the world by GDP per capita: they abolished taxes, and provided free government services for all their citizens. To keep the boom times running as long as possible, they strip-mined almost all of the 8 square miles of their tiny island nation, removing both the plants and the topsoil to grow more. The island is still cratered with mines from the glory days, but now the phosphorite is gone, and the country is broke.</p><p>You spend most of an entire day wandering around, looking for something on this island that doesn't seem like a metaphor for hubris, but eventually give up."},
+    ],
   },
   {
     area: "Nepal",
@@ -3354,11 +3352,9 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Costa Rica", "Honduras", "Pacific Ocean"],
     description:
       "Nicaragua is a place that holds beauty in many aspects. Ridiculous volcanoes rise from a thin fan of land on the side of Central America. A thick influx of jungle plants provide food, medicine, and a purpose to villages that live primitive lives unreached by changing times.</p><p>You have heard stories about the Nivàcun (for so they are called), which was a race in old Nicaragua, from before the strange earthquake destroyed nearly everything. They are very fair skinned and live in the sea. They have hair the color of sunburnt sand, and eyes which measure shipping containers. As are the sizes of boxes for packing fish to the fish within, so their eyes are in proportion to their ears and to the rest of their bodies.</p>",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+    {name:"NICARAGUA CANAL", article:"The", description:"You take a trip along the proposed path of Nicaragua Canal, cutting your way through the jungle between Punta Gorda in the Caribbean, to the mouth of the Brito River, which empties into the beautiful Pacific Ocean. This path, which is currently full of snakes, would have been full of cargo ships cutting weeks of travel off their trip to the Atlantic ocean.</p><p>However, due to budgetary and bureaucratic reasons, it has remained perpetually in the planning stages for over a hundred years. No canal was ever cut, no river was ever dredged. No tracks line its banks, and it has never carried a single load of goods in all that time. Someday it may be built, but as you make your way painfully through it today, it is nothing but a few survey markers, and a jungle full of aggressive, venemous snakes.</p><p>You sharpen your machete and resume hacking at the dense growth of jungle, stopping only when a snake attacks you, which is often."},
+    ],
   },
   {
     area: "Niger",
