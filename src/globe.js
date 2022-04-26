@@ -3383,11 +3383,10 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Benin", "Cameroon", "Chad", "Niger"],
     description:
       "Nigeria! The official name of Nigeria is The Federal Republic of Nigeria. Lagos is the capital of Nigeria. The country is surrounded by Niger, Chad, and Cameroon in the west, south and north. It has a coastline on the Atlantic Ocean in the east. The climate of Nigeria is basically tropical, but with predominantly high temperatures, heavy rainfall, and humidity. The main export of Nigeria is petroleum and this makes up about 90% of Nigeria's government revenue.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "NOLLYWOOD", article: "", description: "Nollywood is the name applied to Nigeria's vibrant national film industry, which produces well over a thousand movies a year.</p><p>Inspired by some of the films you watch, you decide to write a script about a charismatic tourist who travels around the world getting into exciting adventures and always saying intelligent things.<p></p>\"It's based on a true story,\" you explain to a producer." },
+      // { name: "IYAKE LAKE", article: "", description: "" },
+    ],
   },
   {
     area: "North Korea",
