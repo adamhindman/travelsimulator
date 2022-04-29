@@ -3482,11 +3482,9 @@ export let globe = [
     neighbors: ["Afghanistan", "India", "Indian Ocean", "Iran", "China"],
     description:
       "The Islamic Republic of Pakistan is the fifth most populous country in the world. Located at the crossroads of South Asia it is a sovereign democratic state, with a moderate and tolerant outlook on life and a strong commitment of its people towards democracy and its institutions. Pakistan is the sixth largest country in the world in terms of population, and the second largest in terms of area, surpassed only by Russia. You see people on the streets eating Börek and drinking strong tea.",
-    // objects:[
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    objects:[
+    {name:"SHANGRI-LA", article:"", description:"Stumbling, snow-blind after days wandering through the Himalayas, you find yourself, quite by accident, in the lost paradise of Shangri-La. </p><p></p><p>The city is built on the shores of a lake in a charming mountain valley. The high slopes around it are covered with snow, but the lake itself is warm, and the weather here is always temperate. The people are happy, cheerful, and welcome you in with meal of vegetable stew and flatbread that is both filling and delicious. At night, you float in the hot springs and stare up at the stars, while inquisitive foxes and bright-feathered birds frolic around you, completely unafraid.</p><p></p><p>Lying on your back in the warm water, you can almost feel the ancient pulse of the earth moving through you. They say that life here lasts forever: some of the people you've talked to remember Alexander the Great, and point to where he slept when he visited here in 326 BC.</p><p></p><p>\"I can't stay here,\" you say out loud.</p><p></p><p>All they do is farm, take care of yaks, and play a game involving a leather ball stuffed with lichen. Their most popular music is a guy on a flute and another guy beating on a drum. They don't know any memes, or find memes memes funny when you explain them. The only video game any of them have ever played is a copy Tetris on the original Gameboy, left by a backpacker in 1990. </p><p></p><p>There's no cell phone coverage, so there's no Twitter, no Twitch, no Reddit. </p><p></p><p>If nobody can like your Instagram stories, do they even exist?</p><p></p><p>The next day, you fill your pack with flat bread, dried fish, fresh dates, and skins of water. The people of Shangri-La line up to wave goodbye to you as you climb the path that narrows and soon fades into the snow."}
+    ],
   },
   {
     area: "Palau",
