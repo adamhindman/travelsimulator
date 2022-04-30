@@ -3519,11 +3519,9 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Egypt", "Israel", "Jordan"],
     description:
       "The eastern border of Palestine is the Mediterranean Sea, while the western border is Jordan. The country is less than nine miles in total area from the northernmost point at Rosh Hanikra to the south end at the port city of Gaza on the Mediterranean coast of the Sinai Peninsula, and less than ten miles from the south Sea of Galilee at the northernmost point.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "DEAD SEA", article: "The", description: "When your friends in Palestine invite you to go swimming in the Dead Sea, you're initially a little frightened: </p><p></p><p>\"Dead Sea? Sounds scary. Why would I want to swim in something called the Dead Sea?\"</p><p></p><p>\"It's only called that because it's so salty that fish and plants don't grow in it. There's nothing dead in it, not really.\"</p><p></p><p>\"So, no sharks?\"</p><p></p><p>\"No sharks.\"</p><p></p><p>\"And no seaweed wrapping around my leg?\"</p><p></p><p>They shake their heads. </p><p></p><p>\"And, due to the high salinity, it's actually harder to drown in it because I'll float so well?\"</p><p></p><p>\"It's incredible, really.\"</p><p></p><p>\"And no zombies? No skeletons, ghosts, ghouls, anything like that?\"</p><p></p><p>\"None that I've ever heard of.\"</p><p></p><p>\"Let's do it!\"</p><p>" },
+    ],
   },
   {
     area: "Panama",
