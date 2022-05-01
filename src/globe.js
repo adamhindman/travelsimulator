@@ -982,6 +982,8 @@ export let globe = [
   },
   {
     area: "Cambodia",
+    image: "cambodia.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@allphotobangkok?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Paul Szewczyk</a> on <a target="_blank" href="https://unsplash.com/s/photos/cambodia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Laos", "Pacific Ocean", "Thailand", "Vietnam"],
     description:
@@ -2863,6 +2865,9 @@ export let globe = [
   {
     area: "Libya",
     type: "country",
+    image: "libya.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@bookerboot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ahmed Almakhzanji</a> on <a href="https://unsplash.com/collections/70282717/libya?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+    `,
     neighbors: [
       "Algeria",
       "Atlantic Ocean",
@@ -3545,6 +3550,8 @@ export let globe = [
   },
   {
     area: "Papua New Guinea",
+    image: "papua-new-guinea.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@brewbottle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bob Brewer</a> on <a href="https://unsplash.com/s/photos/guinea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>`,
     type: "country",
     neighbors: ["Indonesia", "Pacific Ocean"],
     description:
