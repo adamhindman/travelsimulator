@@ -378,7 +378,7 @@ export const initListeners = () => {
   });
 };
 
-const updateURL = destination => {
+const updateURLHash = destination => {
   let hash = sluggify(destination)
   if(history.pushState) {
     history.pushState(null, null, `#${hash}`);
@@ -392,7 +392,7 @@ const updateLocation = destination => {
   curLocation = destination;
   localStorage.setItem("lastLocation", destination);
   updatePassport(destination);
-  updateURL(destination);
+  updateURLHash(destination);
 }
 
 const updatePassport = (destination = curLocation) => {
