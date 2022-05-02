@@ -1,5 +1,5 @@
 import { globe } from "./globe.js";
-import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt} from "./utilities.js";
+import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt, sluggify} from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
@@ -138,7 +138,7 @@ export const handleSubmit = (val, msg = "") => {
 const getDisplay = (val, msg, area, showLoc) => {
   const p = `<p class="prompt"><span class="caret"></span>${val}</p>`;
   const m = `<p>${msg}</p>`;
-  const clSlug = curLocation.toLowerCase().split(" ").join("-");
+  const clSlug = sluggify(curLocation);
   const uiBgClass = getAttributeOfArea("image") ? `pic ${clSlug}` : ``;
   const uiAttrib = getAttributeOfArea("attribution") ? getAttributeOfArea("attribution") : ``;  
   const loc = `
@@ -185,6 +185,12 @@ const handleRandomWalk = (steps = 500) => {
         render("", `<p>Done! Ended normally after ${maxLoops} trips`, curLocation, false); 
       }  
     },1)
+  }
+}
+
+const handleTeleportFromURL = area => {
+  if(areaExists(area)){
+    updateLocation(area);
   }
 }
 
@@ -326,6 +332,12 @@ const render = (val = null, msg = null, area = curLocation, showLoc = false) => 
 };
 
 export const initListeners = () => {
+
+  window.addEventListener("load", () => {
+    let hash = document.location.hash
+    if (hash || hash.length !== 0) { handleTeleportFromURL(hash.toLowerCase().slice(1)) }
+  });
+
   promptField.addEventListener("keydown", e => {
     if (e.key === "Enter") {
       handleSubmit(e.target.value);
@@ -366,10 +378,21 @@ export const initListeners = () => {
   });
 };
 
+const updateURL = destination => {
+  let hash = sluggify(destination)
+  if(history.pushState) {
+    history.pushState(null, null, `#${hash}`);
+  }
+  else {
+      location.hash = `#${hash}`;
+  }
+}
+
 const updateLocation = destination => {
   curLocation = destination;
   localStorage.setItem("lastLocation", destination);
-  updatePassport(destination)
+  updatePassport(destination);
+  updateURL(destination);
 }
 
 const updatePassport = (destination = curLocation) => {

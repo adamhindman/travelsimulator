@@ -13,6 +13,8 @@ export const capitalize = (str, lower = false) =>
     match.toUpperCase()
   );
 
+export const sluggify = str => str.toLowerCase().split(" ").join("-"); 
+
 export const uppercase = str => str.toUpperCase();
 
 /**
