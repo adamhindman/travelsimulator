@@ -249,6 +249,7 @@ const handleForget = () => {
   let msg = `You enter a fugue state and wander back home.`;
   setTimeout(() => {
     localStorage.clear();
+    updateURLHash(defaultArea)    
     window.location.reload();
   }, 1800);
   return msg
