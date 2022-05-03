@@ -3641,7 +3641,7 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean", "Spain"],
     description:
-      "Portugal is the third-oldest country in Europe, after Greece and Italy). Located in the west of Europe along the Atlantic Ocean, the country is bordered on the south and east by Spain. Portugal's culture and politics is shaped by its Iberian, Roman, and North African cultural heritage. In the coastal cities, there are sandy surf beaches, and the food is defined by abundant, seafood in the form of stews, fresh fish, and enormous grilled prawns served at what you consider quite reasonable prices.",
+      "Portugal is the third-oldest country in Europe, after Greece and Italy. Located in the west of Europe along the Atlantic Ocean, with Spain at its south and east. Portugal's culture and politics are shaped by its Iberian, Roman, and North African cultural heritage. In the coastal cities, there are sandy surf beaches, and the food is characterized by abundant seafood in the form of stews, fresh fish, and enormous grilled prawns served at what you consider quite reasonable prices.",
     // objects: [
     //   { name: "", article: "", description: "" },
     //   { name: "", article: "", description: "" },
