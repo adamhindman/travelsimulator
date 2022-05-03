@@ -1520,6 +1520,8 @@ export let globe = [
   },
   {
     area: "Dominican Republic",
+    image: "dominican-republic.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@krtek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lukas Marek</a> on <a href="https://unsplash.com/s/photos/dominican-republic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>`,
     type: "country",
     neighbors: ["Atlantic Ocean", "Haiti"],
     description:

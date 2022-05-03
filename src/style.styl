@@ -159,15 +159,21 @@ ul.asterisk
     color #33ff33cc
 
 .logo
-  font-size 6px
   line-height 100%
   max-width 100%
-  &.line1
-    margin-top 1.2rem
-  &.line2
-    margin-top 0.8rem
-  @media (min-width: 50rem)
-    font-size: .7rem
+  &.top-line
+    display flex
+    flex-direction row
+  &.block1, &.block2, &.block3
+    font-size 6px
+  &.block1
+    // margin-top 1.2rem
+  &.block2
+    margin-left 2rem
+  &.block3
+    // margin-top 0.8rem
+  // @media (min-width: 50rem)
+  //   font-size: .7rem
 
 .pic
   position relative
@@ -199,6 +205,8 @@ ul.asterisk
     background-image url("assets/cuba.png")       
   &.czech-republic
     background-image url("assets/czech-republic.png")
+  &.dominican-republic
+    background-image url("assets/dominican-republic.png")    
   &.eswatini
     background-image url("assets/eswatini.png")    
   &.greece
