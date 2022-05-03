@@ -3231,6 +3231,8 @@ export let globe = [
   },
   {
     area: "Mozambique",
+    image: "mozambique.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@redcharlie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">redcharlie</a> on <a href="https://unsplash.com/collections/8617545/mozambique?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>`,
     type: "country",
     neighbors: [
       "Comoros",
