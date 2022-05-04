@@ -188,9 +188,11 @@ const handleRandomWalk = (steps = 500) => {
   }
 }
 
-const handleTeleportFromURL = area => {
+const handleTeleportFromURL = areaWithHyphens => {
+  let area = areaWithHyphens.replace("-", " ")
   if(areaExists(area)){
     updateLocation(area);
+    // window.location.reload();
   }
 }
 
@@ -336,7 +338,14 @@ export const initListeners = () => {
 
   window.addEventListener("load", () => {
     let hash = document.location.hash
-    if (hash || hash.length !== 0) { handleTeleportFromURL(hash.toLowerCase().slice(1)) }
+    let area = hash.replace("-", " ")
+    if (area || area.length !== 0) { handleTeleportFromURL(area.toLowerCase().slice(1)) }
+  });
+
+  window.addEventListener("hashchange", () => {
+    let hash = document.location.hash
+    let area = hash.replace("-", " ")
+    if (area || area.length !== 0) { handleTeleportFromURL(area.toLowerCase().slice(1)) }
   });
 
   promptField.addEventListener("keydown", e => {
@@ -393,6 +402,9 @@ const updateLocation = destination => {
   curLocation = destination;
   localStorage.setItem("lastLocation", destination);
   updatePassport(destination);
+  // in this section, I need to make sure the url hash doesn't get updated
+  // unnecessarily, or it will trigger a loop. I should check the existing
+  // hash, which means getting the #north-korea version.
   updateURLHash(destination);
 }
 

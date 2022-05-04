@@ -43,10 +43,8 @@ blockquote
   margin-left: 1.6rem;
 #display
   .intro-text
-    margin 3rem 0 6.4rem
+    margin 3rem 0
     font-style italic
-    // border .1rem solid
-    // padding 0.8rem 2.4rem
   .exits
     h5
       font-weight normal
@@ -169,16 +167,14 @@ ul.asterisk
     flex-direction row
     margin 1.2rem 0 0
   &.block1, &.block2, &.block3
-    font-size 6px
-  &.block1
-    // margin-top 1.2rem
+    font-size 1.2vw
+    @media (min-width: 40rem)
+      font-size: .75rem    
   &.block2
     margin-left .4rem
   &.block3
     margin 0 0 1.8rem
-    // margin-top 0.8rem
-  // @media (min-width: 50rem)
-  //   font-size: .7rem
+
 
 .pic
   position relative
