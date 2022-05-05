@@ -87,3 +87,12 @@ export function roughSizeOfObject(object) {
   }
   return bytes;
 }
+
+export const hashify = string => {
+  let hash = `#${sluggify(string)}`
+  return hash.toLowerCase()
+}
+
+export const dehashify = hash => {
+  return hash.replace("-", " ").slice(1).toLowerCase()
+}

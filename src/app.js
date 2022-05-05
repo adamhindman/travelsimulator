@@ -1,5 +1,5 @@
 import { globe } from "./globe.js";
-import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt, sluggify} from "./utilities.js";
+import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt, sluggify, hashify, dehashify} from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
@@ -53,6 +53,22 @@ const getNeighborsText = () => {
   }, "");
   return list;
 };
+
+const handleTeleportFromURL = area => {
+  if(areaExists(area)){
+    updateLocation(area);
+  }
+}
+
+const updateURLHash = destination => {
+  let hash = hashify(destination)
+  if(history.pushState) {
+    history.pushState(null, null, hash);
+  }
+  else {
+      location.hash = hash;
+  }
+}
 
 const getObjectsText = () => {
   let objects = getAttributeOfArea("objects");
@@ -185,14 +201,6 @@ const handleRandomWalk = (steps = 500) => {
         render("", `<p>Done! Ended normally after ${maxLoops} trips`, curLocation, false); 
       }  
     },1)
-  }
-}
-
-const handleTeleportFromURL = areaWithHyphens => {
-  let area = areaWithHyphens.replace("-", " ")
-  if(areaExists(area)){
-    updateLocation(area);
-    // window.location.reload();
   }
 }
 
@@ -334,19 +342,39 @@ const render = (val = null, msg = null, area = curLocation, showLoc = false) => 
   }, 500);
 };
 
+const updateLocation = destination => {
+  curLocation = destination;
+  localStorage.setItem("lastLocation", destination);
+  updatePassport(destination);
+  if (document.location.hash !== hashify(destination)){
+    updateURLHash(destination);
+  }
+}
+
+const updatePassport = (destination = curLocation) => {
+  let passport = [curLocation]
+  if(localStorage.getItem("visited")){
+    passport = JSON.parse(localStorage.getItem("visited"));
+    if (!passport.includes(destination)) {
+      passport.push(destination.toLowerCase())
+    }  
+  }
+    localStorage.setItem("visited", JSON.stringify(passport));    
+}
+
+promptField.value = "";
+localStorage.setItem("lastLocation", curLocation)
+
 export const initListeners = () => {
 
-  window.addEventListener("load", () => {
-    let hash = document.location.hash
-    let area = hash.replace("-", " ")
-    if (area || area.length !== 0) { handleTeleportFromURL(area.toLowerCase().slice(1)) }
-  });
-
-  window.addEventListener("hashchange", () => {
-    let hash = document.location.hash
-    let area = hash.replace("-", " ")
-    if (area || area.length !== 0) { handleTeleportFromURL(area.toLowerCase().slice(1)) }
-  });
+  ['load','hashchange'].forEach( e => 
+    window.addEventListener(e, () => {
+      let hash = document.location.hash
+      let area = dehashify(hash)
+      if (area || area.length !== 0) { handleTeleportFromURL(area) }
+      render("", ' ', curLocation, true);       
+    }, false)
+  );
 
   promptField.addEventListener("keydown", e => {
     if (e.key === "Enter") {
@@ -368,7 +396,6 @@ export const initListeners = () => {
     }
   });
 
-
   promptField.addEventListener("keydown", e => {
     if (e.key === "Escape") {
       promptField.value = ""
@@ -387,40 +414,6 @@ export const initListeners = () => {
     focusOnPrompt();
   });
 };
-
-const updateURLHash = destination => {
-  let hash = sluggify(destination)
-  if(history.pushState) {
-    history.pushState(null, null, `#${hash}`);
-  }
-  else {
-      location.hash = `#${hash}`;
-  }
-}
-
-const updateLocation = destination => {
-  curLocation = destination;
-  localStorage.setItem("lastLocation", destination);
-  updatePassport(destination);
-  // in this section, I need to make sure the url hash doesn't get updated
-  // unnecessarily, or it will trigger a loop. I should check the existing
-  // hash, which means getting the #north-korea version.
-  updateURLHash(destination);
-}
-
-const updatePassport = (destination = curLocation) => {
-  let passport = [curLocation]
-  if(localStorage.getItem("visited")){
-    passport = JSON.parse(localStorage.getItem("visited"));
-    if (!passport.includes(destination)) {
-      passport.push(destination.toLowerCase())
-    }  
-  }
-    localStorage.setItem("visited", JSON.stringify(passport));    
-}
-
-promptField.value = "";
-localStorage.setItem("lastLocation", curLocation)
 
 initListeners();
 updatePassport();
