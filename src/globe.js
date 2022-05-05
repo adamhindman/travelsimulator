@@ -4063,6 +4063,8 @@ export let globe = [
   },
   {
     area: "Slovenia",
+    image: "slovenia.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@hostaphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hostaphoto</a> on <a href="https://unsplash.com/s/photos/slovenia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>`,
     type: "country",
     neighbors: ["Atlantic Ocean", "Austria", "Croatia", "Italy", "Hungary"],
     description:
