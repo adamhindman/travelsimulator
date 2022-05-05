@@ -3657,11 +3657,9 @@ export let globe = [
     neighbors: ["Indian Ocean", "Saudi Arabia"],
     description:
       "Qatar is an Arab country which is located on the west coast of the Arabian Peninsula, bordering Saudi Arabia. It was established after an agreement in which the British agreed to relinquish their Persian Gulf territories claimed by them in the 19th century in exchange for military and economic considerations. Qatar is mostly flat, and very hot.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "KHAWR AL UDAYD", article: "The", description: "You visit the Khawr al Udayd, a large, shallow, inaccessible inland sea in the south of Qatar. To get there from the Persia Gulf, you'd have to navigate a long channel fretted with reefs and sandbars, where beaching your boat is a constant danger.</p><p>Instead, you come via the desert, traversing the sand dunes to the west in a beat up 4x4 Jeep.</p><p>You find it to be a quiet, peaceful, blazingly hot expanse of shallow water surrounded by sand.</p><p>As you approach, you are reminded of what it is like to be walking in the desert and see a heat mirage that looks exactly like a shallow pool of water shimmering in the arid distance. In a mirage, that illusion always retreats as you approach it, but in Khawr al Udayd it grows closer with every step, until at last, you sink your feet into the warm, salty, muddy water." }
+    ],
   },
   {
     area: "Republic of the Congo",
