@@ -369,8 +369,7 @@ export const initListeners = () => {
 
   ['load','hashchange'].forEach( e => 
     window.addEventListener(e, () => {
-      let hash = document.location.hash
-      let area = dehashify(hash)
+      let area = dehashify(document.location.hash)
       if (area || area.length !== 0) { handleTeleportFromURL(area) }
       if (e === "hashchange") { render("", ' ', curLocation, true); }      
     }, false)

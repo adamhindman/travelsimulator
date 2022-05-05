@@ -94,5 +94,5 @@ export const hashify = string => {
 }
 
 export const dehashify = hash => {
-  return hash.replace("-", " ").slice(1).toLowerCase()
+  return hash.replace(/-/g, " ").slice(1).toLowerCase()
 }
