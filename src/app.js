@@ -372,7 +372,7 @@ export const initListeners = () => {
       let hash = document.location.hash
       let area = dehashify(hash)
       if (area || area.length !== 0) { handleTeleportFromURL(area) }
-      render("", ' ', curLocation, true);       
+      if (e === "hashchange") { render("", ' ', curLocation, true); }      
     }, false)
   );
 
