@@ -2525,6 +2525,9 @@ export let globe = [
   {
     area: "Italy",
     type: "country",
+    image: "italy.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@dnovac?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan Novac</a> on <a target="_blank" href="https://unsplash.com/s/photos/italy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    `,
     neighbors: [
       "Atlantic Ocean",
       "Austria",
