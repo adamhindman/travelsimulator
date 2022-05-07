@@ -3078,6 +3078,14 @@ export let globe = [
       },
     ],
   },
+  { area: "Mars", 
+    type: "planet",
+    neighbors: ["Saint Vincent and the Grenadines"],
+    description: "Mars is a planet, roughly 148 million miles from Saint Vincent and the Grenadines. The landscape is a combination of broad deserts, deep creates, and sweeping dunes. Everything is covered with a thin, powdery dust colored red by iron oxide. Strong winds scour the landscape here, making walking outdoor activities like volleyball and golf difficult. The atmosphere is thin, and you find that surface travel pretty much requires a pressurized suit.</p><p>It is the fourth planet from the sun, with an area of 1.8 billion square kilometers.</p><p>The capital and largest city is Kingstown, a 200 square meter enclosed habitat, in which all of the planet's six inhabitants spend their time. Kingstown's main exports are research reports about Mars.</p><p>Mars presents an interesting challenge to tourists: travel here through the Inter-Kingstown Stable Tunnel (IKST) is relatively fast, however you must sneak onto a secret research base to gain access. The return trip is even harder, since you can't return from this side of the tunnel, and must wait for the twice-yearly shuttle back to St. Vincent's spaceport.",
+    objects:[
+    {name:"FLAG OF MARS", article:"", description:"Through the habitat's many portholes, you can see that a flag has been planted in the red dirt outside Kingstown. On it, the flag of Mars flaps proudly, if frantically, in a fierce and nearly constant gale.</p><p>You notice that the design of the flag is based on the flag of Saint Vincent and the Grenadines: it is a red-and-white triband, with five red diamonds in the center, describing a letter 'M'.</p><p>You ask one of the Mars colonists whether there is a national anthem, and he tells you there isn't yet.</p><p>Later that night, the same colonist pulls you aside and tells you that he's been working on some lyrics, and he'd like your opinion about them. He takes out a sheet of paper with many lines scribbled out.</p><p><em>Mars, Mars, you're big, and red, and ours<br/>Your poles are full of water ice<br/>Your sky is full of stars...</em></p><p>\"Is that all you have so far?\" you ask.</p><p>He nods. \"It's obviously not done yet, but what do you think?\"</p><p>He raises one eyebrow while sticking out his thumb, pointing it up, then down, then up again, then down again. </p><p>\"Good start,\" you say, politely."},
+    ],
+  },
   {
     area: "Marshall Islands",
     type: "country",
@@ -3796,7 +3804,6 @@ export let globe = [
     objects: [
       { name: "MAGWIT", article: "La", description: "'The Marguerite', or 'La Magwit' in the Antillean Creole, is a fraternal society on the island of Saint Lucia. It was originally modeled after Freemasonry, but has evolved into something distinct.</p><p>You are invited to join in the yearly La Magwit festival, which involves a night of music, dancing, drinking, and other thoroughly enjoyable activities.</p><p>At the end of it, they ask you if you want to join up, but you tell them you are weighing your options.</p><p>" },
       { name: "WOZ", article: "La", description: "'The Rose', or 'La Woz' in the Antillean Creole, is a fraternal society on the island of Saint Lucia. It was originally modeled after Rosicrucianism, but has evolved into something distinct.</p><p>You are invited to join in the yearly La Woz festival, which involves a night of music, dancing, drinking, and other thoroughly enjoyable activities.</p><p>At the end of it, they ask you if you want to join up, but you tell them you are weighing your options.</p><p>" },
-      // { name: "", article: "", description: "" },
     ],
     neighbors: ["Atlantic Ocean"],
   }, 
@@ -3804,13 +3811,11 @@ export let globe = [
     area: "Saint Vincent and the Grenadines",
     description:
       "A nation in the Windward Islands of the West Indies. The capital is Kingstown. Saint Vincent and the Grenadines has a population of about 51,000. The national flower is the saman (pronounced sa-man). Saman is the national bird.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "INTER-KINGSTOWN STABLE TUNNEL", article: "The", description: "You are invited to tour the IKST, a project created by scientists in Saint Vincent's capital city of Kingstown. The head research scientist shows you around the facility, answering your questions, while explaining the purpose of the project. Accompanying you is a representative from the project's public relations department.</p><p>\"Have you noticed in your travels that there are a large number of countries which have cities named Kingstown, or Kingston, or some variation of that word?\"</p><p>\"Certainly I have,\" you say, \"we're in one right now.\"</p><p>She nods. \"We have a Kingstown here in St. Vincent and the Grenadines, of course. That's what gave us the idea.</p><p>\"But there's also Kingston, Jamaica, and Kingstown, Ireland. There's one in the UK as well. There are several of them in the United States, and even one in Australia. Theoretically, there could be a Kingstown anywhere.\"</p><p>\"Fascinating! Even on other planets?\"</p><p>\"Well. Umm.\"</p><p>You see the head scientist's eyes flicker toward the PR representative. There is a brief, awkward pause, then she continues.</p><p>\"The Inter-Kingstown Stable Tunnel allows us to create a stable wormhole between these places. Any country with a city named Kingstown can be traveled to instantaneously. And safely.\"</p><p>She tells you that they've had dozens of successful experiments, sending matter of all kinds through the wormhole — including people!</p><p>The only downside is that most of these cities don't have a copy of the tunnel on their end, so the journey is one-way: you have to travel back to the lab on your own.</p><p>\"Sounds like more of a hub than a network,\" you point out.</p><p>She shrugs, as if to indicate that this situation is only temporary. Fair enough.</p><p>\"I have a question,\" you say, changing the subject.\"Could you rename a city to Kingstown in order to add it to the wormhole network?\"</p><p>She nods enthusiastically. \"Yes, in theory. I really believe so. We haven't tested it yet, but we're in talks with several municipalities, and we think they may consider changing their names in order to participate in our network, once we show them how stable the wormhole is.\"</p><p>You look at the wormhole tunnel. The aperture of the portal is approximately 1 meter in diameter, and is filled with a flat, constantly shifting swirl of chromatic shapes. Around this relatively small opening, a labyrinth of wires, coils, and tubes snakes across the room to a large power source plastered with the trefoil \"radiation\" symbol.</p><p>You clear your throat.</p><p>\"You've mentioned a few times now how safe and stable the wormhole is. It feels like you really want to get that message out. Have you had any issues with safety in the past?\"</p><p>The scientist looks over to the PR person, unsure what to say.</p><p>\"This wormhole is completely stable, and it's very safe to use,\" says the rep, whose name is Rebecca.</p><p>" },
+    ],
     type: "country",
-    neighbors: ["Atlantic Ocean"],
+    neighbors: ["Atlantic Ocean", "Australia", "Mars", "Ireland", "Jamaica", "United States"],
   },
   {
     area: "Samoa",
