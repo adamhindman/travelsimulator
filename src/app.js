@@ -107,12 +107,12 @@ export const handleSubmit = (val, msg = "") => {
       msg = handleLook(noun, words, showLoc);
       break;
     case "randomwalk": 
-      let loops = 100
+      let loops = 250
       if (noun !== verb){ // true if there is no noun
         if(isInt(loops)){ // false if noun is garbage
           loops = noun
         } else {
-          loops = 100
+          loops = 250
         }
       } else {}
       msg += `You take a walk around the globe.<p>This process will end automatically after ${loops} steps.</p><p>Press [ESCAPE] to stop sooner than that.</p>`
