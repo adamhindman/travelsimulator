@@ -3793,11 +3793,11 @@ export let globe = [
     type: "country",
     description:
       "The island country of Saint Lucia, about 175 miles east of Puerto Rico. The capital is Castries. Saint Lucia has a population of about 175,000. The official language is English. The currency is the East Caribbean dollar. The climate is tropical. For fun, people like to dance, go to the beach, and listen to music.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "MAGWIT", article: "La", description: "'The Marguerite', or 'La Magwit' in the Antillean Creole, is a fraternal society on the island of Saint Lucia. It was originally modeled after Freemasonry, but has evolved into something distinct.</p><p>You are invited to join in the yearly La Magwit festival, which involves a night of music, dancing, drinking, and other thoroughly enjoyable activities.</p><p>At the end of it, they ask you if you want to join up, but you tell them you are weighing your options.</p><p>" },
+      { name: "WOZ", article: "La", description: "'The Rose', or 'La Woz' in the Antillean Creole, is a fraternal society on the island of Saint Lucia. It was originally modeled after Rosicrucianism, but has evolved into something distinct.</p><p>You are invited to join in the yearly La Woz festival, which involves a night of music, dancing, drinking, and other thoroughly enjoyable activities.</p><p>At the end of it, they ask you if you want to join up, but you tell them you are weighing your options.</p><p>" },
+      // { name: "", article: "", description: "" },
+    ],
     neighbors: ["Atlantic Ocean"],
   }, 
   {
