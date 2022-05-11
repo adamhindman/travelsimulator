@@ -204,8 +204,10 @@ const handleRandomWalk = (steps = 500) => {
   }
 }
 
+const canGo = area => true
+
 const handleGo = (noun, neighbors) => {
-  if (neighbors.includes(noun)) {
+  if (neighbors.includes(noun) && canGo(noun)) {
     updateLocation(noun);
   } else {
     msg = `<p>You can't get to ${noun} from here!</p>`;
