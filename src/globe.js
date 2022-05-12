@@ -4011,11 +4011,9 @@ export let globe = [
     neighbors: ["Atlantic Ocean", "Guinea", "Liberia"],
     description:
       "Sierra Leone is an English-speaking country in West Africa. By 1897, the confederacy had become a protectorate of the United Kingdom. In 1961, Sierra Leone gained independence and formed a new constitutional type of Government. The Republic of Sierra Leone Armed Forces were formed in 1964 when the mandate from the British military forces was lifted.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "TACUGAMA CHIMPANZEE SANCTUARY", article: "The", description: "Here, Chimpanzees from all over Africa live in peace and safety. They are well fed, and given plenty of space to exercise, socialize, and educate themselves. Each chimpanzee is given a small stipend to use for any personal growth-related expenses, such as gym equipment, hobbies, art supplies, and books. </p><p>Some chimpanzees have formed a rudimentary bicameral parliament, with elaborate rules for who controls the floor. The current party in charge of the lower house is trying to fund the creation of a concrete play structure, with many places to climb, and little tunnels and cubby holes to hide in. </p><p>Another group has created a marketplace for selling home made craft items, like banana holders, and banana bags — which, you learn, are decorative bags for carrying bananas, which (you learn) are all the rage here in Tacugama!</p><p>Next, you pass by a stage, where a band of chimpanzees is playing music. Each of them has a different musical instrument, just as you'd expect. It's a quartet, with a lead guitarist, bassist, drummer, and keyboardist! The song they're playing sounds like a series of loud screeches to you, but the crowd seems to be really digging it. </p><p>After they finish the song, the leave the stage, and a different chimpanzee band comes on. It turns out, you've wandered into a \"battle of the bands\" competition here at the chimpanzee sanctuary!</p><p>If they liked the last band, the audience really loves this one. It's a duo, with a guitarist and a drummer, and the crowd goes go crazy for the rocking sounds they make. Even though you don't speak the chimpanzee language, you can't help but tap your toes at the infectious beats. </p><p>At the end of the song, the audience throws banana peels at the stage. Where you're from, throwing fruits and vegetables at a performer is an insult, but your guide assures you it is the highest compliment these music lovers can possibly pay." }
+    ],
   },
   {
     area: "Singapore",
