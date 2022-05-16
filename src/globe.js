@@ -4125,11 +4125,11 @@ export let globe = [
     ],
     description:
       "South Africa is a country located at the southern tip of Africa. It is divided into nine provinces and two territories, and has three different capitals. You visit them one by one: Cape Town, Pretoria, and Bloemfontein. Established in 1961 and based in Johannesburg, South Africa is bountiful in natural rsources, rich in culture, and possesses a unique democratic society. With over 50 official languages, and an amalgamation of cultures, South Africa allows for numerous opportunities for the curious traveler.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "TABLE MOUNTAIN", article: "", description: "Every year, thousands of tourists like you flock to the top of Table Mountain, overlooking Cape Town. It's an impressive sight, a 3500-foot high wall of sandstone, perfectly flat on top.</p><p>From just about anywhere in the city, you only have to look up to see this geological wonder. It's hard to miss: you catch it out of the corner of your eye while walking through the streets of the city, or spy it in the distance from a boat in the harbor. The sight of it takes your breath away. It is a ubiquitous presence, the defining visual feature of South Africa's capital. Table Mountain is your companion everywhere you go in Cape Town.</p><p>In fact, just about the only place where you can't see Table Mountain is when you are standing on top of it. From here, it looks like any other mountain: rocks, brush, some trees. The occasional a bird or mountain rodent.</p><p>Sure, the view down into the city below is great: amazing, really. But you could get the same view from many of the equally tall, non-flat mountains nearby. For example: Devil's Peak, or Signal Hill. Lots fewer tourists there, too. Why did you hike up here again?" },
+      { name: "FORESHORE INVISIBLE FREEWAY", article: "The", description: "You take the exit off of Dock Road onto the invisible freeway ramp, floating above the M6, and avoiding most of the afternoon traffic on your way to Fish Hoek. This invisible freeway, built in the late 1970s, is seldom used today. It is considered one of Cape Town's best kept secrets." },
+      { name: "BOLT'S FARM", article: "", description: "The site of the oldest pre-hominid primate fossils yet discovered. You wander through the archaeological site here, wondering what it would have been like to live here 2 million years ago.</p><p>While wandering around the site, you see a fossilized skull wearing fossilized glasses exactly like yours, and holding a fossilized time travel device identical to the one you are currently working on.</p><p>That night, in your hotel room, smash the prototype and your USB drive to pieces with a hammer. You spend a long time afterwards staring out over the city from your balcony." },
+    ],
   },
   {
     area: "South Korea",
