@@ -376,6 +376,12 @@ export const initListeners = () => {
       if (e === "hashchange") { render("", ' ', curLocation, true); }      
     }, false)
   );
+  
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.querySelector(".hiddenBeforeLoad").classList.remove("hiddenBeforeLoad")
+    },500)
+  })
 
   promptField.addEventListener("keydown", e => {
     if (e.key === "Enter") {

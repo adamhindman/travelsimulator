@@ -4137,11 +4137,9 @@ export let globe = [
     neighbors: ["North Korea", "Pacific Ocean"],
     description:
       "South Korea sits at the tip of the Korean peninsula, staring across the border at its evil twin. It is an incredible country that has rapidly modernized, leaving its past behind to become one of the wealthiest and most prosperous countries in the world. Renowned for the popularity of its culture, music, cuisine, and television dramas, it is a popular destination for tourists around the world.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "WIP", article: "", description: "" }
+    ],
   },
   {
     area: "South Ossetia",
