@@ -1977,7 +1977,6 @@ export let globe = [
       "Atlantic Ocean",
       "Azerbaijan",
       "Russia",
-      "South Ossetia",
       "Turkey",
     ],
   },
@@ -3759,7 +3758,6 @@ export let globe = [
       "Norway",
       "Pacific Ocean",
       "Poland",
-      "South Ossetia",
       "Tuva",
       "Ukraine",
     ],
@@ -4142,18 +4140,6 @@ export let globe = [
     ],
   },
   {
-    area: "South Ossetia",
-    type: "country",
-    neighbors: ["Russia", "Georgia"],
-    description:
-      "South Ossetia is a historical region in the Caucasus, at the border between Georgia proper and the Russian republic of Adygea. It contains the autonomous district of Tskhinvali, historically known as a Sapa settlement. According to south Ossetians, South Ossetia is a Democratic Republic in its own right, although it is recognized as an integral part of Georgia by the United Nations and most world governments. However, since 1997, the Georgian government has had an effective administration over most of South Ossetian territory, controling its main transportation links.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
-  },
-  {
     area: "South Sudan",
     type: "country",
     neighbors: [
@@ -4234,11 +4220,11 @@ export let globe = [
     ],
     description:
       "The Sudan, officially the Republic of the Sudan, is the eastern part of the continent of Africa and is in the southernmost part of that continent, between Egypt to the north, the Red Sea, and Eritrea and the Red Sea in the west; below Ethiopia and Uganda to the south; and above Zambia and Zaire in the east. The Sudan was initially a province of Egypt.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+      objects: [
+        { name: "CONTINENTAL SHELF STATION VI", article: "", description: "You watch the submersible sink below the surface of the moon pool, its array of lights dancing in the ripples of the water as it descends, down and away.</p><p>\"Welcome to Conshelf VI. I trust your journey was comfortable?\" </p><p>You turn and see the face attached to the voice: an old man, very old indeed. Silver haired, thin, tightly gripping a cane mane from some transparent polymer. Wearing a jumpsuit with the Roman numerals VI embroidered on it.</p><p>\"Monsieur Cousteau! It.. it can't be!\" </p><p>Unpardonably rude, but can't stop yourself. If this is Jacques Cousteau, he must be over one hundred and ten years old. And supposedly dead for the last 25. </p><p>The man smiles, without acknowleding your outburst, and, pointedly, without confirming it.</p><p>You follow him through the station. It is larger even than it seemed from outside, in the sweeping spotlight of the submersible you rode here in. Then, it seemed impressively vast, a cluster of dome structures rising up from the sea floor like a bowl of grapes in a still life. </p><p>Now, it seems like an labyrinth of interconnected chambers, built to a design you cannot piece together from your brief tour. </p><p>You see extensive living quarters, and social areas paneled with wood, stuffed with expensive furniture. Shelves of books, and a billiard table with balls scattered across it as though by walking into this empty room, you'd interrupted a game in progress, and forced its participants to flee out of sight. You almost expect to find them hiding behind a curtain, or in one of the uncountable small alcoves you pass by.</p><p>Your host walks you through more than one full-sized kitchen, commercial-scale, filled with enough equipment to make food for an army. There are bedrooms, too: lavish suites, but also more modest ones, with nothing but a small mattress, dresser, and writing desk. You follow him through a long, narrow room lined with bunkbeds, all crisply made, and unoccupied.</p><p>There are mechanical rooms, and scientific rooms. Rooms filled with massive generators, and humming machinery. Beakers, flasks, centrifuges whirring. Computer displays, both modern ones, and chunky cathrode ray tubes from forty years ago or more. Bays of submersibles, like the one you arrived in. Gymnasiums, squash courts, movie theaters. </p><p>Storage rooms, as large as warehouses, piled with boxes and lined with shelves, all well-stocked and immaculately organized.</p><p>\"This place is enormous,\" you say, stepping out from behind a stack of crates.</p><p>\"Ahh, there you are!\" he says.</p><p>\"I advise you to stay close, it's easy to get lost. You see, the robots have been expanding and improving this facility, on a nearly continual basis, since the late 1990s. That's... 20 years?\"</p><p>\"30 at least,\" you say. </p><p>He smiles ruefully. </p><p>\"Time passes slowly this far down,\" he says, \"but it does pass.\"</p><p>Later, you're sitting in an office. It's a small, round room. Except for the floor, and part of one wall, it is made of a transparent material that makes it seem as though you are standing in a bubble on the floor of the ocean. He is seated across from you, behind a broad desk, messy with papers. </p><p>\"You said this is Conshelf VI. What happened to Conshelves one through five?\"</p><p>\"You're wondering whether it's safe to be here? Whether the sea will swallow us?\"</p><p>His eyes twinkle. </p><p>\"Yes,\" he says, \"it's perfectly safe, I assure you.</p><p>\"The first station was dissembled at my instruction, after the experiment ended. We wanted to test whether it was possible to survive at depth, and we were successful.</p><p>\"Conshelf II is still standing. You passed it on the way down, as a matter of fact! I'm told it is a popular destination for divers visiting the coast of Sudan. Now it is a home for coral, and for the creatures of the deep. </p><p>\"This pleases me greatly: we humans have taken so much from the sea, shall we not let it reclaim something of what is lost?\"</p><p>He pauses for a long time, to stare out the window at a school of blind fish swimming by.</p><p>He continues: </p><p>\"Habitats III and IV were less successful. Our purpose was to stay longer, at even greater depths. We made many breakthroughs, but perhaps we went too far. The blame for both failures is entirely mine.\"</p><p>\"What happened?\" you ask timidly.</p><p>\"What happened was that we learned from our mistakes, and built Conshelf V. That one lasted for four years, at a depth of almost one kilometer! Can you imagine? The effects on the human body, and the brain?</p><p>\"Something unlocks,\" he says. Cryptically, he trails off, leaving an interval of silence before he continues. </p><p>\"Number V was fundamentally sound, and producing giants. Demigods. Bending steel, dreaming in new mathematics, speaking the language of dolphins. A revolutionary success with endless applications.</p><p>\"But the nations of the surface couldn't understand what we were building. So: depth charges,  torpedoes. Earthquakes. They took us by surprise, and cut off our escape. The only way to flee was downward.</p><p>\"Fortunately, we had already started work on Continental Shelf Station VI. It is so deep they have not discovered its existence yet. Naturally, they think I'm dead, that the project is over. But it isn't, wouldn't you agree? And I'm not?\"</p><p>You shake your head. \"But where is everybody? I didn't see a single other person in this whole complex, even though there's probably enough room for a thousand people.\"</p><p>He tells you that he was the only one who survived the attack on Conshelf V. Since then, he has been alone here, unable to recruit more volunteers, for fear of being discovered. </p><p>\"But I very much want to bring more people here, to continue work that can only be done as a group. That's why I was so happy when you contacted me via that electronic messaging system. How did you figure out how to contact me, by the way?\"</p><p>\"Almost by accident,\" you tell himy, shifting your position in the chair.</p><p>\"There was a university research project, monitoring the effects of global warming on the Red Sea. They dropped probes, which happened to monitor electromagnetic signals, among other things. They picked up some unusual signatures, and the people who hired me realized you might have built your latest base near one of your first ones.\"</p><p>\"I see,\" he says, his eyes narrowing.</p><p>As he raises the thin barrel of the pistol, you dive out of the chair, and press the transmitter capsule in your false molar. The sound of his shot is drowned out by the sound of the explosion from the bomb you planted behind the stack of boxes in the warehouse. </p><p>His surprise gives you the opportunity to escape the room, as water begins to flood in from the breach in the hull. You faintly hear him screaming in rage as you sprint down the hallway, toward the submersible bays.</p><p>You plant your remaining micro-charges on all the submersibles except the one you take. You manage to figure out how to open the watertight doors to the station, and speed upwards, toward the sun, as the vast station buckles from the explosions, and collapses under the weight of a million tons of water.</p><p>" },
+        // { name: "HABOOB", article: "A", description: "" },
+      //   { name: "", article: "", description: "" },
+      ],
   },
   {
     area: "Suriname",
@@ -4331,11 +4317,11 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean", "Iraq", "Israel", "Jordan", "Lebanon", "Turkey"],
     description:
-      "Syria is an area in the Middle East bordering on the Mediterranean Sea. Syria is located near the nations of Greece, Iraq, Turkey, and Lebanon. For a long time, it was known as Ottoman Syria, but before that it was home to the Phoenicians, Assyrians, Akkadians, Sumerians, and probably some even older civilizations with magic or like, advanced technology we've forgotten how to make.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
+      "Syria is an area in the Middle East bordering on the Mediterranean Sea. Syria is located near the nations of Greece, Iraq, Turkey, and Lebanon. For a long time, it was known as Ottoman Syria, but before that it was home to the Phoenicians, Assyrians, Akkadians, Sumerians, and probably some even older civilizations with magic or like, advanced technology we've forgotten how to make."
+    // objects:[
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""},
+    // {name:"", article:"", description:""}
     // ],
   },
   {
@@ -4343,7 +4329,7 @@ export let globe = [
     type: "country",
     neighbors: ["Pacific Ocean"],
     description:
-      "Taiwan is a country in East Asia, not far from other, different countries like China, Japan, and the Philippines. The main island of Taiwan, formerly known as Formosa, has an area of 13,000 square miles, mostly a mixture of mountains and plains, with its highly urbanised population concentrated in the western plains region. The capital is Taipei. With 23 million inhabitants, Taiwan is among the most densely populated sovereign, independent countries in the world.",
+      "Taiwan is a country in East Asia, not far from China, Japan, and the Philippines. The main island of Taiwan, formerly known as Formosa, has an area of 13,000 square miles, mostly a mixture of mountains and plains, with its highly urbanised population concentrated in the western plains region. The capital is Taipei. With 23 million inhabitants, Taiwan is among the most densely populated countries in the world.",
     objects: [
       {
         name: "RAINBOW VILLAGE",
@@ -4355,7 +4341,7 @@ export let globe = [
         name: "NATIONAL PALACE MUSEUM",
         article: "",
         description:
-          "Fleeing, first from destruction by the Japanese army, then from the Communist Party, some of the most important pieces of Ming and Qing Chinese artifacts ended up in Taiwan, which isn't even in China. ",
+          "Fleeing, first from destruction by the Japanese army, then from the Communist Party, some of the most important pieces of Ming and Qing Chinese artifacts ended up in Taiwan.",
       },
       {
         name: "BUBBLE TEA",
