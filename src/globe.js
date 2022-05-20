@@ -4479,11 +4479,9 @@ export let globe = [
     neighbors: ["Benin", "Burkina Faso", "Ghana"],
     description:
       "Togo is in West Africa. With a population of approximately 8 million, it is one of the smallest countries in Africa, as well as one of the narrowest countries in the world with a width of less than 71 miles. Small and narrow, that's Togo for you.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "AKODESSEWA FETISH MARKET", article: "The", description: "This large, open air market caters to practitioners of Vodun, or Voodoo, one of the most popular religions in Togo. You buy a magic charm for protecting travelers, and wear it around your wrist on your visit to Togo. The proof that it works is that nothing much really happens here, except you have a wonderful time meeting interesting people, and eating delicious food." },
+    ],
   },
   {
     area: "Tonga",
@@ -4512,11 +4510,10 @@ export let globe = [
     neighbors: ["Atlantic Ocean"],
     description:
       "Trinidad and Tobago is the southernmost island country in the Caribbean. It is known for its fossil-fuel wealth Trinidad and Tobago is generally considered to be part of the West Indies, though according ccording to some geographic definitions, Trinidad and Tobago are also part of the Windward Islands and Lesser Antilles. These kinds of things are what cartographers debate, and it gets pretty heated. ",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "PITCH LAKE", article: "", description: "\"Say buddy, where'd you get that asphalt?\"</p><p>You have stopped on the streets of Chaguanas, the largest city in Trinidad and Tobago, to watch a city worker paving one of the many streets here. At first, it seemed like he was spreading ordinary asphalt, like you'd see on any road in the world. But, after taking a second look, you realize this asphalt has a unique quality to it: purer, blacker, stickier.</p><p>\"This is artisanal, locally sourced asphalt. They get it from over at Pitch Lake,\" he tells you.</p><p>You immediately begin hitchhiking west, along the picturesque Trinidadian coast, until you reach the large, bubbling cauldron of hot tar known as Pitch Lake. At about 100 acres in area, and 250 feet deep, it is the largest natural deposit of bitumen in the world.</p><p>You watch it being extracted by heavy equipment: it's a very sloppy process, and the sticky substance quickly hardens when removed from the lake itself. You imagine that it is very hard to clean it off a bucket at the end of the day. Still, it's fascinating to watch the foul-smelling, disgusting looking substance being pulled in great globs from the oily pit.</p><p>You tour the gift shop, and pick up a bottle of hand-crafted asphalt to take home." },
+      { name: "STEELPAN", article: "A", description: "You learn to play this percussion instrument, made out of a beaten metal bucket, and then join a steelpan-based band.</p><p>You go on tour with the band, which gives you an opportunity to visit many towns around Trinidad, Tobago, and even as far as Grenada.</p><p>Your big hit is called \"Island Song (Sound of the Steel Drum)\", and it reaches #8 on the Caribbean instrumental music charts.</p><p>Eventually, the band breaks up due to internal conflicts between you and the so-called 'lead drummer', who thinks he's real hot shit, God's gift to steelpan music, but in reality is just a talentless hack.</p><p>You walk away from the band, and form your own group.</p><p>Your first album meets with only limited critical success, however you are able to license one of your songs for a soft drink commercial, and make $40,000 USD from it.</p>" },
+    ],
   },
   {
     area: "Tunisia",
