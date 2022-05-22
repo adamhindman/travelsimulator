@@ -582,7 +582,7 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean"],
     description:
-      "The Bahamas is one of the Caribbean's top vacation destinations because of its fantastic resorts, spectacular beaches, and magnificent weather. The Bahamas island chain extends for 700 miles, and you invite some of the other tourists to paddle its entire length with you. They decline, but you go by yourself, and enjoy the sites: mmiles of pink and white sand beaches and shallow blue waters.",
+      "The Bahamas is one of the Caribbean's top vacation destinations because of its fantastic resorts, spectacular beaches, and magnificent weather. The Bahamas island chain extends for 700 miles, and you invite some of the other tourists to paddle its entire length with you. They decline, but you go by yourself, and enjoy the sites: miles of pink and white sand beaches and shallow blue waters.",
     objects: [
       {
         name: "QUEEN'S STAIRCASE",
@@ -4134,9 +4134,9 @@ export let globe = [
     type: "country",
     neighbors: ["North Korea", "Pacific Ocean"],
     description:
-      "South Korea sits at the tip of the Korean peninsula, staring across the border at its evil twin. It is an incredible country that has rapidly modernized, leaving its past behind to become one of the wealthiest and most prosperous countries in the world. Renowned for the popularity of its culture, music, cuisine, and television dramas, it is a popular destination for tourists around the world.",
+      "South Korea sits at the tip of the Korean peninsula, staring across the border at its twin. It is an incredible country that has rapidly modernized, leaving its past behind to become one of the wealthiest and most prosperous countries in the world. Renowned for the popularity of its culture, music, cuisine, and television dramas, it is a popular destination for tourists around the world.",
     objects: [
-      { name: "WIP", article: "", description: "" }
+      // { name: "", article: "", description: "" }
     ],
   },
   {
@@ -4653,13 +4653,12 @@ export let globe = [
       "Russia",
       "Slovakia",
     ],
-    description: "Watch this space for changes.",
-    // "Ukraine is the second-largest country by area in Europe after Russia, which it borders. Ukraine also shares borders with Belarus, Poland, Slovakia, and Hungary, Romania, and Moldova. To top it off, it has a coastline along the Sea of Azov and the Black Sea. It spans an area of 230,000 square miles with a population of 41 million, making it the eighth-most populous country in Europe. The nation's capital and largest city is Kyiv. There are a strong steel and farming sectors. The beaches, forests, deserts, valleys and mud lakes all offer a variety of tourist destinations.",
-    // objects:[
-    // {name:"", article:" ", description:""},
-    // {name:"", article:"", description:""},
-    // {name:"", article:"", description:""}
-    // ],
+    description: "Ukraine is the second-largest country by area in Europe after Russia, which it borders. Ukraine also shares borders with Belarus, Poland, Slovakia, and Hungary, Romania, and Moldova. To top it off, it has a coastline along the Sea of Azov and the Black Sea. It spans an area of 230,000 square miles with a population of 41 million, making it the eighth-most populous country in Europe. The nation's capital and largest city is Kyiv. There are a strong steel and farming sectors. The beaches, forests, deserts, valleys and mud lakes all offer a variety of tourist destinations.",
+    objects:[
+    {name:"PRIPYAT", article:" ", description:"Pripyat is the city where most of the workers from the Chernobyl nuclear power plant lived. The plant is just outside of town, surrounded by a secure perimmeter, and covered by a concrete, lead-infused dome, to protect the fused mass of highly radioactive matter at its core.</p><p>You sneak into the control room of the plant, to recover some very sensitive documents for a client. Your geiger counter sizzles as you make your way, quick as you can, through the rooms full of ancient computer terminals, covered in deadly dust. </p><p>After retrieving the documents, you make your way out of the plant, and back into the ruined city. The road here has trees growing through it. The bus stops and park benches are rusted, but the writing on them is still legible. The roofs of some buildings have collapsed, but many others still stand, dilapidated but intact. </p><p>On your way out of town, you encounter two vans full of people on a guided tour of Pripyat. They snap pictures of you, still wearing your radiation suit, and you wave back. </p><p>Later, hip deep in water in the swamps outside of town, you meet and briefly chat with a few other \"stalkers\", headed the other direction. </p><p>Chernobyl tourism is a growing industry, with more and more people visiting each year. 50,000 people used to live here; now, it's a tourist trap.</p><p>"},
+    {name:"KACHALKA", article:"", description:"The outdoor gym in Kyiv is built out of scrap metal. Weight lifters come here to work out, and be seen. You pump some rusty iron in the rain, and end up getting tetanus and the sniffles."},
+    {name:"BORSCHT", article:"", description:"For lunch, you have a bowl of bright red soup made with beets. Called borscht, it's a traditional and beloved Ukrainian dish, popular inside and outside the country. You have yours with sour cream, and some dark rye bread.</p><p>That evening, you call the hospital in a panic, thinking that something is terribly wrong with you.</p><p>\"It's red, bright red,\" you mutter, staring into the toilet bowl. \"Will you send an ambulance, or can I make it to the hospital before dying?\"</p><p>The triage nurse laughs, explaining how beets work, and how she gets a lot of calls from visitors trying borscht for the first time.</p>"}
+    ],
   },
   {
     area: "United Arab Emirates",
