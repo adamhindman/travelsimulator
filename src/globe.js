@@ -826,6 +826,8 @@ export let globe = [
   },
   {
     area: "Botswana",
+    image: "botswana.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@michaelbennett?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Bennett</a> on <a href="https://unsplash.com/s/photos/botswana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>`,
     type: "country",
     neighbors: ["Namibia", "South Africa", "Zambia", "Zimbabwe"],
     description:
