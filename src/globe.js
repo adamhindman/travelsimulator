@@ -4749,11 +4749,10 @@ export let globe = [
     neighbors: ["Pacific Ocean"],
     description:
       "Vanuatu is an island in the South Pacific surrounded by Australia, the Solomon Islands, Fiji, and many other small islands. It has an active volcano, also the tallest mountain in the country. Other places of interest include a forest and some caves.",
-    // objects: [
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    //   { name: "", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "FILE SHARING", article: "", description: "Many file sharing companies are headquartered in Vanuatu, to take advantage of the country's generous laws. You download a car, and drive around touring the legal addresses of the companies that make products like Kazaa and WinMX. You expect to see heaps of CD-ROMS lying around waiting to be distributed, but all you find are small, empty suites in shared office buildings you can't enter without being buzzed into." },
+      { name: "MOUNT YASUR", article: "", description: "This volcano on Tanna Island has been erupting continuously for over 800 years.</p><p>Knowing that you have plenty of time to catch the eruption, you have a relaxing late breakfast at your hotel, then take a nap and a shower before strolling over to the volcano.</p><p>When you get there, there is a palpable feeling of excitement in the air. But excitement is all that's in there air: you don't see any lava, or even a plume of smoke.</p><p>Tourists are chattering amongst themselves excitedly about how, about five minutes ago, the volcano stopped erupting for the first time in recorded history.</p><p>\"You mean the minute I show up, it stops working?\"</p><p>One of them shrugs, and offers to show you a video of the volcano on his phone.</p><p>You wait around on Tanna Island for a few days, but Mount Yasur remains dormant the entire time. Finally, as you are boarding the plane to your next destination, you hear a violent rumbling in the distance. Desperate to see some volcano action, you try to look out the window, but unfortunately you are on the wrong side of the plane.</p><p>\"Can I switch seats with you?\" you ask a nearby passenger, who turns out to be the same person who offered to show you the volcano on their phone.</p><p>\"No,\" he says, \"but I'll take some footage of it, and you can watch it later.\"" },
+    ],
   },
   {
     area: "Vatican City",
