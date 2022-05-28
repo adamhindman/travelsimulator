@@ -4843,9 +4843,9 @@ export let globe = [
     neighbors: ["Algeria", "Mauritania", "Morocco"],
     description:
       "Western Sahara is an industralized, developing nation in the Maghreb peninsula with a population of slightly more than 500,000. The people of Western Sahara want a referendum as soon as possible to determine the region's future. Western Sahari is bordered by Morocco, Mauritania, and Algeria.",
-    // objects: [
-    //   { name: "THE LAST OBJECT", article: "", description: "" },
-    // ],
+    objects: [
+      { name: "MINEFIELD", article: "A", description: "You find yourself trying to cross the world's longest minefield, in the disputed territory known as Western Sahara. This 1600-mile long minefield contains more than 7 million landmines, many of them decades old.</p><p>Using your mine detector, you are able to determine how many mines are nearby at any one time. For example, it tells you, that there are 2 mines adjacent to the area to your left, and 3 in the area surrounding the space to the north, allowing you to use some basic logical deduction to traverse the area safely.</p><p>Nonetheless, this dangerous journey, which has cost so many people their lives, is a horrible reminder of the pointless brutality of war.</p><p>After passing through the last few feet of this no man's land, you stop to calm down by playing a game of solitaire, and writing in your notepad.exe.</p>" },
+    ],
   },
   {
     area: "Yemen",
