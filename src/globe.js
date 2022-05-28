@@ -98,6 +98,8 @@ export let globe = [
   },
   {
     area: "Atlantic Ocean",
+    image: "atlantic-ocean.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@ilyuza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ilyuza Mingazova</a> on <a target="_blank" href="https://unsplash.com/s/photos/atlantic-ocean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     description:
       "Considered by many to be the one of hte best oceans on the planet, you're glad you found time to see it up close.",
     objects: [
@@ -1882,7 +1884,7 @@ export let globe = [
       "French Guiana is on the northern shore of South America, and is mostly covered with primeval tropical forests. A sparsely populated country, it has only 3.5 people per square kilometer. The spaceport here is a major source of jobs and income for the country. Walking through the capital, Cayenne, you see a lot of neoclassical architecture.",
     objects: [
       {
-        name: "SPACEPORT",
+        name: "onSPACEPORT",
         article: "A",
         description:
           "The Guiana Space Centre is ideally located on the equator, with open water to the east.",
@@ -1891,6 +1893,8 @@ export let globe = [
   },
   {
     area: "Gabon",
+    image: "gabon.png",
+    attribution: `Photo by <a target="_blank" bhref="https://unsplash.com/@raphaelito?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ralph Messi</a> on <a target="_blank" href="https://unsplash.com/s/photos/gabon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: [
       "Atlantic Ocean",
@@ -4769,6 +4773,8 @@ export let globe = [
   },
   {
     area: "Venezuela",
+    image: "venezuela.png",
+    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@jos1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Manolo Gomes</a> on <a target="_blank" href="https://unsplash.com/s/photos/venezuela?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     neighbors: ["Atlantic Ocean", "Brazil", "Colombia", "Guyana"],
     description:
