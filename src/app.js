@@ -1,4 +1,5 @@
 import { globe } from "./globe.js";
+import { endgameRoom } from "./endgame.js";
 import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt, sluggify, hashify, dehashify} from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
@@ -101,7 +102,11 @@ export const handleSubmit = (val, msg = "") => {
   let showLoc = false;
   switch (verb) {
     case "go":
-      handleGo(noun, neighbors);
+      if (isEndGame()){
+        handleEndGame(noun)
+      } else {
+        handleGo(noun, neighbors);
+      }
       break;
     case "look":
       msg = handleLook(noun, words, showLoc);
@@ -120,7 +125,11 @@ export const handleSubmit = (val, msg = "") => {
       handleRandomWalk(loops);
       break;
     case "tel":
-      handleTel(noun);
+      if (isEndGame()){
+        handleEndGame(noun)
+      } else {
+        handleTel(noun);
+      }
       break;
     case "help":
       msg = helpText;
@@ -160,9 +169,19 @@ const getDisplay = (val, msg, area, showLoc) => {
   const clSlug = sluggify(curLocation);
   const uiBgClass = getAttributeOfArea("image") ? `pic ${clSlug}` : ``;
   const uiAttrib = getAttributeOfArea("attribution") ? getAttributeOfArea("attribution") : ``;  
+  let exitsText = ""
+  if(getNeighborsText().length > 0){
+    exitsText = `<div class="exits"><h5>Exits are:</h5><ul class="asterisk buttons">${getNeighborsText()}</ul></div>`
+  }
   const loc = `
-  <div class="${uiBgClass}"><div class="attribution">${uiAttrib}</div></div><h4>${curLocation.toUpperCase()}</h4>${getAreaDescription()}</p>${getObjectsText()} 
-  <div class="exits"><h5>Exits are:</h5><ul class="asterisk buttons">${getNeighborsText()}</ul></div>`;
+    <div class="${uiBgClass}">
+      <div class="attribution">${uiAttrib}</div>
+    </div>
+    <h4>${curLocation.toUpperCase()}</h4>
+    <p>${getAreaDescription()}</p>
+    <p>${getObjectsText()}</p>
+    <p>${exitsText}</p>
+  `;
   let display = `
     ${val ? p : ``}
     ${msg ? m : loc}
@@ -357,6 +376,7 @@ const updateLocation = destination => {
 }
 
 const updatePassport = (destination = curLocation) => {
+  console.log('updatepassport: ', destination)
   let passport = [curLocation]
   if(localStorage.getItem("visited")){
     passport = JSON.parse(localStorage.getItem("visited"));
@@ -424,6 +444,21 @@ export const initListeners = () => {
     focusOnPrompt();
   });
 };
+
+
+const handleEndGame = area => {
+  console.log('handleEndGame')
+  globe.push(endgameRoom)
+  handleTel(globe[globe.length-1].area.toLowerCase()) // endgame room
+}
+
+const isEndGame = () => globe.length <= getVisitedCountries().length
+const fakeEndGame = false
+
+if (isEndGame() || fakeEndGame) {
+  console.log('handleEndGame)')
+  handleEndGame()
+}
 
 initListeners();
 updatePassport();
