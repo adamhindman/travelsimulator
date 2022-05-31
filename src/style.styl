@@ -161,9 +161,16 @@ ul.asterisk
 
 #logo
   max-width 100%
-  margin 2rem 20rem 2rem 0
+  margin 2rem 16rem 2rem 0
+  @media (min-width: 640px)
+    margin 2rem 32rem 2rem 0  
   &.hidden
     display none
+
+.wrapped-box
+  border 1px solid #33ff33
+  padding: 1.8rem 2.4rem
+  margin 3.6rem 0 3rem
 
 .pic
   position relative
@@ -253,8 +260,8 @@ ul.asterisk
     background-image url("assets/tanzania.png")   
   &.turkey
     background-image url("assets/turkey.png")       
-  &.united-states
-    background-image url("assets/united-states.png")
+  // &.united-states
+  //   background-image url("assets/united-states.png")
   &.vanuatu
     background-image url("assets/vanuatu.png")
   &.venezuela

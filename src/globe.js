@@ -4687,8 +4687,8 @@ export let globe = [
   },
   {
     area: "United States",
-    image: "united-states.png",
-    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@asiako?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joanna Kozik</a> on <a target="_blank" href="https://unsplash.com/s/photos/monument-valley-united-states?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
+    // image: "united-states.png",
+    // attribution: `Photo by <a target="_blank" href="https://unsplash.com/@asiako?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joanna Kozik</a> on <a target="_blank" href="https://unsplash.com/s/photos/monument-valley-united-states?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     description:
       'A large and diverse country, it is home to the famous "50 state quarters" phenomenon of the early 2000s. You see a bald eagle fishing the many lakes, rivers, and ponds here.',
     type: "country",

@@ -1,6 +1,6 @@
 import { globe } from "./globe.js";
-import { endgameRoom } from "./endgame.js";
-import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt, sluggify, hashify, dehashify} from "./utilities.js";
+import { endGameMsg } from "./endgame.js";
+import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt, sluggify, hashify, dehashify, storageAvailable} from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
@@ -102,12 +102,11 @@ export const handleSubmit = (val, msg = "") => {
   let showLoc = false;
   switch (verb) {
     case "go":
-      if (isEndGame()){
-        handleEndGame(noun)
-      } else {
-        handleGo(noun, neighbors);
-      }
+      handleGo(noun, neighbors);
       break;
+    case "tel":
+      handleTel(noun);
+      break;      
     case "look":
       msg = handleLook(noun, words, showLoc);
       break;
@@ -123,13 +122,6 @@ export const handleSubmit = (val, msg = "") => {
       msg += `You take a walk around the globe.<p>This process will end automatically after ${loops} steps.</p><p>Press [ESCAPE] to stop sooner than that.</p>`
       showLoc
       handleRandomWalk(loops);
-      break;
-    case "tel":
-      if (isEndGame()){
-        handleEndGame(noun)
-      } else {
-        handleTel(noun);
-      }
       break;
     case "help":
       msg = helpText;
@@ -164,8 +156,8 @@ export const handleSubmit = (val, msg = "") => {
 };
 
 const getDisplay = (val, msg, area, showLoc) => {
-  const p = `<p class="prompt"><span class="caret"></span>${val}</p>`;
-  const m = `<p>${msg}</p>`;
+  const prompt = `<p class="prompt"><span class="caret"></span>${val}</p>`;
+  const message = `<p>${msg}</p>`;
   const clSlug = sluggify(curLocation);
   const uiBgClass = getAttributeOfArea("image") ? `pic ${clSlug}` : ``;
   const uiAttrib = getAttributeOfArea("attribution") ? getAttributeOfArea("attribution") : ``;  
@@ -183,10 +175,14 @@ const getDisplay = (val, msg, area, showLoc) => {
     <p>${exitsText}</p>
   `;
   let display = `
-    ${val ? p : ``}
-    ${msg ? m : loc}
+    ${val ? prompt : ``}
+    ${msg ? message : loc}
     ${showLoc ? loc : ``}
+    ${(showEndGame && !endGameAlreadyShown) ? endGameMsg : ``}
   `;
+  if (showEndGame){
+    endGameAlreadyShown = true
+  }
   return display;
 };
 
@@ -376,7 +372,6 @@ const updateLocation = destination => {
 }
 
 const updatePassport = (destination = curLocation) => {
-  console.log('updatepassport: ', destination)
   let passport = [curLocation]
   if(localStorage.getItem("visited")){
     passport = JSON.parse(localStorage.getItem("visited"));
@@ -384,7 +379,8 @@ const updatePassport = (destination = curLocation) => {
       passport.push(destination.toLowerCase())
     }  
   }
-    localStorage.setItem("visited", JSON.stringify(passport));    
+  localStorage.setItem("visited", JSON.stringify(passport));
+  handleEndGame()  
 }
 
 promptField.value = "";
@@ -445,21 +441,22 @@ export const initListeners = () => {
   });
 };
 
+let showEndGame = false
+let endGameAlreadyShown = false
 
-const handleEndGame = area => {
-  console.log('handleEndGame')
-  globe.push(endgameRoom)
-  handleTel(globe[globe.length-1].area.toLowerCase()) // endgame room
+const handleEndGame = () => {
+  if (globe.length <= getVisitedCountries().length) {
+    showEndGame = true
+  } else {
+    showEndGame = false
+  }
 }
 
-const isEndGame = () => globe.length <= getVisitedCountries().length
-const fakeEndGame = false
-
-if (isEndGame() || fakeEndGame) {
-  console.log('handleEndGame)')
-  handleEndGame()
+if (storageAvailable('localStorage')) {
+  initListeners();
+  updatePassport();
+  render();
 }
-
-initListeners();
-updatePassport();
-render();
+else {
+  document.write("My game uses localStorage to save your state between sessions, and frankly it's so tightly coupled that the game won't work without it. I don't track or save any of your data, so, if you can, please consider turning on localStsorage to play my game.")
+}
