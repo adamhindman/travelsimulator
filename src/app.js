@@ -1,5 +1,6 @@
 import { globe } from "./globe.js";
 import { endGameMsg } from "./endgame.js";
+import { allCountries } from "./allCountries.js";
 import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt, sluggify, hashify, dehashify, storageAvailable} from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
@@ -102,12 +103,17 @@ export const handleSubmit = (val, msg = "") => {
   let showLoc = false;
   switch (verb) {
     case "go":
+    case "walk":
       handleGo(noun, neighbors);
       break;
     case "tel":
+    case "teleport": 
       handleTel(noun);
       break;      
     case "look":
+    case "examine":
+    case "ex":
+    case "exits": 
       msg = handleLook(noun, words, showLoc);
       break;
     case "randomwalk": 
@@ -146,6 +152,10 @@ export const handleSubmit = (val, msg = "") => {
     case "inventory":
       msg = handleInventory();
       break;
+    case "win":
+      localStorage.setItem("visited", JSON.stringify(allCountries));
+      handleEndGame()        
+      break;      
     case "":
       break;
     default:
@@ -281,12 +291,12 @@ const handleForget = () => {
     localStorage.clear();
     updateURLHash(defaultArea)    
     window.location.reload();
-  }, 1800);
+  }, 2400);
   return msg
 };
 
 export const handleTab = e => {
-  const commands = ["go", "look", "tel", "forget", "inv", "help", "stats", "passport", "randomwalk"]
+  const commands = ["go", "walk", "look", "ex", "exits", "examine", "tel", "teleport", "forget", "inv", "help", "stats", "passport", "randomwalk", "win"]
   let val = e.target.value.toLowerCase().replace(/\s+/g, " ").trim();
   const words = val.split(" ");
   const verb = words[0];
@@ -295,14 +305,19 @@ export const handleTab = e => {
   const neighbors = getAttributeOfArea("neighbors");
   switch (verb) {
     case "go":
+    case "walk": 
       dest = getFirstMatchedOption(noun, neighbors);
       e.target.value = `go ${dest.toLowerCase()}`;
       break;
     case "tel":
+    case "teleport": 
       dest = getFirstMatchedOption(noun, allAreas);
       e.target.value = `tel ${dest.toLowerCase()}`;
       break;
     case "look":
+    case "examine":
+    case "ex":
+    case "exits": 
       let obj = "";
       if (isArray(getAttributeOfArea("objects"))) {
         const objects = getAttributeOfArea("objects").map(obj => obj.name));
