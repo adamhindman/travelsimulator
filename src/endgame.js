@@ -1,8 +1,8 @@
 export let endGameMsg = `
   <div class="wrapped-box">
-    <h3>YOU'VE VISITED EVERY COUNTRY</h3>
-    <p>You glance down at your passport, and realize you've now visited every single country on Earth, including the fictional ones, and the ones on Mars.</p>
-    <p>I'm not saying there are secret easter eggs that just got unlocked, because that would be cruel. What if I'm lying?</p>
+    <h3>CONGRATULATIONS, GLOBETROTTER</h3>
+    <p>You glance down at your passport, and realize you've now visited every single country on Earth, including the fictional ones, and the ones on Mars. You've moved ${localStorage.getItem("totalMoves")} times.</p>
+    <p>I'm not saying there are secret easter eggs that just got unlocked, because what if I'm lying about that? That would be cruel.</p>
     <p>You can continue playing, or type FORGET to (safely and legally) wipe your memory and passport clean, and start over.</p>
   </div>`
 // export let endgameRoom = { 

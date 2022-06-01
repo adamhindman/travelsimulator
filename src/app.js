@@ -135,8 +135,9 @@ export const handleSubmit = (val, msg = "") => {
     case "stats": 
       msg = `<p>Size of the globe: ${Math.round(roughSizeOfObject(globe) / 1000)}k / ${catAllDescriptions(globe).split(" ").length + catAllObjects(globe).split(" ").length} words<br/>Countries without objects: ${getCountriesWithoutObjects(globe).length} out of ${globe.length}`
       if (getCountriesWithoutObjects(globe).length > 0) {
-        msg += `<br/>First country without objects: ${getCountriesWithoutObjects(globe)[0].area}</p>`
+        msg += `<br/>First country without objects: ${getCountriesWithoutObjects(globe)[0].area}`
       };
+      msg += `<br/>You've moved about ${localStorage.getItem("totalMoves") - 1} times</p>`
       break;
     case "forget":
       msg = handleForget();
@@ -381,6 +382,8 @@ const updateLocation = destination => {
   curLocation = destination;
   localStorage.setItem("lastLocation", destination);
   updatePassport(destination);
+  nextTotalMoves = Number(localStorage.getItem("totalMoves")) + 1
+  localStorage.setItem("totalMoves", nextTotalMoves)
   if (document.location.hash !== hashify(destination)){
     updateURLHash(destination);
   }
