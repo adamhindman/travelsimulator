@@ -65,10 +65,10 @@ const handleTeleportFromURL = area => {
 const updateURLHash = destination => {
   let hash = hashify(destination)
   if(history.pushState) {
-    history.pushState(null, null, hash);
+    history.pushState(null, null, hash)
   }
   else {
-      location.hash = hash;
+    location.hash = hash;
   }
 }
 
@@ -117,12 +117,12 @@ export const handleSubmit = (val, msg = "") => {
       msg = handleLook(noun, words, showLoc);
       break;
     case "randomwalk": 
-      let loops = 250
+      let loops = 100
       if (noun !== verb){ // true if there is no noun
         if(isInt(loops)){ // false if noun is garbage
           loops = noun
         } else {
-          loops = 250
+          loops = 100
         }
       } else {}
       msg += `You take a walk around the globe.<p>This process will end automatically after ${loops} steps.</p><p>Press [ESCAPE] to stop sooner than that.</p>`
@@ -382,10 +382,11 @@ const updateLocation = destination => {
   curLocation = destination;
   localStorage.setItem("lastLocation", destination);
   updatePassport(destination);
-  nextTotalMoves = Number(localStorage.getItem("totalMoves")) + 1
+  let nextTotalMoves = 0;
+  nextTotalMoves = Number(localStorage.getItem("totalMoves")) + 1 || nextTotalMoves
   localStorage.setItem("totalMoves", nextTotalMoves)
   if (document.location.hash !== hashify(destination)){
-    updateURLHash(destination);
+    updateURLHash(destination)
   }
 }
 
