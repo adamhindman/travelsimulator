@@ -7,6 +7,7 @@ import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inv
 
 console.clear();
 
+let msg = '';
 let walk = null
 export const submitBtn = document.getElementById("submit");
 export const promptField = document.getElementById("prompt");
