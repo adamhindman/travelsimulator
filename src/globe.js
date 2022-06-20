@@ -3211,7 +3211,7 @@ export let globe = [
   {
     area: "Mongolia",
     type: "country",
-    neighbors: ["China", "Russia"],
+    neighbors: ["China", "Russia", "Tuva"],
     description:
       "Mongolia is a landlocked East-Central Asian nation, bordered by Russia in the north and China to the south, east and west, while it borders Kazakhstan, and the countries of Kyrgyzstan and Uzbekistan to the east. With a land area of 1,566,000 square kilometers - the second largest in Asia - and a population of just under three million people, Mongolia is the least densely populated sovereign country in the world. Ulaanbaatar, the Capital of Mongolia, has a population of around 1.4 million people.",
     objects:[
