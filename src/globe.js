@@ -466,7 +466,7 @@ export let globe = [
       },
       {
         name: "ARMENIAN RUG",
-        articke: "An",
+        article: "An",
         description:
           "A large, beautiful woven rug. Its design is complex and full of symbolism you have trouble decoding.",
       },
