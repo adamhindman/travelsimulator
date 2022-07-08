@@ -1,14 +1,21 @@
 import { globe } from "./globe.js";
 import { endGameMsg } from "./endgame.js";
 import { allCountries } from "./allCountries.js";
-import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt, sluggify, hashify, dehashify, storageAvailable} from "./utilities.js";
+import { capitalize, arrayToLowerCase, isArray, inArray, roughSizeOfObject, catAllObjects, catAllDescriptions, getCountriesWithoutObjects, isInt, sluggify, hashify, dehashify, storageAvailable, getLastArea, getLastObject} from "./utilities.js";
 import { helpText } from "./helpText.js";
 import { inventory, handleInventory, handleTake, itemIsInInventory } from "./inventory.js"
 
 console.clear();
 
 let msg = '';
-let walk = null
+let walk = null;
+let justLaunched = true;
+const logoEl = document.querySelector("#logo")
+const consoleEl = document.querySelector("#console")
+let lastAreaEl = getLastArea()
+let lastObjectEl = getLastObject()
+let scrollTarget = logoEl;
+
 export const submitBtn = document.getElementById("submit");
 export const promptField = document.getElementById("prompt");
 export const allAreas = globe.map(area => area.area);
@@ -178,13 +185,15 @@ const getDisplay = (val, msg, area, showLoc) => {
     exitsText = `<div class="exits"><h5>Exits are:</h5><ul class="asterisk buttons">${getNeighborsText()}</ul></div>`
   }
   const loc = `
-    <div class="${uiBgClass}">
-      <div class="attribution">${uiAttrib}</div>
+    <div class="area-wrapper">
+      <div class="${uiBgClass}">
+        <div class="attribution">${uiAttrib}</div>
+      </div>
+      <h4>${curLocation.toUpperCase()}</h4>
+      <p>${getAreaDescription()}</p>
+      <p>${getObjectsText()}</p>
+      <p>${exitsText}</p>
     </div>
-    <h4>${curLocation.toUpperCase()}</h4>
-    <p>${getAreaDescription()}</p>
-    <p>${getObjectsText()}</p>
-    <p>${exitsText}</p>
   `;
   let display = `
     ${val ? prompt : ``}
@@ -270,13 +279,13 @@ const handleLook = (noun, words, showLoc) => {
     const getObjDescs = getAttributeOfArea("objects").map(
       object => object.description
     );
-    msg = `<p>${getObjDescs[oIndex]}</p>`;
+    msg = `<span class="object-description">${getObjDescs[oIndex]}</span>`;
   } else if (inInv) {
     msg = `<p>${itemInInv[1][0].description}</p>`
   } else {
     msg = `<p>I don't see that here!</p>`;
   }
-  return msg
+  return `${msg}`
 };
 
 const handleTel = noun => {
@@ -352,10 +361,29 @@ export const focusOnPrompt = () => {
   document.getElementById("prompt").focus();
 }
 
+// need to create a parameter called "scrolltarget" that can 
+// either scroll to the console or to the top of the country
+// depending on if the user did a GO or a LOOK.
+//
+// also need to check whether the user just loaded the page
+// and if so scroll to the top of the logo.
+
 const render = (val = null, msg = null, area = curLocation, showLoc = false) => {
+  console.log('justLaunched', justLaunched)
   setTimeout(() => {
     document.getElementById("display").innerHTML += getDisplay(val, msg, area, showLoc);
-    document.querySelector("#console").scrollIntoView(true);
+    //   document.querySelectorAll(".area-wrapper:last-of-type")[0].scrollIntoView(true) 
+    console.log('scrollTarget', scrollTarget)
+    console.log('justLaunched', justLaunched)
+
+    if (justLaunched) {
+      console.log('logo')
+      logoEl.scrollIntoView(true); 
+      justLaunched = false;
+    } else {
+      console.log('console')
+      consoleEl.scrollIntoView(true); 
+    }
     document.querySelectorAll(".destination").forEach(i => {
       if (i.dataset.eventSet !== true) {
         i.dataset.eventSet = true;
@@ -376,6 +404,7 @@ const render = (val = null, msg = null, area = curLocation, showLoc = false) => 
         });
       }
     });
+    justLaunched = false;    
   }, 500);
 };
 

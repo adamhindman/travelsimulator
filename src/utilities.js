@@ -141,3 +141,7 @@ export function debounce(func, wait, immediate) {
 		if (callNow) func.apply(context, args);
 	};
 };
+
+export const getLastArea = () => document.querySelectorAll(".area-wrapper:last-of-type")[0]
+
+export const getLastObject = () => document.querySelectorAll(".object-description:last-of-type")[0]
