@@ -369,19 +369,13 @@ export const focusOnPrompt = () => {
 // and if so scroll to the top of the logo.
 
 const render = (val = null, msg = null, area = curLocation, showLoc = false) => {
-  console.log('justLaunched', justLaunched)
   setTimeout(() => {
     document.getElementById("display").innerHTML += getDisplay(val, msg, area, showLoc);
     //   document.querySelectorAll(".area-wrapper:last-of-type")[0].scrollIntoView(true) 
-    console.log('scrollTarget', scrollTarget)
-    console.log('justLaunched', justLaunched)
-
     if (justLaunched) {
-      console.log('logo')
       logoEl.scrollIntoView(true); 
       justLaunched = false;
     } else {
-      console.log('console')
       consoleEl.scrollIntoView(true); 
     }
     document.querySelectorAll(".destination").forEach(i => {
