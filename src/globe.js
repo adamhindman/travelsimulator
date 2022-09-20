@@ -2930,7 +2930,7 @@ export let globe = [
     type: "country",
     neighbors: ["Belgium", "France", "Germany"],
     description:
-      "The Grand Duchy of Luxembourg is a strange country; one of the 200 or somost fascinating on Earth. Most of the people here are from somewhere else: about half the people who work here commute to it from nearby countries, and a very large percentage of residents are foreign nationals, or expats. All in all, only about 30% of the people you meet in Luxembourg were born here, making it a true nation of immigrants and expats.</p><p>There are many beautiful alpine forests, though a lot of them are privately owned, by the many wealthy Luxembourgians who keep estates here. Banking and finance make up a huge part of the economy, and the entire place is a big tax haven. In short, an odd, beautiful, safe, rich country.</p>",
+      "The Grand Duchy of Luxembourg is a strange country; one of the 200 or so most fascinating on Earth. Most of the people here are from somewhere else: about half the people who work here commute to it from nearby countries, and a very large percentage of residents are foreign nationals, or expats. All in all, only about 30% of the people you meet in Luxembourg were born here, making it a true nation of immigrants and expats.</p><p>There are many beautiful alpine forests, though a lot of them are privately owned, by the many wealthy Luxembourgians who keep estates here. Banking and finance make up a huge part of the economy, and the entire place is a big tax haven. In short, an odd, beautiful, safe, rich country.</p>",
     objects: [
       {
         name: "FORTRESS OF LUXEMBOURG",
