@@ -237,7 +237,7 @@ const handleRandomWalk = (steps = 500) => {
         clearInterval(walk)
         walk = null
         promptField.value = ("")
-        render("", `<p>Done! Ended normally after ${maxLoops} trips`, curLocation, false); 
+        render("", `<p>Done! Ended normally after ${maxLoops} trips.</p><p>Use LOOK to see where you ended up.`, curLocation, false); 
       }  
     },1)
   }
