@@ -31,7 +31,11 @@ export const areaExists = areaName => {
 // uh oh
 // everything breaks if localstorage is turned off
 // should check to see if localstorage exists and tell people without it to pound sand
-let curLocation = localStorage.getItem("lastLocation") || "united states";
+let curLocation = localStorage.getItem("lastLocation") || "utopia";
+
+if (curLocation == "utopia") {
+  handleUtopia()
+}
 
 const cleanPassport = () => {
   return visited.filter( item => areaExists(item) );
@@ -493,6 +497,10 @@ const handleEndGame = () => {
   } else {
     showEndGame = false
   }
+}
+
+const handleUtopia = () => {
+  
 }
 
 if (storageAvailable('localStorage')) {
