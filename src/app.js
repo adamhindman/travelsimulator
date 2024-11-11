@@ -33,10 +33,6 @@ export const areaExists = areaName => {
 // should check to see if localstorage exists and tell people without it to pound sand
 let curLocation = localStorage.getItem("lastLocation") || "utopia";
 
-if (curLocation == "utopia") {
-  handleUtopia()
-}
-
 const cleanPassport = () => {
   return visited.filter( item => areaExists(item) );
 }
@@ -335,7 +331,7 @@ export const handleTab = e => {
     case "exits": 
       let obj = "";
       if (isArray(getAttributeOfArea("objects"))) {
-        const objects = getAttributeOfArea("objects").map(obj => obj.name));
+        const objects = getAttributeOfArea("objects").map(obj => obj.name);
         obj = getFirstMatchedOption(noun, objects).toLowerCase();
       }
       e.target.value = `look ${obj}`;
@@ -501,6 +497,10 @@ const handleEndGame = () => {
 
 const handleUtopia = () => {
   
+}
+
+if (curLocation == "utopia") {
+  handleUtopia()
 }
 
 if (storageAvailable('localStorage')) {

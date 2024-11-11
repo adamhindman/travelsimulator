@@ -1,9 +1,12 @@
 {
+  "name": "Travel Simulator",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "npx parcel src/index.html",
+    "build": "npx parcel build src/index.html"
   },
   "devDependencies": {
-    "@parcel/transformer-stylus": "^2.5.0",
-    "parcel": "^2.5.0"
+    "@parcel/transformer-stylus": "latest",
+    "parcel": "latest"
   }
 }
