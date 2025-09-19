@@ -36,6 +36,25 @@ const allAreas = globe.map(area => area.area);
 const defaultArea = "United States";
 
 let curLocation = localStorage.getItem("lastLocation") || "utopia";
+
+// NPCs state: currently only Sesotris but designed for extensibility
+const npcs = [
+  {
+    name: "Sesotris",
+    location: allAreas[Math.floor(Math.random() * allAreas.length)],
+    moveCounter: 0,
+    moveInterval: 3, // moves every 3 player moves
+  },
+  {
+    name: "Greg",
+    location: allAreas[Math.floor(Math.random() * allAreas.length)],
+    moveCounter: 0,
+    moveInterval: 3, // moves every 3 player moves (same interval as Sesotris initially)
+  },
+];
+
+npcs.forEach(npc => console.log(`${npc.name} starts at ${npc.location}`));
+
 let visited = [];
 let walkInterval = null;
 let justLaunched = true;
@@ -65,7 +84,10 @@ function getAttributeOfArea(attrib, area = curLocation) {
 function getNeighborsText() {
   const neighbors = getAttributeOfArea("neighbors") || [];
   return neighbors.reduce((html, neighbor) => {
-    return html + `<li><button class="destination" data-destination="${neighbor}">${neighbor}</button></li>`;
+    return (
+      html +
+      `<li><button class="destination" data-destination="${neighbor}">${neighbor}</button></li>`
+    );
   }, "");
 }
 
@@ -73,7 +95,10 @@ function getObjectsText() {
   const objects = getAttributeOfArea("objects");
   if (!isArray(objects)) return "";
   return objects.reduce((text, obj) => {
-    return text + `${obj.article} <span class="button object" data-object="${obj.name}">${obj.name}</span> is here. `;
+    return (
+      text +
+      `${obj.article} <span class="button object" data-object="${obj.name}">${obj.name}</span> is here. `
+    );
   }, "");
 }
 
@@ -106,6 +131,22 @@ function updateLocation(destination) {
   curLocation = destination;
   localStorage.setItem("lastLocation", destination);
   updatePassport(destination);
+
+  // Increment moveCounter for each NPC and move if their interval reached
+  npcs.forEach(npc => {
+    npc.moveCounter++;
+    if (npc.moveCounter >= npc.moveInterval) {
+      npcRandomStep(npc);
+      console.log(`${npc.name} moves to ${npc.location}`);
+
+      // Alert if NPC and player share the same location
+      if (curLocation.toLowerCase() === npc.location.toLowerCase()) {
+        // alert removed, NPC presence will be added to display instead
+      }
+      npc.moveCounter = 0;
+    }
+  });
+
   const nextTotalMoves = (Number(localStorage.getItem("totalMoves")) || 0) + 1;
   localStorage.setItem("totalMoves", nextTotalMoves);
   if (document.location.hash !== hashify(destination)) {
@@ -143,6 +184,14 @@ function getDisplay(val, msg, area, showLoc) {
   if (getNeighborsText().length > 0) {
     exitsText = `<div class="exits"><h5>Exits are:</h5><ul class="asterisk buttons">${getNeighborsText()}</ul></div>`;
   }
+  // Gather NPCs in the current location to add a line about them
+  let npcHereLines = [];
+  npcs.forEach(npc => {
+    if (curLocation.toLowerCase() === npc.location.toLowerCase()) {
+      npcHereLines.push(`${npc.name} is here too!`);
+    }
+  });
+  const npcLineHtml = npcHereLines.length > 0 ? `${npcHereLines.join(" ")}` : "";
   const loc = `
     <div class="area-wrapper">
       <div class="${uiBgClass}">
@@ -152,6 +201,7 @@ function getDisplay(val, msg, area, showLoc) {
       <p>${getAreaDescription()}</p>
       <p>${getObjectsText()}</p>
       <p>${exitsText}</p>
+      <p>${npcLineHtml}</p>
     </div>
   `;
   return `
@@ -185,6 +235,8 @@ function setupInteractiveButtons() {
       });
     }
   });
+
+
 }
 
 function handleSubmit(val) {
@@ -226,7 +278,9 @@ function handleSubmit(val) {
       break;
     case "stats":
       {
-        const totalWords = catAllDescriptions(globe).split(" ").length + catAllObjects(globe).split(" ").length;
+        const totalWords =
+          catAllDescriptions(globe).split(" ").length +
+          catAllObjects(globe).split(" ").length;
         const noObjects = getCountriesWithoutObjects(globe);
         msg = `<p>Size of the globe: ${Math.round(roughSizeOfObject(globe) / 1000)}k / ${totalWords} words<br/>Countries without objects: ${noObjects.length} out of ${globe.length}`;
         if (noObjects.length > 0) {
@@ -275,6 +329,11 @@ function handleGo(noun, neighbors) {
   }
 }
 
+const npcDescriptions = {
+  "Sesotris": "The ancient queen, shrouded in mystery and wisdom, overseeing this realm with a commanding presence.",
+  "Greg": "A friendly and curious wanderer, eager to share tales and knowledge from distant lands."
+};
+
 function handleLook(noun, words, showLoc) {
   const [inArea, oIndex] = itemIsInArea(noun);
   const [inInv, invItems] = itemIsInInventory(noun);
@@ -288,6 +347,12 @@ function handleLook(noun, words, showLoc) {
   }
   if (inInv) {
     return `<p>${invItems[0].description}</p>`;
+  }
+  // Check if noun matches any NPC name in current location then show NPC description from loaded descriptions file
+  const npc = npcs.find(npc => npc.name.toLowerCase() === noun.toLowerCase() && npc.location.toLowerCase() === curLocation.toLowerCase());
+  if (npc) {
+    const desc = npcDescriptions[npc.name] || npc.description || "You see nothing special about " + npc.name + ".";
+    return `<p>${desc}</p>`;
   }
   return `<p>I don't see that here!</p>`;
 }
@@ -342,7 +407,12 @@ function handleRandomWalk(steps = 500) {
       clearInterval(walkInterval);
       walkInterval = null;
       promptField.value = "";
-      render("", `<p>Done! Ended normally after ${steps} trips.</p><p>Use LOOK to see where you ended up.</p>`, curLocation, false);
+      render(
+        "",
+        `<p>Done! Ended normally after ${steps} trips.</p><p>Use LOOK to see where you ended up.</p>`,
+        curLocation,
+        false,
+      );
     }
   }, 50);
 }
@@ -422,6 +492,14 @@ function initListeners() {
   });
 }
 
+// Function for Sesotris to take a random walk step
+function npcRandomStep(npc) {
+  const neighbors = getAttributeOfArea("neighbors", npc.location) || [];
+  if (neighbors.length === 0) return;
+
+  npc.location = neighbors[Math.floor(Math.random() * neighbors.length)];
+}
+
 function handleTab(e) {
   const commands = [
     "go",
@@ -485,7 +563,8 @@ function getFirstMatchedOption(word, options) {
   );
   if (isArray(matches) && matches.length > 0) {
     return matches.reduce((result, cur) => {
-      return cur.toLowerCase().indexOf(word.toLowerCase()) < result.toLowerCase().indexOf(word.toLowerCase())
+      return cur.toLowerCase().indexOf(word.toLowerCase()) <
+        result.toLowerCase().indexOf(word.toLowerCase())
         ? cur
         : result;
     });
