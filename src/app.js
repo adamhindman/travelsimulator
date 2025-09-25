@@ -583,6 +583,7 @@ function handleTab(e) {
     "stats",
     "passport",
     "randomwalk",
+    "text",
     "win",
   ];
   let val = e.target.value.toLowerCase().replace(/\s+/g, " ").trim();
