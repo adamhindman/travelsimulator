@@ -1,0 +1,349 @@
+:root {
+  --font-family: "IBM Plex Mono", monospace;
+  --font-size-base: 1.8rem;
+}
+* {
+  font-size: var(--font-size-base);
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overscroll-behavior: contain;
+}
+html {
+  color: #3f3;
+  background-color: #282828;
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  font-family: var(--font-family);
+  line-height: 1.45;
+  margin: 3rem;
+  box-sizing: border-box;
+  max-width: 64rem;
+}
+h1 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 2.4rem 0 0.6rem;
+  max-width: 100%;
+}
+blockquote {
+  font-style: italic;
+  margin-left: 1.6rem;
+}
+#display .intro-text {
+  margin: 3rem 0;
+  font-style: italic;
+}
+#display .exits h5 {
+  font-weight: normal;
+  margin: 1.8rem 0 0.6rem;
+}
+#display .buttons li:hover {
+  background-color: #3f3;
+}
+#display .buttons li:hover:before {
+  content: "*";
+  color: #282828;
+}
+#display .buttons li:hover button {
+  color: #282828;
+}
+#display .buttons button {
+  flex: 1;
+  background: transparent;
+  text-align: left;
+  color: #3f3;
+  border: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+}
+#display .object {
+  display: inline-block;
+  text-transform: uppercase;
+}
+#display .object:hover {
+  background-color: #3f3;
+  color: #282828;
+}
+#console {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  font-family: var(--font-family);
+}
+#console button#submit {
+  user-select: none;
+  pointer-events: none;
+  display: inline-block;
+  transition: all 0.06s ease-in-out;
+  color: rgba(170,255,170,0.4);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  opacity: 0.25;
+  box-shadow: inset 0 0 0 0.1rem rgba(170,255,170,0.4);
+}
+#console button#submit:hover {
+  box-shadow: 0;
+}
+#console button#submit:active {
+  background-color: #2c2;
+}
+#console button#submit.shown {
+  color: #282828;
+  background: #3f3;
+  pointer-events: all;
+  user-select: none;
+  opacity: 1;
+  transition: all 0.24s ease-in-out;
+}
+#prompt,
+.prompt {
+  font-family: var(--font-family);
+  flex: 1;
+  font-size: var(--font-size-base);
+  border: 0;
+  display: inline-block;
+  padding-left: 0.4rem;
+  background-color: transparent;
+  color: #afa;
+  margin: 0;
+}
+#prompt:focus,
+.prompt:focus {
+  outline: none;
+}
+#console,
+.prompt {
+  margin-top: 1.2rem;
+}
+.caret {
+  display: inline-block;
+  width: 1.6rem;
+  color: #afa;
+}
+.caret:before {
+  content: '>';
+}
+ul.asterisk {
+  padding: 0;
+}
+ul.asterisk li {
+  display: flex;
+  padding: 0.2rem 3rem;
+  margin: 0 -3rem;
+  text-align: left;
+  position: relative;
+  list-style: none;
+}
+ul.asterisk li:before {
+  content: "* ";
+  padding-right: 1rem;
+}
+ul.asterisk li:before {
+  content: "*";
+  padding-right: 1rem;
+}
+.passport p {
+  margin: initial;
+  margin-top: 1rem;
+}
+.passport .visited {
+  opacity: 1;
+}
+.passport .not-visited {
+  opacity: 0.5;
+}
+.passport span:after {
+  content: ", ";
+}
+.passport span:last-of-type:after {
+  content: "";
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #282828;
+  color: rgba(51,255,51,0.8);
+  font-size: xx-small;
+  padding: 0.2rem 1rem;
+}
+.attribution a {
+  font-size: xx-small;
+  color: rgba(51,255,51,0.8);
+}
+#logo {
+  max-width: 100%;
+  margin: 2rem 0;
+  margin-top: -2rem;
+  padding-top: 2rem;
+}
+@media (min-width: 640px) {
+  #logo {
+    margin: 2rem 32rem 2rem 0;
+  }
+}
+#logo.hidden {
+  display: none;
+}
+.wrapped-box {
+  border: 1px solid #3f3;
+  padding: 1.8rem 2.4rem;
+  margin: 3.6rem 0 3rem;
+}
+.area-wrapper {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.pic {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 2;
+  margin: 2.4rem auto 3.6rem;
+  border-radius: 0.3rem;
+}
+.pic .attribution {
+  opacity: 0;
+}
+.pic:hover .attribution {
+  transition: 0.32s ease-in-out;
+  transition-delay: 0.32s;
+  opacity: 1;
+}
+.pic.albania {
+  background-image: url("assets/albania.png");
+}
+.pic.atlantic-ocean {
+  background-image: url("assets/atlantic-ocean.png");
+}
+.pic.bosnia-and-herzegovina {
+  background-image: url("assets/bosnia-and-herzegovina.png");
+}
+.pic.botswana {
+  background-image: url("assets/botswana.png");
+}
+.pic.canada {
+  background-image: url("assets/canada.png");
+}
+.pic.cambodia {
+  background-image: url("assets/cambodia.png");
+}
+.pic.china {
+  background-image: url("assets/china.png");
+}
+.pic.croatia {
+  background-image: url("assets/croatia.png");
+}
+.pic.cuba {
+  background-image: url("assets/cuba.png");
+}
+.pic.czech-republic {
+  background-image: url("assets/czech-republic.png");
+}
+.pic.dominican-republic {
+  background-image: url("assets/dominican-republic.png");
+}
+.pic.eswatini {
+  background-image: url("assets/eswatini.png");
+}
+.pic.gabon {
+  background-image: url("assets/gabon.png");
+}
+.pic.greece {
+  background-image: url("assets/greece.png");
+}
+.pic.grenada {
+  background-image: url("assets/grenada.png");
+}
+.pic.haiti {
+  background-image: url("assets/haiti.png");
+}
+.pic.india {
+  background-image: url("assets/india.png");
+}
+.pic.indonesia {
+  background-image: url("assets/indonesia.png");
+}
+.pic.italy {
+  background-image: url("assets/italy.png");
+}
+.pic.japan {
+  background-image: url("assets/japan.png");
+}
+.pic.kazakhstan {
+  background-image: url("assets/kazakhstan.png");
+}
+.pic.kyrgyzstan {
+  background-image: url("assets/kyrgyzstan.png");
+}
+.pic.libya {
+  background-image: url("assets/libya.png");
+}
+.pic.mexico {
+  background-image: url("assets/mexico.png");
+}
+.pic.mozambique {
+  background-image: url("assets/mozambique.png");
+}
+.pic.norway {
+  background-image: url("assets/norway.png");
+}
+.pic.papua-new-guinea {
+  background-image: url("assets/papua-new-guinea.png");
+}
+.pic.peru {
+  background-image: url("assets/peru.png");
+}
+.pic.philippines {
+  background-image: url("assets/philippines.png");
+}
+.pic.russia {
+  background-image: url("assets/russia.png");
+}
+.pic.scotland {
+  background-image: url("assets/scotland.png");
+}
+.pic.san-marino {
+  background-image: url("assets/san-marino.png");
+}
+.pic.singapore {
+  background-image: url("assets/singapore.png");
+}
+.pic.slovenia {
+  background-image: url("assets/slovenia.png");
+}
+.pic.sri-lanka {
+  background-image: url("assets/sri-lanka.png");
+}
+.pic.tanzania {
+  background-image: url("assets/tanzania.png");
+}
+.pic.turkey {
+  background-image: url("assets/turkey.png");
+}
+.pic.vanuatu {
+  background-image: url("assets/vanuatu.png");
+}
+.pic.venezuela {
+  background-image: url("assets/venezuela.png");
+}
+.pic.yemen {
+  background-image: url("assets/yemen.png");
+}

@@ -35,7 +35,7 @@ const promptField = document.getElementById("prompt");
 const allAreas = globe.map(area => area.area);
 const defaultArea = "United States";
 
-let curLocation = localStorage.getItem("lastLocation") || "utopia";
+let curLocation = localStorage.getItem("lastLocation") || "United States";
 
 // NPCs state: currently only Sesotris but designed for extensibility
 const npcs = [
@@ -60,6 +60,15 @@ let walkInterval = null;
 let justLaunched = true;
 let showEndGame = false;
 let endGameAlreadyShown = false;
+
+function applySavedFontSize() {
+  const savedSize = localStorage.getItem("fontSize");
+  if (savedSize) {
+    document.documentElement.style.setProperty("--font-size-base", `${savedSize}rem`);
+  }
+}
+
+applySavedFontSize();
 
 function areaExists(areaName) {
   return globe.some(c => c.area.toLowerCase().trim() === areaName.toLowerCase().trim());
@@ -235,8 +244,6 @@ function setupInteractiveButtons() {
       });
     }
   });
-
-
 }
 
 function handleSubmit(val) {
@@ -253,9 +260,38 @@ function handleSubmit(val) {
     case "walk":
       msg = handleGo(noun, neighbors);
       break;
-    case "tel":
-    case "teleport":
-      msg = handleTel(noun);
+    case "text":
+      {
+        const root = document.documentElement;
+        let currentSize = parseFloat(
+          getComputedStyle(root).getPropertyValue("--font-size-base").trim(),
+        );
+        let newSize;
+
+        const parsedNoun = parseFloat(noun);
+        if (noun === "smaller") {
+          newSize = Math.max(0.5, currentSize - 0.1);
+        } else if (noun === "bigger") {
+          newSize = Math.min(3, currentSize + 0.1);
+        } else if (noun === "default") {
+          newSize = 1.8;
+        } else if (!isNaN(parsedNoun)) {
+          if (parsedNoun >= 1 && parsedNoun <= 3) {
+            newSize = parsedNoun;
+          } else {
+            msg = "Please enter a value between 1 and 3.";
+            break;
+          }
+        } else {
+          msg =
+            'Invalid command. Use "text smaller", "text bigger", "text default", or a number between 1 and 3.';
+          break;
+        }
+
+        root.style.setProperty("--font-size-base", `${newSize}rem`);
+        localStorage.setItem("fontSize", newSize);
+        msg = `Text size set to ${newSize.toFixed(1)}rem.`;
+      }
       break;
     case "look":
     case "examine":
@@ -330,8 +366,9 @@ function handleGo(noun, neighbors) {
 }
 
 const npcDescriptions = {
-  "Sesotris": "The ancient queen, shrouded in mystery and wisdom, overseeing this realm with a commanding presence.",
-  "Greg": "A friendly and curious wanderer, eager to share tales and knowledge from distant lands."
+  Sesotris:
+    "The ancient queen, shrouded in mystery and wisdom, overseeing this realm with a commanding presence.",
+  Greg: "A friendly and curious wanderer, eager to share tales and knowledge from distant lands.",
 };
 
 function handleLook(noun, words, showLoc) {
@@ -349,9 +386,16 @@ function handleLook(noun, words, showLoc) {
     return `<p>${invItems[0].description}</p>`;
   }
   // Check if noun matches any NPC name in current location then show NPC description from loaded descriptions file
-  const npc = npcs.find(npc => npc.name.toLowerCase() === noun.toLowerCase() && npc.location.toLowerCase() === curLocation.toLowerCase());
+  const npc = npcs.find(
+    npc =>
+      npc.name.toLowerCase() === noun.toLowerCase() &&
+      npc.location.toLowerCase() === curLocation.toLowerCase(),
+  );
   if (npc) {
-    const desc = npcDescriptions[npc.name] || npc.description || "You see nothing special about " + npc.name + ".";
+    const desc =
+      npcDescriptions[npc.name] ||
+      npc.description ||
+      "You see nothing special about " + npc.name + ".";
     return `<p>${desc}</p>`;
   }
   return `<p>I don't see that here!</p>`;
