@@ -273,6 +273,10 @@ function handleSubmit(val) {
     case "exits":
       msg = handleLook(noun, words, showLoc);
       break;
+    case "tel":
+    case "teleport":
+      msg = handleTel(noun);
+      break;
     case "randomwalk":
       {
         let loops = 100;
