@@ -237,18 +237,18 @@ function handleSubmit(val) {
     case "text":
       {
         const root = document.documentElement;
-        let currentSize = parseFloat(
-          getComputedStyle(root).getPropertyValue("--font-size-base").trim(),
-        );
         let newSize;
+        const sizeMap = {
+          small: 1.4,
+          medium: 1.8,
+          large: 2.1,
+        };
 
         const parsedNoun = parseFloat(noun);
-        if (noun === "smaller") {
-          newSize = Math.max(0.5, currentSize - 0.1);
-        } else if (noun === "bigger") {
-          newSize = Math.min(3, currentSize + 0.1);
+        if (sizeMap[noun]) {
+          newSize = sizeMap[noun];
         } else if (noun === "default") {
-          newSize = 1.8;
+          newSize = 1.6;
         } else if (!isNaN(parsedNoun)) {
           if (parsedNoun >= 1 && parsedNoun <= 3) {
             newSize = parsedNoun;
@@ -258,7 +258,7 @@ function handleSubmit(val) {
           }
         } else {
           msg =
-            'Invalid command. Use "text smaller", "text bigger", "text default", or a number between 1 and 3.';
+            'Invalid command. Use "text small", "medium", "large", "default", or a number between 1 and 3.';
           break;
         }
 
