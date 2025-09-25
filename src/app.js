@@ -179,7 +179,6 @@ function render(val = null, msg = null, area = curLocation, showLoc = false) {
     } else {
       consoleEl.scrollIntoView(true);
     }
-    setupInteractiveButtons();
   }, 500);
 }
 
@@ -219,31 +218,6 @@ function getDisplay(val, msg, area, showLoc) {
     ${showLoc ? loc : ""}
     ${showEndGame && !endGameAlreadyShown ? endGameMsg : ""}
   `;
-}
-
-function setupInteractiveButtons() {
-  document.querySelectorAll(".destination").forEach(button => {
-    if (button.dataset.eventSet !== "true") {
-      button.dataset.eventSet = "true";
-      button.addEventListener("click", e => {
-        const dest = e.target.dataset.destination.toLowerCase();
-        promptField.value = `go ${dest}`;
-        submitBtn.classList.add("shown");
-        focusOnPrompt();
-      });
-    }
-  });
-  document.querySelectorAll(".object").forEach(button => {
-    if (button.dataset.eventSet !== "true") {
-      button.dataset.eventSet = "true";
-      button.addEventListener("click", e => {
-        const obj = e.target.dataset.object.toLowerCase();
-        promptField.value = `look ${obj}`;
-        submitBtn.classList.add("shown");
-        focusOnPrompt();
-      });
-    }
-  });
 }
 
 function handleSubmit(val) {
@@ -533,6 +507,51 @@ function initListeners() {
 
   document.querySelector("html").addEventListener("click", () => {
     focusOnPrompt();
+  });
+
+  // Setup event delegation for the main display area
+  const displayEl = document.getElementById("display");
+  displayEl.addEventListener("click", e => {
+    const target = e.target;
+    let command, value;
+
+    // Check if a destination button was clicked
+    if (target.classList.contains("destination")) {
+      command = "go";
+      value = target.dataset.destination;
+    }
+    // Check if an object button was clicked
+    else if (target.classList.contains("object")) {
+      command = "look";
+      value = target.dataset.object;
+    }
+
+    // If a relevant button was clicked, populate the prompt
+    if (command && value) {
+      promptField.value = `${command} ${value.toLowerCase()}`;
+      submitBtn.classList.add("shown");
+      focusOnPrompt();
+    }
+  });
+
+  // Handle double-clicks to populate and submit immediately
+  displayEl.addEventListener("dblclick", e => {
+    const target = e.target;
+    let command, value;
+
+    if (target.classList.contains("destination")) {
+      command = "go";
+      value = target.dataset.destination;
+    } else if (target.classList.contains("object")) {
+      command = "look";
+      value = target.dataset.object;
+    }
+
+    if (command && value) {
+      const fullCommand = `${command} ${value.toLowerCase()}`;
+      promptField.value = fullCommand;
+      handleSubmit(fullCommand);
+    }
   });
 }
 
