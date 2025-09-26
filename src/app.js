@@ -447,6 +447,25 @@ function itemIsInArea(noun) {
   return [index !== -1, index];
 }
 
+function findAreasWithOneObject() {
+  const areasWithWordCounts = globe
+    .filter(area => area.objects && area.objects.length === 1)
+    .map(area => {
+      const object = area.objects[0];
+      const description = object.description || "";
+      const textContent = description.replace(/<[^>]*>/g, " ");
+      const wordCount = textContent.trim().split(/\s+/).filter(Boolean).length;
+      return { area: area.area, objectName: object.name, wordCount };
+    });
+
+  areasWithWordCounts.sort((a, b) => a.wordCount - b.wordCount);
+
+  console.log("Areas with one object, ranked by description word count:");
+  areasWithWordCounts.forEach(item => {
+    console.log(`- ${item.area} (${item.objectName}): ${item.wordCount} words`);
+  });
+}
+
 const focusOnPrompt = () => {
   promptField.focus();
 };
@@ -457,6 +476,7 @@ function handleEndGame() {
 }
 
 function initListeners() {
+  findAreasWithOneObject();
   ["load", "hashchange"].forEach(eventName =>
     window.addEventListener(
       eventName,
