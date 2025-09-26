@@ -3460,7 +3460,12 @@ export let globe = [
         description:
           "Everest touches China, Nepal, and Tibet. It might be fun to see this thing from multiple sides!",
       },
-      // {name:"", article:"", description:""},
+      {
+        name: "MOMO",
+        article: "",
+        description:
+          "You are invited to a momo eating competition against the beloved Kathmandu politician, Balendra 'Balen' Shah.</p><p>Shah, a former rapper, became the Mayor in 2022. He rises to greet you as you approach the table, giving you a firm handshake and a confident smile.</p><p>'I hope you're hungry,' he says with a chuckle. 'I know I am.'</p><p>Already, two trays of steaming momos have been laid out on the table. These half-moon shaped dumplings are filled with a variety of ingredients: minced beef, lamb, potatoes, leeks, carrots, and beans. Your mouth begins to water at the aromatic smells emanating from the savory delights, which are piled at least foot high on each tray.</p><p>'There must be a hundred dumplings here!'</p><p>'This is only the opening course, I've already got the chef working on more. I love momos, don't you?'</p><p>You nod and take a seat. You share a look with the waiter, who is standing quietly in the corner of the room.</p><p>'I must say, I was quite surprised to receive your invitation to this dumpling eating contest. Is this how you normally welcome visitors to the city?'</p><p>'Mmmf mmm mmf' growls Shah, mouth already full of momos.</p><p>You say: 'Hey, I know you used to be a rapper. Want to hear me freestyle?'</p><p>Mayor Shah doesn't respond, or show any indication of having heard you. His pile of momo is visibly smaller than it was just moments ago. He seems focused, purposeful.</p>",
+      },
       // {name:"", article:"", description:""}
     ],
   },
