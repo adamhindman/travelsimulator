@@ -45,12 +45,20 @@ const npcs = [
     location: allAreas[Math.floor(Math.random() * allAreas.length)],
     moveCounter: 0,
     moveInterval: 3, // moves every 3 player moves
+    attraction: "positive",
   },
   {
     name: "The Man in Black",
     location: allAreas[Math.floor(Math.random() * allAreas.length)],
     moveCounter: 0,
     moveInterval: 3, // moves every 3 player moves
+    attraction: "negative",
+  },
+  {
+    name: "The Tourist",
+    location: allAreas[Math.floor(Math.random() * allAreas.length)],
+    moveCounter: 0,
+    moveInterval: 5, // moves every 5 player moves
   },
 ];
 
@@ -405,13 +413,33 @@ function handleForget() {
   return msg;
 }
 
+const activities = [
+  "eating an ice cream cone",
+  "sleeping",
+  "looking for a cell phone charger",
+  "staring at the moon, drunk",
+  "getting mugged",
+  "chatting about the weather with a sad man",
+  "doom scrolling",
+  "taking a selfie",
+  "trying to pet a dog who keeps walking away",
+  "applying deodorant",
+  "describing an app idea",
+  "sitting in a restaurant",
+  "watching a commercial",
+  "arguing about progressive rock",
+];
+
 function handleTrack() {
   let messages = [];
   npcs.forEach(npc => {
     const path = findShortestPath(curLocation, npc.location);
     if (path) {
       const distance = path.length - 1;
-      messages.push(`${npc.name} is ${distance} places away, in ${npc.location}.`);
+      const randomActivity = activities[Math.floor(Math.random() * activities.length)];
+      messages.push(
+        `${npc.name} is ${distance} places away, in ${npc.location}, ${randomActivity}.`,
+      );
     } else {
       messages.push(`Could not track ${npc.name}.`);
     }
