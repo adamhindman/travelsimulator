@@ -1,4 +1,5 @@
 import { globe } from "./globe.js";
+import { findShortestPath } from "./pathfinder.js";
 import { endGameMsg } from "./endgame.js";
 import { allCountries } from "./allCountries.js";
 import {
@@ -37,19 +38,19 @@ const defaultArea = "United States";
 
 let curLocation = localStorage.getItem("lastLocation") || "United States";
 
-// NPCs state: currently only Sesotris but designed for extensibility
+// NPCs state
 const npcs = [
   {
-    name: "Sesotris",
+    name: "Interpol Agent",
     location: allAreas[Math.floor(Math.random() * allAreas.length)],
     moveCounter: 0,
     moveInterval: 3, // moves every 3 player moves
   },
   {
-    name: "Greg",
+    name: "The Man in Black",
     location: allAreas[Math.floor(Math.random() * allAreas.length)],
     moveCounter: 0,
-    moveInterval: 3, // moves every 3 player moves (same interval as Sesotris initially)
+    moveInterval: 3, // moves every 3 player moves
   },
 ];
 
@@ -161,6 +162,7 @@ function updateLocation(destination) {
   if (document.location.hash !== hashify(destination)) {
     updateURLHash(destination);
   }
+  calculateAndLogNpcDistances();
 }
 
 function handleTeleportFromURL(area) {
@@ -318,6 +320,12 @@ function handleSubmit(val) {
     case "inventory":
       msg = handleInventory();
       break;
+    case "track":
+      msg = handleTrack();
+      break;
+    case "track":
+      msg = handleTrack();
+      break;
     case "win":
       localStorage.setItem("visited", JSON.stringify(allCountries));
       handleEndGame();
@@ -344,9 +352,9 @@ function handleGo(noun, neighbors) {
 }
 
 const npcDescriptions = {
-  Sesotris:
-    "The ancient queen, shrouded in mystery and wisdom, overseeing this realm with a commanding presence.",
-  Greg: "A friendly and curious wanderer, eager to share tales and knowledge from distant lands.",
+  agent:
+    "\'Please come with me to the station, I have some questions I'd like to ask you.\' You manage to juke him and run away.",
+  stranger: "It's actually, literally, figuratively Johnny Cash.",
 };
 
 function handleLook(noun, words, showLoc) {
@@ -395,6 +403,20 @@ function handleForget() {
     window.location.reload();
   }, 2400);
   return msg;
+}
+
+function handleTrack() {
+  let messages = [];
+  npcs.forEach(npc => {
+    const path = findShortestPath(curLocation, npc.location);
+    if (path) {
+      const distance = path.length - 1;
+      messages.push(`${npc.name} is ${distance} places away, in ${npc.location}.`);
+    } else {
+      messages.push(`Could not track ${npc.name}.`);
+    }
+  });
+  return messages.join("<br/>");
 }
 
 function handleCheckPassport() {
@@ -559,7 +581,21 @@ function initListeners() {
   });
 }
 
-// Function for Sesotris to take a random walk step
+// Function for NPC to take a random walk step
+function calculateAndLogNpcDistances() {
+  console.log("Calculating distances to NPCs:");
+  npcs.forEach(npc => {
+    const path = findShortestPath(curLocation, npc.location);
+    if (path) {
+      // The distance is the number of steps, so path length - 1
+      const distance = path.length - 1;
+      console.log(`Distance to ${npc.name} in ${npc.location}: ${distance} steps.`);
+    } else {
+      console.log(`Could not calculate distance to ${npc.name} in ${npc.location}.`);
+    }
+  });
+}
+
 function npcRandomStep(npc) {
   const neighbors = getAttributeOfArea("neighbors", npc.location) || [];
   if (neighbors.length === 0) return;
