@@ -11,9 +11,8 @@ import {
   defaultArea,
   getVisitedCountries,
   allAreas,
-  render,
-  promptField,
 } from "./app.js";
+import { render, promptField } from "./ui.js";
 
 // Imports from other modules
 import { findShortestPath } from "./pathfinder.js";
