@@ -1,8 +1,9 @@
-// Imports from app.js - this creates a temporary circular dependency
+// Imports from the state module
+// Imports from the state module
+// Imports from the state module
 import {
   mutableState,
   updateLocation,
-  itemIsInArea,
   getAttributeOfArea,
   npcs,
   curLocation,
@@ -11,15 +12,35 @@ import {
   defaultArea,
   getVisitedCountries,
   allAreas,
-} from "./app.js";
+} from "./state.js";
 import { render, promptField } from "./ui.js";
 
 // Imports from other modules
 import { findShortestPath } from "./pathfinder.js";
 import { getNpcDescription } from "./npc.js";
 import { itemIsInInventory } from "./inventory.js";
-import { inArray, capitalize, arrayToLowerCase } from "./utilities.js";
+import { inArray, capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { globe } from "./globe.js";
+
+// This function was orphaned during refactoring; it lives here now
+// because it is only used by handleLook.
+function itemIsInArea(noun) {
+  const objs = getAttributeOfArea("objects");
+  if (!isArray(objs)) return [false, -1];
+  const objects = arrayToLowerCase(objs.map(o => o.name));
+  const index = objects.findIndex(item => item === noun);
+  return [index !== -1, index];
+}
+
+// This function was orphaned during refactoring; it lives here now
+// because it is only used by handleLook.
+function itemIsInArea(noun) {
+  const objs = getAttributeOfArea("objects");
+  if (!isArray(objs)) return [false, -1];
+  const objects = arrayToLowerCase(objs.map(o => o.name));
+  const index = objects.findIndex(item => item === noun);
+  return [index !== -1, index];
+}
 
 // Command Handlers
 

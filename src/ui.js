@@ -1,3 +1,4 @@
+import { handleSubmit } from "./app.js";
 import {
   curLocation,
   npcs,
@@ -8,11 +9,10 @@ import {
   getAttributeOfArea,
   areaExists,
   updateLocation,
-  handleSubmit,
-} from "./app.js";
+  getAreaDescription,
+} from "./state.js";
 import { sluggify, dehashify, isArray } from "./utilities.js";
 import { endGameMsg } from "./endgame.js";
-import { getAreaDescription } from "./app.js";
 
 // DOM Elements
 export const logoEl = document.querySelector("#logo");
