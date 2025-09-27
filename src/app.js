@@ -48,6 +48,10 @@ let curLocation = localStorage.getItem("lastLocation") || "United States";
 // NPCs state
 let npcs = initializeNpcs(allAreas);
 
+// Cooldown state for monitor command
+let playerTurnCount = 0;
+let lastMonitorTurn = -3; // Set to < 0 to allow first use
+
 let visited = [];
 let walkInterval = null;
 let justLaunched = true;
@@ -315,7 +319,12 @@ function handleSubmit(val) {
     case "track":
     case "mon":
     case "monitor":
-      msg = handleMonitor(npcs, curLocation, noun);
+      if (playerTurnCount - lastMonitorTurn >= 3) {
+        msg = handleMonitor(npcs, curLocation, noun);
+        lastMonitorTurn = playerTurnCount;
+      } else {
+        msg = "<p>The satellites are overheated, try again later.</p>";
+      }
       break;
     case "win":
       localStorage.setItem("visited", JSON.stringify(allCountries));
@@ -335,6 +344,7 @@ function handleSubmit(val) {
 
 function handleGo(noun, neighbors) {
   if (neighbors.includes(noun)) {
+    playerTurnCount++;
     updateLocation(noun);
     return "";
   } else {
@@ -363,7 +373,7 @@ function handleLook(noun, words, showLoc) {
       npc.location.toLowerCase() === curLocation.toLowerCase(),
   );
   if (npc) {
-    msg = getNpcDescription(npc);
+    const desc = getNpcDescription(npc);
     return `<p>${desc}</p>`;
   }
   return `<p>I don't see that here!</p>`;
@@ -371,6 +381,7 @@ function handleLook(noun, words, showLoc) {
 
 function handleTel(noun) {
   if (areaExists(noun)) {
+    playerTurnCount++;
     updateLocation(noun);
     return "";
   }
