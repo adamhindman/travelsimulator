@@ -33,27 +33,30 @@ import {
   handleTake,
   itemIsInInventory,
 } from "./inventory.js";
+import * as commands from "./commands.js";
 
 console.clear();
 
 const logoEl = document.querySelector("#logo");
 const consoleEl = document.querySelector("#console");
 const submitBtn = document.getElementById("submit");
-const promptField = document.getElementById("prompt");
-const allAreas = globe.map(area => area.area);
-const defaultArea = "United States";
+export const promptField = document.getElementById("prompt");
+export const allAreas = globe.map(area => area.area);
+export const defaultArea = "United States";
 
-let curLocation = localStorage.getItem("lastLocation") || "United States";
+export let curLocation = localStorage.getItem("lastLocation") || "United States";
 
 // NPCs state
-let npcs = initializeNpcs(allAreas);
+export let npcs = initializeNpcs(allAreas);
 
 // Cooldown state for monitor command
-let playerTurnCount = 0;
+export const mutableState = {
+  playerTurnCount: 0,
+  walkInterval: null,
+};
 let lastMonitorTurn = -3; // Set to < 0 to allow first use
 
 let visited = [];
-let walkInterval = null;
 let justLaunched = true;
 let showEndGame = false;
 let endGameAlreadyShown = false;
@@ -67,7 +70,7 @@ function applySavedFontSize() {
 
 applySavedFontSize();
 
-function areaExists(areaName) {
+export function areaExists(areaName) {
   return globe.some(c => c.area.toLowerCase().trim() === areaName.toLowerCase().trim());
 }
 
@@ -75,13 +78,13 @@ function cleanPassport() {
   return visited.filter(item => areaExists(item));
 }
 
-function getVisitedCountries() {
+export function getVisitedCountries() {
   const defaultVisited = ["united states"];
   const lsVisited = JSON.parse(localStorage.getItem("visited"));
   return isArray(lsVisited) && lsVisited.length > 0 ? lsVisited : defaultVisited;
 }
 
-function getAttributeOfArea(attrib, area = curLocation) {
+export function getAttributeOfArea(attrib, area = curLocation) {
   const validArea = areaExists(area) ? area : defaultArea;
   const areaObj = globe.find(i => i.area.toLowerCase() === validArea.toLowerCase());
   return areaObj ? areaObj[attrib] : null;
@@ -112,7 +115,7 @@ function getAreaDescription(area = curLocation) {
   return getAttributeOfArea("description", area) || "";
 }
 
-function updateURLHash(destination) {
+export function updateURLHash(destination) {
   const hash = hashify(destination);
   if (history.pushState) {
     history.pushState(null, null, hash);
@@ -133,7 +136,7 @@ function updatePassport(destination = curLocation) {
   handleEndGame();
 }
 
-function updateLocation(destination) {
+export function updateLocation(destination) {
   curLocation = destination;
   localStorage.setItem("lastLocation", destination);
   updatePassport(destination);
@@ -167,7 +170,7 @@ function handleTeleportFromURL(area) {
   }
 }
 
-function render(val = null, msg = null, area = curLocation, showLoc = false) {
+export function render(val = null, msg = null, area = curLocation, showLoc = false) {
   setTimeout(() => {
     const displayEl = document.getElementById("display");
     displayEl.innerHTML += getDisplay(val, msg, area, showLoc);
@@ -230,7 +233,7 @@ function handleSubmit(val) {
   switch (verb) {
     case "go":
     case "walk":
-      msg = handleGo(noun, neighbors);
+      msg = commands.handleGo(noun, neighbors);
       break;
     case "text":
       {
@@ -269,11 +272,15 @@ function handleSubmit(val) {
     case "examine":
     case "ex":
     case "exits":
-      msg = handleLook(noun, words, showLoc);
+      {
+        const result = commands.handleLook(noun, words);
+        msg = result.msg;
+        showLoc = result.showLoc;
+      }
       break;
     case "tel":
     case "teleport":
-      msg = handleTel(noun);
+      msg = commands.handleTel(noun);
       break;
     case "randomwalk":
       {
@@ -282,7 +289,7 @@ function handleSubmit(val) {
           loops = Number(noun);
         }
         msg = `You take a walk around the globe.<p>This process will end automatically after ${loops} steps.</p><p>Press [ESCAPE] to stop sooner than that.</p>`;
-        handleRandomWalk(loops);
+        commands.handleRandomWalk(loops);
       }
       break;
     case "help":
@@ -303,10 +310,10 @@ function handleSubmit(val) {
       }
       break;
     case "forget":
-      msg = handleForget();
+      msg = commands.handleForget();
       break;
     case "passport":
-      msg = handleCheckPassport();
+      msg = commands.handleCheckPassport();
       break;
     case "take":
       msg = handleTake();
@@ -319,9 +326,9 @@ function handleSubmit(val) {
     case "track":
     case "mon":
     case "monitor":
-      if (playerTurnCount - lastMonitorTurn >= 3) {
+      if (mutableState.playerTurnCount - lastMonitorTurn >= 3) {
         msg = handleMonitor(npcs, curLocation, noun);
-        lastMonitorTurn = playerTurnCount;
+        lastMonitorTurn = mutableState.playerTurnCount;
       } else {
         msg = "<p>The satellites are overheated, try again later.</p>";
       }
@@ -342,139 +349,7 @@ function handleSubmit(val) {
   promptField.value = "";
 }
 
-function handleGo(noun, neighbors) {
-  if (neighbors.includes(noun)) {
-    playerTurnCount++;
-    updateLocation(noun);
-    return "";
-  } else {
-    return `<p>You can't get to ${noun} from here!</p>`;
-  }
-}
-
-function handleLook(noun, words, showLoc) {
-  const [inArea, oIndex] = itemIsInArea(noun);
-  const [inInv, invItems] = itemIsInInventory(noun);
-  if (words.length === 1 || noun.toLowerCase() === "around") {
-    showLoc = true;
-    return "";
-  }
-  if (inArea) {
-    const descriptions = getAttributeOfArea("objects").map(obj => obj.description);
-    return `<span class="object-description">${descriptions[oIndex]}</span>`;
-  }
-  if (inInv) {
-    return `<p>${invItems[0].description}</p>`;
-  }
-  // Check if noun matches any NPC name in current location then show NPC description from loaded descriptions file
-  const npc = npcs.find(
-    npc =>
-      npc.name.toLowerCase() === noun.toLowerCase() &&
-      npc.location.toLowerCase() === curLocation.toLowerCase(),
-  );
-  if (npc) {
-    const desc = getNpcDescription(npc);
-    return `<p>${desc}</p>`;
-  }
-  return `<p>I don't see that here!</p>`;
-}
-
-function handleTel(noun) {
-  if (areaExists(noun)) {
-    playerTurnCount++;
-    updateLocation(noun);
-    return "";
-  }
-  return `<p>You can't teleport there; it doesn't exist!</p>`;
-}
-
-function handleForget() {
-  const msg = `You enter a fugue state and wander back home.`;
-  setTimeout(() => {
-    localStorage.clear();
-    updateURLHash(defaultArea);
-    window.location.reload();
-  }, 2400);
-  return msg;
-}
-
-const activities = [
-  "eating an ice cream cone",
-  "sleeping",
-  "looking for a cell phone charger",
-  "staring at the moon, drunk",
-  "getting mugged",
-  "chatting about the weather with a sad man",
-  "doom scrolling",
-  "taking a selfie",
-  "trying to pet a dog who keeps walking away",
-  "applying deodorant",
-  "describing an app idea",
-  "sitting in a restaurant",
-  "watching a commercial",
-  "arguing about progressive rock",
-];
-
-function handleTrack() {
-  let messages = [];
-  npcs.forEach(npc => {
-    const path = findShortestPath(curLocation, npc.location);
-    if (path) {
-      const distance = path.length - 1;
-      const randomActivity = activities[Math.floor(Math.random() * activities.length)];
-      messages.push(
-        `${npc.name} is ${distance} places away, in ${npc.location}, ${randomActivity}.`,
-      );
-    } else {
-      messages.push(`Could not track ${npc.name}.`);
-    }
-  });
-  return messages.join("<br/>");
-}
-
-function handleCheckPassport() {
-  const visited = getVisitedCountries();
-  let msg = `<div class="passport">You've visited ${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`;
-  msg += allAreas.reduce((result, current) => {
-    if (inArray(current.toLowerCase(), visited)) {
-      return result + `<span class="visited">${capitalize(current)}</span>`;
-    }
-    return result + `<span class="not-visited">${capitalize(current)}</span>`;
-  }, "");
-  return `${msg}</p></div>`;
-}
-
-function handleRandomWalk(steps = 500) {
-  if (walkInterval !== null) return;
-
-  let loops = 0;
-  walkInterval = setInterval(() => {
-    const neighbors = arrayToLowerCase(getAttributeOfArea("neighbors") || []);
-    if (neighbors.length === 0) {
-      clearInterval(walkInterval);
-      walkInterval = null;
-      return;
-    }
-    const randomNeighbor = neighbors[Math.floor(Math.random() * neighbors.length)];
-    updateLocation(randomNeighbor);
-    render("", " ", curLocation, false);
-    loops++;
-    promptField.value = `${loops} / ${steps} (${randomNeighbor})`;
-    if (loops >= steps) {
-      clearInterval(walkInterval);
-      walkInterval = null;
-      promptField.value = "";
-      render(
-        "",
-        `<p>Done! Ended normally after ${steps} trips.</p><p>Use LOOK to see where you ended up.</p>`,
-        curLocation,
-        false,
-      );
-    }
-  }, 50);
-}
-
-function itemIsInArea(noun) {
+export function itemIsInArea(noun) {
   const objs = getAttributeOfArea("objects");
   if (!isArray(objs)) return [false, -1];
   const objects = arrayToLowerCase(objs.map(o => o.name));
@@ -482,7 +357,7 @@ function itemIsInArea(noun) {
   return [index !== -1, index];
 }
 
-const focusOnPrompt = () => {
+export const focusOnPrompt = () => {
   promptField.focus();
 };
 
@@ -526,8 +401,8 @@ function initListeners() {
         break;
       case "Escape":
         promptField.value = "";
-        clearInterval(walkInterval);
-        walkInterval = null;
+        clearInterval(mutableState.walkInterval);
+        mutableState.walkInterval = null;
         break;
     }
   });
@@ -688,12 +563,4 @@ if (storageAvailable("localStorage")) {
   );
 }
 
-export {
-  submitBtn,
-  promptField,
-  allAreas,
-  defaultArea,
-  areaExists,
-  handleSubmit,
-  focusOnPrompt,
-};
+export { submitBtn, handleSubmit };
