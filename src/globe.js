@@ -338,6 +338,12 @@ export let globe = [
         article: "A",
         description: "A furry little fox with big pointy ears.",
       },
+      {
+        name: "GROTTE DE CERVANTES",
+        article: "The",
+        description:
+          'You spend the night in the Grotte de Cervantes, the cave where Spanish author and soldier Miguel de Cervantes hid during an escape attempt with other slaves in 1577. It\'s a shallow cave in the hillside, overlooking the Bay of Algiers.</p><p>In the morning, when the groundskeeper pokes you awake with the end of a broom, you ask him for the whole story.</p><p>"They were betrayed, and the ship which was to take them to freedom was captured. Cervantes was held in stricter confinement for months, and barely survived. Yet, his will was not broken, and he went on to attempt another escape—three, in all, before he was at last ransomed."</p><p>Out on the bay, above the sea, a black-headed gull fights the currents of the ocean breeze, seeming to hang suspended in the air.</p><p>"Were they reported by the driver of a passing car? The slaves, I mean."</p><p>"No, the road you see there did not exist in the 16th century, it was only wilderness, away from town. And there were no cars anywhere in the world. They would not be invented until hundreds of years afterward."</p><p>You look out past the tall, locked iron gate you climbed over last night. On the other side is a street with cars, and a neighborhood of houses all along the other side.</p><p>"I see. And I bet he didn\'t have to deal with any tour groups?" You gesture, indicating the half dozen onlookers.</p><p>"No he didn\'t, and that is what I came to tell you to begin with. You can\'t sleep here, this is a monument. You must leave now, the police have been called."</p><p>You nod, stand, and begin picking up your candy bar wrappers from around the floor of the cave.</p><p>"One last question: when Cervantes went on to write <em>Don Quixote</em>, was he thinking of this place when he wrote the famous cave scene? Is this the cave from <em>Don Quixote</em>?"</p><p>"I don\'t know, I\'ve never read it myself."</p><p>"Me neither, you say. There\'s got to be a cave in it, though, right?"</p>',
+      },
     ],
     neighbors: [
       "Libya",
