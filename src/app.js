@@ -1,5 +1,12 @@
 import { globe } from "./globe.js";
 import { findShortestPath } from "./pathfinder.js";
+import {
+  initializeNpcs,
+  npcRandomStep,
+  calculateAndLogNpcDistances,
+  handleMonitor,
+  getNpcDescription,
+} from "./npc.js";
 import { endGameMsg } from "./endgame.js";
 import { allCountries } from "./allCountries.js";
 import {
@@ -39,30 +46,7 @@ const defaultArea = "United States";
 let curLocation = localStorage.getItem("lastLocation") || "United States";
 
 // NPCs state
-const npcs = [
-  {
-    name: "Interpol Agent",
-    location: allAreas[Math.floor(Math.random() * allAreas.length)],
-    moveCounter: 0,
-    moveInterval: 3, // moves every 3 player moves
-    attraction: "positive",
-  },
-  {
-    name: "The Man in Black",
-    location: allAreas[Math.floor(Math.random() * allAreas.length)],
-    moveCounter: 0,
-    moveInterval: 3, // moves every 3 player moves
-    attraction: "negative",
-  },
-  {
-    name: "The Tourist",
-    location: allAreas[Math.floor(Math.random() * allAreas.length)],
-    moveCounter: 0,
-    moveInterval: 5, // moves every 5 player moves
-  },
-];
-
-npcs.forEach(npc => console.log(`${npc.name} starts at ${npc.location}`));
+let npcs = initializeNpcs(allAreas);
 
 let visited = [];
 let walkInterval = null;
@@ -154,7 +138,7 @@ function updateLocation(destination) {
   npcs.forEach(npc => {
     npc.moveCounter++;
     if (npc.moveCounter >= npc.moveInterval) {
-      npcRandomStep(npc);
+      npcRandomStep(npc, getAttributeOfArea);
       console.log(`${npc.name} moves to ${npc.location}`);
 
       // Alert if NPC and player share the same location
@@ -170,7 +154,7 @@ function updateLocation(destination) {
   if (document.location.hash !== hashify(destination)) {
     updateURLHash(destination);
   }
-  calculateAndLogNpcDistances();
+  calculateAndLogNpcDistances(npcs, curLocation);
 }
 
 function handleTeleportFromURL(area) {
@@ -329,10 +313,9 @@ function handleSubmit(val) {
       msg = handleInventory();
       break;
     case "track":
-      msg = handleTrack();
-      break;
-    case "track":
-      msg = handleTrack();
+    case "mon":
+    case "monitor":
+      msg = handleMonitor(npcs, curLocation, noun);
       break;
     case "win":
       localStorage.setItem("visited", JSON.stringify(allCountries));
@@ -359,12 +342,6 @@ function handleGo(noun, neighbors) {
   }
 }
 
-const npcDescriptions = {
-  agent:
-    "\'Please come with me to the station, I have some questions I'd like to ask you.\' You manage to juke him and run away.",
-  stranger: "It's actually, literally, figuratively Johnny Cash.",
-};
-
 function handleLook(noun, words, showLoc) {
   const [inArea, oIndex] = itemIsInArea(noun);
   const [inInv, invItems] = itemIsInInventory(noun);
@@ -386,10 +363,7 @@ function handleLook(noun, words, showLoc) {
       npc.location.toLowerCase() === curLocation.toLowerCase(),
   );
   if (npc) {
-    const desc =
-      npcDescriptions[npc.name] ||
-      npc.description ||
-      "You see nothing special about " + npc.name + ".";
+    msg = getNpcDescription(npc);
     return `<p>${desc}</p>`;
   }
   return `<p>I don't see that here!</p>`;
@@ -610,26 +584,6 @@ function initListeners() {
 }
 
 // Function for NPC to take a random walk step
-function calculateAndLogNpcDistances() {
-  console.log("Calculating distances to NPCs:");
-  npcs.forEach(npc => {
-    const path = findShortestPath(curLocation, npc.location);
-    if (path) {
-      // The distance is the number of steps, so path length - 1
-      const distance = path.length - 1;
-      console.log(`Distance to ${npc.name} in ${npc.location}: ${distance} steps.`);
-    } else {
-      console.log(`Could not calculate distance to ${npc.name} in ${npc.location}.`);
-    }
-  });
-}
-
-function npcRandomStep(npc) {
-  const neighbors = getAttributeOfArea("neighbors", npc.location) || [];
-  if (neighbors.length === 0) return;
-
-  npc.location = neighbors[Math.floor(Math.random() * neighbors.length)];
-}
 
 function handleTab(e) {
   const commands = [
@@ -643,6 +597,10 @@ function handleTab(e) {
     "teleport",
     "forget",
     "inv",
+    "mon",
+    "monitor",
+    "track",
+    "track",
     "help",
     "stats",
     "passport",
