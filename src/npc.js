@@ -1,5 +1,5 @@
 import { findShortestPath } from "./pathfinder.js";
-import { npcs, curLocation, allAreas, saveNpcs } from "./state.js";
+import { npcs, curLocation, allAreas, saveNpcs, areaExists } from "./state.js";
 
 const activities = [
   "eating an ice cream cone",
@@ -50,7 +50,12 @@ const sampleNames = [
   "GERALD",
   "HANK",
 ];
-const sampleDescriptions = ["An angry man", "A fat man", "A rich man", "A handsome man"];
+export const sampleDescriptions = [
+  "An angry man",
+  "A fat man",
+  "A rich man",
+  "A handsome man",
+];
 
 export function npcRandomStep(npc, getAttributeOfArea) {
   const neighbors = getAttributeOfArea("neighbors", npc.location) || [];
@@ -100,19 +105,23 @@ export function handleMonitor(noun, words, neighbors) {
   );
 }
 
-export function createNpc(speed = 5) {
+export function createNpc(speed = 5, area = null) {
   const name = sampleNames[Math.floor(Math.random() * sampleNames.length)];
   const description =
     sampleDescriptions[Math.floor(Math.random() * sampleDescriptions.length)];
 
-  // Filter out the player's current location
-  const availableLocations = allAreas.filter(
-    location => location.toLowerCase() !== curLocation.toLowerCase(),
-  );
+  let location;
+  if (area && areaExists(area)) {
+    location = area;
+  } else {
+    // Filter out the player's current location
+    const availableLocations = allAreas.filter(
+      location => location.toLowerCase() !== curLocation.toLowerCase(),
+    );
 
-  // Select a random location from the available locations
-  const location =
-    availableLocations[Math.floor(Math.random() * availableLocations.length)];
+    // Select a random location from the available locations
+    location = availableLocations[Math.floor(Math.random() * availableLocations.length)];
+  }
 
   const newNpc = {
     name,
@@ -120,6 +129,9 @@ export function createNpc(speed = 5) {
     location,
     moveCounter: 0,
     moveInterval: speed,
+    hasBeenTalkedTo: false,
+    questTargetName: null,
+    questTargetLocation: null,
   };
 
   console.log("New NPC created:", newNpc);

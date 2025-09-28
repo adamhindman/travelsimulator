@@ -19,11 +19,12 @@ export const defaultArea = "United States";
 export let curLocation = localStorage.getItem("lastLocation") || "United States";
 export let npcs = loadNpcs() || [];
 export let visited = [];
+export let npcsToDespawn = [];
 
 // Mutable state that needs to be an object to be passed by reference
 export const mutableState = {
-  playerTurnCount: 0,
   walkInterval: null,
+  npcSpawnThreshold: null,
 };
 
 // Game flow state
@@ -101,6 +102,12 @@ export function updateLocation(destination) {
   localStorage.setItem("lastLocation", destination);
   updatePassport(destination);
 
+  // Despawn NPCs marked for removal
+  if (npcsToDespawn.length > 0) {
+    npcs = npcs.filter(npc => !npcsToDespawn.includes(npc.name));
+    npcsToDespawn = [];
+  }
+
   // Increment moveCounter for each NPC and move if their interval is reached
   npcs.forEach(npc => {
     npc.moveCounter++;
@@ -118,9 +125,35 @@ export function updateLocation(destination) {
   if (document.location.hash !== hashify(destination)) {
     updateURLHash(destination);
   }
+
+  let spawnMessage = null;
+  if (
+    mutableState.npcSpawnThreshold &&
+    npcs.length === 0 &&
+    (Number(localStorage.getItem("totalMoves")) || 0) >= mutableState.npcSpawnThreshold
+  ) {
+    createNpc(5, destination);
+    if (npcs.length > 0) {
+      const npcName = npcs[npcs.length - 1].name;
+      spawnMessage = `<p>You notice <span class="button npc" data-npc="${npcName}">${npcName}</span> has arrived.</p>`;
+    }
+    mutableState.npcSpawnThreshold = null; // Ensure this only runs once
+  }
+
+  return spawnMessage;
 }
 
 // Initial hydration of state from localStorage
 visited = getVisitedCountries();
 cleanPassport(); // Sanitize the list
 localStorage.setItem("visited", JSON.stringify(visited)); // Save sanitized list back to localStorage
+
+export function initializeAutoSpawn() {
+  if (npcs.length === 0 && !showEndGame) {
+    const currentMoves = Number(localStorage.getItem("totalMoves")) || 0;
+    // Set threshold to a future move count
+    mutableState.npcSpawnThreshold = currentMoves + Math.floor(Math.random() * 1) + 1;
+  }
+}
+
+initializeAutoSpawn();

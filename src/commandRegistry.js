@@ -92,8 +92,9 @@ function handleRandomWalkWrapper(noun, words, neighbors) {
  * @returns {string} The result message.
  */
 function handleMonitorWrapper(noun, words, neighbors) {
-  if (mutableState.playerTurnCount - lastMonitorTurn >= 3) {
-    lastMonitorTurn = mutableState.playerTurnCount;
+  const totalMoves = Number(localStorage.getItem("totalMoves")) || 0;
+  if (totalMoves - lastMonitorTurn >= 3) {
+    lastMonitorTurn = totalMoves;
     // Pass the arguments straight through to the real handler.
     return npcHandleMonitor(noun, words, neighbors);
   } else {
@@ -106,11 +107,21 @@ function handleMonitorWrapper(noun, words, neighbors) {
  * @returns {string} A confirmation message.
  */
 function handleSpawn(noun, words, neighbors) {
-  if (noun && isInt(noun)) {
-    createNpc(Number(noun));
-  } else {
-    createNpc();
+  let speed = 5;
+  let area = null;
+
+  if (words.length > 1) {
+    if (isInt(words[1])) {
+      speed = Number(words[1]);
+      if (words.length > 2) {
+        area = words.slice(2).join(" ");
+      }
+    } else {
+      area = words.slice(1).join(" ");
+    }
   }
+
+  createNpc(speed, area);
   return "";
 }
 

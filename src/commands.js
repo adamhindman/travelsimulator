@@ -12,6 +12,9 @@ import {
   defaultArea,
   getVisitedCountries,
   allAreas,
+  saveNpcs,
+  initializeAutoSpawn,
+  npcsToDespawn,
 } from "./state.js";
 import { render, promptField } from "./ui.js";
 
@@ -20,7 +23,7 @@ import { findShortestPath } from "./pathfinder.js";
 import { itemIsInInventory } from "./inventory.js";
 import { inArray, capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { globe } from "./globe.js";
-import { despawn } from "./npc.js";
+import { despawn, createNpc } from "./npc.js";
 
 // This function was orphaned during refactoring; it lives here now
 // because it is only used by handleLook.
@@ -36,9 +39,8 @@ function itemIsInArea(noun) {
 
 function handleGo(noun, words, neighbors) {
   if (neighbors.includes(noun)) {
-    mutableState.playerTurnCount++;
-    updateLocation(noun);
-    return "";
+    const spawnMessage = updateLocation(noun);
+    return spawnMessage || "";
   } else {
     return `<p>You can't get to ${noun} from here!</p>`;
   }
@@ -70,8 +72,20 @@ function handleLook(noun, words, neighbors) {
         npc.location.toLowerCase() === curLocation.toLowerCase(),
     );
     if (npc) {
+      // First time talking to this NPC, set up the quest target.
+      if (!npc.questTargetName) {
+        npc.hasBeenTalkedTo = true;
+        createNpc(); // Creates a new NPC at a random location
+        const newNpc = npcs[npcs.length - 1];
+        npc.questTargetName = newNpc.name;
+        npc.questTargetLocation = newNpc.location;
+        npcsToDespawn.push(npc.name);
+        saveNpcs();
+      }
+
       const desc = npc.description || `You see nothing special about ${npc.name}.`;
-      msg = `<p>${desc}</p>`;
+      const questMsg = `"You should go find ${npc.questTargetName}. He's currently in ${npc.questTargetLocation}."`;
+      msg = `<p>${desc}</p><p>${questMsg}</p>`;
     } else {
       msg = `<p>I don't see that here!</p>`;
     }
@@ -81,9 +95,8 @@ function handleLook(noun, words, neighbors) {
 
 function handleTel(noun, words, neighbors) {
   if (areaExists(noun)) {
-    mutableState.playerTurnCount++;
-    updateLocation(noun);
-    return "";
+    const spawnMessage = updateLocation(noun);
+    return spawnMessage || "";
   }
   return `<p>You can't teleport there; it doesn't exist!</p>`;
 }
@@ -156,8 +169,8 @@ function handleRandomWalk(steps = 500) {
       return;
     }
     const randomNeighbor = neighbors[Math.floor(Math.random() * neighbors.length)];
-    updateLocation(randomNeighbor);
-    render("", " ", curLocation, false);
+    const spawnMessage = updateLocation(randomNeighbor);
+    render(spawnMessage || "", " ", curLocation, false);
     loops++;
     promptField.value = `${loops} / ${steps} (${randomNeighbor})`;
     if (loops >= steps) {
@@ -176,7 +189,13 @@ function handleRandomWalk(steps = 500) {
 
 function handleDespawn(noun) {
   if (!noun) {
-    return "<p>You must specify an NPC to remove.</p>";
+    if (npcs.length === 0) {
+      return "<p>There are no NPCs to remove.</p>";
+    }
+    npcs.length = 0;
+    saveNpcs();
+    initializeAutoSpawn();
+    return "<p>All NPCs have been removed.</p>";
   }
   const npcName = noun.toLowerCase();
   const npcToRemove = npcs.find(npc => npc.name.toLowerCase() === npcName);
