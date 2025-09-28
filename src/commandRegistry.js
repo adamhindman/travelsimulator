@@ -11,7 +11,7 @@
 // Feature Modules
 import * as commands from "./commands.js";
 import { handleTake, handleInventory } from "./inventory.js";
-import { handleMonitor as npcHandleMonitor } from "./npc.js";
+import { handleMonitor as npcHandleMonitor, createNpc } from "./npc.js";
 import { handleEndGame, mutableState, npcs, curLocation } from "./state.js";
 import { handleText } from "./ui.js";
 
@@ -101,6 +101,19 @@ function handleMonitorWrapper(noun, words, neighbors) {
   }
 }
 
+/**
+ * Handles the 'spawn' command to create a new NPC.
+ * @returns {string} A confirmation message.
+ */
+function handleSpawn(noun, words, neighbors) {
+  if (noun && isInt(noun)) {
+    createNpc(Number(noun));
+  } else {
+    createNpc();
+  }
+  return "";
+}
+
 // --- Command Registry ---
 
 /**
@@ -144,4 +157,6 @@ export const commandRegistry = {
   stats: handleStats,
 
   win: handleWin,
+
+  spawn: handleSpawn,
 };

@@ -1,5 +1,5 @@
 import { findShortestPath } from "./pathfinder.js";
-import { npcs, curLocation } from "./state.js";
+import { npcs, curLocation, allAreas } from "./state.js";
 
 const activities = [
   "eating an ice cream cone",
@@ -14,53 +14,46 @@ const activities = [
   "trying to pet a dog who keeps walking away",
   "applying deodorant",
   "describing an app idea",
-  "sitting in a restaurant",
+  "crying on a bench",
   "watching a commercial",
   "arguing about progressive rock",
   "attending a birthday party",
-  "sprinting to catch a bus",
-  "standing in line to use the bathroom",
-  "using their cell phone at a restaurant",
+  "pacing back and forth, mumbling",
+  "standing outside a locked bathroom",
+  "staring at their cell phone mindlessly",
   "making a cracker sandwich",
-  "Googling pictures of otters playing",
+  "looking at pictures of otters",
   "scratching a lottery ticket",
-  "renting a car",
+  "cleaning a rifle",
   "jumping out of a plane",
   "fumbling with chopsticks",
-  "at a gas station",
-  "at a rock concert",
-  "playing Wordle",
-  "grocery shopping",
-  "drinking bottled water on the street",
-  "passed out in a ditch",
+  "cracking open a bag of corn chips",
+  "singing to themself",
+  "working on the daily Jumble",
+  "doing some shopping",
+  "drinking bottled water",
+  "passed out",
   "training with small arms (small arms like a pistol, not small arms like a T-Rex)",
+  "jogging",
+  "writing in their diary",
+  "eating an egg",
+  "painting in watercolor",
 ];
 
-export function initializeNpcs(allAreas) {
-  const npcs = [
-    {
-      name: "AGENT",
-      location: allAreas[Math.floor(Math.random() * allAreas.length)],
-      moveCounter: 0,
-      moveInterval: 3, // moves every 3 player moves
-      attraction: "positive",
-    },
-    {
-      name: "CRIMINAL",
-      location: allAreas[Math.floor(Math.random() * allAreas.length)],
-      moveCounter: 0,
-      moveInterval: 3, // moves every 3 player moves
-      attraction: "negative",
-    },
-    {
-      name: "TOURIST",
-      location: allAreas[Math.floor(Math.random() * allAreas.length)],
-      moveCounter: 0,
-      moveInterval: 5, // moves every 5 player moves
-    },
-  ];
+const sampleNames = [
+  "ARTIE",
+  "BOB",
+  "CHRISTOPHER",
+  "DAN",
+  "EDGAR",
+  "FRANK",
+  "GERALD",
+  "HANK",
+];
+const sampleDescriptions = ["An angry man", "A fat man", "A rich man", "A handsome man"];
 
-  return npcs;
+export function initializeNpcs(allAreas) {
+  return [];
 }
 
 export function npcRandomStep(npc, getAttributeOfArea) {
@@ -72,6 +65,13 @@ export function npcRandomStep(npc, getAttributeOfArea) {
 }
 
 export function handleMonitor(noun, words, neighbors) {
+  if (npcs.length === 0) {
+    return (
+      "<p>Using your hacking skills, you zero in on your target, using keyhole satellites and closed-circuit cameras.</p>" +
+      "<p>However, at present there's no one to monitor.</p>"
+    );
+  }
+
   let messages = [];
   let npcsToDisplay = npcs;
 
@@ -103,16 +103,28 @@ export function handleMonitor(noun, words, neighbors) {
   );
 }
 
-const npcDescriptions = {
-  agent: "An interpol agent.",
-  stranger: "A criminal mastermind.",
-  tourist: "A tourist.",
-};
+export function createNpc(speed = 5) {
+  const name = sampleNames[Math.floor(Math.random() * sampleNames.length)];
+  const description =
+    sampleDescriptions[Math.floor(Math.random() * sampleDescriptions.length)];
 
-export function getNpcDescription(npc) {
-  return (
-    npcDescriptions[npc.name] ||
-    npc.description ||
-    `You see nothing special about ${npc.name}.`
+  // Filter out the player's current location
+  const availableLocations = allAreas.filter(
+    location => location.toLowerCase() !== curLocation.toLowerCase(),
   );
+
+  // Select a random location from the available locations
+  const location =
+    availableLocations[Math.floor(Math.random() * availableLocations.length)];
+
+  const newNpc = {
+    name,
+    description,
+    location,
+    moveCounter: 0,
+    moveInterval: speed,
+  };
+
+  console.log("New NPC created:", newNpc);
+  npcs.push(newNpc);
 }

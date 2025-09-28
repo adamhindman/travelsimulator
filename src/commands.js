@@ -17,7 +17,6 @@ import { render, promptField } from "./ui.js";
 
 // Imports from other modules
 import { findShortestPath } from "./pathfinder.js";
-import { getNpcDescription } from "./npc.js";
 import { itemIsInInventory } from "./inventory.js";
 import { inArray, capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { globe } from "./globe.js";
@@ -70,7 +69,7 @@ function handleLook(noun, words, neighbors) {
         npc.location.toLowerCase() === curLocation.toLowerCase(),
     );
     if (npc) {
-      const desc = getNpcDescription(npc);
+      const desc = npc.description || `You see nothing special about ${npc.name}.`;
       msg = `<p>${desc}</p>`;
     } else {
       msg = `<p>I don't see that here!</p>`;

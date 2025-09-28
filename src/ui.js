@@ -80,7 +80,9 @@ function getDisplay(val, msg, area, showLoc) {
   let npcHereLines = [];
   npcs.forEach(npc => {
     if (curLocation.toLowerCase() === npc.location.toLowerCase()) {
-      npcHereLines.push(`${npc.name} is here too!`);
+      npcHereLines.push(
+        `<span class="button npc" data-npc="${npc.name}">${npc.name}</span> is here too!`,
+      );
     }
   });
   const npcLineHtml = npcHereLines.length > 0 ? `${npcHereLines.join(" ")}` : "";
@@ -165,12 +167,19 @@ function handleTab(e) {
     case "ex":
     case "exits":
       {
-        let obj = "";
+        let lookTargets = [];
         if (isArray(getAttributeOfArea("objects"))) {
           const objects = getAttributeOfArea("objects").map(o => o.name);
-          obj = getFirstMatchedOption(noun, objects).toLowerCase();
+          lookTargets = lookTargets.concat(objects);
         }
-        e.target.value = `look ${obj}`;
+        const localNpcs = npcs
+          .filter(npc => npc.location.toLowerCase() === curLocation.toLowerCase())
+          .map(npc => npc.name);
+
+        lookTargets = lookTargets.concat(localNpcs);
+
+        const target = getFirstMatchedOption(noun, lookTargets).toLowerCase();
+        e.target.value = `look ${target}`;
       }
       break;
     default:
@@ -299,6 +308,9 @@ export function initListeners() {
     } else if (target.classList.contains("object")) {
       command = "look";
       value = target.dataset.object;
+    } else if (target.classList.contains("npc")) {
+      command = "look";
+      value = target.dataset.npc;
     }
 
     if (command && value) {
@@ -319,6 +331,9 @@ export function initListeners() {
     } else if (target.classList.contains("object")) {
       command = "look";
       value = target.dataset.object;
+    } else if (target.classList.contains("npc")) {
+      command = "look";
+      value = target.dataset.npc;
     }
 
     if (command && value) {

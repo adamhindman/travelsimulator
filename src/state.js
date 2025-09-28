@@ -1,5 +1,5 @@
 import { globe } from "./globe.js";
-import { initializeNpcs, npcRandomStep } from "./npc.js";
+import { initializeNpcs, npcRandomStep, createNpc } from "./npc.js";
 import { isArray, hashify } from "./utilities.js";
 
 // --- State Variables ---
