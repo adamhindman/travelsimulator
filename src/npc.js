@@ -33,7 +33,7 @@ export const activities = [
   "doing some shopping",
   "drinking bottled water",
   "passed out",
-  "training with small arms (small arms like a pistol, not small arms like a T-Rex)",
+  "training with small arms (small arms like a rifle, not small arms like a T-Rex)",
   "jogging",
   "writing in their diary",
   "eating an egg",
@@ -47,7 +47,7 @@ export const activities = [
   "pointing at a bird",
 ];
 
-const sampleNames = [
+const npcNames = [
   "ADRIAN",
   "ALBERT",
   "ALDO",
@@ -128,7 +128,7 @@ const sampleNames = [
   "ZUBAIR",
 ];
 
-export const sampleDescriptions = [
+export const npcDescriptions = [
   "A lean man carrying a violin case patched with stickers from cities that don’t quite match his accent. He sits on his pack, bow in hand, drawing a few testing notes that wobble between mournful and hopeful. When he notices you looking at him, he becomes bashful and puts his violin away quickly.",
   "A broad-shouldered man. His flannel sleeve is ripped nearly to the elbow, the threads catching in the wind. His exposed forearm reveals a tattoo of a cartoon dinosaur. He’s crouched over a battered map, smoothing it against his knee, frowning hard as though trying to will it into telling him where to go.",
   "A tall man whose boots gleam far too brightly compared to the rest of his clothing, which appears to have been dipped in mud. Perched on a fencepost like a buzzard, he sits polishing those boots feverishly with a rag. He speaks to them in a tone of gentle scolding, in a language you can't make out.",
@@ -202,15 +202,12 @@ export function handleMonitor(noun, words, neighbors) {
 }
 
 export function createNpc(speed = 5, area = null, excludeName = null) {
-  let availableNames = sampleNames;
+  let availableNames = npcNames;
   if (excludeName) {
-    availableNames = sampleNames.filter(
-      n => n.toLowerCase() !== excludeName.toLowerCase(),
-    );
+    availableNames = npcNames.filter(n => n.toLowerCase() !== excludeName.toLowerCase());
   }
   const name = availableNames[Math.floor(Math.random() * availableNames.length)];
-  const description =
-    sampleDescriptions[Math.floor(Math.random() * sampleDescriptions.length)];
+  const description = npcDescriptions[Math.floor(Math.random() * npcDescriptions.length)];
 
   let location;
   if (area && areaExists(area)) {

@@ -120,7 +120,7 @@ function handleTrack(noun, words, neighbors) {
       const distance = path.length - 1;
       const randomActivity = activities[Math.floor(Math.random() * activities.length)];
       messages.push(
-        `${npc.name} is ${distance} places away, in ${npc.location.toUpperCase()}, ${randomActivity}.`,
+        `<p>${npc.name} is ${distance} places away, in ${npc.location.toUpperCase()}, ${randomActivity}.</p>`,
       );
     } else {
       messages.push(`Could not track ${npc.name}.`);
