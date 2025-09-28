@@ -23,7 +23,7 @@ import { findShortestPath } from "./pathfinder.js";
 import { itemIsInInventory } from "./inventory.js";
 import { inArray, capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { globe } from "./globe.js";
-import { despawn, createNpc } from "./npc.js";
+import { despawn, createNpc, activities } from "./npc.js";
 
 // This function was orphaned during refactoring; it lives here now
 // because it is only used by handleLook.
@@ -111,23 +111,6 @@ function handleForget(noun, words, neighbors) {
   }, 2400);
   return msg;
 }
-
-const activities = [
-  "eating an ice cream cone",
-  "sleeping",
-  "looking for a cell phone charger",
-  "staring at the moon, drunk",
-  "getting mugged",
-  "chatting about the weather with a sad man",
-  "doom scrolling",
-  "taking a selfie",
-  "trying to pet a dog who keeps walking away",
-  "applying deodorant",
-  "describing an app idea",
-  "sitting in a restaurant",
-  "watching a commercial",
-  "arguing about progressive rock",
-];
 
 function handleTrack(noun, words, neighbors) {
   let messages = [];

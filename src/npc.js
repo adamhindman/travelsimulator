@@ -1,7 +1,7 @@
 import { findShortestPath } from "./pathfinder.js";
 import { npcs, curLocation, allAreas, saveNpcs, areaExists } from "./state.js";
 
-const activities = [
+export const activities = [
   "eating an ice cream cone",
   "sleeping",
   "looking for a cell phone charger",
@@ -38,6 +38,13 @@ const activities = [
   "writing in their diary",
   "eating an egg",
   "painting in watercolor",
+  "scratching a lottery ticket",
+  "eating pretzels in the dark",
+  "walking dully along",
+  "sharpening a machete",
+  "staring at the moon, drunk",
+  "sitting in a restaurant",
+  "pointing at a bird",
 ];
 
 const sampleNames = [
