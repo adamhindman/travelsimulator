@@ -4,22 +4,25 @@ export let inventory = [
   { name: "Gum", description: "A package of cinnamon gum." },
   { name: "Spare socks", description: "An extra pair of nice warm socks." },
   { name: "Sunscreen", description: "A tube of SPF-30." },
-  { name: "Yellow flashlight", description: "A bright yellow flashlight: the wanderer's companion"}
+  {
+    name: "Yellow flashlight",
+    description: "A bright yellow flashlight: the wanderer's companion",
+  },
 ];
 
 export const addToInventory = item => {};
 
 export const getItemDescription = item => {};
 
-export const handleInventory = () => {
+export const handleInventory = (noun, words, neighbors) => {
   return showInventory();
 };
 
-export const handleTake = item => {};
+export const handleTake = (noun, words, neighbors) => {};
 
 export const itemIsInInventory = item => {
   const matchingItems = inventory.filter(
-    it => it.name.toLowerCase() === item.toLowerCase()
+    it => it.name.toLowerCase() === item.toLowerCase(),
   );
   return [matchingItems.length > 0, matchingItems];
 };

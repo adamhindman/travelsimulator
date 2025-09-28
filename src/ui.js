@@ -10,6 +10,7 @@ import {
   areaExists,
   updateLocation,
   getAreaDescription,
+  handleEndGame,
 } from "./state.js";
 import { sluggify, dehashify, isArray } from "./utilities.js";
 import { endGameMsg } from "./endgame.js";
@@ -95,11 +96,16 @@ function getDisplay(val, msg, area, showLoc) {
       <p>${npcLineHtml}</p>
     </div>
   `;
+  let endGameHtml = "";
+  if (showEndGame && !endGameAlreadyShown) {
+    endGameHtml = endGameMsg;
+    handleEndGame(); // Mark as shown for subsequent renders
+  }
   return `
     ${val ? prompt : ""}
     ${msg ? message : loc}
     ${showLoc ? loc : ""}
-    ${showEndGame && !endGameAlreadyShown ? endGameMsg : ""}
+    ${endGameHtml}
   `;
 }
 
@@ -188,6 +194,40 @@ function getFirstMatchedOption(word, options) {
     });
   }
   return placeholder;
+}
+
+/**
+ * Handles the 'text' command to adjust the game's font size.
+ * @param {string} noun The size parameter (e.g., 'small', '1.5').
+ * @returns {string} A message to display to the user.
+ */
+export function handleText(noun) {
+  const root = document.documentElement;
+  let newSize;
+  const sizeMap = { small: 1.4, medium: 1.8, large: 2.1 };
+  const parsedNoun = parseFloat(noun);
+
+  if (sizeMap[noun]) {
+    newSize = sizeMap[noun];
+  } else if (noun === "default") {
+    newSize = 1.6;
+  } else if (!isNaN(parsedNoun) && parsedNoun >= 1 && parsedNoun <= 3) {
+    newSize = parsedNoun;
+  } else {
+    return 'Invalid command. Use "text small", "medium", "large", "default", or a number between 1 and 3.';
+  }
+  root.style.setProperty("--font-size-base", `${newSize}rem`);
+  localStorage.setItem("fontSize", newSize);
+  return `Text size set to ${newSize.toFixed(1)}rem.`;
+}
+
+/**
+ * Handles unknown verbs.
+ * @param {string} verb The unknown verb.
+ * @returns {string} A message to display to the user.
+ */
+export function handleUnknownVerb(verb) {
+  return `<p>I don't recognize the verb "${verb}".</p>`;
 }
 
 export function initListeners() {

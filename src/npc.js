@@ -1,4 +1,5 @@
 import { findShortestPath } from "./pathfinder.js";
+import { npcs, curLocation } from "./state.js";
 
 const activities = [
   "eating an ice cream cone",
@@ -58,7 +59,7 @@ export function initializeNpcs(allAreas) {
       moveInterval: 5, // moves every 5 player moves
     },
   ];
-  // npcs.forEach(npc => console.log(`${npc.name} starts at ${npc.location}`));
+
   return npcs;
 }
 
@@ -70,23 +71,11 @@ export function npcRandomStep(npc, getAttributeOfArea) {
   npc.location = newLocation;
 }
 
-export function calculateAndLogNpcDistances(npcs, curLocation) {
-  console.log("Calculating distances to NPCs:");
-  npcs.forEach(npc => {
-    const path = findShortestPath(curLocation, npc.location);
-    if (path) {
-      const distance = path.length - 1;
-      console.log(`Distance to ${npc.name} in ${npc.location}: ${distance} steps.`);
-    } else {
-      console.log(`Could not calculate distance to ${npc.name} in ${npc.location}.`);
-    }
-  });
-}
-
-export function handleMonitor(npcs, curLocation, npcName) {
+export function handleMonitor(noun, words, neighbors) {
   let messages = [];
   let npcsToDisplay = npcs;
 
+  const npcName = noun;
   if (npcName && npcName.length > 0) {
     npcsToDisplay = npcs.filter(npc => npc.name.toLowerCase().includes(npcName));
 

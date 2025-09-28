@@ -32,19 +32,9 @@ function itemIsInArea(noun) {
   return [index !== -1, index];
 }
 
-// This function was orphaned during refactoring; it lives here now
-// because it is only used by handleLook.
-function itemIsInArea(noun) {
-  const objs = getAttributeOfArea("objects");
-  if (!isArray(objs)) return [false, -1];
-  const objects = arrayToLowerCase(objs.map(o => o.name));
-  const index = objects.findIndex(item => item === noun);
-  return [index !== -1, index];
-}
-
 // Command Handlers
 
-function handleGo(noun, neighbors) {
+function handleGo(noun, words, neighbors) {
   if (neighbors.includes(noun)) {
     mutableState.playerTurnCount++;
     updateLocation(noun);
@@ -56,7 +46,7 @@ function handleGo(noun, neighbors) {
 
 // This function now returns an object { msg, showLoc } to solve a bug
 // where the showLoc flag was not being correctly updated.
-function handleLook(noun, words) {
+function handleLook(noun, words, neighbors) {
   let msg = "";
   let showLoc = false;
   const [inArea, oIndex] = itemIsInArea(noun);
@@ -89,7 +79,7 @@ function handleLook(noun, words) {
   return { msg, showLoc };
 }
 
-function handleTel(noun) {
+function handleTel(noun, words, neighbors) {
   if (areaExists(noun)) {
     mutableState.playerTurnCount++;
     updateLocation(noun);
@@ -98,7 +88,7 @@ function handleTel(noun) {
   return `<p>You can't teleport there; it doesn't exist!</p>`;
 }
 
-function handleForget() {
+function handleForget(noun, words, neighbors) {
   const msg = `You enter a fugue state and wander back home.`;
   setTimeout(() => {
     localStorage.clear();
@@ -125,7 +115,7 @@ const activities = [
   "arguing about progressive rock",
 ];
 
-function handleTrack() {
+function handleTrack(noun, words, neighbors) {
   let messages = [];
   npcs.forEach(npc => {
     const path = findShortestPath(curLocation, npc.location);
@@ -142,7 +132,7 @@ function handleTrack() {
   return messages.join("<br/>");
 }
 
-function handleCheckPassport() {
+function handleCheckPassport(noun, words, neighbors) {
   const visited = getVisitedCountries();
   let msg = `<div class="passport">You've visited ${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`;
   msg += allAreas.reduce((result, current) => {

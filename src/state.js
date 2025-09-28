@@ -1,5 +1,5 @@
 import { globe } from "./globe.js";
-import { initializeNpcs, npcRandomStep, calculateAndLogNpcDistances } from "./npc.js";
+import { initializeNpcs, npcRandomStep } from "./npc.js";
 import { isArray, hashify } from "./utilities.js";
 
 // --- State Variables ---
@@ -52,12 +52,15 @@ export function getAreaDescription(area = curLocation) {
 }
 
 export function handleEndGame() {
-  // Directly modifies the module-level 'showEndGame' variable
   const previously = showEndGame;
   showEndGame = globe.length <= getVisitedCountries().length;
-  // If the game was just won, reset the 'already shown' flag
+
+  // If the game was just won, allow the message to be shown once.
   if (!previously && showEndGame) {
     endGameAlreadyShown = false;
+  } else if (showEndGame) {
+    // On subsequent calls after winning, mark the message as shown.
+    endGameAlreadyShown = true;
   }
 }
 
@@ -92,7 +95,7 @@ export function updateLocation(destination) {
     npc.moveCounter++;
     if (npc.moveCounter >= npc.moveInterval) {
       npcRandomStep(npc, getAttributeOfArea);
-      console.log(`${npc.name} moves to ${npc.location}`);
+
       npc.moveCounter = 0;
     }
   });
@@ -102,7 +105,6 @@ export function updateLocation(destination) {
   if (document.location.hash !== hashify(destination)) {
     updateURLHash(destination);
   }
-  calculateAndLogNpcDistances(npcs, curLocation);
 }
 
 // Initial hydration of state from localStorage
