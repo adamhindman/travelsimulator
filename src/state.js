@@ -1,6 +1,13 @@
 import { globe } from "./globe.js";
-import { initializeNpcs, npcRandomStep, createNpc } from "./npc.js";
+import { npcRandomStep, createNpc } from "./npc.js";
 import { isArray, hashify } from "./utilities.js";
+
+function loadNpcs() {
+  const storedNpcs = localStorage.getItem("npcs");
+  if (!storedNpcs) return null;
+  const parsedNpcs = JSON.parse(storedNpcs);
+  return isArray(parsedNpcs) ? parsedNpcs : null;
+}
 
 // --- State Variables ---
 
@@ -10,7 +17,7 @@ export const defaultArea = "United States";
 
 // Player and NPC state
 export let curLocation = localStorage.getItem("lastLocation") || "United States";
-export let npcs = initializeNpcs(allAreas);
+export let npcs = loadNpcs() || [];
 export let visited = [];
 
 // Mutable state that needs to be an object to be passed by reference
@@ -49,6 +56,10 @@ export function getAttributeOfArea(attrib, area = curLocation) {
 
 export function getAreaDescription(area = curLocation) {
   return getAttributeOfArea("description", area) || "";
+}
+
+export function saveNpcs() {
+  localStorage.setItem("npcs", JSON.stringify(npcs));
 }
 
 export function handleEndGame() {
@@ -99,6 +110,8 @@ export function updateLocation(destination) {
       npc.moveCounter = 0;
     }
   });
+
+  saveNpcs();
 
   const nextTotalMoves = (Number(localStorage.getItem("totalMoves")) || 0) + 1;
   localStorage.setItem("totalMoves", nextTotalMoves);

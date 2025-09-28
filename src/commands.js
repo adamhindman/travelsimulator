@@ -20,6 +20,7 @@ import { findShortestPath } from "./pathfinder.js";
 import { itemIsInInventory } from "./inventory.js";
 import { inArray, capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { globe } from "./globe.js";
+import { despawn } from "./npc.js";
 
 // This function was orphaned during refactoring; it lives here now
 // because it is only used by handleLook.
@@ -173,6 +174,21 @@ function handleRandomWalk(steps = 500) {
   }, 50);
 }
 
+function handleDespawn(noun) {
+  if (!noun) {
+    return "<p>You must specify an NPC to remove.</p>";
+  }
+  const npcName = noun.toLowerCase();
+  const npcToRemove = npcs.find(npc => npc.name.toLowerCase() === npcName);
+
+  if (!npcToRemove) {
+    return `<p>NPC "${noun}" not found.</p>`;
+  }
+
+  despawn(npcToRemove.name);
+  return `<p>${npcToRemove.name} has been removed.</p>`;
+}
+
 export {
   handleGo,
   handleLook,
@@ -181,4 +197,5 @@ export {
   handleTrack,
   handleCheckPassport,
   handleRandomWalk,
+  handleDespawn,
 };

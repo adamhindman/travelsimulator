@@ -159,4 +159,6 @@ export const commandRegistry = {
   win: handleWin,
 
   spawn: handleSpawn,
+
+  despawn: commands.handleDespawn,
 };

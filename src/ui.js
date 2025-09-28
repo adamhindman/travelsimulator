@@ -143,6 +143,7 @@ function handleTab(e) {
     "randomwalk",
     "text",
     "win",
+    "despawn",
   ];
   let val = e.target.value.toLowerCase().replace(/\s+/g, " ").trim();
   const words = val.split(" ");

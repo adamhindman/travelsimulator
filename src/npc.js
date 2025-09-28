@@ -1,5 +1,5 @@
 import { findShortestPath } from "./pathfinder.js";
-import { npcs, curLocation, allAreas } from "./state.js";
+import { npcs, curLocation, allAreas, saveNpcs } from "./state.js";
 
 const activities = [
   "eating an ice cream cone",
@@ -52,16 +52,13 @@ const sampleNames = [
 ];
 const sampleDescriptions = ["An angry man", "A fat man", "A rich man", "A handsome man"];
 
-export function initializeNpcs(allAreas) {
-  return [];
-}
-
 export function npcRandomStep(npc, getAttributeOfArea) {
   const neighbors = getAttributeOfArea("neighbors", npc.location) || [];
   if (neighbors.length === 0) return;
 
   const newLocation = neighbors[Math.floor(Math.random() * neighbors.length)];
   npc.location = newLocation;
+  saveNpcs();
 }
 
 export function handleMonitor(noun, words, neighbors) {
@@ -127,4 +124,13 @@ export function createNpc(speed = 5) {
 
   console.log("New NPC created:", newNpc);
   npcs.push(newNpc);
+  saveNpcs();
+}
+
+export function despawn(name) {
+  const index = npcs.findIndex(npc => npc.name.toLowerCase() === name.toLowerCase());
+  if (index > -1) {
+    npcs.splice(index, 1);
+    saveNpcs();
+  }
 }

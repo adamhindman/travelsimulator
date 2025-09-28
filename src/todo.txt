@@ -1,4 +1,0 @@
-[ ] Count the number of teleports
-[ ] "Recite" command
-[ ] Add trophies to inventory
-[ ] Win condition?
