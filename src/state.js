@@ -108,6 +108,10 @@ export function updateLocation(destination) {
     npcsToDespawn = [];
   }
 
+  if (npcs.length === 0 && !mutableState.npcSpawnThreshold) {
+    initializeAutoSpawn();
+  }
+
   // Increment moveCounter for each NPC and move if their interval is reached
   npcs.forEach(npc => {
     npc.moveCounter++;
@@ -135,7 +139,7 @@ export function updateLocation(destination) {
     createNpc(5, destination);
     if (npcs.length > 0) {
       const npcName = npcs[npcs.length - 1].name;
-      spawnMessage = `<p>All of a sudden, you notice someone behind you.</p> "Hello, my name is <span class="button npc" data-npc="${npcName}">${npcName}</span>", he says. "I have a favor to ask of you."</p>`;
+      spawnMessage = `<p>All of a sudden, you notice someone behind you.</p> "Hello, my name is <span class="button npc" data-npc="${npcName}">${npcName}</span>", he says. "I have a favor to ask. Can you find my friend?"</p>`;
     }
     mutableState.npcSpawnThreshold = null; // Ensure this only runs once
   }

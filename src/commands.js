@@ -84,7 +84,7 @@ function handleLook(noun, words, neighbors) {
       }
 
       const desc = npc.description || `You see nothing special about ${npc.name}.`;
-      const questMsg = `"You should go find ${npc.questTargetName}. He's currently in ${npc.questTargetLocation}.\"<p>${npc.questTargetName} is on the move, so he may be gone by the time you get there. Use that fancy MONITOR you're carrying to find his current position.</p>`;
+      const questMsg = `"You look like a traveler. Will you please go find my friend ${npc.questTargetName.toUpperCase()}? He's currently in ${npc.questTargetLocation.toUpperCase()}.\"<p>${npc.questTargetName} is on the move, so he may be gone by the time you get there. Use that fancy MONITOR you're carrying to find his current position.</p>`;
       msg = `<p>${desc}</p><p>${questMsg}</p>`;
     } else {
       msg = `<p>I don't see that here!</p>`;
@@ -137,7 +137,7 @@ function handleTrack(noun, words, neighbors) {
       const distance = path.length - 1;
       const randomActivity = activities[Math.floor(Math.random() * activities.length)];
       messages.push(
-        `${npc.name} is ${distance} places away, in ${npc.location}, ${randomActivity}.`,
+        `${npc.name} is ${distance} places away, in ${npc.location.toUpperCase()}, ${randomActivity}.`,
       );
     } else {
       messages.push(`Could not track ${npc.name}.`);

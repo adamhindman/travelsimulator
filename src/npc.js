@@ -127,7 +127,7 @@ export const sampleDescriptions = [
   "A tall man whose boots gleam far too brightly compared to the rest of his clothing, which appears to have been dipped in mud. Perched on a fencepost like a buzzard, he sits polishing those boots feverishly with a rag. He speaks to them in a tone of gentle scolding, in a language you can't make out.",
   "This heavyset man is holding a leather satchel that has split along one seam. A few envelopes peeking out like escaping prisoners waiting for the guards to pass by.",
   "A wiry man with sharp cheekbones and a travel-stained wool coat dotted with what appear to be cigarette burns. He leans against a wall, flipping through a tiny leather notebook filled with cramped handwriting. His eyes keep darting in the same direction.",
-  "A wiry black-and-white dog with one torn ear and a patched leather satchel slung over his back. He’s gnawing on the strap of the satchel as if it were the corpse of a rabbit. His tail thumps with deep satisfaction. Every so often he drops the satchel, trots in a small circle, then drags it a few more feet down the road with single-minded determination.",
+  "It is a dog. A wiry black-and-white dog with one torn ear and a patched leather satchel slung over his back. He’s gnawing on the strap of the satchel as if it were the corpse of a rabbit. His tail thumps with deep satisfaction. Every so often he drops the satchel, trots in a small circle, then drags it a few more feet down the road with single-minded determination.",
   "A soft-faced man with sunburn across his forehead and a camera strap patterned in neon zigzags cutting across his chest. He’s standing in the middle of the road, turning in a slow circle to line up the perfect shot. From what you can observe, his photographic subject seems to be 'whatever is in front of me right now', from lightbulbs to trash cans, to the empty sky. He wears a baseball cap that looks like it’s survived a fistfight in a rainstorm.",
   "This man is wearing a dented steel helmet, vaguely medieval in design, which looks to be much too small for his head. He’s seated on a crate, unwrapping a greasy sandwich from brown paper and eating it with slow, methodical bites. Between mouthfuls, he squints down the road, as if waiting for someone—you, maybe?",
   "This is, unmistakably, a crow. It is large, greasy, and covered in black feathers. Possibly a raven. No, definitely a crow. <p>He’s perched on the handle of an abandoned cart, trying to open a dented box of crackers with his beak.</p>",
@@ -158,7 +158,7 @@ export function npcRandomStep(npc, getAttributeOfArea) {
 export function handleMonitor(noun, words, neighbors) {
   if (npcs.length === 0) {
     return (
-      "<p>Using your hacking skills, you zero in on your target, using keyhole satellites and closed-circuit cameras.</p>" +
+      "<p>With your state of the art handheld monitor, you easily zero in on the target by hacking keyhole satellites and closed-circuit cameras.</p>" +
       "<p>However, at present there's no one to monitor.</p>"
     );
   }
@@ -189,7 +189,7 @@ export function handleMonitor(noun, words, neighbors) {
   });
 
   return (
-    "<p>Using your hacking skills, you zero in on your target, using keyhole satellites and closed-circuit cameras.</p>" +
+    "<p>With your state of the art handheld monitor, you easily zero in on the target by hacking keyhole satellites and closed-circuit cameras.</p>" +
     messages.join("")
   );
 }
