@@ -156,7 +156,7 @@ export function initializeAutoSpawn() {
   if (npcs.length === 0 && !showEndGame) {
     const currentMoves = Number(localStorage.getItem("totalMoves")) || 0;
     // Set threshold to a future move count
-    mutableState.npcSpawnThreshold = currentMoves + Math.floor(Math.random() * 9) + 5;
+    mutableState.npcSpawnThreshold = currentMoves + Math.floor(Math.random() * 4) + 3;
   }
 }
 
