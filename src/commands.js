@@ -75,7 +75,7 @@ function handleLook(noun, words, neighbors) {
       // First time talking to this NPC, set up the quest target.
       if (!npc.questTargetName) {
         npc.hasBeenTalkedTo = true;
-        createNpc(); // Creates a new NPC at a random location
+        createNpc(5, null, npc.name); // Creates a new NPC at a random location
         const newNpc = npcs[npcs.length - 1];
         npc.questTargetName = newNpc.name;
         npc.questTargetLocation = newNpc.location;
@@ -84,7 +84,7 @@ function handleLook(noun, words, neighbors) {
       }
 
       const desc = npc.description || `You see nothing special about ${npc.name}.`;
-      const questMsg = `"You should go find ${npc.questTargetName}. He's currently in ${npc.questTargetLocation}."`;
+      const questMsg = `"You should go find ${npc.questTargetName}. He's currently in ${npc.questTargetLocation}.\"<p>${npc.questTargetName} is on the move, so he may be gone by the time you get there. Use that fancy MONITOR you're carrying to find his current position.</p>`;
       msg = `<p>${desc}</p><p>${questMsg}</p>`;
     } else {
       msg = `<p>I don't see that here!</p>`;
@@ -103,8 +103,9 @@ function handleTel(noun, words, neighbors) {
 
 function handleForget(noun, words, neighbors) {
   const msg = `You enter a fugue state and wander back home.`;
+  npcs.length = 0;
+  saveNpcs();
   setTimeout(() => {
-    localStorage.clear();
     updateURLHash(defaultArea);
     window.location.reload();
   }, 2400);

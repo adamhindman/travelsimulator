@@ -81,7 +81,7 @@ function getDisplay(val, msg, area, showLoc) {
   npcs.forEach(npc => {
     if (curLocation.toLowerCase() === npc.location.toLowerCase()) {
       npcHereLines.push(
-        `<span class="button npc" data-npc="${npc.name}">${npc.name}</span> is here too!`,
+        `<span class="button npc" data-npc="${npc.name}">${npc.name}</span> is here!`,
       );
     }
   });

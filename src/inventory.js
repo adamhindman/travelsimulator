@@ -8,6 +8,11 @@ export let inventory = [
     name: "Yellow flashlight",
     description: "A bright yellow flashlight: the wanderer's companion",
   },
+  {
+    name: "Monitor",
+    description:
+      "A handheld global satellite monitor, which can easily track the location of anyone, anywhere, at any time. Type MONITOR or TRACK to use it.",
+  },
 ];
 
 export const addToInventory = item => {};

@@ -11,8 +11,6 @@ export const helpText = `
     <li><span><strong>RANDOMWALK [#]</strong>: Walk around the map for # steps.</span></li>
     <li><span><strong>TEXT [small|medium|large|default|#]</strong>: Change the text size.</span></li>
     <li><span><strong>MONITOR [NPC]</strong>: Find out where an NPC is.</span></li>
-    <li><span><strong>SPAWN [area] [speed]</strong>: Create a new NPC with speed (1 is fastest).</span></li>
-    <li><span><strong>DESPAWN [NPC]</strong>: Remove an NPC from the game.</span></li>
     <li><span><strong>WIN</strong>: Win the game. This is the best way to cheat.</span></li>
   </ul>
   <p>After typing a command, you can press [TAB] to autocomplete it!</p>

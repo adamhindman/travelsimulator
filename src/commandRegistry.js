@@ -135,41 +135,26 @@ export const commandRegistry = {
   // Aliases first, then primary command name.
   go: commands.handleGo,
   walk: commands.handleGo,
-
   look: commands.handleLook,
   examine: commands.handleLook,
   ex: commands.handleLook,
   exits: commands.handleLook,
-
   tel: commands.handleTel,
   teleport: commands.handleTel,
-
   randomwalk: handleRandomWalkWrapper,
-
   forget: commands.handleForget,
-
   passport: commands.handleCheckPassport,
-
   track: commands.handleTrack,
-
   take: handleTake,
-
   i: handleInventory,
   inv: handleInventory,
   inventory: handleInventory,
-
   mon: handleMonitorWrapper,
   monitor: handleMonitorWrapper,
-
   text: handleText,
-
   help: handleHelp,
-
   stats: handleStats,
-
   win: handleWin,
-
   spawn: handleSpawn,
-
   despawn: commands.handleDespawn,
 };

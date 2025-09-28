@@ -135,7 +135,7 @@ export function updateLocation(destination) {
     createNpc(5, destination);
     if (npcs.length > 0) {
       const npcName = npcs[npcs.length - 1].name;
-      spawnMessage = `<p>You notice <span class="button npc" data-npc="${npcName}">${npcName}</span> has arrived.</p>`;
+      spawnMessage = `<p>All of a sudden, you notice someone behind you.</p> "Hello, my name is <span class="button npc" data-npc="${npcName}">${npcName}</span>", he says. "I have a favor to ask of you."</p>`;
     }
     mutableState.npcSpawnThreshold = null; // Ensure this only runs once
   }
@@ -152,7 +152,7 @@ export function initializeAutoSpawn() {
   if (npcs.length === 0 && !showEndGame) {
     const currentMoves = Number(localStorage.getItem("totalMoves")) || 0;
     // Set threshold to a future move count
-    mutableState.npcSpawnThreshold = currentMoves + Math.floor(Math.random() * 1) + 1;
+    mutableState.npcSpawnThreshold = currentMoves + Math.floor(Math.random() * 9) + 5;
   }
 }
 
