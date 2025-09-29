@@ -78,6 +78,10 @@ export function handleEndGame() {
   }
 }
 
+export function resetEndGame() {
+  endGameAlreadyShown = false;
+}
+
 export function updateURLHash(destination) {
   const hash = hashify(destination);
   if (history.pushState) {

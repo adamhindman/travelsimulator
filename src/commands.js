@@ -15,6 +15,7 @@ import {
   saveNpcs,
   initializeAutoSpawn,
   npcsToDespawn,
+  resetEndGame,
 } from "./state.js";
 import { render, promptField } from "./ui.js";
 
@@ -105,6 +106,9 @@ function handleForget(noun, words, neighbors) {
   const msg = `You enter a fugue state and wander back home.`;
   npcs.length = 0;
   saveNpcs();
+  resetEndGame();
+  localStorage.setItem("visited", JSON.stringify([]));
+  localStorage.setItem("totalMoves", "0");
   setTimeout(() => {
     updateURLHash(defaultArea);
     window.location.reload();
