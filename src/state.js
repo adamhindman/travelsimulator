@@ -29,7 +29,6 @@ export const mutableState = {
 
 // Game flow state
 export let showEndGame = false;
-// This was originally in app.js but is only used in ui.js. We'll keep it with the other state.
 export let endGameAlreadyShown = false;
 
 // --- State Management Functions ---
@@ -64,15 +63,18 @@ export function saveNpcs() {
 }
 
 export function handleEndGame() {
-  const previously = showEndGame;
-  showEndGame = globe.length <= getVisitedCountries().length;
+  const won = globe.length <= getVisitedCountries().length;
 
-  // If the game was just won, allow the message to be shown once.
-  if (!previously && showEndGame) {
-    endGameAlreadyShown = false;
-  } else if (showEndGame) {
-    // On subsequent calls after winning, mark the message as shown.
+  if (showEndGame) {
+    // This is the turn *after* the win message was displayed.
+    // Permanently mark it as shown and disable the show flag.
     endGameAlreadyShown = true;
+    showEndGame = false;
+  }
+
+  if (won && !endGameAlreadyShown) {
+    // This is the turn the user wins.
+    showEndGame = true;
   }
 }
 

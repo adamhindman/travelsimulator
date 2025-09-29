@@ -3,14 +3,12 @@ import {
   curLocation,
   npcs,
   showEndGame,
-  endGameAlreadyShown,
   mutableState,
   allAreas,
   getAttributeOfArea,
   areaExists,
   updateLocation,
   getAreaDescription,
-  handleEndGame,
 } from "./state.js";
 import { sluggify, dehashify, isArray } from "./utilities.js";
 import { endGameMsg } from "./endgame.js";
@@ -99,9 +97,8 @@ function getDisplay(val, msg, area, showLoc) {
     </div>
   `;
   let endGameHtml = "";
-  if (showEndGame && !endGameAlreadyShown) {
+  if (showEndGame) {
     endGameHtml = endGameMsg;
-    handleEndGame(); // Mark as shown for subsequent renders
   }
   return `
     ${val ? prompt : ""}
