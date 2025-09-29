@@ -84,6 +84,13 @@ function handleLook(noun, words, neighbors) {
         saveNpcs();
       }
 
+      // Every time you look at an NPC, add their name to a list.
+      let metNpcs = JSON.parse(localStorage.getItem("metNpcs") || "[]");
+      if (!metNpcs.includes(npc.name)) {
+        metNpcs.push(npc.name);
+        localStorage.setItem("metNpcs", JSON.stringify(metNpcs));
+      }
+
       const desc = npc.description || `You see nothing special about ${npc.name}.`;
       const questMsg = `"You look like a traveler. Will you please go find my friend ${npc.questTargetName.toUpperCase()}? He's currently in ${npc.questTargetLocation.toUpperCase()}.\"<p>${npc.questTargetName} is on the move, so he may be gone by the time you get there. Use that fancy MONITOR you're carrying to find his current position.</p>`;
       msg = `<p>${desc}</p><p>${questMsg}</p>`;
@@ -109,6 +116,7 @@ function handleForget(noun, words, neighbors) {
   resetEndGame();
   localStorage.setItem("visited", JSON.stringify([]));
   localStorage.setItem("totalMoves", "0");
+  localStorage.removeItem("metNpcs");
   setTimeout(() => {
     updateURLHash(defaultArea);
     window.location.reload();
@@ -136,12 +144,16 @@ function handleTrack(noun, words, neighbors) {
 function handleCheckPassport(noun, words, neighbors) {
   const visited = getVisitedCountries();
   let msg = `<div class="passport">You've visited ${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`;
+  const metNpcs = JSON.parse(localStorage.getItem("metNpcs") || "[]");
   msg += allAreas.reduce((result, current) => {
     if (inArray(current.toLowerCase(), visited)) {
       return result + `<span class="visited">${capitalize(current)}</span>`;
     }
     return result + `<span class="not-visited">${capitalize(current)}</span>`;
   }, "");
+  if (metNpcs.length > 0) {
+    msg += `<p>People you've met: ${metNpcs.join(", ")}.</p>`;
+  }
   return `${msg}</p></div>`;
 }
 
