@@ -29,7 +29,8 @@ export const mutableState = {
 
 // Game flow state
 export let showEndGame = false;
-export let endGameAlreadyShown = false;
+export let endGameAlreadyShown =
+  JSON.parse(localStorage.getItem("endGameAlreadyShown")) || false;
 
 // --- State Management Functions ---
 
@@ -65,21 +66,19 @@ export function saveNpcs() {
 export function handleEndGame() {
   const won = globe.length <= getVisitedCountries().length;
 
-  if (showEndGame) {
-    // This is the turn *after* the win message was displayed.
-    // Permanently mark it as shown and disable the show flag.
-    endGameAlreadyShown = true;
-    showEndGame = false;
-  }
-
   if (won && !endGameAlreadyShown) {
     // This is the turn the user wins.
     showEndGame = true;
+    endGameAlreadyShown = true;
+    localStorage.setItem("endGameAlreadyShown", JSON.stringify(true));
+  } else {
+    showEndGame = false;
   }
 }
 
 export function resetEndGame() {
   endGameAlreadyShown = false;
+  localStorage.removeItem("endGameAlreadyShown");
 }
 
 export function updateURLHash(destination) {
