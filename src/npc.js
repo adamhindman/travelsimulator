@@ -45,6 +45,7 @@ export const activities = [
   "staring at the moon, drunk",
   "sitting in a restaurant",
   "pointing at a bird",
+  "watching a movie",
 ];
 
 const npcNames = [
@@ -129,6 +130,7 @@ const npcNames = [
 ];
 
 export const npcDescriptions = [
+  'A surprisingly regular looking dude. He is carrying a brown paper bag, and when you ask about it he says. "Oh, this? Just some Skittles."<p>He offers you some Skittles, and then pours them carefully into your open palm.</p>',
   "A lean man carrying a violin case patched with stickers from cities that don’t quite match his accent. He sits on his pack, bow in hand, drawing a few testing notes that wobble between mournful and hopeful. When he notices you looking at him, he becomes bashful and puts his violin away quickly.",
   "A broad-shouldered man. His flannel sleeve is ripped nearly to the elbow, the threads catching in the wind. His exposed forearm reveals a tattoo of a cartoon dinosaur. He’s crouched over a battered map, smoothing it against his knee, frowning hard as though trying to will it into telling him where to go.",
   "A tall man whose boots gleam far too brightly compared to the rest of his clothing, which appears to have been dipped in mud. Perched on a fencepost like a buzzard, he sits polishing those boots feverishly with a rag. He speaks to them in a tone of gentle scolding, in a language you can't make out.",
