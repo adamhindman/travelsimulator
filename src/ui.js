@@ -61,7 +61,8 @@ export function render(val = null, msg = null, area = curLocation, showLoc = fal
     } else {
       consoleEl.scrollIntoView(true);
     }
-  }, 500);
+    promptField.value = "";
+  }, 0);
 }
 
 function getDisplay(val, msg, area, showLoc) {
@@ -290,40 +291,16 @@ export function initListeners() {
     handleSubmit(promptField.value);
   });
 
-  // document.querySelector("html").addEventListener("click", () => {
-  //   focusOnPrompt();
-  // });
+  document.addEventListener("click", () => {
+    // If the user isn't selecting text, focus the prompt.
+    if (window.getSelection().toString().length === 0) {
+      focusOnPrompt();
+    }
+  });
 
   // Setup event delegation for the main display area
   const displayEl = document.getElementById("display");
-  let clickTimeout;
   displayEl.addEventListener("click", e => {
-    clickTimeout = setTimeout(() => {
-      const target = e.target;
-      let command, value;
-
-      if (target.classList.contains("destination")) {
-        command = "go";
-        value = target.dataset.destination;
-      } else if (target.classList.contains("object")) {
-        command = "look";
-        value = target.dataset.object;
-      } else if (target.classList.contains("npc")) {
-        command = "look";
-        value = target.dataset.npc;
-      }
-
-      if (command && value) {
-        promptField.value = `${command} ${value.toLowerCase()}`;
-        submitBtn.classList.add("shown");
-        focusOnPrompt();
-      }
-    }, 500);
-  });
-
-  // Handle double-clicks to populate and submit immediately
-  displayEl.addEventListener("dblclick", e => {
-    clearTimeout(clickTimeout);
     const target = e.target;
     let command, value;
 
@@ -340,7 +317,6 @@ export function initListeners() {
 
     if (command && value) {
       const fullCommand = `${command} ${value.toLowerCase()}`;
-      promptField.value = fullCommand;
       handleSubmit(fullCommand);
     }
   });

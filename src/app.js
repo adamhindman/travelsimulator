@@ -58,7 +58,6 @@ function handleSubmit(val) {
   render(val, msg, curLocation, showLoc);
   focusOnPrompt();
   submitBtn.classList.remove("shown");
-  promptField.value = "";
 }
 
 // --- Initialization ---
