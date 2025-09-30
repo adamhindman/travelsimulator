@@ -290,36 +290,40 @@ export function initListeners() {
     handleSubmit(promptField.value);
   });
 
-  document.querySelector("html").addEventListener("click", () => {
-    focusOnPrompt();
-  });
+  // document.querySelector("html").addEventListener("click", () => {
+  //   focusOnPrompt();
+  // });
 
   // Setup event delegation for the main display area
   const displayEl = document.getElementById("display");
+  let clickTimeout;
   displayEl.addEventListener("click", e => {
-    const target = e.target;
-    let command, value;
+    clickTimeout = setTimeout(() => {
+      const target = e.target;
+      let command, value;
 
-    if (target.classList.contains("destination")) {
-      command = "go";
-      value = target.dataset.destination;
-    } else if (target.classList.contains("object")) {
-      command = "look";
-      value = target.dataset.object;
-    } else if (target.classList.contains("npc")) {
-      command = "look";
-      value = target.dataset.npc;
-    }
+      if (target.classList.contains("destination")) {
+        command = "go";
+        value = target.dataset.destination;
+      } else if (target.classList.contains("object")) {
+        command = "look";
+        value = target.dataset.object;
+      } else if (target.classList.contains("npc")) {
+        command = "look";
+        value = target.dataset.npc;
+      }
 
-    if (command && value) {
-      promptField.value = `${command} ${value.toLowerCase()}`;
-      submitBtn.classList.add("shown");
-      focusOnPrompt();
-    }
+      if (command && value) {
+        promptField.value = `${command} ${value.toLowerCase()}`;
+        submitBtn.classList.add("shown");
+        focusOnPrompt();
+      }
+    }, 500);
   });
 
   // Handle double-clicks to populate and submit immediately
   displayEl.addEventListener("dblclick", e => {
+    clearTimeout(clickTimeout);
     const target = e.target;
     let command, value;
 
