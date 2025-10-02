@@ -12,6 +12,7 @@ import {
 } from "./state.js";
 import { sluggify, dehashify, isArray } from "./utilities.js";
 import { endGameMsg } from "./endgame.js";
+import { inventory } from "./inventory.js";
 
 // DOM Elements
 export const logoEl = document.querySelector("#logo");
@@ -177,6 +178,9 @@ function handleTab(e) {
 
         lookTargets = lookTargets.concat(localNpcs);
 
+        const inventoryItems = inventory.map(item => item.name);
+        lookTargets = lookTargets.concat(inventoryItems);
+
         const target = getFirstMatchedOption(noun, lookTargets).toLowerCase();
         e.target.value = `look ${target}`;
       }
@@ -307,12 +311,18 @@ export function initListeners() {
     if (target.classList.contains("destination")) {
       command = "go";
       value = target.dataset.destination;
-    } else if (target.classList.contains("object")) {
+    } else if (
+      target.classList.contains("object") ||
+      target.classList.contains("inventory-object")
+    ) {
       command = "look";
       value = target.dataset.object;
     } else if (target.classList.contains("npc")) {
       command = "look";
       value = target.dataset.npc;
+    } else if (target.classList.contains("item")) {
+      command = "look";
+      value = target.dataset.item;
     }
 
     if (command && value) {

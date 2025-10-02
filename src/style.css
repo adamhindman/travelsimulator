@@ -74,6 +74,9 @@ blockquote {
     display: inline-block;
     text-transform: uppercase;
 }
+#display .inventory-object {
+    text-transform: none;
+}
 #display .object:hover,
 #display .npc:hover {
     background-color: #3f3;

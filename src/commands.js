@@ -21,10 +21,18 @@ import { render, promptField } from "./ui.js";
 
 // Imports from other modules
 import { findShortestPath } from "./pathfinder.js";
-import { itemIsInInventory } from "./inventory.js";
+import {
+  itemIsInInventory,
+  checkForQuestNote,
+  removeFromInventory,
+  inventory,
+  initialInventory,
+  saveInventory,
+  clearQuestNotes,
+} from "./inventory.js";
 import { inArray, capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { globe } from "./globe.js";
-import { despawn, createNpc, activities } from "./npc.js";
+import { despawn, createNpc, activities, handleLookAtNpc } from "./npc.js";
 
 // This function was orphaned during refactoring; it lives here now
 // because it is only used by handleLook.
@@ -73,27 +81,7 @@ function handleLook(noun, words, neighbors) {
         npc.location.toLowerCase() === curLocation.toLowerCase(),
     );
     if (npc) {
-      // First time talking to this NPC, set up the quest target.
-      if (!npc.questTargetName) {
-        npc.hasBeenTalkedTo = true;
-        createNpc(5, null, npc.name); // Creates a new NPC at a random location
-        const newNpc = npcs[npcs.length - 1];
-        npc.questTargetName = newNpc.name;
-        npc.questTargetLocation = newNpc.location;
-        npcsToDespawn.push(npc.name);
-        saveNpcs();
-      }
-
-      // Every time you look at an NPC, add their name to a list.
-      let metNpcs = JSON.parse(localStorage.getItem("metNpcs") || "[]");
-      if (!metNpcs.includes(npc.name)) {
-        metNpcs.push(npc.name);
-        localStorage.setItem("metNpcs", JSON.stringify(metNpcs));
-      }
-
-      const desc = npc.description || `You see nothing special about ${npc.name}.`;
-      const questMsg = `"You look like a traveler. Will you please go find my friend ${npc.questTargetName.toUpperCase()}? He's currently in ${npc.questTargetLocation.toUpperCase()}.\"<p>${npc.questTargetName} is on the move, so he may be gone by the time you get there. Use that fancy MONITOR you're carrying to find his current position.</p>`;
-      msg = `<p>${desc}</p><p>${questMsg}</p>`;
+      msg = handleLookAtNpc(npc);
     } else {
       msg = `<p>I don't see that here!</p>`;
     }
@@ -112,11 +100,16 @@ function handleTel(noun, words, neighbors) {
 function handleForget(noun, words, neighbors) {
   const msg = `You enter a fugue state and wander back home.`;
   npcs.length = 0;
-  saveNpcs();
+  localStorage.removeItem("npcs");
   resetEndGame();
   localStorage.setItem("visited", JSON.stringify([]));
   localStorage.setItem("totalMoves", "0");
   localStorage.removeItem("metNpcs");
+  clearQuestNotes();
+  inventory.length = 0;
+  inventory.push(...initialInventory);
+  saveInventory();
+
   setTimeout(() => {
     updateURLHash(defaultArea);
     window.location.reload();

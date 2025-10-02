@@ -1,0 +1,11 @@
+export const findFriendNoteTemplates = [
+  "A note that says: find ",
+  "A wanted poster for ",
+  "A hastily scribbled message: find ",
+  "An official-looking document requesting you find ",
+  "A crumpled piece of paper that says: please locate ",
+  "A child's drawing of a man, labeled ",
+  "A picture of ",
+  "A printed out email begging you to find ",
+  "A silver bracelet inscribed with a name: ",
+];

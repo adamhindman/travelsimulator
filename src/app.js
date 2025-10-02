@@ -19,6 +19,7 @@ import { curLocation, updatePassport, getAttributeOfArea } from "./state.js";
 
 // The new command registry
 import { commandRegistry } from "./commandRegistry.js";
+import { loadInventory } from "./inventory.js";
 
 // --- Main Application Logic ---
 
@@ -63,6 +64,7 @@ function handleSubmit(val) {
 // --- Initialization ---
 
 if (storageAvailable("localStorage")) {
+  loadInventory();
   applySavedFontSize();
   initListeners();
   updatePassport(); // Make sure passport is up-to-date on load

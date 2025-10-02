@@ -1,5 +1,7 @@
 import { findShortestPath } from "./pathfinder.js";
 import { npcs, curLocation, allAreas, saveNpcs, areaExists } from "./state.js";
+import { findFriendNoteTemplates } from "./quests.js";
+import { addToInventory } from "./inventory.js";
 
 export const activities = [
   "eating an ice cream cone",
@@ -203,6 +205,35 @@ export function handleMonitor(noun, words, neighbors) {
   );
 }
 
+export function handleLookAtNpc(npc) {
+  // When you look at an NPC, you get their description.
+  // If you haven't talked to them before, they give you a quest.
+  let response = `<p>${npc.description}</p>`;
+
+  if (!npc.hasBeenTalkedTo) {
+    npc.hasBeenTalkedTo = true;
+
+    // Create a new NPC for the player to find
+    createNpc(5, null, npc.name);
+    const targetNpc = npcs[npcs.length - 1]; // The NPC we just created
+    npc.questTargetName = targetNpc.name;
+
+    // Select a random quest message and add it to the player's inventory
+    const noteTemplate =
+      findFriendNoteTemplates[Math.floor(Math.random() * findFriendNoteTemplates.length)];
+    const questNote = `${noteTemplate}${targetNpc.name.toUpperCase()}`;
+    addToInventory({
+      name: questNote,
+      description: "That's pretty much all it says.",
+    });
+
+    response += `<p>"Have you seen my friend, ${targetNpc.name}?" he asks. "I seem to have lost them."</p><p>He hands you something that you put in your INVENTORY.</p>`;
+    saveNpcs();
+  }
+
+  return response;
+}
+
 export function createNpc(speed = 5, area = null, excludeName = null) {
   let availableNames = npcNames;
   if (excludeName) {
@@ -245,4 +276,41 @@ export function despawn(name) {
     npcs.splice(index, 1);
     saveNpcs();
   }
+}
+
+export function handleTalkToNpc(npc) {
+  if (npc.hasBeenTalkedTo) {
+    return `You've already spoken to ${npc.name}.`;
+  }
+
+  npc.hasBeenTalkedTo = true;
+
+  // If you're the only NPC, we need to create another one to be the quest target.
+  if (npcs.length < 2) {
+    createNpc();
+  }
+
+  // Find an NPC for the quest that isn't the current one
+  const otherNpcs = npcs.filter(n => n.name !== npc.name);
+  if (otherNpcs.length > 0) {
+    const targetNpc = otherNpcs[Math.floor(Math.random() * otherNpcs.length)];
+    npc.questTargetName = targetNpc.name;
+
+    const noteTemplate =
+      findFriendNoteTemplates[Math.floor(Math.random() * findFriendNoteTemplates.length)];
+    const note = `${noteTemplate}${targetNpc.name.toUpperCase()}`;
+    addToInventory({
+      name: note,
+      description: "That's pretty much all it says.",
+    });
+
+    saveNpcs();
+
+    return `${
+      npc.name
+    } asks you to find their friend, ${targetNpc.name.toUpperCase()}. A note has been added to your inventory.`;
+  }
+
+  saveNpcs();
+  return `${npc.name} has nothing to say.`;
 }
