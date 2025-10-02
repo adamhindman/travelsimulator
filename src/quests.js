@@ -8,4 +8,8 @@ export const findFriendNoteTemplates = [
   "A picture of ",
   "A printed out email begging you to find ",
   "A silver bracelet inscribed with a name: ",
+  "A pewter bust in the shape of ",
+  "A Polaroid photo of a man, labeled ",
+  "An old-fashioned calling card that says ",
+  "A newspaper clipping about someone named ",
 ];
