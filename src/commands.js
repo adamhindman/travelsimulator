@@ -75,9 +75,10 @@ function handleLook(noun, words, neighbors) {
     msg = `<p>${invItems[0].description}</p>`;
   } else {
     // Check if noun matches any NPC name in current location
+    const lowerNoun = noun.toLowerCase();
     const npc = npcs.find(
       npc =>
-        npc.name.toLowerCase() === noun.toLowerCase() &&
+        npc.name.toLowerCase() === lowerNoun &&
         npc.location.toLowerCase() === curLocation.toLowerCase(),
     );
     if (npc) {
@@ -98,6 +99,23 @@ function handleTel(noun, words, neighbors) {
 }
 
 function handleForget(noun, words, neighbors) {
+  if (noun) {
+    const item = localStorage.getItem(noun);
+    if (item) {
+      localStorage.removeItem(noun);
+      if (noun.toLowerCase() === "npcs") {
+        npcs.length = 0;
+        localStorage.removeItem("metNpcs");
+      }
+      if (noun.toLowerCase() === "inventory") {
+        inventory.length = 0;
+        inventory.push(...initialInventory);
+      }
+      return `<p>The contents of ${noun} have been forgotten.</p>`;
+    } else {
+      return `<p>There is nothing to forget about ${noun}.</p>`;
+    }
+  }
   const msg = `You enter a fugue state and wander back home.`;
   npcs.length = 0;
   localStorage.removeItem("npcs");
@@ -145,7 +163,7 @@ function handleCheckPassport(noun, words, neighbors) {
     return result + `<span class="not-visited">${capitalize(current)}</span>`;
   }, "");
   if (metNpcs.length > 0) {
-    msg += `<p>People you've met: ${metNpcs.join(", ")}.</p>`;
+    msg += `<p>New friends you've made: ${metNpcs.join(", ")}.</p>`;
   }
   return `${msg}</p></div>`;
 }

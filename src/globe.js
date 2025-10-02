@@ -843,8 +843,9 @@ export let globe = [
     objects: [
       {
         name: "OKAVANGO DELTA",
-        article: "",
-        description: "",
+        article: "The",
+        description:
+          "<p>The Okavango Delta is a vast wetland that greatly expands and recedes in size with seasonal flooding.</p><p>You arrive in the high season, when animals from far and wide come to the delta to get a drink, sometimes even two or three.</p><p>On the first day, you spot a variety of fauna, including the crested porcupine, the honey badger, and the aardvark, not to mention a hippopotamus, a bat-eared fox, a chacma baboon, a secretary bird, and a common warthog. Wow!</p><p>The next day, you encounter a giraffe, an African savanna hare, a spotted hyena, an aardwolf, two vervet monkeys, a serval, a nile crocodile, some wattled cranes, a triceratops, a black-backed jackal, a cheetah chasing another cheetah, a hippoptamus again, and lastly a pack of African wild dogs.</p><p>Later that night, while urinating into the bushes, you catch a glimpse of a blue wildebeest!</p><p>After seeing all that, you're almost ready to leave, but you think better of it and decide to stay another day.</p><p>It's a good thing too, because otherwise you might have missed the plains zebra, velociratpr, impala, puku, tsessebe, sable antelope, marabou stork, Brian May from Queen, roan antelope, sitatunga, waterbuck, common eland, and greater kudu.</p><p>\"Nice to meet you!\" says Brian.</p>",
       },
       {
         name: "CATTLE WEALTH",

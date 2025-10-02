@@ -213,6 +213,12 @@ export function handleLookAtNpc(npc) {
   if (!npc.hasBeenTalkedTo) {
     npc.hasBeenTalkedTo = true;
 
+    const metNpcs = JSON.parse(localStorage.getItem("metNpcs") || "[]");
+    if (!metNpcs.includes(npc.name)) {
+      metNpcs.push(npc.name);
+      localStorage.setItem("metNpcs", JSON.stringify(metNpcs));
+    }
+
     // Create a new NPC for the player to find
     createNpc(5, null, npc.name);
     const targetNpc = npcs[npcs.length - 1]; // The NPC we just created
@@ -227,7 +233,7 @@ export function handleLookAtNpc(npc) {
       description: "That's pretty much all it says.",
     });
 
-    response += `<p>"Have you seen my friend, ${targetNpc.name}?" he asks. "I seem to have lost them."</p><p>He hands you something that you put in your INVENTORY.</p>`;
+    response += `<p>"Have you seen my friend, ${targetNpc.name}?" he asks. "The last place I saw them was ${targetNpc.location.toUpperCase()}."</p><p>He hands you something that you put in your INVENTORY.</p>`;
     saveNpcs();
   }
 
