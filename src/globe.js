@@ -842,9 +842,21 @@ export let globe = [
       "Botswana is an African country covering 190,623 square miles in the Kalahari Basin. The population is made up of three ethnic groups: the Tswana, Kalanga, and San. Political power is shared among tribal leaders, known as the kgosi.",
     objects: [
       {
-        name: "CAMEL THORN",
-        article: "A",
-        description: "A tree that flourishes in the arid Kalahari desert.",
+        name: "OKAVANGO DELTA",
+        article: "",
+        description: "",
+      },
+      {
+        name: "CATTLE WEALTH",
+        article: "",
+        description:
+          '<p>For centuries, cattle have been a sign of wealth and status in Botswana, and even now, when diamond mining has made the country among the wealthiest in the region, many people still buy cattle to show off how rich they are.</p><p>"I don\'t have any cattle at all!" you tell your new friend Kabelo. "Maybe I should buy a few head, just so people take me seriously."</p><p>The truck hits a bump in the dirt road, and you momentarily lift off the seat. You\'re driving across Kabelo\'s property, looking out at the arid pasture land where thousands of his family\'s cows are grazing on the short, brown grass.</p><p>"It\'s not a big deal. People here don\'t expect you to go around showing off your cattle like some big shot."</p>"I know, but I want the respect that comes with having a lot of cows. Like you! I see how people look at you when you walk into a room. That\'s what I want too."</p>Your memory flashes back to yesterday night, at the restaurant in Gaborone. The way the manager deferred to him. The waiter, fawning, always quick to refill Kabelo\'s drink before anyone else\'s. How everyone, man and woman alike, kept stealing glances at him, like they could see the 3700 head of healthy beef cattle in every flash of his perfect smile.</p><p>A terrible thought enters your mind. The glove compartment. The pistol.</p><p>You shake off the thought.</p><p>"Kabelo, let\'s stop here, I want to stretch my legs."</p><p>The air is thick with dust. You can hear the vast herd moving slowly on the other side of a low hill, next to a shallow watering hole. A few strays wander over to inspect you as you hike up a short cow path to get a better view of them.</p><p>"They are teaching their calves about the watering hole," he says, catching up to you.</p><p>He nods at the young cows lapping muddy water from the ground.</p><p>"There are rules here, as with everything else. For instance, this water is seasonal; in a month it will be gone. So they must know when they can count on it, and when they cannot. And then there are predators: Lions, jackals, hyenas. Those who would catch them standing by the water."</p><p>You look up to see that he\'s grinning at you. That perfect smile again.</p><p>"I guess you always have to be on guard for that kind of thing, I suppose. Night and day. Protecting your wealth must be a lot of work."</p><p>He slaps you on the shoulder. "This is what I was trying to tell you. There\'s no end to the work! I envy your freedom, my friend. The freedom to go anywhere in the world, while I  stand here on guard."</p><p>Driving back to the compound, you reflect on true wealth. Perhaps there\'s more to life than cattle after all.</p>',
+      },
+      {
+        name: "CHAPMAN'S BAOBAB",
+        article: "",
+        description:
+          "<p>The heat of the day makes the air quiver like a scorpion’s tail. You have walked 150 miles across the hot, dry Makgadikgadi Pans to see this enormous baobab tree, which once rose like a tower from the flat salt bed of the extinct lake.</p><p>Eighty feet tall and eighty feet around, it was made up of seven massive trunks fused together, looming above the thorny scrub scattered at its base. Travelers could spot it from a full day’s distance, and it became a navigational beacon, a source of shade, and even a wilderness post office where letters were left for others to carry on their return.</p><p>Like so many famous trees in history, it eventually fell. No one knows exactly how—climate change is assumed to have played a role. The fall appears natural; there are no chainsaw marks to suggest otherwise.</p><p>Now it lies in a sprawling heap of wood, too heavy to move, too revered to burn. Some even say it's still alive.</p><p>As you stop to relieve yourself, you notice a yellowed envelope in the grass—an undelivered letter addressed to Thomas Baines, from James Chapman.</p><p>What a find! These were the very explorers who made the tree famous. A sketch of it, drawn by Baines during their 1861 expedition, became an iconic touchstone of Africa’s severe and enchanting beauty. This letter must have been tucked into the baobab’s branches and forgotten for more than 140 years.</p><p>You carefully open it.</p><p>Inside is a crude drawing of a steam locomotive with a top hat—and a boner!</p>",
       },
     ],
   },
@@ -4618,7 +4630,7 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean", "Finland", "Norway", "Denmark"],
     description:
-      'Sweden is a Scandinavian country in the far north of Europe, bordering Norway and Finland, and via an 8km long tunnel to Denmark . Sweden has existed continuously for almost a thousand years. People here eat a lot of fish and potatoes, but also make excellent confections.</p><p>Everywhere you look, you see the same drawing of a monster with beady eyes and a gaping maw that looks ready to swallow you. You assume this is a warning that Sweden is full of monsters.</p><p>With terror mounting, you ask a nearby Swede what you should do in the case of monster attack, and after a few minutes of confusion, she explains to you that that drawing is actually the letter Ö, which is just part of the alphabet.</p><p>"So, no monsters?" you ask timidly.</p><p>She chuckles and shakes her head: no monsters.</p>',
+      'Sweden is a Scandinavian country in the far north of Europe, bordering Norway and Finland, and via an 8km long tunnel to Denmark. Sweden has existed continuously for almost a thousand years. People here eat a lot of fish and potatoes, but also make excellent confections.</p><p>Everywhere you look, you see the same drawing of a monster with beady eyes and a gaping maw that looks ready to swallow you. You assume this is a warning that Sweden is full of monsters.</p><p>With terror mounting, you ask a nearby Swede what you should do in the case of monster attack, and after a few minutes of confusion, she explains to you that that drawing is actually the letter Ö, which is just part of the alphabet.</p><p>"So, no monsters?" you ask timidly.</p><p>She chuckles and shakes her head: no monsters.</p>',
     objects: [
       {
         name: "MONSTER",
