@@ -12,4 +12,8 @@ export const findFriendNoteTemplates = [
   "A Polaroid photo of a man, labeled ",
   "An old-fashioned calling card that says ",
   "A newspaper clipping about someone named ",
+  "A message about tracking down ",
+  "A typewritten message: please find ",
+  "A quest to track down ",
+  "A high school year book, with one photo circled: ",
 ];
