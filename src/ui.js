@@ -226,7 +226,7 @@ export function handleText(noun) {
   } else if (!isNaN(parsedNoun) && parsedNoun >= 1 && parsedNoun <= 3) {
     newSize = parsedNoun;
   } else {
-    return 'Invalid command. Use "text small", "medium", "large", "default", or a number between 1 and 3.';
+    return 'Invalid command. Use "text small", "medium", "large", "default", or a number between 1.0 and 3.0.';
   }
   root.style.setProperty("--font-size-base", `${newSize}rem`);
   localStorage.setItem("fontSize", newSize);
