@@ -1524,6 +1524,12 @@ export let globe = [
         article: "A",
         description: 'It says "Please no puns about our country\'s name."',
       },
+      {
+        name: "AFAR RIFT",
+        article: "The",
+        description:
+          '<p>In the crook of the horn of Africa, a new ocean is being born, as the Arabian, Indian, and African tectonic plates collide in a triple junction known as the Afar Rift.</p><p>With nothing else to do on another sunny Djibouti afternoon, you decide to explore part of the rift.</p><p>Using a rope you found on the ground, you abseil down into one of the many clawlike crevasses that have formed here. It is a narrow split in the earth, a few meters wide by perhaps a hundred deep, raw and ragged, as though freshly gouged by some giant\'s claw.</p><p>As you descend on the rope, you spot old fossils and artifacts embedded in the rock, left there thousands or even millions of years ago. The remains of ancient molluscs and insects (boring), but also the imprints of leaves, and fauna: you see the bones of what might be dinosaurs, or extinct mammal species, sabre toothed tigers. Ancient runes, metal tools, and massive eye embedded in the rock, which blinks at you unmistakably, then closes again, totally camouflaged in the wall of the rift.</p>Say, what was that thing?</p><p>After walking around for a few minutes on the floor of the crevasse— which turns out to just be dirt, by the way—you climb back up to the surface. Looking over your shoulder quickly, you catch a glimpse of that eye following your progress. As soon as it sees you looking, it always camouflages itself again.</p><p>At the top of the lip, you meet a local, and begin speaking with him in Arabic, which is one of the two official languages of Djibouti.</p><p>"What\'s with that giant eye?" you ask.</p><p>"Ahh, so that\'s where my rope went," he says, passive-aggressively.</p>',
+      },
     ],
   },
   {
