@@ -3433,13 +3433,35 @@ export let globe = [
       "Myanmar is a large country in Southeast Asia. With approximately 48 million people, it is the world's 24th most populous country. In addition, it is the second largest country by area in Southeast Asia.",
     objects: [
       {
-        name: "J. PETERMAN",
+        name: "J. Peterman",
         article: "",
         description:
           '"You most likely know it as Myanmar, but it will always be Burma to me."',
       },
-      // {name:"", article:"", description:""},
-      // {name:"", article:"", description:""}
+      {
+        name: "Golden Rock",
+        article: "The",
+        description:
+          '<p>A monk politely asks you to take off your shoes before hiking the steep, 1km trail to Kyaiktiyo Pagoda, also known as the Golden Rock, or the Hermit\'s Head Pagoda.</p><p>"It\'s just a custom," explains the monk. "This is a holy place, you know, so it\'s considered impolite."</p><p>"Got it. Thanks," you say curtly, and begin walking away in your bare feet.</p><p>All during the short, dusty hike up the path, you\'re fuming over being asked to leave your shoes behind. They\'re new, and practically spotless.</p><p>"You could practically eat off them—" you begin to say, just as the rising sun hits the eastern face of the rock, and limns the edge of the 15 foot tall pagona that rests on top of it.</p><p>The rock itself is a granite boulder the size of an apartment building, and it\'s delicately perched on a cliff above the valley. Every inch of the rock and the pagoda are covered in hammered gold, to catch the light and produce just such an affect in the viewer, be they a religious pilgrim, or a tourist like yourself.</p><p>After touring the pagoda, you begin back down the trail, and realize you\'ve completely forgotten your former grievance against the monk, for making you remove your new shoes. It\'s such a holy presence, and the overwhelming feeling of awe and wonder it produces in you completely crowds out that petty, bitter memory.</p><p>You\'re talking about it later with someone at the hostel.</p><p>"Shoes? I\'m surprised you didn\'t notice the <em>no women allowed</em> signs up there."</p><p>"Whoa, whoa! Different culture!" you say.</p>',
+      },
+      {
+        name: "Thanaka",
+        article: "",
+        description:
+          '<p>While applying some of your beloved SPF-30 sunscreen, you are laughed at by a crowd of youths in Mondaingbin, a small rural village in Sagaing Region. When you ask them what\'s so funny about getting serious about skin care, they tell you that you should be using thanaka instead.</p> <p>"What\'s thanaka?" you ask. A natural question.</p><p>"It\'s the ground up bark of the theethee tree," says one of the teenagers. <p>"Here in Myanmar, we\'ve been using it as a skin cream for 2000 years."</p><p>Another one says "and even though today it\'s mostly for decorative purposes, it\'s still got excellent UV blocking properties."</p><p>They sell you a small vial of thanaka, which you apply to your face and arms. To your surprise, it gives your skin a slight yellowish tinge, but it does provide a pleasant cooling sensation that keeps you comfortable for the rest of the day.</p>',
+      },
+      {
+        name: "Naypyidaw",
+        article: "The capitol city of",
+        description:
+          "<p>You spend the day walking around Myanmar\'s capitol city of Naypyidaw. The city, built by decree, took ten years to complete. When it opened in 2012, it was eight times the area of London, yet even today there are less than a million people living in it. The streets feel empty, but not worn down or dilapidated.</p><p>In the morning, you stroll around Nga Laik Lake, a reservoir built south of the city center. For lunch, you enjoy some Ohn No Khao Swè, a local coconut milk soup, and then hit Junction Center, the largest mall, for a little people watching. You laugh to see a little kid playing with a funny dog. You help an older lady remember the name of the main guy from Jethro Tull (Ian Anderson) and you both sing Aqualung at the top of your voices right outside the impressive Pyidaungsu Hluttaw government complex. For dinner, it\'s a bowl of mohinga at a fancy fusion restaurant, where you slurp up hot, salty fish soup with noodles and one of those hard boiled eggs with the gooey yolk.</p><p>For the most part, the city seems empty and artificial, but there are definitely high points.</p>",
+      },
+      {
+        name: "Sunset Ruby",
+        article: "The",
+        description:
+          '<p>You plan and execute a heist of the Sunset Ruby, the sister gemstone of the world famous Sunrise Ruby.</p><p>"Every ruby has a brother or sister," your partner explains. "The Sunrise weighs over 25 carats, and last sold at auction for almost $15 million dollars. Its counterpart will be worth at least as much."</p><p>"We\'ll be rich!" you say.</p><p>After a lot of planning, danger, and expenses on your part, you manage to steal the Sunset Ruby, which turns out to just be one of those candy gems made out of pure sugar and food coloring.</p><p>"Not a total loss, at least we can eat it," you say, but your partner appears to have left already, and doesn\'t answer your texts.</p>',
+      },
     ],
   },
   {
