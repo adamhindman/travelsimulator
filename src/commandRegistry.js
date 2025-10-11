@@ -144,7 +144,7 @@ export const commandRegistry = {
   randomwalk: handleRandomWalkWrapper,
   forget: commands.handleForget,
   passport: commands.handleCheckPassport,
-  track: commands.handleTrack,
+  track: handleMonitorWrapper,
   take: handleTake,
   i: handleInventory,
   inv: handleInventory,

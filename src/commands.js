@@ -135,23 +135,6 @@ function handleForget(noun, words, neighbors) {
   return msg;
 }
 
-function handleTrack(noun, words, neighbors) {
-  let messages = [];
-  npcs.forEach(npc => {
-    const path = findShortestPath(curLocation, npc.location);
-    if (path) {
-      const distance = path.length - 1;
-      const randomActivity = activities[Math.floor(Math.random() * activities.length)];
-      messages.push(
-        `<p>${npc.name} is ${distance} places away, in ${npc.location.toUpperCase()}, ${randomActivity}.</p>`,
-      );
-    } else {
-      messages.push(`Could not track ${npc.name}.`);
-    }
-  });
-  return messages.join("<br/>");
-}
-
 function handleCheckPassport(noun, words, neighbors) {
   const visited = getVisitedCountries();
   let msg = `<div class="passport">You've visited ${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`;
@@ -224,7 +207,6 @@ export {
   handleLook,
   handleTel,
   handleForget,
-  handleTrack,
   handleCheckPassport,
   handleRandomWalk,
   handleDespawn,
