@@ -14,6 +14,8 @@ export let globe = [
         article: "A",
         description:
           "A funny-looking flightless bird. This one explains that he normally lives at the south pole, but nothing is stopping him from traveling.",
+        notebookEntry:
+          "Met a penguin at the North Pole who claims to be a world traveler. Penguins are supposed to live at the South Pole!",
       },
       {
         name: "PETROLEUM",

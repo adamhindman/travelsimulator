@@ -30,6 +30,12 @@ import {
   saveInventory,
   clearQuestNotes,
 } from "./inventory.js";
+import {
+  getNotebookContents,
+  clearNotebook,
+  triggerNotebookEntry,
+  addToNotebook,
+} from "./notebook.js";
 import { inArray, capitalize, arrayToLowerCase, isArray } from "./utilities.js";
 import { globe } from "./globe.js";
 import { despawn, createNpc, activities, handleLookAtNpc } from "./npc.js";
@@ -68,9 +74,29 @@ function handleLook(noun, words, neighbors) {
     return { msg, showLoc };
   }
 
+  // Special case: looking at the notebook
+  if (noun.toLowerCase() === "notebook") {
+    msg = getNotebookContents();
+    return { msg, showLoc };
+  }
+
+  // Special case: looking at the passport
+  if (noun.toLowerCase() === "passport") {
+    msg = handleCheckPassport();
+    return { msg, showLoc };
+  }
+
   if (inArea) {
-    const descriptions = getAttributeOfArea("objects").map(obj => obj.description);
+    const objects = getAttributeOfArea("objects");
+    const descriptions = objects.map(obj => obj.description);
     msg = `<span class="object-description">${descriptions[oIndex]}</span>`;
+
+    // Check if this object has a notebook entry to trigger
+    const objectData = objects[oIndex];
+    if (objectData.notebookEntry) {
+      const notebookMsg = triggerNotebookEntry(objectData.notebookEntry);
+      msg += notebookMsg;
+    }
   } else if (inInv) {
     msg = `<p>${invItems[0].description}</p>`;
   } else {
@@ -123,6 +149,7 @@ function handleForget(noun, words, neighbors) {
   localStorage.setItem("visited", JSON.stringify([]));
   localStorage.setItem("totalMoves", "0");
   localStorage.removeItem("metNpcs");
+  clearNotebook();
   clearQuestNotes();
   inventory.length = 0;
   inventory.push(...initialInventory);
@@ -163,7 +190,7 @@ function handleRandomWalk(steps = 500) {
       return;
     }
     const randomNeighbor = neighbors[Math.floor(Math.random() * neighbors.length)];
-    const spawnMessage = updateLocation(randomNeighbor);
+    const spawnMessage = updateLocation(randomNeighbor, true);
     render(spawnMessage || "", " ", curLocation, false);
     loops++;
     promptField.value = `${loops} / ${steps} (${randomNeighbor})`;
@@ -179,6 +206,13 @@ function handleRandomWalk(steps = 500) {
       );
     }
   }, 50);
+}
+
+function handleWrite(noun) {
+  if (!noun) {
+    return "<p>What do you want to write?</p>";
+  }
+  return triggerNotebookEntry(noun);
 }
 
 function handleDespawn(noun) {
@@ -210,4 +244,5 @@ export {
   handleCheckPassport,
   handleRandomWalk,
   handleDespawn,
+  handleWrite,
 };

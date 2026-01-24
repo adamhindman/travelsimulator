@@ -11,6 +11,7 @@
 // Feature Modules
 import * as commands from "./commands.js";
 import { handleTake, handleInventory } from "./inventory.js";
+import { getNotebookContents } from "./notebook.js";
 import { handleMonitor as npcHandleMonitor, createNpc } from "./npc.js";
 import { handleEndGame, mutableState, npcs, curLocation } from "./state.js";
 import { handleText } from "./ui.js";
@@ -143,15 +144,17 @@ export const commandRegistry = {
   teleport: commands.handleTel,
   randomwalk: handleRandomWalkWrapper,
   forget: commands.handleForget,
-  passport: commands.handleCheckPassport,
   track: handleMonitorWrapper,
   take: handleTake,
   i: handleInventory,
   inv: handleInventory,
   inventory: handleInventory,
+  passport: commands.handleCheckPassport,
+  notebook: getNotebookContents,
   mon: handleMonitorWrapper,
   monitor: handleMonitorWrapper,
   text: handleText,
+  write: commands.handleWrite,
   help: handleHelp,
   stats: handleStats,
   win: handleWin,

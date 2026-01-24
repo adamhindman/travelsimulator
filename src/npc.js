@@ -1,7 +1,7 @@
 import { findShortestPath } from "./pathfinder.js";
 import { npcs, curLocation, allAreas, saveNpcs, areaExists } from "./state.js";
 import { findFriendNoteTemplates } from "./quests.js";
-import { addToInventory } from "./inventory.js";
+import { addToNotebook, resolveQuest } from "./notebook.js";
 
 export const activities = [
   "eating an ice cream cone",
@@ -206,6 +206,7 @@ export function handleMonitor(noun, words, neighbors) {
 }
 
 export function handleLookAtNpc(npc) {
+  resolveQuest(npc.name);
   // When you look at an NPC, you get their description.
   // If you haven't talked to them before, they give you a quest.
   let response = `<p>${npc.description}</p>`;
@@ -224,16 +225,11 @@ export function handleLookAtNpc(npc) {
     const targetNpc = npcs[npcs.length - 1]; // The NPC we just created
     npc.questTargetName = targetNpc.name;
 
-    // Select a random quest message and add it to the player's inventory
-    const noteTemplate =
-      findFriendNoteTemplates[Math.floor(Math.random() * findFriendNoteTemplates.length)];
-    const questNote = `${noteTemplate}${targetNpc.name.toUpperCase()}`;
-    addToInventory({
-      name: questNote,
-      description: "That's pretty much all it says.",
-    });
+    // Add quest information to the player's notebook
+    const notebookEntry = `Met ${npc.name} in ${curLocation}. He asked me to find his friend ${targetNpc.name}, who was last seen in ${targetNpc.location}.`;
+    addToNotebook(notebookEntry);
 
-    response += `<p>"Have you seen my friend, ${targetNpc.name}?" he asks. "The last place I saw them was ${targetNpc.location.toUpperCase()}."</p><p>He hands you something that you put in your INVENTORY.</p>`;
+    response += `<p>"Have you seen my friend, ${targetNpc.name}?" he asks. "The last place I saw them was ${targetNpc.location.toUpperCase()}."</p><p>You jot this down in your <span class="button object" data-object="notebook">NOTEBOOK</span>.</p>`;
     saveNpcs();
   }
 

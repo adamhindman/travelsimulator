@@ -1,9 +1,9 @@
 import { capitalize } from "./utilities.js";
+import { getNotebookContents } from "./notebook.js";
 
 export const initialInventory = [
   { name: "Gum", description: "A package of cinnamon gum." },
   { name: "Spare socks", description: "An extra pair of nice warm socks." },
-  { name: "Sunscreen", description: "A tube of SPF-30." },
   {
     name: "Yellow flashlight",
     description: "A bright yellow flashlight: the wanderer's companion",
@@ -12,6 +12,21 @@ export const initialInventory = [
     name: "Monitor",
     description:
       "A handheld global satellite monitor, which can easily track the location of anyone, anywhere, at any time. Type MONITOR or TRACK to use it.",
+  },
+  {
+    name: "Passport",
+    description:
+      "A slightly worn passport filled with stamps. Type LOOK PASSPORT to check your travels.",
+  },
+  {
+    name: "Pen",
+    description:
+      "It's a blue ballpoint pen with the logo of a credit union printed on it. This might be useful to WRITE in your notebook.",
+  },
+  {
+    name: "Notebook",
+    description:
+      "A small leather notebook for jotting down important information. Type LOOK NOTEBOOK to read it.",
   },
 ];
 
@@ -64,20 +79,15 @@ export const removeFromInventory = item => {
   }
 };
 
+// Legacy quest note functions - kept for compatibility but deprecated
 export const checkForQuestNote = npcName => {
-  const note = inventory.find(item =>
-    item.name.toUpperCase().endsWith(npcName.toUpperCase()),
-  );
-  return note;
+  // Quest notes are now in the notebook, not inventory
+  return null;
 };
 
 export const clearQuestNotes = () => {
-  const itemsToKeep = inventory.filter(
-    item => !item.name.toLowerCase().includes("note from"),
-  );
-  inventory.length = 0;
-  inventory.push(...itemsToKeep);
-  saveInventory();
+  // Quest notes are now managed by notebook.js
+  // This function is deprecated but kept for compatibility
 };
 
 export const showInventory = () => {

@@ -101,7 +101,7 @@ export function updatePassport(destination = curLocation) {
   handleEndGame();
 }
 
-export function updateLocation(destination) {
+export function updateLocation(destination, isRandomWalk = false) {
   // Directly modifies the module-level 'curLocation' variable
   curLocation = destination;
   localStorage.setItem("lastLocation", destination);
@@ -131,12 +131,18 @@ export function updateLocation(destination) {
 
   const nextTotalMoves = (Number(localStorage.getItem("totalMoves")) || 0) + 1;
   localStorage.setItem("totalMoves", nextTotalMoves);
+
+  if (isRandomWalk && mutableState.npcSpawnThreshold !== null) {
+    mutableState.npcSpawnThreshold++;
+  }
+
   if (document.location.hash !== hashify(destination)) {
     updateURLHash(destination);
   }
 
   let spawnMessage = null;
   if (
+    !isRandomWalk &&
     mutableState.npcSpawnThreshold &&
     npcs.length === 0 &&
     (Number(localStorage.getItem("totalMoves")) || 0) >= mutableState.npcSpawnThreshold
