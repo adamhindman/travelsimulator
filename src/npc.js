@@ -2,6 +2,7 @@ import { findShortestPath } from "./pathfinder.js";
 import { npcs, curLocation, allAreas, saveNpcs, areaExists } from "./state.js";
 import { findFriendNoteTemplates } from "./quests.js";
 import { addToNotebook, resolveQuest } from "./notebook.js";
+import { capitalize } from "./utilities.js";
 
 export const activities = [
   "eating an ice cream cone",
@@ -226,7 +227,7 @@ export function handleLookAtNpc(npc) {
     npc.questTargetName = targetNpc.name;
 
     // Add quest information to the player's notebook
-    const notebookEntry = `Met ${npc.name} in ${curLocation}. He asked me to find his friend ${targetNpc.name}, who was last seen in ${targetNpc.location}.`;
+    const notebookEntry = `Met ${npc.name} in ${capitalize(curLocation)}. He asked me to find his friend ${targetNpc.name}, who was last seen in ${capitalize(targetNpc.location)}.`;
     addToNotebook(notebookEntry);
 
     response += `<p>"Have you seen my friend, ${targetNpc.name}?" he asks. "The last place I saw them was ${targetNpc.location.toUpperCase()}."</p><p>You jot this down in your <span class="button object" data-object="notebook">NOTEBOOK</span>.</p>`;

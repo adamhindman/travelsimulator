@@ -14,8 +14,7 @@ export let globe = [
         article: "A",
         description:
           "A funny-looking flightless bird. This one explains that he normally lives at the south pole, but nothing is stopping him from traveling.",
-        notebookEntry:
-          "Met a penguin at the North Pole who claims to be a world traveler. Penguins are supposed to live at the South Pole!",
+        notebookEntry: "I met a talking penguin at the North Pole!",
       },
       {
         name: "PETROLEUM",
@@ -120,6 +119,7 @@ export let globe = [
       "Algeria",
       "Angola",
       "Antigua and Barbuda",
+      "Atlantis",
       "Arctic Ocean",
       "Argentina",
       "Bahamas",
@@ -218,6 +218,17 @@ export let globe = [
       "Venezuela",
       "Wales",
     ],
+  },
+  {
+    area: "Atlantis",
+    description:
+      "Lying west of the Pillars of Hercules, the kingdom of Atlantis is an aquatic continent about 2 million square kilometers in size, but sparsely populated by only about a half million citizens. The main language is Atlantean, but Greek is also commonly spoken. The country's chief export is fish, which can be harvested as they swim through the streets of the capitol city, flitting through doorways and over rooftops like flocks of glimmering birds.",
+    objects: [
+      { name: "ALABASTRINE DAIS", article: "The", description: "" },
+      { name: "POSEIDON", article: "", description: "" },
+      { name: "FRIENDLY OCTOPUS", article: "A", description: "" },
+    ],
+    neighbors: ["Atlantic Ocean"],
   },
   {
     area: "Indian Ocean",
@@ -344,7 +355,7 @@ export let globe = [
         name: "GROTTE DE CERVANTES",
         article: "The",
         description:
-          'You spend the night in the Grotte de Cervantes, the cave where Spanish author and soldier Miguel de Cervantes hid during an escape attempt with other slaves in 1577. It\'s a shallow cave in the hillside, overlooking the Bay of Algiers.</p><p>In the morning, when the groundskeeper pokes you awake with the end of a broom, you ask him for the whole story.</p><p>"They were betrayed, and the ship which was to take them to freedom was captured. Cervantes was held in stricter confinement for months, and barely survived. Yet, his will was not broken, and he went on to attempt another escape—three, in all, before he was at last ransomed."</p><p>Out on the bay, above the sea, a black-headed gull fights the currents of the ocean breeze, seeming to hang suspended in the air.</p><p>"Were they reported by the driver of a passing car? The slaves, I mean."</p><p>"No, the road you see there did not exist in the 16th century, it was only wilderness, away from town. And there were no cars anywhere in the world. They would not be invented until hundreds of years afterward."</p><p>You look out past the tall, locked iron gate you climbed over last night. On the other side is a street with cars, and a neighborhood of houses all along the other side.</p><p>"I see. And I bet he didn\'t have to deal with any tour groups?" You gesture, indicating the half dozen onlookers.</p><p>"No he didn\'t, and that is what I came to tell you to begin with. You can\'t sleep here, this is a monument. You must leave now, the police have been called."</p><p>You nod, stand, and begin picking up your candy bar wrappers from around the floor of the cave.</p><p>"One last question: when Cervantes went on to write <em>Don Quixote</em>, was he thinking of this place when he wrote the famous cave scene? Is this the cave from <em>Don Quixote</em>?"</p><p>"I don\'t know, I\'ve never read it myself."</p><p>"Me neither, you say. There\'s got to be a cave in it, though, right?"</p>',
+          'You spend the night in the Grotte de Cervantes, the cave where Spanish author and soldier Miguel de Cervantes hid during an escape attempt with other slaves in 1577. It\'s a shallow cave in the hillside, overlooking the Bay of Algiers.</p><p>In the morning, when the groundskeeper pokes you awake with the end of a broom, you ask him for the whole story.</p><p>"They were betrayed, and the ship which was to take them to freedom was captured. Cervantes was held in stricter confinement for months, and barely survived. Yet, his will was not broken, and he went on to attempt another escape—three, in all—before he was at last ransomed."</p><p>Out on the bay, above the sea, a black-headed gull fights the currents of the ocean breeze, seeming to hang suspended in the air.</p><p>"Were they reported by the driver of a passing car? The slaves, I mean."</p><p>"No, the road you see there did not exist in the 16th century, it was only wilderness, away from town. And there were no cars anywhere in the world. They would not be invented until hundreds of years afterward."</p><p>You look out past the tall, locked iron gate you climbed over last night. On the other side is a street with cars, and a neighborhood of houses all along the other side.</p><p>"I see. And I bet he didn\'t have to deal with any tour groups?" You gesture, indicating the half dozen onlookers.</p><p>"No he didn\'t, and that is what I came to tell you to begin with. You can\'t sleep here, this is a monument. You must leave now, the police have been called."</p><p>You nod, stand, and begin picking up your candy bar wrappers from around the floor of the cave.</p><p>"One last question: when Cervantes went on to write <em>Don Quixote</em>, was he thinking of this place when he wrote the famous cave scene? Is this the cave from <em>Don Quixote</em>?"</p><p>"I don\'t know, I\'ve never read it myself."</p><p>"Me neither, you say. There\'s got to be a cave in it, though, right?"</p>',
       },
     ],
     neighbors: [
@@ -368,6 +379,12 @@ export let globe = [
         article: "",
         description:
           "A 12th-century statue of the Virgin Mary, said to have appeared by magic beneath a wild rose blooming in the winter snow. You manage to talk your way into the secret vault where the original statue is still kept, having survived the fire that the newspapers said destroyed it in the 1970s. It throbs with unearthly power.",
+        inventoryItem: {
+          name: "Statue of the Holy Virgin",
+          questline: "throbbers",
+          description:
+            "A small, painted statue of the Virgin Mary, believed destroyed many years ago. You got this in Andorra, swapping it for a fake one you bought at the market.",
+        },
       },
     ],
     type: "country",
@@ -510,6 +527,12 @@ export let globe = [
         article: "",
         description:
           "As the first feature-length narrative film ever produced, all subsequent films derive their power from it. Perhaps that's why this box of old film cannisters throbs with unearthly magical energy.",
+        inventoryItem: {
+          name: "A film cannister",
+          questline: "throbbers",
+          description:
+            "You took one of the film cannisters containing The Story of the Kelly Gang, part of Australia's rich heritage. It's hard to imagine why they'd mind, since it's available for streaming on ABC iView for Christ's sake.",
+        },
       },
       {
         name: "KOOKABURRA",
@@ -604,7 +627,13 @@ export let globe = [
         name: "PIRATE HIDEOUT",
         article: "A",
         description:
-          "Paddling by some anonymous island, you spot a hidden waterway and decide to explore it. It turns out to lead to a shelterded harbor, at which you find the secret hideout of the Carribbean's most infamous pirate gang, The Flying Gang! Unfortunately, this large and elaborate cave system appears to be abandoned and forgotten for centuries, so none of the Gang are around to chat with. You do notice Blackbeard's treasure chest sitting on a table, containing a full-sized emerald skull that throbs with unearthly power. You snap a pic and get back to sightseeing.<p>\"Where, uhh... where did you say this island was?\"</p><p>Later, the paragliding instructor seems interested in hearing about your trip, especially after you show him the pictures. You gesture toward the ocean and shrug, then ask him questions about paragliding.</p>",
+          "Paddling by some anonymous island, you spot a hidden waterway and decide to explore it. It turns out to lead to a sheltered harbor, at which you find the secret hideout of the Carribbean's most infamous pirate gang, The Flying Gang! Unfortunately, this large and elaborate cave system appears to be abandoned and forgotten for centuries, so none of the Gang are around to chat with. You do notice Blackbeard's treasure chest sitting on a table, containing a full-sized emerald skull that throbs with unearthly power. You snap a pic, sn and get back to sightseeing.<p>\"Where, uhh... where did you say this island was?\"</p><p>Later, the paragliding instructor seems interested in hearing about your trip, especially after you show him the pictures. You gesture toward the ocean and shrug, then ask him questions about paragliding.</p>",
+        inventoryItem: {
+          name: "An emerald skull",
+          questline: "throbbers",
+          description:
+            "<p>Looking down into your backpack, you notice a greenish glow. You pull out an emerald skull, which throbs with unearthly power and seems to glow and dim with the rhythm of waves on the shore.<p><p>\'Where'd this throbbing emerald skull come from again?\' you ask.</p><p>\'Ye raised me from the depths of Davy Joneses locker,\' replies the skull, \'and I be once again thankin' ye for breakin' me shackles and restorin' me power in the mortal realm.\'</p><p>Oh right, it was that paddling trip in the Bahamas.</p>",
+        },
       },
       {
         name: "ATLANTIS PARADISE ISLAND",
@@ -805,6 +834,12 @@ export let globe = [
         article: "The",
         description:
           "A massive stone monolith carved into the shape of a doorway. One side of the doorway opens onto the site Tiahuanaco, a Tiwanaku site in the Bolivian Andes. The other side opens into another dimension, though this side of the door is currently locked. The monolith throbs with unearthly power.",
+        inventoryItem: {
+          name: "A shard of monolith",
+          questline: "throbbers",
+          description:
+            "You chiseled this piece of jet black stone from The Gate of the Sun in Bolivia, which was evidently an interdimensional portal opening into what looked like some kind of torture dimension.",
+        },
       },
     ],
   },
@@ -1054,7 +1089,13 @@ export let globe = [
         name: "AFO-A-KOM",
         article: "",
         description:
-          "A wooden statue of a king on a throne supported by buffalo heads. An sacred object of veneration to the Kom people, it was stolen from its sacred grove in 1966. Fortunately it is magic, and the thieves hands withered and fell off, and the statue was returned to Laikom palace in northern Cameroon, where it remains today, throbbing with terrifying power.",
+          "A wooden statue of a king on a throne supported by buffalo heads. An sacred object of veneration to the Kom people, it was stolen from its sacred grove in 1966. Fortunately it is magic, and the thieves hands withered and fell off, and the statue was returned to Laikom palace in northern Cameroon, where it remains today, throbbing with unearthly power.",
+        inventoryItem: {
+          name: "A statue of a king",
+          questline: "throbbers",
+          description:
+            "You borrowed this wooden status from the Laikom palace in Cameroon. To avoid the deadly curse that comes with touching such a sacred object, you just have to remember to always touch it with gloves.",
+        },
       },
     ],
     neighbors: [
@@ -1211,6 +1252,12 @@ export let globe = [
         article: "The legendary",
         description:
           "This bronze sword, once belonging to the King of Yue, was found untarnished after being underwater for 2000 years. It is on a list of objects forbidden to be taken out of the country. Probably magical, it throbs with unearthly power.",
+        inventoryItem: {
+          name: "A magic sword",
+          questline: "throbbers",
+          description:
+            '<p>"What happens if the Sword of Goujian is taken out of China?" you remember asking out loud. Supposedly, it\'s on a list of objects that, must not, under any circumstances, leave the country.</p><p>Well, the answer is that a bunch of guards run up to you as soon as you even touch the sword a little bit, and you have to run from them and hide in a dumpster for a couple days.</p><p>As for what happens when you take it out of the country:  not much, just a few ominous dreams.</p>',
+        },
       },
       {
         name: "GIANT PANDA",
@@ -1279,7 +1326,7 @@ export let globe = [
         name: "LAS LAJAS",
         article: "",
         description:
-          'Las Lajas is a shrine to the Virgin Mary, erected in the mountains of Colombia. Many legends surround this shrine: that it cures the sick, raises the dead, and that an image of the Virgin appeared in the rock of the mountainside one day. They say it is not only on the surface, but extends several feet into the rock itself.</p><p>You set out to find out whether this last legend is true.</p><p>Armed with a chisel and a hammer, you trek through the rugged terrain from Ipiales and arrive at the shrine in the middle of the night.</p><p>Las Lajas is an impressive structure, built at the end of a bridge over the river, next to a waterfall. At the back of the shrine is the image of the Virgin, which appears to the untrained eye to be painted onto the rock.</p><p>As you approach the image, you notice that it throbs with unearthly power.</p><p>"Please don\'t deface my shrine," says a voice that seems to come from within the rock itself.</p><p>"I\'m not going to deface it, I just want to check something."</p><p>You explain that you want to know whether the picture here actually does go back into the rock, or whether it\'s on the surface.</p><p>"It goes back into the rock."</p><p>"How far?"</p><p>"20 centimeters," says the voice.</p><p>"What\'s that in inches?"</p><p>There is a brief pause, as though someone is doing a conversion.</p><p>"Call it eight inches."</p><p>You ask the Virgin many more questions, such as how bad things can happen to good people, and which religions \'get it right\' in her opinion. She patiently answers all of them, but you get the sense that she\'s getting a little impatient.</p><p>You decide to press your luck. You ask her if she\'d be willing to provide some thoughts on each chapter of the New Testament.</p><p>"Kind of like a \'director\'s commentary\' track for a DVD," you explain.</p><p>As the first golden ray of dawn streams through the east windows of Las Lajas, you look up to see that the image on the rock is gone. You sneak out of the shrine before any tourists arrive.</p>',
+          'Las Lajas is a shrine to the Virgin Mary, erected in the mountains of Colombia. Many legends surround this shrine: that it cures the sick, raises the dead, and that an image of the Virgin appeared in the rock of the mountainside one day. They say it is not only on the surface, but extends several feet into the rock itself.</p><p>You set out to find out whether this last legend is true.</p><p>Armed with a chisel and a hammer, you trek through the rugged terrain from Ipiales and arrive at the shrine in the middle of the night.</p><p>Las Lajas is an impressive structure, built at the end of a bridge over the river, next to a waterfall. At the back of the shrine is the image of the Virgin, which appears to the untrained eye to be painted onto the rock.</p><p>As you approach the image, you notice that it radiates a holy aura.</p><p>"Please don\'t deface my shrine," says a voice that seems to come from within the rock itself.</p><p>"I\'m not going to deface it, I just want to check something."</p><p>You explain that you want to know whether the picture here actually does go back into the rock, or whether it\'s on the surface.</p><p>"It goes back into the rock."</p><p>"How far?"</p><p>"20 centimeters," says the voice.</p><p>"What\'s that in inches?"</p><p>There is a brief pause, as though someone is doing a conversion.</p><p>"Call it eight inches."</p><p>You ask the Virgin many more questions, such as how bad things can happen to good people, and which religions \'get it right\' in her opinion. She patiently answers all of them, but you get the sense that she\'d rather be doing something else.</p><p>You decide to press your luck. You ask her if she\'d be willing to provide some thoughts on each chapter of the New Testament.</p><p>"Kind of like a \'director\'s commentary\' track for a DVD," you explain.</p><p>As the first golden ray of dawn streams through the east windows of Las Lajas, you look up to see that the image on the rock is gone. You sneak out of the shrine before any tourists arrive.</p>',
       },
       {
         name: "DARIÉN GAP",
@@ -1701,6 +1748,12 @@ export let globe = [
         article: "",
         description:
           'A circle of sandstone blocks, each about 13" tall, and 7" wide, built by druids 5000 years ago, give or take. It throbs with unearthly power, and seems to call out to metal fans everywhere.',
+        inventoryItem: {
+          name: "Gravel from stonehenge",
+          questline: "throbbers",
+          description:
+            "You hold in your hand a few flakes of Stonehenge, an ancient battery for death magic built by Druids in England. They throb a little bit with unearthly power, though honestly not as much as you'd think.",
+        },
       },
       {
         name: "MAGNA CARTA",
@@ -1773,6 +1826,12 @@ export let globe = [
         article: "",
         description:
           "While walking in the forests of Estonia, you spot a large, perfectly round lake. At first, you assume it must be manmade: nothing this symmetrical occurs in nature. But, on further consideration, you conclude it was created by a meteorite striking the Earth with tremendous force.</p><p>It is about a hundred meters across, and when you swim out to test the depth, you find that it has been filled in with fallen trees up to a depth of about 12 feet.</p><p>Intrigued, you begin clearing out the logs, which turn out to be oak trees, just like the ones in the surrounding woods. There are dozens, maybe hundreds of them, and it takes quite a while to painstakingly lift them out using an improvised block and tackle system.</p><p>Once the pond has been cleared, you swim to the bottom, finding it much deeper than you would have guessed. In fact, it's so deep that the light from the surface can't even penetrate it: when you turn off your waterproof flashlight, it's perfectly dark and completely still down here, except for an unearthly throbbing as of some terrible, patient power coming to life.</p><p>You flip the light back on, and spot a number of small objects covered in green slime. There is some kind of religious shrine made out of bones, and an ebony throne. There is also a large, pitch black stone about the size of a microwave lying in the middle of the pool, with a dagger half embedded inside it.</p><p>You notice that the dagger is completely untarnished, glimmering like a silver worm in the beam of your flashlight. It throbs with unearthly power, and seems to call out to you to remove it from its prison, and promises to make you prince of all the kingdoms of the Earth.</p><p>You kick your way back to the surface, almost out of breath.</p><p>Tired from all your tree hauling, and a little shaken by the evil talking knife, you decide to dry off and head back to Tallinn for some rye bread and kvass, which is a type of beer also made out of rye.",
+        inventoryItem: {
+          name: "An evil dagger",
+          questline: "throbbers",
+          description:
+            '<p>"Hey," you say, surprised to find that evil talking Estonian dagger back in your pack, "didn\'t I throw you into a furnace?"</p><p>"Well, I\'m sort of spread across all time and space, holographically, so to fully destroy me you\'d have to tear apart every atom of the multiverse, all the way down to the center—"</p><p>"So no?"</p><p>"Well, yes. You did throw me in a furnace, but what I\'m saying is—</p><p>"—And don\'t you forget it. Now pipe down before I get mad!" you say.</p>',
+        },
       },
     ],
   },
@@ -1955,6 +2014,12 @@ export let globe = [
         article: "",
         description:
           'You find a skeleton on the ocean floor, dressed in a crimson waistcoat, with a brace of pistols hanging from his shoulders. This must be what remains of the notorious pirate "Black" Bartholomew Roberts, terror of the Caribbean trading fleet in the early 1700s. He died in a ship battle off the coast of Cape Lopez, near Gabon, and his body was thrown overboard rather than become a trophy for his enemies. Around his neck, you find an ancient medallion throbbing with unearthly power.',
+        inventoryItem: {
+          name: "An ancient medallion",
+          questline: "throbbers",
+          description:
+            "A fascinating piece of neck jewelry, once worn by some pirate or other. Hard to remember which one it was, all their names sound the same, right? Salty Sam, or Buccaneer Billy or whatever. You remember the day you found this medallion around a skeleton's neck in Gabon. Pirate Pete, maybe?",
+        },
       },
       {
         name: "MBULU NGULU RELIQUARY FIGURE",
@@ -2219,6 +2284,12 @@ export let globe = [
         article: "A",
         description:
           "A pre-historic flint spear tip, dug up by Mayan archaeologists (or possibly farmers), and assumed to represent a god who fell from the sky. This one represents the fire god Tohil, and throbs with an unearthly power.",
+        inventoryItem: {
+          name: "A glowing spear tip",
+          questline: "throbbers",
+          description:
+            "This thunderstone from the jungles of Guatemala contains a piece of a god that fell to earth and then sat in the dirt for a few hundred years, just waiting to be cleaned off with a small brush. What part of the god is it, you wonder?",
+        },
       },
     ],
   },
@@ -2502,13 +2573,19 @@ export let globe = [
       "Turkey",
     ],
     description:
-      "Iraq , the so-called Cradle of Civilization, is located in the fertile strip of land between the Tigris and Euphrates rivers, near the Persian Gulf. Iraq's economy is based on the production of crude oil, which has its pluses and minuses. The capital city is Baghdad, an ancient city which has been built and rebuilt many times over the millenia, and which, after several protracted wars, is currently in a rebuilding phase.",
+      "Iraq, the so-called Cradle of Civilization, is located in the fertile strip of land between the Tigris and Euphrates rivers, near the Persian Gulf. Iraq's economy is based on the production of crude oil, which has its pluses and minuses. The capital city is Baghdad, an ancient city which has been built and rebuilt many times over the millenia, and which, after several protracted wars, is currently in a rebuilding phase.",
     objects: [
       {
         name: "MUTANABBI STREET",
         article: "",
         description:
           "This street in Baghdad is famous for its book-sellers, but there is more for sale here than just books.</p><p>While strolling by a shop of curios, you notice a shiny mace for sale, which calls out to you... literally!</p><p>Turns out, this is Sharur, the talking mace which the Sumerian hero Ninurta used to slay the equally Sumerian demon Asag, in the highly Sumerian mythological poem Lugal-e.</p><p>The mace, which throbs with unearthly power, calls to you by name, and offers to provide you with information that will make you an unbeatable god-king, with the wisdom to rule with peace and justice for 100 years.</p><p>After several attempts, you are unable to bargain down the shopkeeper to what you consider a reasonable price. Eventually, you wander off to continue your shopping in this boisterous and lively marketplace, where interesting books and trinkets wait to be discovered around every corner.</p>",
+        inventoryItem: {
+          name: "Sharur, the talking mace",
+          questline: "throbbers",
+          description:
+            '<p>In the bazaar in Baghdad, a ragamuffin street urchin stole a pomegranate from a vendor in broad daylight, and led the local police—along with the red-faced fruit vendor—on a wild chase through the streets of the city. In the commotion, he must have bumped the table where this ancient talking mace was being stored, and it fell right into your backpack.</p><p>"That\'s not what happened," says the club, with a hint of disdain, "you grabbed me and walked away when everyone was distracted."</p>',
+        },
       },
       {
         name: "GARDEN OF EDEN",
@@ -2851,6 +2928,12 @@ export let globe = [
         article: "A",
         description:
           "In the silent forests of Latvia, you encounter a pile of moss-covered stones. They appear to have been laid there by human hands, in ages long passed. Their purpose, and why they were placed so far away from any human habitation, remains an unsettling mystery.</p><p>Witches? Probably witches.</p><p>You kneel down and pick up one of the stones. It throbs with unearthly power. You put it back where it was, and hurry away from the scene.</p>",
+        inventoryItem: {
+          name: "A scary rock",
+          questline: "throbbers",
+          description:
+            "You specifically remember NOT trying to loot this scary rock from where you originally found it, in a shadow-haunted forest in Latvia. Yet here it is, throbbing with unearthly power and emitting a sinister low-frequency hum that makes your fillings vibrate. How'd it end up in your hands?",
+        },
       },
       // {name:"", article:"", description:""}
     ],
@@ -3408,6 +3491,12 @@ export let globe = [
         article: "A",
         description:
           "While out for a stroll one morning near Larache, you turn left instead of right, then right instead of left, and find yourself in a beautiful garden. You hear voices singing, and begin walking toward them.</p><p>This garden has several unusual features: for one thing, it is littered with the skeleton of a very large dinosaur. It looks to have been slained with a bronze sword, as indicated by the shards of bronze embedded in the bones of its many necks. Many necks? Upon closer inspection, you conclude that it is not a dinosaur after all, but a hydra. </p><p>The other fact you find unusual is that you are strolling through a garden in the afternoon, when only moments ago it had been morning. A faint, rosy-fingered red light hits you from a western slant, the unmistable direction of the mighty Atlantic ocean.</p><p>You find a group of women standing around singing in an apple orchard. The trees in this orchard look very healthy, and each of the them is heavy with luscious looking, perfectly round, golden apples. You pluck one down from the tree, and notice that it is throbbing with unearthly power.</p><p>One of the women notices you, and tries to shoo you away from the garden. You apologize and head back to Larache, munching on the apple as you go.",
+        inventoryItem: {
+          name: "A half-eaten golden apple",
+          questline: "throbbers",
+          description:
+            "From a really lovely garden in Morocco, this golden apple doesn't seem to rot, even though you've carried it in your backpack for a while. Heck, it doesn't even turn brown. It is made of pure gold, solid and very heavy, but when you take a bite out of it, its flesh is soft and yielding.",
+        },
       },
       // { name: "", article: "", description: "" },
       // { name: "", article: "", description: "" },
@@ -4686,12 +4775,23 @@ export let globe = [
         article: "",
         description:
           "While walking around, you spot a burial mound and decide to investigate. Inside, you see a lot of treasure, including a sword that looks like it has seen many battles. It throbs with unearthly power.",
+        inventoryItem: {
+          name: "A viking sword",
+          questline: "throbbers",
+          description:
+            '<p>This iron sword was found in a burial mound in Sweden, buried with its former owner. Though rusted and chipped, it still evokes the satisfaction of many glorious deeds. Full three score raven-feeders sent down to their dooms in the earth-hall, and that kind of thing. Viking stuff.</p><p>Some runes are written along its length, but you can\'t read them.</p><p>"One of these days", you vow, "I\'m going to sit down and learn how to read runes."</p><p>That night, you load up Duolingo and check to see if they have a course in runes.</p>',
+        },
       },
       {
         name: "IKEA",
         article: "",
         description:
           "You wander around inside a large blue building containing a labyrinth filled with furniture and home goods, all covered in a runic script. Exhausted, you stop for lunch, and eat some meatballs and jelly rats, washing it all down with lingonberry juice. The jelly rats throb with unearthly power.",
+        inventoryItem: {
+          name: "Some jelly rats",
+          questline: "throbbers",
+          description: "A bag of powerful, rat-shaped candy.",
+        },
       },
     ],
   },
@@ -4945,6 +5045,12 @@ export let globe = [
         article: "The",
         description:
           "The old city of Tunis is a maze of narrow, twisty streets and ancient buildings, covering 670 acres. It's the kind of place where you could get your pocket picked, or buy an enchanted medallion that throbs with unearthly power, or see an evil monkey get poisoned by a date.",
+        inventoryItem: {
+          name: "Enchanted medallion",
+          questline: "throbbers",
+          description:
+            "This medallion is engraved with a sun cross, that prehistoric symbol of life and good fortune. But on closer inspection, both arms of the cross appear to be snakes, and the circle is another, larger snake. Not knowing whether this is an evil medallion or not, you avoid wearing it just to be safe.",
+        },
       },
       {
         name: "MAHDIA SHIPWRECK",
@@ -4968,6 +5074,12 @@ export let globe = [
         article: "",
         description:
           "A neolithic temple that predates the invention of ceramics. Göbekli Tepe contains many objects of religious or totemic significance, which throb with unearthly power.",
+        inventoryItem: {
+          name: "A stele from Göbekli Tepe",
+          questline: "throbbers",
+          description:
+            "A heavy stone slab carved with the image of a god who predates names.",
+        },
       },
       {
         name: "ALINAZIK",
@@ -5113,8 +5225,6 @@ export let globe = [
   },
   {
     area: "United States",
-    // image: "united-states.png",
-    // attribution: `Photo by <a target="_blank" href="https://unsplash.com/@asiako?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joanna Kozik</a> on <a target="_blank" href="https://unsplash.com/s/photos/monument-valley-united-states?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     description:
       'A large and diverse country, it is home to the famous "50 state quarters" phenomenon of the early 2000s. You see a bald eagle fishing the many lakes, rivers, and ponds here.',
     type: "country",

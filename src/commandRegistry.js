@@ -10,7 +10,7 @@
 
 // Feature Modules
 import * as commands from "./commands.js";
-import { handleTake, handleInventory } from "./inventory.js";
+import { handleTake, handleInventory, inventory } from "./inventory.js";
 import { getNotebookContents } from "./notebook.js";
 import { handleMonitor as npcHandleMonitor, createNpc } from "./npc.js";
 import { handleEndGame, mutableState, npcs, curLocation } from "./state.js";
@@ -58,8 +58,22 @@ function handleStats(noun, words, neighbors) {
   if (noObjects.length > 0) {
     msg += `<br/>First country without objects: ${noObjects[0].area}`;
   }
+
+  const throbbersFound = inventory.filter(item => item.questline === "throbbers").length;
+
+  const totalThrobbers = globe.reduce((acc, country) => {
+    const countryThrobbers = (country.objects || []).reduce((cAcc, obj) => {
+      if (obj.inventoryItem && obj.inventoryItem.questline === "throbbers") {
+        return cAcc + 1;
+      }
+      return cAcc;
+    }, 0);
+    return acc + countryThrobbers;
+  }, 0);
+
+  msg += `<br/>Objects throbbing with unearthly power: ${throbbersFound} of ${totalThrobbers}`;
   const totalMoves = Number(localStorage.getItem("totalMoves")) - 1 || 0;
-  msg += `<br/>You've moved about ${totalMoves} times</p>`;
+  msg += `<br/>You've moved about ${totalMoves} times`;
   return msg;
 }
 

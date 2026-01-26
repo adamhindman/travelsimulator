@@ -1,6 +1,4 @@
 // Imports from the state module
-// Imports from the state module
-// Imports from the state module
 import {
   mutableState,
   updateLocation,
@@ -22,6 +20,7 @@ import { render, promptField } from "./ui.js";
 // Imports from other modules
 import { findShortestPath } from "./pathfinder.js";
 import {
+  addToInventory,
   itemIsInInventory,
   checkForQuestNote,
   removeFromInventory,
@@ -96,6 +95,19 @@ function handleLook(noun, words, neighbors) {
     if (objectData.notebookEntry) {
       const notebookMsg = triggerNotebookEntry(objectData.notebookEntry);
       msg += notebookMsg;
+    }
+
+    // Check if this object has an inventory item to trigger
+    if (objectData.inventoryItem) {
+      const itemName =
+        typeof objectData.inventoryItem === "string"
+          ? objectData.inventoryItem
+          : objectData.inventoryItem.name;
+      const [hasItem] = itemIsInInventory(itemName);
+      if (!hasItem) {
+        addToInventory(objectData.inventoryItem);
+        msg += `<p>You looted <span class="button object" data-object="${itemName}">${itemName}</span> and added it to your inventory.</p>`;
+      }
     }
   } else if (inInv) {
     msg = `<p>${invItems[0].description}</p>`;

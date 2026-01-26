@@ -1,6 +1,8 @@
 import { globe } from "./globe.js";
 import { npcRandomStep, createNpc } from "./npc.js";
 import { isArray, hashify } from "./utilities.js";
+import { addToInventory, itemIsInInventory } from "./inventory.js";
+import { triggerNotebookEntry, notebookEntries } from "./notebook.js";
 
 function loadNpcs() {
   const storedNpcs = localStorage.getItem("npcs");
@@ -140,7 +142,27 @@ export function updateLocation(destination, isRandomWalk = false) {
     updateURLHash(destination);
   }
 
-  let spawnMessage = null;
+  let spawnMessage = "";
+
+  // Check for notebook entry trigger
+  const notebookEntry = getAttributeOfArea("notebookEntry", destination);
+  if (notebookEntry && !notebookEntries.includes(notebookEntry)) {
+    const msg = triggerNotebookEntry(notebookEntry);
+    if (msg) spawnMessage += msg;
+  }
+
+  // Check for inventory item trigger
+  const inventoryItem = getAttributeOfArea("inventoryItem", destination);
+  if (inventoryItem) {
+    const itemName =
+      typeof inventoryItem === "string" ? inventoryItem : inventoryItem.name;
+    const [hasItem] = itemIsInInventory(itemName);
+    if (!hasItem) {
+      addToInventory(inventoryItem);
+      spawnMessage += `<p>You found a <span class="button object" data-object="${itemName}">${itemName}</span> and added it to your inventory.</p>`;
+    }
+  }
+
   if (
     !isRandomWalk &&
     mutableState.npcSpawnThreshold &&
@@ -150,7 +172,7 @@ export function updateLocation(destination, isRandomWalk = false) {
     createNpc(5, destination);
     if (npcs.length > 0) {
       const npcName = npcs[npcs.length - 1].name;
-      spawnMessage = `<p>All of a sudden, you notice someone behind you.</p> "Hello, my name is <span class="button npc" data-npc="${npcName}">${npcName}</span>", he says. "I have a favor to ask. Can you find my friend?"</p>`;
+      spawnMessage += `<p>All of a sudden, you notice someone behind you.</p> "Hello, my name is <span class="button npc" data-npc="${npcName}">${npcName}</span>", he says. "I have a favor to ask. Can you find my friend?"</p>`;
     }
     mutableState.npcSpawnThreshold = null; // Ensure this only runs once
   }
