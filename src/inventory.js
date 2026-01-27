@@ -1,6 +1,3 @@
-import { capitalize } from "./utilities.js";
-import { getNotebookContents } from "./notebook.js";
-
 export const initialInventory = [
   { name: "Gum", description: "A package of cinnamon gum." },
   { name: "Spare socks", description: "An extra pair of nice warm socks." },

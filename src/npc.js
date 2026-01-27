@@ -1,5 +1,13 @@
 import { findShortestPath } from "./pathfinder.js";
-import { npcs, curLocation, allAreas, saveNpcs, areaExists, setFlag } from "./state.js";
+import {
+  npcs,
+  curLocation,
+  allAreas,
+  saveNpcs,
+  areaExists,
+  setFlag,
+  getFlag,
+} from "./state.js";
 import { findFriendNoteTemplates } from "./quests.js";
 import { addToNotebook, resolveQuest } from "./notebook.js";
 import { capitalize } from "./utilities.js";
@@ -207,13 +215,21 @@ export function handleMonitor(noun, words, neighbors) {
 }
 
 export function handleLookAtNpc(npc) {
-  resolveQuest(npc.name);
+  if (resolveQuest(npc.name)) {
+    setFlag("findNPCQuestActive", false);
+  }
   // When you look at an NPC, you get their description.
   // If you haven't talked to them before, they give you a quest.
   let response = `<p>${npc.description}</p>`;
 
   if (!npc.hasBeenTalkedTo) {
     npc.hasBeenTalkedTo = true;
+
+    if (getFlag("findNPCQuestActive")) {
+      saveNpcs();
+      return response;
+    }
+
     setFlag("findNPCQuestActive");
 
     const metNpcs = JSON.parse(localStorage.getItem("metNpcs") || "[]");
@@ -288,6 +304,12 @@ export function handleTalkToNpc(npc) {
   }
 
   npc.hasBeenTalkedTo = true;
+
+  if (getFlag("findNPCQuestActive")) {
+    saveNpcs();
+    return `${npc.name} has nothing to say.`;
+  }
+
   setFlag("findNPCQuestActive");
 
   // If you're the only NPC, we need to create another one to be the quest target.

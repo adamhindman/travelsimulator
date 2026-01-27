@@ -82,6 +82,10 @@ blockquote {
     background-color: #3f3;
     color: #282828;
 }
+.dim {
+    opacity: 0.5;
+}
+
 #console {
     display: flex;
     align-items: center;

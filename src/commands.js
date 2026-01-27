@@ -16,6 +16,7 @@ import {
   resetEndGame,
   setFlag,
   resetFlags,
+  getFlag,
 } from "./state.js";
 import { render, promptField } from "./ui.js";
 
@@ -95,8 +96,10 @@ function handleLook(noun, words, neighbors) {
     // Check if this object has a notebook entry to trigger
     const objectData = objects[oIndex];
     if (objectData.notebookEntry) {
-      const notebookMsg = triggerNotebookEntry(objectData.notebookEntry);
-      msg += notebookMsg;
+      if (!objectData.setFlag || !getFlag(objectData.setFlag)) {
+        const notebookMsg = triggerNotebookEntry(objectData.notebookEntry);
+        msg += notebookMsg;
+      }
     }
 
     // Check if this object has an inventory item to trigger

@@ -1,6 +1,8 @@
 // Notebook management system
 // Handles the player's notebook which accumulates quest information and notes
 
+import { inventory } from "./inventory.js";
+
 /**
  * Load notebook entries from localStorage
  * @returns {Array<string>} Array of notebook entries
@@ -44,9 +46,12 @@ export function saveNotebook() {
  */
 export function addToNotebook(text) {
   if (text && typeof text === "string") {
+    if (notebookEntries.includes(text)) return false;
     notebookEntries.push(text);
     saveNotebook();
+    return true;
   }
+  return false;
 }
 
 /**
@@ -57,7 +62,8 @@ export function addToNotebook(text) {
  * @returns {string} Message to display to the player, or empty string
  */
 export function triggerNotebookEntry(text, showMessage = true) {
-  addToNotebook(text);
+  const added = addToNotebook(text);
+  if (!added) return "";
   return showMessage
     ? `<p>You jot this down in your <span class="button object" data-object="notebook">NOTEBOOK</span>.</p>`
     : "";
@@ -74,8 +80,14 @@ export function getNotebookContents() {
 
   let content = '<div class="notebook-contents"><p><strong>NOTEBOOK:</strong></p><ul>';
 
+  const throbberCount = inventory.filter(i => i.questline === "throbbers").length;
+
   notebookEntries.forEach((entry, index) => {
-    content += `<li>${entry}</li>`;
+    const formattedEntry = entry.replace(
+      "{{THROBBER_COUNT}}",
+      `<span class="dim">(${throbberCount} out of 17 found)</span>`,
+    );
+    content += `<li>${formattedEntry}</li>`;
   });
 
   content += "</ul></div>";
@@ -100,6 +112,7 @@ export function resolveQuest(targetName) {
   if (changed) {
     saveNotebook();
   }
+  return changed;
 }
 
 /**
