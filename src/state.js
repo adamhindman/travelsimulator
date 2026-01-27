@@ -22,6 +22,7 @@ export let curLocation = localStorage.getItem("lastLocation") || "United States"
 export let npcs = loadNpcs() || [];
 export let visited = [];
 export let npcsToDespawn = [];
+export let flags = JSON.parse(localStorage.getItem("flags") || "{}");
 
 // Mutable state that needs to be an object to be passed by reference
 export const mutableState = {
@@ -63,6 +64,24 @@ export function getAreaDescription(area = curLocation) {
 
 export function saveNpcs() {
   localStorage.setItem("npcs", JSON.stringify(npcs));
+}
+
+export function saveFlags() {
+  localStorage.setItem("flags", JSON.stringify(flags));
+}
+
+export function setFlag(flag, value = true) {
+  flags[flag] = value;
+  saveFlags();
+}
+
+export function getFlag(flag) {
+  return !!flags[flag];
+}
+
+export function resetFlags() {
+  flags = {};
+  localStorage.removeItem("flags");
 }
 
 export function handleEndGame() {

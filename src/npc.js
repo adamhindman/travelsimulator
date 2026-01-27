@@ -1,5 +1,5 @@
 import { findShortestPath } from "./pathfinder.js";
-import { npcs, curLocation, allAreas, saveNpcs, areaExists } from "./state.js";
+import { npcs, curLocation, allAreas, saveNpcs, areaExists, setFlag } from "./state.js";
 import { findFriendNoteTemplates } from "./quests.js";
 import { addToNotebook, resolveQuest } from "./notebook.js";
 import { capitalize } from "./utilities.js";
@@ -214,6 +214,7 @@ export function handleLookAtNpc(npc) {
 
   if (!npc.hasBeenTalkedTo) {
     npc.hasBeenTalkedTo = true;
+    setFlag("findNPCQuestActive");
 
     const metNpcs = JSON.parse(localStorage.getItem("metNpcs") || "[]");
     if (!metNpcs.includes(npc.name)) {
@@ -287,6 +288,7 @@ export function handleTalkToNpc(npc) {
   }
 
   npc.hasBeenTalkedTo = true;
+  setFlag("findNPCQuestActive");
 
   // If you're the only NPC, we need to create another one to be the quest target.
   if (npcs.length < 2) {

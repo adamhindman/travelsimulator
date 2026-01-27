@@ -14,6 +14,8 @@ import {
   initializeAutoSpawn,
   npcsToDespawn,
   resetEndGame,
+  setFlag,
+  resetFlags,
 } from "./state.js";
 import { render, promptField } from "./ui.js";
 
@@ -109,6 +111,10 @@ function handleLook(noun, words, neighbors) {
         msg += `<p>You looted <span class="button object" data-object="${itemName}">${itemName}</span> and added it to your inventory.</p>`;
       }
     }
+
+    if (objectData.setFlag) {
+      setFlag(objectData.setFlag);
+    }
   } else if (inInv) {
     msg = `<p>${invItems[0].description}</p>`;
   } else {
@@ -158,6 +164,7 @@ function handleForget(noun, words, neighbors) {
   npcs.length = 0;
   localStorage.removeItem("npcs");
   resetEndGame();
+  resetFlags();
   localStorage.setItem("visited", JSON.stringify([]));
   localStorage.setItem("totalMoves", "0");
   localStorage.removeItem("metNpcs");
