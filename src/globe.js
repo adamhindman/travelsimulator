@@ -1,5 +1,56 @@
 export let globe = [
   {
+    area: "Transdimensional Nexus",
+    type: "special",
+    description:
+      "<p>Entering into a supraliminal state, you suddenly find (to your surprise) that you have achieved a completely synoptic view of the universe. You are experiencing all of time and space simultaneously, as though from a distant remove outside it all.</p><p>From here, you can watch yourself one day resuming your old three-dimensional life,  understanding that once you've left this place, you'll never be able to make it back again.</p><p>You notice that your future self is carrying what looks like a handheld teleporter.</p>",
+    objects: [
+      {
+        name: "UNIVERSE",
+        article: "The",
+        description:
+          "<p>You focus your attention on the dawn of the universe, as well as the moment it collapses into nothingness again.</p><p>You notice that there are a few other beings standing outside time to  watch these momentous events, and you try to start a wave, like at a baseball game. There are only a couple of takers.</p><p>At the same time, you witness all previous and future universes too. There's a lot to say, and I can't get into details about it all here or it would take all day. Suffice it to say, the universe is basically a giant lung, and its cyclic expansion and retraction is just the slow breathing of a system so vast that imagining it makes you have to sit down for a while.</p>",
+      },
+      {
+        name: "UNMOVED MOVER",
+        article: "The",
+        description:
+          "<p>You sense a nameless presence whose hand guides the direction of the universe and everything in it. You say hello.</p><p>\'Hi, can I bother you for a minute?\'</p><p>\'You\'ve been bothering me your whole life,\' it says, and chuckles. \'Hey, stop crying, I\'m joking with you. Fire away, I\'m an open book!\'</p><p>You realize you may not get a better chance to get answers to all the questions you\'ve wanted to ask your creator, but at this moment your mind goes completely and inexcusably blank. You sputter and stammer, but the more you try, the more trouble you have thinking of anything at all.</p><p>\'Umm,\' you say, nervously.</p><p>You find you can\'t even look them in the eyes. It\'s too intimidating. Instead you try that old trick of looking at something just over their shoulder instead. In this case, what\'s over their shoulder is a baby galaxy forming, about 400 billion light years from Earth. Its shape resembles a water balloon, stretching and squashing over the course of eons, with little stars inside it popping like incandescent popcorn kernals.</p><p>\'I get it, it\'s hard to think of the right questions. Want me to help?\'</p><p>You nod. They continue.</p><p>\'Here are the answers to the questions you want to ask: Yes. No. There is none, just go nuts. Yes, seriously. Yes, but that doesn\'t mean it\'s not a very heavy rock anyway. No, I don\'t grant wishes. Drowned in a hot tub—well, I should say strangled. Sure, they love it. Honestly, none of them! Because otherwise you wouldn\'t learn anything. <em>Blood on the Tracks</em>. Yes. Yes. No. Don\'t blame that on me, that was the devil. I stopped watching after they killed Maude, your guess is as good as mine. The Pope. One hundred duck-sized horses. Timothy Dalton. They\'re all good, but if you\'re going to twist my arm, it\'s blue raspberry.\'</p><p>\'Wow\', you say. All the answers. At last, you look your creator in the eye, and they look back at you with a gaze that puts you at ease.</p><p>\'You can keep looking at that galaxy if you want,\' they say, \'I\'m there too.\'</p>",
+      },
+      {
+        name: "TELEPORTER",
+        article: "A",
+        description:
+          "<p>You notice a small, handheld teleporter on the \'ground\' here<super>1<super>. It has a rotary dial with every country on Earth printed on it in very small letters, and it looks like you could turn the dial to any of them to select it.</p><p>In a triumph of user-centered design, the device has a single, intuitive button that just says \`TELEPORT\` on it.</p><p><super>1</super>To be honest, it's not the ground, <em>per se</em>, since there is no up or down in this space (which is more like a metapositional interstitice than a place), nor are there any solid, tangible surfaces for it to be \'on\'. To be accurate, you'd have to say that the teleportation device exists as a cloud of overlapping probability volumes that you can reach out and collapse to <em>create</em> a teleportation device if you choose to, which you do.</p>",
+        inventoryItem: {
+          name: "Teleportation Device",
+          questline: "throbbers",
+          description:
+            "You got this teleportation device from a transdimensional nexus you went to. It's so well designed, all you have to do is type \`TELEPORT [Country\` and you'll go there, as long as the country is a real place and not any kind of nexus.",
+        },
+      },
+      {
+        name: "ALIENS FUCKING",
+        article: "",
+        description:
+          "You watch a lot of aliens doing it every which way. It's interesting, but you're not entirely sure what you're seeing half the time. A lot of it just looks like lava lamps. Sometimes it's just clouds of spores mixing, and sometimes it's sentient tectonic plates subducting and diverging until the nasty freaks get their rocks off—literally!</p><p>Afterwards, it feels like you've violated the privacy of every sentient being in the timestream, and you feel a little ashamed of yourself.</p>",
+        inventoryItem: {
+          name: "Achievement Badge",
+          questline: "throbbers",
+          description:
+            "This achievement badge says \'I am a cosmic pervert. When I got to be omniscient, basically the first thing I did was watch aliens having sex.\'",
+        },
+      },
+      {
+        name: "π",
+        article: "",
+        description:
+          "It turns out this number is not irrational or infinitely long after all, it's just so large that it takes all of the information in about fifty different universes to write it down. You are pleased to see that its final digit is four. You write this down in your notebook.",
+        notebookEntry: "4",
+      },
+    ],
+  },
+  {
     area: "Arctic Ocean",
     type: "ocean",
     objects: [
@@ -1290,6 +1341,12 @@ export let globe = [
         article: "",
         description:
           "Staring at the world's largest mountain from within China makes you realize just how small you are, in the grand scheme.",
+      },
+      {
+        name: "COOFANDY",
+        article: "",
+        description:
+          "WIP add a story about touring the Coofandy HQ and meeting Oliver Chen, its CEO and founder, and getting high quality, fashionable garments for low prices, and then they try to turn you into a spy for China but you escape, except you can't be sure whether you're a Manchurian candidate now",
       },
     ],
     type: "country",
