@@ -53,6 +53,25 @@ function itemIsInArea(noun) {
   return [index !== -1, index];
 }
 
+function findNextThrobberLocation() {
+  for (const country of globe) {
+    if (!country.objects) continue;
+    for (const obj of country.objects) {
+      if (
+        obj.inventoryItem &&
+        typeof obj.inventoryItem === "object" &&
+        obj.inventoryItem.questline === "throbbers"
+      ) {
+        const [hasItem] = itemIsInInventory(obj.inventoryItem.name);
+        if (!hasItem) {
+          return country.area;
+        }
+      }
+    }
+  }
+  return null;
+}
+
 // Command Handlers
 
 function handleGo(noun, words, neighbors) {
@@ -164,6 +183,21 @@ function handleLook(noun, words, neighbors) {
     if (objectData.setFlag) {
       const flagMsg = setFlag(objectData.setFlag);
       if (flagMsg) msg += flagMsg;
+    }
+
+    if (objectData.name === "POSEIDON") {
+      if (getFlag("atlantisQuestCompleted")) {
+        msg += `<p>Poseidon's kingly face is still, placid. He stares  confidently, like a photograph on a corporate website. He says nothing.</p>`;
+      } else if (!getFlag("atlantisQuestActive")) {
+        msg += `<p>\"Uhh, never mind," you say sheepishly. \"I\'ll come back once I\'ve started the ATLANTEAN TRIAL. Sorry to waste your time, and congratulations on having such a mighty trident.\"</p>`;
+      } else {
+        const nextLocation = findNextThrobberLocation();
+        if (nextLocation) {
+          msg += `\"Where should I travel to complete the ATLANTEAN TRIAL?\"</p><div class=\"wrapped-box\"><p>The Sea Lord lifts his great head, and speaks in a voice that booms like the crashing waves.</p><p>\"Mortal, I convey to you a message from the Moirai, who weave the fates of men with their hands. Your destiny leads you next to ${nextLocation}!\"</p></div>`;
+        } else {
+          msg += `<p>\"I had thought the age of heroes long past, yet you surprise me, mortal. I have no more aid to render you, for you have assembled all the lost artifacts. I can hear them in your backpack. You are now ready to complete the ATLANTEAN TRIAL. Your destiny awaits within!\"</p>`;
+        }
+      }
     }
   } else if (inInv) {
     msg = `<p>${invItems[0].description}</p>`;

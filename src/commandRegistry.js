@@ -184,7 +184,7 @@ function handleDebug(noun, words, neighbors) {
 
   // Fix stale notebook entries for the throbber quest
   const questStart =
-    "A giant crab man in Atlantis gave me a quest to find all 17 objects that glow with unearthly power.";
+    "A giant crab man in Atlantis gave me a quest to find all 17 objects that glow with unearthly power. He said if I get stuck, I can ask POSEIDON for help.";
   const questEntry = `${questStart} {{THROBBER_COUNT}}`;
 
   let notesUpdated = false;
