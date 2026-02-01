@@ -122,9 +122,17 @@ function handleLook(noun, words, neighbors) {
         saveInventory();
 
         const transitionMsg =
-          "<p>As you place the final object on the dais, a blinding light envelopes you. The weight of the artifacts vanishes from your pack, and the world dissolves...</p>";
-        const spawnMsg = updateLocation("Transdimensional Nexus");
-        msg += transitionMsg + spawnMsg;
+          '<div class="wrapped-box">As you place the final object on the dais, a blinding light envelopes you. The weight of the artifacts vanishes from your pack, and the world dissolves...</div>';
+        msg += transitionMsg;
+
+        setTimeout(() => {
+          const spawnMsg = updateLocation("Transdimensional Nexus");
+          if (spawnMsg) {
+            render("", spawnMsg, "Transdimensional Nexus", true);
+          } else {
+            render("", null, "Transdimensional Nexus", false);
+          }
+        }, 3000);
       }
     }
 

@@ -83,7 +83,7 @@ export function setFlag(flag, value = true) {
   saveFlags();
 
   if (!alreadySet && flag === "atlantisQuestActive" && value === true) {
-    return '<p>You vow to search the world for the 17 objects that <span class="glow">throb with unearthly power</span>, and to return them to this temple once you have them in your inventory.</p>';
+    return '<div class="wrapped-box">You vow to search the world for the 17 objects that <span class="glow">throb with unearthly power</span>, and to return them to this temple once you have them in your inventory.</div>';
   }
   return "";
 }
