@@ -230,9 +230,9 @@ sup {
 }
 
 .glow {
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+    -moz-animation: glow 1.5s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glow {
@@ -240,6 +240,7 @@ sup {
         text-shadow:
             0 0 10px #3d3,
             0 0 20px #3f4,
+            0 0 60px #3f3,
             0 0 100px #3f3;
     }
     to {
