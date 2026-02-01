@@ -96,6 +96,38 @@ function handleLook(noun, words, neighbors) {
 
     // Check if this object has a notebook entry to trigger
     const objectData = objects[oIndex];
+
+    if (objectData.name === "ATLANTEAN TRIAL") {
+      const throbbersFound = inventory.filter(
+        item => item.questline === "throbbers",
+      ).length;
+
+      const totalThrobbers = globe.reduce((acc, country) => {
+        const countryThrobbers = (country.objects || []).reduce((cAcc, obj) => {
+          if (obj.inventoryItem && obj.inventoryItem.questline === "throbbers") {
+            return cAcc + 1;
+          }
+          return cAcc;
+        }, 0);
+        return acc + countryThrobbers;
+      }, 0);
+
+      if (throbbersFound >= totalThrobbers && totalThrobbers > 0) {
+        setFlag("atlantisQuestCompleted", true);
+        for (let i = inventory.length - 1; i >= 0; i--) {
+          if (inventory[i].questline === "throbbers") {
+            inventory.splice(i, 1);
+          }
+        }
+        saveInventory();
+
+        const transitionMsg =
+          "<p>As you place the final object on the dais, a blinding light envelopes you. The weight of the artifacts vanishes from your pack, and the world dissolves...</p>";
+        const spawnMsg = updateLocation("Transdimensional Nexus");
+        msg += transitionMsg + spawnMsg;
+      }
+    }
+
     if (objectData.notebookEntry) {
       if (!objectData.setFlag || !getFlag(objectData.setFlag)) {
         const notebookMsg = triggerNotebookEntry(objectData.notebookEntry);
@@ -110,14 +142,20 @@ function handleLook(noun, words, neighbors) {
           ? objectData.inventoryItem
           : objectData.inventoryItem.name;
       const [hasItem] = itemIsInInventory(itemName);
-      if (!hasItem) {
+
+      const isThrobber =
+        typeof objectData.inventoryItem === "object" &&
+        objectData.inventoryItem.questline === "throbbers";
+
+      if (!hasItem && (!isThrobber || !getFlag("atlantisQuestCompleted"))) {
         addToInventory(objectData.inventoryItem);
         msg += `<p>You looted <span class="button object" data-object="${itemName}">${itemName}</span> and added it to your inventory.</p>`;
       }
     }
 
     if (objectData.setFlag) {
-      setFlag(objectData.setFlag);
+      const flagMsg = setFlag(objectData.setFlag);
+      if (flagMsg) msg += flagMsg;
     }
   } else if (inInv) {
     msg = `<p>${invItems[0].description}</p>`;
@@ -142,7 +180,7 @@ function handleTel(noun, words, neighbors) {
   const [hasTeleporter] = itemIsInInventory("Handheld Teleporter");
 
   if (!canTeleport && !hasTeleporter) {
-    return "<p>You don't have a way to teleport right now.</p>";
+    return "<p>You'd love to teleport there, but you can't.</p>";
   }
 
   if (
@@ -152,7 +190,7 @@ function handleTel(noun, words, neighbors) {
     const spawnMessage = updateLocation(noun);
     return spawnMessage || "";
   }
-  return `<p>You can't teleport there; it doesn't exist!</p>`;
+  return `<p>You'd love to teleport there, but you can't.</p>`;
 }
 
 function handleForget(noun, words, neighbors) {

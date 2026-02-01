@@ -78,8 +78,14 @@ export function saveFlags() {
 }
 
 export function setFlag(flag, value = true) {
+  const alreadySet = !!flags[flag];
   flags[flag] = value;
   saveFlags();
+
+  if (!alreadySet && flag === "atlantisQuestActive" && value === true) {
+    return '<p>You vow to search the world for the 17 objects that <span class="glow">throb with unearthly power</span>, and to return them to this temple once you have them in your inventory.</p>';
+  }
+  return "";
 }
 
 export function getFlag(flag) {
@@ -187,7 +193,10 @@ export function updateLocation(destination, isRandomWalk = false) {
     const itemName =
       typeof inventoryItem === "string" ? inventoryItem : inventoryItem.name;
     const [hasItem] = itemIsInInventory(itemName);
-    if (!hasItem) {
+    const isThrobber =
+      typeof inventoryItem === "object" && inventoryItem.questline === "throbbers";
+
+    if (!hasItem && (!isThrobber || !getFlag("atlantisQuestCompleted"))) {
       addToInventory(inventoryItem);
       spawnMessage += `<p>You found a <span class="button object" data-object="${itemName}">${itemName}</span> and added it to your inventory.</p>`;
     }

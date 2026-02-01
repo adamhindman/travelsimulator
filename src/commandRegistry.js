@@ -36,6 +36,7 @@ import { globe } from "./globe.js";
 import {
   catAllDescriptions,
   catAllObjects,
+  catAllInventoryItems,
   getCountriesWithoutObjects,
   roughSizeOfObject,
   isInt,
@@ -61,7 +62,9 @@ function handleHelp(noun, words, neighbors) {
  */
 function handleStats(noun, words, neighbors) {
   const totalWords =
-    catAllDescriptions(globe).split(" ").length + catAllObjects(globe).split(" ").length;
+    catAllDescriptions(globe).split(" ").length +
+    catAllObjects(globe).split(" ").length +
+    catAllInventoryItems(globe).split(" ").length;
   const noObjects = getCountriesWithoutObjects(globe);
   let msg = `<p>Size of the globe: ${Math.round(
     roughSizeOfObject(globe) / 1000,

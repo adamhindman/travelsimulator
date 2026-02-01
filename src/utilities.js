@@ -10,10 +10,10 @@
  */
 export const capitalize = (str, lower = false) =>
   (lower ? str.toLowerCase() : str).replace(/(?:^|\s|["'([{])+\S/g, match =>
-    match.toUpperCase()
+    match.toUpperCase(),
   );
 
-export const sluggify = str => str.toLowerCase().split(" ").join("-"); 
+export const sluggify = str => str.toLowerCase().split(" ").join("-");
 
 export const uppercase = str => str.toUpperCase();
 
@@ -41,26 +41,53 @@ export const inArray = (item, arr) => {
 };
 
 export function isInt(value) {
-  return !isNaN(value) && (function(x) { return (x | 0) === x; })(parseFloat(value))
+  return (
+    !isNaN(value) &&
+    (function (x) {
+      return (x | 0) === x;
+    })(parseFloat(value))
+  );
 }
 
-export function catAllObjects(arr){
+export function catAllObjects(arr) {
   return arr.reduce((result, current) => {
-    let next = isArray(current.objects) ? current.objects.reduce((r2, c2) => r2 + c2.description, "") : "";
-    return result + next
-  }, "")
+    let next = isArray(current.objects)
+      ? current.objects.reduce((r2, c2) => r2 + c2.description, "")
+      : "";
+    return result + next;
+  }, "");
 }
 
-export function catAllDescriptions(arr){
+export function catAllInventoryItems(arr) {
   return arr.reduce((result, current) => {
-    return result + current.description
-  }, "")
+    let next = isArray(current.objects)
+      ? current.objects.reduce((r2, obj) => {
+          if (
+            obj.inventoryItem &&
+            typeof obj.inventoryItem === "object" &&
+            obj.inventoryItem.description
+          ) {
+            return r2 + obj.inventoryItem.description;
+          } else if (typeof obj.inventoryItem === "string") {
+            return r2 + obj.inventoryItem;
+          }
+          return r2;
+        }, "")
+      : "";
+    return result + next;
+  }, "");
 }
 
-export function getCountriesWithoutObjects(arr){
-  return arr.filter((item) => {
-    return !isArray(item.objects)
-  })
+export function catAllDescriptions(arr) {
+  return arr.reduce((result, current) => {
+    return result + current.description;
+  }, "");
+}
+
+export function getCountriesWithoutObjects(arr) {
+  return arr.filter(item => {
+    return !isArray(item.objects);
+  });
 }
 
 export function roughSizeOfObject(object) {
@@ -89,36 +116,38 @@ export function roughSizeOfObject(object) {
 }
 
 export const hashify = string => {
-  let hash = `#${sluggify(string)}`
-  return hash.toLowerCase()
-}
+  let hash = `#${sluggify(string)}`;
+  return hash.toLowerCase();
+};
 
 export const dehashify = hash => {
-  return hash.replace(/-/g, " ").slice(1).toLowerCase()
-}
+  return hash.replace(/-/g, " ").slice(1).toLowerCase();
+};
 
 export function storageAvailable(type) {
   var storage;
   try {
-      storage = window[type];
-      var x = '__storage_test__';
-      storage.setItem(x, x);
-      storage.removeItem(x);
-      return true;
-  }
-  catch(e) {
-      return e instanceof DOMException && (
-          // everything except Firefox
-          e.code === 22 ||
-          // Firefox
-          e.code === 1014 ||
-          // test name field too, because code might not be present
-          // everything except Firefox
-          e.name === 'QuotaExceededError' ||
-          // Firefox
-          e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-          // acknowledge QuotaExceededError only if there's something already stored
-          (storage && storage.length !== 0);
+    storage = window[type];
+    var x = "__storage_test__";
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return (
+      e instanceof DOMException &&
+      // everything except Firefox
+      (e.code === 22 ||
+        // Firefox
+        e.code === 1014 ||
+        // test name field too, because code might not be present
+        // everything except Firefox
+        e.name === "QuotaExceededError" ||
+        // Firefox
+        e.name === "NS_ERROR_DOM_QUOTA_REACHED") &&
+      // acknowledge QuotaExceededError only if there's something already stored
+      storage &&
+      storage.length !== 0
+    );
   }
 }
 
@@ -128,20 +157,23 @@ export function storageAvailable(type) {
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
 export function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};
+  var timeout;
+  return function () {
+    var context = this,
+      args = arguments;
+    var later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
 
-export const getLastArea = () => document.querySelectorAll(".area-wrapper:last-of-type")[0]
+export const getLastArea = () =>
+  document.querySelectorAll(".area-wrapper:last-of-type")[0];
 
-export const getLastObject = () => document.querySelectorAll(".object-description:last-of-type")[0]
+export const getLastObject = () =>
+  document.querySelectorAll(".object-description:last-of-type")[0];

@@ -170,7 +170,13 @@ export function npcRandomStep(npc, getAttributeOfArea) {
   const neighbors = getAttributeOfArea("neighbors", npc.location) || [];
   if (neighbors.length === 0) return;
 
-  const newLocation = neighbors[Math.floor(Math.random() * neighbors.length)];
+  const validNeighbors = neighbors.filter(
+    neighbor => getAttributeOfArea("type", neighbor) !== "nonplace",
+  );
+
+  if (validNeighbors.length === 0) return;
+
+  const newLocation = validNeighbors[Math.floor(Math.random() * validNeighbors.length)];
   npc.location = newLocation;
   saveNpcs();
 }
