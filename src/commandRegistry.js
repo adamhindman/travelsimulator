@@ -10,8 +10,15 @@
 
 // Feature Modules
 import * as commands from "./commands.js";
-import { handleTake, handleInventory, inventory } from "./inventory.js";
-import { getNotebookContents } from "./notebook.js";
+import {
+  handleTake,
+  handleInventory,
+  inventory,
+  addToInventory,
+  itemIsInInventory,
+  saveInventory,
+} from "./inventory.js";
+import { getNotebookContents, notebookEntries, saveNotebook } from "./notebook.js";
 import { handleMonitor as npcHandleMonitor, createNpc } from "./npc.js";
 import {
   handleEndGame,
@@ -148,11 +155,50 @@ function handleSpawn(noun, words, neighbors) {
 }
 
 /**
- * Handles the 'debug' command to enable teleportation.
+ * Handles the 'debug' command to enable teleportation and grant quest items.
  */
 function handleDebug(noun, words, neighbors) {
   setCanTeleport(true);
-  return "<p>Debug mode enabled. Teleportation activated.</p>";
+
+  let addedCount = 0;
+  globe.forEach(country => {
+    (country.objects || []).forEach(obj => {
+      if (obj.inventoryItem && obj.inventoryItem.questline === "throbbers") {
+        const [hasItem, items] = itemIsInInventory(obj.inventoryItem.name);
+        if (!hasItem) {
+          addToInventory(obj.inventoryItem);
+          addedCount++;
+        } else {
+          items.forEach(item => {
+            item.questline = "throbbers";
+          });
+        }
+      }
+    });
+  });
+
+  saveInventory();
+
+  // Fix stale notebook entries for the throbber quest
+  const questStart =
+    "A giant crab man in Atlantis gave me a quest to find all 17 objects that glow with unearthly power.";
+  const questEntry = `${questStart} {{THROBBER_COUNT}}`;
+
+  let notesUpdated = false;
+  for (let i = 0; i < notebookEntries.length; i++) {
+    if (notebookEntries[i].startsWith(questStart)) {
+      if (notebookEntries[i] !== questEntry) {
+        notebookEntries[i] = questEntry;
+        notesUpdated = true;
+      }
+    }
+  }
+
+  if (notesUpdated) {
+    saveNotebook();
+  }
+
+  return `<p>Debug mode enabled. Teleportation activated.</p><p>Added ${addedCount} throbber items to inventory.</p>`;
 }
 
 // --- Command Registry ---

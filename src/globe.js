@@ -15,7 +15,7 @@ export let globe = [
         name: "UNMOVED MOVER",
         article: "The",
         description:
-          "<p>You sense a nameless presence whose hand guides the direction of the universe and everything in it. You feel you must say something to it.</p><p>\'Hi, can I bother you for a minute?\'</p><p>\'You\'ve been bothering me your whole life,\' it says, and chuckles. \'Hey, stop crying, I\'m joking with you. Fire away, I\'m an open book!\'</p><p>You realize you may not get a better chance to get answers to all the questions you\'ve wanted to ask your creator, but at this moment your mind goes completely and inexcusably blank. You sputter and stammer, but the more you try, the more trouble you have thinking of anything at all.</p><p>\'Umm,\' you say, nervously.</p><p>You find you can\'t even look them in the eyes. It\'s too intimidating. Instead you try that old trick of looking at something just over their shoulder instead. In this case, what\'s over their shoulder is a baby galaxy forming, about 400 billion light years from Earth. Its shape resembles a water balloon, stretching and squashing over the course of eons, with little stars inside it popping like incandescent popcorn kernals.</p><p>\'I get it, it\'s hard to think of the right questions. Want me to help?\'</p><p>You nod. They continue.</p><p>\'Here are the answers to the questions you want to ask: Yes. No. There is none, just go nuts. Yes, seriously. Yes, but that doesn\'t mean it\'s not a very heavy rock anyway. No, I don\'t grant wishes. Drowned in a hot tub—well, I should say strangled. Sure, they love it. Honestly, none of them! Because otherwise you wouldn\'t learn anything. <em>Blood on the Tracks</em>. Yes. Yes. No. Don\'t blame that on me, that was you-know-who that did that. I stopped watching after they killed Maude, so your guess is as good as mine. The Pope. One hundred duck-sized horses. Timothy Dalton. They\'re all good, but if you\'re going to twist my arm, it\'s blue raspberry.\'</p><p>\'Wow\', you say. All the answers. At last, you look your creator in the eye, and they look back at you with a gaze that puts you at ease.</p><p>\'You can keep looking at that galaxy if you want,\' they say, \'I\'m over there too.\'</p>",
+          "<p>You sense a nameless presence whose hand guides the direction of the universe and everything in it. You feel you must say something to it.</p><p>\'Hi, can I bother you for a minute?\'</p><p>\'You\'ve been bothering me your whole life,\' it says, and chuckles. \'Hey, stop crying, I\'m joking with you. Fire away, I\'m an open book!\'</p><p>You realize you may not get a better chance to get answers to all the questions you\'ve wanted to ask the universe's head honcho, but at this moment your mind goes completely and inexcusably blank. You sputter and stammer, but the more you try, the more trouble you have thinking of anything at all.</p><p>\'Umm,\' you say, nervously.</p><p>You find you can\'t even look them in the eyes. It\'s too intimidating. Instead you try that old trick of looking at something just over their shoulder instead. In this case, what\'s over their shoulder is a baby galaxy forming, about 400 billion light years from Earth. Its shape resembles a tossed water balloon, stretching and squashing over the course of eons, with little stars inside it popping like incandescent popcorn kernals.</p><p>\'I get it, it\'s hard to think of the right questions. Want me to help?\'</p><p>You nod. They continue.</p><p>\'Here are the answers to the questions you want to ask: Yes. No. There is none, just go nuts. Yes, seriously. Yes, but that doesn\'t mean I\'m going to lift it. No, I don\'t grant wishes. Drowned in a hot tub—well, I should say strangled. Sure, they love it. Honestly, none of them! Because otherwise you wouldn\'t learn anything. <em>Blood on the Tracks</em>. Yes. Yes. No. Don\'t blame that on me, that was you-know-who that did that. I stopped watching after they killed Maude, so your guess is as good as mine. The Pope. One hundred duck-sized horses. Timothy Dalton. They\'re all good, but if you\'re going to twist my arm, it\'s blue raspberry.\'</p><p>\'Wow\', you say. All the answers. At last, you work up the courage to look the big boss in the eye, and they look back at you with a gaze that humbles you, while putting you at ease.</p><p>\'You can keep looking at that galaxy if it's easier,\' they say, \'I\'m over there too.\'</p>",
       },
       {
         name: "HANDHELD TELEPORTER",
@@ -24,7 +24,6 @@ export let globe = [
           "<p>You notice a small, handheld teleporter on the \'ground\' here<sup>1</sup>. It has a rotary dial with every country on Earth printed on it in very small letters, and it looks like you could turn the dial to any of them to select it.</p><p>In a triumph of user-centered design, the device has a single, intuitive button that just says \`TELEPORT\` on it.</p><p><sup>1</sup>To be honest, it's not the ground, <em>per se</em>, since there is no up or down in this space (which is more like a metapositional interstitice than a place), nor are there any solid, tangible surfaces for it to be \'on\'. If asked to be precise, you'd have to say that the teleportation device exists as a cloud of overlapping probability manifolds that you can reach out and collapse to <em>create</em> a teleportation device if you choose to. Which you do.</p>",
         inventoryItem: {
           name: "Handheld Teleporter",
-          questline: "throbbers",
           description:
             "You got this teleportation device from a transdimensional nexus you went to. It's so well designed, all you have to do is type \`TELEPORT [Country]\` and you'll go there, as long as the country is a real place and not any kind of nexus.",
         },
@@ -33,10 +32,9 @@ export let globe = [
         name: "ALIENS FUCKING",
         article: "",
         description:
-          "You watch a lot of aliens doing it every which way. It's interesting, but you're not entirely sure what you're seeing half the time. A lot of it just looks like lava lamps. Sometimes it's just clouds of spores mixing, and sometimes it's sentient tectonic plates subducting and diverging until the nasty freaks get their rocks off—literally!</p><p>Afterwards, it feels like you've violated the privacy of every sentient being in the timestream, and you feel a little ashamed of yourself.</p>",
+          "You watch a lot of aliens doing it every which way. It's interesting, but you're not entirely sure what you're seeing half the time. A lot of it just looks like lava lamps. Or, sometimes it's just swarms of bioluminescent spores coalescing into different kinds of sex clouds. Sometimes it's sentient tectonic plates subducting and diverging until the nasty freaks get their rocks off—literally!</p><p>Afterwards, it feels like you've violated the privacy of every intelligent being in the timestream, and you feel a little ashamed of yourself.</p>",
         inventoryItem: {
           name: "Achievement Badge",
-          questline: "throbbers",
           description:
             "This achievement badge says \'I am a cosmic pervert. When I got to be omniscient, basically the first thing I did was watch aliens having sex.\'",
         },
@@ -279,7 +277,7 @@ export let globe = [
         name: "ALABASTRINE DAIS",
         article: "The",
         description:
-          '<p>While wandering the streets of Atlantis, you spot an unusually large structure, seemingly carved from a single enormous crystal about the size of a tennis court.</p><p>You ask a local fishman what this building is, and they tell you it\'s a sacred temple built to house holy artifacts and fulfill a prophesy so old that it predates the fall of Atlantis itself.</p><p>Interest well picqued, you decide to swim in through the porthole-shaped door, and find a massive, irregularly-shaped room filled with light. The walls, floor, and ceiling of the room all seem to glow from within, in faint pink, purple, blue, and green that quivers, reminding you of the northern lights over Siberia. Small silver fish, swimming through the room, reflect the light like living disco balls. They flee in alarm as you swim through their paths.</p><p>Atop a set of coral stairs is a large platform, supporting an even larger, raise dais made of the palest white stone you\'ve ever seen. Its flat surface is wide enough to park a car on, and has a number of depressions carved into it. Each cavity looks like it\'s made to fit an object with a different size and shape.</p><p>Some sort of priest in green robes approaches you. Instead of swimming, he scuttles across the floor on several sets of legs. He extends a claw, and you very carefully shake it.</p><p>"Seventeen treasures were lost to the surface world when the ocean swallowed our realm," he tells you. "Seventeen objects which throb with unearthly power, scattered over the globe, awaiting the fortunate day when the prophesy is fulfilled at last."</p><p>"What\'s the prophesy?" you ask.</p><p>"Well, that the treasures will be returned. And then some stuff about a reward."</p><p>"What happens after?"</p><p>"I\'m out of a job, presumably," he says, "but I don\'t see it getting done any time soon. It would take a traveler of incredible talent and persistence to find them all."</p><p>You vow to search the world for the 17 objects that <strong>throb with unearthly power</strong>, and to return them to this temple once you have them in your inventory.</p> ',
+          '<p>While wandering the streets of Atlantis, you spot an unusually large structure, seemingly carved from a single enormous crystal about the size of a tennis court.</p><p>You ask a local fishman what this building is, and they tell you it\'s a sacred temple built to house holy artifacts and fulfill a prophesy so old that it predates the fall of Atlantis itself.</p><p>Your interest picqued, you decide to swim in through the porthole-shaped door, and find a massive, irregularly-shaped room filled with light. The walls, floor, and ceiling of the room all seem to glow from within, in faint pink, purple, blue, and green that quivers, reminding you of the northern lights over Siberia. Small silver fish, swimming through the room, reflect the light like living disco balls. They flee in alarm as you swim through their paths.</p><p>Atop a set of coral stairs is a large platform, supporting an even larger, raise dais made of the palest white stone you\'ve ever seen. Its flat surface is wide enough to park a car on, and has a number of depressions carved into it. Each cavity looks like it\'s made to fit an object with a different size and shape.</p><p>Some sort of priest in green robes approaches you. Instead of swimming, he scuttles across the floor on several sets of legs. He extends a claw, and you very carefully shake it.</p><p>"Seventeen treasures were lost to the surface world when the ocean swallowed our realm," he tells you. "Seventeen objects which throb with unearthly power, scattered over the globe, awaiting the fortunate day when the prophesy is fulfilled at last."</p><p>"What\'s the prophesy?" you ask.</p><p>"That the treasures will be returned."</p><p>"What happens after?"</p><p>"I\'m out of a job, presumably," he says, "but I don\'t see it getting done any time soon. It would take a traveler of incredible talent and persistence to find them all."</p><p>You vow to search the world for the 17 objects that <span class="glow">throb with unearthly power</span>, and to return them to this temple once you have them in your inventory.</p> ',
         notebookEntry:
           "A giant crab man in Atlantis gave me a quest to find all 17 objects that glow with unearthly power. {{THROBBER_COUNT}}",
         setFlag: "atlantisQuestActive",
@@ -437,7 +435,7 @@ export let globe = [
         name: "OUR LADY OF MERITXELL",
         article: "",
         description:
-          "A 12th-century statue of the Virgin Mary, said to have appeared by magic beneath a wild rose blooming in the winter snow. You manage to talk your way into the secret vault where the original statue is still kept, having survived the fire that the newspapers said destroyed it in the 1970s. It throbs with unearthly power.",
+          'A 12th-century statue of the Virgin Mary, said to have appeared by magic beneath a wild rose blooming in the winter snow. You manage to talk your way into the secret vault where the original statue is still kept, having survived the fire that the newspapers said destroyed it in the 1970s. It <span class="glow">throbs with unearthly power</span>.',
         inventoryItem: {
           name: "Statue of the Holy Virgin",
           questline: "throbbers",
@@ -585,7 +583,7 @@ export let globe = [
         name: "THE STORY OF THE KELLY GANG",
         article: "",
         description:
-          "As the first feature-length narrative film ever produced, all subsequent films derive their power from it. Perhaps that's why this box of old film cannisters throbs with unearthly magical energy.",
+          "As the first feature-length narrative film ever produced, all subsequent films derive their power from it. Perhaps that's why this box of old film cannisters <span>throbs with unearthly power</span>.",
         inventoryItem: {
           name: "A film cannister",
           questline: "throbbers",
@@ -686,7 +684,7 @@ export let globe = [
         name: "PIRATE HIDEOUT",
         article: "A",
         description:
-          "Paddling by some anonymous island, you spot a hidden waterway and decide to explore it. It turns out to lead to a sheltered harbor, at which you find the secret hideout of the Carribbean's most infamous pirate gang, The Flying Gang! Unfortunately, this large and elaborate cave system appears to be abandoned and forgotten for centuries, so none of the Gang are around to chat with. You do notice Blackbeard's treasure chest sitting on a table, containing a full-sized emerald skull that throbs with unearthly power. You snap a pic, sn and get back to sightseeing.<p>\"Where, uhh... where did you say this island was?\"</p><p>Later, the paragliding instructor seems interested in hearing about your trip, especially after you show him the pictures. You gesture toward the ocean and shrug, then ask him questions about paragliding.</p>",
+          'Paddling by some anonymous island, you spot a hidden waterway and decide to explore it. It turns out to lead to a sheltered harbor, at which you find the secret hideout of the Carribbean\'s most infamous pirate gang, The Flying Gang! Unfortunately, this large and elaborate cave system appears to be abandoned and forgotten for centuries, so none of the Gang are around to chat with. You do notice Blackbeard\'s treasure chest sitting on a table, containing a full-sized emerald skull that <span class="glow">throbs with unearthly power</span>. You snap a pic, sn and get back to sightseeing.<p>"Where, uhh... where did you say this island was?"</p><p>Later, the paragliding instructor seems interested in hearing about your trip, especially after you show him the pictures. You gesture toward the ocean and shrug, then ask him questions about paragliding.</p>',
         inventoryItem: {
           name: "An emerald skull",
           questline: "throbbers",
@@ -892,7 +890,7 @@ export let globe = [
         name: "GATE OF THE SUN",
         article: "The",
         description:
-          "A massive stone monolith carved into the shape of a doorway. One side of the doorway opens onto the site Tiahuanaco, a Tiwanaku site in the Bolivian Andes. The other side opens into another dimension, though this side of the door is currently locked. The monolith throbs with unearthly power.",
+          'A massive stone monolith carved into the shape of a doorway. One side of the doorway opens onto the site Tiahuanaco, a Tiwanaku site in the Bolivian Andes. The other side opens into another dimension, though this side of the door is currently locked. The monolith <span class="glow">throbs with unearthly power</span>.',
         inventoryItem: {
           name: "A shard of monolith",
           questline: "throbbers",
@@ -1148,7 +1146,7 @@ export let globe = [
         name: "AFO-A-KOM",
         article: "",
         description:
-          "A wooden statue of a king on a throne supported by buffalo heads. An sacred object of veneration to the Kom people, it was stolen from its sacred grove in 1966. Fortunately it is magic, and the thieves hands withered and fell off, and the statue was returned to Laikom palace in northern Cameroon, where it remains today, throbbing with unearthly power.",
+          'A wooden statue of a king on a throne supported by buffalo heads. An sacred object of veneration to the Kom people, it was stolen from its sacred grove in 1966. Fortunately it is magic, and the thieves hands withered and fell off, and the statue was returned to Laikom palace in northern Cameroon, where it remains today, <span class="glow">throbbing with unearthly power</span>.',
         inventoryItem: {
           name: "A statue of a king",
           questline: "throbbers",
@@ -1310,7 +1308,7 @@ export let globe = [
         name: "SWORD OF GOUJIAN",
         article: "The legendary",
         description:
-          "This bronze sword, once belonging to the King of Yue, was found untarnished after being underwater for 2000 years. It is on a list of objects forbidden to be taken out of the country. Probably magical, it throbs with unearthly power.",
+          'This bronze sword, once belonging to the King of Yue, was found untarnished after being underwater for 2000 years. It is on a list of objects forbidden to be taken out of the country. Probably magical, it <span class="glow">throbs with unearthly power</span>.',
         inventoryItem: {
           name: "A magic sword",
           questline: "throbbers",
@@ -1812,7 +1810,7 @@ export let globe = [
         name: "STONEHENGE",
         article: "",
         description:
-          'A circle of sandstone blocks, each about 13" tall, and 7" wide, built by druids 5000 years ago, give or take. It throbs with unearthly power, and seems to call out to metal fans everywhere.',
+          'A circle of sandstone blocks, each about 13" tall, and 7" wide, built by druids 5000 years ago, give or take. It <span class=\"glow\">throbs with unearthly power</span>, and seems to call out to metal fans everywhere.',
         inventoryItem: {
           name: "Gravel from stonehenge",
           questline: "throbbers",
@@ -1890,12 +1888,12 @@ export let globe = [
         name: "KAALI CRATER",
         article: "",
         description:
-          "While walking in the forests of Estonia, you spot a large, perfectly round lake. At first, you assume it must be manmade: nothing this symmetrical occurs in nature. But, on further consideration, you conclude it was created by a meteorite striking the Earth with tremendous force.</p><p>It is about a hundred meters across, and when you swim out to test the depth, you find that it has been filled in with fallen trees up to a depth of about 12 feet.</p><p>Intrigued, you begin clearing out the logs, which turn out to be oak trees, just like the ones in the surrounding woods. There are dozens, maybe hundreds of them, and it takes quite a while to painstakingly lift them out using an improvised block and tackle system.</p><p>Once the pond has been cleared, you swim to the bottom, finding it much deeper than you would have guessed. In fact, it's so deep that the light from the surface can't even penetrate it: when you turn off your waterproof flashlight, it's perfectly dark and completely still down here, except for an unearthly throbbing as of some terrible, patient power coming to life.</p><p>You flip the light back on, and spot a number of small objects covered in green slime. There is some kind of religious shrine made out of bones, and an ebony throne. There is also a large, pitch black stone about the size of a microwave lying in the middle of the pool, with a dagger half embedded inside it.</p><p>You notice that the dagger is completely untarnished, glimmering like a silver worm in the beam of your flashlight. It throbs with unearthly power, and seems to call out to you to remove it from its prison, and promises to make you prince of all the kingdoms of the Earth.</p><p>You kick your way back to the surface, almost out of breath.</p><p>Tired from all your tree hauling, and a little shaken by the evil talking knife, you decide to dry off and head back to Tallinn for some rye bread and kvass, which is a type of beer also made out of rye.",
+          "While walking in the forests of Estonia, you spot a large, perfectly round lake. At first, you assume it must be manmade: nothing this symmetrical occurs in nature. But, on further consideration, you conclude it was created by a meteorite striking the Earth with tremendous force.</p><p>It is about a hundred meters across, and when you swim out to test the depth, you find that it has been filled in with fallen trees up to a depth of about 12 feet.</p><p>Intrigued, you begin clearing out the logs, which turn out to be oak trees, just like the ones in the surrounding woods. There are dozens, maybe hundreds of them, and it takes quite a while to painstakingly lift them out using an improvised block and tackle system.</p><p>Once the pond has been cleared, you swim to the bottom, finding it much deeper than you would have guessed. In fact, it's so deep that the light from the surface can't even penetrate it: when you turn off your waterproof flashlight, it's perfectly dark and completely still down here, except for an unearthly throbbing as of some terrible, patient power coming to life.</p><p>You flip the light back on, and spot a number of small objects covered in green slime. There is some kind of religious shrine made out of bones, and an ebony throne. There is also a large, pitch black stone about the size of a microwave lying in the middle of the pool, with a dagger half embedded inside it.</p><p>You notice that the dagger is completely untarnished, glimmering like a silver worm in the beam of your flashlight. It <span class=\"glow\">throbs with unearthly power</span>, and seems to call out to you to remove it from its prison, and promises to make you prince of all the kingdoms of the Earth.</p><p>You kick your way back to the surface, almost out of breath.</p><p>Tired from all your tree hauling, and a little shaken by the evil talking knife, you decide to dry off and head back to Tallinn for some rye bread and kvass, which is a type of beer also made out of rye.",
         inventoryItem: {
           name: "An evil dagger",
           questline: "throbbers",
           description:
-            '<p>"Hey," you say, surprised to find that evil talking Estonian dagger back in your pack, "didn\'t I throw you into a furnace?"</p><p>"Well, I\'m sort of spread across all time and space, holographically, so to fully destroy me you\'d have to tear apart every atom of the multiverse, all the way down to the center—"</p><p>"So no?"</p><p>"Well, yes. You did throw me in a furnace, but what I\'m saying is—</p><p>"—And don\'t you forget it. Now pipe down before I get mad!" you say.</p>',
+            '<p>"Hey," you say, surprised to find that evil talking Estonian dagger back in your pack, "didn\'t I throw you into a furnace?"</p><p>"Well, I\'m sort of spread across all time and space, holographically, so to fully destroy me you\'d have to tear apart every atom of the multiverse, all the way down to the center——"</p><p>"So no?"</p><p>"Well, yes. You did throw me in a furnace, but what I\'m saying is——</p><p>"——And don\'t you forget it. Now pipe down before I get mad!" you say.</p>',
         },
       },
     ],
@@ -2078,7 +2076,7 @@ export let globe = [
         name: "BLACK BART",
         article: "",
         description:
-          'You find a skeleton on the ocean floor, dressed in a crimson waistcoat, with a brace of pistols hanging from his shoulders. This must be what remains of the notorious pirate "Black" Bartholomew Roberts, terror of the Caribbean trading fleet in the early 1700s. He died in a ship battle off the coast of Cape Lopez, near Gabon, and his body was thrown overboard rather than become a trophy for his enemies. Around his neck, you find an ancient medallion throbbing with unearthly power.',
+          'You find a skeleton on the ocean floor, dressed in a crimson waistcoat, with a brace of pistols hanging from his shoulders. This must be what remains of the notorious pirate "Black" Bartholomew Roberts, terror of the Caribbean trading fleet in the early 1700s. He died in a ship battle off the coast of Cape Lopez, near Gabon, and his body was thrown overboard rather than become a trophy for his enemies. Around his neck, you find an ancient medallion <span class=\"glow\">throbbing with unearthly power</span>.',
         inventoryItem: {
           name: "An ancient medallion",
           questline: "throbbers",
@@ -2348,7 +2346,7 @@ export let globe = [
         name: "THUNDERSTONE",
         article: "A",
         description:
-          "A pre-historic flint spear tip, dug up by Mayan archaeologists (or possibly farmers), and assumed to represent a god who fell from the sky. This one represents the fire god Tohil, and throbs with an unearthly power.",
+          'A pre-historic flint spear tip, dug up by Mayan archaeologists (or possibly farmers), and assumed to represent a god who fell from the sky. This one represents the fire god Tohil, and <span class="glow">throbs with an unearthly power</span>.',
         inventoryItem: {
           name: "A glowing spear tip",
           questline: "throbbers",
@@ -2644,7 +2642,7 @@ export let globe = [
         name: "MUTANABBI STREET",
         article: "",
         description:
-          "This street in Baghdad is famous for its book-sellers, but there is more for sale here than just books.</p><p>While strolling by a shop of curios, you notice a shiny mace for sale, which calls out to you... literally!</p><p>Turns out, this is Sharur, the talking mace which the Sumerian hero Ninurta used to slay the equally Sumerian demon Asag, in the highly Sumerian mythological poem Lugal-e.</p><p>The mace, which throbs with unearthly power, calls to you by name, and offers to provide you with information that will make you an unbeatable god-king, with the wisdom to rule with peace and justice for 100 years.</p><p>After several attempts, you are unable to bargain down the shopkeeper to what you consider a reasonable price. Eventually, you wander off to continue your shopping in this boisterous and lively marketplace, where interesting books and trinkets wait to be discovered around every corner.</p>",
+          'This street in Baghdad is famous for its book-sellers, but there is more for sale here than just books.</p><p>While strolling by a shop of curios, you notice a shiny mace for sale, which calls out to you... literally!</p><p>Turns out, this is Sharur, the talking mace which the Sumerian hero Ninurta used to slay the equally Sumerian demon Asag, in the highly Sumerian mythological poem Lugal-e.</p><p>The mace, which <span class="glow">throbs with unearthly power</span>, calls to you by name, and offers to provide you with information that will make you an unbeatable god-king, with the wisdom to rule with peace and justice for 100 years.</p><p>After several attempts, you are unable to bargain down the shopkeeper to what you consider a reasonable price. Eventually, you wander off to continue your shopping in this boisterous and lively marketplace, where interesting books and trinkets wait to be discovered around every corner.</p>',
         inventoryItem: {
           name: "Sharur, the talking mace",
           questline: "throbbers",
@@ -2992,7 +2990,7 @@ export let globe = [
         name: "PILE OF SCARY ROCKS",
         article: "A",
         description:
-          "In the silent forests of Latvia, you encounter a pile of moss-covered stones. They appear to have been laid there by human hands, in ages long passed. Their purpose, and why they were placed so far away from any human habitation, remains an unsettling mystery.</p><p>Witches? Probably witches.</p><p>You kneel down and pick up one of the stones. It throbs with unearthly power. You put it back where it was, and hurry away from the scene.</p>",
+          'In the silent forests of Latvia, you encounter a pile of moss-covered stones. They appear to have been laid there by human hands, in ages long passed. Their purpose, and why they were placed so far away from any human habitation, remains an unsettling mystery.</p><p>Witches? Probably witches.</p><p>You kneel down and pick up one of the stones. It <span class="glow">throbs with unearthly power</span>. You put it back where it was, and hurry away from the scene.</p>',
         inventoryItem: {
           name: "A scary rock",
           questline: "throbbers",
@@ -3555,7 +3553,7 @@ export let globe = [
         name: "GOLDEN APPLE",
         article: "A",
         description:
-          "While out for a stroll one morning near Larache, you turn left instead of right, then right instead of left, and find yourself in a beautiful garden. You hear voices singing, and begin walking toward them.</p><p>This garden has several unusual features: for one thing, it is littered with the skeleton of a very large dinosaur. It looks to have been slained with a bronze sword, as indicated by the shards of bronze embedded in the bones of its many necks. Many necks? Upon closer inspection, you conclude that it is not a dinosaur after all, but a hydra. </p><p>The other fact you find unusual is that you are strolling through a garden in the afternoon, when only moments ago it had been morning. A faint, rosy-fingered red light hits you from a western slant, the unmistable direction of the mighty Atlantic ocean.</p><p>You find a group of women standing around singing in an apple orchard. The trees in this orchard look very healthy, and each of the them is heavy with luscious looking, perfectly round, golden apples. You pluck one down from the tree, and notice that it is throbbing with unearthly power.</p><p>One of the women notices you, and tries to shoo you away from the garden. You apologize and head back to Larache, munching on the apple as you go.",
+          'While out for a stroll one morning near Larache, you turn left instead of right, then right instead of left, and find yourself in a beautiful garden. You hear voices singing, and begin walking toward them.</p><p>This garden has several unusual features: for one thing, it is littered with the skeleton of a very large dinosaur. It looks to have been slained with a bronze sword, as indicated by the shards of bronze embedded in the bones of its many necks. Many necks? Upon closer inspection, you conclude that it is not a dinosaur after all, but a hydra. </p><p>The other fact you find unusual is that you are strolling through a garden in the afternoon, when only moments ago it had been morning. A faint, rosy-fingered red light hits you from a western slant, the unmistable direction of the mighty Atlantic ocean.</p><p>You find a group of women standing around singing in an apple orchard. The trees in this orchard look very healthy, and each of the them is heavy with luscious looking, perfectly round, golden apples. You pluck one down from the tree, and notice that it is <span class="glow">throbbing with unearthly power</span>.</p><p>One of the women notices you, and tries to shoo you away from the garden. You apologize and head back to Larache, munching on the apple as you go.',
         inventoryItem: {
           name: "A half-eaten golden apple",
           questline: "throbbers",
@@ -4839,7 +4837,7 @@ export let globe = [
         name: "HRUNTING",
         article: "",
         description:
-          "While walking around, you spot a burial mound and decide to investigate. Inside, you see a lot of treasure, including a sword that looks like it has seen many battles. It throbs with unearthly power.",
+          'While walking around, you spot a burial mound and decide to investigate. Inside, you see a lot of treasure, including a sword that looks like it has seen many battles. It <span class="glow">throbs with unearthly power</span>.',
         inventoryItem: {
           name: "A viking sword",
           questline: "throbbers",
@@ -4851,7 +4849,7 @@ export let globe = [
         name: "IKEA",
         article: "",
         description:
-          "You wander around inside a large blue building containing a labyrinth filled with furniture and home goods, all covered in a runic script. Exhausted, you stop for lunch, and eat some meatballs and jelly rats, washing it all down with lingonberry juice. The jelly rats throb with unearthly power.",
+          'You wander around inside a large blue building containing a labyrinth filled with furniture and home goods, all covered in a runic script. Exhausted, you stop for lunch, and eat some meatballs and jelly rats, washing it all down with lingonberry juice. The jelly rats <span class="glow">throb with unearthly power</span>.',
         inventoryItem: {
           name: "Some jelly rats",
           questline: "throbbers",
@@ -5109,7 +5107,7 @@ export let globe = [
         name: "MEDINA OF TUNIS",
         article: "The",
         description:
-          "The old city of Tunis is a maze of narrow, twisty streets and ancient buildings, covering 670 acres. It's the kind of place where you could get your pocket picked, or buy an enchanted medallion that throbs with unearthly power, or see an evil monkey get poisoned by a date.",
+          'The old city of Tunis is a maze of narrow, twisty streets and ancient buildings, covering 670 acres. It\'s the kind of place where you could get your pocket picked, or buy an enchanted medallion that <span class="glow">throbs with unearthly power</span>, or see an evil monkey get poisoned by a date.',
         inventoryItem: {
           name: "Enchanted medallion",
           questline: "throbbers",
@@ -5138,7 +5136,7 @@ export let globe = [
         name: "GÖBEKLI TEPE",
         article: "",
         description:
-          "A neolithic temple that predates the invention of ceramics. Göbekli Tepe contains many objects of religious or totemic significance, which throb with unearthly power.",
+          'A neolithic temple that predates the invention of ceramics. Göbekli Tepe contains many objects of religious or totemic significance, which <span class="glow">throb with unearthly power</span>.',
         inventoryItem: {
           name: "A stele from Göbekli Tepe",
           questline: "throbbers",

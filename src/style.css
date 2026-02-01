@@ -229,6 +229,24 @@ sup {
     font-size: 1.2rem;
 }
 
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow:
+            0 0 10px #3d3,
+            0 0 20px #3f4,
+            0 0 100px #3f3;
+    }
+    to {
+        text-shadow: 0 0 0px #3f3;
+    }
+}
+
 .pic {
     position: relative;
     background-size: cover;

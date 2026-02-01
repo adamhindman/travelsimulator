@@ -90,9 +90,11 @@ export const clearQuestNotes = () => {
 export const showInventory = () => {
   let inv = "";
   inv = inventory.reduce((result, current) => {
+    const displayName =
+      current.questline === "throbbers" ? `${current.name} [quest item]` : current.name;
     return (
       result +
-      `<li><button class="inventory-object" data-object="${current.name}">${current.name}</button></li>`
+      `<li><button class="inventory-object" data-object="${current.name}">${displayName}</button></li>`
     );
   }, "");
   return `<div class='inventory'><p>Inventory:</p><ul class='asterisk buttons'>${inv}</ul></div>`;
