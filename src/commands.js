@@ -17,6 +17,7 @@ import {
   setFlag,
   resetFlags,
   getFlag,
+  canTeleport,
 } from "./state.js";
 import { render, promptField } from "./ui.js";
 
@@ -138,7 +139,16 @@ function handleLook(noun, words, neighbors) {
 }
 
 function handleTel(noun, words, neighbors) {
-  if (areaExists(noun)) {
+  const [hasTeleporter] = itemIsInInventory("Handheld Teleporter");
+
+  if (!canTeleport && !hasTeleporter) {
+    return "<p>You don't have a way to teleport right now.</p>";
+  }
+
+  if (
+    areaExists(noun) &&
+    (canTeleport || getAttributeOfArea("type", noun) !== "nonplace")
+  ) {
     const spawnMessage = updateLocation(noun);
     return spawnMessage || "";
   }
@@ -185,10 +195,14 @@ function handleForget(noun, words, neighbors) {
 }
 
 function handleCheckPassport(noun, words, neighbors) {
-  const visited = getVisitedCountries();
-  let msg = `<div class="passport">You've visited ${visited.length} out of ${globe.length} places (${Math.floor(100 * (visited.length / globe.length))}%)</p>`;
+  const realPlaces = globe.filter(g => g.type !== "nonplace");
+  const realPlacesLower = realPlaces.map(p => p.area.toLowerCase());
+  const visited = getVisitedCountries().filter(v => realPlacesLower.includes(v));
+
+  let msg = `<div class="passport">You've visited ${visited.length} out of ${realPlaces.length} places (${Math.floor(100 * (visited.length / realPlaces.length))}%)</p>`;
   const metNpcs = JSON.parse(localStorage.getItem("metNpcs") || "[]");
-  msg += allAreas.reduce((result, current) => {
+  msg += realPlaces.reduce((result, place) => {
+    const current = place.area;
     if (inArray(current.toLowerCase(), visited)) {
       return result + `<span class="visited">${capitalize(current)}</span>`;
     }

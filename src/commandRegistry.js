@@ -13,13 +13,19 @@ import * as commands from "./commands.js";
 import { handleTake, handleInventory, inventory } from "./inventory.js";
 import { getNotebookContents } from "./notebook.js";
 import { handleMonitor as npcHandleMonitor, createNpc } from "./npc.js";
-import { handleEndGame, mutableState, npcs, curLocation } from "./state.js";
+import {
+  handleEndGame,
+  mutableState,
+  npcs,
+  curLocation,
+  allAreas,
+  setCanTeleport,
+} from "./state.js";
 import { handleText } from "./ui.js";
 
 // Data and Utilities
 import { helpText } from "./helpText.js";
 import { globe } from "./globe.js";
-import { allCountries } from "./allCountries.js";
 import {
   catAllDescriptions,
   catAllObjects,
@@ -81,7 +87,8 @@ function handleStats(noun, words, neighbors) {
  * Handles the 'win' command for debugging/testing.
  */
 function handleWin(noun, words, neighbors) {
-  localStorage.setItem("visited", JSON.stringify(allCountries));
+  const visited = allAreas.map(area => area.toLowerCase());
+  localStorage.setItem("visited", JSON.stringify(visited));
   handleEndGame();
   return ""; // handleEndGame manages the UI change.
 }
@@ -140,6 +147,14 @@ function handleSpawn(noun, words, neighbors) {
   return "";
 }
 
+/**
+ * Handles the 'debug' command to enable teleportation.
+ */
+function handleDebug(noun, words, neighbors) {
+  setCanTeleport(true);
+  return "<p>Debug mode enabled. Teleportation activated.</p>";
+}
+
 // --- Command Registry ---
 
 /**
@@ -174,4 +189,5 @@ export const commandRegistry = {
   win: handleWin,
   spawn: handleSpawn,
   despawn: commands.handleDespawn,
+  debug: handleDebug,
 };

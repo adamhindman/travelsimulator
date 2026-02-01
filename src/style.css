@@ -224,6 +224,11 @@ ul.asterisk li:before {
 .notebook-contents s {
     opacity: 0.5;
 }
+
+sup {
+    font-size: 1.2rem;
+}
+
 .pic {
     position: relative;
     background-size: cover;

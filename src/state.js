@@ -14,8 +14,11 @@ function loadNpcs() {
 // --- State Variables ---
 
 // Static world data
-export const allAreas = globe.map(area => area.area);
+export const allAreas = globe
+  .filter(area => area.type !== "nonplace")
+  .map(area => area.area);
 export const defaultArea = "United States";
+export let canTeleport = false;
 
 // Player and NPC state
 export let curLocation = localStorage.getItem("lastLocation") || "United States";
@@ -36,6 +39,10 @@ export let endGameAlreadyShown =
   JSON.parse(localStorage.getItem("endGameAlreadyShown")) || false;
 
 // --- State Management Functions ---
+
+export function setCanTeleport(val) {
+  canTeleport = val;
+}
 
 export function areaExists(areaName) {
   return globe.some(c => c.area.toLowerCase().trim() === areaName.toLowerCase().trim());
@@ -85,7 +92,11 @@ export function resetFlags() {
 }
 
 export function handleEndGame() {
-  const won = globe.length <= getVisitedCountries().length;
+  const lowerAllAreas = allAreas.map(a => a.toLowerCase());
+  const visitedCount = getVisitedCountries().filter(v =>
+    lowerAllAreas.includes(v),
+  ).length;
+  const won = allAreas.length <= visitedCount;
 
   if (won && !endGameAlreadyShown) {
     // This is the turn the user wins.
