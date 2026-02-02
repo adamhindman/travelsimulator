@@ -1,12 +1,16 @@
 {
   "name": "Travel Simulator",
   "source": "src/index.html",
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
   "scripts": {
     "start": "npx parcel src/index.html",
     "build": "npx parcel build src/index.html"
   },
   "devDependencies": {
     "@parcel/transformer-stylus": "latest",
-    "parcel": "latest"
+    "baseline-browser-mapping": "^2.9.19",
+    "parcel": "^2.16.3"
   }
 }
