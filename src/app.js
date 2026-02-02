@@ -37,26 +37,30 @@ function handleSubmit(val) {
 
   let msg = "";
   let showLoc = false;
+  const startLocation = curLocation;
 
   const handler = commandRegistry[verb];
 
   if (handler) {
-    // The 'look' command is special as it can affect `showLoc`.
-    if (verb === "look" || verb === "examine" || verb === "ex" || verb === "exits") {
-      const result = handler(noun, words, neighbors);
+    const result = handler(noun, words, neighbors);
+    if (typeof result === "object" && result !== null) {
       msg = result.msg;
       showLoc = result.showLoc;
     } else {
-      // For consistency, we pass the same arguments to all handlers.
-      // The handlers can then use what they need.
-      msg = handler(noun, words, neighbors);
+      msg = result;
     }
   } else if (verb !== "") {
     msg = handleUnknownVerb(verb);
   }
-  // An empty verb (just pressing enter) should do nothing, so no 'else' is needed.
 
-  render(val, msg, curLocation, showLoc);
+  if (curLocation !== startLocation || showLoc) {
+    render(val, null, curLocation, false);
+    if (msg) {
+      render(null, msg, curLocation, false);
+    }
+  } else {
+    render(val, msg, curLocation, false);
+  }
   focusOnPrompt();
   submitBtn.classList.remove("shown");
 }

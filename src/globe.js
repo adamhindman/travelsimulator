@@ -270,6 +270,7 @@ export let globe = [
   },
   {
     area: "Atlantis",
+    image: "atlantis.png",
     description:
       "Lying west of the Pillars of Hercules, the kingdom of Atlantis is an aquatic continent about 2 million square kilometers in size, but sparsely populated by only about a half million citizens. The main language is Atlantean, but Greek is also commonly spoken. The country's chief export is fish, which can be harvested as they swim through the streets of the capitol city, flitting through doorways and over rooftops like flocks of glimmering birds.",
     objects: [
