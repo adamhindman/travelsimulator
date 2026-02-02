@@ -284,7 +284,7 @@ export let globe = [
         name: "POSEIDON",
         article: "The god",
         description:
-          '<p>You sacrifice a white bull in order to secure an audience with the city\'s ruler, King Poseidon, in his lavish throne room in the palace.</p>The king has a long white beard, and his well-muscled chest is bare. He is holding a long, ornate trident, and you get the sense that he really loves that thing.</p><p>"What boon seekest ye, oh man of the dry earth, who beggeth favor from the Wave Rider, Maker of Horses, Wielder of the Golden Trident [the king wiggles the trident for emphasis], Father of Nymphs, Brother to Olympian Zeus, the Eternal Sea Lord Poseidon?"</p>"Oh goodly Poseidon," you begin...</p>',
+          '<p>You sacrifice a white bull in order to secure an audience with the city\'s ruler, King Poseidon, in his lavish throne room in the palace.</p>The king has a long white beard, and his well-muscled chest is bare. He is holding a long, ornate trident, and you get the sense that he really loves that thing.</p><p>"What boon seekest ye, oh man of the dry earth, who beggeth favor from the Wave Rider, Maker of Horses, Wielder of the Golden Trident [the king wiggles the trident for emphasis], Father of Nymphs, Brother to Olympian Zeus, the Eternal Sea Lord Poseidon?"</p>/"Hear me, dark-haired lord of the deep, son of Kronos, who rules the sea and encircles the land,/" you begin...</p>',
       },
       {
         name: "ATLANTEAN TRIAL",
