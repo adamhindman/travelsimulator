@@ -3,7 +3,7 @@ export let globe = [
     area: "Transdimensional Nexus",
     type: "nonplace",
     description:
-      "<p>As you place the final object into its slot in the dais, you feel a rumbling around you, and a big, swirling portal opens up.</p><p>You are sucked into a transdimensional nexus, a place outside of time and space.</p><p>You realize that you have achieved a completely synoptic view of the universe. You are experiencing everything that has ever happened, or will ever happen, simultaneously.</p><p>This includes your own life. For example, you can see yourself one day leaving this nexus (hard to imagine; it's so great!) and returning to your old three-dimensional life. You understand that once you've left, you'll never be able to come back again.</p><p>You notice that your future self is carrying what looks like a handheld teleporter.</p>",
+      "<p>As you place the final object into its slot in the dais, you feel a rumbling around you, and a big, swirling portal opens up.</p><p>You are sucked into a transdimensional nexus, a place outside of time and space.</p><p>You realize that you have achieved every traveler's ultimate dream: a complete view of the universe! You are experiencing everything that has ever happened, or will ever happen, simultaneously.</p><p>This includes your own life. For example, you can see yourself one day leaving this nexus (hard to imagine; it's so great!) and returning to your old three-dimensional life. You understand that once you've left, you'll never be able to come back again.</p><p>You notice that your future self is carrying what looks like a handheld teleporter, which is also a great reward for a traveler.</p>",
     objects: [
       {
         name: "UNIVERSE",
