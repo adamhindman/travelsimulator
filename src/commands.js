@@ -189,7 +189,7 @@ function handleLook(noun, words, neighbors) {
       if (getFlag("atlantisQuestCompleted")) {
         msg += `<p>Poseidon's kingly face is still, placid. He stares  confidently, like a photograph on a corporate website. He says nothing.</p>`;
       } else if (!getFlag("atlantisQuestActive")) {
-        msg += `<p>\"Uhh, never mind," you say sheepishly. \"I\'ll come back once I\'ve started the ATLANTEAN TRIAL. Sorry to waste your time, and congratulations on having such a mighty trident.\"</p>`;
+        msg += `<p>\"Uhh, never mind. I'll come back once I've started the ATLANTEAN TRIAL. Sorry to waste your time, and congratulations on having such a mighty trident.\"</p>`;
       } else {
         const nextLocation = findNextThrobberLocation();
         if (nextLocation) {
