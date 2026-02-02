@@ -111,7 +111,9 @@ function getDisplay(val, msg, area, showLoc) {
 }
 
 export const focusOnPrompt = () => {
-  promptField.focus();
+  if (window.innerWidth >= 640) {
+    promptField.focus();
+  }
 };
 
 function handleTeleportFromURL(area) {
