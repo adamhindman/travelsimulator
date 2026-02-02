@@ -700,7 +700,7 @@ export let globe = [
           name: "An emerald skull",
           questline: "throbbers",
           description:
-            "<p>Looking down into your backpack, you notice a greenish glow. You pull out an emerald skull, which throbs with unearthly power and seems to glow and dim with the rhythm of waves on the shore.<p><p>\'Where'd this throbbing emerald skull come from again?\' you ask.</p><p>\'Ye raised me from the depths of Davy Joneses locker,\' replies the skull, \'and I be once again thankin' ye for breakin' me shackles and restorin' me power in the mortal realm.\'</p><p>Oh right, it was that paddling trip in the Bahamas.</p>",
+            "<p>Looking down into your backpack, you notice a greenish glow. You pull out an emerald skull, which throbs with unearthly power and seems to glow and dim with the rhythm of waves on the shore.<p><p>\'Where'd this throbbing emerald skull come from again?\' you ask.</p><p>\'Ye raised me from the depths of Davy Jones's locker,\' replies the skull, \'and I be once again thankin' ye for breakin' me shackles and restorin' me power in the mortal realm.\'</p><p>Oh right, it was that paddling trip in the Bahamas.</p>",
         },
       },
       {
