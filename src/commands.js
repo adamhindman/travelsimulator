@@ -192,10 +192,24 @@ function handleLook(noun, words, neighbors) {
         msg += `<p>\"Uhh, never mind. I'll come back once I've started the ATLANTEAN TRIAL. Sorry to waste your time, and congratulations on having such a mighty trident.\"</p>`;
       } else {
         const nextLocation = findNextThrobberLocation();
+        const throbbersFound = inventory.filter(
+          item => item.questline === "throbbers",
+        ).length;
+
+        const totalThrobbers = globe.reduce((acc, country) => {
+          const countryThrobbers = (country.objects || []).reduce((cAcc, obj) => {
+            if (obj.inventoryItem && obj.inventoryItem.questline === "throbbers") {
+              return cAcc + 1;
+            }
+            return cAcc;
+          }, 0);
+          return acc + countryThrobbers;
+        }, 0);
+
         if (nextLocation) {
-          msg += `\"Where should I travel to complete the ATLANTEAN TRIAL?\"</p><div class=\"wrapped-box\"><p>The Sea Lord lifts his great head, and speaks in a voice that booms like the crashing waves.</p><p>\"Mortal, I convey to you a message from the Moirai, who weave the fates of men with their hands. Your destiny leads you next to ${nextLocation}!\"</p></div>`;
+          msg += `\"Where should I travel to complete the ATLANTEAN TRIAL?\"</p><div class=\"wrapped-box\"><p>The Sea Lord lifts his great head, and speaks in a voice that booms like the crashing waves.</p><p>\"Mortal, I convey to you a message from the Moirai, who weave the fates of men with their hands. You have found ${throbbersFound} of ${totalThrobbers} lost artifacts.</p><p>\"Your destiny leads you next to ${nextLocation}!\"</p></div>`;
         } else {
-          msg += `<p>\"I had thought the age of heroes long past, yet you surprise me, mortal. I have no more aid to render you, for you have assembled all the lost artifacts. I can hear them in your backpack. You are now ready to complete the ATLANTEAN TRIAL. Your destiny awaits within!\"</p>`;
+          msg += `<p>\"I had thought the age of heroes long past, yet you surprise me, mortal. I have no more aid to render you, for you have assembled all ${throbbersFound} of the ${totalThrobbers} lost artifacts. I can hear them in your backpack. You are now ready to complete the ATLANTEAN TRIAL.</p><p>\"Your destiny awaits within!\"</p>`;
         }
       }
     }
