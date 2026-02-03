@@ -2674,7 +2674,7 @@ export let globe = [
     type: "country",
     neighbors: ["Atlantic Ocean"],
     description:
-      "The island of Ireland lies in Western Europe, off the coast of Great Britain. It is separated from Great Britain by the Irish Sea. The Republic of Ireland comprises most of that country, but Northern Ireland, which is part of the United Kingdom, but not Great Britain, makes up a third of the island. The part at the top.</p<p>You think you've got that right, but it's literally not possible to be sure.</p><p>At any rate, Ireland's capital is probably Dublin, a city with a bit of history behind it, and a lot of future ahead of it.</p>",
+      "The island of Ireland lies in Western Europe, off the coast of Great Britain. It is separated from Great Britain by the Irish Sea. The Republic of Ireland comprises most of that country, but Northern Ireland, which is part of the United Kingdom, but not Great Britain, makes up a third of the island. The part at the top.</p><p>You think you've got that right, but it's literally not possible to be sure.</p><p>At any rate, Ireland's capital is probably Dublin, a city with a bit of history behind it, and a lot of future ahead of it.</p>",
     objects: [
       {
         name: "BLARNEY STONE",
