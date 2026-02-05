@@ -1,6 +1,6 @@
 # Travel Simulator
 
-**Everything in this README document was written by an AI, excluding this sentence. All the written content in the game was written by a human.**
+**All the written content in the game comes from a human (me). This document was written by AI, because documentation is boring.**
 
 Travel Simulator is a text-based adventure game built with modern JavaScript. Explore the globe, collect artifacts, interact with quirky NPCs, and complete quests in a world that blends real-world geography with surreal humor and fantasy elements.
 
