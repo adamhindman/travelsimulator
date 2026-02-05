@@ -4151,7 +4151,6 @@ export let globe = [
   {
     area: "Russia",
     image: "russia.png",
-    attribution: `Photo by <a target="_blank" href="https://unsplash.com/@trommelkopf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Steve Harvey</a> on <a target="_blank" href="https://unsplash.com/s/photos/soviet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>`,
     type: "country",
     description:
       "Straddling eleven timezones across Europe and Asia, Russia is an incredibly large place, full of beautiful scenery and generous people. You set out to explore the vast land and its rich history, from vikings, to revolution, to mass starvation, to kleptocracy.",
