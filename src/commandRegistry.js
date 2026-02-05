@@ -38,6 +38,7 @@ import {
   catAllObjects,
   catAllInventoryItems,
   getCountriesWithoutObjects,
+  getLeastWordyCountries,
   roughSizeOfObject,
   isInt,
 } from "./utilities.js";
@@ -90,6 +91,19 @@ function handleStats(noun, words, neighbors) {
   msg += `<br/>Objects throbbing with unearthly power: ${throbbersFound} of ${totalThrobbers}`;
   const totalMoves = Number(localStorage.getItem("totalMoves")) - 1 || 0;
   msg += `<br/>You've moved about ${totalMoves} times`;
+  return msg;
+}
+
+/**
+ * Handles the 'audit' command (secret) to list countries with fewest words.
+ */
+function handleAudit(noun, words, neighbors) {
+  const leastWordy = getLeastWordyCountries(globe);
+  let msg = "<p>Top 10 least wordy countries (object descriptions):</p><ul>";
+  leastWordy.forEach(c => {
+    msg += `<li>${c.area}: ${c.count} words</li>`;
+  });
+  msg += "</ul>";
   return msg;
 }
 
@@ -239,4 +253,5 @@ export const commandRegistry = {
   spawn: handleSpawn,
   despawn: commands.handleDespawn,
   debug: handleDebug,
+  audit: handleAudit,
 };

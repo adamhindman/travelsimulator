@@ -90,6 +90,24 @@ export function getCountriesWithoutObjects(arr) {
   });
 }
 
+export function getLeastWordyCountries(arr) {
+  return arr
+    .map(country => {
+      let count = 0;
+      if (isArray(country.objects)) {
+        const text = country.objects.reduce(
+          (acc, obj) => acc + (obj.description || "") + " ",
+          "",
+        );
+        const words = text.trim().split(/\s+/);
+        count = words[0] === "" ? 0 : words.length;
+      }
+      return { area: country.area, count };
+    })
+    .sort((a, b) => a.count - b.count)
+    .slice(0, 10);
+}
+
 export function roughSizeOfObject(object) {
   var objectList = [];
   var stack = [object];
