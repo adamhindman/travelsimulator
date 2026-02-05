@@ -71,12 +71,12 @@ The output will be generated in the `dist` directory.
 - **`STATS`**: Show game statistics like world size and move count.
 - **`TEXT [Size]`**: Adjust font size (`small`, `medium`, `large`, `default`, or a number like `1.5`).
 - **`FORGET [Item/Location]`**: Delete specific data or reset the entire game state (if no argument provided).
+- **`WIN`**: Immediately triggers the game completion sequence.
 
 ## Secret & Debug Commands
 
 These commands are not listed in the standard `HELP` menu and are intended for testing or power users.
 
-- **`WIN`**: Immediately triggers the game completion sequence.
 - **`DEBUG`**: Enables teleportation without the required item and adds all "throbber" quest items to your inventory.
 - **`SPAWN [Speed] [Location]`**: Manually spawn a new NPC.
   - Example: `SPAWN 5 France`
