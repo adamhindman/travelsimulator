@@ -517,7 +517,15 @@ export let globe = [
     type: "country",
     description:
       'As you walk across the country, you encounter a friendly local. After exchanging pleasantries, you ask them to tell you about the country.</p><p>They smile, and, after thinking for a moment, say: "The people here love soccer and barbecue. The culture is a mix of European and indigenous cultures. The language itself has many dialects, the most famous language of which is Rioplatense, which I am speaking now.</p><p>"Thank you, that was very helpful" you say, quickly picking up on the dialect. After exchanging phone numbers, you wave goodbye to your new friend, and continue walking across the pampas.',
-    neighbors: ["Bolivia", "Brazil", "Chile", "Library of Babel", "Paraguay", "Uruguay"],
+    neighbors: [
+      "Atlantic Ocean",
+      "Bolivia",
+      "Brazil",
+      "Chile",
+      "Library of Babel",
+      "Paraguay",
+      "Uruguay",
+    ],
     objects: [
       {
         name: "TIERRA DEL FUEGO",
